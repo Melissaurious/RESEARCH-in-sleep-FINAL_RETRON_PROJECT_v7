@@ -100,7 +100,3 @@ hashes, and record that the overlap is identical. Do **not** copy (`decisions/00
 
 Pfam-A **37.0** with **21,979 models** exists on Ibex:
 `/ibex/user/rioszemm/the-retron-project/src/interproscan/interproscan-5.70-102.0/data/pfam/37.0/pfam_a.hmm`
-
-
-| catalogue metadata | `…RETRON-DB_V3/MELISSA_DATA/databases_metadata_files/` — 8 files | **RAW** | the taxonomy and quality join per `source_database`. Required for the pull vocabulary (§4.0b). ⚠️ **`gem_metadata.tsv` is *claimed* to hold the GTDB lineage under a column headed `ecosystem`** — a testable claim, not a fact. Probe it before joining on it |
-| detection-model databases | PADLOC `padlocdb.cm` (21 retron ncRNA CMs) + `cm_meta.txt` · DefenseFinder `*Retron*` profiles (`~/.macsyfinder/models/defense-finder-models`) · myRT `RVT-All.hmm` | **RAW** | **label/ID reference only** — to resolve what a `ncrna_detection_models` value names. ⛔ Not re-run here. ⚠️ **All 21 CMs are authored by Mestre** and the DefenseFinder profiles were iterated to recover the known set, so **models from one publication lineage cannot corroborate each other** (EVIDENCE_STANDARDS §3b). Report tool agreement per tool and pairwise, never pooled |
