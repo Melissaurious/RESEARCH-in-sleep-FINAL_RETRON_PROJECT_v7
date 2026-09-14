@@ -1,0 +1,26 @@
+# Scratch: disposable, never a record. Replaced by the project's scratch dir name.
+ARIS_OUTPUT/
+scratch/
+.agent-lock
+
+# Never
+*.env
+.env
+**/credentials*
+*.pem
+*.key
+
+# Data itself is never in git; data/README.md is the register and IS tracked
+data/*
+!data/README.md
+*.h5
+*.npz
+*.ckpt
+*.pt
+
+# Generated: live machine state is regenerated, never trusted from a stale copy
+site/resources_live.md
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
