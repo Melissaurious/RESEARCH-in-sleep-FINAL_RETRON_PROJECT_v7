@@ -1,0 +1,6 @@
+# The ARIS revision this project runs against. Moving it is a deliberate commit with a
+# decision record, never a drift -- re-derive the Ibex overlay afterwards.
+repo=git@github.com:wanshuiyin/Auto-claude-code-research-in-sleep.git
+path=/home/borg/aris_repo
+commit=58d46de166d09db3a677fa26fdf09bcabd6f31cf
+pinned=2026-09-14

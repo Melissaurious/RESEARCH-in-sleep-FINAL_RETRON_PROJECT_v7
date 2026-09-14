@@ -1,0 +1,106 @@
+
+# raw data and input format
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/json_files_input_june
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V5/templates/input_format_schema_only.md # check the content, already shows a lot about the structure and content
+
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_SCRIPTS/database_analysis/utils_FOR_ALL_FILES.py ---> script that may already have the way to extrtact the data from raw json files under class PipelineData
+
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/report_ncbi_bacteria_Bacteria.html ---> old report that may serve as a source of ideas of format and content (analysis to keep, whats not worth adding, and novel analysis)
+
+
+    /home/borg/RETRON_CLAUDE_PART1/supplementary_material/toro_2014_Rt0-Rt7.FASTA        742 sequences
+    /home/borg/RETRON_CLAUDE_PART1/supplementary_material/Supplementary_mestre_Tree.nwk
+    /home/borg/RETRON_CLAUDE_PART1/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.hmm
+
+    Toro 2026, and its supplementary:
+    /home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Toro 2026 bioRxiv - Landscape of retron diversity across SPIRE metagenomes, candidate type XI-like lineages (COMPETITOR).pdf
+    /home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Landscape of retron diversity across the SPIRE prokaryotic metagenome resource reveals candidate novel type XI like lineages.pdf
+    /home/borg/RETRON_CLAUDE_PART1/Toro_2026/SPIRE_retron_type_specific_HMMs.tar.gz
+    /home/borg/RETRON_CLAUDE_PART1/Toro_2026/retron_reference_phylogeny_EPAng.newick
+    /home/borg/RETRON_CLAUDE_PART1/Toro_2026/typeXI_local_tree.contree
+    /home/borg/RETRON_CLAUDE_PART1/Toro_2026/spire_pipeline_scripts/
+
+
+
+**Local — `/home/borg/miniconda3/envs/retron_tradicional/bin/`**
+
+    hmmsearch  hmmbuild  hmmalign      profile HMMs
+    mafft  muscle                      alignment
+    cd-hit  mmseqs                     clustering / redundancy reduction
+    blastp                             similarity search
+    trimal                             alignment trimming
+    cmsearch  cmbuild  cmfinder.pl     covariance models, ncRNA de novo
+    mkdssp                             secondary structure from coordinates
+
+**Local — elsewhere**
+
+    /home/borg/miniconda3/envs/esmologs/bin/foldseek        structural search / 3Di
+    /home/borg/miniconda3/envs/foldmason/bin/foldmason      structural MSA
+    /home/borg/miniconda3/pkgs/foldmason-4.dd3c235-h5021889_0/bin/foldmason
+    /home/borg/.local/bin/RNAfold                           RNA secondary structure
+
+⚠️ **foldseek is NOT in `retron_tradicional`** — it is in `esmologs`. foldmason has **both**
+a package copy and its own env; prefer the env.
+
+**Ibex**
+
+    module load esm/1.0.3
+    module load foldseek/10-941cd33      -> /ibex/sw/rl9c/foldseek/10.941.33/linux_binary/foldseek/bin
+    export PATH=/ibex/user/rioszemm/conda-environments/<env>/bin:$PATH
+    AlphaFold databases: /ibex/reference/KSL/alphafold/{2.1.1,2.3.1,3.0.0}
+
+⚠️ **InterProScan here ships a stub database** — Pfam-A holds 3–4 profiles, TIGRFAM 1. Pfam-A
+37.0 (21,979 models) exists only on Ibex at
+`/ibex/user/rioszemm/the-retron-project/src/interproscan/interproscan-5.70-102.0/data/pfam/37.0/pfam_a.hmm`.
+
+
+`/home/borg/miniconda3/envs/foldmason/bin/foldmason`, and `mkdssp` in
+`/home/borg/miniconda3/envs/retron_tradicional/bin/mkdssp`.
+
+
+**Method document:** `/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/25_august_paper_positioning/experiments/X14_mestre_reconstruction.md`.
+**Scripts:** `s2b_mestre_clade_monophyly.py`, `s5b_E4a_rule_D_on_mestre.py`.
+**Data:** `/ibex/project/c2366/RETRONS/Mestre_replication/`; D2 = 1,928 `terminal_N/` dirs
+(1,925 genomes, 1,926 proteins; missing `terminal_461`, `terminal_515`, `terminal_1774`).
+**Structures:** `/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/ARIS_OUTPUT/rt0_rt7_domain_test_v4_and_tree/cache/fold/mestre/` — 1,919 folds on borg, **1,928 on Ibex**.
+
+
+
+| file | in A | in B | md5 (first 12) |
+|---|---|---|---|
+| `Supplementary_mestre_Tree.nwk` — the published tree | ✅ | ✅ | `73333b3d2d71` **identical** |
+| `Suppl_Toro_Tree.txt` — Toro 2019, source of Mestre's population | ✅ | ✅ | `06767ea34e4a` **identical** |
+| `Supp_material_T1_R1_systematic_prediction.csv` — per-tip clade/subtype | ✅ | ✅ | `86a31617e77e` **identical** |
+| `supp_material_systematic_prediction_paper.csv` | ✅ | ✅ | `1f09f9cbb198` **identical** |
+| `myRT-FastTree2.refpkg` — tree + alignment + HMM + model + mapping | ✅ | ✅ | not compared |
+| `Mestre_supplementary_material.csv` | ✅ | ⛔ | **A only** |
+| `toro_2014_Rt0-Rt7.FASTA` | ✅ | ⛔ | **A only** |
+| `support.csv` — Khan gold panel, 175 rows | ⛔ | ✅ | **B only** |
+| `taxonomy_lookup.tsv` · `gem_metadata.tsv` | ⛔ | ✅ | **B only** |
+
+⛔ **`support.csv`: the protein is in `rt_protein_aa`, NOT `RT_sequence`** (which is empty).
+⚠️ **The Khan panel cannot externally validate anything in this lineage** — 94.2% exact
+overlap with `mestre_1928`; only 8 proteins lie outside.
+→ **Action for the new session:** write `docs/decisions/` pinning **both** roots with
+hashes, and record that the overlap is identical. Do **not** copy (`decisions/0004` §1).
+
+## 6.3 · Input data — the downloaded benchmark (D2)
+
+    /home/borg/RETRONS_january_2026/the-retron-project/PHYLOGENETIC_TREE/IBEX_TESTS/Mestre_sequences/
+
+
+    PADLOC:  /home/borg/RETRONS_january_2026/the-retron-project/src/padloc/data/cm/padlocdb.cm       21 retron ncRNA CMs
+             /home/borg/RETRONS_january_2026/the-retron-project/src/padloc/data/cm_meta.txt        CM -> Mestre RT-clade map
+             /home/borg/RETRONS_january_2026/the-retron-project/src/padloc/data/sys/retron_*.yaml  18 subtype rules
+             /home/borg/miniconda3/envs/padloc2/data/cm/padlocdb.cm   mirror, identity UNVERIFIED
+    DefenseFinder: /home/borg/.macsyfinder/models/defense-finder-models/profiles/*Retron*   ~39 HMMs
+    myRT:    /home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/HMM/RVT-All.hmm  + family FASTAs  (~2,051 seeds / 47 families)
+    Ibex run copies: /ibex/project/c2366/RETRONS/Mestre_replication/hmm/{df_tierA,df_tierB,myrt}.hmm
+
+
+Pfam-A **37.0** with **21,979 models** exists on Ibex:
+`/ibex/user/rioszemm/the-retron-project/src/interproscan/interproscan-5.70-102.0/data/pfam/37.0/pfam_a.hmm`
+
+
+| catalogue metadata | `…RETRON-DB_V3/MELISSA_DATA/databases_metadata_files/` — 8 files | **RAW** | the taxonomy and quality join per `source_database`. Required for the pull vocabulary (§4.0b). ⚠️ **`gem_metadata.tsv` is *claimed* to hold the GTDB lineage under a column headed `ecosystem`** — a testable claim, not a fact. Probe it before joining on it |
+| detection-model databases | PADLOC `padlocdb.cm` (21 retron ncRNA CMs) + `cm_meta.txt` · DefenseFinder `*Retron*` profiles (`~/.macsyfinder/models/defense-finder-models`) · myRT `RVT-All.hmm` | **RAW** | **label/ID reference only** — to resolve what a `ncrna_detection_models` value names. ⛔ Not re-run here. ⚠️ **All 21 CMs are authored by Mestre** and the DefenseFinder profiles were iterated to recover the known set, so **models from one publication lineage cannot corroborate each other** (EVIDENCE_STANDARDS §3b). Report tool agreement per tool and pairwise, never pooled |
