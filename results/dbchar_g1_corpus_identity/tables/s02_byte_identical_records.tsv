@@ -1,0 +1,5 @@
+scope	populations	n_distinct_line_hashes	n_lines	n_lines_beyond_first
+within_one_file	POP-NCRNA	49	98	49
+within_one_file	POP-RT-FAM	8452	16904	8452
+across_files	POP-NCRNA	0	0	0
+across_files	POP-RT-FAM	10	20	10

@@ -44,6 +44,15 @@ load-bearing definitions and provenance, and computing only missing or untrusted
 
 The default is **flag, retain, stratify** — not delete.
 
+**Analytical population rules** (operator decision, binding on g2–g6):
+`docs/decisions/2026-09-15_stage1_population_rules.md` —
+(1) the 298,482 ncRNA-anchor-only records are outside every RT denominator, exact-RT, RT-family
+and RT-anchored geometry statistic; (2) the 9,012 MULTI RT-anchored records are a separate
+stratum, never silently assigned to one family or pooled into single-family statistics without a
+landed, auditable resolution; (3) the 31,504 RT-anchored records lacking an RT CDS are classified
+by g2 as recoverable vs ill-posed, all retained with reasons, eligibility/QC flags and reported
+denominator effects. Counts: `results/dbchar_g1_corpus_identity/`.
+
 ## 2. Kill criteria
 
 Stop this task and land the failure instead of freezing a canonical dataset if any of these
@@ -255,3 +264,71 @@ Before Stage 1 closes, verify that the canonical representation retains the fiel
 by the known downstream tasks: RT0–RT7/domain analysis, neighbourhood/operon analysis,
 diversity/saturation, taxonomic/ecological distribution, annotation disagreement and
 RT–ncRNA co-evolution. See `data/README.md` for the retained-field contract.
+
+### Stage-1 closeout requirements
+
+The final Stage-1 product must prioritize reusable scientific datasets and
+biological priors, not merely reproduce historical figures.
+
+#### Report and figures
+
+- Review the old NCBI-bacteria report for useful analyses and presentation ideas.
+- Review the mature prior Stage-4 report architecture, but do not inherit its
+  numerical results without verification.
+- Audit historical analyses: retain useful ones, remove redundant or misleading
+  ones, and add analyses justified by the canonical data.
+- Every final figure must have:
+  - a producing script;
+  - an underlying landed TSV/table;
+  - a declared analytical unit and denominator.
+- The report assembler must compute no scientific result. It assembles only
+  landed tables, figures, and interpretations.
+- `REPORT.html` must be self-contained and visually inspected before Stage 1
+  closes.
+- Prefer a smaller set of scientifically useful figures over reproducing every
+  historical plot.
+
+#### RT–ncRNA geometry
+
+RT–ncRNA geometry is a priority Stage-1 analysis and must produce reusable
+locus/pair-level variables as well as summary distributions.
+
+At minimum preserve and report:
+
+- zero-ncRNA class;
+- number of ncRNA calls per RT/locus;
+- one ncRNA associated with multiple RT occurrences;
+- one RT associated with multiple distinct ncRNAs;
+- signed RT↔ncRNA distance in bp;
+- upstream/downstream state;
+- same/opposite strand;
+- number of intervening CDS;
+- ncRNA/CDS overlap;
+- contig-edge, clipping and truncation state;
+- ncRNA CM/model identity;
+- RT family;
+- source database;
+- duplicate-call versus biological-multiplicity class;
+- ambiguity/QC flags.
+
+Report geometry on clearly named populations where possible:
+
+1. all observed associations;
+2. canonical/high-confidence associations;
+3. ambiguous or atypical associations.
+
+These distributions are empirical priors and QC information. Do not convert
+them into hard biological filters during Stage 1.
+
+#### Final reusable datasets
+
+Before closure, Stage 1 must provide or register reproducible versions of:
+
+- canonical locus table with retained QC/provenance flags;
+- exact RT sequence table/FASTA plus occurrence/taxonomy mapping;
+- RT–ncRNA association table;
+- explicit exact RT–ncRNA pair view;
+- documented pull/view definitions for downstream tasks;
+- hashes, provenance and README/documentation for each reusable dataset.
+
+Do not hide reusable scientific datasets only inside `ARIS_OUTPUT/`.

@@ -1,0 +1,108 @@
+control	expected	observed	result
+line01:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line01:master_Retron_merged_oriented.jsonl:flags			PASS
+line02:master_Retron_merged_oriented.jsonl:parse_class	blank	blank	PASS
+line02:master_Retron_merged_oriented.jsonl:flags			PASS
+line03:master_Retron_merged_oriented.jsonl:parse_class	bad_utf8	bad_utf8	PASS
+line03:master_Retron_merged_oriented.jsonl:flags			PASS
+line04:master_Retron_merged_oriented.jsonl:parse_class	bad_json	bad_json	PASS
+line04:master_Retron_merged_oriented.jsonl:flags			PASS
+line05:master_Retron_merged_oriented.jsonl:parse_class	not_object	not_object	PASS
+line05:master_Retron_merged_oriented.jsonl:flags			PASS
+line06:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line06:master_Retron_merged_oriented.jsonl:flags	V01	V01	PASS
+line07:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line07:master_Retron_merged_oriented.jsonl:flags	V02|V03	V02|V03	PASS
+line08:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line08:master_Retron_merged_oriented.jsonl:flags	V04	V04	PASS
+line09:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line09:master_Retron_merged_oriented.jsonl:flags	V05|V06	V05|V06	PASS
+line10:master_RVT-GII_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line10:master_RVT-GII_merged_oriented.jsonl:flags	V06	V06	PASS
+line11:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line11:master_Retron_merged_oriented.jsonl:flags	V07	V07	PASS
+line12:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line12:master_Retron_merged_oriented.jsonl:flags	V09a	V09a	PASS
+line13:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line13:master_Retron_merged_oriented.jsonl:flags	V09b	V09b	PASS
+line14:master_ncRNA-anchored_merged.jsonl:parse_class	ok	ok	PASS
+line14:master_ncRNA-anchored_merged.jsonl:flags			PASS
+line15:master_ncRNA-anchored_merged.jsonl:parse_class	ok	ok	PASS
+line15:master_ncRNA-anchored_merged.jsonl:flags	V03|V06	V03|V06	PASS
+line16:master_ncRNA-anchored_merged.jsonl:parse_class	ok	ok	PASS
+line16:master_ncRNA-anchored_merged.jsonl:flags	V08	V08	PASS
+line17:master_ncRNA-anchored_merged.jsonl:parse_class	ok	ok	PASS
+line17:master_ncRNA-anchored_merged.jsonl:flags	V10	V10	PASS
+line18:master_ncRNA-anchored_merged.jsonl:parse_class	ok	ok	PASS
+line18:master_ncRNA-anchored_merged.jsonl:flags	V11	V11	PASS
+line19:master_MULTI_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line19:master_MULTI_merged_oriented.jsonl:flags			PASS
+line20:master_MULTI_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line20:master_MULTI_merged_oriented.jsonl:flags	V06	V06	PASS
+line21:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line21:master_Retron_merged_oriented.jsonl:flags	V12	V12	PASS
+line22:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line22:master_Retron_merged_oriented.jsonl:flags	V13	V13	PASS
+line23:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line23:master_Retron_merged_oriented.jsonl:flags	V14	V14	PASS
+line24:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line24:master_Retron_merged_oriented.jsonl:flags	V15	V15	PASS
+line25:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line25:master_Retron_merged_oriented.jsonl:flags	V16	V16	PASS
+line26:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line26:master_Retron_merged_oriented.jsonl:flags	V17	V17	PASS
+line27:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line27:master_Retron_merged_oriented.jsonl:flags	V18|V21a	V18|V21a	PASS
+line28:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line28:master_Retron_merged_oriented.jsonl:flags	V19	V19	PASS
+line29:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line29:master_Retron_merged_oriented.jsonl:flags	V20a|V21a	V20a|V21a	PASS
+line30:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line30:master_Retron_merged_oriented.jsonl:flags	V20b	V20b	PASS
+line31:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line31:master_Retron_merged_oriented.jsonl:flags	V21b	V21b	PASS
+line32:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line32:master_Retron_merged_oriented.jsonl:flags			PASS
+line33:master_Retron_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line33:master_Retron_merged_oriented.jsonl:flags			PASS
+line34:master_RVT-GII_merged_oriented.jsonl:parse_class	ok	ok	PASS
+line34:master_RVT-GII_merged_oriented.jsonl:flags	V06	V06	PASS
+every_declared_check_fires_at_least_once			PASS
+every_parse_class_occurs	bad_json|bad_utf8|blank|not_object|ok	bad_json|bad_utf8|blank|not_object|ok	PASS
+chunks_tile_file_on_newline_boundaries(>1 chunk)	True|True|True	True|True|True	PASS
+s02_parse_census:ok	32	32	PASS
+s02_parse_census:blank	1	1	PASS
+s02_parse_census:bad_utf8	1	1	PASS
+s02_parse_census:bad_json	1	1	PASS
+s02_parse_census:not_object	1	1	PASS
+s02_validation:V01	1	1	PASS
+s02_validation:V02	1	1	PASS
+s02_validation:V03	2	2	PASS
+s02_validation:V04	1	1	PASS
+s02_validation:V05	1	1	PASS
+s02_validation:V06	7	7	PASS
+s02_validation:V07	1	1	PASS
+s02_validation:V08	1	1	PASS
+s02_validation:V09a	1	1	PASS
+s02_validation:V09b	1	1	PASS
+s02_validation:V10	1	1	PASS
+s02_validation:V11	1	1	PASS
+s02_validation:V12	1	1	PASS
+s02_validation:V13	1	1	PASS
+s02_validation:V14	1	1	PASS
+s02_validation:V15	1	1	PASS
+s02_validation:V16	1	1	PASS
+s02_validation:V17	1	1	PASS
+s02_validation:V18	1	1	PASS
+s02_validation:V19	1	1	PASS
+s02_validation:V20a	1	1	PASS
+s02_validation:V20b	1	1	PASS
+s02_validation:V21a	2	2	PASS
+s02_validation:V21b	1	1	PASS
+s02_byte_identical:across_files_lines_beyond_first	6	6	PASS
+s02_byte_identical:within_one_file_lines_beyond_first	0	0	PASS
+s01_detects_unterminated_final_line	False	False	PASS
+s01_detects_crlf	1	1	PASS
+s03_wc_vs_s02_lines_differ_by_exactly_the_unterminated_line	{'master_MULTI_merged_oriented.jsonl': 0, 'master_RVT-GII_merged_oriented.jsonl': 0, 'master_RVT-UG9_merged_oriented.jsonl': 1, 'master_Retron_merged_oriented.jsonl': 0, 'master_ncRNA-anchored_merged.jsonl': 0}	{'master_MULTI_merged_oriented.jsonl': 0, 'master_RVT-GII_merged_oriented.jsonl': 0, 'master_RVT-UG9_merged_oriented.jsonl': 1, 'master_Retron_merged_oriented.jsonl': 0, 'master_ncRNA-anchored_merged.jsonl': 0}	PASS
+s03_grep_joint_anchor_database_counts	[(('master_MULTI_merged_oriented.jsonl', 'RT', 'gtdb_archaea'), 2), (('master_RVT-GII_merged_oriented.jsonl', 'RT', 'gtdb_archaea'), 2), (('master_RVT-UG9_merged_oriented.jsonl', 'RT', 'gtdb_archaea'), 2), (('master_Retron_merged_oriented.jsonl', 'RT', '<0 database tokens>'), 1), (('master_Retron_merged_oriented.jsonl', 'RT', 'gtdb_archaea'), 20), (('master_Retron_merged_oriented.jsonl', 'RT', 'null'), 1), (('master_Retron_merged_oriented.jsonl', 'XX', 'gtdb_archaea'), 1), (('master_ncRNA-anchored_merged.jsonl', 'RT', 'gtdb_archaea'), 1), (('master_ncRNA-anchored_merged.jsonl', 'ncRNA', 'gtdb_archaea'), 4)]	[(('master_MULTI_merged_oriented.jsonl', 'RT', 'gtdb_archaea'), 2), (('master_RVT-GII_merged_oriented.jsonl', 'RT', 'gtdb_archaea'), 2), (('master_RVT-UG9_merged_oriented.jsonl', 'RT', 'gtdb_archaea'), 2), (('master_Retron_merged_oriented.jsonl', 'RT', '<0 database tokens>'), 1), (('master_Retron_merged_oriented.jsonl', 'RT', 'gtdb_archaea'), 20), (('master_Retron_merged_oriented.jsonl', 'RT', 'null'), 1), (('master_Retron_merged_oriented.jsonl', 'XX', 'gtdb_archaea'), 1), (('master_ncRNA-anchored_merged.jsonl', 'RT', 'gtdb_archaea'), 1), (('master_ncRNA-anchored_merged.jsonl', 'ncRNA', 'gtdb_archaea'), 4)]	PASS
+s05_reports_exactly_the_seeded_disagreements	['population_total|POP-RT-FAM|-2', 'records_per_file_all_anchor_database|master_Retron_merged_oriented.jsonl|-2', 'records_per_file_anchor_database|master_Retron_merged_oriented.jsonl|RT|<absent>|-1', 'records_per_file_anchor_database|master_Retron_merged_oriented.jsonl|RT|gtdb_archaea|-1']	['population_total|POP-RT-FAM|-2', 'records_per_file_all_anchor_database|master_Retron_merged_oriented.jsonl|-2', 'records_per_file_anchor_database|master_Retron_merged_oriented.jsonl|RT|<absent>|-1', 'records_per_file_anchor_database|master_Retron_merged_oriented.jsonl|RT|gtdb_archaea|-1']	PASS

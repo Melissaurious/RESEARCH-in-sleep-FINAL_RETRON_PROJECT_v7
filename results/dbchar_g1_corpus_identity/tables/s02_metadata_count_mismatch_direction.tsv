@@ -1,0 +1,4 @@
+population	check_id	direction	n_records	n_flagged_for_check
+POP-NCRNA	V12	metadata_gt_array	2102	69719
+POP-NCRNA	V12	metadata_lt_array	67617	69719
+POP-RT-FAM	V12	metadata_gt_array	9799	9799

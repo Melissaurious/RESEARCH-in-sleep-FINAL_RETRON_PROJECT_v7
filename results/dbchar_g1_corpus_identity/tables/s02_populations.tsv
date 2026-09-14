@@ -1,0 +1,7 @@
+population	definition	n_lines	n_files
+POP-RT-FAM	parsed records with anchor_type RT in the single-RT-family files	3050688	41
+POP-RT-MULTI	parsed records with anchor_type RT in master_MULTI_merged_oriented.jsonl	9012	1
+POP-NCRNA	parsed records with anchor_type ncRNA, any file	298482	1
+POP-OTHER	parsed records whose anchor_type is neither RT nor ncRNA, or RT in a file of another role	0	0
+POP-UNPARSED	lines that are not a JSON object (blank, bad UTF-8, bad JSON, non-object)	0	0
+ALL	every newline-delimited line of every .jsonl file in the corpus root	3358182	43

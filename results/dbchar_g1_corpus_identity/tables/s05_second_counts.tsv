@@ -1,0 +1,451 @@
+check	scope	route_a	value_a	route_b	value_b	delta_a_minus_b	agreement
+newlines_per_file	master_MULTI_merged_oriented.jsonl	s01 python byte count	9012	s03 coreutils wc -l	9012	0	AGREE
+newlines_per_file	master_RVT-AbiA_merged_oriented.jsonl	s01 python byte count	46	s03 coreutils wc -l	46	0	AGREE
+newlines_per_file	master_RVT-AbiK_merged_oriented.jsonl	s01 python byte count	9516	s03 coreutils wc -l	9516	0	AGREE
+newlines_per_file	master_RVT-AbiP2_merged_oriented.jsonl	s01 python byte count	47333	s03 coreutils wc -l	47333	0	AGREE
+newlines_per_file	master_RVT-CRISPR-like_merged_oriented.jsonl	s01 python byte count	6776	s03 coreutils wc -l	6776	0	AGREE
+newlines_per_file	master_RVT-CRISPR_merged_oriented.jsonl	s01 python byte count	9711	s03 coreutils wc -l	9711	0	AGREE
+newlines_per_file	master_RVT-DGRs_merged_oriented.jsonl	s01 python byte count	228171	s03 coreutils wc -l	228171	0	AGREE
+newlines_per_file	master_RVT-G2L4_merged_oriented.jsonl	s01 python byte count	3055	s03 coreutils wc -l	3055	0	AGREE
+newlines_per_file	master_RVT-G2L_merged_oriented.jsonl	s01 python byte count	38428	s03 coreutils wc -l	38428	0	AGREE
+newlines_per_file	master_RVT-G2Lb_merged_oriented.jsonl	s01 python byte count	657	s03 coreutils wc -l	657	0	AGREE
+newlines_per_file	master_RVT-G2Lc_merged_oriented.jsonl	s01 python byte count	1498	s03 coreutils wc -l	1498	0	AGREE
+newlines_per_file	master_RVT-GII_merged_oriented.jsonl	s01 python byte count	1618431	s03 coreutils wc -l	1618431	0	AGREE
+newlines_per_file	master_RVT-UG10_merged_oriented.jsonl	s01 python byte count	2114	s03 coreutils wc -l	2114	0	AGREE
+newlines_per_file	master_RVT-UG11_merged_oriented.jsonl	s01 python byte count	76193	s03 coreutils wc -l	76193	0	AGREE
+newlines_per_file	master_RVT-UG12_merged_oriented.jsonl	s01 python byte count	6454	s03 coreutils wc -l	6454	0	AGREE
+newlines_per_file	master_RVT-UG13_merged_oriented.jsonl	s01 python byte count	2011	s03 coreutils wc -l	2011	0	AGREE
+newlines_per_file	master_RVT-UG14_merged_oriented.jsonl	s01 python byte count	2525	s03 coreutils wc -l	2525	0	AGREE
+newlines_per_file	master_RVT-UG15_merged_oriented.jsonl	s01 python byte count	15979	s03 coreutils wc -l	15979	0	AGREE
+newlines_per_file	master_RVT-UG16_merged_oriented.jsonl	s01 python byte count	2480	s03 coreutils wc -l	2480	0	AGREE
+newlines_per_file	master_RVT-UG17_merged_oriented.jsonl	s01 python byte count	39760	s03 coreutils wc -l	39760	0	AGREE
+newlines_per_file	master_RVT-UG18_merged_oriented.jsonl	s01 python byte count	2127	s03 coreutils wc -l	2127	0	AGREE
+newlines_per_file	master_RVT-UG19_merged_oriented.jsonl	s01 python byte count	2244	s03 coreutils wc -l	2244	0	AGREE
+newlines_per_file	master_RVT-UG1_merged_oriented.jsonl	s01 python byte count	7733	s03 coreutils wc -l	7733	0	AGREE
+newlines_per_file	master_RVT-UG20_merged_oriented.jsonl	s01 python byte count	636	s03 coreutils wc -l	636	0	AGREE
+newlines_per_file	master_RVT-UG21_merged_oriented.jsonl	s01 python byte count	385	s03 coreutils wc -l	385	0	AGREE
+newlines_per_file	master_RVT-UG22_merged_oriented.jsonl	s01 python byte count	952	s03 coreutils wc -l	952	0	AGREE
+newlines_per_file	master_RVT-UG23_merged_oriented.jsonl	s01 python byte count	1413	s03 coreutils wc -l	1413	0	AGREE
+newlines_per_file	master_RVT-UG24_merged_oriented.jsonl	s01 python byte count	3389	s03 coreutils wc -l	3389	0	AGREE
+newlines_per_file	master_RVT-UG25_merged_oriented.jsonl	s01 python byte count	559	s03 coreutils wc -l	559	0	AGREE
+newlines_per_file	master_RVT-UG26_merged_oriented.jsonl	s01 python byte count	8407	s03 coreutils wc -l	8407	0	AGREE
+newlines_per_file	master_RVT-UG27_merged_oriented.jsonl	s01 python byte count	6425	s03 coreutils wc -l	6425	0	AGREE
+newlines_per_file	master_RVT-UG28_merged_oriented.jsonl	s01 python byte count	4414	s03 coreutils wc -l	4414	0	AGREE
+newlines_per_file	master_RVT-UG28b_merged_oriented.jsonl	s01 python byte count	1969	s03 coreutils wc -l	1969	0	AGREE
+newlines_per_file	master_RVT-UG2_merged_oriented.jsonl	s01 python byte count	46470	s03 coreutils wc -l	46470	0	AGREE
+newlines_per_file	master_RVT-UG3_merged_oriented.jsonl	s01 python byte count	40158	s03 coreutils wc -l	40158	0	AGREE
+newlines_per_file	master_RVT-UG4_merged_oriented.jsonl	s01 python byte count	33045	s03 coreutils wc -l	33045	0	AGREE
+newlines_per_file	master_RVT-UG5_merged_oriented.jsonl	s01 python byte count	52945	s03 coreutils wc -l	52945	0	AGREE
+newlines_per_file	master_RVT-UG6_merged_oriented.jsonl	s01 python byte count	1090	s03 coreutils wc -l	1090	0	AGREE
+newlines_per_file	master_RVT-UG7_merged_oriented.jsonl	s01 python byte count	18480	s03 coreutils wc -l	18480	0	AGREE
+newlines_per_file	master_RVT-UG8_merged_oriented.jsonl	s01 python byte count	38888	s03 coreutils wc -l	38888	0	AGREE
+newlines_per_file	master_RVT-UG9_merged_oriented.jsonl	s01 python byte count	2500	s03 coreutils wc -l	2500	0	AGREE
+newlines_per_file	master_Retron_merged_oriented.jsonl	s01 python byte count	665321	s03 coreutils wc -l	665321	0	AGREE
+newlines_per_file	master_ncRNA-anchored_merged.jsonl	s01 python byte count	298482	s03 coreutils wc -l	298482	0	AGREE
+lines_per_file	master_MULTI_merged_oriented.jsonl	s02 split lines	9012	s03 wc -l + unterminated final line	9012	0	AGREE
+lines_per_file	master_RVT-AbiA_merged_oriented.jsonl	s02 split lines	46	s03 wc -l + unterminated final line	46	0	AGREE
+lines_per_file	master_RVT-AbiK_merged_oriented.jsonl	s02 split lines	9516	s03 wc -l + unterminated final line	9516	0	AGREE
+lines_per_file	master_RVT-AbiP2_merged_oriented.jsonl	s02 split lines	47333	s03 wc -l + unterminated final line	47333	0	AGREE
+lines_per_file	master_RVT-CRISPR-like_merged_oriented.jsonl	s02 split lines	6776	s03 wc -l + unterminated final line	6776	0	AGREE
+lines_per_file	master_RVT-CRISPR_merged_oriented.jsonl	s02 split lines	9711	s03 wc -l + unterminated final line	9711	0	AGREE
+lines_per_file	master_RVT-DGRs_merged_oriented.jsonl	s02 split lines	228171	s03 wc -l + unterminated final line	228171	0	AGREE
+lines_per_file	master_RVT-G2L4_merged_oriented.jsonl	s02 split lines	3055	s03 wc -l + unterminated final line	3055	0	AGREE
+lines_per_file	master_RVT-G2L_merged_oriented.jsonl	s02 split lines	38428	s03 wc -l + unterminated final line	38428	0	AGREE
+lines_per_file	master_RVT-G2Lb_merged_oriented.jsonl	s02 split lines	657	s03 wc -l + unterminated final line	657	0	AGREE
+lines_per_file	master_RVT-G2Lc_merged_oriented.jsonl	s02 split lines	1498	s03 wc -l + unterminated final line	1498	0	AGREE
+lines_per_file	master_RVT-GII_merged_oriented.jsonl	s02 split lines	1618431	s03 wc -l + unterminated final line	1618431	0	AGREE
+lines_per_file	master_RVT-UG10_merged_oriented.jsonl	s02 split lines	2114	s03 wc -l + unterminated final line	2114	0	AGREE
+lines_per_file	master_RVT-UG11_merged_oriented.jsonl	s02 split lines	76193	s03 wc -l + unterminated final line	76193	0	AGREE
+lines_per_file	master_RVT-UG12_merged_oriented.jsonl	s02 split lines	6454	s03 wc -l + unterminated final line	6454	0	AGREE
+lines_per_file	master_RVT-UG13_merged_oriented.jsonl	s02 split lines	2011	s03 wc -l + unterminated final line	2011	0	AGREE
+lines_per_file	master_RVT-UG14_merged_oriented.jsonl	s02 split lines	2525	s03 wc -l + unterminated final line	2525	0	AGREE
+lines_per_file	master_RVT-UG15_merged_oriented.jsonl	s02 split lines	15979	s03 wc -l + unterminated final line	15979	0	AGREE
+lines_per_file	master_RVT-UG16_merged_oriented.jsonl	s02 split lines	2480	s03 wc -l + unterminated final line	2480	0	AGREE
+lines_per_file	master_RVT-UG17_merged_oriented.jsonl	s02 split lines	39760	s03 wc -l + unterminated final line	39760	0	AGREE
+lines_per_file	master_RVT-UG18_merged_oriented.jsonl	s02 split lines	2127	s03 wc -l + unterminated final line	2127	0	AGREE
+lines_per_file	master_RVT-UG19_merged_oriented.jsonl	s02 split lines	2244	s03 wc -l + unterminated final line	2244	0	AGREE
+lines_per_file	master_RVT-UG1_merged_oriented.jsonl	s02 split lines	7733	s03 wc -l + unterminated final line	7733	0	AGREE
+lines_per_file	master_RVT-UG20_merged_oriented.jsonl	s02 split lines	636	s03 wc -l + unterminated final line	636	0	AGREE
+lines_per_file	master_RVT-UG21_merged_oriented.jsonl	s02 split lines	385	s03 wc -l + unterminated final line	385	0	AGREE
+lines_per_file	master_RVT-UG22_merged_oriented.jsonl	s02 split lines	952	s03 wc -l + unterminated final line	952	0	AGREE
+lines_per_file	master_RVT-UG23_merged_oriented.jsonl	s02 split lines	1413	s03 wc -l + unterminated final line	1413	0	AGREE
+lines_per_file	master_RVT-UG24_merged_oriented.jsonl	s02 split lines	3389	s03 wc -l + unterminated final line	3389	0	AGREE
+lines_per_file	master_RVT-UG25_merged_oriented.jsonl	s02 split lines	559	s03 wc -l + unterminated final line	559	0	AGREE
+lines_per_file	master_RVT-UG26_merged_oriented.jsonl	s02 split lines	8407	s03 wc -l + unterminated final line	8407	0	AGREE
+lines_per_file	master_RVT-UG27_merged_oriented.jsonl	s02 split lines	6425	s03 wc -l + unterminated final line	6425	0	AGREE
+lines_per_file	master_RVT-UG28_merged_oriented.jsonl	s02 split lines	4414	s03 wc -l + unterminated final line	4414	0	AGREE
+lines_per_file	master_RVT-UG28b_merged_oriented.jsonl	s02 split lines	1969	s03 wc -l + unterminated final line	1969	0	AGREE
+lines_per_file	master_RVT-UG2_merged_oriented.jsonl	s02 split lines	46470	s03 wc -l + unterminated final line	46470	0	AGREE
+lines_per_file	master_RVT-UG3_merged_oriented.jsonl	s02 split lines	40158	s03 wc -l + unterminated final line	40158	0	AGREE
+lines_per_file	master_RVT-UG4_merged_oriented.jsonl	s02 split lines	33045	s03 wc -l + unterminated final line	33045	0	AGREE
+lines_per_file	master_RVT-UG5_merged_oriented.jsonl	s02 split lines	52945	s03 wc -l + unterminated final line	52945	0	AGREE
+lines_per_file	master_RVT-UG6_merged_oriented.jsonl	s02 split lines	1090	s03 wc -l + unterminated final line	1090	0	AGREE
+lines_per_file	master_RVT-UG7_merged_oriented.jsonl	s02 split lines	18480	s03 wc -l + unterminated final line	18480	0	AGREE
+lines_per_file	master_RVT-UG8_merged_oriented.jsonl	s02 split lines	38888	s03 wc -l + unterminated final line	38888	0	AGREE
+lines_per_file	master_RVT-UG9_merged_oriented.jsonl	s02 split lines	2500	s03 wc -l + unterminated final line	2500	0	AGREE
+lines_per_file	master_Retron_merged_oriented.jsonl	s02 split lines	665321	s03 wc -l + unterminated final line	665321	0	AGREE
+lines_per_file	master_ncRNA-anchored_merged.jsonl	s02 split lines	298482	s03 wc -l + unterminated final line	298482	0	AGREE
+records_per_file_anchor_database	master_MULTI_merged_oriented.jsonl|RT|gem	s02 json census	10	s03 grep -o token pairs	10	0	AGREE
+records_per_file_anchor_database	master_MULTI_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	254	s03 grep -o token pairs	254	0	AGREE
+records_per_file_anchor_database	master_MULTI_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	399	s03 grep -o token pairs	399	0	AGREE
+records_per_file_anchor_database	master_MULTI_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	2692	s03 grep -o token pairs	2692	0	AGREE
+records_per_file_anchor_database	master_MULTI_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	201	s03 grep -o token pairs	201	0	AGREE
+records_per_file_anchor_database	master_MULTI_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	1517	s03 grep -o token pairs	1517	0	AGREE
+records_per_file_anchor_database	master_MULTI_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	841	s03 grep -o token pairs	841	0	AGREE
+records_per_file_anchor_database	master_MULTI_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	3098	s03 grep -o token pairs	3098	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiA_merged_oriented.jsonl|RT|gem	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiA_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	16	s03 grep -o token pairs	16	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiA_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	29	s03 grep -o token pairs	29	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiK_merged_oriented.jsonl|RT|gem	s02 json census	20	s03 grep -o token pairs	20	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiK_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	1408	s03 grep -o token pairs	1408	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiK_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	24	s03 grep -o token pairs	24	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiK_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiK_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiK_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	8061	s03 grep -o token pairs	8061	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl|RT|gem	s02 json census	319	s03 grep -o token pairs	319	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	4	s03 grep -o token pairs	4	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	7643	s03 grep -o token pairs	7643	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	1723	s03 grep -o token pairs	1723	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	54	s03 grep -o token pairs	54	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	45	s03 grep -o token pairs	45	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	20	s03 grep -o token pairs	20	0	AGREE
+records_per_file_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	37525	s03 grep -o token pairs	37525	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl|RT|gem	s02 json census	136	s03 grep -o token pairs	136	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	27	s03 grep -o token pairs	27	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	1772	s03 grep -o token pairs	1772	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	223	s03 grep -o token pairs	223	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	95	s03 grep -o token pairs	95	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	112	s03 grep -o token pairs	112	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	70	s03 grep -o token pairs	70	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	4341	s03 grep -o token pairs	4341	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl|RT|gem	s02 json census	269	s03 grep -o token pairs	269	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	101	s03 grep -o token pairs	101	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	3399	s03 grep -o token pairs	3399	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	415	s03 grep -o token pairs	415	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	32	s03 grep -o token pairs	32	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	42	s03 grep -o token pairs	42	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	122	s03 grep -o token pairs	122	0	AGREE
+records_per_file_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	5331	s03 grep -o token pairs	5331	0	AGREE
+records_per_file_anchor_database	master_RVT-DGRs_merged_oriented.jsonl|RT|gem	s02 json census	4924	s03 grep -o token pairs	4924	0	AGREE
+records_per_file_anchor_database	master_RVT-DGRs_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1188	s03 grep -o token pairs	1188	0	AGREE
+records_per_file_anchor_database	master_RVT-DGRs_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	73688	s03 grep -o token pairs	73688	0	AGREE
+records_per_file_anchor_database	master_RVT-DGRs_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	38320	s03 grep -o token pairs	38320	0	AGREE
+records_per_file_anchor_database	master_RVT-DGRs_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	477	s03 grep -o token pairs	477	0	AGREE
+records_per_file_anchor_database	master_RVT-DGRs_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	406	s03 grep -o token pairs	406	0	AGREE
+records_per_file_anchor_database	master_RVT-DGRs_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	2928	s03 grep -o token pairs	2928	0	AGREE
+records_per_file_anchor_database	master_RVT-DGRs_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	106240	s03 grep -o token pairs	106240	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L4_merged_oriented.jsonl|RT|gem	s02 json census	33	s03 grep -o token pairs	33	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L4_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	1082	s03 grep -o token pairs	1082	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L4_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	29	s03 grep -o token pairs	29	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L4_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	41	s03 grep -o token pairs	41	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L4_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	28	s03 grep -o token pairs	28	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L4_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L4_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1840	s03 grep -o token pairs	1840	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L_merged_oriented.jsonl|RT|gem	s02 json census	31	s03 grep -o token pairs	31	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	6861	s03 grep -o token pairs	6861	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	65	s03 grep -o token pairs	65	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	36	s03 grep -o token pairs	36	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	14	s03 grep -o token pairs	14	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-G2L_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	31419	s03 grep -o token pairs	31419	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl|RT|gem	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	230	s03 grep -o token pairs	230	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	4	s03 grep -o token pairs	4	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	413	s03 grep -o token pairs	413	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lc_merged_oriented.jsonl|RT|gem	s02 json census	34	s03 grep -o token pairs	34	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lc_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	438	s03 grep -o token pairs	438	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lc_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	385	s03 grep -o token pairs	385	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lc_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	5	s03 grep -o token pairs	5	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lc_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	8	s03 grep -o token pairs	8	0	AGREE
+records_per_file_anchor_database	master_RVT-G2Lc_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	628	s03 grep -o token pairs	628	0	AGREE
+records_per_file_anchor_database	master_RVT-GII_merged_oriented.jsonl|RT|gem	s02 json census	10031	s03 grep -o token pairs	10031	0	AGREE
+records_per_file_anchor_database	master_RVT-GII_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1431	s03 grep -o token pairs	1431	0	AGREE
+records_per_file_anchor_database	master_RVT-GII_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	322177	s03 grep -o token pairs	322177	0	AGREE
+records_per_file_anchor_database	master_RVT-GII_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	63032	s03 grep -o token pairs	63032	0	AGREE
+records_per_file_anchor_database	master_RVT-GII_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	3058	s03 grep -o token pairs	3058	0	AGREE
+records_per_file_anchor_database	master_RVT-GII_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	11286	s03 grep -o token pairs	11286	0	AGREE
+records_per_file_anchor_database	master_RVT-GII_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	3129	s03 grep -o token pairs	3129	0	AGREE
+records_per_file_anchor_database	master_RVT-GII_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1204287	s03 grep -o token pairs	1204287	0	AGREE
+records_per_file_anchor_database	master_RVT-UG10_merged_oriented.jsonl|RT|gem	s02 json census	17	s03 grep -o token pairs	17	0	AGREE
+records_per_file_anchor_database	master_RVT-UG10_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG10_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	595	s03 grep -o token pairs	595	0	AGREE
+records_per_file_anchor_database	master_RVT-UG10_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	271	s03 grep -o token pairs	271	0	AGREE
+records_per_file_anchor_database	master_RVT-UG10_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	35	s03 grep -o token pairs	35	0	AGREE
+records_per_file_anchor_database	master_RVT-UG10_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	4	s03 grep -o token pairs	4	0	AGREE
+records_per_file_anchor_database	master_RVT-UG10_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-UG10_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1189	s03 grep -o token pairs	1189	0	AGREE
+records_per_file_anchor_database	master_RVT-UG11_merged_oriented.jsonl|RT|gem	s02 json census	41	s03 grep -o token pairs	41	0	AGREE
+records_per_file_anchor_database	master_RVT-UG11_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG11_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	7472	s03 grep -o token pairs	7472	0	AGREE
+records_per_file_anchor_database	master_RVT-UG11_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	133	s03 grep -o token pairs	133	0	AGREE
+records_per_file_anchor_database	master_RVT-UG11_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	32	s03 grep -o token pairs	32	0	AGREE
+records_per_file_anchor_database	master_RVT-UG11_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	21	s03 grep -o token pairs	21	0	AGREE
+records_per_file_anchor_database	master_RVT-UG11_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	8	s03 grep -o token pairs	8	0	AGREE
+records_per_file_anchor_database	master_RVT-UG11_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	68485	s03 grep -o token pairs	68485	0	AGREE
+records_per_file_anchor_database	master_RVT-UG12_merged_oriented.jsonl|RT|gem	s02 json census	130	s03 grep -o token pairs	130	0	AGREE
+records_per_file_anchor_database	master_RVT-UG12_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	12	s03 grep -o token pairs	12	0	AGREE
+records_per_file_anchor_database	master_RVT-UG12_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	2212	s03 grep -o token pairs	2212	0	AGREE
+records_per_file_anchor_database	master_RVT-UG12_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	116	s03 grep -o token pairs	116	0	AGREE
+records_per_file_anchor_database	master_RVT-UG12_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	66	s03 grep -o token pairs	66	0	AGREE
+records_per_file_anchor_database	master_RVT-UG12_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	78	s03 grep -o token pairs	78	0	AGREE
+records_per_file_anchor_database	master_RVT-UG12_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	30	s03 grep -o token pairs	30	0	AGREE
+records_per_file_anchor_database	master_RVT-UG12_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	3810	s03 grep -o token pairs	3810	0	AGREE
+records_per_file_anchor_database	master_RVT-UG13_merged_oriented.jsonl|RT|gem	s02 json census	85	s03 grep -o token pairs	85	0	AGREE
+records_per_file_anchor_database	master_RVT-UG13_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	19	s03 grep -o token pairs	19	0	AGREE
+records_per_file_anchor_database	master_RVT-UG13_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	687	s03 grep -o token pairs	687	0	AGREE
+records_per_file_anchor_database	master_RVT-UG13_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	32	s03 grep -o token pairs	32	0	AGREE
+records_per_file_anchor_database	master_RVT-UG13_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	27	s03 grep -o token pairs	27	0	AGREE
+records_per_file_anchor_database	master_RVT-UG13_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	28	s03 grep -o token pairs	28	0	AGREE
+records_per_file_anchor_database	master_RVT-UG13_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	37	s03 grep -o token pairs	37	0	AGREE
+records_per_file_anchor_database	master_RVT-UG13_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1096	s03 grep -o token pairs	1096	0	AGREE
+records_per_file_anchor_database	master_RVT-UG14_merged_oriented.jsonl|RT|gem	s02 json census	70	s03 grep -o token pairs	70	0	AGREE
+records_per_file_anchor_database	master_RVT-UG14_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	761	s03 grep -o token pairs	761	0	AGREE
+records_per_file_anchor_database	master_RVT-UG14_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	211	s03 grep -o token pairs	211	0	AGREE
+records_per_file_anchor_database	master_RVT-UG14_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	21	s03 grep -o token pairs	21	0	AGREE
+records_per_file_anchor_database	master_RVT-UG14_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-UG14_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	5	s03 grep -o token pairs	5	0	AGREE
+records_per_file_anchor_database	master_RVT-UG14_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1454	s03 grep -o token pairs	1454	0	AGREE
+records_per_file_anchor_database	master_RVT-UG15_merged_oriented.jsonl|RT|gem	s02 json census	153	s03 grep -o token pairs	153	0	AGREE
+records_per_file_anchor_database	master_RVT-UG15_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	8	s03 grep -o token pairs	8	0	AGREE
+records_per_file_anchor_database	master_RVT-UG15_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	2747	s03 grep -o token pairs	2747	0	AGREE
+records_per_file_anchor_database	master_RVT-UG15_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	548	s03 grep -o token pairs	548	0	AGREE
+records_per_file_anchor_database	master_RVT-UG15_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	38	s03 grep -o token pairs	38	0	AGREE
+records_per_file_anchor_database	master_RVT-UG15_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	4	s03 grep -o token pairs	4	0	AGREE
+records_per_file_anchor_database	master_RVT-UG15_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	13	s03 grep -o token pairs	13	0	AGREE
+records_per_file_anchor_database	master_RVT-UG15_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	12468	s03 grep -o token pairs	12468	0	AGREE
+records_per_file_anchor_database	master_RVT-UG16_merged_oriented.jsonl|RT|gem	s02 json census	16	s03 grep -o token pairs	16	0	AGREE
+records_per_file_anchor_database	master_RVT-UG16_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG16_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	515	s03 grep -o token pairs	515	0	AGREE
+records_per_file_anchor_database	master_RVT-UG16_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	32	s03 grep -o token pairs	32	0	AGREE
+records_per_file_anchor_database	master_RVT-UG16_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	24	s03 grep -o token pairs	24	0	AGREE
+records_per_file_anchor_database	master_RVT-UG16_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	15	s03 grep -o token pairs	15	0	AGREE
+records_per_file_anchor_database	master_RVT-UG16_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-UG16_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1874	s03 grep -o token pairs	1874	0	AGREE
+records_per_file_anchor_database	master_RVT-UG17_merged_oriented.jsonl|RT|gem	s02 json census	138	s03 grep -o token pairs	138	0	AGREE
+records_per_file_anchor_database	master_RVT-UG17_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	4	s03 grep -o token pairs	4	0	AGREE
+records_per_file_anchor_database	master_RVT-UG17_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	6939	s03 grep -o token pairs	6939	0	AGREE
+records_per_file_anchor_database	master_RVT-UG17_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	558	s03 grep -o token pairs	558	0	AGREE
+records_per_file_anchor_database	master_RVT-UG17_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	98	s03 grep -o token pairs	98	0	AGREE
+records_per_file_anchor_database	master_RVT-UG17_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	9	s03 grep -o token pairs	9	0	AGREE
+records_per_file_anchor_database	master_RVT-UG17_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	15	s03 grep -o token pairs	15	0	AGREE
+records_per_file_anchor_database	master_RVT-UG17_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	31999	s03 grep -o token pairs	31999	0	AGREE
+records_per_file_anchor_database	master_RVT-UG18_merged_oriented.jsonl|RT|gem	s02 json census	8	s03 grep -o token pairs	8	0	AGREE
+records_per_file_anchor_database	master_RVT-UG18_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG18_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	268	s03 grep -o token pairs	268	0	AGREE
+records_per_file_anchor_database	master_RVT-UG18_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG18_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	10	s03 grep -o token pairs	10	0	AGREE
+records_per_file_anchor_database	master_RVT-UG18_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	33	s03 grep -o token pairs	33	0	AGREE
+records_per_file_anchor_database	master_RVT-UG18_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-UG18_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1804	s03 grep -o token pairs	1804	0	AGREE
+records_per_file_anchor_database	master_RVT-UG19_merged_oriented.jsonl|RT|gem	s02 json census	44	s03 grep -o token pairs	44	0	AGREE
+records_per_file_anchor_database	master_RVT-UG19_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	6	s03 grep -o token pairs	6	0	AGREE
+records_per_file_anchor_database	master_RVT-UG19_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	811	s03 grep -o token pairs	811	0	AGREE
+records_per_file_anchor_database	master_RVT-UG19_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	62	s03 grep -o token pairs	62	0	AGREE
+records_per_file_anchor_database	master_RVT-UG19_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	20	s03 grep -o token pairs	20	0	AGREE
+records_per_file_anchor_database	master_RVT-UG19_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	40	s03 grep -o token pairs	40	0	AGREE
+records_per_file_anchor_database	master_RVT-UG19_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	17	s03 grep -o token pairs	17	0	AGREE
+records_per_file_anchor_database	master_RVT-UG19_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1244	s03 grep -o token pairs	1244	0	AGREE
+records_per_file_anchor_database	master_RVT-UG1_merged_oriented.jsonl|RT|gem	s02 json census	48	s03 grep -o token pairs	48	0	AGREE
+records_per_file_anchor_database	master_RVT-UG1_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG1_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	1773	s03 grep -o token pairs	1773	0	AGREE
+records_per_file_anchor_database	master_RVT-UG1_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	28	s03 grep -o token pairs	28	0	AGREE
+records_per_file_anchor_database	master_RVT-UG1_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	71	s03 grep -o token pairs	71	0	AGREE
+records_per_file_anchor_database	master_RVT-UG1_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	11	s03 grep -o token pairs	11	0	AGREE
+records_per_file_anchor_database	master_RVT-UG1_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG1_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	5800	s03 grep -o token pairs	5800	0	AGREE
+records_per_file_anchor_database	master_RVT-UG20_merged_oriented.jsonl|RT|gem	s02 json census	13	s03 grep -o token pairs	13	0	AGREE
+records_per_file_anchor_database	master_RVT-UG20_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-UG20_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	193	s03 grep -o token pairs	193	0	AGREE
+records_per_file_anchor_database	master_RVT-UG20_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG20_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	9	s03 grep -o token pairs	9	0	AGREE
+records_per_file_anchor_database	master_RVT-UG20_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	11	s03 grep -o token pairs	11	0	AGREE
+records_per_file_anchor_database	master_RVT-UG20_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	10	s03 grep -o token pairs	10	0	AGREE
+records_per_file_anchor_database	master_RVT-UG20_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	396	s03 grep -o token pairs	396	0	AGREE
+records_per_file_anchor_database	master_RVT-UG21_merged_oriented.jsonl|RT|gem	s02 json census	11	s03 grep -o token pairs	11	0	AGREE
+records_per_file_anchor_database	master_RVT-UG21_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	7	s03 grep -o token pairs	7	0	AGREE
+records_per_file_anchor_database	master_RVT-UG21_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	105	s03 grep -o token pairs	105	0	AGREE
+records_per_file_anchor_database	master_RVT-UG21_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	13	s03 grep -o token pairs	13	0	AGREE
+records_per_file_anchor_database	master_RVT-UG21_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	17	s03 grep -o token pairs	17	0	AGREE
+records_per_file_anchor_database	master_RVT-UG21_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	18	s03 grep -o token pairs	18	0	AGREE
+records_per_file_anchor_database	master_RVT-UG21_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	214	s03 grep -o token pairs	214	0	AGREE
+records_per_file_anchor_database	master_RVT-UG22_merged_oriented.jsonl|RT|gem	s02 json census	14	s03 grep -o token pairs	14	0	AGREE
+records_per_file_anchor_database	master_RVT-UG22_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	344	s03 grep -o token pairs	344	0	AGREE
+records_per_file_anchor_database	master_RVT-UG22_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	5	s03 grep -o token pairs	5	0	AGREE
+records_per_file_anchor_database	master_RVT-UG22_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	15	s03 grep -o token pairs	15	0	AGREE
+records_per_file_anchor_database	master_RVT-UG22_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	574	s03 grep -o token pairs	574	0	AGREE
+records_per_file_anchor_database	master_RVT-UG23_merged_oriented.jsonl|RT|gem	s02 json census	17	s03 grep -o token pairs	17	0	AGREE
+records_per_file_anchor_database	master_RVT-UG23_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	494	s03 grep -o token pairs	494	0	AGREE
+records_per_file_anchor_database	master_RVT-UG23_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG23_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	6	s03 grep -o token pairs	6	0	AGREE
+records_per_file_anchor_database	master_RVT-UG23_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	34	s03 grep -o token pairs	34	0	AGREE
+records_per_file_anchor_database	master_RVT-UG23_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-UG23_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	859	s03 grep -o token pairs	859	0	AGREE
+records_per_file_anchor_database	master_RVT-UG24_merged_oriented.jsonl|RT|gem	s02 json census	55	s03 grep -o token pairs	55	0	AGREE
+records_per_file_anchor_database	master_RVT-UG24_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	1132	s03 grep -o token pairs	1132	0	AGREE
+records_per_file_anchor_database	master_RVT-UG24_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	801	s03 grep -o token pairs	801	0	AGREE
+records_per_file_anchor_database	master_RVT-UG24_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1401	s03 grep -o token pairs	1401	0	AGREE
+records_per_file_anchor_database	master_RVT-UG25_merged_oriented.jsonl|RT|gem	s02 json census	15	s03 grep -o token pairs	15	0	AGREE
+records_per_file_anchor_database	master_RVT-UG25_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-UG25_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	171	s03 grep -o token pairs	171	0	AGREE
+records_per_file_anchor_database	master_RVT-UG25_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-UG25_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-UG25_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	6	s03 grep -o token pairs	6	0	AGREE
+records_per_file_anchor_database	master_RVT-UG25_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	360	s03 grep -o token pairs	360	0	AGREE
+records_per_file_anchor_database	master_RVT-UG26_merged_oriented.jsonl|RT|gem	s02 json census	140	s03 grep -o token pairs	140	0	AGREE
+records_per_file_anchor_database	master_RVT-UG26_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	70	s03 grep -o token pairs	70	0	AGREE
+records_per_file_anchor_database	master_RVT-UG26_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	3165	s03 grep -o token pairs	3165	0	AGREE
+records_per_file_anchor_database	master_RVT-UG26_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	390	s03 grep -o token pairs	390	0	AGREE
+records_per_file_anchor_database	master_RVT-UG26_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-UG26_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	20	s03 grep -o token pairs	20	0	AGREE
+records_per_file_anchor_database	master_RVT-UG26_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	126	s03 grep -o token pairs	126	0	AGREE
+records_per_file_anchor_database	master_RVT-UG26_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	4493	s03 grep -o token pairs	4493	0	AGREE
+records_per_file_anchor_database	master_RVT-UG27_merged_oriented.jsonl|RT|gem	s02 json census	144	s03 grep -o token pairs	144	0	AGREE
+records_per_file_anchor_database	master_RVT-UG27_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG27_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	1874	s03 grep -o token pairs	1874	0	AGREE
+records_per_file_anchor_database	master_RVT-UG27_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	1726	s03 grep -o token pairs	1726	0	AGREE
+records_per_file_anchor_database	master_RVT-UG27_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-UG27_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	2677	s03 grep -o token pairs	2677	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28_merged_oriented.jsonl|RT|gem	s02 json census	46	s03 grep -o token pairs	46	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	1397	s03 grep -o token pairs	1397	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	23	s03 grep -o token pairs	23	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	43	s03 grep -o token pairs	43	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	21	s03 grep -o token pairs	21	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	4	s03 grep -o token pairs	4	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	2880	s03 grep -o token pairs	2880	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28b_merged_oriented.jsonl|RT|gem	s02 json census	74	s03 grep -o token pairs	74	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28b_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	626	s03 grep -o token pairs	626	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28b_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	223	s03 grep -o token pairs	223	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28b_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	38	s03 grep -o token pairs	38	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28b_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	8	s03 grep -o token pairs	8	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28b_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG28b_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	999	s03 grep -o token pairs	999	0	AGREE
+records_per_file_anchor_database	master_RVT-UG2_merged_oriented.jsonl|RT|gem	s02 json census	433	s03 grep -o token pairs	433	0	AGREE
+records_per_file_anchor_database	master_RVT-UG2_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG2_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	10417	s03 grep -o token pairs	10417	0	AGREE
+records_per_file_anchor_database	master_RVT-UG2_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	1986	s03 grep -o token pairs	1986	0	AGREE
+records_per_file_anchor_database	master_RVT-UG2_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	192	s03 grep -o token pairs	192	0	AGREE
+records_per_file_anchor_database	master_RVT-UG2_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	66	s03 grep -o token pairs	66	0	AGREE
+records_per_file_anchor_database	master_RVT-UG2_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	5	s03 grep -o token pairs	5	0	AGREE
+records_per_file_anchor_database	master_RVT-UG2_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	33370	s03 grep -o token pairs	33370	0	AGREE
+records_per_file_anchor_database	master_RVT-UG3_merged_oriented.jsonl|RT|gem	s02 json census	251	s03 grep -o token pairs	251	0	AGREE
+records_per_file_anchor_database	master_RVT-UG3_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	6899	s03 grep -o token pairs	6899	0	AGREE
+records_per_file_anchor_database	master_RVT-UG3_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	843	s03 grep -o token pairs	843	0	AGREE
+records_per_file_anchor_database	master_RVT-UG3_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	222	s03 grep -o token pairs	222	0	AGREE
+records_per_file_anchor_database	master_RVT-UG3_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	22	s03 grep -o token pairs	22	0	AGREE
+records_per_file_anchor_database	master_RVT-UG3_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	7	s03 grep -o token pairs	7	0	AGREE
+records_per_file_anchor_database	master_RVT-UG3_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	31914	s03 grep -o token pairs	31914	0	AGREE
+records_per_file_anchor_database	master_RVT-UG4_merged_oriented.jsonl|RT|gem	s02 json census	129	s03 grep -o token pairs	129	0	AGREE
+records_per_file_anchor_database	master_RVT-UG4_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	8	s03 grep -o token pairs	8	0	AGREE
+records_per_file_anchor_database	master_RVT-UG4_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	5561	s03 grep -o token pairs	5561	0	AGREE
+records_per_file_anchor_database	master_RVT-UG4_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	89	s03 grep -o token pairs	89	0	AGREE
+records_per_file_anchor_database	master_RVT-UG4_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	131	s03 grep -o token pairs	131	0	AGREE
+records_per_file_anchor_database	master_RVT-UG4_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	22	s03 grep -o token pairs	22	0	AGREE
+records_per_file_anchor_database	master_RVT-UG4_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	15	s03 grep -o token pairs	15	0	AGREE
+records_per_file_anchor_database	master_RVT-UG4_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	27090	s03 grep -o token pairs	27090	0	AGREE
+records_per_file_anchor_database	master_RVT-UG5_merged_oriented.jsonl|RT|gem	s02 json census	318	s03 grep -o token pairs	318	0	AGREE
+records_per_file_anchor_database	master_RVT-UG5_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	37	s03 grep -o token pairs	37	0	AGREE
+records_per_file_anchor_database	master_RVT-UG5_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	7366	s03 grep -o token pairs	7366	0	AGREE
+records_per_file_anchor_database	master_RVT-UG5_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	1023	s03 grep -o token pairs	1023	0	AGREE
+records_per_file_anchor_database	master_RVT-UG5_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	90	s03 grep -o token pairs	90	0	AGREE
+records_per_file_anchor_database	master_RVT-UG5_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	8	s03 grep -o token pairs	8	0	AGREE
+records_per_file_anchor_database	master_RVT-UG5_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	58	s03 grep -o token pairs	58	0	AGREE
+records_per_file_anchor_database	master_RVT-UG5_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	44045	s03 grep -o token pairs	44045	0	AGREE
+records_per_file_anchor_database	master_RVT-UG6_merged_oriented.jsonl|RT|gem	s02 json census	32	s03 grep -o token pairs	32	0	AGREE
+records_per_file_anchor_database	master_RVT-UG6_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	463	s03 grep -o token pairs	463	0	AGREE
+records_per_file_anchor_database	master_RVT-UG6_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	44	s03 grep -o token pairs	44	0	AGREE
+records_per_file_anchor_database	master_RVT-UG6_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	6	s03 grep -o token pairs	6	0	AGREE
+records_per_file_anchor_database	master_RVT-UG6_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	3	s03 grep -o token pairs	3	0	AGREE
+records_per_file_anchor_database	master_RVT-UG6_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	4	s03 grep -o token pairs	4	0	AGREE
+records_per_file_anchor_database	master_RVT-UG6_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	538	s03 grep -o token pairs	538	0	AGREE
+records_per_file_anchor_database	master_RVT-UG7_merged_oriented.jsonl|RT|gem	s02 json census	133	s03 grep -o token pairs	133	0	AGREE
+records_per_file_anchor_database	master_RVT-UG7_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	9	s03 grep -o token pairs	9	0	AGREE
+records_per_file_anchor_database	master_RVT-UG7_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	3787	s03 grep -o token pairs	3787	0	AGREE
+records_per_file_anchor_database	master_RVT-UG7_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	193	s03 grep -o token pairs	193	0	AGREE
+records_per_file_anchor_database	master_RVT-UG7_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	79	s03 grep -o token pairs	79	0	AGREE
+records_per_file_anchor_database	master_RVT-UG7_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	71	s03 grep -o token pairs	71	0	AGREE
+records_per_file_anchor_database	master_RVT-UG7_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	31	s03 grep -o token pairs	31	0	AGREE
+records_per_file_anchor_database	master_RVT-UG7_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	14177	s03 grep -o token pairs	14177	0	AGREE
+records_per_file_anchor_database	master_RVT-UG8_merged_oriented.jsonl|RT|gem	s02 json census	246	s03 grep -o token pairs	246	0	AGREE
+records_per_file_anchor_database	master_RVT-UG8_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	1	s03 grep -o token pairs	1	0	AGREE
+records_per_file_anchor_database	master_RVT-UG8_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	6834	s03 grep -o token pairs	6834	0	AGREE
+records_per_file_anchor_database	master_RVT-UG8_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	923	s03 grep -o token pairs	923	0	AGREE
+records_per_file_anchor_database	master_RVT-UG8_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	204	s03 grep -o token pairs	204	0	AGREE
+records_per_file_anchor_database	master_RVT-UG8_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	22	s03 grep -o token pairs	22	0	AGREE
+records_per_file_anchor_database	master_RVT-UG8_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	7	s03 grep -o token pairs	7	0	AGREE
+records_per_file_anchor_database	master_RVT-UG8_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	30651	s03 grep -o token pairs	30651	0	AGREE
+records_per_file_anchor_database	master_RVT-UG9_merged_oriented.jsonl|RT|gem	s02 json census	64	s03 grep -o token pairs	64	0	AGREE
+records_per_file_anchor_database	master_RVT-UG9_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	2	s03 grep -o token pairs	2	0	AGREE
+records_per_file_anchor_database	master_RVT-UG9_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	932	s03 grep -o token pairs	932	0	AGREE
+records_per_file_anchor_database	master_RVT-UG9_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	98	s03 grep -o token pairs	98	0	AGREE
+records_per_file_anchor_database	master_RVT-UG9_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	19	s03 grep -o token pairs	19	0	AGREE
+records_per_file_anchor_database	master_RVT-UG9_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	10	s03 grep -o token pairs	10	0	AGREE
+records_per_file_anchor_database	master_RVT-UG9_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	4	s03 grep -o token pairs	4	0	AGREE
+records_per_file_anchor_database	master_RVT-UG9_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	1371	s03 grep -o token pairs	1371	0	AGREE
+records_per_file_anchor_database	master_Retron_merged_oriented.jsonl|RT|gem	s02 json census	3576	s03 grep -o token pairs	3576	0	AGREE
+records_per_file_anchor_database	master_Retron_merged_oriented.jsonl|RT|gtdb_archaea	s02 json census	145	s03 grep -o token pairs	145	0	AGREE
+records_per_file_anchor_database	master_Retron_merged_oriented.jsonl|RT|gtdb_bacteria	s02 json census	104902	s03 grep -o token pairs	104902	0	AGREE
+records_per_file_anchor_database	master_Retron_merged_oriented.jsonl|RT|mgnify_human_gut	s02 json census	24903	s03 grep -o token pairs	24903	0	AGREE
+records_per_file_anchor_database	master_Retron_merged_oriented.jsonl|RT|mgnify_marine	s02 json census	2458	s03 grep -o token pairs	2458	0	AGREE
+records_per_file_anchor_database	master_Retron_merged_oriented.jsonl|RT|mgnify_soil	s02 json census	1598	s03 grep -o token pairs	1598	0	AGREE
+records_per_file_anchor_database	master_Retron_merged_oriented.jsonl|RT|ncbi_archaea	s02 json census	367	s03 grep -o token pairs	367	0	AGREE
+records_per_file_anchor_database	master_Retron_merged_oriented.jsonl|RT|ncbi_bacteria	s02 json census	527372	s03 grep -o token pairs	527372	0	AGREE
+records_per_file_anchor_database	master_ncRNA-anchored_merged.jsonl|ncRNA|gem	s02 json census	4605	s03 grep -o token pairs	4605	0	AGREE
+records_per_file_anchor_database	master_ncRNA-anchored_merged.jsonl|ncRNA|gtdb_archaea	s02 json census	617	s03 grep -o token pairs	617	0	AGREE
+records_per_file_anchor_database	master_ncRNA-anchored_merged.jsonl|ncRNA|gtdb_bacteria	s02 json census	83564	s03 grep -o token pairs	83564	0	AGREE
+records_per_file_anchor_database	master_ncRNA-anchored_merged.jsonl|ncRNA|mgnify_human_gut	s02 json census	21650	s03 grep -o token pairs	21650	0	AGREE
+records_per_file_anchor_database	master_ncRNA-anchored_merged.jsonl|ncRNA|mgnify_marine	s02 json census	1875	s03 grep -o token pairs	1875	0	AGREE
+records_per_file_anchor_database	master_ncRNA-anchored_merged.jsonl|ncRNA|mgnify_soil	s02 json census	4356	s03 grep -o token pairs	4356	0	AGREE
+records_per_file_anchor_database	master_ncRNA-anchored_merged.jsonl|ncRNA|ncbi_archaea	s02 json census	1253	s03 grep -o token pairs	1253	0	AGREE
+records_per_file_anchor_database	master_ncRNA-anchored_merged.jsonl|ncRNA|ncbi_bacteria	s02 json census	180562	s03 grep -o token pairs	180562	0	AGREE
+records_per_file_all_anchor_database	master_MULTI_merged_oriented.jsonl	s02 parsed objects	9012	s03 lines with any token pair	9012	0	AGREE
+records_per_file_all_anchor_database	master_RVT-AbiA_merged_oriented.jsonl	s02 parsed objects	46	s03 lines with any token pair	46	0	AGREE
+records_per_file_all_anchor_database	master_RVT-AbiK_merged_oriented.jsonl	s02 parsed objects	9516	s03 lines with any token pair	9516	0	AGREE
+records_per_file_all_anchor_database	master_RVT-AbiP2_merged_oriented.jsonl	s02 parsed objects	47333	s03 lines with any token pair	47333	0	AGREE
+records_per_file_all_anchor_database	master_RVT-CRISPR-like_merged_oriented.jsonl	s02 parsed objects	6776	s03 lines with any token pair	6776	0	AGREE
+records_per_file_all_anchor_database	master_RVT-CRISPR_merged_oriented.jsonl	s02 parsed objects	9711	s03 lines with any token pair	9711	0	AGREE
+records_per_file_all_anchor_database	master_RVT-DGRs_merged_oriented.jsonl	s02 parsed objects	228171	s03 lines with any token pair	228171	0	AGREE
+records_per_file_all_anchor_database	master_RVT-G2L4_merged_oriented.jsonl	s02 parsed objects	3055	s03 lines with any token pair	3055	0	AGREE
+records_per_file_all_anchor_database	master_RVT-G2L_merged_oriented.jsonl	s02 parsed objects	38428	s03 lines with any token pair	38428	0	AGREE
+records_per_file_all_anchor_database	master_RVT-G2Lb_merged_oriented.jsonl	s02 parsed objects	657	s03 lines with any token pair	657	0	AGREE
+records_per_file_all_anchor_database	master_RVT-G2Lc_merged_oriented.jsonl	s02 parsed objects	1498	s03 lines with any token pair	1498	0	AGREE
+records_per_file_all_anchor_database	master_RVT-GII_merged_oriented.jsonl	s02 parsed objects	1618431	s03 lines with any token pair	1618431	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG10_merged_oriented.jsonl	s02 parsed objects	2114	s03 lines with any token pair	2114	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG11_merged_oriented.jsonl	s02 parsed objects	76193	s03 lines with any token pair	76193	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG12_merged_oriented.jsonl	s02 parsed objects	6454	s03 lines with any token pair	6454	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG13_merged_oriented.jsonl	s02 parsed objects	2011	s03 lines with any token pair	2011	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG14_merged_oriented.jsonl	s02 parsed objects	2525	s03 lines with any token pair	2525	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG15_merged_oriented.jsonl	s02 parsed objects	15979	s03 lines with any token pair	15979	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG16_merged_oriented.jsonl	s02 parsed objects	2480	s03 lines with any token pair	2480	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG17_merged_oriented.jsonl	s02 parsed objects	39760	s03 lines with any token pair	39760	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG18_merged_oriented.jsonl	s02 parsed objects	2127	s03 lines with any token pair	2127	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG19_merged_oriented.jsonl	s02 parsed objects	2244	s03 lines with any token pair	2244	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG1_merged_oriented.jsonl	s02 parsed objects	7733	s03 lines with any token pair	7733	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG20_merged_oriented.jsonl	s02 parsed objects	636	s03 lines with any token pair	636	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG21_merged_oriented.jsonl	s02 parsed objects	385	s03 lines with any token pair	385	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG22_merged_oriented.jsonl	s02 parsed objects	952	s03 lines with any token pair	952	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG23_merged_oriented.jsonl	s02 parsed objects	1413	s03 lines with any token pair	1413	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG24_merged_oriented.jsonl	s02 parsed objects	3389	s03 lines with any token pair	3389	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG25_merged_oriented.jsonl	s02 parsed objects	559	s03 lines with any token pair	559	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG26_merged_oriented.jsonl	s02 parsed objects	8407	s03 lines with any token pair	8407	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG27_merged_oriented.jsonl	s02 parsed objects	6425	s03 lines with any token pair	6425	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG28_merged_oriented.jsonl	s02 parsed objects	4414	s03 lines with any token pair	4414	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG28b_merged_oriented.jsonl	s02 parsed objects	1969	s03 lines with any token pair	1969	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG2_merged_oriented.jsonl	s02 parsed objects	46470	s03 lines with any token pair	46470	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG3_merged_oriented.jsonl	s02 parsed objects	40158	s03 lines with any token pair	40158	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG4_merged_oriented.jsonl	s02 parsed objects	33045	s03 lines with any token pair	33045	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG5_merged_oriented.jsonl	s02 parsed objects	52945	s03 lines with any token pair	52945	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG6_merged_oriented.jsonl	s02 parsed objects	1090	s03 lines with any token pair	1090	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG7_merged_oriented.jsonl	s02 parsed objects	18480	s03 lines with any token pair	18480	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG8_merged_oriented.jsonl	s02 parsed objects	38888	s03 lines with any token pair	38888	0	AGREE
+records_per_file_all_anchor_database	master_RVT-UG9_merged_oriented.jsonl	s02 parsed objects	2500	s03 lines with any token pair	2500	0	AGREE
+records_per_file_all_anchor_database	master_Retron_merged_oriented.jsonl	s02 parsed objects	665321	s03 lines with any token pair	665321	0	AGREE
+records_per_file_all_anchor_database	master_ncRNA-anchored_merged.jsonl	s02 parsed objects	298482	s03 lines with any token pair	298482	0	AGREE
+population_total	POP-RT-FAM	s02 json census	3050688	s03 grep, same definition	3050688	0	AGREE
+population_total	POP-RT-MULTI	s02 json census	9012	s03 grep, same definition	9012	0	AGREE
+population_total	POP-NCRNA	s02 json census	298482	s03 grep, same definition	298482	0	AGREE
+all_lines_total	corpus	s02 split lines	3358182	s03 wc -l + unterminated	3358182	0	AGREE

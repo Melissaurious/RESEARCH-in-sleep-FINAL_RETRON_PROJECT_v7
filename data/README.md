@@ -36,8 +36,15 @@ to rediscover them.
 
 ### Corpus scope rule for Stage 1
 
+**Identity pin (2026-09-15):** `results/dbchar_g1_corpus_identity/` — per-file sha256 in its
+`INPUTS.tsv`/`tables/s01_file_identity.tsv`, record-manifest digest in
+`tables/s02_record_manifest_digest.tsv`, anchor populations in `tables/s02_populations.tsv`.
+Counts live in the bundle, not here.
+
 RT analyses operate on RT-anchored records. An ncRNA-anchor-only master file is not silently
-mixed into RT denominators. `MULTI` remains its own multi-label population and is not appended
+mixed into RT denominators. The binding Stage-1 population rules (ncRNA-anchor-only exclusion,
+MULTI stratum, RT-CDS-less eligibility classification) are
+`docs/decisions/2026-09-15_stage1_population_rules.md`. `MULTI` remains its own multi-label population and is not appended
 to any single RT family. Exact in-scope file inventory and counts are derived by Stage 1 and
 are not hard-coded here.
 

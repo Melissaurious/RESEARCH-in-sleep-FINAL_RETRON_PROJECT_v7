@@ -1,0 +1,455 @@
+population	path	schema_documented	n_records_with_path	n_parsed_records_in_population	n_occurrences	n_null_occurrences	observed_types
+POP-RT-FAM	anchor_center	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	anchor_center	True	9012	9012	9012	0	int:9012
+POP-NCRNA	anchor_center	True	298482	298482	298482	0	int:298482
+POP-OTHER	anchor_center	True	0	0	0	0	
+POP-RT-FAM	anchor_end	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	anchor_end	True	9012	9012	9012	0	int:9012
+POP-NCRNA	anchor_end	True	298482	298482	298482	0	int:298482
+POP-OTHER	anchor_end	True	0	0	0	0	
+POP-RT-FAM	anchor_gene_id	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	anchor_gene_id	True	9012	9012	9012	0	str:9012
+POP-NCRNA	anchor_gene_id	True	298482	298482	298482	298482	null:298482
+POP-OTHER	anchor_gene_id	True	0	0	0	0	
+POP-RT-FAM	anchor_start	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	anchor_start	True	9012	9012	9012	0	int:9012
+POP-NCRNA	anchor_start	True	298482	298482	298482	0	int:298482
+POP-OTHER	anchor_start	True	0	0	0	0	
+POP-RT-FAM	anchor_strand	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	anchor_strand	True	9012	9012	9012	0	str:9012
+POP-NCRNA	anchor_strand	True	298482	298482	298482	0	str:298482
+POP-OTHER	anchor_strand	True	0	0	0	0	
+POP-RT-FAM	anchor_type	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	anchor_type	True	9012	9012	9012	0	str:9012
+POP-NCRNA	anchor_type	True	298482	298482	298482	0	str:298482
+POP-OTHER	anchor_type	True	0	0	0	0	
+POP-RT-FAM	cds_annotations	True	3050688	3050688	3050688	0	list:3050688
+POP-RT-MULTI	cds_annotations	True	9012	9012	9012	0	list:9012
+POP-NCRNA	cds_annotations	True	298482	298482	298482	0	list:298482
+POP-OTHER	cds_annotations	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].contig	True	3046988	3050688	44242429	0	str:44242429
+POP-RT-MULTI	cds_annotations[].contig	True	8748	9012	67802	0	str:67802
+POP-NCRNA	cds_annotations[].contig	True	298189	298482	4438214	0	str:4438214
+POP-OTHER	cds_annotations[].contig	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].end	True	3046988	3050688	44242429	0	int:44242429
+POP-RT-MULTI	cds_annotations[].end	True	8748	9012	67802	0	int:67802
+POP-NCRNA	cds_annotations[].end	True	298189	298482	4438214	0	int:4438214
+POP-OTHER	cds_annotations[].end	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].gene_id	True	3046988	3050688	44242429	0	str:44242429
+POP-RT-MULTI	cds_annotations[].gene_id	True	8748	9012	67802	0	str:67802
+POP-NCRNA	cds_annotations[].gene_id	True	298189	298482	4438214	0	str:4438214
+POP-OTHER	cds_annotations[].gene_id	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].is_rt_gene	True	3046988	3050688	44242429	0	bool:44242429
+POP-RT-MULTI	cds_annotations[].is_rt_gene	True	8748	9012	67802	0	bool:67802
+POP-NCRNA	cds_annotations[].is_rt_gene	True	298189	298482	4438214	0	bool:4438214
+POP-OTHER	cds_annotations[].is_rt_gene	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].length	True	3046988	3050688	44242429	0	int:44242429
+POP-RT-MULTI	cds_annotations[].length	True	8748	9012	67802	0	int:67802
+POP-NCRNA	cds_annotations[].length	True	298189	298482	4438214	0	int:4438214
+POP-OTHER	cds_annotations[].length	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].prodigal_metadata	True	3046988	3050688	44242429	0	dict:44242429
+POP-RT-MULTI	cds_annotations[].prodigal_metadata	True	8748	9012	67802	0	dict:67802
+POP-NCRNA	cds_annotations[].prodigal_metadata	True	298189	298482	4438214	0	dict:4438214
+POP-OTHER	cds_annotations[].prodigal_metadata	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].prodigal_metadata.gc_cont	True	3046988	3050688	44242429	0	float:44242429
+POP-RT-MULTI	cds_annotations[].prodigal_metadata.gc_cont	True	8748	9012	67802	0	float:67802
+POP-NCRNA	cds_annotations[].prodigal_metadata.gc_cont	True	298189	298482	4438214	0	float:4438214
+POP-OTHER	cds_annotations[].prodigal_metadata.gc_cont	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].prodigal_metadata.partial	True	3046988	3050688	44242429	0	str:44242429
+POP-RT-MULTI	cds_annotations[].prodigal_metadata.partial	True	8748	9012	67802	0	str:67802
+POP-NCRNA	cds_annotations[].prodigal_metadata.partial	True	298189	298482	4438214	0	str:4438214
+POP-OTHER	cds_annotations[].prodigal_metadata.partial	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].prodigal_metadata.rbs_motif	True	3046988	3050688	44242429	0	str:44242429
+POP-RT-MULTI	cds_annotations[].prodigal_metadata.rbs_motif	True	8748	9012	67802	0	str:67802
+POP-NCRNA	cds_annotations[].prodigal_metadata.rbs_motif	True	298189	298482	4438214	0	str:4438214
+POP-OTHER	cds_annotations[].prodigal_metadata.rbs_motif	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].prodigal_metadata.rbs_spacer	True	3046988	3050688	44242429	0	str:44242429
+POP-RT-MULTI	cds_annotations[].prodigal_metadata.rbs_spacer	True	8748	9012	67802	0	str:67802
+POP-NCRNA	cds_annotations[].prodigal_metadata.rbs_spacer	True	298189	298482	4438214	0	str:4438214
+POP-OTHER	cds_annotations[].prodigal_metadata.rbs_spacer	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].prodigal_metadata.start_type	True	3046988	3050688	44242429	0	str:44242429
+POP-RT-MULTI	cds_annotations[].prodigal_metadata.start_type	True	8748	9012	67802	0	str:67802
+POP-NCRNA	cds_annotations[].prodigal_metadata.start_type	True	298189	298482	4438214	0	str:4438214
+POP-OTHER	cds_annotations[].prodigal_metadata.start_type	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].sequence	True	3021220	3050688	3021220	0	str:3021220
+POP-RT-MULTI	cds_annotations[].sequence	True	6976	9012	6976	0	str:6976
+POP-NCRNA	cds_annotations[].sequence	True	0	298482	0	0	
+POP-OTHER	cds_annotations[].sequence	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].start	True	3046988	3050688	44242429	0	int:44242429
+POP-RT-MULTI	cds_annotations[].start	True	8748	9012	67802	0	int:67802
+POP-NCRNA	cds_annotations[].start	True	298189	298482	4438214	0	int:4438214
+POP-OTHER	cds_annotations[].start	True	0	0	0	0	
+POP-RT-FAM	cds_annotations[].strand	True	3046988	3050688	44242429	0	str:44242429
+POP-RT-MULTI	cds_annotations[].strand	True	8748	9012	67802	0	str:67802
+POP-NCRNA	cds_annotations[].strand	True	298189	298482	4438214	0	str:4438214
+POP-OTHER	cds_annotations[].strand	True	0	0	0	0	
+POP-RT-FAM	contig	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	contig	True	9012	9012	9012	0	str:9012
+POP-NCRNA	contig	True	298482	298482	298482	0	str:298482
+POP-OTHER	contig	True	0	0	0	0	
+POP-RT-FAM	genome_id	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	genome_id	True	9012	9012	9012	0	str:9012
+POP-NCRNA	genome_id	True	298482	298482	298482	0	str:298482
+POP-OTHER	genome_id	True	0	0	0	0	
+POP-RT-FAM	genomic_context	True	3050688	3050688	3050688	0	dict:3050688
+POP-RT-MULTI	genomic_context	True	9012	9012	9012	0	dict:9012
+POP-NCRNA	genomic_context	True	298482	298482	298482	0	dict:298482
+POP-OTHER	genomic_context	True	0	0	0	0	
+POP-RT-FAM	genomic_context.actual_window	True	3050688	3050688	3050688	0	dict:3050688
+POP-RT-MULTI	genomic_context.actual_window	True	9012	9012	9012	0	dict:9012
+POP-NCRNA	genomic_context.actual_window	True	298482	298482	298482	0	dict:298482
+POP-OTHER	genomic_context.actual_window	True	0	0	0	0	
+POP-RT-FAM	genomic_context.actual_window.clipped_at_contig_end	True	3050688	3050688	3050688	0	bool:3050688
+POP-RT-MULTI	genomic_context.actual_window.clipped_at_contig_end	True	9012	9012	9012	0	bool:9012
+POP-NCRNA	genomic_context.actual_window.clipped_at_contig_end	True	298482	298482	298482	0	bool:298482
+POP-OTHER	genomic_context.actual_window.clipped_at_contig_end	True	0	0	0	0	
+POP-RT-FAM	genomic_context.actual_window.clipped_at_contig_start	True	3050688	3050688	3050688	0	bool:3050688
+POP-RT-MULTI	genomic_context.actual_window.clipped_at_contig_start	True	9012	9012	9012	0	bool:9012
+POP-NCRNA	genomic_context.actual_window.clipped_at_contig_start	True	298482	298482	298482	0	bool:298482
+POP-OTHER	genomic_context.actual_window.clipped_at_contig_start	True	0	0	0	0	
+POP-RT-FAM	genomic_context.actual_window.end	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	genomic_context.actual_window.end	True	9012	9012	9012	0	int:9012
+POP-NCRNA	genomic_context.actual_window.end	True	298482	298482	298482	0	int:298482
+POP-OTHER	genomic_context.actual_window.end	True	0	0	0	0	
+POP-RT-FAM	genomic_context.actual_window.start	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	genomic_context.actual_window.start	True	9012	9012	9012	0	int:9012
+POP-NCRNA	genomic_context.actual_window.start	True	298482	298482	298482	0	int:298482
+POP-OTHER	genomic_context.actual_window.start	True	0	0	0	0	
+POP-RT-FAM	genomic_context.extended_for_cds	True	3050688	3050688	3050688	0	bool:3050688
+POP-RT-MULTI	genomic_context.extended_for_cds	True	9012	9012	9012	0	bool:9012
+POP-NCRNA	genomic_context.extended_for_cds	True	298482	298482	298482	0	bool:298482
+POP-OTHER	genomic_context.extended_for_cds	True	0	0	0	0	
+POP-RT-FAM	genomic_context.full_sequence	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	genomic_context.full_sequence	True	9012	9012	9012	0	str:9012
+POP-NCRNA	genomic_context.full_sequence	True	298482	298482	298482	0	str:298482
+POP-OTHER	genomic_context.full_sequence	True	0	0	0	0	
+POP-RT-FAM	genomic_context.length	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	genomic_context.length	True	9012	9012	9012	0	int:9012
+POP-NCRNA	genomic_context.length	True	298482	298482	298482	0	int:298482
+POP-OTHER	genomic_context.length	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions	True	3050688	3050688	3050688	0	list:3050688
+POP-RT-MULTI	intergenic_regions	True	9012	9012	9012	0	list:9012
+POP-NCRNA	intergenic_regions	True	298482	298482	298482	0	list:298482
+POP-OTHER	intergenic_regions	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].downstream_gene	True	3040259	3050688	35419230	1279705	dict:34139525|null:1279705
+POP-RT-MULTI	intergenic_regions[].downstream_gene	True	8880	9012	59943	5898	dict:54045|null:5898
+POP-NCRNA	intergenic_regions[].downstream_gene	True	298385	298482	3696007	110030	dict:3585977|null:110030
+POP-OTHER	intergenic_regions[].downstream_gene	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].downstream_gene.gene_id	True	3006630	3050688	34139525	0	str:34139525
+POP-RT-MULTI	intergenic_regions[].downstream_gene.gene_id	True	8163	9012	54045	0	str:54045
+POP-NCRNA	intergenic_regions[].downstream_gene.gene_id	True	297358	298482	3585977	0	str:3585977
+POP-OTHER	intergenic_regions[].downstream_gene.gene_id	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].downstream_gene.strand	True	3006630	3050688	34139525	0	str:34139525
+POP-RT-MULTI	intergenic_regions[].downstream_gene.strand	True	8163	9012	54045	0	str:54045
+POP-NCRNA	intergenic_regions[].downstream_gene.strand	True	297358	298482	3585977	0	str:3585977
+POP-OTHER	intergenic_regions[].downstream_gene.strand	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].end	True	3040259	3050688	35419230	0	int:35419230
+POP-RT-MULTI	intergenic_regions[].end	True	8880	9012	59943	0	int:59943
+POP-NCRNA	intergenic_regions[].end	True	298385	298482	3696007	0	int:3696007
+POP-OTHER	intergenic_regions[].end	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].has_ncrna	True	3040259	3050688	35419230	0	bool:35419230
+POP-RT-MULTI	intergenic_regions[].has_ncrna	True	8880	9012	59943	0	bool:59943
+POP-NCRNA	intergenic_regions[].has_ncrna	True	298385	298482	3696007	0	bool:3696007
+POP-OTHER	intergenic_regions[].has_ncrna	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].length	True	3040259	3050688	35419230	0	int:35419230
+POP-RT-MULTI	intergenic_regions[].length	True	8880	9012	59943	0	int:59943
+POP-NCRNA	intergenic_regions[].length	True	298385	298482	3696007	0	int:3696007
+POP-OTHER	intergenic_regions[].length	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].ncrna_ids	True	3040259	3050688	35419230	0	list:35419230
+POP-RT-MULTI	intergenic_regions[].ncrna_ids	True	8880	9012	59943	0	list:59943
+POP-NCRNA	intergenic_regions[].ncrna_ids	True	298385	298482	3696007	0	list:3696007
+POP-OTHER	intergenic_regions[].ncrna_ids	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].region_id	True	3040259	3050688	35419230	0	str:35419230
+POP-RT-MULTI	intergenic_regions[].region_id	True	8880	9012	59943	0	str:59943
+POP-NCRNA	intergenic_regions[].region_id	True	298385	298482	3696007	0	str:3696007
+POP-OTHER	intergenic_regions[].region_id	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].start	True	3040259	3050688	35419230	0	int:35419230
+POP-RT-MULTI	intergenic_regions[].start	True	8880	9012	59943	0	int:59943
+POP-NCRNA	intergenic_regions[].start	True	298385	298482	3696007	0	int:3696007
+POP-OTHER	intergenic_regions[].start	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].upstream_gene	True	3040259	3050688	35419230	1234301	dict:34184929|null:1234301
+POP-RT-MULTI	intergenic_regions[].upstream_gene	True	8880	9012	59943	5652	dict:54291|null:5652
+POP-NCRNA	intergenic_regions[].upstream_gene	True	298385	298482	3696007	93198	dict:3602809|null:93198
+POP-OTHER	intergenic_regions[].upstream_gene	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].upstream_gene.gene_id	True	3011087	3050688	34184929	0	str:34184929
+POP-RT-MULTI	intergenic_regions[].upstream_gene.gene_id	True	8180	9012	54291	0	str:54291
+POP-NCRNA	intergenic_regions[].upstream_gene.gene_id	True	297602	298482	3602809	0	str:3602809
+POP-OTHER	intergenic_regions[].upstream_gene.gene_id	True	0	0	0	0	
+POP-RT-FAM	intergenic_regions[].upstream_gene.strand	True	3011087	3050688	34184929	0	str:34184929
+POP-RT-MULTI	intergenic_regions[].upstream_gene.strand	True	8180	9012	54291	0	str:54291
+POP-NCRNA	intergenic_regions[].upstream_gene.strand	True	297602	298482	3602809	0	str:3602809
+POP-OTHER	intergenic_regions[].upstream_gene.strand	True	0	0	0	0	
+POP-RT-FAM	metadata	True	3050688	3050688	3050688	0	dict:3050688
+POP-RT-MULTI	metadata	True	9012	9012	9012	0	dict:9012
+POP-NCRNA	metadata	True	298482	298482	298482	0	dict:298482
+POP-OTHER	metadata	True	0	0	0	0	
+POP-RT-FAM	metadata.detected_by	True	3050688	3050688	3050688	0	list:3050688
+POP-RT-MULTI	metadata.detected_by	True	9012	9012	9012	0	list:9012
+POP-NCRNA	metadata.detected_by	True	298482	298482	298482	0	list:298482
+POP-OTHER	metadata.detected_by	True	0	0	0	0	
+POP-RT-FAM	metadata.total_genes	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	metadata.total_genes	True	9012	9012	9012	0	int:9012
+POP-NCRNA	metadata.total_genes	True	298482	298482	298482	0	int:298482
+POP-OTHER	metadata.total_genes	True	0	0	0	0	
+POP-RT-FAM	metadata.total_intergenic_regions	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	metadata.total_intergenic_regions	True	9012	9012	9012	0	int:9012
+POP-NCRNA	metadata.total_intergenic_regions	True	298482	298482	298482	0	int:298482
+POP-OTHER	metadata.total_intergenic_regions	True	0	0	0	0	
+POP-RT-FAM	metadata.total_ncrnas	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	metadata.total_ncrnas	True	9012	9012	9012	0	int:9012
+POP-NCRNA	metadata.total_ncrnas	True	298482	298482	298482	0	int:298482
+POP-OTHER	metadata.total_ncrnas	True	0	0	0	0	
+POP-RT-FAM	ncrnas	True	3050688	3050688	3050688	0	list:3050688
+POP-RT-MULTI	ncrnas	True	9012	9012	9012	0	list:9012
+POP-NCRNA	ncrnas	True	298482	298482	298482	0	list:298482
+POP-OTHER	ncrnas	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].detection_model	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].detection_model	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].detection_model	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].detection_model	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].dot_bracket	True	4740	3050688	4743	0	str:4743
+POP-RT-MULTI	ncrnas[].dot_bracket	True	4	9012	4	0	str:4
+POP-NCRNA	ncrnas[].dot_bracket	True	8410	298482	8414	0	str:8414
+POP-OTHER	ncrnas[].dot_bracket	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].downstream_gene_id	True	346400	3050688	346716	3335	null:3335|str:343381
+POP-RT-MULTI	ncrnas[].downstream_gene_id	True	6	9012	6	1	null:1|str:5
+POP-NCRNA	ncrnas[].downstream_gene_id	True	298482	298482	298608	28833	null:28833|str:269775
+POP-OTHER	ncrnas[].downstream_gene_id	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].end	True	346400	3050688	346716	0	int:346716
+POP-RT-MULTI	ncrnas[].end	True	6	9012	6	0	int:6
+POP-NCRNA	ncrnas[].end	True	298482	298482	298608	0	int:298608
+POP-OTHER	ncrnas[].end	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].evalue	True	346400	3050688	346716	0	float:346716
+POP-RT-MULTI	ncrnas[].evalue	True	6	9012	6	0	float:6
+POP-NCRNA	ncrnas[].evalue	True	298482	298482	298608	71867	float:226741|null:71867
+POP-OTHER	ncrnas[].evalue	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].flanking_genes	True	346400	3050688	346716	0	list:346716
+POP-RT-MULTI	ncrnas[].flanking_genes	True	6	9012	6	0	list:6
+POP-NCRNA	ncrnas[].flanking_genes	True	226615	298482	226741	0	list:226741
+POP-OTHER	ncrnas[].flanking_genes	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].free_energy	True	4740	3050688	4743	0	str:4743
+POP-RT-MULTI	ncrnas[].free_energy	True	4	9012	4	0	str:4
+POP-NCRNA	ncrnas[].free_energy	True	8410	298482	8414	0	str:8414
+POP-OTHER	ncrnas[].free_energy	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].gc_content	True	346400	3050688	346716	0	float:346716
+POP-RT-MULTI	ncrnas[].gc_content	True	6	9012	6	0	float:6
+POP-NCRNA	ncrnas[].gc_content	True	226615	298482	226741	0	float:226741
+POP-OTHER	ncrnas[].gc_content	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].genomic_downstream_gene_id	True	346400	3050688	346716	6884	null:6884|str:339832
+POP-RT-MULTI	ncrnas[].genomic_downstream_gene_id	True	6	9012	6	3	null:3|str:3
+POP-NCRNA	ncrnas[].genomic_downstream_gene_id	True	298482	298482	298608	58170	null:58170|str:240438
+POP-OTHER	ncrnas[].genomic_downstream_gene_id	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].genomic_upstream_gene_id	True	346400	3050688	346716	9134	null:9134|str:337582
+POP-RT-MULTI	ncrnas[].genomic_upstream_gene_id	True	6	9012	6	3	null:3|str:3
+POP-NCRNA	ncrnas[].genomic_upstream_gene_id	True	298482	298482	298608	45315	null:45315|str:253293
+POP-OTHER	ncrnas[].genomic_upstream_gene_id	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].has_cds_overlap	True	346400	3050688	346716	0	bool:346716
+POP-RT-MULTI	ncrnas[].has_cds_overlap	True	6	9012	6	0	bool:6
+POP-NCRNA	ncrnas[].has_cds_overlap	True	298482	298482	298608	0	bool:298608
+POP-OTHER	ncrnas[].has_cds_overlap	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].intergenic_region_id	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].intergenic_region_id	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].intergenic_region_id	True	298482	298482	298608	71867	null:71867|str:226741
+POP-OTHER	ncrnas[].intergenic_region_id	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].length	True	346400	3050688	346716	0	int:346716
+POP-RT-MULTI	ncrnas[].length	True	6	9012	6	0	int:6
+POP-NCRNA	ncrnas[].length	True	226615	298482	226741	0	int:226741
+POP-OTHER	ncrnas[].length	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].location_type	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].location_type	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].location_type	True	226615	298482	226741	0	str:226741
+POP-OTHER	ncrnas[].location_type	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].n_overlapping_cds	True	346400	3050688	346716	0	int:346716
+POP-RT-MULTI	ncrnas[].n_overlapping_cds	True	6	9012	6	0	int:6
+POP-NCRNA	ncrnas[].n_overlapping_cds	True	298482	298482	298608	0	int:298608
+POP-OTHER	ncrnas[].n_overlapping_cds	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].ncrna_id	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].ncrna_id	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].ncrna_id	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].ncrna_id	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].orientation_corrected	True	346400	3050688	346716	0	bool:346716
+POP-RT-MULTI	ncrnas[].orientation_corrected	True	6	9012	6	0	bool:6
+POP-NCRNA	ncrnas[].orientation_corrected	True	0	298482	0	0	
+POP-OTHER	ncrnas[].orientation_corrected	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlap_types	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].overlap_types	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].overlap_types	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].overlap_types	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds	True	346400	3050688	346716	0	list:346716
+POP-RT-MULTI	ncrnas[].overlapping_cds	True	6	9012	6	0	list:6
+POP-NCRNA	ncrnas[].overlapping_cds	True	298482	298482	298608	0	list:298608
+POP-OTHER	ncrnas[].overlapping_cds	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds[].cds_id	True	66893	3050688	73694	0	str:73694
+POP-RT-MULTI	ncrnas[].overlapping_cds[].cds_id	True	1	9012	1	0	str:1
+POP-NCRNA	ncrnas[].overlapping_cds[].cds_id	True	157401	298482	197545	0	str:197545
+POP-OTHER	ncrnas[].overlapping_cds[].cds_id	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds[].cds_name	True	66893	3050688	73694	73694	null:73694
+POP-RT-MULTI	ncrnas[].overlapping_cds[].cds_name	True	1	9012	1	1	null:1
+POP-NCRNA	ncrnas[].overlapping_cds[].cds_name	True	88981	298482	111952	111952	null:111952
+POP-OTHER	ncrnas[].overlapping_cds[].cds_name	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds[].overlap_length	True	66893	3050688	73694	0	int:73694
+POP-RT-MULTI	ncrnas[].overlapping_cds[].overlap_length	True	1	9012	1	0	int:1
+POP-NCRNA	ncrnas[].overlapping_cds[].overlap_length	True	88981	298482	111952	0	int:111952
+POP-OTHER	ncrnas[].overlapping_cds[].overlap_length	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds[].overlap_sequence	True	66893	3050688	73694	0	str:73694
+POP-RT-MULTI	ncrnas[].overlapping_cds[].overlap_sequence	True	1	9012	1	0	str:1
+POP-NCRNA	ncrnas[].overlapping_cds[].overlap_sequence	True	88981	298482	111952	0	str:111952
+POP-OTHER	ncrnas[].overlapping_cds[].overlap_sequence	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds[].overlap_type	True	66893	3050688	73694	0	str:73694
+POP-RT-MULTI	ncrnas[].overlapping_cds[].overlap_type	True	1	9012	1	0	str:1
+POP-NCRNA	ncrnas[].overlapping_cds[].overlap_type	True	157401	298482	197545	0	str:197545
+POP-OTHER	ncrnas[].overlapping_cds[].overlap_type	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds_ends	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].overlapping_cds_ends	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].overlapping_cds_ends	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].overlapping_cds_ends	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds_ids	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].overlapping_cds_ids	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].overlapping_cds_ids	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].overlapping_cds_ids	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds_starts	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].overlapping_cds_starts	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].overlapping_cds_starts	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].overlapping_cds_starts	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].overlapping_cds_strands	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].overlapping_cds_strands	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].overlapping_cds_strands	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].overlapping_cds_strands	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].position_relative_to_rt	True	346400	3050688	346716	331892	int:14824|null:331892
+POP-RT-MULTI	ncrnas[].position_relative_to_rt	True	6	9012	6	5	int:1|null:5
+POP-NCRNA	ncrnas[].position_relative_to_rt	True	226615	298482	226741	226741	null:226741
+POP-OTHER	ncrnas[].position_relative_to_rt	True	0	0	0	0	
+POP-NCRNA	ncrnas[].rfam_family_id	False	71867	298482	71867	71867	null:71867
+POP-RT-FAM	ncrnas[].score	True	346400	3050688	346716	0	float:346716
+POP-RT-MULTI	ncrnas[].score	True	6	9012	6	0	float:6
+POP-NCRNA	ncrnas[].score	True	298482	298482	298608	71867	float:226741|null:71867
+POP-OTHER	ncrnas[].score	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].selection_reason	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].selection_reason	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].selection_reason	True	226615	298482	226741	0	str:226741
+POP-OTHER	ncrnas[].selection_reason	True	0	0	0	0	
+POP-NCRNA	ncrnas[].sequence	False	226615	298482	226741	0	str:226741
+POP-RT-FAM	ncrnas[].sequence_oriented	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].sequence_oriented	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].sequence_oriented	True	0	298482	0	0	
+POP-OTHER	ncrnas[].sequence_oriented	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].source	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].source	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].source	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].source	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].start	True	346400	3050688	346716	0	int:346716
+POP-RT-MULTI	ncrnas[].start	True	6	9012	6	0	int:6
+POP-NCRNA	ncrnas[].start	True	298482	298482	298608	0	int:298608
+POP-OTHER	ncrnas[].start	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].strand	True	346400	3050688	346716	0	str:346716
+POP-RT-MULTI	ncrnas[].strand	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].strand	True	298482	298482	298608	0	str:298608
+POP-OTHER	ncrnas[].strand	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].structure_annotation	True	4740	3050688	4743	0	dict:4743
+POP-RT-MULTI	ncrnas[].structure_annotation	True	4	9012	4	0	dict:4
+POP-NCRNA	ncrnas[].structure_annotation	True	80277	298482	80281	71867	dict:8414|null:71867
+POP-OTHER	ncrnas[].structure_annotation	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].structure_annotation.dot_bracket	True	4740	3050688	4743	0	str:4743
+POP-RT-MULTI	ncrnas[].structure_annotation.dot_bracket	True	4	9012	4	0	str:4
+POP-NCRNA	ncrnas[].structure_annotation.dot_bracket	True	8410	298482	8414	0	str:8414
+POP-OTHER	ncrnas[].structure_annotation.dot_bracket	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].structure_annotation.free_energy	True	4740	3050688	4743	0	str:4743
+POP-RT-MULTI	ncrnas[].structure_annotation.free_energy	True	4	9012	4	0	str:4
+POP-NCRNA	ncrnas[].structure_annotation.free_energy	True	8410	298482	8414	0	str:8414
+POP-OTHER	ncrnas[].structure_annotation.free_energy	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].structure_annotation.structure_annotation	True	4740	3050688	4743	0	str:4743
+POP-RT-MULTI	ncrnas[].structure_annotation.structure_annotation	True	4	9012	4	0	str:4
+POP-NCRNA	ncrnas[].structure_annotation.structure_annotation	True	8410	298482	8414	0	str:8414
+POP-OTHER	ncrnas[].structure_annotation.structure_annotation	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].structure_annotation_str	True	4740	3050688	4743	0	str:4743
+POP-RT-MULTI	ncrnas[].structure_annotation_str	True	4	9012	4	0	str:4
+POP-NCRNA	ncrnas[].structure_annotation_str	True	8410	298482	8414	0	str:8414
+POP-OTHER	ncrnas[].structure_annotation_str	True	0	0	0	0	
+POP-RT-FAM	ncrnas[].upstream_gene_id	True	346400	3050688	346716	5526	null:5526|str:341190
+POP-RT-MULTI	ncrnas[].upstream_gene_id	True	6	9012	6	0	str:6
+POP-NCRNA	ncrnas[].upstream_gene_id	True	298482	298482	298608	15566	null:15566|str:283042
+POP-OTHER	ncrnas[].upstream_gene_id	True	0	0	0	0	
+POP-RT-FAM	rt_gene	True	3050688	3050688	3050688	0	dict:3050688
+POP-RT-MULTI	rt_gene	True	9012	9012	9012	0	dict:9012
+POP-NCRNA	rt_gene	True	298482	298482	298482	298482	null:298482
+POP-OTHER	rt_gene	True	0	0	0	0	
+POP-RT-FAM	rt_gene.end	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	rt_gene.end	True	9012	9012	9012	0	int:9012
+POP-NCRNA	rt_gene.end	True	0	298482	0	0	
+POP-OTHER	rt_gene.end	True	0	0	0	0	
+POP-RT-FAM	rt_gene.length	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	rt_gene.length	True	9012	9012	9012	0	int:9012
+POP-NCRNA	rt_gene.length	True	0	298482	0	0	
+POP-OTHER	rt_gene.length	True	0	0	0	0	
+POP-RT-FAM	rt_gene.sequence	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	rt_gene.sequence	True	9012	9012	9012	0	str:9012
+POP-NCRNA	rt_gene.sequence	True	0	298482	0	0	
+POP-OTHER	rt_gene.sequence	True	0	0	0	0	
+POP-RT-FAM	rt_gene.start	True	3050688	3050688	3050688	0	int:3050688
+POP-RT-MULTI	rt_gene.start	True	9012	9012	9012	0	int:9012
+POP-NCRNA	rt_gene.start	True	0	298482	0	0	
+POP-OTHER	rt_gene.start	True	0	0	0	0	
+POP-RT-FAM	rt_gene.strand	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	rt_gene.strand	True	9012	9012	9012	0	str:9012
+POP-NCRNA	rt_gene.strand	True	0	298482	0	0	
+POP-OTHER	rt_gene.strand	True	0	0	0	0	
+POP-RT-FAM	rt_system_id	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	rt_system_id	True	9012	9012	9012	0	str:9012
+POP-NCRNA	rt_system_id	True	298482	298482	298482	0	str:298482
+POP-OTHER	rt_system_id	True	0	0	0	0	
+POP-RT-FAM	source_database	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	source_database	True	9012	9012	9012	0	str:9012
+POP-NCRNA	source_database	True	298482	298482	298482	0	str:298482
+POP-OTHER	source_database	True	0	0	0	0	
+POP-RT-FAM	system_subtypes	True	3050688	3050688	3050688	0	list:3050688
+POP-RT-MULTI	system_subtypes	True	9012	9012	9012	0	list:9012
+POP-NCRNA	system_subtypes	True	298482	298482	298482	0	list:298482
+POP-OTHER	system_subtypes	True	0	0	0	0	
+POP-RT-FAM	system_types	True	3050688	3050688	3050688	0	list:3050688
+POP-RT-MULTI	system_types	True	9012	9012	9012	0	list:9012
+POP-NCRNA	system_types	True	298482	298482	298482	0	list:298482
+POP-OTHER	system_types	True	0	0	0	0	
+POP-RT-FAM	taxonomy	True	3050688	3050688	3050688	0	dict:3050688
+POP-RT-MULTI	taxonomy	True	9012	9012	9012	0	dict:9012
+POP-NCRNA	taxonomy	True	298482	298482	298482	0	dict:298482
+POP-OTHER	taxonomy	True	0	0	0	0	
+POP-RT-FAM	taxonomy.class	True	3050688	3050688	3050688	2286053	null:2286053|str:764635
+POP-RT-MULTI	taxonomy.class	True	9012	9012	9012	3949	null:3949|str:5063
+POP-NCRNA	taxonomy.class	True	298482	298482	298482	186420	null:186420|str:112062
+POP-OTHER	taxonomy.class	True	0	0	0	0	
+POP-RT-FAM	taxonomy.domain	True	3050688	3050688	3050688	22266	null:22266|str:3028422
+POP-RT-MULTI	taxonomy.domain	True	9012	9012	9012	10	null:10|str:9002
+POP-NCRNA	taxonomy.domain	True	298482	298482	298482	4606	null:4606|str:293876
+POP-OTHER	taxonomy.domain	True	0	0	0	0	
+POP-RT-FAM	taxonomy.environment	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	taxonomy.environment	True	9012	9012	9012	0	str:9012
+POP-NCRNA	taxonomy.environment	True	298482	298482	298482	0	str:298482
+POP-OTHER	taxonomy.environment	True	0	0	0	0	
+POP-RT-FAM	taxonomy.family	True	3050688	3050688	3050688	2286118	null:2286118|str:764570
+POP-RT-MULTI	taxonomy.family	True	9012	9012	9012	3953	null:3953|str:5059
+POP-NCRNA	taxonomy.family	True	298482	298482	298482	186456	null:186456|str:112026
+POP-OTHER	taxonomy.family	True	0	0	0	0	
+POP-RT-FAM	taxonomy.full_lineage	True	3050688	3050688	3050688	22266	null:22266|str:3028422
+POP-RT-MULTI	taxonomy.full_lineage	True	9012	9012	9012	10	null:10|str:9002
+POP-NCRNA	taxonomy.full_lineage	True	298482	298482	298482	4606	null:4606|str:293876
+POP-OTHER	taxonomy.full_lineage	True	0	0	0	0	
+POP-RT-FAM	taxonomy.genus	True	3050688	3050688	3050688	29080	null:29080|str:3021608
+POP-RT-MULTI	taxonomy.genus	True	9012	9012	9012	324	null:324|str:8688
+POP-NCRNA	taxonomy.genus	True	298482	298482	298482	5978	null:5978|str:292504
+POP-OTHER	taxonomy.genus	True	0	0	0	0	
+POP-RT-FAM	taxonomy.order	True	3050688	3050688	3050688	2286055	null:2286055|str:764633
+POP-RT-MULTI	taxonomy.order	True	9012	9012	9012	3949	null:3949|str:5063
+POP-NCRNA	taxonomy.order	True	298482	298482	298482	186431	null:186431|str:112051
+POP-OTHER	taxonomy.order	True	0	0	0	0	
+POP-RT-FAM	taxonomy.phylum	True	3050688	3050688	3050688	2286053	null:2286053|str:764635
+POP-RT-MULTI	taxonomy.phylum	True	9012	9012	9012	3949	null:3949|str:5063
+POP-NCRNA	taxonomy.phylum	True	298482	298482	298482	186420	null:186420|str:112062
+POP-OTHER	taxonomy.phylum	True	0	0	0	0	
+POP-RT-FAM	taxonomy.species	True	3050688	3050688	3050688	40800	null:40800|str:3009888
+POP-RT-MULTI	taxonomy.species	True	9012	9012	9012	1418	null:1418|str:7594
+POP-NCRNA	taxonomy.species	True	298482	298482	298482	8438	null:8438|str:290044
+POP-OTHER	taxonomy.species	True	0	0	0	0	
+POP-RT-FAM	taxonomy.taxonomy_system	True	3050688	3050688	3050688	0	str:3050688
+POP-RT-MULTI	taxonomy.taxonomy_system	True	9012	9012	9012	0	str:9012
+POP-NCRNA	taxonomy.taxonomy_system	True	298482	298482	298482	0	str:298482
+POP-OTHER	taxonomy.taxonomy_system	True	0	0	0	0	

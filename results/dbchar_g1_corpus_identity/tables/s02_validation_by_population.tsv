@@ -1,0 +1,97 @@
+population	check_id	description	n_flagged	n_parsed_records_in_population
+POP-RT-FAM	V01	rt_system_id missing, non-string or empty	0	3050688
+POP-RT-FAM	V02	anchor_type not in {RT, ncRNA}	0	3050688
+POP-RT-FAM	V03	anchor_type inconsistent with the file's role (RT-family/MULTI file => RT; ncRNA file => ncRNA)	0	3050688
+POP-RT-FAM	V04	source_database missing, non-string or empty	0	3050688
+POP-RT-FAM	V05	system_types missing, not a list, or empty	0	3050688
+POP-RT-FAM	V06	file label not among system_types tokens (family token; MULTI >=2 tokens; ncRNA-anchored)	0	3050688
+POP-RT-FAM	V07	anchor_type RT without a dict rt_gene carrying a non-empty sequence	0	3050688
+POP-RT-FAM	V08	anchor_type ncRNA with a non-null rt_gene	0	3050688
+POP-RT-FAM	V09a	anchor_type RT with zero cds_annotations[] flagged is_rt_gene	29468	3050688
+POP-RT-FAM	V09b	anchor_type RT with more than one cds_annotations[] flagged is_rt_gene	0	3050688
+POP-RT-FAM	V10	anchor_type ncRNA with any cds_annotations[] flagged is_rt_gene	0	3050688
+POP-RT-FAM	V11	anchor_type ncRNA with an empty ncrnas[] array	0	3050688
+POP-RT-FAM	V12	metadata.total_ncrnas != len(ncrnas)	9799	3050688
+POP-RT-FAM	V13	metadata.total_genes != len(cds_annotations)	0	3050688
+POP-RT-FAM	V14	metadata.total_intergenic_regions != len(intergenic_regions)	0	3050688
+POP-RT-FAM	V15	genomic_context.length != len(genomic_context.full_sequence)	0	3050688
+POP-RT-FAM	V16	genomic_context.actual_window.start > actual_window.end	3661	3050688
+POP-RT-FAM	V17	some intergenic_regions[].has_ncrna is true while ncrnas[] is empty	9694	3050688
+POP-RT-FAM	V18	genome_id missing, non-string or empty	0	3050688
+POP-RT-FAM	V19	contig missing, non-string or empty	0	3050688
+POP-RT-FAM	V20a	taxonomy missing/not an object, or taxonomy.taxonomy_system missing	0	3050688
+POP-RT-FAM	V20b	taxonomy.taxonomy_system present but outside the schema-documented set	2286053	3050688
+POP-RT-FAM	V21a	record lacks at least one schema-documented top-level key	0	3050688
+POP-RT-FAM	V21b	record carries at least one top-level key the schema does not document	0	3050688
+POP-RT-MULTI	V01	rt_system_id missing, non-string or empty	0	9012
+POP-RT-MULTI	V02	anchor_type not in {RT, ncRNA}	0	9012
+POP-RT-MULTI	V03	anchor_type inconsistent with the file's role (RT-family/MULTI file => RT; ncRNA file => ncRNA)	0	9012
+POP-RT-MULTI	V04	source_database missing, non-string or empty	0	9012
+POP-RT-MULTI	V05	system_types missing, not a list, or empty	0	9012
+POP-RT-MULTI	V06	file label not among system_types tokens (family token; MULTI >=2 tokens; ncRNA-anchored)	0	9012
+POP-RT-MULTI	V07	anchor_type RT without a dict rt_gene carrying a non-empty sequence	0	9012
+POP-RT-MULTI	V08	anchor_type ncRNA with a non-null rt_gene	0	9012
+POP-RT-MULTI	V09a	anchor_type RT with zero cds_annotations[] flagged is_rt_gene	2036	9012
+POP-RT-MULTI	V09b	anchor_type RT with more than one cds_annotations[] flagged is_rt_gene	0	9012
+POP-RT-MULTI	V10	anchor_type ncRNA with any cds_annotations[] flagged is_rt_gene	0	9012
+POP-RT-MULTI	V11	anchor_type ncRNA with an empty ncrnas[] array	0	9012
+POP-RT-MULTI	V12	metadata.total_ncrnas != len(ncrnas)	0	9012
+POP-RT-MULTI	V13	metadata.total_genes != len(cds_annotations)	0	9012
+POP-RT-MULTI	V14	metadata.total_intergenic_regions != len(intergenic_regions)	0	9012
+POP-RT-MULTI	V15	genomic_context.length != len(genomic_context.full_sequence)	0	9012
+POP-RT-MULTI	V16	genomic_context.actual_window.start > actual_window.end	263	9012
+POP-RT-MULTI	V17	some intergenic_regions[].has_ncrna is true while ncrnas[] is empty	0	9012
+POP-RT-MULTI	V18	genome_id missing, non-string or empty	0	9012
+POP-RT-MULTI	V19	contig missing, non-string or empty	0	9012
+POP-RT-MULTI	V20a	taxonomy missing/not an object, or taxonomy.taxonomy_system missing	0	9012
+POP-RT-MULTI	V20b	taxonomy.taxonomy_system present but outside the schema-documented set	3949	9012
+POP-RT-MULTI	V21a	record lacks at least one schema-documented top-level key	0	9012
+POP-RT-MULTI	V21b	record carries at least one top-level key the schema does not document	0	9012
+POP-NCRNA	V01	rt_system_id missing, non-string or empty	0	298482
+POP-NCRNA	V02	anchor_type not in {RT, ncRNA}	0	298482
+POP-NCRNA	V03	anchor_type inconsistent with the file's role (RT-family/MULTI file => RT; ncRNA file => ncRNA)	0	298482
+POP-NCRNA	V04	source_database missing, non-string or empty	0	298482
+POP-NCRNA	V05	system_types missing, not a list, or empty	0	298482
+POP-NCRNA	V06	file label not among system_types tokens (family token; MULTI >=2 tokens; ncRNA-anchored)	0	298482
+POP-NCRNA	V07	anchor_type RT without a dict rt_gene carrying a non-empty sequence	0	298482
+POP-NCRNA	V08	anchor_type ncRNA with a non-null rt_gene	0	298482
+POP-NCRNA	V09a	anchor_type RT with zero cds_annotations[] flagged is_rt_gene	0	298482
+POP-NCRNA	V09b	anchor_type RT with more than one cds_annotations[] flagged is_rt_gene	0	298482
+POP-NCRNA	V10	anchor_type ncRNA with any cds_annotations[] flagged is_rt_gene	0	298482
+POP-NCRNA	V11	anchor_type ncRNA with an empty ncrnas[] array	0	298482
+POP-NCRNA	V12	metadata.total_ncrnas != len(ncrnas)	69719	298482
+POP-NCRNA	V13	metadata.total_genes != len(cds_annotations)	0	298482
+POP-NCRNA	V14	metadata.total_intergenic_regions != len(intergenic_regions)	0	298482
+POP-NCRNA	V15	genomic_context.length != len(genomic_context.full_sequence)	0	298482
+POP-NCRNA	V16	genomic_context.actual_window.start > actual_window.end	0	298482
+POP-NCRNA	V17	some intergenic_regions[].has_ncrna is true while ncrnas[] is empty	0	298482
+POP-NCRNA	V18	genome_id missing, non-string or empty	0	298482
+POP-NCRNA	V19	contig missing, non-string or empty	0	298482
+POP-NCRNA	V20a	taxonomy missing/not an object, or taxonomy.taxonomy_system missing	0	298482
+POP-NCRNA	V20b	taxonomy.taxonomy_system present but outside the schema-documented set	186420	298482
+POP-NCRNA	V21a	record lacks at least one schema-documented top-level key	0	298482
+POP-NCRNA	V21b	record carries at least one top-level key the schema does not document	0	298482
+POP-OTHER	V01	rt_system_id missing, non-string or empty	0	0
+POP-OTHER	V02	anchor_type not in {RT, ncRNA}	0	0
+POP-OTHER	V03	anchor_type inconsistent with the file's role (RT-family/MULTI file => RT; ncRNA file => ncRNA)	0	0
+POP-OTHER	V04	source_database missing, non-string or empty	0	0
+POP-OTHER	V05	system_types missing, not a list, or empty	0	0
+POP-OTHER	V06	file label not among system_types tokens (family token; MULTI >=2 tokens; ncRNA-anchored)	0	0
+POP-OTHER	V07	anchor_type RT without a dict rt_gene carrying a non-empty sequence	0	0
+POP-OTHER	V08	anchor_type ncRNA with a non-null rt_gene	0	0
+POP-OTHER	V09a	anchor_type RT with zero cds_annotations[] flagged is_rt_gene	0	0
+POP-OTHER	V09b	anchor_type RT with more than one cds_annotations[] flagged is_rt_gene	0	0
+POP-OTHER	V10	anchor_type ncRNA with any cds_annotations[] flagged is_rt_gene	0	0
+POP-OTHER	V11	anchor_type ncRNA with an empty ncrnas[] array	0	0
+POP-OTHER	V12	metadata.total_ncrnas != len(ncrnas)	0	0
+POP-OTHER	V13	metadata.total_genes != len(cds_annotations)	0	0
+POP-OTHER	V14	metadata.total_intergenic_regions != len(intergenic_regions)	0	0
+POP-OTHER	V15	genomic_context.length != len(genomic_context.full_sequence)	0	0
+POP-OTHER	V16	genomic_context.actual_window.start > actual_window.end	0	0
+POP-OTHER	V17	some intergenic_regions[].has_ncrna is true while ncrnas[] is empty	0	0
+POP-OTHER	V18	genome_id missing, non-string or empty	0	0
+POP-OTHER	V19	contig missing, non-string or empty	0	0
+POP-OTHER	V20a	taxonomy missing/not an object, or taxonomy.taxonomy_system missing	0	0
+POP-OTHER	V20b	taxonomy.taxonomy_system present but outside the schema-documented set	0	0
+POP-OTHER	V21a	record lacks at least one schema-documented top-level key	0	0
+POP-OTHER	V21b	record carries at least one top-level key the schema does not document	0	0

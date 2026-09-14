@@ -1,0 +1,5 @@
+quantity	value
+manifest_rows	3358182
+manifest_serialisation	sha256 over 'source_file\tline_no\tbyte_offset\tbyte_len\trecord_sha256\n' in file,line order
+record_manifest_sha256	8e9b7999954b460d2bdfc558c605d26610d58e6901788f61720e11eafdc41d00
+n_distinct_line_sha256_excluding_blank	3349671

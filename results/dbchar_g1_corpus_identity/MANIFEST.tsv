@@ -1,0 +1,25 @@
+artifact	script	command	unit	denominator
+tables/g1_summary.tsv	scripts/assemble.py	see run.sh: assemble.py	named per row	named per row in the source_table column
+tables/s01_corpus_root.tsv	scripts/s01_file_identity.py	see run.sh: s01_file_identity.py	files / bytes / newlines	n/a - totals over every entry of the registered corpus root; no rate
+tables/s01_file_identity.tsv	scripts/s01_file_identity.py	see run.sh: s01_file_identity.py	files (bytes, newlines, sha256 per file)	n/a - identity table, one row per entry of the corpus root; no rate
+tables/s01_schema_identity.tsv	scripts/s01_file_identity.py	see run.sh: s01_file_identity.py	documents	n/a - identity of the schema document copies; no rate
+tables/s02_anchor_by_file.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	lines	all lines of that file, split by population and anchor_type
+tables/s02_byte_identical_records.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	lines	non-blank lines of the 43 files (s02_record_manifest_digest.tsv manifest_rows)
+tables/s02_detected_by.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	population_total column: parsed records in that anchor population
+tables/s02_metadata_count_mismatch_direction.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	n_flagged_for_check column: records flagged by that check in that population
+tables/s02_multilabel_by_file.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	n_records column: parsed records of that file and population
+tables/s02_multilabel_sets.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	multi-label parsed records of that population
+tables/s02_parse_census.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	lines	all newline-delimited lines of that file
+tables/s02_populations.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	lines / records	ALL row: every line of the 43 files; each population row is a part of it
+tables/s02_record_manifest_digest.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	n/a - identity digest of the per-record manifest; no rate
+tables/s02_schema_paths.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records (n_records_with_path) and key occurrences	n_parsed_records_in_population column for records; occurrences have no denominator
+tables/s02_source_database.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	population_total column: parsed records in that anchor population
+tables/s02_source_database_by_file.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	parsed records of that file and anchor_type
+tables/s02_system_subtypes_state.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	population_total column: parsed records in that anchor population
+tables/s02_system_types_by_file.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	parsed records of that file and population
+tables/s02_taxonomy_system.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	parsed records of that population and source_database
+tables/s02_validation_by_file.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	parsed records of that file and population (s02_anchor_by_file.tsv)
+tables/s02_validation_by_population.tsv	scripts/s02_record_census.py	see run.sh: s02_record_census.py	records	n_parsed_records_in_population column
+tables/s04_positive_controls.tsv	scripts/s04_controls.py	see run.sh: s04_controls.py	controls	n/a - each row is one pass/fail control on the synthetic fixture
+tables/s05_prior_reconciliation.tsv	scripts/s05_reconcile.py	see run.sh: s05_reconcile.py	named per row in quantity	named per row in scope
+tables/s05_second_counts.tsv	scripts/s05_reconcile.py	see run.sh: s05_reconcile.py	lines / records	named per row in scope; the two routes count the same population
