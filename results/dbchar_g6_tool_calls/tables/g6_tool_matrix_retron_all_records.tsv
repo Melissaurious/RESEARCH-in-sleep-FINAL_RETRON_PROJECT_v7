@@ -1,0 +1,12 @@
+key	n	measure	unit	denominator
+DefenseFinder	8731	detected_by_combination	records	ALL records of master_Retron (including duplicate lines)
+PADLOC	26257	detected_by_combination	records	ALL records of master_Retron (including duplicate lines)
+PADLOC|DefenseFinder	13042	detected_by_combination	records	ALL records of master_Retron (including duplicate lines)
+myRT	126479	detected_by_combination	records	ALL records of master_Retron (including duplicate lines)
+myRT|DefenseFinder	75116	detected_by_combination	records	ALL records of master_Retron (including duplicate lines)
+myRT|PADLOC	61581	detected_by_combination	records	ALL records of master_Retron (including duplicate lines)
+myRT|PADLOC|DefenseFinder	354115	detected_by_combination	records	ALL records of master_Retron (including duplicate lines)
+defensefinder_style	451004	subtype_case_class	records	ALL records of master_Retron (including duplicate lines)
+padloc_style	454995	subtype_case_class	records	ALL records of master_Retron (including duplicate lines)
+both_styles	367157	subtype_case_class	records	ALL records of master_Retron (including duplicate lines)
+records	665321	subtype_case_class	records	ALL records of master_Retron (including duplicate lines)

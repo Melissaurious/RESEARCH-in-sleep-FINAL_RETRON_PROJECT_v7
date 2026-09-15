@@ -1,0 +1,10 @@
+control	expected	observed	result
+capital-initial goes to DefenseFinder	['Retron_I_A']	['Retron_I_A']	PASS
+lowercase goes to PADLOC	['retron_i_a']	['retron_i_a']	PASS
+nothing is unclassifiable here	[]	[]	PASS
+a non-alphabetic first character is unclassifiable	['_odd', '9x']	['_odd', '9x']	PASS
+and is not silently given to a tool	([], [])	([], [])	PASS
+an empty list yields nothing	([], [], [])	([], [], [])	PASS
+malformed json is unclassifiable, not dropped	1	1	PASS
+two tools at one locus stay separate	('Retron_II', 'retron_iii_a')	('Retron_II', 'retron_iii_a')	PASS
+carriage differs by tool set when constructed to	(100.0, 0.0)	(100.0, 0.0)	PASS

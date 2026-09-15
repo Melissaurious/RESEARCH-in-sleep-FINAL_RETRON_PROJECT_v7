@@ -28,3 +28,7 @@ Notes that are not gates (WA-G.1).
   genome unjoined), but a completeness VALUE exists for only 412,261/1,653,827 genome entries (24.93%) —
   NCBI carries no CheckM columns. Taxonomy reported per schema (ncbi has no phylum by construction).
   Top-10 species fall from 66.2% of records to 19.0% of exact RTs (C8 evidence). 16/16 second counts agree.
+- 2026-09-15 · `dbchar_g6_tool_calls` landed: tool matrix on 663,308 Retron records (myRT 92.8%, PADLOC
+  68.4%, DefenseFinder 67.7%, all three 53.2%); system_subtypes split by the declared case rule with
+  0 unclassifiable strings; agreement 43.85% where both tools speak (prior ~44.6% CONFIRMED).
+  Extraction asymmetry: ncRNA carriage spans 13.5%-89.2% by tool combination. 11/11 second counts agree.

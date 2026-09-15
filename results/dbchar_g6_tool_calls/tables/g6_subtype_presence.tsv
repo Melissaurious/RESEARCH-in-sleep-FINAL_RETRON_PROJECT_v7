@@ -1,0 +1,8 @@
+measure	n	denominator_n	unit	denominator
+records with a DefenseFinder-style subtype	449134	663308	records	Retron records, or the tool-detected subset named in the measure
+records with a PADLOC-style subtype	453476	663308	records	Retron records, or the tool-detected subset named in the measure
+records with both	365708	663308	records	Retron records, or the tool-detected subset named in the measure
+records with neither	126406	663308	records	Retron records, or the tool-detected subset named in the measure
+records with an unclassifiable subtype string	0	663308	records	Retron records, or the tool-detected subset named in the measure
+records detected by DefenseFinder but with no DefenseFinder-style subtype	0	449134	records	Retron records, or the tool-detected subset named in the measure
+records detected by PADLOC but with no PADLOC-style subtype	0	453476	records	Retron records, or the tool-detected subset named in the measure

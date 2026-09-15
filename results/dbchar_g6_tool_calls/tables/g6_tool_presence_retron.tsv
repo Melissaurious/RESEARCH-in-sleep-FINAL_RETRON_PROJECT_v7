@@ -1,0 +1,6 @@
+tool	n_records	n_retron_records	pct_of_retron_records	n_loci	unit	denominator
+myRT	615349	663308	92.7697	586818	records / loci	distinct raw records of the Retron family label
+PADLOC	453476	663308	68.3658	441061	records / loci	distinct raw records of the Retron family label
+DefenseFinder	449134	663308	67.7112	434289	records / loci	distinct raw records of the Retron family label
+any_tool	663308	663308	100.0	632688	records / loci	distinct raw records of the Retron family label
+all_three_tools	352705	663308	53.1736	345779	records / loci	distinct raw records of the Retron family label

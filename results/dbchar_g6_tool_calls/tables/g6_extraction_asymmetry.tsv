@@ -1,0 +1,8 @@
+detected_by_set	n_records	n_loci	pct_with_ncrna	median_ncrna_per_record	pct_geometry_eligible	median_rt_aa_len	n_species	n_databases	unit	denominator	note
+myRT|PADLOC|DefenseFinder	352705	345779	70.3886	1.0	99.9983	315.0	9202	8	records	Retron records of that detected_by combination	a difference here means a tool-defined subset is not a random subset
+myRT	126406	115733	13.4986	0.0	98.4724	317.0	9159	8	records	Retron records of that detected_by combination	a difference here means a tool-defined subset is not a random subset
+myRT|DefenseFinder	74697	67764	16.9739	0.0	99.9933	338.0	6573	8	records	Retron records of that detected_by combination	a difference here means a tool-defined subset is not a random subset
+myRT|PADLOC	61541	57542	89.2348	1.0	99.9919	319.0	4259	8	records	Retron records of that detected_by combination	a difference here means a tool-defined subset is not a random subset
+PADLOC	26227	25124	18.6258	0.0	100.0	325.0	2699	7	records	Retron records of that detected_by combination	a difference here means a tool-defined subset is not a random subset
+PADLOC|DefenseFinder	13003	12616	44.2283	0.0	100.0	338.0	1561	6	records	Retron records of that detected_by combination	a difference here means a tool-defined subset is not a random subset
+DefenseFinder	8729	8132	14.6638	0.0	100.0	338.0	1279	7	records	Retron records of that detected_by combination	a difference here means a tool-defined subset is not a random subset

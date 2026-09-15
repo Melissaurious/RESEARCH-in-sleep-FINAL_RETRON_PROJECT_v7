@@ -1,0 +1,4 @@
+quantity	prior	g6	verdict	note
+system_subtypes agreement between the two tools	44.6%	43.8549%	CONFIRMED	prior grain and normalisation are not stated precisely; g6 normalises case and punctuation on the Retron records where BOTH tools wrote a label
+system_subtypes is two tools in one field	prior: capital-initial = DefenseFinder, lowercase = PADLOC; carry it, never groupby it	g6 splits by that rule and reports each vocabulary separately	CONFIRMED	0 records carry an unclassifiable subtype string, so the case rule partitions the field
+tool agreement is not independent corroboration	prior: the tools share model lineage	g6 reports the matrix and the asymmetry, and claims no corroboration	CONFIRMED	

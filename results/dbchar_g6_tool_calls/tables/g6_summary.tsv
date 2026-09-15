@@ -1,0 +1,28 @@
+quantity	value	source_table
+tool_presence_pct:myRT	92.7697	g6_tool_presence_retron.tsv
+tool_presence_pct:PADLOC	68.3658	g6_tool_presence_retron.tsv
+tool_presence_pct:DefenseFinder	67.7112	g6_tool_presence_retron.tsv
+tool_presence_pct:any_tool	100.0	g6_tool_presence_retron.tsv
+tool_presence_pct:all_three_tools	53.1736	g6_tool_presence_retron.tsv
+subtype:records with a DefenseFinder-style subtype	449134	g6_subtype_presence.tsv
+subtype:records with a PADLOC-style subtype	453476	g6_subtype_presence.tsv
+subtype:records with both	365708	g6_subtype_presence.tsv
+subtype:records with neither	126406	g6_subtype_presence.tsv
+subtype:records with an unclassifiable subtype string	0	g6_subtype_presence.tsv
+subtype:records detected by DefenseFinder but with no DefenseFinder-style subtype	0	g6_subtype_presence.tsv
+subtype:records detected by PADLOC but with no PADLOC-style subtype	0	g6_subtype_presence.tsv
+agreement:records where both tools wrote a subtype	365708	g6_subtype_agreement.tsv
+agreement:the two strings agree after case/punctuation normalisation	160381	g6_subtype_agreement.tsv
+agreement:they disagree	205327	g6_subtype_agreement.tsv
+ncrna_carriage_pct:myRT|PADLOC|DefenseFinder	70.3886	g6_extraction_asymmetry.tsv
+ncrna_carriage_pct:myRT	13.4986	g6_extraction_asymmetry.tsv
+ncrna_carriage_pct:myRT|DefenseFinder	16.9739	g6_extraction_asymmetry.tsv
+ncrna_carriage_pct:myRT|PADLOC	89.2348	g6_extraction_asymmetry.tsv
+ncrna_carriage_pct:PADLOC	18.6258	g6_extraction_asymmetry.tsv
+ncrna_carriage_pct:PADLOC|DefenseFinder	44.2283	g6_extraction_asymmetry.tsv
+ncrna_carriage_pct:DefenseFinder	14.6638	g6_extraction_asymmetry.tsv
+second_count_rows	11	g6_second_counts.tsv
+second_count_disagreements	0	g6_second_counts.tsv
+prior_rows_CONFIRMED	3	g6_prior_reconciliation.tsv
+positive_controls	9	c03_positive_controls.tsv
+positive_controls_failed	0	c03_positive_controls.tsv

@@ -1,0 +1,8 @@
+detected_by_set	n_records	n_loci	n_exact_rt	n_genomes	n_with_ncrna	pct_with_ncrna	n_retron_records	unit	denominator
+myRT|PADLOC|DefenseFinder	352705	345779	20159	334594	248264	70.3886	663308	records / loci / exact RTs	distinct raw records of the Retron family label
+myRT	126406	115733	30929	109344	17063	13.4986	663308	records / loci / exact RTs	distinct raw records of the Retron family label
+myRT|DefenseFinder	74697	67764	14261	66772	12679	16.9739	663308	records / loci / exact RTs	distinct raw records of the Retron family label
+myRT|PADLOC	61541	57542	9069	56618	54916	89.2348	663308	records / loci / exact RTs	distinct raw records of the Retron family label
+PADLOC	26227	25124	4401	24738	4885	18.6258	663308	records / loci / exact RTs	distinct raw records of the Retron family label
+PADLOC|DefenseFinder	13003	12616	2621	12276	5751	44.2283	663308	records / loci / exact RTs	distinct raw records of the Retron family label
+DefenseFinder	8729	8132	2592	8006	1280	14.6638	663308	records / loci / exact RTs	distinct raw records of the Retron family label

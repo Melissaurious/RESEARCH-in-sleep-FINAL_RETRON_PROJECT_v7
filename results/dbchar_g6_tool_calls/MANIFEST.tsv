@@ -1,0 +1,17 @@
+artifact	script	command	unit	denominator
+tables/c03_positive_controls.tsv	scripts/c03_controls.py	see run.sh: c03_controls.py	controls	n/a - one pass/fail control per row
+tables/g6_derived_registry.tsv	scripts/assemble.py	see run.sh: assemble.py	datasets	n/a - identity of the derived dataset; no rate
+tables/g6_extraction_asymmetry.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records	Retron records of that detected_by combination
+tables/g6_prior_reconciliation.tsv	scripts/c04_reconcile.py	see run.sh: c04_reconcile.py	named per row	named per row
+tables/g6_second_counts.tsv	scripts/c04_reconcile.py	see run.sh: c04_reconcile.py	records	named per row; both routes count ALL records of master_Retron
+tables/g6_subtype_agreement.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records	Retron records where both tools wrote a subtype
+tables/g6_subtype_disagreement_pairs.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records	Retron records where the two tools disagree (top 60)
+tables/g6_subtype_presence.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records	Retron records, or the tool-detected subset named in the measure
+tables/g6_subtype_vocabulary_DefenseFinder.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records	Retron records carrying a DefenseFinder-style subtype
+tables/g6_subtype_vocabulary_PADLOC.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records	Retron records carrying a PADLOC-style subtype
+tables/g6_summary.tsv	scripts/assemble.py	see run.sh: assemble.py	named per row	named per row in the source_table column
+tables/g6_tool_by_database.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records	Retron records of that source_database
+tables/g6_tool_matrix_by_family.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records / loci / exact RTs	distinct raw records of that family label
+tables/g6_tool_matrix_retron.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records / loci / exact RTs	distinct raw records of the Retron family label
+tables/g6_tool_matrix_retron_all_records.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records	ALL records of master_Retron (including duplicate lines)
+tables/g6_tool_presence_retron.tsv	scripts/t01_tool_calls.py	see run.sh: t01_tool_calls.py	records / loci	distinct raw records of the Retron family label

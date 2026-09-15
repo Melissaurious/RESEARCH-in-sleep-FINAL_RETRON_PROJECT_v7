@@ -1,0 +1,12 @@
+check	key	route_a	value_a	route_b	value_b	delta_a_minus_b	agreement
+detected_by_combination	DefenseFinder	t01 (parquet)	8731	c02 (awk on raw bytes)	8731	0	AGREE
+detected_by_combination	PADLOC	t01 (parquet)	26257	c02 (awk on raw bytes)	26257	0	AGREE
+detected_by_combination	PADLOC|DefenseFinder	t01 (parquet)	13042	c02 (awk on raw bytes)	13042	0	AGREE
+detected_by_combination	myRT	t01 (parquet)	126479	c02 (awk on raw bytes)	126479	0	AGREE
+detected_by_combination	myRT|DefenseFinder	t01 (parquet)	75116	c02 (awk on raw bytes)	75116	0	AGREE
+detected_by_combination	myRT|PADLOC	t01 (parquet)	61581	c02 (awk on raw bytes)	61581	0	AGREE
+detected_by_combination	myRT|PADLOC|DefenseFinder	t01 (parquet)	354115	c02 (awk on raw bytes)	354115	0	AGREE
+subtype_case_class	both_styles	t01 (parquet)	367157	c02 (awk on raw bytes)	367157	0	AGREE
+subtype_case_class	defensefinder_style	t01 (parquet)	451004	c02 (awk on raw bytes)	451004	0	AGREE
+subtype_case_class	padloc_style	t01 (parquet)	454995	c02 (awk on raw bytes)	454995	0	AGREE
+subtype_case_class	records	t01 (parquet)	665321	c02 (awk on raw bytes)	665321	0	AGREE

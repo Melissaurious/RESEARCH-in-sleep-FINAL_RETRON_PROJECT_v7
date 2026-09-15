@@ -1,0 +1,16 @@
+subtype_label	n_records	n_loci	n_exact_rt	tool	n_records_with_this_tools_subtype	unit	denominator
+Retron_II	180802	179074	4851	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_I_C	68113	65721	9214	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_III	42169	40521	4194	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_I_B	38590	37649	1609	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_VI	38226	36390	4207	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_XII	26361	24263	3578	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_I_A	24852	24448	1362	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_XIII	12038	9230	4250	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_IV	9871	9713	870	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_XI	6565	5942	1778	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_VII_2	786	705	240	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_VII_1	455	390	191	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_X	209	160	67	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_IX	66	54	40	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
+Retron_V	31	30	15	DefenseFinder	449134	records	Retron records carrying a DefenseFinder-style subtype
