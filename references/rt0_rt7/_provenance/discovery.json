@@ -1,0 +1,778 @@
+{
+  "hist_toro2014_rt0rt7_fasta": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/toro_2014_Rt0-Rt7.FASTA",
+      "sha256": "6e43c4ccd3660f4cc1b8c3903ee53cb530552475c2b1d0eef9a55530d08e95b1",
+      "bytes": 1186359,
+      "duplicate_group": "hist_toro2014_rt0rt7_fasta#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/toro_2014_Rt0-Rt7.FASTA",
+      "sha256": "6e43c4ccd3660f4cc1b8c3903ee53cb530552475c2b1d0eef9a55530d08e95b1",
+      "bytes": 1186359,
+      "duplicate_group": "hist_toro2014_rt0rt7_fasta#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/historical/toro_2014_Rt0-Rt7.FASTA",
+      "sha256": "6e43c4ccd3660f4cc1b8c3903ee53cb530552475c2b1d0eef9a55530d08e95b1",
+      "bytes": 1186359,
+      "duplicate_group": "hist_toro2014_rt0rt7_fasta#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/toro_2014_Rt0-Rt7.FASTA",
+      "sha256": "6e43c4ccd3660f4cc1b8c3903ee53cb530552475c2b1d0eef9a55530d08e95b1",
+      "bytes": 1186359,
+      "duplicate_group": "hist_toro2014_rt0rt7_fasta#g1"
+    }
+  ],
+  "hist_toro2014_tableS1": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/historical/TableS1_Toro_2014.XLSX",
+      "sha256": "385e8043f873f56a92cd69c547bf293b41e36413da914360db92756556b68505",
+      "bytes": 153853,
+      "duplicate_group": "hist_toro2014_tableS1#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/TableS1_Toro_2014.XLSX",
+      "sha256": "385e8043f873f56a92cd69c547bf293b41e36413da914360db92756556b68505",
+      "bytes": 153853,
+      "duplicate_group": "hist_toro2014_tableS1#g1"
+    }
+  ],
+  "lit_blocker2005_structural": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Domain structure and three-dimensional model of a group II intron-encoded reverse transcriptase.pdf",
+      "sha256": "aa2a24f8f120e6f858e5f09e98833ba66145bf3d9da38849ae4f22b33a5bef1c",
+      "bytes": 1436894,
+      "duplicate_group": "lit_blocker2005_structural#g1"
+    }
+  ],
+  "lit_poch1989": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Poch Sauvaget Delarue Tordo 1989 EMBO J - Identification of four conserved motifs among the RNA-dependent polymerase encoding elements.pdf",
+      "sha256": "f86054ed4a607480a2e9420223a4badd642d1749f78763d4750a686e66a763ae",
+      "bytes": 1864497,
+      "duplicate_group": "lit_poch1989#g1"
+    }
+  ],
+  "lit_simon2008": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/A diversity of uncharacterized reverse transcriptases in bacteria .pdf",
+      "sha256": "4db1d884a4cb665314aaa182548d64f09941221e88d6f58bfb107262ce01c876",
+      "bytes": 8855346,
+      "duplicate_group": "lit_simon2008#g1"
+    }
+  ],
+  "lit_xiong1990": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Origin and evolution of retroelements based upon their reverse transcriptase sequences. .pdf",
+      "sha256": "3cec03446dd809a606403a887d55bf36d3f87115973201519c4166a869c264b6",
+      "bytes": 2317347,
+      "duplicate_group": "lit_xiong1990#g1"
+    }
+  ],
+  "lit_zimmerly2001": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Zimmerly Hausner Wu 2001 NAR - Phylogenetic relationships among group II intron ORFs (defines RT subdomain 0).pdf",
+      "sha256": "67469b685b30b57b60a24e6974e7f3834649b084233236658ac4f8356835689f",
+      "bytes": 1582310,
+      "duplicate_group": "lit_zimmerly2001#g1"
+    }
+  ],
+  "mestre_supp_original_headers": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/Mestre_supplementary_material.csv",
+      "sha256": "536c5d0ca537fcfde969b90385d52dee4fdb424b8940593a7710c466df1ff322",
+      "bytes": 305547,
+      "duplicate_group": "mestre_supp_original_headers#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/Mestre_supplementary_material.csv",
+      "sha256": "536c5d0ca537fcfde969b90385d52dee4fdb424b8940593a7710c466df1ff322",
+      "bytes": 305547,
+      "duplicate_group": "mestre_supp_original_headers#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Mestre_supplementary_material.csv",
+      "sha256": "536c5d0ca537fcfde969b90385d52dee4fdb424b8940593a7710c466df1ff322",
+      "bytes": 305547,
+      "duplicate_group": "mestre_supp_original_headers#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/ARIS_OUTPUT/stage1_mestre_replication_and_insights/discarded_bundle_assembly1/inputs/Mestre_supplementary_material.csv",
+      "sha256": "536c5d0ca537fcfde969b90385d52dee4fdb424b8940593a7710c466df1ff322",
+      "bytes": 305547,
+      "duplicate_group": "mestre_supp_original_headers#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/ARIS_OUTPUT/stage1_mestre_replication_and_insights/inputs/Mestre_supplementary_material.csv",
+      "sha256": "536c5d0ca537fcfde969b90385d52dee4fdb424b8940593a7710c466df1ff322",
+      "bytes": 305547,
+      "duplicate_group": "mestre_supp_original_headers#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/results/stage1_mestre_replication_and_insights/inputs/Mestre_supplementary_material.csv",
+      "sha256": "536c5d0ca537fcfde969b90385d52dee4fdb424b8940593a7710c466df1ff322",
+      "bytes": 305547,
+      "duplicate_group": "mestre_supp_original_headers#g1"
+    }
+  ],
+  "mestre_supp_sanitised_a": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/ARIS_OUTPUT/stage1_mestre_replication_and_insights/discarded_bundle_assembly1/inputs/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/ARIS_OUTPUT/stage1_mestre_replication_and_insights/inputs/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/results/stage1_mestre_replication_and_insights/inputs/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/PHYLOGENETIC_TREE/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/REPEATE_positive_dataset/supp_material_systematic_prediction_paper.csv",
+      "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+      "bytes": 305542,
+      "duplicate_group": "mestre_supp_sanitised_a#g1"
+    }
+  ],
+  "mestre_supp_sanitised_b": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V2/MELISSA_DATA/supporting_material/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/ARIS_OUTPUT/stage1_mestre_replication_and_insights/discarded_bundle_assembly1/inputs/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/ARIS_OUTPUT/stage1_mestre_replication_and_insights/inputs/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/results/stage1_mestre_replication_and_insights/inputs/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/PHYLOGENETIC_TREE/IBEX_TESTS/Supp_material_T1_R1_systematic_prediction.csv",
+      "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+      "bytes": 305541,
+      "duplicate_group": "mestre_supp_sanitised_b#g1"
+    }
+  ],
+  "mestre_tree_nwk": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/ARIS_OUTPUT/stage1_mestre_replication_and_insights/discarded_bundle_assembly1/inputs/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/ARIS_OUTPUT/stage1_mestre_replication_and_insights/inputs/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-retron-db/results/stage1_mestre_replication_and_insights/inputs/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/PHYLOGENETIC_TREE/Supplementary_mestre_Tree.nwk",
+      "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+      "bytes": 122043,
+      "duplicate_group": "mestre_tree_nwk#g1"
+    }
+  ],
+  "myrt_buildrvt_sh": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/buildRVT.sh",
+      "sha256": "2436e8cf4c71588375f65de397a261bcc0c151ffdaae9d3d2eed7ef9b192341b",
+      "bytes": 2597,
+      "duplicate_group": "myrt_buildrvt_sh#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/HMM/buildRVT.sh",
+      "sha256": "2436e8cf4c71588375f65de397a261bcc0c151ffdaae9d3d2eed7ef9b192341b",
+      "bytes": 2597,
+      "duplicate_group": "myrt_buildrvt_sh#g1"
+    }
+  ],
+  "myrt_refpkg_contents": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/CONTENTS.json",
+      "sha256": "4c1774bf436f2d93af08222494c63575b67d8ba87bbe7a1da44948686dab7b94",
+      "bytes": 772,
+      "duplicate_group": "myrt_refpkg_contents#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/CONTENTS.json",
+      "sha256": "4c1774bf436f2d93af08222494c63575b67d8ba87bbe7a1da44948686dab7b94",
+      "bytes": 772,
+      "duplicate_group": "myrt_refpkg_contents#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/CONTENTS.json",
+      "sha256": "4c1774bf436f2d93af08222494c63575b67d8ba87bbe7a1da44948686dab7b94",
+      "bytes": 772,
+      "duplicate_group": "myrt_refpkg_contents#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/CONTENTS.json",
+      "sha256": "4c1774bf436f2d93af08222494c63575b67d8ba87bbe7a1da44948686dab7b94",
+      "bytes": 772,
+      "duplicate_group": "myrt_refpkg_contents#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/CONTENTS.json",
+      "sha256": "4c1774bf436f2d93af08222494c63575b67d8ba87bbe7a1da44948686dab7b94",
+      "bytes": 772,
+      "duplicate_group": "myrt_refpkg_contents#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/CONTENTS.json",
+      "sha256": "4c1774bf436f2d93af08222494c63575b67d8ba87bbe7a1da44948686dab7b94",
+      "bytes": 772,
+      "duplicate_group": "myrt_refpkg_contents#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/myRT-FastTree2.refpkg/CONTENTS.json",
+      "sha256": "4c1774bf436f2d93af08222494c63575b67d8ba87bbe7a1da44948686dab7b94",
+      "bytes": 772,
+      "duplicate_group": "myrt_refpkg_contents#g1"
+    }
+  ],
+  "myrt_refpkg_mapping": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/Mapping",
+      "sha256": "a979d877bf45f8d7d807f8b43d118b97a1f6eb492ad247ca5d664b5512b1591a",
+      "bytes": 77693,
+      "duplicate_group": "myrt_refpkg_mapping#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/Mapping",
+      "sha256": "a979d877bf45f8d7d807f8b43d118b97a1f6eb492ad247ca5d664b5512b1591a",
+      "bytes": 77693,
+      "duplicate_group": "myrt_refpkg_mapping#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/Mapping",
+      "sha256": "a979d877bf45f8d7d807f8b43d118b97a1f6eb492ad247ca5d664b5512b1591a",
+      "bytes": 77693,
+      "duplicate_group": "myrt_refpkg_mapping#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/Mapping",
+      "sha256": "a979d877bf45f8d7d807f8b43d118b97a1f6eb492ad247ca5d664b5512b1591a",
+      "bytes": 77693,
+      "duplicate_group": "myrt_refpkg_mapping#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/Mapping",
+      "sha256": "a979d877bf45f8d7d807f8b43d118b97a1f6eb492ad247ca5d664b5512b1591a",
+      "bytes": 77693,
+      "duplicate_group": "myrt_refpkg_mapping#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/Mapping",
+      "sha256": "a979d877bf45f8d7d807f8b43d118b97a1f6eb492ad247ca5d664b5512b1591a",
+      "bytes": 77693,
+      "duplicate_group": "myrt_refpkg_mapping#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/myRT-FastTree2.refpkg/Mapping",
+      "sha256": "a979d877bf45f8d7d807f8b43d118b97a1f6eb492ad247ca5d664b5512b1591a",
+      "bytes": 77693,
+      "duplicate_group": "myrt_refpkg_mapping#g1"
+    }
+  ],
+  "myrt_refpkg_phylomodel": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/phylo_modeldyadg_ia.json",
+      "sha256": "eec62cfe8d90607f34c4912d67ff554d92417f74784d8daf3dcddd8f63f9a0f2",
+      "bytes": 16821,
+      "duplicate_group": "myrt_refpkg_phylomodel#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/phylo_modeldyadg_ia.json",
+      "sha256": "eec62cfe8d90607f34c4912d67ff554d92417f74784d8daf3dcddd8f63f9a0f2",
+      "bytes": 16821,
+      "duplicate_group": "myrt_refpkg_phylomodel#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/phylo_modeldyadg_ia.json",
+      "sha256": "eec62cfe8d90607f34c4912d67ff554d92417f74784d8daf3dcddd8f63f9a0f2",
+      "bytes": 16821,
+      "duplicate_group": "myrt_refpkg_phylomodel#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/phylo_modeldyadg_ia.json",
+      "sha256": "eec62cfe8d90607f34c4912d67ff554d92417f74784d8daf3dcddd8f63f9a0f2",
+      "bytes": 16821,
+      "duplicate_group": "myrt_refpkg_phylomodel#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/phylo_modeldyadg_ia.json",
+      "sha256": "eec62cfe8d90607f34c4912d67ff554d92417f74784d8daf3dcddd8f63f9a0f2",
+      "bytes": 16821,
+      "duplicate_group": "myrt_refpkg_phylomodel#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/phylo_modeldyadg_ia.json",
+      "sha256": "eec62cfe8d90607f34c4912d67ff554d92417f74784d8daf3dcddd8f63f9a0f2",
+      "bytes": 16821,
+      "duplicate_group": "myrt_refpkg_phylomodel#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/myRT-FastTree2.refpkg/phylo_modeldyadg_ia.json",
+      "sha256": "eec62cfe8d90607f34c4912d67ff554d92417f74784d8daf3dcddd8f63f9a0f2",
+      "bytes": 16821,
+      "duplicate_group": "myrt_refpkg_phylomodel#g1"
+    }
+  ],
+  "myrt_rvt_ref_fst": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.fst",
+      "sha256": "63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb",
+      "bytes": 1937739,
+      "duplicate_group": "myrt_rvt_ref_fst#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.fst",
+      "sha256": "63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb",
+      "bytes": 1937739,
+      "duplicate_group": "myrt_rvt_ref_fst#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.fst",
+      "sha256": "63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb",
+      "bytes": 1937739,
+      "duplicate_group": "myrt_rvt_ref_fst#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/RVT-ref.fst",
+      "sha256": "63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb",
+      "bytes": 1937739,
+      "duplicate_group": "myrt_rvt_ref_fst#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.fst",
+      "sha256": "63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb",
+      "bytes": 1937739,
+      "duplicate_group": "myrt_rvt_ref_fst#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.fst",
+      "sha256": "63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb",
+      "bytes": 1937739,
+      "duplicate_group": "myrt_rvt_ref_fst#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/myRT-FastTree2.refpkg/RVT-ref.fst",
+      "sha256": "63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb",
+      "bytes": 1937739,
+      "duplicate_group": "myrt_rvt_ref_fst#g1"
+    }
+  ],
+  "myrt_rvt_ref_hmm": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.hmm",
+      "sha256": "e421250c87826f40fbfcbab864c9150d426dbb6a590fd4b4094a7552627acc5e",
+      "bytes": 108894,
+      "duplicate_group": "myrt_rvt_ref_hmm#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.hmm",
+      "sha256": "e421250c87826f40fbfcbab864c9150d426dbb6a590fd4b4094a7552627acc5e",
+      "bytes": 108894,
+      "duplicate_group": "myrt_rvt_ref_hmm#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/RVT-ref.hmm",
+      "sha256": "e421250c87826f40fbfcbab864c9150d426dbb6a590fd4b4094a7552627acc5e",
+      "bytes": 108894,
+      "duplicate_group": "myrt_rvt_ref_hmm#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/RVT-ref.hmm",
+      "sha256": "e421250c87826f40fbfcbab864c9150d426dbb6a590fd4b4094a7552627acc5e",
+      "bytes": 108894,
+      "duplicate_group": "myrt_rvt_ref_hmm#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.hmm",
+      "sha256": "e421250c87826f40fbfcbab864c9150d426dbb6a590fd4b4094a7552627acc5e",
+      "bytes": 108894,
+      "duplicate_group": "myrt_rvt_ref_hmm#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.hmm",
+      "sha256": "e421250c87826f40fbfcbab864c9150d426dbb6a590fd4b4094a7552627acc5e",
+      "bytes": 108894,
+      "duplicate_group": "myrt_rvt_ref_hmm#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/myRT-FastTree2.refpkg/RVT-ref.hmm",
+      "sha256": "e421250c87826f40fbfcbab864c9150d426dbb6a590fd4b4094a7552627acc5e",
+      "bytes": 108894,
+      "duplicate_group": "myrt_rvt_ref_hmm#g1"
+    }
+  ],
+  "myrt_rvt_ref_log": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.log",
+      "sha256": "609f47502f773adee2c296c3dac0872b1b4152ed1a67acd02d3e45a33ce3c786",
+      "bytes": 1785307,
+      "duplicate_group": "myrt_rvt_ref_log#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.log",
+      "sha256": "609f47502f773adee2c296c3dac0872b1b4152ed1a67acd02d3e45a33ce3c786",
+      "bytes": 1785307,
+      "duplicate_group": "myrt_rvt_ref_log#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.log",
+      "sha256": "609f47502f773adee2c296c3dac0872b1b4152ed1a67acd02d3e45a33ce3c786",
+      "bytes": 1785307,
+      "duplicate_group": "myrt_rvt_ref_log#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/RVT-ref.log",
+      "sha256": "609f47502f773adee2c296c3dac0872b1b4152ed1a67acd02d3e45a33ce3c786",
+      "bytes": 1785307,
+      "duplicate_group": "myrt_rvt_ref_log#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.log",
+      "sha256": "609f47502f773adee2c296c3dac0872b1b4152ed1a67acd02d3e45a33ce3c786",
+      "bytes": 1785307,
+      "duplicate_group": "myrt_rvt_ref_log#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.log",
+      "sha256": "609f47502f773adee2c296c3dac0872b1b4152ed1a67acd02d3e45a33ce3c786",
+      "bytes": 1785307,
+      "duplicate_group": "myrt_rvt_ref_log#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/myRT-FastTree2.refpkg/RVT-ref.log",
+      "sha256": "609f47502f773adee2c296c3dac0872b1b4152ed1a67acd02d3e45a33ce3c786",
+      "bytes": 1785307,
+      "duplicate_group": "myrt_rvt_ref_log#g1"
+    }
+  ],
+  "myrt_rvt_ref_sto": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.sto",
+      "sha256": "74aa2acb8a93b7bf7af6c1359fe53798325b3ad326e15dbb0b7ac80c8367662b",
+      "bytes": 1904580,
+      "duplicate_group": "myrt_rvt_ref_sto#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.sto",
+      "sha256": "74aa2acb8a93b7bf7af6c1359fe53798325b3ad326e15dbb0b7ac80c8367662b",
+      "bytes": 1904580,
+      "duplicate_group": "myrt_rvt_ref_sto#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.sto",
+      "sha256": "74aa2acb8a93b7bf7af6c1359fe53798325b3ad326e15dbb0b7ac80c8367662b",
+      "bytes": 1904580,
+      "duplicate_group": "myrt_rvt_ref_sto#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/RVT-ref.sto",
+      "sha256": "74aa2acb8a93b7bf7af6c1359fe53798325b3ad326e15dbb0b7ac80c8367662b",
+      "bytes": 1904580,
+      "duplicate_group": "myrt_rvt_ref_sto#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.sto",
+      "sha256": "74aa2acb8a93b7bf7af6c1359fe53798325b3ad326e15dbb0b7ac80c8367662b",
+      "bytes": 1904580,
+      "duplicate_group": "myrt_rvt_ref_sto#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.sto",
+      "sha256": "74aa2acb8a93b7bf7af6c1359fe53798325b3ad326e15dbb0b7ac80c8367662b",
+      "bytes": 1904580,
+      "duplicate_group": "myrt_rvt_ref_sto#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/myRT-FastTree2.refpkg/RVT-ref.sto",
+      "sha256": "74aa2acb8a93b7bf7af6c1359fe53798325b3ad326e15dbb0b7ac80c8367662b",
+      "bytes": 1904580,
+      "duplicate_group": "myrt_rvt_ref_sto#g1"
+    }
+  ],
+  "myrt_rvt_ref_tre": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.tre",
+      "sha256": "265fbf255b927fd5902b76f032bc88b98d7ccdcd5f68537be4b2f7b5705e055f",
+      "bytes": 58661,
+      "duplicate_group": "myrt_rvt_ref_tre#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/myRT-FastTree2.refpkg/RVT-ref.tre",
+      "sha256": "265fbf255b927fd5902b76f032bc88b98d7ccdcd5f68537be4b2f7b5705e055f",
+      "bytes": 58661,
+      "duplicate_group": "myrt_rvt_ref_tre#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.tre",
+      "sha256": "265fbf255b927fd5902b76f032bc88b98d7ccdcd5f68537be4b2f7b5705e055f",
+      "bytes": 58661,
+      "duplicate_group": "myrt_rvt_ref_tre#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/RVT-ref.tre",
+      "sha256": "265fbf255b927fd5902b76f032bc88b98d7ccdcd5f68537be4b2f7b5705e055f",
+      "bytes": 58661,
+      "duplicate_group": "myrt_rvt_ref_tre#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.tre",
+      "sha256": "265fbf255b927fd5902b76f032bc88b98d7ccdcd5f68537be4b2f7b5705e055f",
+      "bytes": 58661,
+      "duplicate_group": "myrt_rvt_ref_tre#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/myRT-FastTree2.refpkg/RVT-ref.tre",
+      "sha256": "265fbf255b927fd5902b76f032bc88b98d7ccdcd5f68537be4b2f7b5705e055f",
+      "bytes": 58661,
+      "duplicate_group": "myrt_rvt_ref_tre#g1"
+    },
+    {
+      "path": "/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/myRT-FastTree2.refpkg/RVT-ref.tre",
+      "sha256": "265fbf255b927fd5902b76f032bc88b98d7ccdcd5f68537be4b2f7b5705e055f",
+      "bytes": 58661,
+      "duplicate_group": "myrt_rvt_ref_tre#g1"
+    }
+  ],
+  "myrt_suppl_toro_tree": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/supplementary_material/Suppl_Toro_Tree.txt",
+      "sha256": "ea0ee646d9dacc33eada8603a412578c9bab2753a362d49c7a0894e70c89be31",
+      "bytes": 726580,
+      "duplicate_group": "myrt_suppl_toro_tree#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/Suppl_Toro_Tree.txt",
+      "sha256": "ea0ee646d9dacc33eada8603a412578c9bab2753a362d49c7a0894e70c89be31",
+      "bytes": 726580,
+      "duplicate_group": "myrt_suppl_toro_tree#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/Suppl_Toro_Tree.txt",
+      "sha256": "ea0ee646d9dacc33eada8603a412578c9bab2753a362d49c7a0894e70c89be31",
+      "bytes": 726580,
+      "duplicate_group": "myrt_suppl_toro_tree#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/_archive/stage3_phylogenetic_paper/cache/myrt_ref/Suppl_Toro_Tree.txt",
+      "sha256": "ea0ee646d9dacc33eada8603a412578c9bab2753a362d49c7a0894e70c89be31",
+      "bytes": 726580,
+      "duplicate_group": "myrt_suppl_toro_tree#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/supporting_material/Suppl_Toro_Tree.txt",
+      "sha256": "ea0ee646d9dacc33eada8603a412578c9bab2753a362d49c7a0894e70c89be31",
+      "bytes": 726580,
+      "duplicate_group": "myrt_suppl_toro_tree#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/supporting_material/Suppl_Toro_Tree.txt",
+      "sha256": "ea0ee646d9dacc33eada8603a412578c9bab2753a362d49c7a0894e70c89be31",
+      "bytes": 726580,
+      "duplicate_group": "myrt_suppl_toro_tree#g1"
+    }
+  ],
+  "toro2026_epang_newick": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/Toro_2026/retron_reference_phylogeny_EPAng.newick",
+      "sha256": "118cccf7a58dd5a028ab5abec08be3839096d67e0c5afab88bb20442a211dbf6",
+      "bytes": 202242,
+      "duplicate_group": "toro2026_epang_newick#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/retron_reference_phylogeny_EPAng.newick",
+      "sha256": "118cccf7a58dd5a028ab5abec08be3839096d67e0c5afab88bb20442a211dbf6",
+      "bytes": 202242,
+      "duplicate_group": "toro2026_epang_newick#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V5/Toro_2026/retron_reference_phylogeny_EPAng.newick",
+      "sha256": "118cccf7a58dd5a028ab5abec08be3839096d67e0c5afab88bb20442a211dbf6",
+      "bytes": 202242,
+      "duplicate_group": "toro2026_epang_newick#g1"
+    }
+  ],
+  "toro2026_pipeline_scripts_zip": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/Toro_2026/SPIRE_retron_pipeline_scripts (1).zip",
+      "sha256": "3d4a99b21b818ec52c46e0228e85ff15e5944357406d09cf583b6745aa3fb177",
+      "bytes": 21183,
+      "duplicate_group": "toro2026_pipeline_scripts_zip#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V5/Toro_2026/SPIRE_retron_pipeline_scripts (1).zip",
+      "sha256": "3d4a99b21b818ec52c46e0228e85ff15e5944357406d09cf583b6745aa3fb177",
+      "bytes": 21183,
+      "duplicate_group": "toro2026_pipeline_scripts_zip#g1"
+    }
+  ],
+  "toro2026_type_hmms_tgz": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/Toro_2026/SPIRE_retron_type_specific_HMMs.tar.gz",
+      "sha256": "046d42d538b26a87ac4d62bf09c97c39046ae6c64abddff340f00e25d5d8d4d3",
+      "bytes": 1057761,
+      "duplicate_group": "toro2026_type_hmms_tgz#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/SPIRE_retron_type_specific_HMMs.tar.gz",
+      "sha256": "046d42d538b26a87ac4d62bf09c97c39046ae6c64abddff340f00e25d5d8d4d3",
+      "bytes": 1057761,
+      "duplicate_group": "toro2026_type_hmms_tgz#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V5/Toro_2026/SPIRE_retron_type_specific_HMMs.tar.gz",
+      "sha256": "046d42d538b26a87ac4d62bf09c97c39046ae6c64abddff340f00e25d5d8d4d3",
+      "bytes": 1057761,
+      "duplicate_group": "toro2026_type_hmms_tgz#g1"
+    }
+  ],
+  "toro2026_typexi_contree": [
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/Toro_2026/typeXI_local_tree.contree",
+      "sha256": "adc5845f759a77dda2942d8435bd286227d8e2390678e914464e4e5efb6b8b61",
+      "bytes": 23127,
+      "duplicate_group": "toro2026_typexi_contree#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/typeXI_local_tree.contree",
+      "sha256": "adc5845f759a77dda2942d8435bd286227d8e2390678e914464e4e5efb6b8b61",
+      "bytes": 23127,
+      "duplicate_group": "toro2026_typexi_contree#g1"
+    },
+    {
+      "path": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V5/Toro_2026/typeXI_local_tree.contree",
+      "sha256": "adc5845f759a77dda2942d8435bd286227d8e2390678e914464e4e5efb6b8b61",
+      "bytes": 23127,
+      "duplicate_group": "toro2026_typexi_contree#g1"
+    }
+  ]
+}

@@ -24,7 +24,9 @@ Read `general/CLAUDE.md` at session start.
 ## Read before acting
 
 - `idea-stage/docs/research_contract.md` — single project claim authority.
-- `launchers/LAUNCHER_01_database_characterization.md` — current active task scope and autonomy envelope.
+- `launchers/LAUNCHER_02_rt0_rt7_definition.md` — current active task scope and autonomy envelope.
+  Stage 1 is complete and landed; `launchers/LAUNCHER_01_database_characterization.md` is its
+  closed scope and stays readable as the source of the Stage-1 population constants.
 - `data/README.md` — canonical inputs, prior resources, environments and trust state.
 - `docs/decisions/` — settled operator decisions; supersede by a new record, never by
   silently rewriting history.
@@ -114,5 +116,5 @@ Before the active task:
 
 ```bash
 bash general/checks/specs_exist.sh
-python3 general/tools/check_launcher.py launchers/LAUNCHER_01_database_characterization.md
+python3 general/tools/check_launcher.py launchers/LAUNCHER_02_rt0_rt7_definition.md
 ```

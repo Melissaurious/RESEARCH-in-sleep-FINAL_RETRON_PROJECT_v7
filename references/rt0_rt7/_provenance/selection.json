@@ -1,0 +1,177 @@
+{
+  "lit_poch1989": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Poch Sauvaget Delarue Tordo 1989 EMBO J - Identification of four conserved motifs among the RNA-dependent polymerase encoding elements.pdf",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/literature/Poch_Sauvaget_Delarue_Tordo_1989_EMBO_J_four_conserved_motifs.pdf",
+    "sha256": "f86054ed4a607480a2e9420223a4badd642d1749f78763d4750a686e66a763ae",
+    "bytes": 1864497,
+    "action": "KEPT (already correct)"
+  },
+  "lit_xiong1990": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Origin and evolution of retroelements based upon their reverse transcriptase sequences. .pdf",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/literature/Xiong_Eickbush_1990_EMBO_J_origin_evolution_retroelements_RT.pdf",
+    "sha256": "3cec03446dd809a606403a887d55bf36d3f87115973201519c4166a869c264b6",
+    "bytes": 2317347,
+    "action": "KEPT (already correct)"
+  },
+  "lit_zimmerly2001": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Zimmerly Hausner Wu 2001 NAR - Phylogenetic relationships among group II intron ORFs (defines RT subdomain 0).pdf",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/literature/Zimmerly_Hausner_Wu_2001_NAR_group_II_intron_ORF_phylogeny.pdf",
+    "sha256": "67469b685b30b57b60a24e6974e7f3834649b084233236658ac4f8356835689f",
+    "bytes": 1582310,
+    "action": "KEPT (already correct)"
+  },
+  "lit_simon2008": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/A diversity of uncharacterized reverse transcriptases in bacteria .pdf",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/literature/Simon_Zimmerly_2008_NAR_diversity_uncharacterized_bacterial_RTs.pdf",
+    "sha256": "4db1d884a4cb665314aaa182548d64f09941221e88d6f58bfb107262ce01c876",
+    "bytes": 8855346,
+    "action": "KEPT (already correct)"
+  },
+  "lit_blocker2005_structural": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/MELISSA_DATA/papers_Phylogeny/Domain structure and three-dimensional model of a group II intron-encoded reverse transcriptase.pdf",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/literature/Blocker_et_al_2005_RNA_group_II_intron_RT_domain_structure_3D_model.pdf",
+    "sha256": "aa2a24f8f120e6f858e5f09e98833ba66145bf3d9da38849ae4f22b33a5bef1c",
+    "bytes": 1436894,
+    "action": "COPIED"
+  },
+  "hist_toro2014_rt0rt7_fasta": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/historical/toro_2014_Rt0-Rt7.FASTA",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/historical/toro_2014_Rt0-Rt7.FASTA",
+    "sha256": "6e43c4ccd3660f4cc1b8c3903ee53cb530552475c2b1d0eef9a55530d08e95b1",
+    "bytes": 1186359,
+    "action": "KEPT (already correct)"
+  },
+  "hist_toro2014_tableS1": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/historical/TableS1_Toro_2014.XLSX",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/historical/TableS1_Toro_2014.XLSX",
+    "sha256": "385e8043f873f56a92cd69c547bf293b41e36413da914360db92756556b68505",
+    "bytes": 153853,
+    "action": "KEPT (already correct)"
+  },
+  "mestre_tree_nwk": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Supplementary_mestre_Tree.nwk",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Supplementary_mestre_Tree.nwk",
+    "sha256": "7a9a11296dafa3fff7137bfe51cdd1f1365aa53dc87457400b105e2f7d0134ce",
+    "bytes": 122043,
+    "action": "KEPT (already correct)"
+  },
+  "mestre_supp_sanitised_a": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/supp_material_systematic_prediction_paper.csv",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/supp_material_systematic_prediction_paper.csv",
+    "sha256": "6a904dc211bf16d8c1bcf7eb32db743d3f674002f0bfb3a31c6555eb9a2a8daf",
+    "bytes": 305542,
+    "action": "KEPT (already correct)"
+  },
+  "mestre_supp_sanitised_b": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Supp_material_T1_R1_systematic_prediction.csv",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Supp_material_T1_R1_systematic_prediction.csv",
+    "sha256": "42f05d167b434a16e1faf3bdf49076ce7c454f4745c89c4598f1b2f9db89648f",
+    "bytes": 305541,
+    "action": "KEPT (already correct)"
+  },
+  "mestre_supp_original_headers": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Mestre_supplementary_material.csv",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/mestre_2020/Mestre_supplementary_material.csv",
+    "sha256": "536c5d0ca537fcfde969b90385d52dee4fdb424b8940593a7710c466df1ff322",
+    "bytes": 305547,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_rvt_ref_hmm": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/RVT-ref.hmm",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/RVT-ref.hmm",
+    "sha256": "e421250c87826f40fbfcbab864c9150d426dbb6a590fd4b4094a7552627acc5e",
+    "bytes": 108894,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_suppl_toro_tree": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/Suppl_Toro_Tree.txt",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/Suppl_Toro_Tree.txt",
+    "sha256": "ea0ee646d9dacc33eada8603a412578c9bab2753a362d49c7a0894e70c89be31",
+    "bytes": 726580,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_refpkg_contents": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/CONTENTS.json",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/CONTENTS.json",
+    "sha256": "4c1774bf436f2d93af08222494c63575b67d8ba87bbe7a1da44948686dab7b94",
+    "bytes": 772,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_refpkg_mapping": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/Mapping",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/Mapping",
+    "sha256": "a979d877bf45f8d7d807f8b43d118b97a1f6eb492ad247ca5d664b5512b1591a",
+    "bytes": 77693,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_refpkg_phylomodel": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/phylo_modeldyadg_ia.json",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/phylo_modeldyadg_ia.json",
+    "sha256": "eec62cfe8d90607f34c4912d67ff554d92417f74784d8daf3dcddd8f63f9a0f2",
+    "bytes": 16821,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_rvt_ref_fst": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.fst",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.fst",
+    "sha256": "63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb",
+    "bytes": 1937739,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_rvt_ref_sto": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.sto",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.sto",
+    "sha256": "74aa2acb8a93b7bf7af6c1359fe53798325b3ad326e15dbb0b7ac80c8367662b",
+    "bytes": 1904580,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_rvt_ref_tre": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.tre",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.tre",
+    "sha256": "265fbf255b927fd5902b76f032bc88b98d7ccdcd5f68537be4b2f7b5705e055f",
+    "bytes": 58661,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_rvt_ref_log": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.log",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.log",
+    "sha256": "609f47502f773adee2c296c3dac0872b1b4152ed1a67acd02d3e45a33ce3c786",
+    "bytes": 1785307,
+    "action": "KEPT (already correct)"
+  },
+  "myrt_buildrvt_sh": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/buildRVT.sh",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/buildRVT.sh",
+    "sha256": "2436e8cf4c71588375f65de397a261bcc0c151ffdaae9d3d2eed7ef9b192341b",
+    "bytes": 2597,
+    "action": "KEPT (already correct)"
+  },
+  "toro2026_epang_newick": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/retron_reference_phylogeny_EPAng.newick",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/retron_reference_phylogeny_EPAng.newick",
+    "sha256": "118cccf7a58dd5a028ab5abec08be3839096d67e0c5afab88bb20442a211dbf6",
+    "bytes": 202242,
+    "action": "KEPT (already correct)"
+  },
+  "toro2026_type_hmms_tgz": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/SPIRE_retron_type_specific_HMMs.tar.gz",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/SPIRE_retron_type_specific_HMMs.tar.gz",
+    "sha256": "046d42d538b26a87ac4d62bf09c97c39046ae6c64abddff340f00e25d5d8d4d3",
+    "bytes": 1057761,
+    "action": "KEPT (already correct)"
+  },
+  "toro2026_typexi_contree": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/typeXI_local_tree.contree",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/typeXI_local_tree.contree",
+    "sha256": "adc5845f759a77dda2942d8435bd286227d8e2390678e914464e4e5efb6b8b61",
+    "bytes": 23127,
+    "action": "KEPT (already correct)"
+  },
+  "toro2026_pipeline_scripts_zip": {
+    "selected_source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_WORK/MELISSA_DATA/Toro_2026/SPIRE_retron_pipeline_scripts (1).zip",
+    "project_path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/toro_2026/SPIRE_retron_pipeline_scripts.zip",
+    "sha256": "3d4a99b21b818ec52c46e0228e85ff15e5944357406d09cf583b6745aa3fb177",
+    "bytes": 21183,
+    "action": "KEPT (already correct)"
+  }
+}

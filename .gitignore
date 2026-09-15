@@ -21,6 +21,15 @@ data/*
 # Generated: live machine state is regenerated, never trusted from a stale copy
 site/resources_live.md
 
+# Publisher PDFs are registered, not redistributed. references/rt0_rt7/RESOURCE_REGISTER.tsv
+# carries each paper's citation, sha256, byte count and local path, which is what provenance
+# needs; the bytes are copyright-reserved and this repository has a remote, so pushing them
+# would redistribute them. Only Simon & Zimmerly 2008 carries an explicit open licence
+# (CC BY-NC 2.0 UK, stated in the PDF); to include that one, and only that one, the operator
+# un-ignores it here:
+#   !references/rt0_rt7/literature/Simon_Zimmerly_2008_NAR_diversity_uncharacterized_bacterial_RTs.pdf
+references/rt0_rt7/literature/*.pdf
+
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
