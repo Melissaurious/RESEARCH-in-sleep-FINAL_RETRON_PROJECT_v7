@@ -1,0 +1,8 @@
+combo	view_unit	n	n_with_ncrna	pct_with_ncrna	pct_with_ncrna_ci_lo	pct_with_ncrna_ci_hi	combo_n_tools	unit	denominator
+myRT|PADLOC|DefenseFinder	physical locus (union of its records' tools)	311258	221708	71.2297	71.0704	71.3884	3	physical loci	Retron physical loci of that tool combination
+myRT	physical locus (union of its records' tools)	104601	13543	12.9473	12.7452	13.1521	1	physical loci	Retron physical loci of that tool combination
+myRT|DefenseFinder	physical locus (union of its records' tools)	59218	9330	15.7553	15.4641	16.051	2	physical loci	Retron physical loci of that tool combination
+myRT|PADLOC	physical locus (union of its records' tools)	48454	43228	89.2145	88.9352	89.4876	2	physical loci	Retron physical loci of that tool combination
+PADLOC	physical locus (union of its records' tools)	22264	4053	18.2043	17.7029	18.7166	1	physical loci	Retron physical loci of that tool combination
+PADLOC|DefenseFinder	physical locus (union of its records' tools)	10514	4814	45.7866	44.836	46.7403	2	physical loci	Retron physical loci of that tool combination
+DefenseFinder	physical locus (union of its records' tools)	7392	932	12.6082	11.8709	13.3844	1	physical loci	Retron physical loci of that tool combination

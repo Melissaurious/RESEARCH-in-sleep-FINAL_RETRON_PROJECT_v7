@@ -1,0 +1,9 @@
+measure	value	pct	unit	denominator
+MULTI exact RTs scored	7593.0		MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)
+with at least one profile hit	7593.0	100.0	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)
+best-scoring family is among the record's labels	7586.0	99.908	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)
+second-best family also among the labels	7500.0	98.775	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)
+both best and second among the labels	7495.0	98.709	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)
+median best-vs-second margin (bits)	5.0		MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)
+margin below 10 bits	5661.0	74.556	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)
+median profile families hit per sequence	13.0		MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)

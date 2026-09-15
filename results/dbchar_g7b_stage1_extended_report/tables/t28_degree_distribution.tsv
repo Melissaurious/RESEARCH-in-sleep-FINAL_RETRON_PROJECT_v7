@@ -1,0 +1,11 @@
+side	degree	n	n_total	pct	max_degree	unit	denominator
+exact RT -> distinct exact ncRNAs	1	28271	29192	96.845	176	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact RT -> distinct exact ncRNAs	2	724	29192	2.4801	176	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact RT -> distinct exact ncRNAs	3	115	29192	0.3939	176	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact RT -> distinct exact ncRNAs	4	36	29192	0.1233	176	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact RT -> distinct exact ncRNAs	>4	46	29192	0.1576	176	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact ncRNA -> distinct exact RTs	1	13542	16458	82.2822	705	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact ncRNA -> distinct exact RTs	2	1563	16458	9.4969	705	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact ncRNA -> distinct exact RTs	3	484	16458	2.9408	705	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact ncRNA -> distinct exact RTs	4	235	16458	1.4279	705	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+exact ncRNA -> distinct exact RTs	>4	634	16458	3.8522	705	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view

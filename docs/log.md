@@ -43,3 +43,20 @@ Notes that are not gates (WA-G.1).
   now registered in `data/README.md`, and the count is asserted against the bundle registries at
   build time. Retros written for g2, g2b, g3, g4, g5, g6, g7 (WA-S.2). No Stage-1 measurement has
   been promoted to a project claim; `human_input_audit` is PENDING for all eight bundles.
+- 2026-09-15 · `dbchar_g7b_stage1_extended_report` landed: the extended Stage-1 scientific synthesis
+  requested beside the g7 closeout report, built ONLY from landed Stage-1 data (14 registered derived
+  datasets, 25 landed g2–g6 tables; raw JSONL never opened). 13 sections, 34 figures, 112 landed
+  tables, 153 values resolved from landed tables by exact row selector. `c01_reconcile.py` compares
+  294 re-derived quantities against the gates that published them and stops the build on any
+  disagreement: 294/294 agree, with 2 declared definition differences landed rather than forced.
+  An independent intervening-CDS recount from `rt_window_cds_v1` reproduces g3 on 5,000 sampled
+  placements at 100%. New statements, none promoted to a claim: the 94.5%-upstream prior has a
+  second mode that is one Salmonella protein re-deposited (118,275 placements → 1,908 exact pairs);
+  the Retron zero-ncRNA class tracks available upstream window context (0.78% → 60.5%); PADLOC's own
+  rules make part of the tool-carriage gradient definitional (retron_XII PROHIBITS an ncRNA), though
+  subtype composition does not explain all of it; recurrent exact RTs keep the same ncRNA partner
+  (87.8% at ≥100 loci); and GTDB prevalence with a catalogue denominator separates prevalence from
+  burden. The older report's "retron_V is structurally distinct (67% downstream)" is re-derived as
+  technical: 96.9% of those downstream placements sit in g3's contig-start-clipped mode. Nothing in
+  g1–g7 was modified; `human_input_audit` PENDING. ⚠️ `REPORT.html` was NOT seen rendered — the only
+  browser here is a snap that cannot run in this environment; all 34 figures were inspected as images.

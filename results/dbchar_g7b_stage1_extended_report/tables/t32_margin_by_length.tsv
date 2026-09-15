@@ -1,0 +1,9 @@
+len_bin	n_exact_rt	median_margin_bits	q25	q75	pct_margin_below_10	unit	denominator
+<150	1519	3.9	1.5	8.8	78.341	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin
+150-199	913	4.4	1.9	9.5	76.9989	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin
+200-249	972	5.8	2.5	11.325	68.3128	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin
+250-299	597	5.7	2.3	11.5	68.3417	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin
+300-349	533	4.9	2.0	10.1	74.2964	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin
+350-399	445	5.8	2.2	10.7	71.4607	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin
+400-499	844	5.65	2.7	11.225	69.3128	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin
+>=500	1770	5.1	2.2	9.3	78.9266	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin

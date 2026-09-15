@@ -1,0 +1,6 @@
+step	definition	n	removed_by	n_removed	pct_of_raw_records	cumulative_collapse_factor	unit	denominator
+raw record	one line of an RT-anchored file	3059700			100.0	1.0	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column
+distinct record	byte-identical duplicate lines collapsed	3051238	duplicate lines	8462.0	99.7234	1.0028	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column
+locus	distinct (contig, RT start, RT end, RT strand)	2847312	records of the same locus re-mined (usually a second database)	203926.0	93.0585	1.0746	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column
+physical locus	locus after NZ_ contig-prefix normalisation	2475684	RefSeq/GenBank twin loci collapsed	371628.0	80.9126	1.2359	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column
+exact RT	sha256 of the RT protein	501561	physical loci carrying an RT protein seen elsewhere	1974123.0	16.3925	6.1004	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column

@@ -1,0 +1,11 @@
+view_unit	n_cds_between	n	n_total	pct	unit	denominator
+placement	0	324904	344154	94.4066	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+placement	1	12427	344154	3.6109	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+placement	2	939	344154	0.2728	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+placement	3	544	344154	0.1581	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+placement	>3	5340	344154	1.5516	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+physical locus	0	281612	297793	94.5664	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+physical locus	1	9803	297793	3.2919	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+physical locus	2	690	297793	0.2317	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+physical locus	3	461	297793	0.1548	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+physical locus	>3	5227	297793	1.7552	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)

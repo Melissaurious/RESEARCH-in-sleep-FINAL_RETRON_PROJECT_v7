@@ -1,0 +1,19 @@
+padloc_subtype	ncrna_role	minimum_core	minimum_total	core_genes	secondary_genes	prohibited_genes	maximum_separation	unit	denominator
+retron_Ec107-like	REQUIRED IN PRACTICE - min_total exceeds min_core and the ncRNA is the only secondary gene	1	2	RT_Ec107-like	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_I-A	SECONDARY - scores towards min_total, not required	3	3	RT_I-A|ATPase_I-A|HNH_I-A	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_I-B	SECONDARY - scores towards min_total, not required	2	2	RT_I-B|ATPase-Toprim_I-B	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_I-C	SECONDARY - scores towards min_total, not required	1	1	RT-Toprim_I-C	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_II-A	SECONDARY - scores towards min_total, not required	2	2	RT_II-A|NDT_II-A	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_III-A	SECONDARY - scores towards min_total, not required	2	2	RT_III-A|PRTase_III-A	ncRNA|WH_III-A	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_IV	SECONDARY - scores towards min_total, not required	2	2	RT_IV|2TM_IV	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_IX	SECONDARY - scores towards min_total, not required	3	3	RT_IX|HEPN_IX|HTH_IX	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_V	SECONDARY - scores towards min_total, not required	2	2	RT_V|CSD_V	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_VI	SECONDARY - scores towards min_total, not required	3	3	RT_VI|HTH_VI|SP_VI	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_VII-A1	SECONDARY - scores towards min_total, not required	1	1	RT-DUF3800_VII-A1	ncRNA	DUF3800_VII	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_VII-A2	SECONDARY - scores towards min_total, not required	2	2	RT_VII-A2|DUF3800_VII	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_VIII	SECONDARY - scores towards min_total, not required	2	2	RT_VIII|DUF626_VIII	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_X	SECONDARY - scores towards min_total, not required	2	2	RT_X|IHF-VHL_X	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_XI	SECONDARY - scores towards min_total, not required	1	1	RT-Protease_XI	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_XII	PROHIBITED - a call requires the ncRNA to be absent	1	1	RT-TIR_XII	NA	ncRNA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_XIII	SECONDARY - scores towards min_total, not required	3	3	RT_XIII|HEAT-ARM_XIII|WGR_XIII|SWIM_XIII	ncRNA	NA	2	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+retron_outgroup	REQUIRED IN PRACTICE - min_total exceeds min_core and the ncRNA is the only secondary gene	1	2	RT_outgroup	ncRNA	NA	1	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus

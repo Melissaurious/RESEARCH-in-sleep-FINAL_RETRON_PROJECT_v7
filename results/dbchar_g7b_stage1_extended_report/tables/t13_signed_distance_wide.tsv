@@ -1,0 +1,59 @@
+bin_lo	bin_hi	n	view_unit	n_total	unit	denominator
+-10000.0	-5000.0	390	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-5000.0	-2000.0	2627	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-2000.0	-1000.0	122230	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-1000.0	-500.0	6252	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-500.0	-200.0	3390	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-200.0	-100.0	9208	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-100.0	-50.0	21884	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-50.0	-20.0	97643	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-20.0	-5.0	25794	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-5.0	5.0	47975	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+5.0	20.0	7	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+20.0	50.0	16	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+50.0	100.0	674	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+100.0	200.0	207	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+200.0	500.0	182	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+500.0	1000.0	54	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+1000.0	2000.0	86	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+2000.0	5000.0	5372	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+5000.0	10000.0	163	placement	344154	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-10000.0	-5000.0	196	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-5000.0	-2000.0	1408	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-2000.0	-1000.0	116970	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-1000.0	-500.0	4704	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-500.0	-200.0	2413	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-200.0	-100.0	6933	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-100.0	-50.0	17887	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-50.0	-20.0	81680	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-20.0	-5.0	20762	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-5.0	5.0	38598	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+5.0	20.0	5	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+20.0	50.0	11	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+50.0	100.0	436	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+100.0	200.0	114	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+200.0	500.0	132	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+500.0	1000.0	28	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+1000.0	2000.0	61	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+2000.0	5000.0	5313	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+5000.0	10000.0	142	physical locus	297793	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-10000.0	-5000.0	129	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-5000.0	-2000.0	407	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-2000.0	-1000.0	1426	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-1000.0	-500.0	1305	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-500.0	-200.0	1009	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-200.0	-100.0	1890	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-100.0	-50.0	3299	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-50.0	-20.0	11418	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-20.0	-5.0	4643	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+-5.0	5.0	4911	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+5.0	20.0	3	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+20.0	50.0	12	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+50.0	100.0	108	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+100.0	200.0	39	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+200.0	500.0	56	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+500.0	1000.0	12	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+1000.0	2000.0	19	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+2000.0	5000.0	190	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+5000.0	10000.0	48	exact pair	30924	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+2000.0	5000.0	5234	placement: technical clipped mode only	5234	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb

@@ -1,0 +1,22 @@
+detection_model	n_exact_ncrna	n_with_structure	pct_with_structure	pct_with_structure_ci_lo	pct_with_structure_ci_hi	unit	denominator
+OutgroupA	3319	499	15.0346	13.8592	16.291	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIA_IIAI	2109	93	4.4097	3.6132	5.3719	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIC1_IC2	2034	167	8.2104	7.0947	9.4837	exact ncRNA sequences	exact ncRNA sequences called by that model
+Ec107_like	2023	160	7.909	6.8112	9.1664	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeXIIIB_Ne144	1534	60	3.9113	3.0507	5.0022	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIIIA3	736	33	4.4837	3.2102	6.2298	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIB1	574	13	2.2648	1.3283	3.836	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeXIIIA_firmi	496	32	6.4516	4.6068	8.9658	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIIIA1	439	22	5.0114	3.3324	7.4709	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeXIIIC_Mx162	425	26	6.1176	4.2087	8.8128	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIIIA2	408	19	4.6569	3.0013	7.1583	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeXIII_Mx65	388	33	8.5052	6.1201	11.7038	exact ncRNA sequences	exact ncRNA sequences called by that model
+OutgroupB	338	5	1.4793	0.6335	3.4156	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIB2	320	8	2.5	1.2721	4.8548	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIV	285	10	3.5088	1.9169	6.3373	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIIA3_firmi	260	38	14.6154	10.837	19.4242	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIX	233	8	3.4335	1.7499	6.6277	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeV	218	7	3.211	1.564	6.4785	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIIA3_proteo	195	7	3.5897	1.7496	7.2231	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIIA2	65	4	6.1538	2.4189	14.7822	exact ncRNA sequences	exact ncRNA sequences called by that model
+TypeIB2_firmi	59	7	11.8644	5.8676	22.5236	exact ncRNA sequences	exact ncRNA sequences called by that model

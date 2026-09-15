@@ -1,0 +1,154 @@
+key	table	selector	column	raw_value	rendered	unit	denominator
+actino_prev	tables/t34_gtdb_prevalence_by_rank.tsv	rank=phylum;taxon=Actinomycetota	prevalence_pct	17.6796	17.7%	resolved values	n/a - one table lookup per row; no rate
+adj_n	tables/t12_configuration_classes.tsv	config_class=upstream, adjacent (0 CDS, ≤500 bp)	n_placements	193375	193,375	resolved values	n/a - one table lookup per row; no rate
+adj_pairs	tables/t12_configuration_classes.tsv	config_class=upstream, adjacent (0 CDS, ≤500 bp)	n_exact_pairs	23516	23,516	resolved values	n/a - one table lookup per row; no rate
+adj_pct	tables/t12_configuration_classes.tsv	config_class=upstream, adjacent (0 CDS, ≤500 bp)	pct_placements	56.1885	56.2%	resolved values	n/a - one table lookup per row; no rate
+band_placements	tables/t14_gap_mode_composition.tsv	measure=canonical placements in the 900-1,100 bp upstream band	value	127078	127,078	resolved values	n/a - one table lookup per row; no rate
+band_rts	tables/t14_gap_mode_composition.tsv	measure=distinct exact RTs in the band	value	1938	1,938	resolved values	n/a - one table lookup per row; no rate
+band_species_name	tables/t14_gap_mode_composition.tsv	measure=distinct exact RTs in the band	top_species	Salmonella_enterica	Salmonella_enterica	resolved values	n/a - one table lookup per row; no rate
+band_top_rt	tables/t14_gap_mode_composition.tsv	measure=placements contributed by the single most recurrent exact RT	value	102853	102,853	resolved values	n/a - one table lookup per row; no rate
+band_top_species_n	tables/t14_gap_mode_composition.tsv	measure=placements contributed by the most frequent species	value	111581	111,581	resolved values	n/a - one table lookup per row; no rate
+breadth_broad	tables/t38_recurrence_breadth.tsv	family=Retron;breadth_class=>5 species	pct_of_family_high_recurrence	19.5965	19.6%	resolved values	n/a - one table lookup per row; no rate
+breadth_one_species	tables/t38_recurrence_breadth.tsv	family=Retron;breadth_class=one species (database duplication or clonal)	pct_of_family_high_recurrence	35.9078	35.9%	resolved values	n/a - one table lookup per row; no rate
+cand_dist	tables/t31_candidates_vs_retron.tsv	population=non-Retron retron-CM candidates (single-family)	median_abs_distance_bp	2665.0	2,665	resolved values	n/a - one table lookup per row; no rate
+cand_env	tables/t31_candidates_vs_retron.tsv	population=non-Retron retron-CM candidates (single-family)	pct_in_retron_envelope	10.7692	10.8%	resolved values	n/a - one table lookup per row; no rate
+cand_n	tables/t31_candidates_vs_retron.tsv	population=non-Retron retron-CM candidates (single-family)	n_placements	260	260	resolved values	n/a - one table lookup per row; no rate
+cand_up	tables/t31_candidates_vs_retron.tsv	population=non-Retron retron-CM candidates (single-family)	pct_upstream	57.6923	57.7%	resolved values	n/a - one table lookup per row; no rate
+cds0_placement	tables/t15_cds_between_by_unit.tsv	view_unit=placement;n_cds_between=0	pct	94.4066	94.4%	resolved values	n/a - one table lookup per row; no rate
+cds1_placement	tables/t15_cds_between_by_unit.tsv	view_unit=placement;n_cds_between=1	pct	3.6109	3.61%	resolved values	n/a - one table lookup per row; no rate
+cds_recount_agree	tables/t43_independent_cds_recount.tsv	field=n_cds_between	pct_agree	100.0	100.0%	resolved values	n/a - one table lookup per row; no rate
+cds_recount_n	tables/t43_independent_cds_recount.tsv	field=n_cds_between	n_compared	5000	5,000	resolved values	n/a - one table lookup per row; no rate
+chlamydia_prev	tables/t34_gtdb_prevalence_by_rank.tsv	rank=phylum;taxon=Chlamydiota	prevalence_pct	11.8103	11.8%	resolved values	n/a - one table lookup per row; no rate
+clip_ncbi	tables/t39_context_truncation_by_database.tsv	source_database=ncbi_bacteria	pct_true_start_clipped	41.0064	41.0%	resolved values	n/a - one table lookup per row; no rate
+collapse	tables/t01_unit_funnel.tsv	step=exact RT	cumulative_collapse_factor	6.1004	6.10	resolved values	n/a - one table lookup per row; no rate
+combo3_exact_pct	tables/t18_tool_combination_carriage.tsv	view_unit=exact RT (non-exclusive across combinations);combo=myRT|PADLOC|DefenseFinder	pct_with_ncrna	53.083	53.1%	resolved values	n/a - one table lookup per row; no rate
+combo3_n	tables/t18_tool_combination_carriage.tsv	view_unit=physical locus (union of its records' tools);combo=myRT|PADLOC|DefenseFinder	n	311258	311,258	resolved values	n/a - one table lookup per row; no rate
+combo3_pct	tables/t18_tool_combination_carriage.tsv	view_unit=physical locus (union of its records' tools);combo=myRT|PADLOC|DefenseFinder	pct_with_ncrna	71.2297	71.2%	resolved values	n/a - one table lookup per row; no rate
+combo_disagree	tables/t18_combo_disagreement.tsv	measure=Retron physical loci whose records disagree on the tool combination	n	12	12	resolved values	n/a - one table lookup per row; no rate
+crispr_gii_pairs	tables/t33_multi_family_pairs.tsv	family_a=RVT-CRISPR;family_b=RVT-GII	n_exact_rt	5355	5,355	resolved values	n/a - one table lookup per row; no rate
+crispr_modes	tables/t08_rt_length_shape.tsv	family=RVT-CRISPR	n_modes_declared_rule	4	4	resolved values	n/a - one table lookup per row; no rate
+ctrl_below10	tables/t32_margin_comparison.tsv	population=V-RT-SINGLE (seeded control)	pct_margin_below_10_bits	2.3	2.30%	resolved values	n/a - one table lookup per row; no rate
+ctrl_margin	tables/t32_margin_comparison.tsv	population=V-RT-SINGLE (seeded control)	median_margin_bits	81.7	81.70	resolved values	n/a - one table lookup per row; no rate
+ctx_200	tables/t24_carriage_by_upstream_context.tsv	upstream_context_bin=1-200;upstream_side_clipped=True	pct_with_ncrna	15.7678	15.8%	resolved values	n/a - one table lookup per row; no rate
+ctx_full	tables/t24_carriage_by_upstream_context.tsv	upstream_context_bin=>9,000;upstream_side_clipped=False	pct_with_ncrna	60.5162	60.5%	resolved values	n/a - one table lookup per row; no rate
+ctx_full_n	tables/t24_carriage_by_upstream_context.tsv	upstream_context_bin=>9,000;upstream_side_clipped=False	n_loci	419613	419,613	resolved values	n/a - one table lookup per row; no rate
+ctx_zero	tables/t24_carriage_by_upstream_context.tsv	upstream_context_bin=0;upstream_side_clipped=True	pct_with_ncrna	0.7836	0.78%	resolved values	n/a - one table lookup per row; no rate
+ctx_zero_n	tables/t24_carriage_by_upstream_context.tsv	upstream_context_bin=0;upstream_side_clipped=True	n_loci	6636	6,636	resolved values	n/a - one table lookup per row; no rate
+cyano_per_genome	tables/t34_gtdb_prevalence_by_rank.tsv	rank=phylum;taxon=Cyanobacteriota	exact_rt_per_positive_genome	2.6343	2.63	resolved values	n/a - one table lookup per row; no rate
+cyano_prev	tables/t34_gtdb_prevalence_by_rank.tsv	rank=phylum;taxon=Cyanobacteriota	prevalence_pct	47.9382	47.9%	resolved values	n/a - one table lookup per row; no rate
+dgr_shift	tables/t04_family_share_by_unit.tsv	family=RVT-DGRs	shift_records_to_exact_rt	2.0293	2.03	resolved values	n/a - one table lookup per row; no rate
+dn_other_n	tables/t12_configuration_classes.tsv	config_class=downstream: other	n_placements	1527	1,527	resolved values	n/a - one table lookup per row; no rate
+dom100	tables/t30_partner_consistency.tsv	recurrence_bin=>=100	pct_dominant_ge_90	87.7698	87.8%	resolved values	n/a - one table lookup per row; no rate
+dom100_n	tables/t30_partner_consistency.tsv	recurrence_bin=>=100	n_exact_rt	139	139	resolved values	n/a - one table lookup per row; no rate
+ec107_n	tables/t21_carriage_by_subtype.tsv	tool=PADLOC;label=retron_Ec107-like	n_loci	28590	28,590	resolved values	n/a - one table lookup per row; no rate
+ec107_pct	tables/t21_carriage_by_subtype.tsv	tool=PADLOC;label=retron_Ec107-like	pct_with_ncrna	98.6219	98.6%	resolved values	n/a - one table lookup per row; no rate
+ecoli_exact_pct	tables/t36_ncbi_genus_representation.tsv	tax_genus=Escherichia	pct_of_exact_rt	6.4768	6.48%	resolved values	n/a - one table lookup per row; no rate
+ecoli_records_pct	tables/t36_ncbi_genus_representation.tsv	tax_genus=Escherichia	pct_of_records	20.0637	20.1%	resolved values	n/a - one table lookup per row; no rate
+gii_exact_pct	tables/t04_family_share_by_unit.tsv	family=RVT-GII	pct_exact_rt	51.1638	51.2%	resolved values	n/a - one table lookup per row; no rate
+gii_median_len	tables/t07_rt_length_quantiles.tsv	family=RVT-GII;completeness_class=ALL	median	407.0	407	resolved values	n/a - one table lookup per row; no rate
+gii_modes	tables/t08_rt_length_shape.tsv	family=RVT-GII	n_modes_declared_rule	2	2	resolved values	n/a - one table lookup per row; no rate
+gii_records_pct	tables/t04_family_share_by_unit.tsv	family=RVT-GII	pct_records	52.8933	52.9%	resolved values	n/a - one table lookup per row; no rate
+gii_top1pct	tables/t03_recurrence_concentration.tsv	family=RVT-GII;top_fraction_of_exact_rt=0.01	pct_of_physical_loci	67.4951	67.5%	resolved values	n/a - one table lookup per row; no rate
+gut_myrt_only	tables/t26_tool_mix_by_database.tsv	source_database_set=mgnify_human_gut;combo=myRT	pct_of_database_loci	37.1496	37.1%	resolved values	n/a - one table lookup per row; no rate
+ia_median_dist	tables/t16_geometry_by_model.tsv	detection_model=TypeIA_IIAI	median_signed_distance_bp	-1037.0	-1,037	resolved values	n/a - one table lookup per row; no rate
+ia_pct_ncrna	tables/t10_model_composition_by_unit.tsv	detection_model=TypeIA_IIAI	pct_exact_ncrna	12.4539	12.5%	resolved values	n/a - one table lookup per row; no rate
+ia_pct_placements	tables/t10_model_composition_by_unit.tsv	detection_model=TypeIA_IIAI	pct_placements	43.5416	43.5%	resolved values	n/a - one table lookup per row; no rate
+ic1_median_dist	tables/t16_geometry_by_model.tsv	detection_model=TypeIC1_IC2	median_signed_distance_bp	-31.0	-31	resolved values	n/a - one table lookup per row; no rate
+iia_3tool	tables/t20_combo_by_padloc_subtype.tsv	combo=myRT|PADLOC|DefenseFinder;label=retron_II-A	pct_with_ncrna	73.0888	73.1%	resolved values	n/a - one table lookup per row; no rate
+iia_myrt_padloc	tables/t20_combo_by_padloc_subtype.tsv	combo=myRT|PADLOC;label=retron_II-A	pct_with_ncrna	11.4551	11.5%	resolved values	n/a - one table lookup per row; no rate
+iiia_3tool	tables/t20_combo_by_padloc_subtype.tsv	combo=myRT|PADLOC|DefenseFinder;label=retron_III-A	pct_with_ncrna	22.3189	22.3%	resolved values	n/a - one table lookup per row; no rate
+iiia_pct	tables/t21_carriage_by_subtype.tsv	tool=PADLOC;label=retron_III-A	pct_with_ncrna	9.4275	9.43%	resolved values	n/a - one table lookup per row; no rate
+insp_clipped	tables/t40_inspectability.tsv	inspectability_tier=geometry-eligible, context clipped or RT at a window edge	pct_of_distinct_records	43.7721	43.8%	resolved values	n/a - one table lookup per row; no rate
+insp_full	tables/t40_inspectability.tsv	inspectability_tier=fully inspectable (exact back-translation, RT CDS present, window not clipped or edge-touching)	pct_of_distinct_records	39.1248	39.1%	resolved values	n/a - one table lookup per row; no rate
+insp_illposed	tables/t40_inspectability.tsv	inspectability_tier=ill-posed - back-translation mismatch	n_records	669	669	resolved values	n/a - one table lookup per row; no rate
+insp_recoded	tables/t40_inspectability.tsv	inspectability_tier=geometry-eligible, translation recoded (alt start / table 4 / masked stop)	pct_of_distinct_records	16.5322	16.5%	resolved values	n/a - one table lookup per row; no rate
+insp_seqonly	tables/t40_inspectability.tsv	inspectability_tier=sequence only - no defensible genomic context	n_records	16752	16,752	resolved values	n/a - one table lookup per row; no rate
+kleb_n	tables/t34_gtdb_prevalence_by_rank.tsv	rank=genus;taxon=Klebsiella	n_sampled_genomes	28408	28,408	resolved values	n/a - one table lookup per row; no rate
+kleb_prev	tables/t34_gtdb_prevalence_by_rank.tsv	rank=genus;taxon=Klebsiella	prevalence_pct	83.9975	84.0%	resolved values	n/a - one table lookup per row; no rate
+len300_carriage	tables/t25_carriage_by_rt_length.tsv	length_bin=300-349;completeness_class=all_complete	pct_with_ncrna	41.9234	41.9%	resolved values	n/a - one table lookup per row; no rate
+len_ia	tables/t09_ncrna_length_by_model.tsv	detection_model=TypeIA_IIAI	median	159.0	159	resolved values	n/a - one table lookup per row; no rate
+len_iiia3	tables/t09_ncrna_length_by_model.tsv	detection_model=TypeIIIA3	median	264.0	264	resolved values	n/a - one table lookup per row; no rate
+len_iv	tables/t09_ncrna_length_by_model.tsv	detection_model=TypeIV	median	94.0	94	resolved values	n/a - one table lookup per row; no rate
+len_short_carriage	tables/t25_carriage_by_rt_length.tsv	length_bin=<200;completeness_class=all_partial	pct_with_ncrna	26.8827	26.9%	resolved values	n/a - one table lookup per row; no rate
+long_n	tables/t12_configuration_classes.tsv	config_class=upstream, long intergenic gap (0 CDS, >500 bp)	n_placements	118275	118,275	resolved values	n/a - one table lookup per row; no rate
+long_pairs	tables/t12_configuration_classes.tsv	config_class=upstream, long intergenic gap (0 CDS, >500 bp)	n_exact_pairs	1908	1,908	resolved values	n/a - one table lookup per row; no rate
+long_pct	tables/t12_configuration_classes.tsv	config_class=upstream, long intergenic gap (0 CDS, >500 bp)	pct_placements	34.3669	34.4%	resolved values	n/a - one table lookup per row; no rate
+long_species	tables/t12_configuration_classes.tsv	config_class=upstream, long intergenic gap (0 CDS, >500 bp)	n_species	1268	1,268	resolved values	n/a - one table lookup per row; no rate
+lpe_ncbi	tables/t02_ladder_by_database.tsv	source_database=ncbi_bacteria	loci_per_exact_rt	5.4912	5.49	resolved values	n/a - one table lookup per row; no rate
+lpe_soil	tables/t02_ladder_by_database.tsv	source_database=mgnify_soil	loci_per_exact_rt	1.1116	1.11	resolved values	n/a - one table lookup per row; no rate
+mag_recovered	tables/t39_no_rt_cds_recovery_by_database.tsv	source_database=mgnify_human_gut;recovery_state=RECOVERED	n_records	12667	12,667	resolved values	n/a - one table lookup per row; no rate
+multi_below10	tables/t32_margin_comparison.tsv	population=V-RT-MULTI	pct_margin_below_10_bits	74.556	74.6%	resolved values	n/a - one table lookup per row; no rate
+multi_best_in_labels	tables/t32_multi_profile.tsv	measure=best-scoring family is among the record's labels	pct	99.908	99.9%	resolved values	n/a - one table lookup per row; no rate
+multi_elig	tables/t33_multi_architecture.tsv	population=MULTI records	pct_geometry_eligible	86.6289	86.6%	resolved values	n/a - one table lookup per row; no rate
+multi_exact	tables/t04_family_share_by_unit.tsv	family=MULTI	n_exact_rt	7593	7,593	resolved values	n/a - one table lookup per row; no rate
+multi_margin	tables/t32_margin_comparison.tsv	population=V-RT-MULTI	median_margin_bits	5.0	5	resolved values	n/a - one table lookup per row; no rate
+multi_n	tables/t32_margin_comparison.tsv	population=V-RT-MULTI	n_exact_rt	7593	7,593	resolved values	n/a - one table lookup per row; no rate
+multi_ncrna_pct	tables/t33_multi_architecture.tsv	population=MULTI records	pct_with_ncrna_call	0.0666	0.07%	resolved values	n/a - one table lookup per row; no rate
+multi_partner_single_model	tables/t30_partner_sequence_vs_family.tsv	measure=of those, all partners called by ONE covariance model	pct	99.1566	99.2%	resolved values	n/a - one table lookup per row; no rate
+myrt_only_pct	tables/t18_tool_combination_carriage.tsv	view_unit=physical locus (union of its records' tools);combo=myRT	pct_with_ncrna	12.9473	12.9%	resolved values	n/a - one table lookup per row; no rate
+myrt_padloc_n	tables/t18_tool_combination_carriage.tsv	view_unit=physical locus (union of its records' tools);combo=myRT|PADLOC	n	48454	48,454	resolved values	n/a - one table lookup per row; no rate
+myrt_padloc_pct	tables/t18_tool_combination_carriage.tsv	view_unit=physical locus (union of its records' tools);combo=myRT|PADLOC	pct_with_ncrna	89.2145	89.2%	resolved values	n/a - one table lookup per row; no rate
+n_canonical	tables/t12_configuration_classes.tsv	config_class=upstream, adjacent (0 CDS, ≤500 bp)	n_placements_total	344154	344,154	resolved values	n/a - one table lookup per row; no rate
+n_distinct	tables/t01_unit_funnel.tsv	step=distinct record	n	3051238	3,051,238	resolved values	n/a - one table lookup per row; no rate
+n_dupe_lines	tables/t01_unit_funnel.tsv	step=distinct record	n_removed	8462	8,462	resolved values	n/a - one table lookup per row; no rate
+n_exact	tables/t01_unit_funnel.tsv	step=exact RT	n	501561	501,561	resolved values	n/a - one table lookup per row; no rate
+n_exact_ncrna_ia	tables/t09_ncrna_length_by_model.tsv	detection_model=TypeIA_IIAI	n_exact_ncrna	2109	2,109	resolved values	n/a - one table lookup per row; no rate
+n_genomes	tables/t01_other_units.tsv	unit_name=genome	n	1542433	1,542,433	resolved values	n/a - one table lookup per row; no rate
+n_loci	tables/t01_unit_funnel.tsv	step=locus	n	2847312	2,847,312	resolved values	n/a - one table lookup per row; no rate
+n_pairs	tables/t29_recurrence_classes.tsv	recurrence_class=single_placement	n_exact_pairs	12005	12,005	resolved values	n/a - one table lookup per row; no rate
+n_phys	tables/t01_unit_funnel.tsv	step=physical locus	n	2475684	2,475,684	resolved values	n/a - one table lookup per row; no rate
+n_raw	tables/t01_unit_funnel.tsv	step=raw record	n	3059700	3,059,700	resolved values	n/a - one table lookup per row; no rate
+n_reconciled	tables/t41_reconciliation.tsv	quantity=CANONICAL placements	landed_value	344154.0	344,154	resolved values	n/a - one table lookup per row; no rate
+n_remined	tables/t01_unit_funnel.tsv	step=locus	n_removed	203926	203,926	resolved values	n/a - one table lookup per row; no rate
+n_twins	tables/t01_unit_funnel.tsv	step=physical locus	n_removed	371628	371,628	resolved values	n/a - one table lookup per row; no rate
+ncbi_3tool_share	tables/t26_tool_mix_by_database.tsv	source_database_set=ncbi_bacteria;combo=myRT|PADLOC|DefenseFinder	pct_of_database_loci	61.5121	61.5%	resolved values	n/a - one table lookup per row; no rate
+onecds_n	tables/t12_configuration_classes.tsv	config_class=upstream, one intervening CDS	n_placements	12398	12,398	resolved values	n/a - one table lookup per row; no rate
+onecds_pct	tables/t12_configuration_classes.tsv	config_class=upstream, one intervening CDS	pct_placements	3.6025	3.60%	resolved values	n/a - one table lookup per row; no rate
+only_ncbi	tables/t02_exact_rt_database_upset.tsv	membership=ncbi_bacteria	n_exact_rt	187155	187,155	resolved values	n/a - one table lookup per row; no rate
+opp_strand	tables/t12_configuration_flags.tsv	flag=opposite strand to the RT	n_placements	3041	3,041	resolved values	n/a - one table lookup per row; no rate
+opp_strand_pct	tables/t12_configuration_flags.tsv	flag=opposite strand to the RT	pct_of_canonical	0.8836	0.88%	resolved values	n/a - one table lookup per row; no rate
+outgroupa_pct_ncrna	tables/t10_model_composition_by_unit.tsv	detection_model=OutgroupA	pct_exact_ncrna	20.6545	20.7%	resolved values	n/a - one table lookup per row; no rate
+outgroupa_pct_placements	tables/t10_model_composition_by_unit.tsv	detection_model=OutgroupA	pct_placements	3.164	3.16%	resolved values	n/a - one table lookup per row; no rate
+ovl_rt_n	tables/t12_configuration_classes.tsv	config_class=overlapping the RT CDS	n_placements	12118	12,118	resolved values	n/a - one table lookup per row; no rate
+ovl_rt_pct	tables/t12_configuration_classes.tsv	config_class=overlapping the RT CDS	pct_placements	3.5211	3.52%	resolved values	n/a - one table lookup per row; no rate
+pairs_1to1	tables/t28_topology_components.tsv	shape=1:1	n_components	12079	12,079	resolved values	n/a - one table lookup per row; no rate
+pairs_many1	tables/t28_topology_components.tsv	shape=many:1	n_components	2293	2,293	resolved values	n/a - one table lookup per row; no rate
+pairs_manymany	tables/t28_topology_components.tsv	shape=many:many	n_components	367	367	resolved values	n/a - one table lookup per row; no rate
+pct_exact_of_raw	tables/t01_unit_funnel.tsv	step=exact RT	pct_of_raw_records	16.3925	16.4%	resolved values	n/a - one table lookup per row; no rate
+pelagi_n	tables/t34_gtdb_prevalence_by_rank.tsv	rank=genus;taxon=Pelagibacter	n_sampled_genomes	1374	1,374	resolved values	n/a - one table lookup per row; no rate
+pelagi_prev	tables/t34_gtdb_prevalence_by_rank.tsv	rank=genus;taxon=Pelagibacter	prevalence_pct	0.0	0.00%	resolved values	n/a - one table lookup per row; no rate
+pseudo_prev	tables/t34_gtdb_prevalence_by_rank.tsv	rank=phylum;taxon=Pseudomonadota	prevalence_pct	51.8489	51.8%	resolved values	n/a - one table lookup per row; no rate
+pseudo_sampled	tables/t34_gtdb_prevalence_by_rank.tsv	rank=phylum;taxon=Pseudomonadota	n_sampled_genomes	267130	267,130	resolved values	n/a - one table lookup per row; no rate
+rec_redeposit_pairs	tables/t29_recurrence_classes.tsv	recurrence_class=one_physical_locus_multiple_database_copies	pct_of_exact_pairs	30.2742	30.3%	resolved values	n/a - one table lookup per row; no rate
+rec_species_pairs	tables/t29_recurrence_classes.tsv	recurrence_class=multiple_species	pct_of_exact_pairs	16.3498	16.3%	resolved values	n/a - one table lookup per row; no rate
+rec_species_placements	tables/t29_recurrence_classes.tsv	recurrence_class=multiple_species	pct_of_placements	79.4193	79.4%	resolved values	n/a - one table lookup per row; no rate
+retron_complete_median	tables/t07_rt_length_quantiles.tsv	family=Retron;completeness_class=all_complete	median	366.0	366	resolved values	n/a - one table lookup per row; no rate
+retron_dist	tables/t31_candidates_vs_retron.tsv	population=CANONICAL Retron placements	median_abs_distance_bp	52.0	52	resolved values	n/a - one table lookup per row; no rate
+retron_env	tables/t31_candidates_vs_retron.tsv	population=CANONICAL Retron placements	pct_in_retron_envelope	90.5025	90.5%	resolved values	n/a - one table lookup per row; no rate
+retron_median_len	tables/t07_rt_length_quantiles.tsv	family=Retron;completeness_class=ALL	median	342.0	342	resolved values	n/a - one table lookup per row; no rate
+retron_partial_median	tables/t07_rt_length_quantiles.tsv	family=Retron;completeness_class=all_partial	median	255.0	255	resolved values	n/a - one table lookup per row; no rate
+retron_shift	tables/t04_family_share_by_unit.tsv	family=Retron	shift_records_to_exact_rt	0.718	0.72	resolved values	n/a - one table lookup per row; no rate
+retron_top1pct	tables/t03_recurrence_concentration.tsv	family=Retron;top_fraction_of_exact_rt=0.01	pct_of_physical_loci	73.2363	73.2%	resolved values	n/a - one table lookup per row; no rate
+rt_zero_gii	tables/t23_zero_call_by_family.tsv	family_label_set=RVT-GII	pct_zero	99.9923	100.0%	resolved values	n/a - one table lookup per row; no rate
+rt_zero_retron	tables/t23_zero_call_by_family.tsv	family_label_set=Retron	pct_zero	47.4039	47.4%	resolved values	n/a - one table lookup per row; no rate
+salm_per_exact	tables/t36_ncbi_genus_representation.tsv	tax_genus=Salmonella	records_per_exact_rt	25.636	25.64	resolved values	n/a - one table lookup per row; no rate
+same_strand_up	tables/t15_strand_and_overlap.tsv	direction=upstream	pct_same_strand	99.0888	99.1%	resolved values	n/a - one table lookup per row; no rate
+shared_ncbi_gtdb	tables/t02_exact_rt_database_upset.tsv	membership=ncbi_bacteria|gtdb_bacteria	n_exact_rt	196131	196,131	resolved values	n/a - one table lookup per row; no rate
+single_elig	tables/t33_multi_architecture.tsv	population=single-family records	pct_geometry_eligible	99.467	99.5%	resolved values	n/a - one table lookup per row; no rate
+single_model100	tables/t30_partner_consistency.tsv	recurrence_bin=>=100	pct_single_model	100.0	100.0%	resolved values	n/a - one table lookup per row; no rate
+single_ncrna_pct	tables/t33_multi_architecture.tsv	population=single-family records	pct_with_ncrna_call	11.3436	11.3%	resolved values	n/a - one table lookup per row; no rate
+struct_ia	tables/t11_structure_annotation_by_model.tsv	detection_model=TypeIA_IIAI	pct_with_structure	4.4097	4.41%	resolved values	n/a - one table lookup per row; no rate
+tech_n	tables/t12_configuration_classes.tsv	config_class=downstream: technical clipped mode	n_placements	5234	5,234	resolved values	n/a - one table lookup per row; no rate
+tech_ncrna	tables/t12_configuration_classes.tsv	config_class=downstream: technical clipped mode	n_exact_ncrna	18	18	resolved values	n/a - one table lookup per row; no rate
+tech_pct	tables/t12_configuration_classes.tsv	config_class=downstream: technical clipped mode	pct_placements	1.5208	1.52%	resolved values	n/a - one table lookup per row; no rate
+tech_species	tables/t12_configuration_classes.tsv	config_class=downstream: technical clipped mode	n_species	15	15	resolved values	n/a - one table lookup per row; no rate
+twin_double	tables/t23_zero_call_by_database.tsv	source_database_set=ncbi_bacteria|gtdb_bacteria	n_loci_with_2plus_placements	46071	46,071	resolved values	n/a - one table lookup per row; no rate
+two_seq_ncbi	tables/t23_zero_call_by_database.tsv	source_database_set=ncbi_bacteria	n_2	18	18	resolved values	n/a - one table lookup per row; no rate
+typev_tech_pct	tables/t16_geometry_by_model.tsv	detection_model=TypeV	pct_in_technical_mode	57.78	57.8%	resolved values	n/a - one table lookup per row; no rate
+vi_n	tables/t21_carriage_by_subtype.tsv	tool=PADLOC;label=retron_VI	n_loci	5699	5,699	resolved values	n/a - one table lookup per row; no rate
+vi_pct	tables/t21_carriage_by_subtype.tsv	tool=PADLOC;label=retron_VI	pct_with_ncrna	0.0175	0.02%	resolved values	n/a - one table lookup per row; no rate
+xii_n	tables/t21_carriage_by_subtype.tsv	tool=PADLOC;label=retron_XII	n_loci	16730	16,730	resolved values	n/a - one table lookup per row; no rate
+xii_pct	tables/t21_carriage_by_subtype.tsv	tool=PADLOC;label=retron_XII	pct_with_ncrna	0.006	0.01%	resolved values	n/a - one table lookup per row; no rate
+xiiia_median_dist	tables/t16_geometry_by_model.tsv	detection_model=TypeXIIIA_firmi	median_signed_distance_bp	-4705.0	-4,705	resolved values	n/a - one table lookup per row; no rate
+zero_ncbi	tables/t23_zero_call_by_database.tsv	source_database_set=ncbi_bacteria	pct_zero	44.7175	44.7%	resolved values	n/a - one table lookup per row; no rate
+zero_ncbi_n	tables/t23_zero_call_by_database.tsv	source_database_set=ncbi_bacteria	n_loci	425905	425,905	resolved values	n/a - one table lookup per row; no rate

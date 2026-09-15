@@ -1,0 +1,17 @@
+series	margin_bits	cumulative_pct	n_total	unit	denominator
+MULTI exact RTs	0.0	0.7902	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	1.0	13.1305	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	2.0	24.786	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	3.0	34.4923	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	5.0	50.4412	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	7.5	64.4936	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	10.0	74.9374	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	15.0	94.0735	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	20.0	99.7629	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	30.0	99.9341	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	50.0	99.9868	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	75.0	99.9868	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	100.0	99.9868	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	150.0	100.0	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	200.0	100.0	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+MULTI exact RTs	400.0	100.0	7593	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison

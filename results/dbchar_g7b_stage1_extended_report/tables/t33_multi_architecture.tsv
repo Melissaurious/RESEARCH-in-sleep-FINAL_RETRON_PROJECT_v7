@@ -1,0 +1,3 @@
+population	n_records	pct_geometry_eligible	pct_no_rt_cds	pct_rt_at_window_edge	pct_window_inverted	pct_with_ncrna_call	median_rt_aa_len	pct_bt_exact	unit	denominator
+MULTI records	9012	86.6289	22.5921	15.324	2.9183	0.0666	272.0	58.6995	distinct records	distinct RT-anchored records of that population (MULTI 9,012 vs the single-family files)
+single-family records	3042226	99.467	0.9686	4.3051	0.1203	11.3436	416.0	82.9685	distinct records	distinct RT-anchored records of that population (MULTI 9,012 vs the single-family files)

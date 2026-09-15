@@ -1,0 +1,9 @@
+source_database	n_records	n_loci	n_physical_loci	n_exact_rt	n_genomes	loci_per_exact_rt	records_per_exact_rt	unit	denominator
+ncbi_bacteria	2251359	2251354	2251354	409992	1237519	5.4912	5.4912	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database
+gtdb_bacteria	600551	600551	600551	220934	299306	2.7182	2.7182	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database
+mgnify_human_gut	142185	142185	142185	72910	87226	1.9501	1.9501	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database
+gem	22271	22271	22271	15852	13645	1.4049	1.4049	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database
+mgnify_soil	15658	15658	15658	14086	5461	1.1116	1.1116	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database
+mgnify_marine	7952	7952	7952	6009	4817	1.3233	1.3233	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database
+ncbi_archaea	7915	7915	7915	6956	4047	1.1379	1.1379	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database
+gtdb_archaea	3347	3347	3347	2766	1806	1.2101	1.2101	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database

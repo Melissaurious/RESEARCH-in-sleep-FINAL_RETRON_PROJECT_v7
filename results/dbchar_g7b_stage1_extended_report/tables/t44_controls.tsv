@@ -1,0 +1,21 @@
+control	expected	observed	tolerance	verdict	unit	denominator
+Wilson 95% lower bound for 50/100 (Newcombe 1998: 0.4038)	0.4038	0.4038315303659956	0.0002	PASS	controls	each row is one declared expectation checked against the landed tables
+Wilson 95% upper bound for 50/100 (Newcombe 1998: 0.5962)	0.5962	0.5961684696340044	0.0002	PASS	controls	each row is one declared expectation checked against the landed tables
+Wilson interval for 0/100 starts at 0	0.0	3.469446951953614e-18	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+Wilson 95% upper bound for 0/100 (Newcombe 1998: 0.0370)	0.037	0.03699349820698568	0.0002	PASS	controls	each row is one declared expectation checked against the landed tables
+Wilson interval narrows with n: width at 1/1,000,000 < 0.0001	True	True	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+mode rule returns 2 on a constructed bimodal length sample	2	2	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+mode rule returns 1 on a constructed unimodal length sample	1	1	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+configuration classes partition the CANONICAL placements	344154	344154	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+database-membership classes partition the exact RTs	501561	501561	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+tool combinations partition the Retron records	663308	663308	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+tool combinations partition the Retron physical loci	563701	563701	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+inspectability tiers partition the distinct records	3051238	3051238	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+zero/1/2/>2 classes partition the Retron physical loci	563701	563701	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+the unit funnel is monotone non-increasing	True	True	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+each funnel step's n_removed equals the difference between its two levels	True	True	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+every landed Wilson interval contains its point estimate and lies in [0,100]	0	0	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+GTDB phylum rows sum to the catalogue's genome count	715230	715230	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+GTDB phylum RT-positive rows sum to the corpus's gtdb_bacteria genome count	299306	299306	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+carriage against upstream context spans more than 20 percentage points	True	True	0.0	PASS	controls	each row is one declared expectation checked against the landed tables
+the three coverage rules differ by less than 1% of Retron loci	True	True	0.0	PASS	controls	each row is one declared expectation checked against the landed tables

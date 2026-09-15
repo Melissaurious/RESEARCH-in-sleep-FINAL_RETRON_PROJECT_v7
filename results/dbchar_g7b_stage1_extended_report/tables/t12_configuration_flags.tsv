@@ -1,0 +1,6 @@
+flag	n_placements	pct_of_canonical	unit	denominator
+opposite strand to the RT	3041	0.8836	placements	all CANONICAL placements (344,154); the flags are not exclusive
+ncRNA overlaps a non-RT CDS	53502	15.5459	placements	all CANONICAL placements (344,154); the flags are not exclusive
+placement in a contig-start-clipped window	58776	17.0784	placements	all CANONICAL placements (344,154); the flags are not exclusive
+placement in a window clipped at the contig end	56828	16.5124	placements	all CANONICAL placements (344,154); the flags are not exclusive
+same call arriving from another record of the same locus	23311	6.7734	placements	all CANONICAL placements (344,154); the flags are not exclusive

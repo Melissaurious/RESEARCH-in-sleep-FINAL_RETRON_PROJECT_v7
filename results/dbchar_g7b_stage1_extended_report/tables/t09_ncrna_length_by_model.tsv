@@ -1,0 +1,22 @@
+detection_model	n_exact_ncrna	n_placements	min	q05	q25	median	q75	q95	max	iqr	pct_with_structure_annotation	median_infernal_score	unit	denominator
+TypeIV	285	7827	84	90.0	93.0	94.0	95.0	97.0	100	2.0	3.5088	64.1	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIIA2	65	161	36	40.0	60.0	95.0	160.0	183.0	262	100.0	6.1538	42.6	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+OutgroupA	3319	10908	75	121.0	126.0	129.0	131.0	135.0	146	5.0	15.0346	58.8	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIC1_IC2	2034	61633	49	124.65	129.0	134.0	141.0	149.0	193	12.0	8.2104	45.9	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIIIA1	439	1705	89	125.0	134.0	137.0	143.0	161.0	177	9.0	5.0114	52.4	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIX	233	927	41	119.6	136.0	138.0	144.0	148.0	155	8.0	3.4335	90.3	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+OutgroupB	338	2018	39	135.0	138.0	139.0	140.0	155.0	177	2.0	1.4793	117.75	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIB1	574	4409	81	106.0	140.0	147.0	153.0	163.0	183	13.0	2.2648	46.1	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeXIII_Mx65	388	860	71	133.7	148.0	151.0	158.0	218.0	238	10.0	8.5052	77.6	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIIA3_proteo	195	2428	66	125.0	146.5	157.0	164.5	171.0	193	18.0	3.5897	111.2	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIA_IIAI	2109	150124	60	109.8	147.0	159.0	167.0	182.0	345	20.0	4.4097	88.8	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIB2_firmi	59	350	124	134.4	154.0	161.0	163.5	172.7	181	9.5	11.8644	58.2	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIB2	320	35283	36	116.35	155.0	167.0	187.0	207.0	272	32.0	2.5	91.0	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+Ec107_like	2023	36451	74	147.0	172.0	183.0	194.5	237.0	359	22.5	7.909	74.6	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIIA3_firmi	260	2303	69	160.9	182.0	186.0	194.0	207.05	215	12.0	14.6154	114.15	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeV	218	9955	94	154.7	178.0	188.0	192.0	198.0	213	14.0	3.211	82.5	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeXIIIA_firmi	496	4199	48	179.75	197.75	200.0	203.0	217.0	237	5.25	6.4516	51.15	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIIIA2	408	3242	34	155.0	181.0	207.0	219.0	238.0	267	38.0	4.6569	70.1	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeXIIIB_Ne144	1534	4476	66	190.3	221.0	224.0	230.0	237.0	265	9.0	3.9113	122.05	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeXIIIC_Mx162	425	1071	45	122.4	246.0	255.0	258.0	260.0	395	12.0	6.1176	206.2	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+TypeIIIA3	736	4983	76	238.0	254.0	264.0	276.0	289.0	324	22.0	4.4837	47.35	exact ncRNA sequences	exact ncRNA sequences called by that covariance model

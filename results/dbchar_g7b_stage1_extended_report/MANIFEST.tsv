@@ -1,0 +1,183 @@
+artifact	script	command	unit	denominator
+REPORT.html	scripts/assemble_report.py	see run.sh: assemble_report.py	n/a - assembled document	n/a - every value is resolved from a landed table of this bundle
+REPORT.md	scripts/assemble_report.py	see run.sh: assemble_report.py	n/a - assembled document	n/a - every value is resolved from a landed table of this bundle
+figures/fig01_unit_funnel.png	scripts/f01_corpus.py	see run.sh: f01_corpus.py	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column
+figures/fig01_unit_funnel.svg	scripts/f01_corpus.py	see run.sh: f01_corpus.py	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column
+figures/fig02_database_structure.png	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	all 501,561 exact RT sequences (right panel); exact RTs of that database (left panel)
+figures/fig02_database_structure.svg	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	all 501,561 exact RT sequences (right panel); exact RTs of that database (left panel)
+figures/fig03_exact_rt_recurrence.png	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RT sequences of that family bucket
+figures/fig03_exact_rt_recurrence.svg	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RT sequences of that family bucket
+figures/fig04_family_share_by_unit.png	scripts/f01_corpus.py	see run.sh: f01_corpus.py	records / loci / physical loci / exact RTs	all RT-anchored units of that level (MULTI included as its own row; the 29-family 'other' bucket is omitted from the figure and present in the table)
+figures/fig04_family_share_by_unit.svg	scripts/f01_corpus.py	see run.sh: f01_corpus.py	records / loci / physical loci / exact RTs	all RT-anchored units of that level (MULTI included as its own row; the 29-family 'other' bucket is omitted from the figure and present in the table)
+figures/fig05_database_family_heatmap.png	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences (distinct within a database)	exact RT sequences seen in that source database
+figures/fig05_database_family_heatmap.svg	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences (distinct within a database)	exact RT sequences seen in that source database
+figures/fig06_family_ranked.png	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RTs (bar) with loci/records beside	all RT-anchored units of that level
+figures/fig06_family_ranked.svg	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RTs (bar) with loci/records beside	all RT-anchored units of that level
+figures/fig07_rt_length_violins.png	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RTs of that family and completeness class, binned at 10 aa
+figures/fig07_rt_length_violins.svg	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RTs of that family and completeness class, binned at 10 aa
+figures/fig08_rt_length_ecdf.png	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RTs of that family (V-RT-SINGLE; MULTI separate)
+figures/fig08_rt_length_ecdf.svg	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RTs of that family (V-RT-SINGLE; MULTI separate)
+figures/fig09_ncrna_length_by_model.png	scripts/f02_geometry.py	see run.sh: f02_geometry.py	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+figures/fig09_ncrna_length_by_model.svg	scripts/f02_geometry.py	see run.sh: f02_geometry.py	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+figures/fig10_model_composition_by_unit.png	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements / physical loci / exact ncRNAs / exact RTs	all CANONICAL placements counted at that unit
+figures/fig10_model_composition_by_unit.svg	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements / physical loci / exact ncRNAs / exact RTs	all CANONICAL placements counted at that unit
+figures/fig11_subtype_by_model.png	scripts/f02_geometry.py	see run.sh: f02_geometry.py	physical loci	Retron physical loci carrying that tool's subtype label
+figures/fig11_subtype_by_model.svg	scripts/f02_geometry.py	see run.sh: f02_geometry.py	physical loci	Retron physical loci carrying that tool's subtype label
+figures/fig12_configuration_schematic.png	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements (loci/pairs beside)	all CANONICAL placements (344,154)
+figures/fig12_configuration_schematic.svg	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements (loci/pairs beside)	all CANONICAL placements (344,154)
+figures/fig13_signed_distance.png	scripts/f02_geometry.py	see run.sh: f02_geometry.py	the unit named in view_unit	units with a defined signed distance (CANONICAL placements; their median per physical locus; the landed median per exact pair)
+figures/fig13_signed_distance.svg	scripts/f02_geometry.py	see run.sh: f02_geometry.py	the unit named in view_unit	units with a defined signed distance (CANONICAL placements; their median per physical locus; the landed median per exact pair)
+figures/fig14_abs_distance_and_mode.png	scripts/f02_geometry.py	see run.sh: f02_geometry.py	the unit named in view_unit / series	CANONICAL placements counted at that unit
+figures/fig14_abs_distance_and_mode.svg	scripts/f02_geometry.py	see run.sh: f02_geometry.py	the unit named in view_unit / series	CANONICAL placements counted at that unit
+figures/fig15_cds_strand_overlap.png	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements / physical loci	CANONICAL placements counted at that unit
+figures/fig15_cds_strand_overlap.svg	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements / physical loci	CANONICAL placements counted at that unit
+figures/fig16_geometry_by_model.png	scripts/f02_geometry.py	see run.sh: f02_geometry.py	physical loci	CANONICAL physical loci of that model
+figures/fig16_geometry_by_model.svg	scripts/f02_geometry.py	see run.sh: f02_geometry.py	physical loci	CANONICAL physical loci of that model
+figures/fig17_tool_venn.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that tool combination
+figures/fig17_tool_venn.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that tool combination
+figures/fig18_tool_upset_carriage.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	the unit named in view_unit	Retron units of that tool combination
+figures/fig18_tool_upset_carriage.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	the unit named in view_unit	Retron units of that tool combination
+figures/fig19_combo_by_padloc_subtype.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that (tool combination, PADLOC subtype)
+figures/fig19_combo_by_padloc_subtype.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that (tool combination, PADLOC subtype)
+figures/fig20_zero_call_by_database.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that source-database set
+figures/fig20_zero_call_by_database.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that source-database set
+figures/fig21_carriage_by_upstream_context.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	geometry-eligible Retron physical loci in that bin of upstream window context
+figures/fig21_carriage_by_upstream_context.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	geometry-eligible Retron physical loci in that bin of upstream window context
+figures/fig22_carriage_by_subtype.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci carrying that tool's subtype label
+figures/fig22_carriage_by_subtype.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci carrying that tool's subtype label
+figures/fig23_pair_topology_recurrence.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	components / exact pairs	the 14,918 components and 30,924 exact pairs
+figures/fig23_pair_topology_recurrence.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	components / exact pairs	the 14,918 components and 30,924 exact pairs
+figures/fig24_partner_consistency.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	exact RTs carrying CANONICAL placements at ≥2 physical loci
+figures/fig24_partner_consistency.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	exact RTs carrying CANONICAL placements at ≥2 physical loci
+figures/fig25_candidates.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	placements	the 266 retained retron-CM placements beside non-Retron-labelled RTs
+figures/fig25_candidates.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	placements	the 266 retained retron-CM placements beside non-Retron-labelled RTs
+figures/fig26_multi_ambiguity.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs
+figures/fig26_multi_ambiguity.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs
+figures/fig27_gtdb_prevalence_phylum.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	genomes of that phylum in the GTDB bacterial catalogue
+figures/fig27_gtdb_prevalence_phylum.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	genomes of that phylum in the GTDB bacterial catalogue
+figures/fig28_family_phylum_prevalence.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	genomes of that phylum in the GTDB bacterial catalogue
+figures/fig28_family_phylum_prevalence.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	genomes of that phylum in the GTDB bacterial catalogue
+figures/fig29_rank_prevalence.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	sampled genomes of that taxon in the GTDB bacterial catalogue
+figures/fig29_rank_prevalence.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	sampled genomes of that taxon in the GTDB bacterial catalogue
+figures/fig30_ncbi_genus_representation.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	records / exact RTs	all NCBI-schema records carrying a genus (top 20 by records)
+figures/fig30_ncbi_genus_representation.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	records / exact RTs	all NCBI-schema records carrying a genus (top 20 by records)
+figures/fig31_data_quality.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	distinct records	distinct RT-anchored records (per database in three panels; corpus-wide in the inspectability panel)
+figures/fig31_data_quality.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	distinct records	distinct RT-anchored records (per database in three panels; corpus-wide in the inspectability panel)
+figures/fig32_carriage_by_rt_length.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class
+figures/fig32_carriage_by_rt_length.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class
+figures/fig33_recurrence_breadth.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+figures/fig33_recurrence_breadth.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+figures/fig34_tool_mix_by_database.png	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that source-database set and tool combination
+figures/fig34_tool_mix_by_database.svg	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that source-database set and tool combination
+tables/fig01_unit_funnel.tsv	scripts/f01_corpus.py	see run.sh: f01_corpus.py	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column
+tables/fig02_database_structure.tsv	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	all 501,561 exact RT sequences (right panel); exact RTs of that database (left panel)
+tables/fig03_exact_rt_recurrence.tsv	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RT sequences of that family bucket
+tables/fig04_family_share_by_unit.tsv	scripts/f01_corpus.py	see run.sh: f01_corpus.py	records / loci / physical loci / exact RTs	all RT-anchored units of that level (MULTI included as its own row; the 29-family 'other' bucket is omitted from the figure and present in the table)
+tables/fig05_database_family_heatmap.tsv	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences (distinct within a database)	exact RT sequences seen in that source database
+tables/fig06_family_ranked.tsv	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RTs (bar) with loci/records beside	all RT-anchored units of that level
+tables/fig07_rt_length_violins.tsv	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RTs of that family and completeness class, binned at 10 aa
+tables/fig08_rt_length_ecdf.tsv	scripts/f01_corpus.py	see run.sh: f01_corpus.py	exact RT sequences	exact RTs of that family (V-RT-SINGLE; MULTI separate)
+tables/fig09_ncrna_length_by_model.tsv	scripts/f02_geometry.py	see run.sh: f02_geometry.py	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+tables/fig10_model_composition_by_unit.tsv	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements / physical loci / exact ncRNAs / exact RTs	all CANONICAL placements counted at that unit
+tables/fig11_subtype_by_model.tsv	scripts/f02_geometry.py	see run.sh: f02_geometry.py	physical loci	Retron physical loci carrying that tool's subtype label
+tables/fig12_configuration_schematic.tsv	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements (loci/pairs beside)	all CANONICAL placements (344,154)
+tables/fig13_signed_distance.tsv	scripts/f02_geometry.py	see run.sh: f02_geometry.py	the unit named in view_unit	units with a defined signed distance (CANONICAL placements; their median per physical locus; the landed median per exact pair)
+tables/fig14_abs_distance_and_mode.tsv	scripts/f02_geometry.py	see run.sh: f02_geometry.py	the unit named in view_unit / series	CANONICAL placements counted at that unit
+tables/fig15_cds_strand_overlap.tsv	scripts/f02_geometry.py	see run.sh: f02_geometry.py	placements / physical loci	CANONICAL placements counted at that unit
+tables/fig16_geometry_by_model.tsv	scripts/f02_geometry.py	see run.sh: f02_geometry.py	physical loci	CANONICAL physical loci of that model
+tables/fig17_tool_venn.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that tool combination
+tables/fig18_tool_upset_carriage.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	the unit named in view_unit	Retron units of that tool combination
+tables/fig19_combo_by_padloc_subtype.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that (tool combination, PADLOC subtype)
+tables/fig20_zero_call_by_database.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that source-database set
+tables/fig21_carriage_by_upstream_context.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	geometry-eligible Retron physical loci in that bin of upstream window context
+tables/fig22_carriage_by_subtype.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci carrying that tool's subtype label
+tables/fig23_pair_topology_recurrence.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	components / exact pairs	the 14,918 components and 30,924 exact pairs
+tables/fig24_partner_consistency.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	exact RTs carrying CANONICAL placements at ≥2 physical loci
+tables/fig25_candidates.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	placements	the 266 retained retron-CM placements beside non-Retron-labelled RTs
+tables/fig26_multi_ambiguity.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs
+tables/fig27_gtdb_prevalence_phylum.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	genomes of that phylum in the GTDB bacterial catalogue
+tables/fig28_family_phylum_prevalence.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	genomes of that phylum in the GTDB bacterial catalogue
+tables/fig29_rank_prevalence.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	genomes	sampled genomes of that taxon in the GTDB bacterial catalogue
+tables/fig30_ncbi_genus_representation.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	records / exact RTs	all NCBI-schema records carrying a genus (top 20 by records)
+tables/fig31_data_quality.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	distinct records	distinct RT-anchored records (per database in three panels; corpus-wide in the inspectability panel)
+tables/fig32_carriage_by_rt_length.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class
+tables/fig33_recurrence_breadth.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+tables/fig34_tool_mix_by_database.tsv	scripts/f03_tools_taxonomy.py	see run.sh: f03_tools_taxonomy.py	physical loci	Retron physical loci of that source-database set and tool combination
+tables/g7b_resolved_values.tsv	scripts/assemble_report.py	see run.sh: assemble_report.py	resolved values	n/a - one table lookup per row; no rate
+tables/t01_other_units.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	the unit named in the row	n/a - counts of distinct units, no rate
+tables/t01_unit_funnel.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	the unit named in the row	raw RT-anchored records (3,059,700) for the percentage column
+tables/t02_exact_rt_database_sets.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RT sequences	all 501,561 exact RT sequences
+tables/t02_exact_rt_database_upset.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RT sequences	all 501,561 exact RT sequences
+tables/t02_ladder_by_database.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	records / loci / physical loci / exact RTs	distinct RT-anchored records of that source database
+tables/t02_twin_effect_by_database_set.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	loci	loci whose records carry that set of source databases
+tables/t03_recurrence_ccdf.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RT sequences	exact RT sequences of that family bucket
+tables/t03_recurrence_concentration.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	physical loci	physical loci of that family bucket
+tables/t04_family_share_by_unit.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	records / loci / physical loci / exact RTs	all RT-anchored units of that level (MULTI included as its own row)
+tables/t05_database_family_composition.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RT sequences (distinct within a database)	exact RT sequences seen in that source database
+tables/t06_family_ranked.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RTs (bar) with loci/records beside	all RT-anchored units of that level
+tables/t07_rt_length_histogram.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RT sequences	exact RTs of that family and completeness class, binned at 10 aa (bin_start_aa 1210 = 1,205 aa and above)
+tables/t07_rt_length_quantiles.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RT sequences	exact RTs of that family and completeness class (V-RT-SINGLE; MULTI is its own family row)
+tables/t08_rt_length_ecdf.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RT sequences	exact RTs of that family (V-RT-SINGLE; MULTI separate)
+tables/t08_rt_length_shape.tsv	scripts/a01_units_families.py	see run.sh: a01_units_families.py	exact RT sequences	exact RTs of that family (V-RT-SINGLE; MULTI separate)
+tables/t09_ncrna_length_by_model.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	exact ncRNA sequences	exact ncRNA sequences called by that covariance model
+tables/t09_ncrna_length_histogram.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+tables/t10_model_composition_by_unit.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	placements / physical loci / exact ncRNAs / exact RTs	all CANONICAL placements counted at that unit
+tables/t11_structure_annotation_by_model.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	exact ncRNA sequences	exact ncRNA sequences called by that model
+tables/t11_subtype_by_model.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	physical loci	Retron physical loci carrying that tool's subtype label
+tables/t12_configuration_classes.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	placements (loci/pairs beside)	all CANONICAL placements (344,154); a physical locus with two placements of different classes is counted in both locus columns
+tables/t12_configuration_flags.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	placements	all CANONICAL placements (344,154); the flags are not exclusive
+tables/t13_signed_distance_wide.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	the unit named in view_unit	units with a defined signed distance, asymmetric bins over -10..+10 kb
+tables/t13_signed_distance_zoom.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	the unit named in view_unit	units with a defined signed distance (CANONICAL placements; their median per physical locus; the landed median per exact pair), 5-bp bins over -300..300 bp
+tables/t14_abs_distance_ecdf.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	the unit named in view_unit	units with a defined signed distance
+tables/t14_gap_mode_composition.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	placements	CANONICAL upstream placements with a 900-1,100 bp gap (the second upstream mode)
+tables/t14_upstream_gap_by_unit.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	the unit named in series	CANONICAL upstream placements, counted at that unit
+tables/t15_cds_between_by_unit.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	the unit named in view_unit	CANONICAL placements (or physical loci, taking the minimum CDS count of the locus's placements)
+tables/t15_strand_and_overlap.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	placements	CANONICAL placements of that direction
+tables/t16_distance_histogram_by_model.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	physical loci	CANONICAL physical loci of that model (models with >=200 loci), asymmetric bins over -10..+10 kb
+tables/t16_geometry_by_model.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	physical loci	CANONICAL physical loci carrying a call by that covariance model
+tables/t17_calls_per_locus.tsv	scripts/a02_geometry.py	see run.sh: a02_geometry.py	physical loci	physical loci carrying at least one CANONICAL placement
+tables/t18_combo_disagreement.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	physical loci	Retron physical loci (563,701)
+tables/t18_tool_combination_carriage.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	the unit named in view_unit (Retron family label)	units of that tool combination; carriage = >=1 CANONICAL ncRNA placement (record unit: >=1 ncRNA call in the record). Exact RTs are NOT exclusive between combinations: one protein can occur at loci called by different tools
+tables/t20_combo_by_padloc_subtype.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	physical loci	Retron physical loci of that (tool combination, PADLOC subtype); rates on fewer than 30 loci are flagged masked_small_n
+tables/t21_carriage_by_subtype.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	physical loci	Retron physical loci carrying that tool's subtype label; a locus whose records carry two labels of one tool is counted under each label
+tables/t22_cm_meta.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	covariance models	n/a - describes the detector's CM library, not the corpus
+tables/t22_padloc_rules.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	PADLOC system rules	n/a - describes the detector's own rule files, not the corpus
+tables/t23_zero_call_by_database.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	physical loci	Retron physical loci whose records carry that set of source databases; the 0/1/2/>2 classes count DISTINCT exact ncRNA sequences at the locus, not placements (a locus deposited in two databases carries the same call twice; n_loci_with_2plus_placements counts those)
+tables/t23_zero_call_by_family.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	loci	loci carrying that family label set; a call is a CANONICAL placement. Outside Retron this measures detector scope, never biological absence
+tables/t24_carriage_by_upstream_context.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	physical loci	geometry-eligible Retron physical loci in that bin of upstream window context (bp between the RT gene and the upstream window edge, transcription-relative; upstream_side_clipped is the contig-clipping flag of that same side)
+tables/t25_carriage_by_rt_length.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+tables/t26_tool_mix_by_database.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	physical loci	Retron physical loci of that source-database set and tool combination
+tables/t27_old_report_reconciliation.tsv	scripts/a03_tools_zero_call.py	see run.sh: a03_tools_zero_call.py	as named in canonical_unit	n/a - a comparison of the old report's published values with canonical Stage-1 re-derivations; the old numbers are quoted, never reused
+tables/t28_degree_distribution.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	exact sequences	exact RT (or exact ncRNA) sequences present in the exact-pair view
+tables/t28_topology_components.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	connected components of the exact RT-ncRNA bipartite graph	the 14,918 components over 30,924 exact pairs (carried from the landed g3 table, re-emitted unchanged)
+tables/t29_recurrence_ccdf.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	exact pairs	exact pairs of that recurrence class
+tables/t29_recurrence_classes.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	exact pairs (placements beside)	the 30,924 distinct (exact RT, exact ncRNA) pairs
+tables/t30_dominant_partner_histogram.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	exact RT sequences	exact RTs carrying CANONICAL placements at >=2 physical loci (n = 9,239)
+tables/t30_partner_consistency.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	exact RT sequences	exact RTs carrying CANONICAL placements at >=2 physical loci, binned by how many loci they occur at
+tables/t30_partner_sequence_vs_family.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	exact RT sequences	exact RTs paired with more than one exact ncRNA sequence in the CANONICAL view
+tables/t31_candidate_exact_rts.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	exact RT sequences	exact RTs carrying at least one of the 266 candidate placements
+tables/t31_candidate_placements.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	placements	each of the 266 candidate placements, one per row
+tables/t31_candidates_family_model.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	placements	the 266 retained retron-CM placements beside non-Retron-labelled RTs (geometry-eligible)
+tables/t31_candidates_vs_retron.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	placements	placements of the population named in the row; the 'Retron envelope' is declared as upstream, same strand, 0 intervening CDS and a gap of 0-1100 bp
+tables/t32_margin_by_length.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	MULTI exact RT sequences	V-RT-MULTI exact RTs of that RT length bin
+tables/t32_margin_comparison.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	exact RT sequences	MULTI exact RTs vs the landed seeded control of 2,000 single-family exact RTs (carried from g4, re-emitted unchanged)
+tables/t32_margin_ecdf.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs; the landed control (single-family sample) median is in t32_margin_comparison
+tables/t32_multi_margin_length.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	MULTI exact RT sequences	each of the 7,593 V-RT-MULTI exact RTs, one per row
+tables/t32_multi_profile.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	MULTI exact RT sequences	the 7,593 V-RT-MULTI exact RTs (carried from the landed g4 table, re-emitted unchanged)
+tables/t33_multi_architecture.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	distinct records	distinct RT-anchored records of that population (MULTI 9,012 vs the single-family files)
+tables/t33_multi_family_pairs.tsv	scripts/a04_pairs_candidates_multi.py	see run.sh: a04_pairs_candidates_multi.py	MULTI exact RT sequences	V-RT-MULTI exact RTs whose label set contains both families (a 3-label set contributes to all three pairs)
+tables/t34_gtdb_prevalence_by_rank.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	genomes	genomes of that taxon in the GTDB bacterial catalogue (the sampled set; an upper bound on what the pipeline attempted - pipeline failures are not recorded in any Stage-1 input). Only gtdb_bacteria corpus records contribute the numerator
+tables/t35_family_by_phylum_prevalence.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	genomes	genomes of that phylum in the GTDB bacterial catalogue (phyla with >=1,000 sampled genomes); numerator = genomes carrying >=1 locus of that family label
+tables/t36_ncbi_genus_representation.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	records / loci / exact RTs	all NCBI-schema records carrying a genus (carried from the landed g5 table, re-emitted unchanged, top 20 by records). This is REPRESENTATION: no sampled-genome denominator exists for the NCBI block, so no prevalence is computed
+tables/t37_carriage_by_host_completeness.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	physical loci	Retron physical loci in gtdb_bacteria genomes with a CheckM2 completeness value in the catalogue (the only databases carrying one are GTDB/GEM/MGnify; NCBI carries no CheckM column at all - g5)
+tables/t38_recurrence_breadth.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	exact RT sequences	exact RTs occurring in >=20 genomes, of that family
+tables/t38_recurrence_scatter.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	exact RT sequences	each exact RT occurring in >=20 genomes, one per row
+tables/t39_bt_status_by_database.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	distinct records	distinct RT-anchored records of that source database
+tables/t39_checkm_availability.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	genome entries	genome entries per source database (carried from the landed g5 table, re-emitted unchanged)
+tables/t39_context_truncation_by_database.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	distinct records	distinct RT-anchored records of that source database
+tables/t39_no_rt_cds_recovery_by_database.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+tables/t40_inspectability.tsv	scripts/a05_taxonomy_quality.py	see run.sh: a05_taxonomy_quality.py	distinct records	all 3,051,238 distinct RT-anchored records
+tables/t41_reconciliation.tsv	scripts/c01_reconcile.py	see run.sh: c01_reconcile.py	landed values compared	every quantity this bundle re-derives that a landed g1-g6 table also carries; a DISAGREE row stops the build
+tables/t42_definition_differences.tsv	scripts/c01_reconcile.py	see run.sh: c01_reconcile.py	loci	loci of that family label; the three columns are three declared coverage rules over the same loci, not three estimates of one number
+tables/t43_independent_cds_recount.tsv	scripts/c02_independent_cds_between.py	see run.sh: c02_independent_cds_between.py	placements	a seeded random sample of 5,000 CANONICAL placements (seed 20260915), recomputed from rt_window_cds_v1 by an implementation that shares no code with g3
+tables/t44_controls.tsv	scripts/c03_controls.py	see run.sh: c03_controls.py	controls	each row is one declared expectation checked against the landed tables

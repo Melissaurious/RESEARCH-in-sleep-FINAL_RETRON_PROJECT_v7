@@ -1,0 +1,13 @@
+source_database	recovery_state	n_records	n_records_in_database	pct_of_database_records	unit	denominator
+mgnify_human_gut	SEQUENCE_ONLY	15364	142185	10.8056	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+mgnify_human_gut	RECOVERED	12667	142185	8.9088	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+mgnify_soil	RECOVERED	879	15658	5.6137	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+mgnify_marine	SEQUENCE_ONLY	766	7952	9.6328	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+mgnify_human_gut	ILL_POSED	581	142185	0.4086	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+mgnify_marine	RECOVERED	577	7952	7.256	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+mgnify_soil	SEQUENCE_ONLY	533	15658	3.404	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+gem	RECOVERED	65	22271	0.2919	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+gem	SEQUENCE_ONLY	25	22271	0.1123	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+mgnify_marine	ILL_POSED	23	7952	0.2892	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+mgnify_soil	ILL_POSED	22	15658	0.1405	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database
+gem	ILL_POSED	2	22271	0.009	distinct records	records without a marked RT CDS, of that source database; the percentage is out of all distinct RT-anchored records of the database

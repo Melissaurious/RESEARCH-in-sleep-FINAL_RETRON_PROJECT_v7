@@ -1,0 +1,3 @@
+population	n_exact_rt	median_margin_bits	q25_margin_bits	q75_margin_bits	pct_margin_below_10_bits	median_families_hit	unit	denominator
+V-RT-MULTI	7593	5.0	2.1	10.1	74.556	13.0	exact RT sequences	MULTI exact RTs vs the landed seeded control of 2,000 single-family exact RTs (carried from g4, re-emitted unchanged)
+V-RT-SINGLE (seeded control)	2000	81.7	49.025	123.1	2.3	35.0	exact RT sequences	MULTI exact RTs vs the landed seeded control of 2,000 single-family exact RTs (carried from g4, re-emitted unchanged)

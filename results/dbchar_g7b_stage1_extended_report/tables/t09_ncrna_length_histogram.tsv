@@ -1,0 +1,583 @@
+bin_lo	bin_hi	n	detection_model	unit	denominator
+70.0	75.0	1	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	2	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	1	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	2	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	2	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	1	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	2	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	2	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	3	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	4	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	20	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	9	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	19	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	12	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	41	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	13	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	92	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	83	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	115	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	174	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	284	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	232	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	262	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	141	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	121	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	103	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	29	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	31	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	39	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	26	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	18	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	12	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	39	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+240.0	245.0	7	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+245.0	250.0	18	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+250.0	255.0	10	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+255.0	260.0	10	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+260.0	265.0	4	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+265.0	270.0	1	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+270.0	275.0	4	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+275.0	280.0	4	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+285.0	290.0	1	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+300.0	305.0	1	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+310.0	315.0	6	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+325.0	330.0	2	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+330.0	335.0	9	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+350.0	355.0	3	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+355.0	360.0	8	Ec107_like	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	2	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	9	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	4	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	4	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	5	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	4	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	1	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	14	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	43	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	545	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	1302	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	1127	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	246	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	12	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	1	OutgroupA	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+35.0	40.0	1	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	1	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	3	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	1	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	1	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	7	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	196	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	69	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	10	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	30	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	6	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	1	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	11	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	1	OutgroupB	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+60.0	65.0	9	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+65.0	70.0	8	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+70.0	75.0	13	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	10	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	10	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	13	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	9	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	14	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	11	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	9	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	8	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	12	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	19	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	16	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	31	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	61	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	180	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	158	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	255	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	282	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	310	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	270	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	142	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	115	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	70	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	33	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	11	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	6	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	2	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	3	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	2	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	3	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	2	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+255.0	260.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+260.0	265.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+265.0	270.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+280.0	285.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+285.0	290.0	2	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+310.0	315.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+340.0	345.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+345.0	350.0	1	TypeIA_IIAI	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	3	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	4	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	2	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	7	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	6	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	11	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	5	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	6	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	9	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	27	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	50	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	107	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	119	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	115	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	48	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	39	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	10	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	3	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	1	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	2	TypeIB1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+35.0	40.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+40.0	45.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+45.0	50.0	3	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+60.0	65.0	1	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+70.0	75.0	1	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	1	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	1	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	1	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	5	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	51	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	43	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	28	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	27	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	12	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	32	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	11	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	22	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	6	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	26	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	24	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	5	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	1	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	1	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+270.0	275.0	2	TypeIB2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	1	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	2	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	5	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	2	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	1	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	4	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	9	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	25	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	5	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	2	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	2	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	1	TypeIB2_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+45.0	50.0	1	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+60.0	65.0	1	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+70.0	75.0	1	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	2	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	2	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	4	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	2	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	13	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	76	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	474	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	522	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	359	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	331	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	170	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	47	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	13	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	2	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	7	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	1	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	3	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	1	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	2	TypeIC1_IC2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+35.0	40.0	3	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+40.0	45.0	4	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+45.0	50.0	4	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+55.0	60.0	5	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+60.0	65.0	3	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+65.0	70.0	2	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+70.0	75.0	2	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	2	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	3	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	1	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	3	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	3	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	3	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	1	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	2	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	1	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	1	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	2	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	1	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	6	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	5	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	1	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	1	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	3	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	2	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+260.0	265.0	1	TypeIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+65.0	70.0	1	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	2	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	3	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	1	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	1	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	1	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	1	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	3	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	1	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	6	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	12	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	20	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	67	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	51	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	30	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	12	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	22	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	23	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	2	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	1	TypeIIA3_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+65.0	70.0	1	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	1	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	1	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	1	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	3	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	2	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	8	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	7	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	9	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	10	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	11	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	15	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	60	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	17	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	31	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	15	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	1	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	1	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	1	TypeIIA3_proteo	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	1	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	3	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	3	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	2	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	5	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	7	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	21	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	83	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	166	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	57	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	33	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	20	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	10	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	14	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	8	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	3	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	3	TypeIIIA1	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+30.0	35.0	1	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+40.0	45.0	1	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+55.0	60.0	1	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	1	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	9	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	1	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	3	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	3	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	14	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	12	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	5	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	25	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	16	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	24	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	16	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	20	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	17	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	19	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	34	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	32	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	71	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	17	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	15	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	16	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	24	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+240.0	245.0	4	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+245.0	250.0	5	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+255.0	260.0	1	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+265.0	270.0	1	TypeIIIA2	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	2	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	2	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	8	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	22	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+240.0	245.0	42	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+245.0	250.0	45	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+250.0	255.0	96	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+255.0	260.0	57	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+260.0	265.0	92	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+265.0	270.0	87	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+270.0	275.0	72	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+275.0	280.0	44	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+280.0	285.0	85	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+285.0	290.0	36	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+290.0	295.0	9	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+295.0	300.0	6	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+300.0	305.0	4	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+305.0	310.0	4	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+310.0	315.0	9	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+315.0	320.0	3	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+320.0	325.0	1	TypeIIIA3	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	1	TypeIV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	5	TypeIV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	179	TypeIV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	99	TypeIV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	1	TypeIV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+40.0	45.0	1	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+50.0	55.0	1	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+55.0	60.0	1	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	1	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	1	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	2	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	1	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	4	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	5	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	10	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	23	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	91	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	37	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	50	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	4	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	1	TypeIX	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	2	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	2	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	2	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	4	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	24	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	24	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	25	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	40	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	46	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	37	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	3	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	1	TypeV	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+45.0	50.0	2	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+65.0	70.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	2	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	2	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	2	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	2	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	3	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	2	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	4	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	5	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	9	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	199	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	168	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	23	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	26	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	22	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	7	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	2	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	1	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	5	TypeXIIIA_firmi	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+65.0	70.0	1	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	1	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	3	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	1	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	2	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	1	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	3	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	6	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	3	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	1	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	3	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	3	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	9	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	2	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	4	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	7	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	9	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	5	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	13	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	10	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	4	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	9	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	27	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	30	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	152	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	504	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	300	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	303	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	53	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+240.0	245.0	37	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+245.0	250.0	11	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+250.0	255.0	5	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+255.0	260.0	5	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+260.0	265.0	6	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+265.0	270.0	1	TypeXIIIB_Ne144	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+45.0	50.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+50.0	55.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+55.0	60.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+60.0	65.0	3	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+70.0	75.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	4	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	3	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	4	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	5	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	3	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	3	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	6	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	6	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	6	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+240.0	245.0	17	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+245.0	250.0	35	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+250.0	255.0	86	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+255.0	260.0	180	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+260.0	265.0	30	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+265.0	270.0	2	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+275.0	280.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+305.0	310.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+395.0	400.0	1	TypeXIIIC_Mx162	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+70.0	75.0	1	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	1	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	2	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	3	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	13	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	21	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	33	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	59	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	134	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	32	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	14	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	3	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	5	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	8	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	1	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	4	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	4	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	1	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	2	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	5	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	11	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	17	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	8	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	4	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	1	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	1	TypeXIII_Mx65	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+30.0	35.0	1	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+35.0	40.0	6	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+40.0	45.0	8	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+45.0	50.0	11	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+50.0	55.0	3	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+55.0	60.0	8	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+60.0	65.0	17	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+65.0	70.0	14	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+70.0	75.0	21	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+75.0	80.0	25	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+80.0	85.0	34	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+85.0	90.0	30	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+90.0	95.0	207	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+95.0	100.0	140	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+100.0	105.0	44	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+105.0	110.0	34	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+110.0	115.0	36	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+115.0	120.0	94	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+120.0	125.0	684	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+125.0	130.0	1883	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+130.0	135.0	1857	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+135.0	140.0	1234	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+140.0	145.0	859	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+145.0	150.0	664	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+150.0	155.0	699	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+155.0	160.0	626	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+160.0	165.0	556	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+165.0	170.0	509	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+170.0	175.0	441	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+175.0	180.0	518	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+180.0	185.0	448	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+185.0	190.0	451	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+190.0	195.0	278	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+195.0	200.0	398	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+200.0	205.0	360	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+205.0	210.0	171	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+210.0	215.0	144	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+215.0	220.0	312	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+220.0	225.0	573	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+225.0	230.0	343	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+230.0	235.0	344	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+235.0	240.0	152	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+240.0	245.0	107	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+245.0	250.0	114	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+250.0	255.0	197	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+255.0	260.0	254	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+260.0	265.0	134	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+265.0	270.0	93	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+270.0	275.0	78	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+275.0	280.0	49	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+280.0	285.0	86	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+285.0	290.0	39	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+290.0	295.0	9	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+295.0	300.0	6	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+300.0	305.0	5	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+305.0	310.0	5	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+310.0	315.0	16	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+315.0	320.0	3	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+320.0	325.0	1	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+325.0	330.0	2	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+330.0	335.0	9	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+340.0	345.0	1	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+345.0	350.0	1	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+350.0	355.0	3	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+355.0	360.0	8	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt
+395.0	400.0	1	ALL MODELS	exact ncRNA sequences	exact ncRNA sequences of that model, binned at 5 nt

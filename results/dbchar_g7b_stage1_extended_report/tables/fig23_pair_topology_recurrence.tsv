@@ -1,0 +1,11 @@
+shape	n_components	n_exact_rt	n_exact_ncrna	max_rt_in_a_component	max_ncrna_in_a_component	n_components_total	unit	denominator	panel	recurrence_class	n_exact_pairs	n_placements	median_placements	max_placements	median_species	pct_of_exact_pairs	pct_of_placements
+1:1	12079.0	12079.0	12079.0	1.0	1.0	14918.0	components / exact pairs	the 14,918 components and 30,924 exact pairs	components								
+1:many	179.0	179.0	390.0	1.0	9.0	14918.0	components / exact pairs	the 14,918 components and 30,924 exact pairs	components								
+many:1	2293.0	8092.0	2293.0	214.0	1.0	14918.0	components / exact pairs	the 14,918 components and 30,924 exact pairs	components								
+many:many	367.0	8842.0	1696.0	706.0	190.0	14918.0	components / exact pairs	the 14,918 components and 30,924 exact pairs	components								
+							components / exact pairs	the 14,918 components and 30,924 exact pairs	recurrence	single_placement	12005.0	12005.0	1.0	1.0	1.0	38.821	3.4766
+							components / exact pairs	the 14,918 components and 30,924 exact pairs	recurrence	one_physical_locus_multiple_database_copies	9362.0	18767.0	2.0	4.0	2.0	30.2742	5.4348
+							components / exact pairs	the 14,918 components and 30,924 exact pairs	recurrence	multiple_species	5056.0	274245.0	4.0	101792.0	2.0	16.3498	79.4193
+							components / exact pairs	the 14,918 components and 30,924 exact pairs	recurrence	one_species_multiple_genomes	4452.0	40198.0	4.0	2055.0	1.0	14.3966	11.641
+							components / exact pairs	the 14,918 components and 30,924 exact pairs	recurrence	one_genome_multiple_loci	36.0	72.0	2.0	2.0	1.0	0.1164	0.0209
+							components / exact pairs	the 14,918 components and 30,924 exact pairs	recurrence	one_physical_locus_multiple_records	13.0	26.0	2.0	2.0	1.0	0.042	0.0075

@@ -1,0 +1,10 @@
+measure	value	n_loci	n_loci_total	pct	unit	denominator
+canonical calls per physical locus	1	251608	297793	84.4909	physical loci	physical loci carrying at least one CANONICAL placement
+canonical calls per physical locus	2	46104	297793	15.4819	physical loci	physical loci carrying at least one CANONICAL placement
+canonical calls per physical locus	3	4	297793	0.0013	physical loci	physical loci carrying at least one CANONICAL placement
+canonical calls per physical locus	>3	77	297793	0.0259	physical loci	physical loci carrying at least one CANONICAL placement
+distinct exact ncRNA sequences per physical locus	1	297693	297793	99.9664	physical loci	physical loci carrying at least one CANONICAL placement
+distinct exact ncRNA sequences per physical locus	2	90	297793	0.0302	physical loci	physical loci carrying at least one CANONICAL placement
+distinct exact ncRNA sequences per physical locus	3	10	297793	0.0034	physical loci	physical loci carrying at least one CANONICAL placement
+distinct covariance models per physical locus	1	297783	297793	99.9966	physical loci	physical loci carrying at least one CANONICAL placement
+distinct covariance models per physical locus	2	10	297793	0.0034	physical loci	physical loci carrying at least one CANONICAL placement

@@ -1,0 +1,181 @@
+metric	family	at_least	n_exact_rt	n_exact_rt_total	pct	unit	denominator
+physical loci per exact RT	MULTI	1	7593	7593	100.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	2	329	7593	4.3329	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	3	124	7593	1.6331	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	5	49	7593	0.6453	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	10	13	7593	0.1712	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	20	3	7593	0.0395	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	50	1	7593	0.0132	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	100	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	1000	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	MULTI	10000	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	1	76111	76111	100.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	2	15272	76111	20.0654	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	3	7387	76111	9.7056	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	5	3559	76111	4.6761	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	10	1472	76111	1.934	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	20	700	76111	0.9197	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	50	225	76111	0.2956	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	100	89	76111	0.1169	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	1000	3	76111	0.0039	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-DGRs	10000	0	76111	0.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	1	256624	256624	100.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	2	57921	256624	22.5704	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	3	28336	256624	11.0418	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	5	14966	256624	5.8319	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	10	7177	256624	2.7967	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	20	3598	256624	1.4021	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	50	1575	256624	0.6137	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	100	866	256624	0.3375	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	1000	136	256624	0.053	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-GII	10000	12	256624	0.0047	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	1	8423	8423	100.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	2	2240	8423	26.5939	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	3	1141	8423	13.5462	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	5	566	8423	6.7197	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	10	248	8423	2.9443	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	20	105	8423	1.2466	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	50	42	8423	0.4986	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	100	20	8423	0.2374	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	1000	4	8423	0.0475	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	RVT-UG2	10000	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	1	78287	78287	100.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	2	20923	78287	26.726	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	3	10881	78287	13.8989	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	5	5825	78287	7.4406	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	10	2841	78287	3.629	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	20	1499	78287	1.9147	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	50	622	78287	0.7945	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	100	318	78287	0.4062	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	1000	44	78287	0.0562	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	Retron	10000	6	78287	0.0077	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	1	31229	31229	100.0	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	2	6981	31229	22.3542	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	3	3258	31229	10.4326	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	5	1626	31229	5.2067	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	10	713	31229	2.2831	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	20	344	31229	1.1015	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	50	142	31229	0.4547	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	100	81	31229	0.2594	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	1000	15	31229	0.048	exact RT sequences	exact RT sequences of that family bucket
+physical loci per exact RT	other	10000	3	31229	0.0096	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	1	7593	7593	100.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	2	416	7593	5.4787	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	3	108	7593	1.4224	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	5	47	7593	0.619	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	10	14	7593	0.1844	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	20	3	7593	0.0395	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	50	1	7593	0.0132	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	100	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	1000	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	MULTI	10000	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	1	76111	76111	100.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	2	18226	76111	23.9466	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	3	8215	76111	10.7934	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	5	4031	76111	5.2962	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	10	1659	76111	2.1797	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	20	802	76111	1.0537	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	50	266	76111	0.3495	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	100	104	76111	0.1366	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	1000	4	76111	0.0053	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-DGRs	10000	0	76111	0.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	1	256624	256624	100.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	2	90410	256624	35.2305	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	3	33012	256624	12.864	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	5	16961	256624	6.6093	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	10	8068	256624	3.1439	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	20	4103	256624	1.5988	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	50	1737	256624	0.6769	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	100	940	256624	0.3663	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	1000	151	256624	0.0588	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-GII	10000	15	256624	0.0058	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	1	8423	8423	100.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	2	3670	8423	43.5712	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	3	1537	8423	18.2477	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	5	751	8423	8.9161	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	10	336	8423	3.9891	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	20	137	8423	1.6265	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	50	59	8423	0.7005	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	100	25	8423	0.2968	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	1000	4	8423	0.0475	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	RVT-UG2	10000	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	1	78287	78287	100.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	2	31400	78287	40.1088	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	3	13797	78287	17.6236	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	5	7254	78287	9.2659	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	10	3393	78287	4.3341	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	20	1735	78287	2.2162	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	50	734	78287	0.9376	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	100	376	78287	0.4803	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	1000	47	78287	0.06	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	Retron	10000	6	78287	0.0077	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	1	31229	31229	100.0	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	2	12620	31229	40.4112	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	3	4546	31229	14.557	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	5	2224	31229	7.1216	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	10	943	31229	3.0196	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	20	429	31229	1.3737	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	50	182	31229	0.5828	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	100	95	31229	0.3042	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	1000	15	31229	0.048	exact RT sequences	exact RT sequences of that family bucket
+genomes per exact RT	other	10000	3	31229	0.0096	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	1	7593	7593	100.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	2	619	7593	8.1522	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	3	11	7593	0.1449	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	5	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	10	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	20	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	50	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	100	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	1000	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	MULTI	10000	0	7593	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	1	76111	76111	100.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	2	35760	76111	46.984	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	3	3972	76111	5.2187	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	5	3	76111	0.0039	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	10	0	76111	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	20	0	76111	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	50	0	76111	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	100	0	76111	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	1000	0	76111	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-DGRs	10000	0	76111	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	1	256624	256624	100.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	2	115894	256624	45.161	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	3	8096	256624	3.1548	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	5	29	256624	0.0113	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	10	0	256624	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	20	0	256624	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	50	0	256624	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	100	0	256624	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	1000	0	256624	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-GII	10000	0	256624	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	1	8423	8423	100.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	2	4268	8423	50.6708	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	3	439	8423	5.2119	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	5	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	10	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	20	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	50	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	100	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	1000	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	RVT-UG2	10000	0	8423	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	1	78287	78287	100.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	2	36373	78287	46.4611	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	3	4043	78287	5.1643	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	5	6	78287	0.0077	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	10	0	78287	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	20	0	78287	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	50	0	78287	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	100	0	78287	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	1000	0	78287	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	Retron	10000	0	78287	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	1	31229	31229	100.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	2	15705	31229	50.2898	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	3	1121	31229	3.5896	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	5	1	31229	0.0032	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	10	0	31229	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	20	0	31229	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	50	0	31229	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	100	0	31229	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	1000	0	31229	0.0	exact RT sequences	exact RT sequences of that family bucket
+databases per exact RT	other	10000	0	31229	0.0	exact RT sequences	exact RT sequences of that family bucket

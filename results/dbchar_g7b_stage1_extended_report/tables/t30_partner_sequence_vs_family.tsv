@@ -1,0 +1,5 @@
+measure	n	pct	unit	denominator
+exact RTs paired with more than one exact ncRNA sequence	830	100.0	exact RT sequences	exact RTs paired with more than one exact ncRNA sequence in the CANONICAL view
+of those, all partners called by ONE covariance model	823	99.1566	exact RT sequences	exact RTs paired with more than one exact ncRNA sequence in the CANONICAL view
+of those, partner lengths span <= 10 nt	716	86.2651	exact RT sequences	exact RTs paired with more than one exact ncRNA sequence in the CANONICAL view
+of those, partner lengths span > 50 nt	43	5.1807	exact RT sequences	exact RTs paired with more than one exact ncRNA sequence in the CANONICAL view

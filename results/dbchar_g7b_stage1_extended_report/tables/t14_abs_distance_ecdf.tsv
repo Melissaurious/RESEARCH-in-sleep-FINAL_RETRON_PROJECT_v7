@@ -1,0 +1,85 @@
+view_unit	abs_distance_bp	cumulative_pct	n_total	unit	denominator
+placement	0.0	12.5043	344154	the unit named in view_unit	units with a defined signed distance
+placement	5.0	13.94	344154	the unit named in view_unit	units with a defined signed distance
+placement	10.0	14.8971	344154	the unit named in view_unit	units with a defined signed distance
+placement	20.0	21.4369	344154	the unit named in view_unit	units with a defined signed distance
+placement	30.0	28.5834	344154	the unit named in view_unit	units with a defined signed distance
+placement	50.0	49.8146	344154	the unit named in view_unit	units with a defined signed distance
+placement	75.0	55.5089	344154	the unit named in view_unit	units with a defined signed distance
+placement	100.0	56.3698	344154	the unit named in view_unit	units with a defined signed distance
+placement	150.0	58.6136	344154	the unit named in view_unit	units with a defined signed distance
+placement	200.0	59.1038	344154	the unit named in view_unit	units with a defined signed distance
+placement	300.0	59.6576	344154	the unit named in view_unit	units with a defined signed distance
+placement	500.0	60.1417	344154	the unit named in view_unit	units with a defined signed distance
+placement	750.0	60.3419	344154	the unit named in view_unit	units with a defined signed distance
+placement	1000.0	61.974	344154	the unit named in view_unit	units with a defined signed distance
+placement	1100.0	97.4	344154	the unit named in view_unit	units with a defined signed distance
+placement	1500.0	97.4619	344154	the unit named in view_unit	units with a defined signed distance
+placement	2000.0	97.5151	344154	the unit named in view_unit	units with a defined signed distance
+placement	2700.0	98.3156	344154	the unit named in view_unit	units with a defined signed distance
+placement	3000.0	99.0908	344154	the unit named in view_unit	units with a defined signed distance
+placement	5000.0	99.8393	344154	the unit named in view_unit	units with a defined signed distance
+placement	10000.0	100.0	344154	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	0.0	12.6974	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	5.0	14.1553	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	10.0	15.1272	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	20.0	21.768	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	30.0	29.0248	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	50.0	50.5839	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	75.0	56.3661	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	100.0	57.2404	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	150.0	59.5188	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	200.0	60.0165	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	300.0	60.5789	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	500.0	61.0705	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	750.0	61.2738	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	1000.0	62.9311	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	1100.0	98.9042	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	1500.0	98.967	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	2000.0	99.021	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	2700.0	99.062	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	3000.0	99.0768	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	5000.0	99.8368	338920	the unit named in view_unit	units with a defined signed distance
+placement, technical mode excluded	10000.0	100.0	338920	the unit named in view_unit	units with a defined signed distance
+physical locus	0.0	11.6104	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	5.0	12.9614	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	10.0	13.7905	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	20.0	19.935	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	30.0	26.1564	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	50.0	47.3678	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	75.0	52.746	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	100.0	53.5214	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	150.0	55.4852	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	200.0	55.8865	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	300.0	56.3388	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	500.0	56.7411	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	750.0	56.9228	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	1000.0	58.3301	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	1100.0	97.5426	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	1500.0	97.5909	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	2000.0	97.6296	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	2700.0	98.5295	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	3000.0	99.4181	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	5000.0	99.8865	297793	the unit named in view_unit	units with a defined signed distance
+physical locus	10000.0	100.0	297793	the unit named in view_unit	units with a defined signed distance
+exact pair	0.0	13.3133	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	5.0	15.8809	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	10.0	18.1768	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	20.0	30.9048	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	30.0	49.3694	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	50.0	67.8793	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	75.0	75.9863	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	100.0	78.8869	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	150.0	83.5403	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	200.0	85.1216	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	300.0	86.8807	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	500.0	88.5655	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	750.0	89.3125	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	1000.0	92.8243	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	1100.0	96.9732	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	1500.0	97.2578	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	2000.0	97.4971	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	2700.0	97.9563	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	3000.0	98.2279	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	5000.0	99.4276	30924	the unit named in view_unit	units with a defined signed distance
+exact pair	10000.0	100.0	30924	the unit named in view_unit	units with a defined signed distance

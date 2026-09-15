@@ -1,0 +1,7 @@
+recurrence_class	n_exact_pairs	n_placements	median_placements	max_placements	median_species	pct_of_exact_pairs	pct_of_placements	unit	denominator
+single_placement	12005	12005	1.0	1	1.0	38.821	3.4766	exact pairs (placements beside)	the 30,924 distinct (exact RT, exact ncRNA) pairs
+one_physical_locus_multiple_database_copies	9362	18767	2.0	4	2.0	30.2742	5.4348	exact pairs (placements beside)	the 30,924 distinct (exact RT, exact ncRNA) pairs
+multiple_species	5056	274245	4.0	101792	2.0	16.3498	79.4193	exact pairs (placements beside)	the 30,924 distinct (exact RT, exact ncRNA) pairs
+one_species_multiple_genomes	4452	40198	4.0	2055	1.0	14.3966	11.641	exact pairs (placements beside)	the 30,924 distinct (exact RT, exact ncRNA) pairs
+one_genome_multiple_loci	36	72	2.0	2	1.0	0.1164	0.0209	exact pairs (placements beside)	the 30,924 distinct (exact RT, exact ncRNA) pairs
+one_physical_locus_multiple_records	13	26	2.0	2	1.0	0.042	0.0075	exact pairs (placements beside)	the 30,924 distinct (exact RT, exact ncRNA) pairs

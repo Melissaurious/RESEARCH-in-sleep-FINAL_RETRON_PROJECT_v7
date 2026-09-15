@@ -1,0 +1,25 @@
+length_bin	completeness_class	n_exact_rt	n_with_ncrna	pct_with_ncrna	pct_with_ncrna_ci_lo	pct_with_ncrna_ci_hi	unit	denominator
+<200	all_complete	2075	592	28.5301	26.6283	30.5113	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+<200	all_partial	6294	1692	26.8827	25.8018	27.9919	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+<200	mixed_or_codon_evidence	590	105	17.7966	14.9216	21.0883	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+200-249	all_complete	1440	392	27.2222	24.9861	29.5795	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+200-249	all_partial	3265	700	21.4395	20.0658	22.8804	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+200-249	mixed_or_codon_evidence	308	46	14.9351	11.3875	19.3466	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+250-299	all_complete	4052	553	13.6476	12.6249	14.7391	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+250-299	all_partial	3513	761	21.6624	20.3315	23.0552	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+250-299	mixed_or_codon_evidence	348	56	16.092	12.6048	20.3195	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+300-349	all_complete	16492	6914	41.9234	41.1722	42.6782	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+300-349	all_partial	2654	789	29.7287	28.0201	31.4959	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+300-349	mixed_or_codon_evidence	422	100	23.6967	19.8883	27.9796	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+350-399	all_complete	8681	3461	39.8687	38.8434	40.9029	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+350-399	all_partial	1529	472	30.8698	28.6047	33.2309	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+350-399	mixed_or_codon_evidence	318	46	14.4654	11.0233	18.7558	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+400-499	all_complete	11676	6191	53.0233	52.1172	53.9274	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+400-499	all_partial	1919	533	27.7749	25.8169	29.8217	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+400-499	mixed_or_codon_evidence	542	82	15.1292	12.3585	18.3906	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+500-699	all_complete	9617	4961	51.5857	50.5865	52.5837	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+500-699	all_partial	679	219	32.2533	28.8457	35.8606	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+500-699	mixed_or_codon_evidence	529	76	14.3667	11.6344	17.6129	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+>=700	all_complete	646	47	7.2755	5.5152	9.541	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+>=700	all_partial	101	9	8.9109	4.7589	16.0739	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus
+>=700	mixed_or_codon_evidence	597	41	6.8677	5.1025	9.1843	exact RT sequences	Retron-labelled V-RT-SINGLE exact RTs of that length bin and completeness class that occur at >=1 physical locus

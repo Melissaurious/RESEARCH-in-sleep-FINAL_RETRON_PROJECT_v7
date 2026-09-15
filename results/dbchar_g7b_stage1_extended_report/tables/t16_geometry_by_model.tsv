@@ -1,0 +1,22 @@
+detection_model	n_physical_loci	pct_upstream	pct_downstream	pct_overlapping	pct_same_strand	pct_0_cds_between	pct_1_cds_between	median_signed_distance_bp	q25_signed	q75_signed	pct_in_technical_mode	unit	denominator
+TypeIA_IIAI	140119	99.8301	0.0093	0.1606	99.9971	94.0315	5.6316	-1037.0	-1037.0	-1037.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIC1_IC2	53639	98.4955	0.0131	1.4915	99.8863	99.547	0.412	-31.0	-31.0	-19.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+Ec107_like	30041	98.3389	0.0233	1.6378	99.9967	99.2111	0.4094	-37.0	-37.0	-26.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIB2	29127	99.4747	0.0034	0.5219	99.9931	99.8352	0.1202	0.0	0.0	0.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeV	8991	40.129	59.8376	0.0334	100.0	39.8287	0.4004	2634.0	-107.0	2730.0	57.78	physical loci	CANONICAL physical loci carrying a call by that covariance model
+OutgroupA	7016	91.5336	0.1283	8.3381	99.045	98.9025	0.8837	-27.0	-48.0	-26.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIV	6290	80.8267	0.0	19.1733	99.8887	99.9205	0.0795	-25.0	-26.0	-20.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIIIA3	3545	11.3399	0.0564	88.6037	99.8872	99.464	0.141	0.0	0.0	0.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIB1	3148	92.9797	0.0635	6.9568	96.8551	99.5235	0.3812	-72.0	-166.0	-45.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeXIIIB_Ne144	2786	97.2721	1.2563	1.4716	99.8205	94.6518	2.1536	-48.0	-71.0	-32.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIIIA2	2379	65.4056	0.7987	33.7957	99.5797	99.0752	0.1681	-8.0	-20.0	0.0	0.2522	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeXIIIA_firmi	2356	69.9491	29.8812	0.1698	43.8031	37.9881	54.7114	-4705.0	-4791.0	64.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIIA3_proteo	1886	94.6978	0.106	5.1962	99.947	99.894	0.106	-7.0	-9.0	-3.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIIA3_firmi	1828	52.4617	0.1641	47.3742	99.6718	99.453	0.1641	-2.0	-2.0	0.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+OutgroupB	1278	96.6354	0.2347	3.1299	99.8435	99.374	0.3912	-25.0	-43.0	-25.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIIIA1	1124	97.153	0.8007	2.0463	99.5552	98.1317	0.9786	-88.0	-105.0	-43.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeXIIIC_Mx162	679	94.9926	4.4183	0.5891	98.38	95.4345	0.7364	-57.0	-83.0	-33.0	0.2946	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIX	643	69.3624	1.2442	29.3935	98.6003	97.6672	0.311	-2.0	-4.0	0.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeXIII_Mx65	585	97.4359	0.3419	2.2222	99.4872	94.359	4.1026	-33.0	-64.0	-9.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIB2_firmi	285	96.8421	0.0	3.1579	100.0	99.6491	0.3509	-70.0	-71.0	-70.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model
+TypeIIA2	58	31.0345	12.069	56.8966	91.3793	67.2414	12.069	0.0	-293.25	0.0	0.0	physical loci	CANONICAL physical loci carrying a call by that covariance model

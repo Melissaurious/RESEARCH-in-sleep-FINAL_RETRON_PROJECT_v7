@@ -1,0 +1,6 @@
+inspectability_tier	n_records	pct_of_distinct_records	unit	denominator
+geometry-eligible, context clipped or RT at a window edge	1335590	43.7721	distinct records	distinct RT-anchored records (per database in three panels; corpus-wide in the inspectability panel)
+fully inspectable (exact back-translation, RT CDS present, window not clipped or edge-touching)	1193790	39.1248	distinct records	distinct RT-anchored records (per database in three panels; corpus-wide in the inspectability panel)
+geometry-eligible, translation recoded (alt start / table 4 / masked stop)	504437	16.5322	distinct records	distinct RT-anchored records (per database in three panels; corpus-wide in the inspectability panel)
+sequence only - no defensible genomic context	16752	0.549	distinct records	distinct RT-anchored records (per database in three panels; corpus-wide in the inspectability panel)
+ill-posed - back-translation mismatch	669	0.0219	distinct records	distinct RT-anchored records (per database in three panels; corpus-wide in the inspectability panel)

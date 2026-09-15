@@ -1,0 +1,14 @@
+view_unit	n_cds_between	n	n_total	pct	unit	denominator	direction	n_placements	n_same_strand	n_opposite_strand	n_overlaps_rt_cds	n_overlaps_non_rt_cds	n_overlaps_any_cds	pct_same_strand	pct_same_strand_ci_lo	pct_same_strand_ci_hi	pct_overlaps_any_cds	pct_overlaps_any_cds_ci_lo	pct_overlaps_any_cds_ci_hi
+placement	0	324904.0	344154.0	94.4066	placements / physical loci	CANONICAL placements counted at that unit													
+placement	1	12427.0	344154.0	3.6109	placements / physical loci	CANONICAL placements counted at that unit													
+placement	2	939.0	344154.0	0.2728	placements / physical loci	CANONICAL placements counted at that unit													
+placement	3	544.0	344154.0	0.1581	placements / physical loci	CANONICAL placements counted at that unit													
+placement	>3	5340.0	344154.0	1.5516	placements / physical loci	CANONICAL placements counted at that unit													
+physical locus	0	281612.0	297793.0	94.5664	placements / physical loci	CANONICAL placements counted at that unit													
+physical locus	1	9803.0	297793.0	3.2919	placements / physical loci	CANONICAL placements counted at that unit													
+physical locus	2	690.0	297793.0	0.2317	placements / physical loci	CANONICAL placements counted at that unit													
+physical locus	3	461.0	297793.0	0.1548	placements / physical loci	CANONICAL placements counted at that unit													
+physical locus	>3	5227.0	297793.0	1.7552	placements / physical loci	CANONICAL placements counted at that unit													
+					placements / physical loci	CANONICAL placements counted at that unit	downstream	6761.0	6700.0	61.0	0.0	5436.0	5436.0	99.0978	98.8428	99.2969	80.4023	79.439	81.3311
+					placements / physical loci	CANONICAL placements counted at that unit	overlapping	12124.0	12108.0	16.0	11804.0	45.0	11849.0	99.868	99.7857	99.9187	97.7318	97.4512	97.9821
+					placements / physical loci	CANONICAL placements counted at that unit	upstream	325269.0	322305.0	2964.0	0.0	48021.0	48021.0	99.0888	99.0555	99.1208	14.7635	14.642	14.8858

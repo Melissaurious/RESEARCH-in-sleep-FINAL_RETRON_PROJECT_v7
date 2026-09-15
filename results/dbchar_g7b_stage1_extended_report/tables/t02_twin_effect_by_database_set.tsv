@@ -1,0 +1,13 @@
+source_database_set	n_loci	n_physical_loci	n_twin_loci	pct_twin_loci	unit	denominator
+ncbi_bacteria	2050207	2050207	371140	18.1026	loci	loci whose records carry that set of source databases
+gtdb_bacteria	399431	399431	371140	92.9172	loci	loci whose records carry that set of source databases
+gtdb_bacteria|ncbi_bacteria	201025	201025	0	0.0	loci	loci whose records carry that set of source databases
+mgnify_human_gut	142185	142185	0	0.0	loci	loci whose records carry that set of source databases
+gem	22271	22271	0	0.0	loci	loci whose records carry that set of source databases
+mgnify_soil	15658	15658	0	0.0	loci	loci whose records carry that set of source databases
+mgnify_marine	7952	7952	0	0.0	loci	loci whose records carry that set of source databases
+ncbi_archaea	5141	5141	488	9.4923	loci	loci whose records carry that set of source databases
+gtdb_archaea|ncbi_archaea	2679	2679	0	0.0	loci	loci whose records carry that set of source databases
+gtdb_archaea	546	546	488	89.3773	loci	loci whose records carry that set of source databases
+gtdb_archaea|ncbi_bacteria	122	122	0	0.0	loci	loci whose records carry that set of source databases
+gtdb_bacteria|ncbi_archaea	95	95	0	0.0	loci	loci whose records carry that set of source databases

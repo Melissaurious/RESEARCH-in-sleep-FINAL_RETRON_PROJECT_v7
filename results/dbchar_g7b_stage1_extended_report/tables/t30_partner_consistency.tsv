@@ -1,0 +1,5 @@
+recurrence_bin	n_exact_rt	median_dominant_partner_pct	pct_single_partner	pct_dominant_ge_90	pct_single_model	median_partners	unit	denominator
+2-4	6560	100.0	94.8171	94.8171	99.9085	1.0	exact RT sequences	exact RTs carrying CANONICAL placements at >=2 physical loci, binned by how many loci they occur at
+5-19	2028	100.0	87.0316	89.4477	99.9507	1.0	exact RT sequences	exact RTs carrying CANONICAL placements at >=2 physical loci, binned by how many loci they occur at
+20-99	512	100.0	71.0938	90.0391	100.0	1.0	exact RT sequences	exact RTs carrying CANONICAL placements at >=2 physical loci, binned by how many loci they occur at
+>=100	139	99.6485	43.1655	87.7698	100.0	2.0	exact RT sequences	exact RTs carrying CANONICAL placements at >=2 physical loci, binned by how many loci they occur at

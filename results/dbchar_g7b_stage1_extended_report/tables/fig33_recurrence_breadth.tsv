@@ -1,0 +1,40 @@
+family	breadth_class	n_exact_rt	median_genomes	median_species	median_databases	pct_of_family_high_recurrence	unit	denominator
+RVT-GII	2-5 species	1618	38.0	3.0	2.0	39.4346	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-GII	one species (database duplication or clonal)	1500	37.0	1.0	2.0	36.5586	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-GII	>5 species	985	55.0	10.0	3.0	24.0068	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+Retron	2-5 species	772	38.5	3.0	2.0	44.4957	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+Retron	one species (database duplication or clonal)	623	39.0	1.0	2.0	35.9078	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-DGRs	>5 species	497	41.0	13.0	3.0	61.9701	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+Retron	>5 species	340	61.0	8.0	3.0	19.5965	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-DGRs	2-5 species	238	30.5	3.0	2.0	29.6758	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+other	2-5 species	206	45.0	2.0	2.0	48.0186	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+other	one species (database duplication or clonal)	146	37.0	1.0	2.0	34.0326	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG4	one species (database duplication or clonal)	111	40.0	1.0	2.0	77.6224	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG5	one species (database duplication or clonal)	91	49.0	1.0	2.0	57.2327	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+other	>5 species	77	52.0	9.0	3.0	17.9487	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-DGRs	one species (database duplication or clonal)	67	31.0	1.0	2.0	8.3541	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG2	2-5 species	67	36.0	3.0	2.0	48.9051	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-AbiP2	2-5 species	65	56.0	2.0	2.0	52.0	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG8	2-5 species	64	55.5	2.0	2.0	48.4848	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG5	2-5 species	55	43.0	3.0	2.0	34.5912	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG17	2-5 species	53	79.0	3.0	2.0	53.5354	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG3	2-5 species	53	65.0	2.0	2.0	42.0635	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG3	one species (database duplication or clonal)	48	35.5	1.0	2.0	38.0952	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG8	one species (database duplication or clonal)	48	39.0	1.0	2.0	36.3636	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-AbiP2	one species (database duplication or clonal)	45	50.0	1.0	2.0	36.0	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG2	one species (database duplication or clonal)	42	39.0	1.0	2.0	30.6569	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG4	2-5 species	28	67.0	2.0	2.0	19.5804	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG2	>5 species	28	55.0	8.0	3.0	20.438	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG17	one species (database duplication or clonal)	28	37.5	1.0	2.0	28.2828	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG3	>5 species	25	42.0	8.0	3.0	19.8413	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG8	>5 species	20	52.0	8.5	3.0	15.1515	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG17	>5 species	18	78.0	7.0	3.0	18.1818	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-AbiP2	>5 species	15	131.0	10.0	3.0	12.0	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG5	>5 species	13	68.0	8.0	3.0	8.1761	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-CRISPR	2-5 species	9	40.0	3.0	3.0	50.0	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG26	2-5 species	8	53.5	3.0	2.0	100.0	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-CRISPR	one species (database duplication or clonal)	6	42.5	1.0	2.5	33.3333	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-UG4	>5 species	4	34.0	7.0	2.0	2.7972	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+RVT-CRISPR	>5 species	3	32.0	8.0	2.0	16.6667	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+MULTI	2-5 species	2	25.0	2.5	1.0	66.6667	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family
+MULTI	one species (database duplication or clonal)	1	60.0	1.0	1.0	33.3333	exact RT sequences	exact RTs occurring in ≥20 genomes, of that family

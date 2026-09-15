@@ -1,0 +1,9 @@
+source_database	n_records	pct_window_inverted	pct_rt_outside_window	pct_rt_at_window_edge	pct_true_start_clipped	pct_clipped_at_contig_end	pct_geometry_eligible	unit	denominator
+ncbi_bacteria	2251359	0.0	0.0	4.7565	41.0064	41.5936	99.9996	distinct records	distinct RT-anchored records of that source database
+gtdb_bacteria	600551	0.0	0.0	3.242	38.2552	38.3899	99.9992	distinct records	distinct RT-anchored records of that source database
+mgnify_human_gut	142185	2.5396	10.8317	2.5572	48.6106	53.4845	88.7428	distinct records	distinct RT-anchored records of that source database
+gem	22271	0.0853	0.1123	2.8782	49.4724	49.6161	99.8743	distinct records	distinct RT-anchored records of that source database
+mgnify_soil	15658	0.8111	3.5317	2.5546	27.7047	27.8069	96.3278	distinct records	distinct RT-anchored records of that source database
+mgnify_marine	7952	2.1001	9.7208	3.911	47.4723	51.5216	89.9774	distinct records	distinct RT-anchored records of that source database
+ncbi_archaea	7915	0.0	0.0	7.9848	71.7498	71.1813	100.0	distinct records	distinct RT-anchored records of that source database
+gtdb_archaea	3347	0.0	0.0	5.2286	63.9976	61.8763	100.0	distinct records	distinct RT-anchored records of that source database
