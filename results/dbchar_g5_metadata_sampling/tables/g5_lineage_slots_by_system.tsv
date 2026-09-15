@@ -1,0 +1,7 @@
+taxonomy_system	n_slots	n_records	n_sampled	seed	unit	denominator
+gtdb	4	4	200000	20260915	records	a seeded 200k sample of distinct raw records (estimate, not a census)
+gtdb	5	107	200000	20260915	records	a seeded 200k sample of distinct raw records (estimate, not a census)
+gtdb	6	838	200000	20260915	records	a seeded 200k sample of distinct raw records (estimate, not a census)
+gtdb	7	49501	200000	20260915	records	a seeded 200k sample of distinct raw records (estimate, not a census)
+ncbi	0	148091	200000	20260915	records	a seeded 200k sample of distinct raw records (estimate, not a census)
+unknown	-1	1459	200000	20260915	records	a seeded 200k sample of distinct raw records (estimate, not a census)

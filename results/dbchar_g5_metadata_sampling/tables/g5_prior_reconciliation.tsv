@@ -1,0 +1,17 @@
+source_database	quantity	prior	g5	verdict	note
+gem	catalogue row resolves for a genome (reading A)	100.0	100.0000	CONFIRMED	g5 joins on the genome, the prior on its attribution grain
+gtdb_archaea	catalogue row resolves for a genome (reading A)	100.0	100.0000	CONFIRMED	g5 joins on the genome, the prior on its attribution grain
+gtdb_bacteria	catalogue row resolves for a genome (reading A)	100.0	100.0000	CONFIRMED	g5 joins on the genome, the prior on its attribution grain
+mgnify_human_gut	catalogue row resolves for a genome (reading A)	100.0	100.0000	CONFIRMED	g5 joins on the genome, the prior on its attribution grain
+mgnify_marine	catalogue row resolves for a genome (reading A)	100.0	100.0000	CONFIRMED	g5 joins on the genome, the prior on its attribution grain
+mgnify_soil	catalogue row resolves for a genome (reading A)	100.0	100.0000	CONFIRMED	g5 joins on the genome, the prior on its attribution grain
+ncbi_archaea	catalogue row resolves for a genome (reading A)	100.0	100.0000	CONFIRMED	g5 joins on the genome, the prior on its attribution grain
+ncbi_bacteria	catalogue row resolves for a genome (reading A)	99.9998	99.9999	CONFIRMED	g5 joins on the genome, the prior on its attribution grain
+gem	a completeness VALUE is obtainable natively	see prior reading B	100.0	CONFIRMED	g5 measures NATIVE availability only; the prior reached NCBI completeness through a GTDB accession bridge, which g5 does not implement
+gtdb_archaea	a completeness VALUE is obtainable natively	see prior reading B	100.0	CONFIRMED	g5 measures NATIVE availability only; the prior reached NCBI completeness through a GTDB accession bridge, which g5 does not implement
+gtdb_bacteria	a completeness VALUE is obtainable natively	see prior reading B	100.0	CONFIRMED	g5 measures NATIVE availability only; the prior reached NCBI completeness through a GTDB accession bridge, which g5 does not implement
+mgnify_human_gut	a completeness VALUE is obtainable natively	see prior reading B	100.0	CONFIRMED	g5 measures NATIVE availability only; the prior reached NCBI completeness through a GTDB accession bridge, which g5 does not implement
+mgnify_marine	a completeness VALUE is obtainable natively	see prior reading B	100.0	CONFIRMED	g5 measures NATIVE availability only; the prior reached NCBI completeness through a GTDB accession bridge, which g5 does not implement
+mgnify_soil	a completeness VALUE is obtainable natively	see prior reading B	100.0	CONFIRMED	g5 measures NATIVE availability only; the prior reached NCBI completeness through a GTDB accession bridge, which g5 does not implement
+ncbi_archaea	a completeness VALUE is obtainable natively	see prior reading B	0.0	CHANGED	g5 measures NATIVE availability only; the prior reached NCBI completeness through a GTDB accession bridge, which g5 does not implement
+ncbi_bacteria	a completeness VALUE is obtainable natively	see prior reading B	0.0	CHANGED	g5 measures NATIVE availability only; the prior reached NCBI completeness through a GTDB accession bridge, which g5 does not implement

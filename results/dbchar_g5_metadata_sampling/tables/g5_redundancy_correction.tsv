@@ -1,0 +1,3 @@
+taxonomy_system	n_records	n_species	top_species_pct_of_records	top_species	top_species_pct_of_exact_rt	top10_pct_of_records	top10_pct_of_exact_rt	unit	denominator
+gtdb	755218	56152	8.5688	Escherichia_coli	2.2098	26.8594	9.8544	records vs exact RTs	records of that taxonomy system with a species
+ncbi	2253802	17037	19.9668	Escherichia_coli	6.0929	66.2064	18.9538	records vs exact RTs	records of that taxonomy system with a species

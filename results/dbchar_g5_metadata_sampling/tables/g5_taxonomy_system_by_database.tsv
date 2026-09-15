@@ -1,0 +1,10 @@
+taxonomy_system	source_database	n_records	n_loci	n_exact_rt	n_genomes	unit	denominator
+gtdb	gtdb_archaea	3347	3347	2766	1806	records / loci / exact RTs	distinct raw records of that taxonomy system and database
+gtdb	gtdb_bacteria	600551	600551	220934	299306	records / loci / exact RTs	distinct raw records of that taxonomy system and database
+gtdb	mgnify_human_gut	142185	142185	72910	87226	records / loci / exact RTs	distinct raw records of that taxonomy system and database
+gtdb	mgnify_marine	7952	7952	6009	4817	records / loci / exact RTs	distinct raw records of that taxonomy system and database
+gtdb	mgnify_soil	15658	15658	14086	5461	records / loci / exact RTs	distinct raw records of that taxonomy system and database
+ncbi	ncbi_archaea	7915	7915	6956	4047	records / loci / exact RTs	distinct raw records of that taxonomy system and database
+ncbi	ncbi_bacteria	2251354	2251354	409992	1237518	records / loci / exact RTs	distinct raw records of that taxonomy system and database
+unknown	gem	22271	22271	15852	13645	records / loci / exact RTs	distinct raw records of that taxonomy system and database
+unknown	ncbi_bacteria	5	5	5	1	records / loci / exact RTs	distinct raw records of that taxonomy system and database

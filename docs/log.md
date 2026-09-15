@@ -24,3 +24,7 @@ Notes that are not gates (WA-G.1).
   (V-RT-SINGLE 493,956 · V-RT-MULTI 7,593 · V-RT-CROSS 12); 36/44 prior family length baselines CONFIRMED
   exactly. MULTI labels shown to be near-tie HMM assignments (median margin 5.0 bits vs 81.7 in a
   98.1%-validated control); not resolved in Stage 1. 127/127 second counts agree.
+- 2026-09-15 · `dbchar_g5_metadata_sampling` landed: catalogue join ~100% on all 8 databases (1 NCBI
+  genome unjoined), but a completeness VALUE exists for only 412,261/1,653,827 genome entries (24.93%) —
+  NCBI carries no CheckM columns. Taxonomy reported per schema (ncbi has no phylum by construction).
+  Top-10 species fall from 66.2% of records to 19.0% of exact RTs (C8 evidence). 16/16 second counts agree.

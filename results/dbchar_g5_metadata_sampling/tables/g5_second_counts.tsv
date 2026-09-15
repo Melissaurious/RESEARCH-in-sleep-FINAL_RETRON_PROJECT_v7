@@ -1,0 +1,17 @@
+check	scope	route_a	value_a	route_b	value_b	delta_a_minus_b	agreement
+genomes_per_database	gem	j01 (parquet/python)	13645	c03 (awk + sort -u)	13645	0	AGREE
+genomes_per_database	gtdb_archaea	j01 (parquet/python)	1806	c03 (awk + sort -u)	1806	0	AGREE
+genomes_per_database	gtdb_bacteria	j01 (parquet/python)	299306	c03 (awk + sort -u)	299306	0	AGREE
+genomes_per_database	mgnify_human_gut	j01 (parquet/python)	87226	c03 (awk + sort -u)	87226	0	AGREE
+genomes_per_database	mgnify_marine	j01 (parquet/python)	4817	c03 (awk + sort -u)	4817	0	AGREE
+genomes_per_database	mgnify_soil	j01 (parquet/python)	5461	c03 (awk + sort -u)	5461	0	AGREE
+genomes_per_database	ncbi_archaea	j01 (parquet/python)	4047	c03 (awk + sort -u)	4047	0	AGREE
+genomes_per_database	ncbi_bacteria	j01 (parquet/python)	1237519	c03 (awk + sort -u)	1237519	0	AGREE
+catalogue_distinct_keys	gtdb_bacteria_metadata.tsv.gz	j01 (parquet/python)	715230	c03 (awk + sort -u)	715230	0	AGREE
+catalogue_distinct_keys	gtdb_archaea_metadata.tsv.gz	j01 (parquet/python)	17245	c03 (awk + sort -u)	17245	0	AGREE
+catalogue_distinct_keys	gem_metadata.tsv	j01 (parquet/python)	52515	c03 (awk + sort -u)	52515	0	AGREE
+catalogue_distinct_keys	mgnify_human_gut_metadata.tsv	j01 (parquet/python)	289232	c03 (awk + sort -u)	289232	0	AGREE
+catalogue_distinct_keys	mgnify_marine_metadata.tsv	j01 (parquet/python)	50866	c03 (awk + sort -u)	50866	0	AGREE
+catalogue_distinct_keys	mgnify_soil_metadata.tsv	j01 (parquet/python)	20908	c03 (awk + sort -u)	20908	0	AGREE
+catalogue_distinct_keys	ncbi_bacteria_assembly_summary.txt	j01 (parquet/python)	2864737	c03 (awk + sort -u)	2864737	0	AGREE
+catalogue_distinct_keys	ncbi_archaea_assembly_summary.txt	j01 (parquet/python)	32837	c03 (awk + sort -u)	32837	0	AGREE

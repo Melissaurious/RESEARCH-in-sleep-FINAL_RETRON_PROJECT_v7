@@ -1,0 +1,42 @@
+control	expected	observed	result
+norm_key strips RS_	GCF_000001.1	GCF_000001.1	PASS
+norm_key strips GB_	GCA_000001.1	GCA_000001.1	PASS
+norm_key leaves a bare accession	GCA_000001.1	GCA_000001.1	PASS
+header found behind a comment line	2	2	PASS
+keys read behind a comment line	{'GCA_000002.1', 'GCA_000001.1'}	{'GCA_000002.1', 'GCA_000001.1'}	PASS
+gtdb_bacteria: catalogue is non-empty	True	True	PASS
+gtdb_bacteria: key column found	True	True	PASS
+gtdb_bacteria: a key taken from the catalogue joins (POSITIVE control)	True	True	PASS
+gtdb_bacteria: a fabricated accession does NOT join (NEGATIVE control)	False	False	PASS
+gtdb_archaea: catalogue is non-empty	True	True	PASS
+gtdb_archaea: key column found	True	True	PASS
+gtdb_archaea: a key taken from the catalogue joins (POSITIVE control)	True	True	PASS
+gtdb_archaea: a fabricated accession does NOT join (NEGATIVE control)	False	False	PASS
+gem: catalogue is non-empty	True	True	PASS
+gem: key column found	True	True	PASS
+gem: a key taken from the catalogue joins (POSITIVE control)	True	True	PASS
+gem: a fabricated accession does NOT join (NEGATIVE control)	False	False	PASS
+mgnify_human_gut: catalogue is non-empty	True	True	PASS
+mgnify_human_gut: key column found	True	True	PASS
+mgnify_human_gut: a key taken from the catalogue joins (POSITIVE control)	True	True	PASS
+mgnify_human_gut: a fabricated accession does NOT join (NEGATIVE control)	False	False	PASS
+mgnify_marine: catalogue is non-empty	True	True	PASS
+mgnify_marine: key column found	True	True	PASS
+mgnify_marine: a key taken from the catalogue joins (POSITIVE control)	True	True	PASS
+mgnify_marine: a fabricated accession does NOT join (NEGATIVE control)	False	False	PASS
+mgnify_soil: catalogue is non-empty	True	True	PASS
+mgnify_soil: key column found	True	True	PASS
+mgnify_soil: a key taken from the catalogue joins (POSITIVE control)	True	True	PASS
+mgnify_soil: a fabricated accession does NOT join (NEGATIVE control)	False	False	PASS
+ncbi_bacteria: catalogue is non-empty	True	True	PASS
+ncbi_bacteria: key column found	True	True	PASS
+ncbi_bacteria: a key taken from the catalogue joins (POSITIVE control)	True	True	PASS
+ncbi_bacteria: a fabricated accession does NOT join (NEGATIVE control)	False	False	PASS
+ncbi_archaea: catalogue is non-empty	True	True	PASS
+ncbi_archaea: key column found	True	True	PASS
+ncbi_archaea: a key taken from the catalogue joins (POSITIVE control)	True	True	PASS
+ncbi_archaea: a fabricated accession does NOT join (NEGATIVE control)	False	False	PASS
+corpus GTDB genome_id carries the RS_/GB_ prefix	True	True	PASS
+normalised corpus GTDB ids join the normalised catalogue	True	True	PASS
+a redundant species dominates on records	True	True	PASS
+and stops dominating on exact RTs	True	True	PASS

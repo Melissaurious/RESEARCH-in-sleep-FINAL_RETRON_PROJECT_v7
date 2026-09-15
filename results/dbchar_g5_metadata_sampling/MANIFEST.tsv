@@ -1,0 +1,17 @@
+artifact	script	command	unit	denominator
+tables/c02_positive_controls.tsv	scripts/c02_controls.py	see run.sh: c02_controls.py	controls	n/a - one pass/fail control per row
+tables/g5_catalogue_shape.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	catalogue rows	n/a - describes the catalogue file itself
+tables/g5_environment_by_database.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records / loci / exact RTs	distinct raw records of that database
+tables/g5_gem_ecosystem_column.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	catalogue rows	the inspected rows of gem_metadata.tsv
+tables/g5_join_coverage.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records / loci / exact RTs / genomes	distinct raw records of that source_database, and its distinct genomes
+tables/g5_lineage_slots_by_system.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records	a seeded 200k sample of distinct raw records (estimate, not a census)
+tables/g5_overrepresentation_genus.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records / loci / exact RTs	all records of that taxonomy system carrying that rank (top 40)
+tables/g5_overrepresentation_species.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records / loci / exact RTs	all records of that taxonomy system carrying that rank (top 40)
+tables/g5_prior_reconciliation.tsv	scripts/c04_reconcile.py	see run.sh: c04_reconcile.py	named per row	named per row
+tables/g5_quality_availability.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	genomes	distinct genomes of that source_database in the corpus
+tables/g5_rank_coverage_by_system.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records	distinct raw records carrying that taxonomy_system
+tables/g5_redundancy_correction.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records vs exact RTs	records of that taxonomy system with a species
+tables/g5_second_counts.tsv	scripts/c04_reconcile.py	see run.sh: c04_reconcile.py	genomes / catalogue keys	named per row; both routes count the same population
+tables/g5_summary.tsv	scripts/assemble.py	see run.sh: assemble.py	named per row	named per row in the source_table column
+tables/g5_taxonomy_system_by_database.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records	distinct raw records of that taxonomy system and database
+tables/g5_unjoined_examples.tsv	scripts/j01_join_and_sampling.py	see run.sh: j01_join_and_sampling.py	records / genomes	records of that database that do NOT join

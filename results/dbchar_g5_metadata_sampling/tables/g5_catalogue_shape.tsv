@@ -1,0 +1,9 @@
+source_database	file	key_column	key_column_present	n_rows	n_distinct_keys	n_columns	completeness_column	contamination_column	n50_column	unit	denominator
+gtdb_bacteria	gtdb_bacteria_metadata.tsv.gz	accession	True	715230	715230	113	present	present	present	catalogue rows	n/a - describes the catalogue file itself
+gtdb_archaea	gtdb_archaea_metadata.tsv.gz	accession	True	17245	17245	113	present	present	present	catalogue rows	n/a - describes the catalogue file itself
+gem	gem_metadata.tsv	genome_id	True	52515	52515	20	present	present	present	catalogue rows	n/a - describes the catalogue file itself
+mgnify_human_gut	mgnify_human_gut_metadata.tsv	Genome	True	289232	289232	20	present	present	present	catalogue rows	n/a - describes the catalogue file itself
+mgnify_marine	mgnify_marine_metadata.tsv	Genome	True	50866	50866	20	present	present	present	catalogue rows	n/a - describes the catalogue file itself
+mgnify_soil	mgnify_soil_metadata.tsv	Genome	True	20908	20908	20	present	present	present	catalogue rows	n/a - describes the catalogue file itself
+ncbi_bacteria	ncbi_bacteria_assembly_summary.txt	#assembly_accession	True	2864737	2864737	38	ABSENT	ABSENT	ABSENT	catalogue rows	n/a - describes the catalogue file itself
+ncbi_archaea	ncbi_archaea_assembly_summary.txt	#assembly_accession	True	32837	32837	38	ABSENT	ABSENT	ABSENT	catalogue rows	n/a - describes the catalogue file itself

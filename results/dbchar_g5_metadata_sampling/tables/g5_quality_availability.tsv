@@ -1,0 +1,25 @@
+source_database	concept	column	n_genomes_with_a_value	n_genomes	pct_genomes_with_a_value	unit	denominator
+gtdb_bacteria	completeness	checkm2_completeness	299306	299306	100.0	genomes	distinct genomes of that source_database in the corpus
+gtdb_bacteria	contamination	checkm2_contamination	299306	299306	100.0	genomes	distinct genomes of that source_database in the corpus
+gtdb_bacteria	n50	n50_contigs	299306	299306	100.0	genomes	distinct genomes of that source_database in the corpus
+gtdb_archaea	completeness	checkm2_completeness	1806	1806	100.0	genomes	distinct genomes of that source_database in the corpus
+gtdb_archaea	contamination	checkm2_contamination	1806	1806	100.0	genomes	distinct genomes of that source_database in the corpus
+gtdb_archaea	n50	n50_contigs	1806	1806	100.0	genomes	distinct genomes of that source_database in the corpus
+gem	completeness	completeness	13645	13645	100.0	genomes	distinct genomes of that source_database in the corpus
+gem	contamination	contamination	13645	13645	100.0	genomes	distinct genomes of that source_database in the corpus
+gem	n50	n50	13645	13645	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_human_gut	completeness	Completeness	87226	87226	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_human_gut	contamination	Contamination	87226	87226	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_human_gut	n50	N50	87226	87226	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_marine	completeness	Completeness	4817	4817	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_marine	contamination	Contamination	4817	4817	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_marine	n50	N50	4817	4817	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_soil	completeness	Completeness	5461	5461	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_soil	contamination	Contamination	5461	5461	100.0	genomes	distinct genomes of that source_database in the corpus
+mgnify_soil	n50	N50	5461	5461	100.0	genomes	distinct genomes of that source_database in the corpus
+ncbi_bacteria	completeness	no column in this catalogue	0	1237519	0.0	genomes	distinct genomes of that source_database in the corpus
+ncbi_bacteria	contamination	no column in this catalogue	0	1237519	0.0	genomes	distinct genomes of that source_database in the corpus
+ncbi_bacteria	n50	no column in this catalogue	0	1237519	0.0	genomes	distinct genomes of that source_database in the corpus
+ncbi_archaea	completeness	no column in this catalogue	0	4047	0.0	genomes	distinct genomes of that source_database in the corpus
+ncbi_archaea	contamination	no column in this catalogue	0	4047	0.0	genomes	distinct genomes of that source_database in the corpus
+ncbi_archaea	n50	no column in this catalogue	0	4047	0.0	genomes	distinct genomes of that source_database in the corpus

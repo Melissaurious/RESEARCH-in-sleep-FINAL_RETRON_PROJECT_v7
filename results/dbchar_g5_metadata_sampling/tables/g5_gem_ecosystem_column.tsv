@@ -1,0 +1,5 @@
+measure	value	note	unit	denominator
+column present	True		catalogue rows	the inspected rows of gem_metadata.tsv
+rows inspected	5000	the first 5,000 rows of gem_metadata.tsv	catalogue rows	the inspected rows of gem_metadata.tsv
+values starting with d__ (a GTDB lineage)	4998	99.96	catalogue rows	the inspected rows of gem_metadata.tsv
+example value	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Caulobacterales;f__Caulobacteraceae;g__Brevundimonas;s__		catalogue rows	the inspected rows of gem_metadata.tsv

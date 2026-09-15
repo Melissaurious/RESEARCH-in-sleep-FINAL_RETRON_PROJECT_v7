@@ -1,0 +1,22 @@
+taxonomy_system	rank	n_present	n_records_in_system	pct_present	n_family_level_fallback_brackets	unit	denominator	note
+gtdb	domain	769693	769693	100.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+gtdb	phylum	769693	769693	100.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+gtdb	class	769693	769693	100.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+gtdb	order	769691	769693	99.9997	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+gtdb	family	769624	769693	99.991	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+gtdb	genus	768032	769693	99.7842	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+gtdb	species	755218	769693	98.1194	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+ncbi	domain	2259269	2259269	100.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+ncbi	phylum	0	2259269	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+ncbi	class	0	2259269	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+ncbi	order	0	2259269	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+ncbi	family	0	2259269	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+ncbi	genus	2251475	2259269	99.655	2327	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+ncbi	species	2251475	2259269	99.655	2327	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+unknown	domain	0	22276	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+unknown	phylum	0	22276	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+unknown	class	0	22276	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+unknown	order	0	22276	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+unknown	family	0	22276	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+unknown	genus	0	22276	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction
+unknown	species	0	22276	0.0	0	records	distinct raw records carrying that taxonomy_system	schemas are never pooled: the NCBI block has no phylum by construction

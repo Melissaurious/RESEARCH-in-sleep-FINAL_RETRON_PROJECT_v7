@@ -1,0 +1,10 @@
+source_database	tax_environment	n_records	n_loci	n_exact_rt	unit	denominator
+gem	unknown	22271	22271	15852	records / loci / exact RTs	distinct raw records of that database
+gtdb_archaea	mixed	3347	3347	2766	records / loci / exact RTs	distinct raw records of that database
+gtdb_bacteria	mixed	600551	600551	220934	records / loci / exact RTs	distinct raw records of that database
+mgnify_human_gut	human_gut	142185	142185	72910	records / loci / exact RTs	distinct raw records of that database
+mgnify_marine	marine	7952	7952	6009	records / loci / exact RTs	distinct raw records of that database
+mgnify_soil	soil	15658	15658	14086	records / loci / exact RTs	distinct raw records of that database
+ncbi_archaea	mixed	7915	7915	6956	records / loci / exact RTs	distinct raw records of that database
+ncbi_bacteria	mixed	2251354	2251354	409992	records / loci / exact RTs	distinct raw records of that database
+ncbi_bacteria	unknown	5	5	5	records / loci / exact RTs	distinct raw records of that database

@@ -1,0 +1,2 @@
+source_database	n_records	n_genomes	example_genome_id	example_genome_id_norm	unit	denominator
+ncbi_bacteria	5	1	GCA_011045455.1_test	GCA_011045455.1_test	records / genomes	records of that database that do NOT join
