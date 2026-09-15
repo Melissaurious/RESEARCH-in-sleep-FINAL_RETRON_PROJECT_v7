@@ -1,0 +1,26 @@
+quantity	value	source_table	unit	denominator
+sources_in_evidence_set	6	g1_token_census.tsv	evidence source	derivational primary literature plus the acquired alignment
+region_names_in_scope	32	g1_region_verdicts.tsv	region name	region names traced in this gate
+matrix_cells	192	g1_literature_evidence_matrix.tsv	(source, region) cell	6 sources x 32 regions
+cells_with_evidence	53	g1_literature_evidence_matrix.tsv	(source, region) cell	all matrix cells
+cells_not_named	129	g1_literature_evidence_matrix.tsv	(source, region) cell	all matrix cells
+quotes_verified	36	g1_evidence_quotes.tsv	quoted passage	assignments declared in control/
+quotes_unverifiable	0	g1_evidence_quotes.tsv	quoted passage	assignments declared in control/
+genealogy_edges	12	g1_terminology_genealogy.tsv	genealogy edge	edges traceable in the held derivational set
+genealogy_edges_to_unheld_sources	6	g1_terminology_genealogy.tsv	genealogy edge	all genealogy edges
+regions_with_stated_residue_boundary	1	g1_region_verdicts.tsv	region name	region names in scope
+regions_derivable_procedure_only	18	g1_region_verdicts.tsv	region name	region names in scope
+regions_scope_rule_only	0	g1_region_verdicts.tsv	region name	region names in scope
+regions_no_operational_basis	1	g1_region_verdicts.tsv	region name	region names in scope
+regions_not_in_held_evidence	1	g1_region_verdicts.tsv	region name	region names in scope
+unresolved_items_open	6	g1_unresolved_definition_register.tsv	open question	items in the unresolved-definition register
+positive_controls_pass	9	g1_detector_positive_control.tsv	detector control	9 controls declared
+second_count_checks	9	g1_second_counts.tsv	spot-check	independent second-count checks
+second_count_disagreements	0	g1_second_counts.tsv	spot-check	independent second-count checks
+align000044_sequences	66	g1_align000044_record_summary.tsv	aligned sequence	n/a - one primary alignment record
+align000044_columns	1441	g1_align000044_record_summary.tsv	alignment column	n/a - one primary alignment record
+align000044_numbered_subdomain_annotations	0	g1_align000044_record_summary.tsv	annotation	the whole alignment record, by a detector validated on that record
+assets_acquired_verified	2	g1_acquisition_source_resolution.tsv	acquired file	files approved for governed acquisition
+assets_missing_primary	0	g1_acquisition_source_resolution.tsv	acquired file	files approved for governed acquisition
+operational_pairs_yes	7	g1_operational_evidence_matrix.tsv	(source, region) pair	pairs assessed in the operational-evidence matrix
+operational_pairs_no	18	g1_operational_evidence_matrix.tsv	(source, region) pair	pairs assessed in the operational-evidence matrix

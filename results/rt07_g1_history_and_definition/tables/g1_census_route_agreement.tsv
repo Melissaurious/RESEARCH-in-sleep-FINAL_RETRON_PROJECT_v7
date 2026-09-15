@@ -1,0 +1,15 @@
+source_id	region_id	region_name	n_literal_raw	n_literal_layout	n_range_expanded_raw	n_range_expanded_layout	delta_layout_minus_raw	reported_route	retained_as	unit	denominator
+poch1989	motif_A	motif A	13	11	0	0	-2	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+poch1989	motif_B	motif B	9	8	0	0	-1	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+poch1989	motif_C	motif C	10	9	0	0	-1	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+xiong1990	domain_3	domain/subdomain 3	5	4	10	9	-2	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+xiong1990	domain_4	domain/subdomain 4	0	0	9	8	-1	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+xiong1990	domain_5	domain/subdomain 5	1	1	8	6	-2	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+xiong1990	domain_6	domain/subdomain 6	2	2	8	6	-2	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+zimmerly2001	domain_2a	domain/subdomain 2a	1	0	0	0	-1	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+zimmerly2001	spacer_4_5	4/5 spacer	7	6	0	0	-1	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+zimmerly2001	spacer_7_X	7/X spacer	9	8	0	0	-1	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+simon2008	domain_5	domain/subdomain 5	2	1	7	7	-1	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+simon2008	rt_domain_whole	RT domain (whole)	3	2	0	0	-1	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+blocker2005	rt_domain_whole	RT domain (whole)	13	11	0	0	-2	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ
+blocker2005	domain_X	domain X	31	28	0	0	-3	raw	ROUTE_DISAGREEMENT_RETAINED	(source, region_name) pair	cells where the two routes differ

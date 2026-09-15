@@ -1,0 +1,7 @@
+source_id	asset_id	short_citation	year	evidence_tier	role_in_g1	may_seed_reconstruction
+poch1989	lit_poch1989	Poch, Sauvaget, Delarue & Tordo 1989, EMBO J 8(12):3867-3874	1989	TIER1	derivational primary: motif A-E vocabulary and the polymerase module	YES
+xiong1990	lit_xiong1990	Xiong & Eickbush 1990, EMBO J 9(10):3353-3362	1990	TIER1	derivational primary: the seven conserved domains 1-7 and their criteria	YES
+zimmerly2001	lit_zimmerly2001	Zimmerly, Hausner & Wu 2001, NAR 29(5):1238-1250	2001	TIER1	derivational primary: the only held source that numbers RT subdomains 0-7	YES
+simon2008	lit_simon2008	Simon & Zimmerly 2008, NAR 36(22):7219-7229	2008	TIER1	derivational primary: bacterial RT scope and the published transferability measurement	YES
+align000044	zimmerly2001_align_000044	Zimmerly S., EMBL Alignment Database ALIGN_000044, the alignment behind Zimmerly 2001	2001	TIER1_PRIMARY_ALIGNMENT	derivational primary: the authors own submitted alignment, acquired in this gate	YES
+blocker2005	lit_blocker2005_structural	Blocker et al. 2005, RNA 11(1):14-28	2005	TIER1_STRUCTURAL	independent structural interpretation; also the positive control for the RT0-RT7 spelling detector	NO

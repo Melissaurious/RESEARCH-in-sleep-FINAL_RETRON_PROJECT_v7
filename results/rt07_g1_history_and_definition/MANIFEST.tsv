@@ -1,0 +1,19 @@
+artifact	script	command	unit	denominator
+tables/g1_token_census.tsv	scripts/s02_token_census.py	see run.sh: s02_token_census.py	(source, region_name) pair	6 sources x 32 region names = 192 cells
+tables/g1_census_route_agreement.tsv	scripts/s02_token_census.py	see run.sh: s02_token_census.py	(source, region_name) pair	cells where the two extraction routes disagree
+tables/g1_detector_positive_control.tsv	scripts/s02_token_census.py	see run.sh: s02_token_census.py	detector control	9 controls declared before any zero was reported
+tables/g1_evidence_quotes.tsv	scripts/s03_evidence_matrix.py	see run.sh: s03_evidence_matrix.py	quoted passage	assignments declared in control/evidence_assignments.tsv
+tables/g1_literature_evidence_matrix.tsv	scripts/s03_evidence_matrix.py	see run.sh: s03_evidence_matrix.py	(source, region_name) cell	6 sources x 32 region names = 192 cells
+tables/g1_terminology_genealogy.tsv	scripts/s03_evidence_matrix.py	see run.sh: s03_evidence_matrix.py	genealogy edge (region, naming source, antecedent)	edges traceable in the held derivational set
+tables/g1_operational_evidence_matrix.tsv	scripts/s03_evidence_matrix.py	see run.sh: s03_evidence_matrix.py	(source, region) operational capability	region-source pairs with any evidence in this gate
+tables/g1_region_verdicts.tsv	scripts/s03_evidence_matrix.py	see run.sh: s03_evidence_matrix.py	region name	32 region names in scope
+tables/g1_unresolved_definition_register.tsv	scripts/s03_evidence_matrix.py	see run.sh: s03_evidence_matrix.py	open definitional question	questions this gate could not close
+tables/g1_acquisition_source_resolution.tsv	scripts/s04_acquisition_register.py	see run.sh: s04_acquisition_register.py	externally acquired file or attempt	2 files approved for governed acquisition; 7 attempts made or declined
+tables/g1_derived_registry.tsv	scripts/s04_acquisition_register.py	see run.sh: s04_acquisition_register.py	acquired primary asset	assets landed in the governed acquisition cache by this gate
+tables/g1_align000044_record_summary.tsv	scripts/s04_acquisition_register.py	see run.sh: s04_acquisition_register.py	alignment record field	n/a - one primary alignment record; values read, not derived
+tables/g1_second_counts.tsv	scripts/s05_second_count.sh	see run.sh: s05_second_count.sh	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+tables/g1_summary.tsv	scripts/s06_summary.py	see run.sh: s06_summary.py	declared quantity	n/a - rollup; each row names its own source table
+tables/g1_prior_reconciliation.tsv	scripts/s06_summary.py	see run.sh: s06_summary.py	prior statement	prior statements this gate could test against its own reading
+tables/g1_resolved_values.tsv	scripts/assemble_report.py	see run.sh: assemble_report.py	resolved report value	every value rendered in REPORT.md and REPORT.html
+REPORT.md	scripts/assemble_report.py	see run.sh: assemble_report.py	report	n/a - narrative; every number resolves to a landed table
+REPORT.html	scripts/assemble_report.py	see run.sh: assemble_report.py	report	n/a - narrative; every number resolves to a landed table

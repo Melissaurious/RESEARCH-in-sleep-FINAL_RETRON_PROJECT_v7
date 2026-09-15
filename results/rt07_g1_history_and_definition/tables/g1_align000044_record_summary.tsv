@@ -1,0 +1,13 @@
+quantity	value	read_from	unit	frame	denominator
+accession	ALIGN_000044	ID line	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+molecule_type	PRT	ID line	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+alignment_columns	1441	ID line	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+n_sequences	66	ID line	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+n_sequence_rows_listed	66	SO lines	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+submission_date	13-NOV-2000	RL line	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+alignment_method	PILEUP, CLUSTALX and manual adjustment	CC block	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+n_annotated_domains	3	CC block	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+n_numbered_subdomain_annotations	0	whole record; the detector that finds this is validated in step 2	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+annotated_domain:reverse_transcriptase	261-886	CC block	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+annotated_domain:splicing_(or_maturase)	1123-1235	CC block	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived
+annotated_domain:nuclease	1319-1441	CC block	alignment record field	EMBL-Align flat file ALIGN_000044, as archived	n/a - single primary record, values read not derived

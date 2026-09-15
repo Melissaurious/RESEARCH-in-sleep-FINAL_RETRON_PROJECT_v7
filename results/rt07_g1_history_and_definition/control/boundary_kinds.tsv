@@ -1,0 +1,7 @@
+assignment_id	boundary_kind	note
+Z06	SCOPE_RULE	States WHERE the concept applies (which RT classes), not where the region starts or ends.
+Z07	SCOPE_RULE	As Z06, for 2a, and it is the only held Tier-1 sentence naming retron RTs with a numbered region.
+S02	SCOPE_RULE	The same scope limit restated in 2008, citing the same unheld 1999 source.
+Z08	RELATIVE_POSITION	Defines two spacers by the blocks they lie between, with measured length ranges. Positional, not coordinate.
+A01	RESIDUE_COORDINATE	Columns 261-886 of the 1441-column primary alignment. A real coordinate, for the container only.
+B02	RESIDUE_COORDINATE	M1-R85 on LtrA, from proteolysis on one protein. Constrains or falsifies; never seeds.

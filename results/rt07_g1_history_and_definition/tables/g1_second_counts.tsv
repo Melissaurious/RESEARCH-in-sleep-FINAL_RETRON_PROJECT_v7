@@ -1,0 +1,10 @@
+check	scope	route_a	value_a	route_b	value_b	delta_a_minus_b	agreement	unit	denominator
+subdomain_0_zimmerly	zimmerly2001:domain_0	python_regex_census	15	tr_grep_wc	15	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+subdomain_5_zimmerly	zimmerly2001:domain_5	python_regex_census	4	tr_grep_wc	4	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+domain_x_zimmerly	zimmerly2001:domain_X	python_regex_census	21	tr_grep_wc	21	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+domain_1_xiong	xiong1990:domain_1	python_regex_census	6	tr_grep_wc	6	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+domain_x_simon	simon2008:domain_X	python_regex_census	4	tr_grep_wc	4	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+rt0_blocker	blocker2005:rt0_spelling	python_regex_census	14	tr_grep_wc	14	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+rt1_blocker	blocker2005:rt1_spelling	python_regex_census	16	tr_grep_wc	16	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+motif_a_poch	poch1989:motif_A	python_regex_census	13	tr_grep_wc	13	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings
+subdomain_any_alignment	align000044:domain_0	python_regex_census	0	tr_grep_wc	0	0	AGREE	literal namings of one region in one source	9 spot-checks spanning every source and both spellings

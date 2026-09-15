@@ -1,0 +1,33 @@
+region_id	region_name	series	rt0_rt7_scope	scope_note
+domain_0	domain/subdomain 0	numbered_rt_series	RT0_SEPARATE	The region the modern spelling calls RT0. Held separate from 1-7 by launcher section 1 and tested, not assumed, in this gate.
+domain_1	domain/subdomain 1	numbered_rt_series	RT1_RT7	Xiong & Eickbush domain 1; the one of the seven they state was not independently confirmed.
+domain_2	domain/subdomain 2	numbered_rt_series	RT1_RT7	Xiong & Eickbush domain 2.
+domain_3	domain/subdomain 3	numbered_rt_series	RT1_RT7	Xiong & Eickbush domain 3; corresponds to Poch motif A.
+domain_4	domain/subdomain 4	numbered_rt_series	RT1_RT7	Xiong & Eickbush domain 4.
+domain_5	domain/subdomain 5	numbered_rt_series	RT1_RT7	Xiong & Eickbush domain 5; carries the catalytic Y/FxDD.
+domain_6	domain/subdomain 6	numbered_rt_series	RT1_RT7	Xiong & Eickbush domain 6; reported incomplete in whole element classes.
+domain_7	domain/subdomain 7	numbered_rt_series	RT1_RT7	Xiong & Eickbush domain 7.
+rt_domain_whole	RT domain (whole)	whole_domain	CONTAINER	The undivided RT domain. Kept as its own region so that a stated boundary for the container is never read as a boundary for any block inside it.
+domain_2a	domain/subdomain 2a	numbered_rt_series_insertion	OUTSIDE_RT1_RT7	Named in accordance with non-LTR RTs; explicitly NOT one of the seven and explicitly only weakly conserved.
+domain_X	domain X	adjacent_domain	OUTSIDE_RT1_RT7	Downstream of the RT domain, mapped to the thumb. Adjacent to the series, never a member of it.
+spacer_4_5	4/5 spacer	spacer	OUTSIDE_RT1_RT7	A named region defined as an insertion site BETWEEN blocks; a spacer is not a block.
+spacer_7_X	7/X spacer	spacer	OUTSIDE_RT1_RT7	As above, between subdomain 7 and domain X.
+motif_A	motif A	poch_motif_series	PREDECESSOR_PARTITION	Poch motif vocabulary. A different partition of the same protein, not a synonym for a numbered domain.
+motif_B	motif B	poch_motif_series	PREDECESSOR_PARTITION	As above.
+motif_C	motif C	poch_motif_series	PREDECESSOR_PARTITION	As above; contains the two invariant Asp.
+motif_D	motif D	poch_motif_series	PREDECESSOR_PARTITION	As above.
+motif_E	motif E	poch_motif_series	PREDECESSOR_PARTITION	The fifth RT-motif, outside the four that Poch shares with RNA polymerases.
+motif_F	motif F	poch_motif_series	PREDECESSOR_PARTITION	Included to test whether an F label exists in the held derivational sources at all.
+regions_a_e	regions a-e	poch_motif_series	PREDECESSOR_PARTITION	The lower-case spelling by which Xiong & Eickbush cite the Poch motifs.
+struct_palm	palm	structural_partition	STRUCTURAL_NOT_SEQUENCE	Structural partition of the same protein. May constrain or test a sequence block; may never define one.
+struct_fingers	fingers	structural_partition	STRUCTURAL_NOT_SEQUENCE	As above.
+struct_thumb	thumb	structural_partition	STRUCTURAL_NOT_SEQUENCE	As above.
+motif_YXDD	Y/FxDD catalytic motif	catalytic_landmark	LANDMARK	The one landmark shared across every held source; the anchor a reconstruction can be checked against.
+rt0_spelling	RT0 (modern spelling)	modern_spelling	RT0_SEPARATE	The modern token. Counted separately from domain/subdomain 0 so that spelling and concept cannot be silently merged.
+rt1_spelling	RT1 (modern spelling)	modern_spelling	RT1_RT7	As above.
+rt2_spelling	RT2 (modern spelling)	modern_spelling	RT1_RT7	As above.
+rt3_spelling	RT3 (modern spelling)	modern_spelling	RT1_RT7	As above.
+rt4_spelling	RT4 (modern spelling)	modern_spelling	RT1_RT7	As above.
+rt5_spelling	RT5 (modern spelling)	modern_spelling	RT1_RT7	As above.
+rt6_spelling	RT6 (modern spelling)	modern_spelling	RT1_RT7	As above.
+rt7_spelling	RT7 (modern spelling)	modern_spelling	RT1_RT7	As above.
