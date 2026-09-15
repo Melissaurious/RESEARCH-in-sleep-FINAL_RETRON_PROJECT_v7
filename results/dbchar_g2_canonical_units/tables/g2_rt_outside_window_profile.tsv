@@ -1,0 +1,16 @@
+population	source_database	window_inverted	n_records	n_loci	n_elig_exact_rt
+POP-RT-FAM	gem	False	5	5	5
+POP-RT-FAM	gem	True	19	19	19
+POP-RT-FAM	mgnify_human_gut	False	11039	11039	11039
+POP-RT-FAM	mgnify_human_gut	True	3382	3382	3382
+POP-RT-FAM	mgnify_marine	False	534	534	534
+POP-RT-FAM	mgnify_marine	True	155	155	155
+POP-RT-FAM	mgnify_soil	False	359	359	359
+POP-RT-FAM	mgnify_soil	True	105	105	105
+POP-RT-MULTI	gem	False	1	1	1
+POP-RT-MULTI	mgnify_human_gut	False	751	751	751
+POP-RT-MULTI	mgnify_human_gut	True	229	229	229
+POP-RT-MULTI	mgnify_marine	False	72	72	72
+POP-RT-MULTI	mgnify_marine	True	12	12	12
+POP-RT-MULTI	mgnify_soil	False	67	67	67
+POP-RT-MULTI	mgnify_soil	True	22	22	22

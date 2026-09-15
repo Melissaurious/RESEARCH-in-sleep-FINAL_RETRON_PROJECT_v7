@@ -1,0 +1,9 @@
+type_set_norm	source_file	n_records	n_loci	n_exact_rt	n_first_copy
+RVT-GII/Retron	master_RVT-GII_merged_oriented.jsonl	1	1	1	1
+RVT-GII/Retron	master_Retron_merged_oriented.jsonl	1	1	1	0
+RVT-UG10/Retron	master_RVT-UG10_merged_oriented.jsonl	3	3	2	3
+RVT-UG10/Retron	master_Retron_merged_oriented.jsonl	3	3	2	0
+RVT-UG11/Retron	master_RVT-UG11_merged_oriented.jsonl	2	1	1	2
+RVT-UG11/Retron	master_Retron_merged_oriented.jsonl	2	1	1	0
+RVT-UG2/Retron	master_RVT-UG2_merged_oriented.jsonl	4	4	1	4
+RVT-UG2/Retron	master_Retron_merged_oriented.jsonl	4	4	1	0

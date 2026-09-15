@@ -1,0 +1,35 @@
+population	eligibility_flag	state	reason	n_records	n_records_in_population	pct_of_population
+POP-RT-FAM	elig_exact_rt	ELIGIBLE		3050688	3050688	100.0
+POP-RT-MULTI	elig_exact_rt	ELIGIBLE		9012	9012	100.0
+POP-RT-FAM	elig_rt_coords	ELIGIBLE		3034472	3050688	99.4684
+POP-RT-FAM	elig_rt_coords	INELIGIBLE	coords_unverified:not_testable_rt_outside_window	8600	3050688	0.2819
+POP-RT-FAM	elig_rt_coords	INELIGIBLE	coords_unverified:not_testable_window_inverted	3661	3050688	0.12
+POP-RT-FAM	elig_rt_coords	INELIGIBLE	coords_unverified:not_testable_rt_partially_outside_window	3337	3050688	0.1094
+POP-RT-FAM	elig_rt_coords	INELIGIBLE	coords_unverified:mismatch	618	3050688	0.0203
+POP-RT-MULTI	elig_rt_coords	ELIGIBLE		7807	9012	86.6289
+POP-RT-MULTI	elig_rt_coords	INELIGIBLE	coords_unverified:not_testable_rt_outside_window	528	9012	5.8589
+POP-RT-MULTI	elig_rt_coords	INELIGIBLE	coords_unverified:not_testable_rt_partially_outside_window	363	9012	4.028
+POP-RT-MULTI	elig_rt_coords	INELIGIBLE	coords_unverified:not_testable_window_inverted	263	9012	2.9183
+POP-RT-MULTI	elig_rt_coords	INELIGIBLE	coords_unverified:mismatch	51	9012	0.5659
+POP-RT-FAM	elig_geometry	ELIGIBLE		3034472	3050688	99.4684
+POP-RT-FAM	elig_geometry	INELIGIBLE	coords_unverified:not_testable_rt_outside_window	8600	3050688	0.2819
+POP-RT-FAM	elig_geometry	INELIGIBLE	coords_unverified:not_testable_window_inverted	3661	3050688	0.12
+POP-RT-FAM	elig_geometry	INELIGIBLE	coords_unverified:not_testable_rt_partially_outside_window	3337	3050688	0.1094
+POP-RT-FAM	elig_geometry	INELIGIBLE	coords_unverified:mismatch	618	3050688	0.0203
+POP-RT-MULTI	elig_geometry	ELIGIBLE		7807	9012	86.6289
+POP-RT-MULTI	elig_geometry	INELIGIBLE	coords_unverified:not_testable_rt_outside_window	528	9012	5.8589
+POP-RT-MULTI	elig_geometry	INELIGIBLE	coords_unverified:not_testable_rt_partially_outside_window	363	9012	4.028
+POP-RT-MULTI	elig_geometry	INELIGIBLE	coords_unverified:not_testable_window_inverted	263	9012	2.9183
+POP-RT-MULTI	elig_geometry	INELIGIBLE	coords_unverified:mismatch	51	9012	0.5659
+POP-RT-FAM	elig_rt_length	ELIGIBLE		3050688	3050688	100.0
+POP-RT-MULTI	elig_rt_length	ELIGIBLE		9012	9012	100.0
+POP-RT-FAM	elig_rt_completeness	ELIGIBLE		3034472	3050688	99.4684
+POP-RT-FAM	elig_rt_completeness	INELIGIBLE	coords_unverified:not_testable_rt_outside_window	8600	3050688	0.2819
+POP-RT-FAM	elig_rt_completeness	INELIGIBLE	coords_unverified:not_testable_window_inverted	3661	3050688	0.12
+POP-RT-FAM	elig_rt_completeness	INELIGIBLE	coords_unverified:not_testable_rt_partially_outside_window	3337	3050688	0.1094
+POP-RT-FAM	elig_rt_completeness	INELIGIBLE	coords_unverified:mismatch	618	3050688	0.0203
+POP-RT-MULTI	elig_rt_completeness	ELIGIBLE		7807	9012	86.6289
+POP-RT-MULTI	elig_rt_completeness	INELIGIBLE	coords_unverified:not_testable_rt_outside_window	528	9012	5.8589
+POP-RT-MULTI	elig_rt_completeness	INELIGIBLE	coords_unverified:not_testable_rt_partially_outside_window	363	9012	4.028
+POP-RT-MULTI	elig_rt_completeness	INELIGIBLE	coords_unverified:not_testable_window_inverted	263	9012	2.9183
+POP-RT-MULTI	elig_rt_completeness	INELIGIBLE	coords_unverified:mismatch	51	9012	0.5659

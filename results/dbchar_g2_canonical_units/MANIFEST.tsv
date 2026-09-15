@@ -1,0 +1,29 @@
+artifact	script	command	unit	denominator
+tables/c04_positive_controls.tsv	scripts/c04_controls.py	see run.sh: c04_controls.py	controls	n/a - one pass/fail control per row on the synthetic fixture
+tables/g2_bt_status.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	n_in_population column (and its frame-disambiguating half)
+tables/g2_bt_status_by_family.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	RT-anchored records of that family label
+tables/g2_cds_sequence_carrier.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	RT-anchored records (3,059,700)
+tables/g2_cross_family_loci.tsv	scripts/a02_units.py	see run.sh: a02_units.py	loci	loci whose records span more than one family label
+tables/g2_derived_registry.tsv	scripts/assemble.py	see run.sh: assemble.py	datasets	n/a - identity of the derived datasets; no rate
+tables/g2_duplicate_lines.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/groups/loci	RT-anchored records (3,059,700)
+tables/g2_eligibility.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	n_records_in_population column
+tables/g2_eligible_unit_counts.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/loci/exact RTs/genomes	the eligible subset named in the row
+tables/g2_inverted_window_profile.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/loci	records with an inverted window
+tables/g2_ladder_by_family_label.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/loci/exact RTs	distinct raw records of that source file's family label
+tables/g2_ladder_by_population.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/loci/exact RTs	distinct raw records of that population
+tables/g2_ladder_by_source_database.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/loci/exact RTs	distinct raw records of that source_database
+tables/g2_locus_conflicts.tsv	scripts/a02_units.py	see run.sh: a02_units.py	loci	n_loci_total column: loci (2,847,312)
+tables/g2_multi_stratum.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/loci/exact RTs	POP-RT-MULTI records (9,012)
+tables/g2_multilabel_in_family_files.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/loci	multi-label records inside single-family files
+tables/g2_multiplicity.tsv	scripts/a02_units.py	see run.sh: a02_units.py	named per row	named per row in the denominator column
+tables/g2_ncrna_count_source.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	RT-anchored records of that population
+tables/g2_ncrna_flag_reconciliation.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	RT-anchored records (3,059,700)
+tables/g2_prior_reconciliation.tsv	scripts/c05_reconcile.py	see run.sh: c05_reconcile.py	named per row	named per row in the scope columns
+tables/g2_rt_cds_classes.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	n_in_population column
+tables/g2_rt_cds_concordance.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	RT-anchored records (3,059,700)
+tables/g2_rt_outside_window_profile.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records/loci	records whose RT is not inside its window
+tables/g2_second_counts.tsv	scripts/c05_reconcile.py	see run.sh: c05_reconcile.py	records/loci/exact RTs	named per row in scope; the routes count the same population
+tables/g2_summary.tsv	scripts/assemble.py	see run.sh: assemble.py	named per row	named per row in the source_table column
+tables/g2_twin_evidence.tsv	scripts/a02_units.py	see run.sh: a02_units.py	physical loci/loci/records	physical loci (2,475,684)
+tables/g2_unit_ladder.tsv	scripts/a02_units.py	see run.sh: a02_units.py	named per row	named per row in the denominator column
+tables/g2_window_qc.tsv	scripts/a02_units.py	see run.sh: a02_units.py	records	n_records_total column: RT-anchored records

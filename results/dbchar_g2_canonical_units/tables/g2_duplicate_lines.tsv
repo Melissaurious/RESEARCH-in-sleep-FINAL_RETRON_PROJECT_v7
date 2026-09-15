@@ -1,0 +1,7 @@
+measure	n	unit	denominator
+records_on_duplicated_lines	16924	records/groups/loci	raw_record (RT-anchored)
+duplicate_line_groups	8462	records/groups/loci	raw_record (RT-anchored)
+extra_copies_beyond_first	8462	records/groups/loci	raw_record (RT-anchored)
+loci_touched_by_duplicates	8461	records/groups/loci	raw_record (RT-anchored)
+duplicate_groups_spanning_two_files	10	records/groups/loci	raw_record (RT-anchored)
+exact_rts_touched	883	records/groups/loci	raw_record (RT-anchored)

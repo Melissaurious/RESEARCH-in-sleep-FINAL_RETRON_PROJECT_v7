@@ -1,0 +1,16 @@
+unit	definition	n	denominator
+raw_record	one line of an RT-anchored corpus file	3059700	the 42 RT-anchored files at their g1 sha256
+distinct_raw_record	raw records after byte-identical duplicate lines collapse	3051238	raw_record
+rt_system_id	distinct rt_system_id string (NOT a key: it encodes contig+RT start)	2917865	raw_record
+attribution	distinct (rt_system_id, source_database, genome_id)	3051238	distinct_raw_record
+locus	distinct (contig, RT start, RT end, RT strand)	2847312	distinct_raw_record
+physical_locus	locus after NZ_ contig-prefix normalisation	2475684	locus
+physical_locus_collapse_supported	physical loci whose collapse the window-DNA + RT + coordinate evidence supports	2475684	physical_locus
+exact_rt	distinct sha256 of the RT amino-acid sequence (one trailing * removed)	501561	distinct_raw_record
+exact_rt_wellformed	exact RT sequences that are well-formed protein	501561	exact_rt
+exact_rt_coord_verified	exact RTs with at least one back-translation-verified record	484360	exact_rt
+genome	distinct genome_id after the GTDB RS_/GB_ prefix is removed	1542433	distinct_raw_record
+contig	distinct contig accession after NZ_ normalisation	2182435	distinct_raw_record
+rt_taxonomic_occurrence	distinct (exact RT, genome)	2737189	distinct_raw_record
+rt_species_occurrence	distinct (exact RT, taxonomy_system, species)	818961	distinct_raw_record
+window_dna	distinct sha256 of the extracted window DNA (empty excluded)	1262241	distinct_raw_record

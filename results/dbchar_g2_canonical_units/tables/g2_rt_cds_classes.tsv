@@ -1,0 +1,15 @@
+population	no_rt_cds_class	n_records	n_bt_verified	n_elig_exact_rt	n_elig_geometry	n_elig_completeness	n_in_population
+POP-RT-FAM	context_absent_window_inverted	3661	0	3661	0	0	3050688
+POP-RT-FAM	has_rt_cds	3021220	3021129	3021220	3021129	3021129	3050688
+POP-RT-FAM	no_prodigal_call_bt_mismatch	588	0	588	0	0	3050688
+POP-RT-FAM	no_prodigal_call_bt_verified_no_overlapping_cds	124	124	124	124	124	3050688
+POP-RT-FAM	no_prodigal_call_bt_verified_overlapping_cds	13219	13219	13219	13219	13219	3050688
+POP-RT-FAM	rt_outside_window	8600	0	8600	0	0	3050688
+POP-RT-FAM	rt_partially_outside_window	3276	0	3276	0	0	3050688
+POP-RT-MULTI	context_absent_window_inverted	263	0	263	0	0	9012
+POP-RT-MULTI	has_rt_cds	6976	6962	6976	6962	6962	9012
+POP-RT-MULTI	no_prodigal_call_bt_mismatch	40	0	40	0	0	9012
+POP-RT-MULTI	no_prodigal_call_bt_verified_no_overlapping_cds	38	38	38	38	38	9012
+POP-RT-MULTI	no_prodigal_call_bt_verified_overlapping_cds	807	807	807	807	807	9012
+POP-RT-MULTI	rt_outside_window	528	0	528	0	0	9012
+POP-RT-MULTI	rt_partially_outside_window	360	0	360	0	0	9012

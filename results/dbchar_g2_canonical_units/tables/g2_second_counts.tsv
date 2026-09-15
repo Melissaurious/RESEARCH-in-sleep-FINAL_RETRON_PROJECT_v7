@@ -1,0 +1,59 @@
+check	scope	route_a	value_a	route_b	value_b	delta_a_minus_b	agreement
+records_total	RT-anchored corpus	e01 json census	3059700	c03 awk line count	3059700	0	AGREE
+records_per_file	master_MULTI_merged_oriented.jsonl	e01 json census	9012	c03 awk line count	9012	0	AGREE
+records_per_file	master_RVT-AbiA_merged_oriented.jsonl	e01 json census	46	c03 awk line count	46	0	AGREE
+records_per_file	master_RVT-AbiK_merged_oriented.jsonl	e01 json census	9516	c03 awk line count	9516	0	AGREE
+records_per_file	master_RVT-AbiP2_merged_oriented.jsonl	e01 json census	47333	c03 awk line count	47333	0	AGREE
+records_per_file	master_RVT-CRISPR-like_merged_oriented.jsonl	e01 json census	6776	c03 awk line count	6776	0	AGREE
+records_per_file	master_RVT-CRISPR_merged_oriented.jsonl	e01 json census	9711	c03 awk line count	9711	0	AGREE
+records_per_file	master_RVT-DGRs_merged_oriented.jsonl	e01 json census	228171	c03 awk line count	228171	0	AGREE
+records_per_file	master_RVT-G2L4_merged_oriented.jsonl	e01 json census	3055	c03 awk line count	3055	0	AGREE
+records_per_file	master_RVT-G2L_merged_oriented.jsonl	e01 json census	38428	c03 awk line count	38428	0	AGREE
+records_per_file	master_RVT-G2Lb_merged_oriented.jsonl	e01 json census	657	c03 awk line count	657	0	AGREE
+records_per_file	master_RVT-G2Lc_merged_oriented.jsonl	e01 json census	1498	c03 awk line count	1498	0	AGREE
+records_per_file	master_RVT-GII_merged_oriented.jsonl	e01 json census	1618431	c03 awk line count	1618431	0	AGREE
+records_per_file	master_RVT-UG10_merged_oriented.jsonl	e01 json census	2114	c03 awk line count	2114	0	AGREE
+records_per_file	master_RVT-UG11_merged_oriented.jsonl	e01 json census	76193	c03 awk line count	76193	0	AGREE
+records_per_file	master_RVT-UG12_merged_oriented.jsonl	e01 json census	6454	c03 awk line count	6454	0	AGREE
+records_per_file	master_RVT-UG13_merged_oriented.jsonl	e01 json census	2011	c03 awk line count	2011	0	AGREE
+records_per_file	master_RVT-UG14_merged_oriented.jsonl	e01 json census	2525	c03 awk line count	2525	0	AGREE
+records_per_file	master_RVT-UG15_merged_oriented.jsonl	e01 json census	15979	c03 awk line count	15979	0	AGREE
+records_per_file	master_RVT-UG16_merged_oriented.jsonl	e01 json census	2480	c03 awk line count	2480	0	AGREE
+records_per_file	master_RVT-UG17_merged_oriented.jsonl	e01 json census	39760	c03 awk line count	39760	0	AGREE
+records_per_file	master_RVT-UG18_merged_oriented.jsonl	e01 json census	2127	c03 awk line count	2127	0	AGREE
+records_per_file	master_RVT-UG19_merged_oriented.jsonl	e01 json census	2244	c03 awk line count	2244	0	AGREE
+records_per_file	master_RVT-UG1_merged_oriented.jsonl	e01 json census	7733	c03 awk line count	7733	0	AGREE
+records_per_file	master_RVT-UG20_merged_oriented.jsonl	e01 json census	636	c03 awk line count	636	0	AGREE
+records_per_file	master_RVT-UG21_merged_oriented.jsonl	e01 json census	385	c03 awk line count	385	0	AGREE
+records_per_file	master_RVT-UG22_merged_oriented.jsonl	e01 json census	952	c03 awk line count	952	0	AGREE
+records_per_file	master_RVT-UG23_merged_oriented.jsonl	e01 json census	1413	c03 awk line count	1413	0	AGREE
+records_per_file	master_RVT-UG24_merged_oriented.jsonl	e01 json census	3389	c03 awk line count	3389	0	AGREE
+records_per_file	master_RVT-UG25_merged_oriented.jsonl	e01 json census	559	c03 awk line count	559	0	AGREE
+records_per_file	master_RVT-UG26_merged_oriented.jsonl	e01 json census	8407	c03 awk line count	8407	0	AGREE
+records_per_file	master_RVT-UG27_merged_oriented.jsonl	e01 json census	6425	c03 awk line count	6425	0	AGREE
+records_per_file	master_RVT-UG28_merged_oriented.jsonl	e01 json census	4414	c03 awk line count	4414	0	AGREE
+records_per_file	master_RVT-UG28b_merged_oriented.jsonl	e01 json census	1969	c03 awk line count	1969	0	AGREE
+records_per_file	master_RVT-UG2_merged_oriented.jsonl	e01 json census	46470	c03 awk line count	46470	0	AGREE
+records_per_file	master_RVT-UG3_merged_oriented.jsonl	e01 json census	40158	c03 awk line count	40158	0	AGREE
+records_per_file	master_RVT-UG4_merged_oriented.jsonl	e01 json census	33045	c03 awk line count	33045	0	AGREE
+records_per_file	master_RVT-UG5_merged_oriented.jsonl	e01 json census	52945	c03 awk line count	52945	0	AGREE
+records_per_file	master_RVT-UG6_merged_oriented.jsonl	e01 json census	1090	c03 awk line count	1090	0	AGREE
+records_per_file	master_RVT-UG7_merged_oriented.jsonl	e01 json census	18480	c03 awk line count	18480	0	AGREE
+records_per_file	master_RVT-UG8_merged_oriented.jsonl	e01 json census	38888	c03 awk line count	38888	0	AGREE
+records_per_file	master_RVT-UG9_merged_oriented.jsonl	e01 json census	2500	c03 awk line count	2500	0	AGREE
+records_per_file	master_Retron_merged_oriented.jsonl	e01 json census	665321	c03 awk line count	665321	0	AGREE
+distinct_rt_system_id	RT-anchored corpus	e01	2917865	c03 sort -u	2917865	0	AGREE
+distinct_locus_key	distinct raw records	e01 (json)	2847312	c03 (awk byte slice)	2847312	0	AGREE
+distinct_exact_rt	distinct raw records	e01 sha256 of normalised sequence	501561	c03 sort -u of the same normalised string	501561	0	AGREE
+records_without_rt_cds	RT-anchored corpus	e01 is_rt_gene count	31504	c03 substring test	31504	0	AGREE
+window_inverted	RT-anchored corpus	e01	3924	c03 numeric compare	3924	0	AGREE
+rt_not_inside_window	RT-anchored corpus	e01	16752	c03 numeric compare	16752	0	AGREE
+RT-anchored records	g1 POP-RT-FAM + POP-RT-MULTI	e01	3059700	g1 bundle s02_populations.tsv	3059700	0	AGREE
+MULTI records	g1 POP-RT-MULTI	e01	9012	g1 bundle	9012	0	AGREE
+records_without_rt_cds	POP-RT-FAM	e01	29468	g1 check V09a	29468	0	AGREE
+window_inverted	POP-RT-FAM	e01	3661	g1 check V16	3661	0	AGREE
+ncrna_count_mismatch	POP-RT-FAM	e01 ncrna_count_qc != agree	9799	g1 check V12	9799	0	AGREE
+records_without_rt_cds	POP-RT-MULTI	e01	2036	g1 check V09a	2036	0	AGREE
+window_inverted	POP-RT-MULTI	e01	263	g1 check V16	263	0	AGREE
+ncrna_count_mismatch	POP-RT-MULTI	e01 ncrna_count_qc != agree	0	g1 check V12	0	0	AGREE
+byte_identical_extra_copies	RT-anchored corpus	e01	8462	g1 s02_byte_identical_records.tsv	8462	0	AGREE

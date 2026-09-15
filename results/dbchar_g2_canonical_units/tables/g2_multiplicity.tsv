@@ -1,0 +1,50 @@
+measure	value	n	unit	denominator
+records_per_locus(capped_10)	1	2643391	loci	locus
+records_per_locus(capped_10)	2	203916	loci	locus
+records_per_locus(capped_10)	3	5	loci	locus
+source_databases_per_locus	1	2643391	loci	locus
+source_databases_per_locus	2	203921	loci	locus
+source_files_per_locus	1	2847312	loci	locus
+exact_rts_per_locus	1	2847312	loci	locus
+loci_per_exact_rt(capped_20)	1	325872	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	2	103522	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	3	18400	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	4	16597	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	5	6131	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	6	5936	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	7	2945	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	8	3136	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	9	1832	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	10	1779	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	11	1156	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	12	1293	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	13	832	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	14	913	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	15	666	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	16	633	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	17	501	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	18	551	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	19	371	exact RTs	exact_rt
+loci_per_exact_rt(capped_20)	20	8495	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	1	328736	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	2	104517	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	3	18083	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	4	15348	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	5	6007	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	6	5363	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	7	2870	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	8	2787	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	9	1760	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	10	1604	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	11	1116	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	12	1132	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	13	808	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	14	845	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	15	629	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	16	582	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	17	490	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	18	500	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	19	365	exact RTs	exact_rt
+genomes_per_exact_rt(capped_20)	20	8019	exact RTs	exact_rt
+contig_spellings_per_physical_locus	1	2104056	physical loci	physical_locus
+contig_spellings_per_physical_locus	2	371628	physical loci	physical_locus

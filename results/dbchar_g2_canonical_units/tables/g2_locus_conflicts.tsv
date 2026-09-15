@@ -1,0 +1,8 @@
+measure	n_loci	n_loci_total	unit	denominator
+loci_with_more_than_one_exact_rt	0	2847312	loci	locus
+loci_in_more_than_one_source_file	0	2847312	loci	locus
+loci_in_more_than_one_source_database	203921	2847312	loci	locus
+loci_with_more_than_one_genome_id	57	2847312	loci	locus
+loci_with_more_than_one_rt_system_id	70553	2847312	loci	locus
+loci_spanning_more_than_one_source_file_INCLUDING_duplicate_copies	9	2847312	loci	locus
+loci_with_more_than_one_family_label_INCLUDING_duplicate_copies	9	2847312	loci	locus

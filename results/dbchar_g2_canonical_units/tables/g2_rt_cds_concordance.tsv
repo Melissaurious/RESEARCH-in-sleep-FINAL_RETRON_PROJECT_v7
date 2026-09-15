@@ -1,0 +1,4 @@
+n_rt_cds	rtcds_coords_eq_rt	rtcds_seq_eq_rt	seqcds_all_are_rt	n_records
+0				31504
+1	True	True	True	3027456
+1	False	False	True	740

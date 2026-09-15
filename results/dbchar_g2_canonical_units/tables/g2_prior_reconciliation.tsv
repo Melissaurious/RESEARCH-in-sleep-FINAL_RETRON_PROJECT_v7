@@ -1,0 +1,8 @@
+quantity	prior_scope	prior_value	g2_scope	g2_value	delta	verdict	note
+locus count	prior locus_table_v1.parquet (P-LOC-COLLAPSED: NZ_ twins folded)	2663087	g2 physical_locus (NZ_-normalised)	2475684	-187403	CHANGED	prior folded NZ_ twins only when a 4-criteria evidence rule passed; g2 reports the normalised grain and the evidence class separately (g2_twin_evidence.tsv)
+locus count	prior locus_table_v1.parquet	2663087	g2 locus (contig spelling as given)	2847312	184225	CHANGED	different grain: g2 locus keeps the contig spelling, so twins are two loci
+exact RT count	prior rt_unique_v1.tsv keys	501561	g2 exact_rt (sha256 of sequence, one trailing * removed)	501561	0	CONFIRMED	same declared hash rule, independently re-derived from the pinned g1 corpus
+exact RT key set	keys only in the prior set	0	keys only in the g2 set	0	0	CONFIRMED	set comparison, not a count comparison: equal sizes would not prove equal sets
+loci carrying more than one rt_system_id	not measured by the prior grain	0	g2 loci where the id differs but the RT interval does not	70553	70553	CHANGED	id grain 2917865 vs coordinate grain 2847312: the difference is loci whose records carry different id suffixes at one RT interval
+twin pairs folded	prior: id-string pairs (X, NZ_X) passing a 4-criteria rule	254778	g2: physical loci with two contig spellings, same rule on evidence	371628	116850	CHANGED	g2 pairs on the RT coordinate interval, so a twin whose id suffix differs is still a pair; the prior id-string test could not see those
+loci in more than one source file	prior g0 README (prose)	9	g2 over all records including byte-identical duplicate copies	9	0	CONFIRMED	counted over ALL records: these loci are byte-identical lines filed in two family files, so a first-copy-only count reads 0

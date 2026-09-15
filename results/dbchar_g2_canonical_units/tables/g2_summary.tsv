@@ -1,0 +1,41 @@
+quantity	value	source_table
+raw_record	3059700	g2_unit_ladder.tsv
+distinct_raw_record	3051238	g2_unit_ladder.tsv
+rt_system_id	2917865	g2_unit_ladder.tsv
+attribution	3051238	g2_unit_ladder.tsv
+locus	2847312	g2_unit_ladder.tsv
+physical_locus	2475684	g2_unit_ladder.tsv
+physical_locus_collapse_supported	2475684	g2_unit_ladder.tsv
+exact_rt	501561	g2_unit_ladder.tsv
+exact_rt_wellformed	501561	g2_unit_ladder.tsv
+exact_rt_coord_verified	484360	g2_unit_ladder.tsv
+genome	1542433	g2_unit_ladder.tsv
+contig	2182435	g2_unit_ladder.tsv
+rt_taxonomic_occurrence	2737189	g2_unit_ladder.tsv
+rt_species_occurrence	818961	g2_unit_ladder.tsv
+window_dna	1262241	g2_unit_ladder.tsv
+bt_verified_records:POP-RT-FAM	3034472/3050688	g2_bt_status.tsv
+bt_verified_records_frame_disambiguating:POP-RT-FAM	1791104/1799424	g2_bt_status.tsv
+elig_exact_rt:POP-RT-FAM	3050688	g2_eligibility.tsv
+elig_rt_coords:POP-RT-FAM	3034472	g2_eligibility.tsv
+elig_geometry:POP-RT-FAM	3034472	g2_eligibility.tsv
+bt_verified_records:POP-RT-MULTI	7807/9012	g2_bt_status.tsv
+bt_verified_records_frame_disambiguating:POP-RT-MULTI	2090/2716	g2_bt_status.tsv
+elig_exact_rt:POP-RT-MULTI	9012	g2_eligibility.tsv
+elig_rt_coords:POP-RT-MULTI	7807	g2_eligibility.tsv
+elig_geometry:POP-RT-MULTI	7807	g2_eligibility.tsv
+records_without_rt_cds	31504	g2_rt_cds_classes.tsv
+records_without_rt_cds_recoverable	14188	g2_rt_cds_classes.tsv
+twin:single_contig_spelling	2104056	g2_twin_evidence.tsv
+twin:twin_identical_window_dna_and_rt	371628	g2_twin_evidence.tsv
+second_count_rows	58	g2_second_counts.tsv
+second_count_disagreements	0	g2_second_counts.tsv
+prior:locus count:prior locus_table_v1.parquet (P-LOC-COLL	CHANGED	g2_prior_reconciliation.tsv
+prior:locus count:prior locus_table_v1.parquet	CHANGED	g2_prior_reconciliation.tsv
+prior:exact RT count:prior rt_unique_v1.tsv keys	CONFIRMED	g2_prior_reconciliation.tsv
+prior:exact RT key set:keys only in the prior set	CONFIRMED	g2_prior_reconciliation.tsv
+prior:loci carrying more than one rt_system_id:not measured by the prior grain	CHANGED	g2_prior_reconciliation.tsv
+prior:twin pairs folded:prior: id-string pairs (X, NZ_X) passing	CHANGED	g2_prior_reconciliation.tsv
+prior:loci in more than one source file:prior g0 README (prose)	CONFIRMED	g2_prior_reconciliation.tsv
+positive_controls	78	c04_positive_controls.tsv
+positive_controls_failed	0	c04_positive_controls.tsv

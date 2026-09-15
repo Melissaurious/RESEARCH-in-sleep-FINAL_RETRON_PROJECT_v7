@@ -1,0 +1,8 @@
+population	source_database	clipped_end_flag	n_records	n_loci	n_with_cds	n_fullseq_empty	n_rt_beyond_win_end
+POP-RT-FAM	gem	True	19	19	0	19	19
+POP-RT-FAM	mgnify_human_gut	True	3382	3382	0	3382	3382
+POP-RT-FAM	mgnify_marine	True	155	155	0	155	155
+POP-RT-FAM	mgnify_soil	True	105	105	0	105	105
+POP-RT-MULTI	mgnify_human_gut	True	229	229	0	229	229
+POP-RT-MULTI	mgnify_marine	True	12	12	0	12	12
+POP-RT-MULTI	mgnify_soil	True	22	22	0	22	22

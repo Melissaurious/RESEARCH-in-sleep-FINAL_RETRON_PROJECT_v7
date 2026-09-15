@@ -1,0 +1,4 @@
+array_nonempty	any_intergenic_has_ncrna	any_ncrna_ids_referenced	n_records
+False	False	False	2703600
+False	True	True	9694
+True	True	True	346406

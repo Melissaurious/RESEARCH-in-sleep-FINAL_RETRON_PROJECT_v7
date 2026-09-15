@@ -1,0 +1,4 @@
+population	ncrna_count_qc	n_records	n_array_gt_0	n_ids_missing_from_array	sum_array	sum_metadata
+POP-RT-FAM	agree	3040889	346295	0	346611	346611
+POP-RT-FAM	metadata_gt_array	9799	105	9799	105	9974
+POP-RT-MULTI	agree	9012	6	0	6	6

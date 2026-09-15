@@ -1,0 +1,17 @@
+population	bt_status	n_records	n_in_population	verified	n_records_frame_disambiguating	n_in_population_frame_disambiguating
+POP-RT-FAM	alt_start	491051	3050688	True	269182	1799424
+POP-RT-FAM	code4_tga_trp	2716	3050688	True	1350	1799424
+POP-RT-FAM	exact	2532006	3050688	True	1517953	1799424
+POP-RT-FAM	internal_stop_masked	8699	3050688	True	2619	1799424
+POP-RT-FAM	mismatch	618	3050688	False	175	1799424
+POP-RT-FAM	not_testable_rt_outside_window	8600	3050688	False	3805	1799424
+POP-RT-FAM	not_testable_rt_partially_outside_window	3337	3050688	False	679	1799424
+POP-RT-FAM	not_testable_window_inverted	3661	3050688	False	3661	1799424
+POP-RT-MULTI	alt_start	1365	9012	True	537	2716
+POP-RT-MULTI	code4_tga_trp	394	9012	True	63	2716
+POP-RT-MULTI	exact	5290	9012	True	1251	2716
+POP-RT-MULTI	internal_stop_masked	758	9012	True	239	2716
+POP-RT-MULTI	mismatch	51	9012	False	10	2716
+POP-RT-MULTI	not_testable_rt_outside_window	528	9012	False	252	2716
+POP-RT-MULTI	not_testable_rt_partially_outside_window	363	9012	False	101	2716
+POP-RT-MULTI	not_testable_window_inverted	263	9012	False	263	2716

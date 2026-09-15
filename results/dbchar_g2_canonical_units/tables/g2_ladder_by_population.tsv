@@ -1,0 +1,3 @@
+population	n_records	n_loci	n_physical_loci	n_exact_rt	n_genomes	n_contigs	records_per_locus	loci_per_exact_rt	records_per_exact_rt
+POP-RT-FAM	3042226	2838770	2467297	493968	1540869	2175938	1.0717	5.7469	6.1588
+POP-RT-MULTI	9012	8542	8387	7593	4450	7938	1.055	1.125	1.1869
