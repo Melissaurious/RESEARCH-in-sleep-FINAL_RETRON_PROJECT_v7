@@ -260,6 +260,29 @@ Produced by `results/dbchar_g3_pair_geometry` (registry: `g3_derived_registry.ts
 ⛔ The ncRNA covariance models in this corpus are **retron** models. A zero-ncRNA rate outside
 Retron-labelled RTs measures detector scope, never biological absence (`g3_zero_class_by_family.tsv`).
 
+Produced by `results/dbchar_g4_family_baseline` (registry: `g4_derived_registry.tsv`):
+
+| dataset | grain | rows |
+|---|---|---:|
+| `rt_family_baseline_v1.parquet` | one exact RT protein, with its family label set, `V-RT-SINGLE`/`V-RT-MULTI` view membership, length and completeness state | 501,561 |
+| `ncrna_family_baseline_v1.parquet` | one exact ncRNA sequence, with the covariance model(s) that called it and the RT family labels it occurs beside | 16,458 |
+| `multi_hmm_evidence_v1.parquet` | one MULTI exact RT, with its per-profile `RVT-All.hmm` bit scores and the best-vs-second margin that shows the labels tie | 7,593 |
+
+⛔ `MULTI` is an **ambiguity stratum**, not a family. These rows are never appended to a
+single-family statistic: `rt_family_baseline_v1` keeps the label set, and the tie evidence that
+justifies keeping it separate is in `multi_hmm_evidence_v1`.
+
+Produced by `results/dbchar_g6_tool_calls` (registry: `g6_derived_registry.tsv`):
+
+| dataset | grain | rows |
+|---|---|---:|
+| `rt_tool_calls_v1.parquet` | one distinct raw record, with per-tool detection flags, the tool combination, and **each tool's subtype label kept in its own column** | 3,051,238 |
+
+⛔ `system_subtypes` carries two tools' vocabularies in one field (capital-initial =
+DefenseFinder, lowercase = PADLOC). Never `groupby` the raw field; use the split columns. Tool
+agreement is not independent corroboration — the tools share model lineage — and a tool absent
+from a record cannot be distinguished from a tool that was never run on that genome.
+
 ## New-project derived assets
 
 Stage 1 may propose registered reusable derived artifacts such as:

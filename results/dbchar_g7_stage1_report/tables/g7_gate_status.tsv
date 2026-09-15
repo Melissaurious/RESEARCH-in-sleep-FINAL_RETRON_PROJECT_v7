@@ -1,0 +1,8 @@
+bundle	status	n_landed_tables
+dbchar_g1_corpus_identity	STATUS: VERIFIED	24
+dbchar_g2_canonical_units	STATUS: VERIFIED	28
+dbchar_g2b_rt_cds_recovery	STATUS: VERIFIED	11
+dbchar_g3_pair_geometry	STATUS: VERIFIED	46
+dbchar_g4_family_baseline	STATUS: VERIFIED	23
+dbchar_g5_metadata_sampling	STATUS: VERIFIED	16
+dbchar_g6_tool_calls	STATUS: VERIFIED	16

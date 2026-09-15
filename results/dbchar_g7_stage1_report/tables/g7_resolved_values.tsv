@@ -1,0 +1,71 @@
+key	bundle	table	selector	column	raw_value	rendered
+all3_pct	dbchar_g6_tool_calls	tables/g6_tool_presence_retron.tsv	tool=all_three_tools	pct_of_retron_records	53.1736	53.17%
+beyond_contig	dbchar_g2b_rt_cds_recovery	tables/g2b_representation_classes.tsv	representation_class=rt_beyond_a_contig_end_clipped_window	n_records	9128	9,128
+bt_exact	dbchar_g2_canonical_units	tables/g2_bt_status.tsv	population=POP-RT-FAM;bt_status=exact	n_records	2532006	2,532,006
+bt_mismatch	dbchar_g2_canonical_units	tables/g2_bt_status.tsv	population=POP-RT-FAM;bt_status=mismatch	n_records	618	618
+bytes	dbchar_g1_corpus_identity	tables/s01_corpus_root.tsv	quantity=total_jsonl_bytes	value	81007695609	81,007,695,609
+canonical	dbchar_g3_pair_geometry	tables/g3_populations.tsv	population=CANONICAL	n_placements	344154	344,154
+carriage_hi	dbchar_g6_tool_calls	tables/g6_extraction_asymmetry.tsv	detected_by_set=myRT|PADLOC	pct_with_ncrna	89.2348	89.23%
+carriage_lo	dbchar_g6_tool_calls	tables/g6_extraction_asymmetry.tsv	detected_by_set=myRT	pct_with_ncrna	13.4986	13.50%
+cds0	dbchar_g3_pair_geometry	tables/g3_cds_between_explicit.tsv	population=CANONICAL;stratum=;n_cds_between=0	pct_of_population	94.4066	94.41%
+cds1	dbchar_g3_pair_geometry	tables/g3_cds_between_explicit.tsv	population=CANONICAL;stratum=;n_cds_between=1	pct_of_population	3.6109	3.61%
+cds_gt3	dbchar_g3_pair_geometry	tables/g3_cds_between_explicit.tsv	population=CANONICAL;stratum=;n_cds_between=>3	pct_of_population	1.5516	1.55%
+ctrl_agree	dbchar_g4_family_baseline	tables/g4_multi_hmm_positive_control.tsv	measure=best-scoring profile family equals the file label	pct	98.1	98.10%
+ctrl_margin	dbchar_g4_family_baseline	tables/g4_multi_hmm_margin_comparison.tsv	population=V-RT-SINGLE (seeded control)	median_margin_bits	81.7	81.7
+df_pct	dbchar_g6_tool_calls	tables/g6_tool_presence_retron.tsv	tool=DefenseFinder	pct_of_retron_records	67.7112	67.71%
+distinct_records	dbchar_g2_canonical_units	tables/g2_unit_ladder.tsv	unit=distinct_raw_record	n	3051238	3,051,238
+dmode_median	dbchar_g3_pair_geometry	tables/g3_downstream_mode_profile.tsv	measure=median_signed_distance_bp	value	2682.0	2,682
+dmode_seqs	dbchar_g3_pair_geometry	tables/g3_downstream_mode_profile.tsv	measure=distinct_exact_ncrna_in_the_mode	value	18.0	18
+down	dbchar_g3_pair_geometry	tables/g3_direction.tsv	population=CANONICAL;direction=downstream	n_placements	6761	6,761
+ecoli_rec	dbchar_g5_metadata_sampling	tables/g5_redundancy_correction.tsv	taxonomy_system=ncbi	top_species_pct_of_records	19.9668	19.97%
+ecoli_rt	dbchar_g5_metadata_sampling	tables/g5_redundancy_correction.tsv	taxonomy_system=ncbi	top_species_pct_of_exact_rt	6.0929	6.09%
+elig_geom_fam	dbchar_g2_canonical_units	tables/g2_eligibility.tsv	population=POP-RT-FAM;eligibility_flag=elig_geometry;state=ELIGIBLE	pct_of_population	99.4684	99.47%
+exact_rt	dbchar_g2_canonical_units	tables/g2_unit_ladder.tsv	unit=exact_rt	n	501561	501,561
+files	dbchar_g1_corpus_identity	tables/s01_corpus_root.tsv	quantity=n_regular_jsonl_files	value	43	43
+genomes	dbchar_g2_canonical_units	tables/g2_unit_ladder.tsv	unit=genome	n	1542433	1,542,433
+gii_median_len	dbchar_g4_family_baseline	tables/g4_rt_length_by_family.tsv	family_label=RVT-GII	median	407.0	407
+gii_zero	dbchar_g3_pair_geometry	tables/g3_zero_class_by_family.tsv	file_label=RVT-GII	pct_zero	99.9921	99.99%
+gtdb_phylum	dbchar_g5_metadata_sampling	tables/g5_rank_coverage_by_system.tsv	taxonomy_system=gtdb;rank=phylum	pct_present	100.0	100.00%
+ill_posed	dbchar_g2b_rt_cds_recovery	tables/g2b_summary.tsv	quantity=recovery_state:ILL_POSED	value	628	628
+lines	dbchar_g1_corpus_identity	tables/s02_populations.tsv	population=ALL	n_lines	3358182	3,358,182
+loci	dbchar_g2_canonical_units	tables/g2_unit_ladder.tsv	unit=locus	n	2847312	2,847,312
+loci_two_db	dbchar_g2_canonical_units	tables/g2_locus_conflicts.tsv	measure=loci_in_more_than_one_source_database	n_loci	203921	203,921
+loci_two_rt	dbchar_g2_canonical_units	tables/g2_locus_conflicts.tsv	measure=loci_with_more_than_one_exact_rt	n_loci	0	0
+manifest_sha	dbchar_g1_corpus_identity	tables/s02_record_manifest_digest.tsv	quantity=record_manifest_sha256	value	8e9b7999954b460d2bdfc558c605d26610d58e6901788f61720e11eafdc41d00	8e9b7999954b460d2bdfc558c605d26610d58e6901788f61720e11eafdc41d00
+multi_in_labels	dbchar_g4_family_baseline	tables/g4_multi_hmm_profile.tsv	measure=best-scoring family is among the record's labels	pct	99.908	99.91%
+multi_margin	dbchar_g4_family_baseline	tables/g4_multi_hmm_margin_comparison.tsv	population=V-RT-MULTI	median_margin_bits	5.0	5
+myrt_pct	dbchar_g6_tool_calls	tables/g6_tool_presence_retron.tsv	tool=myRT	pct_of_retron_records	92.7697	92.77%
+n_derived	(all gates)	tables/*_derived_registry.tsv	row count across registries	dataset	16	16
+ncbi_join	dbchar_g5_metadata_sampling	tables/g5_join_coverage.tsv	source_database=ncbi_bacteria	pct_genomes_joined	99.9999	100.00%
+ncbi_phylum	dbchar_g5_metadata_sampling	tables/g5_rank_coverage_by_system.tsv	taxonomy_system=ncbi;rank=phylum	pct_present	0.0	0.00%
+ncrna_only	dbchar_g1_corpus_identity	tables/s02_populations.tsv	population=POP-NCRNA	n_lines	298482	298,482
+no_rt_cds	dbchar_g2b_rt_cds_recovery	tables/g2b_summary.tsv	quantity=recovery_state:RECOVERED	value	14188	14,188
+nonretron	dbchar_g3_pair_geometry	tables/g3_nonretron_vs_retron_geometry.tsv	population=ELIGIBLE_non_Retron_single_family	n_placements	260	260
+nonretron_up	dbchar_g3_pair_geometry	tables/g3_nonretron_vs_retron_geometry.tsv	population=ELIGIBLE_non_Retron_single_family	pct_upstream	57.692	57.69%
+overlap	dbchar_g3_pair_geometry	tables/g3_direction.tsv	population=CANONICAL;direction=overlapping	n_placements	12124	12,124
+padloc_pct	dbchar_g6_tool_calls	tables/g6_tool_presence_retron.tsv	tool=PADLOC	pct_of_retron_records	68.3658	68.37%
+pairs	dbchar_g3_pair_geometry	tables/g3_pair_view_sizes.tsv	measure=distinct_exact_pairs	n	30924	30,924
+pairs_1to1	dbchar_g3_pair_geometry	tables/g3_topology_components.tsv	shape=1:1	n_components	12079	12,079
+phys_loci	dbchar_g2_canonical_units	tables/g2_unit_ladder.tsv	unit=physical_locus	n	2475684	2,475,684
+placements	dbchar_g3_pair_geometry	tables/g3_populations.tsv	population=ALL	n_placements	346722	346,722
+prior_confirmed	dbchar_g4_family_baseline	tables/g4_summary.tsv	quantity=prior_families_CONFIRMED	value	36	36
+records	dbchar_g2_canonical_units	tables/g2_unit_ladder.tsv	unit=raw_record	n	3059700	3,059,700
+retron_median_len	dbchar_g4_family_baseline	tables/g4_rt_length_by_family.tsv	family_label=Retron	median	342.0	342
+retron_zero	dbchar_g3_pair_geometry	tables/g3_zero_class_by_family.tsv	file_label=Retron	pct_zero	47.235	47.23%
+rt_fam	dbchar_g1_corpus_identity	tables/s02_populations.tsv	population=POP-RT-FAM	n_lines	3050688	3,050,688
+rt_multi	dbchar_g1_corpus_identity	tables/s02_populations.tsv	population=POP-RT-MULTI	n_lines	9012	9,012
+seq_only	dbchar_g2b_rt_cds_recovery	tables/g2b_summary.tsv	quantity=recovery_state:SEQUENCE_ONLY	value	16688	16,688
+shipped_best	dbchar_g3_pair_geometry	tables/g3_shipped_field_semantics.tsv	candidate_reference_frame=nc_start_minus_rt_start	n_equal	146	146
+shipped_null	dbchar_g3_pair_geometry	tables/g3_shipped_field_qc.tsv	measure=position_relative_to_rt_null	n	331897	331,897
+subtype_agree	dbchar_g6_tool_calls	tables/g6_subtype_agreement.tsv	measure=the two strings agree after case/punctuation normalisation	n	160381	160,381
+subtype_both	dbchar_g6_tool_calls	tables/g6_subtype_agreement.tsv	measure=records where both tools wrote a subtype	n	365708	365,708
+taxocc	dbchar_g2_canonical_units	tables/g2_unit_ladder.tsv	unit=rt_taxonomic_occurrence	n	2737189	2,737,189
+top10_rec	dbchar_g5_metadata_sampling	tables/g5_redundancy_correction.tsv	taxonomy_system=ncbi	top10_pct_of_records	66.2064	66.21%
+top10_rt	dbchar_g5_metadata_sampling	tables/g5_redundancy_correction.tsv	taxonomy_system=ncbi	top10_pct_of_exact_rt	18.9538	18.95%
+twin_disagree	dbchar_g2_canonical_units	tables/g2_twin_evidence.tsv	twin_evidence_class=twin_identical_window_dna_and_rt	n_collapse_supported	371628	371,628
+twins	dbchar_g2_canonical_units	tables/g2_twin_evidence.tsv	twin_evidence_class=twin_identical_window_dna_and_rt	n_physical_loci	371628	371,628
+up	dbchar_g3_pair_geometry	tables/g3_direction.tsv	population=CANONICAL;direction=upstream	n_placements	325269	325,269
+up_median	dbchar_g3_pair_geometry	tables/g3_distance_stats.tsv	population=CANONICAL;direction=upstream	median	-55.0	-55
+v_cross	dbchar_g4_family_baseline	tables/g4_views.tsv	view=V-RT-CROSS	n_exact_rt	12	12
+v_multi	dbchar_g4_family_baseline	tables/g4_views.tsv	view=V-RT-MULTI	n_exact_rt	7593	7,593
+v_single	dbchar_g4_family_baseline	tables/g4_views.tsv	view=V-RT-SINGLE	n_exact_rt	493956	493,956

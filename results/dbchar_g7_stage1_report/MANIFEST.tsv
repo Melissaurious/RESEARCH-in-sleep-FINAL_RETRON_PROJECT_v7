@@ -1,0 +1,12 @@
+artifact	script	command	unit	denominator
+REPORT.html	scripts/assemble_report.py	see run.sh: assemble_report.py	n/a - assembled document	n/a - every rate is resolved from a landed table
+REPORT.md	scripts/assemble_report.py	see run.sh: assemble_report.py	n/a - assembled document	n/a - every rate is resolved from a landed table
+figures/fig01_distance_distribution_restyled.png	scripts/f01_restyle_figures.py	see run.sh: f01_restyle_figures.py	placements	CANONICAL / ATYPICAL placements with a defined signed distance
+figures/fig01_distance_distribution_restyled.svg	scripts/f01_restyle_figures.py	see run.sh: f01_restyle_figures.py	placements	CANONICAL / ATYPICAL placements with a defined signed distance
+figures/fig01_rt_length_by_family_restyled.png	scripts/f01_restyle_figures.py	see run.sh: f01_restyle_figures.py	exact RT sequences	V-RT-SINGLE exact RTs of that family, top 25 by n
+figures/fig01_rt_length_by_family_restyled.svg	scripts/f01_restyle_figures.py	see run.sh: f01_restyle_figures.py	exact RT sequences	V-RT-SINGLE exact RTs of that family, top 25 by n
+tables/fig01_distance_distribution_restyled.tsv	scripts/f01_restyle_figures.py	see run.sh: f01_restyle_figures.py	placements	CANONICAL / ATYPICAL placements with a defined signed distance (carried from g3)
+tables/fig01_rt_length_by_family_restyled.tsv	scripts/f01_restyle_figures.py	see run.sh: f01_restyle_figures.py	exact RT sequences	V-RT-SINGLE exact RTs of that family, top 25 by n (carried from g4)
+tables/g7_figure_map.tsv	scripts/assemble_report.py	see run.sh: assemble_report.py	figures	n/a - one figure per row; no rate
+tables/g7_gate_status.tsv	scripts/assemble_report.py	see run.sh: assemble_report.py	bundles	n/a - one landed gate per row; no rate
+tables/g7_resolved_values.tsv	scripts/assemble_report.py	see run.sh: assemble_report.py	resolved values	n/a - one table lookup per row; no rate

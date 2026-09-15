@@ -32,3 +32,14 @@ Notes that are not gates (WA-G.1).
   68.4%, DefenseFinder 67.7%, all three 53.2%); system_subtypes split by the declared case rule with
   0 unclassifiable strings; agreement 43.85% where both tools speak (prior ~44.6% CONFIRMED).
   Extraction asymmetry: ncRNA carriage spans 13.5%-89.2% by tool combination. 11/11 second counts agree.
+- 2026-09-15 · `dbchar_g7_stage1_report` landed: the Stage-1 closeout report over the seven landed
+  gates. 70 declared values, each resolved from a landed table by an exact row selector (a selector
+  matching != 1 row, or an undeclared placeholder, fails the build); every one traced in
+  `g7_resolved_values.tsv`. Self-contained `REPORT.html` (8 sections, 5 base64-embedded figures)
+  visually inspected at 1200 x 6946. The inspection found two landed figures that were numerically
+  correct and unreadable (g3 fig01, g4 fig01); per REPORTING_STANDARDS they were re-plotted in THIS
+  gate from their landed TSVs, leaving both landed bundles untouched (BS-6). It also found the
+  closing text claiming 11 registered derived datasets where 16 exist - g4's three and g6's one are
+  now registered in `data/README.md`, and the count is asserted against the bundle registries at
+  build time. Retros written for g2, g2b, g3, g4, g5, g6, g7 (WA-S.2). No Stage-1 measurement has
+  been promoted to a project claim; `human_input_audit` is PENDING for all eight bundles.
