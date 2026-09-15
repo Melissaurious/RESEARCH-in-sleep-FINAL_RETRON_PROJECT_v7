@@ -1,0 +1,5 @@
+lineage_group	n_sequences	n_conserved_columns_rt_domain	n_conserved_columns_inside_reconstructed_blocks	published_comparator	unit	frame	denominator
+mitochondrial	29	116	110	90 (Zimmerly 2001, mitochondrial)	alignment column conserved within one group	ALIGN_000044 RT domain columns 261-886	626 columns in the stated RT domain
+bacterial	20	100	100	94 (Zimmerly 2001, bacterial)	alignment column conserved within one group	ALIGN_000044 RT domain columns 261-886	626 columns in the stated RT domain
+algal_chloroplast	11	101	97	15 positions in domain X only (algal)	alignment column conserved within one group	ALIGN_000044 RT domain columns 261-886	626 columns in the stated RT domain
+euglenoid	6	129	101	not stated	alignment column conserved within one group	ALIGN_000044 RT domain columns 261-886	626 columns in the stated RT domain

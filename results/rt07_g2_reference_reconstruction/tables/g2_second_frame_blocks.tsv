@@ -1,0 +1,8 @@
+block_index	start_column	end_column	ltra_start_residue	ltra_end_residue	n_conserved_positions	contains_catalytic_yxdd	blocker_zone	unit	frame	denominator
+1	571	597	39	55	6	NO	RT0_ZONE (LtrA M1-R85)	reconstructed block in the MAFFT frame	MAFFT FFT-NS-2 re-alignment of the same 66 proteins	7 blocks in the second frame
+2	650	722	79	123	20	NO	SPANS_RT0_AND_RT1_7_ZONES	reconstructed block in the MAFFT frame	MAFFT FFT-NS-2 re-alignment of the same 66 proteins	7 blocks in the second frame
+3	779	840	126	170	18	NO	RT1_7_ZONE (LtrA R86-R364)	reconstructed block in the MAFFT frame	MAFFT FFT-NS-2 re-alignment of the same 66 proteins	7 blocks in the second frame
+4	873	899	173	197	5	NO	RT1_7_ZONE (LtrA R86-R364)	reconstructed block in the MAFFT frame	MAFFT FFT-NS-2 re-alignment of the same 66 proteins	7 blocks in the second frame
+5	926	959	210	230	16	NO	RT1_7_ZONE (LtrA R86-R364)	reconstructed block in the MAFFT frame	MAFFT FFT-NS-2 re-alignment of the same 66 proteins	7 blocks in the second frame
+6	1166	1215	304	345	13	YES	RT1_7_ZONE (LtrA R86-R364)	reconstructed block in the MAFFT frame	MAFFT FFT-NS-2 re-alignment of the same 66 proteins	7 blocks in the second frame
+7	1286	1291	356	361	4	NO	RT1_7_ZONE (LtrA R86-R364)	reconstructed block in the MAFFT frame	MAFFT FFT-NS-2 re-alignment of the same 66 proteins	7 blocks in the second frame

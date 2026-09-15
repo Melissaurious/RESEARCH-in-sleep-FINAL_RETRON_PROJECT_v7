@@ -1,0 +1,3 @@
+statistic	observed	null_mean	null_max	empirical_p	separates_from_null	status	interpretation	unit	denominator
+largest gap between consecutive conserved positions	191	64.1	142	0.0050	YES	POST_HOC_DIAGNOSTIC	a genuine spacer should leave a gap larger than chance	alignment columns	200 replicates
+coefficient of variation of inter-position gaps	2.980	0.922	1.394	0.0050	YES	POST_HOC_DIAGNOSTIC	clumping makes the spacing of conserved positions uneven	dimensionless	200 replicates

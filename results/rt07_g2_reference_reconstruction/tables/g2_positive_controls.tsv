@@ -1,0 +1,5 @@
+control	kind	expected	observed	result	unit	denominator
+C1:catalytic_YxDD_column_is_conserved	POSITIVE	YES - the one landmark every derivational source shares	YES (column 783, LtrA residue 306)	PASS	control	4 controls declared; 200 null replicates, seed 20260915
+C2:YxDD_block_is_the_fifth	POSITIVE	5 - Zimmerly 2001 places the catalytic motif in subdomain 5	block 5 of 6	PASS	control	4 controls declared; 200 null replicates, seed 20260915
+C3:conserved_positions_collapse_under_residue_shuffling	NULL	far fewer than the observed 81 conserved columns	null max 0, mean 0.0, empirical p=0.0050	PASS	control	4 controls declared; 200 null replicates, seed 20260915
+C4:block_clustering_beats_column_permutation	NULL	more than the observed 6 blocks once adjacency is destroyed	null min 3, mean 6.0, empirical p=0.6965	FAIL	control	4 controls declared; 200 null replicates, seed 20260915

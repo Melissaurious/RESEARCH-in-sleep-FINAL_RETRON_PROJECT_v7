@@ -1,0 +1,24 @@
+quantity	value	source_table	unit	denominator
+reference_proteins	66	g2_reference_sequence_set.tsv	reference protein sequence	the 66 proteins of ALIGN_000044
+lineage_groups	4	g2_lineage_groups.tsv	lineage group	groups the criterion needs
+conserved_positions_rt_domain	81	g2_conserved_positions.tsv	alignment column	626 columns of the stated RT domain
+conserved_positions_similarity_reading	157	g2_conserved_positions.tsv	alignment column	626 columns of the stated RT domain
+blocks_at_reported_point	6	g2_reconstructed_blocks.tsv	block	blocks at the declared reporting rule
+blocks_in_blocker_rt0_zone	1	g2_nterminal_region.tsv	block	blocks at the reported point
+seven_way_partition_recovered_frame1	NO	g2_reconstructed_blocks.tsv	partition	one reconstruction on the primary alignment
+seven_way_partition_recovered_frame2	YES	g2_second_frame.tsv	partition	one reconstruction on an independent re-alignment
+blocks_one_to_one_across_frames	5	g2_frame_correspondence.tsv	block	6 blocks in frame 1
+median_cross_frame_jaccard	0.955	g2_frame_correspondence.tsv	Jaccard on LtrA residues	6 matched blocks
+max_block_start_uncertainty_columns	58	g2_block_uncertainty.tsv	alignment column	blocks at the reported point, across the declared sweep
+max_block_end_uncertainty_columns	72	g2_block_uncertainty.tsv	alignment column	blocks at the reported point, across the declared sweep
+landmarks_recovered	2	g2_landmark_recovery.tsv	historical statement	11 statements declared
+landmarks_partially_recovered	5	g2_landmark_recovery.tsv	historical statement	11 statements declared
+landmarks_not_recovered	2	g2_landmark_recovery.tsv	historical statement	11 statements declared
+landmarks_not_testable_on_substrate	2	g2_landmark_recovery.tsv	historical statement	11 statements declared
+controls_pass	3	g2_positive_controls.tsv	control	4 controls declared
+controls_fail	1	g2_positive_controls.tsv	control	4 controls declared
+null_p_conserved_positions	0.0050	g2_null_model.tsv	empirical p	200 replicates
+null_p_block_count	0.6965	g2_null_model.tsv	empirical p	200 replicates
+null_p_largest_gap	0.0050	g2_null_spatial_statistics.tsv	empirical p	200 replicates
+bacterial_conserved_columns	100	g2_per_group_conservation.tsv	alignment column	626 columns of the stated RT domain
+rt0_block_created	NO	g2_nterminal_region.tsv	decision	n/a - one decision, recorded

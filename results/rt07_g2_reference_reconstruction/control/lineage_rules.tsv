@@ -1,0 +1,7 @@
+rule_id	priority	match_field	pattern	group	rationale
+L01	10	description	(?i)\b(escherichia|shigella|lactococcus|sphingomonas|calothrix|bacillus|pseudomonas|xylella|streptococcus|clostridium|sinorhizobium|serratia)\b	bacterial	Bacterial genera, read from the alignment record's own description line.
+L02	20	description	(?i)\b(euglena|lepocinclis|astasia)\b	euglenoid	Euglenoid genera. Zimmerly 2001 treats the euglenoid ORFs as their own group.
+L03	30	description	(?i)\b(pylaiella|porphyra|bryopsis|oocystacea|scenedesmus|pyrenomonas)\b	algal_chloroplast	Algal and chloroplast-encoded introns; the paper's algal group.
+L04	40	description	(?i)\b(oenothera|arabidopsis|glycine|vicia|zea|triticum|solanum|marchantia)\b	mitochondrial	Plant and bryophyte mitochondrial introns.
+L05	50	description	(?i)\b(saccharomyces|kluyveromyces|schizosaccharomyces|allomyces|podospora|venturia|cryphonectria|neurospora)\b	mitochondrial	Fungal mitochondrial introns. Zimmerly 2001 reports one mitochondrial group; plant and fungal mitochondrial ORFs are not split here, and that choice is recorded rather than hidden.
+L99	999	description	.*	UNASSIGNED	Fallback. Any sequence reaching this rule is reported UNASSIGNED and excluded from group tests rather than silently placed.

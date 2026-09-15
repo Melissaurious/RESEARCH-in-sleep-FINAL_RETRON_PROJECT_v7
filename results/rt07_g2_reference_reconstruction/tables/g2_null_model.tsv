@@ -1,0 +1,3 @@
+null_model	statistic	observed	null_mean	null_min	null_max	empirical_p	verdict	unit	denominator
+residue shuffling within each sequence	conserved columns in the RT domain	81	0.00	0	0	0.0050	conservation is not a compositional artefact	alignment column	200 replicates
+column permutation (conservation kept, adjacency destroyed)	blocks at the reported parameters	6	6.00	3	9	0.6965	NOT SEPARABLE FROM THE NULL	block	200 replicates

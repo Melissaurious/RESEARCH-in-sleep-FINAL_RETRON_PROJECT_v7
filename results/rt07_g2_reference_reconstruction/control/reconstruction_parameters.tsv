@@ -1,0 +1,15 @@
+parameter	value	declared_before_scoring	rationale
+criterion_source	Xiong & Eickbush 1990, verified in rt07_g1 as assignment X04	YES	The gate applies the founding paper's own stated rule instead of assuming modern RT1-RT7 boundaries: a position is conserved when the residue is present in over 50% of the elements of at least three of the four most abundant groups.
+group_threshold_fraction	0.50	YES	Verbatim from the criterion: 'present in over 50%'. Strictly greater than, not at least.
+min_groups_satisfied	3	YES	Verbatim: 'three of the four most abundant groups'.
+n_groups	4	YES	Four lineage groups are present in ALIGN_000044 and are the paper's own subgroupings: mitochondrial, algal/chloroplast, euglenoid, bacterial.
+group_denominator	all sequences assigned to the group, gaps included	YES	'Present in over 50% of the elements' counts elements, not occupied columns. Counting only non-gap sequences would let a column occupied by three sequences read as universally conserved.
+similarity_variant	BLOSUM-style chemical classes, reported alongside strict identity	YES	Xiong & Eickbush describe conserved positions as 'identical or chemically similar', so both readings are landed and neither is presented alone.
+rt_domain_columns	261-886	YES	The only stated coordinate boundary in the primary alignment record itself, landed by rt07_g1. The reconstruction is run inside it and, separately, over the whole alignment.
+block_gap_sweep	1..30	YES	Merging conserved positions into blocks needs a maximum gap. The whole sweep is landed; no single value is privileged by fitting the answer.
+block_min_conserved_positions_sweep	1..5	YES	A second free parameter, swept for the same reason.
+reporting_point_rule	the midpoint of the widest plateau in block count across the gap sweep, at min_conserved_positions = 2	YES	DECLARED BEFORE ANY BLOCK WAS COUNTED. The rule selects a stable region of parameter space, never the parameter value that returns seven blocks. If seven blocks appear only at an isolated parameter value, this rule will not select it and the result lands as not recovered.
+uncertainty_representation	per block, the minimum and maximum start and end column across the whole sweep	YES	A procedure without published residue edges cannot yield exact edges. The interval is the finding; a single number would be false precision.
+null_model	column-wise shuffle within group, 200 replicates, same criterion	YES	Answers whether block structure of this size arises from the alignment's composition alone. Declared before the observed value was known.
+rt0_treatment	not reconstructed as a block; analysed only as N-terminal conservation in this substrate	YES	Launcher section 1 and the g1 finding that RT0's scope claim is cross-class. A group II intron only alignment cannot test 'conserved only between group II intron and non-LTR RTs', so no RT0 block is created because later literature uses the name.
+ltra_anchor	L.l. (AAB06503, Lactococcus lactis ltrB intron), ungapped length 599	YES	Blocker 2005's LtrA. Used ONLY to test a reconstruction built without it; never to place a boundary.

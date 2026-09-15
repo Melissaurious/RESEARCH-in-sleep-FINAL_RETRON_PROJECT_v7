@@ -1,0 +1,5 @@
+lineage_group	n_sequences	pct_of_set	unit	denominator
+mitochondrial	29	43.94	reference protein sequence	66 proteins in ALIGN_000044
+bacterial	20	30.30	reference protein sequence	66 proteins in ALIGN_000044
+algal_chloroplast	11	16.67	reference protein sequence	66 proteins in ALIGN_000044
+euglenoid	6	9.09	reference protein sequence	66 proteins in ALIGN_000044

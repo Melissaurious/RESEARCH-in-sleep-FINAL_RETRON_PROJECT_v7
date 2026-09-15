@@ -1,0 +1,7 @@
+frame1_block	frame1_ltra_span	frame2_best_match_block	frame2_ltra_span	jaccard_on_ltra_residues	n_frame2_blocks_overlapping	correspondence	unit	frame	denominator
+1	39-61	1	39-55	0.739	1	ONE_TO_ONE	reconstructed block, matched across two alignment frames	LtrA residue coordinates, shared by both frames	6 blocks in frame 1 vs 7 in frame 2
+2	79-123	2	79-123	1.000	1	ONE_TO_ONE	reconstructed block, matched across two alignment frames	LtrA residue coordinates, shared by both frames	6 blocks in frame 1 vs 7 in frame 2
+3	126-166	3	126-170	0.911	1	ONE_TO_ONE	reconstructed block, matched across two alignment frames	LtrA residue coordinates, shared by both frames	6 blocks in frame 1 vs 7 in frame 2
+4	170-230	4	173-197	0.410	3	SPLIT_INTO_3	reconstructed block, matched across two alignment frames	LtrA residue coordinates, shared by both frames	6 blocks in frame 1 vs 7 in frame 2
+5	304-347	6	304-345	0.955	1	ONE_TO_ONE	reconstructed block, matched across two alignment frames	LtrA residue coordinates, shared by both frames	6 blocks in frame 1 vs 7 in frame 2
+6	356-361	7	356-361	1.000	1	ONE_TO_ONE	reconstructed block, matched across two alignment frames	LtrA residue coordinates, shared by both frames	6 blocks in frame 1 vs 7 in frame 2

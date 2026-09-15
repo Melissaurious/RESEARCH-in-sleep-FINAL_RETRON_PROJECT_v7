@@ -1,0 +1,28 @@
+artifact	script	command	unit	denominator
+tables/g2_reference_sequence_set.tsv	scripts/s01_reference_set.py	see run.sh: s01_reference_set.py	reference protein sequence	66 proteins in ALIGN_000044
+tables/g2_lineage_groups.tsv	scripts/s01_reference_set.py	see run.sh: s01_reference_set.py	reference protein sequence	66 proteins in ALIGN_000044
+tables/g2_substrate_identity.tsv	scripts/s01_reference_set.py	see run.sh: s01_reference_set.py	substrate property	n/a - one primary alignment record
+tables/g2_conserved_positions.tsv	scripts/s02_reconstruct_blocks.py	see run.sh: s02_reconstruct_blocks.py	alignment column	1441 alignment columns; 626 inside the stated RT domain
+tables/g2_parameter_sweep.tsv	scripts/s02_reconstruct_blocks.py	see run.sh: s02_reconstruct_blocks.py	block	81 conserved columns in the RT domain
+tables/g2_reconstructed_blocks.tsv	scripts/s02_reconstruct_blocks.py	see run.sh: s02_reconstruct_blocks.py	reconstructed block	6 blocks recovered at the reported point
+tables/g2_block_uncertainty.tsv	scripts/s02_reconstruct_blocks.py	see run.sh: s02_reconstruct_blocks.py	reconstructed block	150 parameter settings in the declared sweep
+tables/g2_landmark_recovery.tsv	scripts/s03_landmarks_and_recovery.py	see run.sh: s03_landmarks_and_recovery.py	historical statement	11 statements declared testable or untestable in control/
+tables/g2_ltra_mapping.tsv	scripts/s03_landmarks_and_recovery.py	see run.sh: s03_landmarks_and_recovery.py	reconstructed block mapped onto one reference protein	6 reconstructed blocks
+tables/g2_per_group_conservation.tsv	scripts/s03_landmarks_and_recovery.py	see run.sh: s03_landmarks_and_recovery.py	alignment column conserved within one group	626 columns in the stated RT domain
+tables/g2_interblock_spacers.tsv	scripts/s03_landmarks_and_recovery.py	see run.sh: s03_landmarks_and_recovery.py	residues between two reconstructed blocks, per sequence	66 reference proteins
+tables/g2_nterminal_region.tsv	scripts/s03_landmarks_and_recovery.py	see run.sh: s03_landmarks_and_recovery.py	alignment column or count	n/a - descriptive; no RT0 block is defined
+tables/g2_positive_controls.tsv	scripts/s04_controls.py	see run.sh: s04_controls.py	control	4 controls declared; 200 null replicates, seed 20260915
+tables/g2_null_model.tsv	scripts/s04_controls.py	see run.sh: s04_controls.py	alignment column	200 replicates
+tables/g2_null_by_gap.tsv	scripts/s04_controls.py	see run.sh: s04_controls.py	block	200 column-permutation replicates
+tables/g2_null_spatial_statistics.tsv	scripts/s04_controls.py	see run.sh: s04_controls.py	alignment columns	200 replicates
+tables/g2_second_frame.tsv	scripts/s05_second_frame.py	see run.sh: s05_second_frame.py	reconstruction property	9 properties compared across two alignment frames
+tables/g2_second_frame_blocks.tsv	scripts/s05_second_frame.py	see run.sh: s05_second_frame.py	reconstructed block in the MAFFT frame	7 blocks in the second frame
+tables/g2_frame_correspondence.tsv	scripts/s05_second_frame.py	see run.sh: s05_second_frame.py	reconstructed block, matched across two alignment frames	6 blocks in frame 1 vs 7 in frame 2
+tables/g2_summary.tsv	scripts/s06_summary.py	see run.sh: s06_summary.py	reference protein sequence	the 66 proteins of ALIGN_000044
+tables/g2_kill_criterion.tsv	scripts/s06_summary.py	see run.sh: s06_summary.py	historical statement	9 testable statements
+tables/g2_unresolved_carried_forward.tsv	scripts/s06_summary.py	see run.sh: s06_summary.py	open definitional question	10 items in the g1 register
+tables/g2_resolved_values.tsv	scripts/assemble_report.py	see run.sh: assemble_report.py	resolved report value	29 declared lookups
+reference/g2_reference_set.faa	scripts/s01_reference_set.py	see run.sh: s01_reference_set.py	reference protein sequence	the 66 proteins of ALIGN_000044, ungapped
+reference/g2_second_frame_mafft.afa	scripts/s05_second_frame.py	see run.sh: s05_second_frame.py	aligned reference protein sequence	the same 66 proteins, independently re-aligned
+REPORT.md	scripts/assemble_report.py	see run.sh: assemble_report.py	report	n/a - narrative; every number resolves to a landed table
+REPORT.html	scripts/assemble_report.py	see run.sh: assemble_report.py	report	n/a - narrative; every number resolves to a landed table

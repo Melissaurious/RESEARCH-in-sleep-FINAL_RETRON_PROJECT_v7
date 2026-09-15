@@ -1,0 +1,6 @@
+between_blocks	gap_columns	residues_min	residues_max	residues_median	n_sequences_measured	is_widest_gap	unit	frame	denominator
+1/2	32	0	26	20	66	NO	residues between two reconstructed blocks, per sequence	ALIGN_000044	66 reference proteins
+2/3	56	2	56	2	66	NO	residues between two reconstructed blocks, per sequence	ALIGN_000044	66 reference proteins
+3/4	38	3	37	3	66	NO	residues between two reconstructed blocks, per sequence	ALIGN_000044	66 reference proteins
+4/5	190	5	185	60	66	YES	residues between two reconstructed blocks, per sequence	ALIGN_000044	66 reference proteins
+5/6	52	4	52	8	66	NO	residues between two reconstructed blocks, per sequence	ALIGN_000044	66 reference proteins

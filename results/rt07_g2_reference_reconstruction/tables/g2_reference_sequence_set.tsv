@@ -1,0 +1,67 @@
+sequence_id	description	lineage_group	assigned_by_rule	ungapped_length_aa	aligned_columns_occupied	occupancy_fraction	unit	denominator
+O.b.nad1I4	Oenothera berteriana nad1 intron 4 [AAA70293]	mitochondrial	L04	671	671	0.4656	reference protein sequence	66 proteins in ALIGN_000044
+A.t.nad1I4	Arabidopsis thaliana nad1 intron 4 [CAA66945]	mitochondrial	L04	672	672	0.4663	reference protein sequence	66 proteins in ALIGN_000044
+G.m.nad1I4	Glycine max nad1 intron 4 [AAA67711]	mitochondrial	L04	684	684	0.4747	reference protein sequence	66 proteins in ALIGN_000044
+V.f.nad1I4	Vicia faba nad1 intron 4 [AAA70324]	mitochondrial	L04	687	687	0.4768	reference protein sequence	66 proteins in ALIGN_000044
+Z.m.nad1I4	Zea mays nad1 intron 4 [AAA67713]	mitochondrial	L04	669	669	0.4643	reference protein sequence	66 proteins in ALIGN_000044
+T.a.nad1I4	Triticum aestivum nad1 intron 4 [CAA41033]	mitochondrial	L04	674	674	0.4677	reference protein sequence	66 proteins in ALIGN_000044
+S.t.nad1I4	Solanum tuberosum nad1 intron 4 [CAA05884]	mitochondrial	L04	674	674	0.4677	reference protein sequence	66 proteins in ALIGN_000044
+M.p.cox1I1	Marchantia polymorpha cox1 intron 1 [AAC09455]	mitochondrial	L04	914	914	0.6343	reference protein sequence	66 proteins in ALIGN_000044
+M.p.cob1I3	Marchantia polymorpha cob1 intron 3 [AAC09440]	mitochondrial	L04	949	949	0.6586	reference protein sequence	66 proteins in ALIGN_000044
+M.p.atpAI1	Marchantia polymorpha atpa intron 1 [AAC09444]	mitochondrial	L04	1064	1064	0.7384	reference protein sequence	66 proteins in ALIGN_000044
+M.p.atpAI2	Marchantia polymorpha atpa intron 2 [AAC09445]	mitochondrial	L04	909	909	0.6308	reference protein sequence	66 proteins in ALIGN_000044
+S.c.cox1I2	Saccharomyces cerevisiae cox1 intron 2 [CAA24060]	mitochondrial	L05	785	785	0.5448	reference protein sequence	66 proteins in ALIGN_000044
+K.l.cox1I1	Kluyveromyces lactis cox1 intron 1 [CAA40766]	mitochondrial	L05	786	786	0.5455	reference protein sequence	66 proteins in ALIGN_000044
+S.c.cox1I1	Saccharomyces cerevisiae cox1 intron 1 [CAA24071]	mitochondrial	L05	778	778	0.5399	reference protein sequence	66 proteins in ALIGN_000044
+S.p.cox2I1	Schizosaccharomyces pombe cox2 intron 1 [CAB61572]	mitochondrial	L05	763	763	0.5295	reference protein sequence	66 proteins in ALIGN_000044
+S.p.cox1I1	Schizosaccharomyces pombe cox1 intron 1 [CAB61571]	mitochondrial	L05	778	778	0.5399	reference protein sequence	66 proteins in ALIGN_000044
+A.m.cox1I3	Allomyces macrogynus cox1 intron 3 [AAC49235]	mitochondrial	L05	785	785	0.5448	reference protein sequence	66 proteins in ALIGN_000044
+P.a.cox1I4	Podospora anserina cox1 intron 4 [CAA38781]	mitochondrial	L05	789	789	0.5475	reference protein sequence	66 proteins in ALIGN_000044
+M.p.SSUI1	Marchantia polymorpha ssu rrna intron 1 [AAC09457]	mitochondrial	L04	573	573	0.3976	reference protein sequence	66 proteins in ALIGN_000044
+P.a.cox1I1	Podospora anserina cox1 intron 1 [CAA38778]	mitochondrial	L05	788	788	0.5468	reference protein sequence	66 proteins in ALIGN_000044
+S.a.2	Sphingomonas aromaticivorans intron 1 [AAD03884]	bacterial	L01	571	571	0.3963	reference protein sequence	66 proteins in ALIGN_000044
+S.a.1	Sphingomonas aromaticivorans intron 2 [AAD03894]	bacterial	L01	633	633	0.4393	reference protein sequence	66 proteins in ALIGN_000044
+L.l.	Lactococcus lactis ltrb intron [AAB06503]	bacterial	L01	599	599	0.4157	reference protein sequence	66 proteins in ALIGN_000044
+S.p.cob1I1	Schizosaccharomyces pombe cob1 intron 1 [CAA38288]	mitochondrial	L05	807	807	0.5600	reference protein sequence	66 proteins in ALIGN_000044
+V.i.cob1I1	Venturia inaequalis cob1 intron 1 [AAB95256]	mitochondrial	L05	707	707	0.4906	reference protein sequence	66 proteins in ALIGN_000044
+P.li.co1I3	Pylaiella littoralis cox1 intron 3 [Z72500]	algal_chloroplast	L03	748	748	0.5191	reference protein sequence	66 proteins in ALIGN_000044
+P.a.ND5I4	Podospora anserina nd5 intron 4 [CAB76395]	mitochondrial	L05	779	779	0.5406	reference protein sequence	66 proteins in ALIGN_000044
+M.p.ORF732	Marchantia polymorpha orf732 [AAC09442]	mitochondrial	L04	732	732	0.5080	reference protein sequence	66 proteins in ALIGN_000044
+M.p.cox1I2	Marchantia polymorpha cox1 intron 2 [AAC09454]	mitochondrial	L04	835	835	0.5795	reference protein sequence	66 proteins in ALIGN_000044
+C.p.I1	Cryphonectria parasitica intron 1 [AAF27656]	mitochondrial	L05	778	778	0.5399	reference protein sequence	66 proteins in ALIGN_000044
+P.li.co1I2	Pylaiella littoralis cox1 intron 2 [Z72500]	algal_chloroplast	L03	809	809	0.5614	reference protein sequence	66 proteins in ALIGN_000044
+P.li.co1I1	Pylaiella littoralis cox1 intron 1 [Z72500]	algal_chloroplast	L03	764	764	0.5302	reference protein sequence	66 proteins in ALIGN_000044
+N.c.cox1I1	Neurospora crassa cox1 intron 1 [X14669]	mitochondrial	L05	836	836	0.5802	reference protein sequence	66 proteins in ALIGN_000044
+M.p.atp9I1	Marchantia polymorpha atp9 intron 1 [AAC09460]	mitochondrial	L04	771	771	0.5350	reference protein sequence	66 proteins in ALIGN_000044
+M.p.cox2I2	Marchantia polymorpha cox2 intron 2 [AAC09431]	mitochondrial	L04	743	743	0.5156	reference protein sequence	66 proteins in ALIGN_000044
+E.c.D	Escherichia coli intd intron [BAA22286]	bacterial	L01	375	375	0.2602	reference protein sequence	66 proteins in ALIGN_000044
+S.f.	Shigella flexneri is629-like orf intron [AAB86996]	bacterial	L01	431	431	0.2991	reference protein sequence	66 proteins in ALIGN_000044
+P.p.LSUI1	Porphyra purpurea lsu rrna intron 1 [AAD03095]	algal_chloroplast	L03	544	544	0.3775	reference protein sequence	66 proteins in ALIGN_000044
+P.p.LSUI2	Porphyra purpurea lsu rrna intron 2 [AAD03096]	algal_chloroplast	L03	546	546	0.3789	reference protein sequence	66 proteins in ALIGN_000044
+C.s.	Calothrix sp. orf1 intron [CAA50529]	bacterial	L01	584	584	0.4053	reference protein sequence	66 proteins in ALIGN_000044
+B.m.rbcLI1	Bryopsis maxima rbcl intron 1 [X55877]	algal_chloroplast	L03	477	477	0.3310	reference protein sequence	66 proteins in ALIGN_000044
+B.a.-07	Bacillus anthracis px01-07 intron [AAD32311]	bacterial	L01	604	604	0.4192	reference protein sequence	66 proteins in ALIGN_000044
+O.s.petDI1	Oocystacea sp. petd intron 1 [S05341]	algal_chloroplast	L03	610	610	0.4233	reference protein sequence	66 proteins in ALIGN_000044
+S.o.petDI1	Scenedesmus obliquus petd intron 1 [P19593]	algal_chloroplast	L03	610	610	0.4233	reference protein sequence	66 proteins in ALIGN_000044
+E.c.-0157	Escherichia coli plasmid p0157 intron [BAA31792]	bacterial	L01	574	574	0.3983	reference protein sequence	66 proteins in ALIGN_000044
+P.s.	Pseudomonas sp. kappa-gamma intron [CAB81565]	bacterial	L01	494	494	0.3428	reference protein sequence	66 proteins in ALIGN_000044
+X.f.	Xylella fastidiosa dnmt intron [AE003999]	bacterial	L01	431	431	0.2991	reference protein sequence	66 proteins in ALIGN_000044
+P.li.LSUI1	Pylaiella littoralis lsu rrna intron 1 [Z48620]	algal_chloroplast	L03	558	558	0.3872	reference protein sequence	66 proteins in ALIGN_000044
+P.li.LSUI2	Pylaiella littoralis lsu rrna intron 2 [Z48620]	algal_chloroplast	L03	562	562	0.3900	reference protein sequence	66 proteins in ALIGN_000044
+E.g.psbCI4	Euglena gracilis psbc intron 4 [CAA50081]	euglenoid	L02	458	458	0.3178	reference protein sequence	66 proteins in ALIGN_000044
+L.b.psbCI4	Lepocinclis buetschlii psbc intron 4 [CAB16959]	euglenoid	L02	451	451	0.3130	reference protein sequence	66 proteins in ALIGN_000044
+A.l.orf456	Astasia longa psbc intron 4 [CAA32561]	euglenoid	L02	456	456	0.3164	reference protein sequence	66 proteins in ALIGN_000044
+E.v.psbCI4	Euglena viridis psbc intron 4 [Z99836]	euglenoid	L02	468	468	0.3248	reference protein sequence	66 proteins in ALIGN_000044
+E.m.psbCI4	Euglena myxocylindracea psbc intron 4 [Z99835]	euglenoid	L02	436	436	0.3026	reference protein sequence	66 proteins in ALIGN_000044
+E.d.psbCI4	Euglena deces psbc intron 4 [Z99833]	euglenoid	L02	453	453	0.3144	reference protein sequence	66 proteins in ALIGN_000044
+P.s.cpn60I	Pyrenomonas salina cpn60 intron 1 [X81356]	algal_chloroplast	L03	452	452	0.3137	reference protein sequence	66 proteins in ALIGN_000044
+P.p.	Pseudomonas putida intron [AAD16434]	bacterial	L01	473	473	0.3282	reference protein sequence	66 proteins in ALIGN_000044
+P.a.	Pseudomonas alcaligenes intron [AAB68949]	bacterial	L01	490	490	0.3400	reference protein sequence	66 proteins in ALIGN_000044
+S.p.	Streptococcus pneumoniae intron [AAD16434]	bacterial	L01	425	425	0.2949	reference protein sequence	66 proteins in ALIGN_000044
+B.h.	Bacillus halodurans intron [BAA90841]	bacterial	L01	418	418	0.2901	reference protein sequence	66 proteins in ALIGN_000044
+B.m.	Bacillus megaterium intron [BAA82060]	bacterial	L01	588	588	0.4080	reference protein sequence	66 proteins in ALIGN_000044
+C.d.	Clostridium difficile orf14 intron [CAA67199]	bacterial	L01	608	608	0.4219	reference protein sequence	66 proteins in ALIGN_000044
+B.a.-23	Bacillus anthracis px01-23 intron [AAD32327]	bacterial	L01	461	461	0.3199	reference protein sequence	66 proteins in ALIGN_000044
+S.me.	Sinorhizobium meliloti orfb intron [CAA72334]	bacterial	L01	419	419	0.2908	reference protein sequence	66 proteins in ALIGN_000044
+E.c.B	Escherichia coli int b intron [CAA54637]	bacterial	L01	416	416	0.2887	reference protein sequence	66 proteins in ALIGN_000044
+S.ma.	Serratia marcescens intron [AAC82519]	bacterial	L01	495	495	0.3435	reference protein sequence	66 proteins in ALIGN_000044
