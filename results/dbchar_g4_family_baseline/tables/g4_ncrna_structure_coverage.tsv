@@ -1,0 +1,5 @@
+measure	n	pct	unit	denominator
+exact_ncRNA_sequences	16458		exact ncRNA sequences	exact ncRNA sequences with an eligible placement
+with_a_structure_annotation	1251	7.6012	exact ncRNA sequences	exact ncRNA sequences with an eligible placement
+called_by_more_than_one_model	0	0.0	exact ncRNA sequences	exact ncRNA sequences with an eligible placement
+seen_in_more_than_one_family_label	5	0.0304	exact ncRNA sequences	exact ncRNA sequences with an eligible placement

@@ -1,0 +1,22 @@
+control	expected	observed	result
+view:single	V-RT-SINGLE	V-RT-SINGLE	PASS
+view:cross_labelled_protein	V-RT-CROSS	V-RT-CROSS	PASS
+view:multi	V-RT-MULTI	V-RT-MULTI	PASS
+completeness:prodigal_complete	all_complete	all_complete	PASS
+completeness:prodigal_partial	all_partial	all_partial	PASS
+completeness:no_prodigal_call_is_NOT_partial	mixed_or_codon_evidence	mixed_or_codon_evidence	PASS
+fences_declared_for_a_family_above_MIN_GROUP	True	True	PASS
+fence_high_is_finite	True	True	PASS
+no_fences_below_MIN_GROUP	False	False	PASS
+the two long sequences are named outliers	2	2	PASS
+no outlier is reported for the small family	0	0	PASS
+completeness table never says partial for the missing flag	0	0	PASS
+profile RVT-GII-I maps to RVT-GII	RVT-GII	RVT-GII	PASS
+profile RVT-GII-II maps to RVT-GII	RVT-GII	RVT-GII	PASS
+profile RVT-Retrons maps to Retron	Retron	Retron	PASS
+profile RVT-CRISPR-G3 maps to RVT-CRISPR	RVT-CRISPR	RVT-CRISPR	PASS
+profile RVT-UG5 maps to itself	RVT-UG5	RVT-UG5	PASS
+domtbl parsed rows	2	2	PASS
+best family	RVT-UG5	RVT-UG5	PASS
+second family	RVT-GII	RVT-GII	PASS
+margin in bits	70.0	70.0	PASS

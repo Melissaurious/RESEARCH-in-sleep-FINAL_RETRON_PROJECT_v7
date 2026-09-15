@@ -1,0 +1,7 @@
+measure	value	pct	seed	unit	denominator
+control exact RTs scored	2000.0		20260915	exact RT sequences	a seeded random sample of 2000 V-RT-SINGLE exact RTs
+with at least one profile hit	1982.0	99.1	20260915	exact RT sequences	a seeded random sample of 2000 V-RT-SINGLE exact RTs
+best-scoring profile family equals the file label	1962.0	98.1	20260915	exact RT sequences	a seeded random sample of 2000 V-RT-SINGLE exact RTs
+median best-vs-second margin (bits)	81.7		20260915	exact RT sequences	a seeded random sample of 2000 V-RT-SINGLE exact RTs
+median profile families hit per sequence	35.0		20260915	exact RT sequences	a seeded random sample of 2000 V-RT-SINGLE exact RTs
+control sequences with a margin below 10 bits	46.0	2.3	20260915	exact RT sequences	a seeded random sample of 2000 V-RT-SINGLE exact RTs

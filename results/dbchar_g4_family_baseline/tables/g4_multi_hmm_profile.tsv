@@ -1,0 +1,9 @@
+measure	value	pct	unit	denominator
+MULTI exact RTs scored	7593.0		exact RT sequences	V-RT-MULTI exact RTs
+with at least one profile hit	7593.0	100.0	exact RT sequences	V-RT-MULTI exact RTs
+best-scoring family is among the record's labels	7586.0	99.908	exact RT sequences	V-RT-MULTI exact RTs
+second-best family also among the labels	7500.0	98.775	exact RT sequences	V-RT-MULTI exact RTs
+both best and second among the labels	7495.0	98.709	exact RT sequences	V-RT-MULTI exact RTs
+median best-vs-second margin (bits)	5.0		exact RT sequences	V-RT-MULTI exact RTs
+margin below 10 bits	5661.0	74.556	exact RT sequences	V-RT-MULTI exact RTs
+median profile families hit per sequence	13.0		exact RT sequences	V-RT-MULTI exact RTs

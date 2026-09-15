@@ -1,0 +1,4 @@
+view	n_exact_rt	n_records	n_loci	median_aa_len	n_exact_rt_total	unit	denominator
+V-RT-CROSS	12	255	145	485.5	501561	exact RT sequences	exact RT sequences in the corpus (501,561)
+V-RT-MULTI	7593	9012	8542	283.0	501561	exact RT sequences	exact RT sequences in the corpus (501,561)
+V-RT-SINGLE	493956	3041971	2838625	385.0	501561	exact RT sequences	exact RT sequences in the corpus (501,561)

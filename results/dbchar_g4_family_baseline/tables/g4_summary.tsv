@@ -1,0 +1,22 @@
+quantity	value	source_table
+view:V-RT-CROSS	12	g4_views.tsv
+view:V-RT-MULTI	7593	g4_views.tsv
+view:V-RT-SINGLE	493956	g4_views.tsv
+rt_length_median:RVT-GII	407.0	g4_rt_length_by_family.tsv
+rt_length_median:Retron	342.0	g4_rt_length_by_family.tsv
+rt_length_median:RVT-DGRs	359.0	g4_rt_length_by_family.tsv
+rt_length_median:RVT-UG2	431.0	g4_rt_length_by_family.tsv
+rt_length_median:RVT-UG8	606.0	g4_rt_length_by_family.tsv
+rt_length_median:RVT-UG5	892.0	g4_rt_length_by_family.tsv
+multi_hmm_median_margin_bits:V-RT-MULTI	5.0	g4_multi_hmm_margin_comparison.tsv
+multi_hmm_median_margin_bits:V-RT-SINGLE (seeded control)	81.7	g4_multi_hmm_margin_comparison.tsv
+multi_hmm_control_best_equals_label_pct	98.1	g4_multi_hmm_positive_control.tsv
+multi_best_family_in_labels_pct	99.908	g4_multi_hmm_profile.tsv
+Retron_all_complete_exact_rt	54679	g4_completeness_by_family.tsv
+prior_families_CONFIRMED	36	g4_prior_reconciliation.tsv
+prior_families_CHANGED	5	g4_prior_reconciliation.tsv
+prior_families_UNRESOLVED	3	g4_prior_reconciliation.tsv
+second_count_rows	127	g4_second_counts.tsv
+second_count_disagreements	0	g4_second_counts.tsv
+positive_controls	21	c04_positive_controls.tsv
+positive_controls_failed	0	c04_positive_controls.tsv

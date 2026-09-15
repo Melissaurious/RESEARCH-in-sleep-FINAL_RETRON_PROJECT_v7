@@ -1,0 +1,28 @@
+artifact	script	command	unit	denominator
+tables/c04_positive_controls.tsv	scripts/c04_controls.py	see run.sh: c04_controls.py	controls	n/a - one pass/fail control per row on the synthetic fixture
+tables/fig01_rt_length_by_family.tsv	scripts/fig01_family.py	see run.sh: fig01_family.py	exact RT sequences	V-RT-SINGLE exact RTs of that family (top 25)
+tables/fig02_multi_label_margins.tsv	scripts/fig01_family.py	see run.sh: fig01_family.py	exact RT sequences	the population named in the row
+tables/g4_completeness_by_family.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact RT sequences	V-RT-SINGLE exact RTs of that family label
+tables/g4_completeness_states_raw.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact RT sequences	V-RT-SINGLE exact RTs
+tables/g4_derived_registry.tsv	scripts/assemble.py	see run.sh: assemble.py	datasets	n/a - identity of the derived datasets; no rate
+tables/g4_exact_rt_per_family_label.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact RT sequences	distinct RT sequences in that source file, over all records
+tables/g4_family_composition.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact RT sequences	V-RT-SINGLE exact RTs of that family label
+tables/g4_multi_hmm_control_by_family.tsv	scripts/h02_multi_hmm.py	see run.sh: h02_multi_hmm.py	exact RT sequences	sampled control exact RTs of that family
+tables/g4_multi_hmm_margin_comparison.tsv	scripts/h02_multi_hmm.py	see run.sh: h02_multi_hmm.py	exact RT sequences	the population named in the row
+tables/g4_multi_hmm_positive_control.tsv	scripts/h02_multi_hmm.py	see run.sh: h02_multi_hmm.py	exact RT sequences	a seeded random sample of 2,000 V-RT-SINGLE exact RTs
+tables/g4_multi_hmm_profile.tsv	scripts/h02_multi_hmm.py	see run.sh: h02_multi_hmm.py	exact RT sequences	V-RT-MULTI exact RTs (7,593)
+tables/g4_multi_label_sets_vs_hmm.tsv	scripts/h02_multi_hmm.py	see run.sh: h02_multi_hmm.py	exact RT sequences	V-RT-MULTI exact RTs with that label set
+tables/g4_ncrna_length_by_model.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact ncRNA sequences	exact ncRNA sequences called by that model
+tables/g4_ncrna_model_by_family.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact ncRNA sequences	exact ncRNA sequences of that family label and model
+tables/g4_ncrna_structure_coverage.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact ncRNA sequences	exact ncRNA sequences with an eligible placement
+tables/g4_prior_reconciliation.tsv	scripts/c05_reconcile.py	see run.sh: c05_reconcile.py	exact RT sequences	that family's exact RTs in each project
+tables/g4_rt_length_by_family.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact RT sequences	V-RT-SINGLE exact RTs of that family label
+tables/g4_rt_length_named_outliers.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact RT sequences	the 20 smallest outliers per family
+tables/g4_rt_length_outlier_rates.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact RT sequences	V-RT-SINGLE exact RTs of that family label
+tables/g4_second_counts.tsv	scripts/c05_reconcile.py	see run.sh: c05_reconcile.py	exact RT sequences	named per row; both routes count the same population
+tables/g4_summary.tsv	scripts/assemble.py	see run.sh: assemble.py	named per row	named per row in the source_table column
+tables/g4_views.tsv	scripts/b01_baseline.py	see run.sh: b01_baseline.py	exact RT sequences	exact RT sequences in the corpus (501,561)
+figures/fig01_rt_length_by_family.png	scripts/fig01_family.py	see run.sh: fig01_family.py	exact RT sequences	V-RT-SINGLE exact RTs of that family (top 25 by n)
+figures/fig01_rt_length_by_family.svg	scripts/fig01_family.py	see run.sh: fig01_family.py	exact RT sequences	V-RT-SINGLE exact RTs of that family (top 25 by n)
+figures/fig02_multi_label_margins.png	scripts/fig01_family.py	see run.sh: fig01_family.py	exact RT sequences	the population named on the axis
+figures/fig02_multi_label_margins.svg	scripts/fig01_family.py	see run.sh: fig01_family.py	exact RT sequences	the population named on the axis

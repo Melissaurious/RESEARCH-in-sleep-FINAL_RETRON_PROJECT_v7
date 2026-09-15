@@ -1,0 +1,7 @@
+completeness_states	n_exact_rt	n_single	unit	denominator
+complete_prodigal	339474	493956	exact RT sequences	V-RT-SINGLE exact RTs
+complete_prodigal|no_completeness_evidence	1	493956	exact RT sequences	V-RT-SINGLE exact RTs
+complete_prodigal|partial_prodigal	708	493956	exact RT sequences	V-RT-SINGLE exact RTs
+no_completeness_evidence	29095	493956	exact RT sequences	V-RT-SINGLE exact RTs
+no_completeness_evidence|partial_prodigal	11	493956	exact RT sequences	V-RT-SINGLE exact RTs
+partial_prodigal	124667	493956	exact RT sequences	V-RT-SINGLE exact RTs

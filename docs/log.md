@@ -20,3 +20,7 @@ Notes that are not gates (WA-G.1).
   99.8% same strand, median gap 55 bp, 94.4% with 0 intervening CDS; 30,924 exact pairs (12,079 are 1:1);
   the ~2,682 bp downstream mode is a contig-start-clipping artefact; `position_relative_to_rt` is an index
   minus a coordinate (r=1.000 with -(RT window offset)); 10/10 second counts agree.
+- 2026-09-15 · `dbchar_g4_family_baseline` landed: per-family RT/ncRNA baseline on exact-sequence views
+  (V-RT-SINGLE 493,956 · V-RT-MULTI 7,593 · V-RT-CROSS 12); 36/44 prior family length baselines CONFIRMED
+  exactly. MULTI labels shown to be near-tie HMM assignments (median margin 5.0 bits vs 81.7 in a
+  98.1%-validated control); not resolved in Stage 1. 127/127 second counts agree.
