@@ -1,0 +1,12 @@
+artifact	script	command	unit	denominator
+tables/c03_positive_controls.tsv	scripts/c03_controls.py	see run.sh: c03_controls.py	controls	n/a - one pass/fail control per row on the synthetic fixture
+tables/g2b_by_family.tsv	scripts/r01_recovery.py	see run.sh: r01_recovery.py	records	records with no marked RT CDS in that family file
+tables/g2b_derived_registry.tsv	scripts/assemble.py	see run.sh: assemble.py	datasets	n/a - identity of the derived dataset; no rate
+tables/g2b_independent_translation_check.tsv	scripts/r01_recovery.py	see run.sh: r01_recovery.py	records	the seeded sample named in n_sampled
+tables/g2b_recovered_evidence.tsv	scripts/r01_recovery.py	see run.sh: r01_recovery.py	records	n_recovered column: RECOVERED records
+tables/g2b_recovered_overlap_partial_states.tsv	scripts/r01_recovery.py	see run.sh: r01_recovery.py	records	n_recovered column: RECOVERED records
+tables/g2b_recovery_classes.tsv	scripts/r01_recovery.py	see run.sh: r01_recovery.py	records	n_records_without_rt_cds column: the 31,504 RT-anchored records with no marked RT CDS
+tables/g2b_representation_classes.tsv	scripts/r01_recovery.py	see run.sh: r01_recovery.py	records	n_sequence_only column: SEQUENCE_ONLY records
+tables/g2b_second_counts.tsv	scripts/c04_reconcile.py	see run.sh: c04_reconcile.py	records	named per row; the routes count the same population
+tables/g2b_sequence_only_by_database.tsv	scripts/r01_recovery.py	see run.sh: r01_recovery.py	records	SEQUENCE_ONLY records of that source_database
+tables/g2b_summary.tsv	scripts/assemble.py	see run.sh: assemble.py	named per row	named per row in the source_table column

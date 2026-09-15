@@ -1,0 +1,9 @@
+measure	n	pct_of_that_side	unit	denominator
+exact_RTs_in_the_pair_view	29192		exact sequences	the side named in the measure, in the exact-pair view
+exact_RTs_paired_with_exactly_one_ncRNA_sequence	28271	96.845	exact sequences	the side named in the measure, in the exact-pair view
+exact_RTs_paired_with_more_than_one_ncRNA_sequence	921	3.155	exact sequences	the side named in the measure, in the exact-pair view
+max_ncRNA_sequences_on_one_exact_RT	176		exact sequences	the side named in the measure, in the exact-pair view
+exact_ncRNA_sequences_in_the_pair_view	16458		exact sequences	the side named in the measure, in the exact-pair view
+exact_ncRNA_sequences_paired_with_exactly_one_RT	13542	82.2822	exact sequences	the side named in the measure, in the exact-pair view
+exact_ncRNA_sequences_paired_with_more_than_one_RT	2916	17.7178	exact sequences	the side named in the measure, in the exact-pair view
+max_exact_RTs_on_one_ncRNA_sequence	705		exact sequences	the side named in the measure, in the exact-pair view

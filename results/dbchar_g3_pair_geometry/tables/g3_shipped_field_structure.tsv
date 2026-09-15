@@ -1,0 +1,10 @@
+measure	value	pct	note	n_compared	unit	denominator
+pearson_r(field, -(rt_start - win_start))	1.0			14810	placements	geometry-eligible placements where the field is non-null
+residual k = field + (rt_start - win_start): min	0.0			14810	placements	geometry-eligible placements where the field is non-null
+residual k: median	5.0			14810	placements	geometry-eligible placements where the field is non-null
+residual k: max	19.0			14810	placements	geometry-eligible placements where the field is non-null
+residual k: distinct values	20.0		a bp distance would not be confined to a handful of small integers	14810	placements	geometry-eligible placements where the field is non-null
+k == intergenic_region_index - 1	7162.0	48.3592	the single best explanation of the residual	14810	placements	geometry-eligible placements where the field is non-null
+k == intergenic_region_index	1922.0	12.9777		14810	placements	geometry-eligible placements where the field is non-null
+k == ncrna_index	1005.0	6.786		14810	placements	geometry-eligible placements where the field is non-null
+field == (intergenic_region_index - 1) - (rt_start - win_start)	7162.0	48.3592	an INDEX minus a COORDINATE - not a distance in any frame	14810	placements	geometry-eligible placements where the field is non-null

@@ -1,0 +1,2 @@
+dataset	bytes	sha256	rows	content_key	content_digest_sha256
+rt_cds_recovery_v1.parquet	3975507	406353ec3d8e275d542a22237aff65adb3a530cc9f85689bdcb39508c144bf4f	31504	record_key	b490658b998fbb58a6e8d3186580d451613c4500ef21ac54fabf754eeea7e8ce

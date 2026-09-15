@@ -1,0 +1,11 @@
+n_calls	n_loci	measure	n_seqs	n_models	unit	denominator
+1.0	322744	calls_per_locus(capped_10)			loci	loci carrying >=1 geometry-eligible call
+2.0	11148	calls_per_locus(capped_10)			loci	loci carrying >=1 geometry-eligible call
+3.0	5	calls_per_locus(capped_10)			loci	loci carrying >=1 geometry-eligible call
+4.0	51	calls_per_locus(capped_10)			loci	loci carrying >=1 geometry-eligible call
+6.0	9	calls_per_locus(capped_10)			loci	loci carrying >=1 geometry-eligible call
+	333819	distinct_ncrna_sequences_per_locus(capped_10)	1.0		loci	loci carrying >=1 geometry-eligible call
+	128	distinct_ncrna_sequences_per_locus(capped_10)	2.0		loci	loci carrying >=1 geometry-eligible call
+	10	distinct_ncrna_sequences_per_locus(capped_10)	3.0		loci	loci carrying >=1 geometry-eligible call
+	333942	distinct_detection_models_per_locus(capped_5)		1.0	loci	loci carrying >=1 geometry-eligible call
+	15	distinct_detection_models_per_locus(capped_5)		2.0	loci	loci carrying >=1 geometry-eligible call

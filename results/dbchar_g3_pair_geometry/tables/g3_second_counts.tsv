@@ -1,0 +1,11 @@
+check	route_a	value_a	route_b	value_b	delta_a_minus_b	agreement
+placements_total	p01 (parquet, python)	346722	c05 (awk on raw bytes)	346722	0	AGREE
+direction_upstream	p01	327565	c05	327565	0	AGREE
+direction_downstream	p01	6819	c05	6819	0	AGREE
+direction_overlapping	p01	12338	c05	12338	0	AGREE
+same_strand	p01	343625	c05	343625	0	AGREE
+opposite_strand	p01	3097	c05	3097	0	AGREE
+abutting_gap_zero	p01 gap_bp == 0 and not overlapping	32276	c05	32276	0	AGREE
+records_carrying_at_least_one_call	p01	346406	c05	346406	0	AGREE
+sum of n_ncrna over all RT-anchored records	g2 derived rt_records_v1	346722	g3 placements	346722	0	AGREE
+ncRNA calls in the corpus	landed g2 registry	346722	g3 placements	346722	0	AGREE

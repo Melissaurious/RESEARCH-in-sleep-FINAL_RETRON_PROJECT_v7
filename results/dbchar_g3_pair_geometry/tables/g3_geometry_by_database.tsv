@@ -1,0 +1,9 @@
+source_database	n_placements	n_loci	pct_upstream	median_abs_distance_bp	pct_same_strand	unit	denominator
+gem	1274	1274	89.168	26.0	99.2936	placements	CANONICAL placements of that source_database
+gtdb_archaea	7	6	14.2857	28.0	100.0	placements	CANONICAL placements of that source_database
+gtdb_bacteria	48754	48665	92.0253	32.0	96.8823	placements	CANONICAL placements of that source_database
+mgnify_human_gut	10545	10545	88.6866	24.0	99.9905	placements	CANONICAL placements of that source_database
+mgnify_marine	936	934	76.9231	33.0	99.0385	placements	CANONICAL placements of that source_database
+mgnify_soil	831	830	87.485	33.0	98.917	placements	CANONICAL placements of that source_database
+ncbi_archaea	29	28	44.8276	70.0	100.0	placements	CANONICAL placements of that source_database
+ncbi_bacteria	281778	281665	95.2715	68.0	99.4702	placements	CANONICAL placements of that source_database

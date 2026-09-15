@@ -1,0 +1,7 @@
+recovery_state	no_rt_cds_class	supports	n_records	n_loci	n_first_copy	n_elig_exact_rt	n_elig_rt_coords	n_elig_geometry	n_elig_completeness	n_records_without_rt_cds	n_rt_anchored_records	unit	denominator
+ILL_POSED	no_prodigal_call_bt_mismatch	sequence, flagged unverified	628	628	628	628	0	0	0	31504	3059700	records	RT-anchored records with no marked RT CDS
+RECOVERED	no_prodigal_call_bt_verified_no_overlapping_cds	sequence + coordinates	162	162	162	162	162	162	162	31504	3059700	records	RT-anchored records with no marked RT CDS
+RECOVERED	no_prodigal_call_bt_verified_overlapping_cds	sequence + coordinates	14026	14026	14026	14026	14026	14026	14026	31504	3059700	records	RT-anchored records with no marked RT CDS
+SEQUENCE_ONLY	context_absent_window_inverted	sequence	3924	3924	3924	3924	0	0	0	31504	3059700	records	RT-anchored records with no marked RT CDS
+SEQUENCE_ONLY	rt_outside_window	sequence	9128	9128	9128	9128	0	0	0	31504	3059700	records	RT-anchored records with no marked RT CDS
+SEQUENCE_ONLY	rt_partially_outside_window	sequence	3636	3636	3636	3636	0	0	0	31504	3059700	records	RT-anchored records with no marked RT CDS

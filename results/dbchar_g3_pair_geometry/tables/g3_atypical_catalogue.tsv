@@ -1,0 +1,12 @@
+atypical_class	n_placements	n_eligible	unit	denominator
+overlapping_the_RT	12259	345313	placements	ELIGIBLE placements
+distance_gt_5kb	557	345313	placements	ELIGIBLE placements
+opposite_strand_to_RT	3095	345313	placements	ELIGIBLE placements
+more_than_2_CDS_between	5903	345313	placements	ELIGIBLE placements
+duplicate_call_within_one_record	190	345313	placements	ELIGIBLE placements
+same_call_from_another_record_of_the_same_locus	23469	345313	placements	ELIGIBLE placements
+locus_carrying_more_than_one_distinct_ncRNA_sequence	398	345313	placements	ELIGIBLE placements
+ncRNA_touching_a_window_edge	995	345313	placements	ELIGIBLE placements
+RT_touching_a_window_edge	4243	345313	placements	ELIGIBLE placements
+window_clipped_at_contig_end	57571	345313	placements	ELIGIBLE placements
+true_start_clipped	59510	345313	placements	ELIGIBLE placements

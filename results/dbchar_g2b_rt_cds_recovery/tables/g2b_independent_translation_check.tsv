@@ -1,0 +1,3 @@
+population	n_sampled	n_agree_with_stored_protein	pct_agree	n_exact	n_alt_start	n_recoded_stop	n_mismatch	n_agree_after_a_one_base_frame_shift(NEGATIVE CONTROL, must be ~0)	route	seed	unit	denominator
+RECOVERED	2000	1999	99.95	692	0	1307	1	0	biopython table 11 + the declared equivalence re-implemented here	20260915	records	the seeded sample named in n_sampled
+CONTROL_has_rt_cds	2000	1999	99.95	1661	337	1	1	0	biopython table 11 + the declared equivalence re-implemented here	20260915	records	the seeded sample named in n_sampled

@@ -1,0 +1,11 @@
+measure	n	denominator_n	unit	denominator
+position_relative_to_rt_null	331897	346722	placements	all placements, or the subset named in the measure
+position_relative_to_rt_present	14825	346722	placements	all placements, or the subset named in the measure
+shipped_value_equals_computed_signed_distance	11	14810	placements	all placements, or the subset named in the measure
+shipped_value_equals_nc_start_minus_rt_start	146	14810	placements	all placements, or the subset named in the measure
+shipped_value_equals_nc_start_minus_rt_end	0	14810	placements	all placements, or the subset named in the measure
+cds_overlap_shipped_agrees_with_recomputed	346722	346722	placements	all placements, or the subset named in the measure
+nc_length_field_equals_end_minus_start_plus_1	346722	346722	placements	all placements, or the subset named in the measure
+orientation_corrected_true	346722	346722	placements	all placements, or the subset named in the measure
+ncrna_outside_its_window	0	346722	placements	all placements, or the subset named in the measure
+ncrna_touching_a_window_edge	1007	346722	placements	all placements, or the subset named in the measure

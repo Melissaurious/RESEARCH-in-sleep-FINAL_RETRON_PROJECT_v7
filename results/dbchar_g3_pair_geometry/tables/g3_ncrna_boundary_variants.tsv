@@ -1,0 +1,3 @@
+class	same_model	n_sequence_pairs	n_loci	median_overlap_bp	n_sequence_pairs_total	unit	denominator
+disjoint_intervals_two_distinct_calls	False	21	15	0.0	366	pairs of distinct ncRNA sequences at one locus	loci carrying >1 distinct exact ncRNA sequence
+disjoint_intervals_two_distinct_calls	True	345	123	0.0	366	pairs of distinct ncRNA sequences at one locus	loci carrying >1 distinct exact ncRNA sequence

@@ -1,0 +1,15 @@
+check	route_a	value_a	route_b	value_b	delta_a_minus_b	agreement
+records_without_a_marked_RT_CDS	r01 (parquet)	31504	c02 (awk on raw bytes)	31504	0	AGREE
+rt_inside_its_window	r01	14816	c02	14816	0	AGREE
+rt_beyond_window_end	r01	9128	c02	9128	0	AGREE
+rt_crossing_a_window_edge	r01	3636	c02	3636	0	AGREE
+window_inverted	r01	3924	c02	3924	0	AGREE
+rt_before_window_start	r01	0	c02	0	0	AGREE
+class:no_prodigal_call_bt_verified_overlapping_cds	r01	14026	landed g2 bundle g2_rt_cds_classes.tsv	14026	0	AGREE
+class:rt_outside_window	r01	9128	landed g2 bundle g2_rt_cds_classes.tsv	9128	0	AGREE
+class:context_absent_window_inverted	r01	3924	landed g2 bundle g2_rt_cds_classes.tsv	3924	0	AGREE
+class:rt_partially_outside_window	r01	3636	landed g2 bundle g2_rt_cds_classes.tsv	3636	0	AGREE
+class:no_prodigal_call_bt_mismatch	r01	628	landed g2 bundle g2_rt_cds_classes.tsv	628	0	AGREE
+class:no_prodigal_call_bt_verified_no_overlapping_cds	r01	162	landed g2 bundle g2_rt_cds_classes.tsv	162	0	AGREE
+recovered_total	r01	14188	landed g2: the two bt-verified no-Prodigal-call classes	14188	0	AGREE
+every_record_keeps_a_usable_RT_sequence	r01 elig_exact_rt	31504	r01 row count	31504	0	AGREE

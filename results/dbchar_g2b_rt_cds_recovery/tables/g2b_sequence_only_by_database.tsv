@@ -1,0 +1,13 @@
+source_database	representation_class	n_records	n_loci	median_bp_beyond_window_end	unit	denominator
+gem	rt_beyond_a_contig_end_clipped_window	3	3	3037.0	records	SEQUENCE_ONLY records of that database
+gem	rt_crosses_a_contig_end_clipped_window	3	3	1915.0	records	SEQUENCE_ONLY records of that database
+gem	window_inverted_no_sequence_retrieved	19	19		records	SEQUENCE_ONLY records of that database
+mgnify_human_gut	rt_beyond_a_contig_end_clipped_window	8485	8485	2982.0	records	SEQUENCE_ONLY records of that database
+mgnify_human_gut	rt_crosses_a_contig_end_clipped_window	3268	3268	765.0	records	SEQUENCE_ONLY records of that database
+mgnify_human_gut	window_inverted_no_sequence_retrieved	3611	3611		records	SEQUENCE_ONLY records of that database
+mgnify_marine	rt_beyond_a_contig_end_clipped_window	383	383	3017.0	records	SEQUENCE_ONLY records of that database
+mgnify_marine	rt_crosses_a_contig_end_clipped_window	216	216	788.5	records	SEQUENCE_ONLY records of that database
+mgnify_marine	window_inverted_no_sequence_retrieved	167	167		records	SEQUENCE_ONLY records of that database
+mgnify_soil	rt_beyond_a_contig_end_clipped_window	257	257	2348.0	records	SEQUENCE_ONLY records of that database
+mgnify_soil	rt_crosses_a_contig_end_clipped_window	149	149	691.0	records	SEQUENCE_ONLY records of that database
+mgnify_soil	window_inverted_no_sequence_retrieved	127	127		records	SEQUENCE_ONLY records of that database

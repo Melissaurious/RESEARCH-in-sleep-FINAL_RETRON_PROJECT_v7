@@ -1,0 +1,53 @@
+artifact	script	command	unit	denominator
+tables/c04_positive_controls.tsv	scripts/c04_controls.py	see run.sh: c04_controls.py	controls	n/a - one pass/fail control per row on the synthetic fixture
+tables/fig01_distance_distribution.tsv	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	the population named in each row
+tables/fig02_cds_between.tsv	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	the population named in each row
+tables/fig03_direction_by_family.tsv	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	CANONICAL placements of that family label
+tables/g3_atypical_catalogue.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	ELIGIBLE placements
+tables/g3_calls_per_locus.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	loci	loci carrying >=1 geometry-eligible call
+tables/g3_cds_between.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	n_in_population column
+tables/g3_cds_between_explicit.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	placements of that population/stratum
+tables/g3_derived_registry.tsv	scripts/assemble.py	see run.sh: assemble.py	datasets	n/a - identity of the derived datasets; no rate
+tables/g3_direction.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	n_in_population column
+tables/g3_distance_bins.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	n_in_population column
+tables/g3_distance_histogram.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	placements of that population with a defined signed distance
+tables/g3_distance_stats.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	n_in_population column
+tables/g3_downstream_mode_profile.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	CANONICAL downstream placements
+tables/g3_downstream_mode_strata.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	CANONICAL downstream placements in that stratum
+tables/g3_downstream_mode_top_sequences.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	CANONICAL downstream placements within 150 bp of the median
+tables/g3_downstream_mode_window_signature.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	CANONICAL downstream placements
+tables/g3_geometry_by_database.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	CANONICAL placements of that source_database
+tables/g3_geometry_by_family.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	CANONICAL placements of that family label
+tables/g3_ineligible_reasons.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	all placements
+tables/g3_model_composition.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	CANONICAL placements of that model and family
+tables/g3_multiplicity_class.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	n_in_population column
+tables/g3_ncrna_boundary_variants.tsv	scripts/a03_topology.py	see run.sh: a03_topology.py	pairs of distinct ncRNA sequences at one locus	loci carrying >1 distinct exact ncRNA sequence
+tables/g3_ncrna_model_multiplicity.tsv	scripts/a03_topology.py	see run.sh: a03_topology.py	exact ncRNA sequences	exact ncRNA sequences with a geometry-eligible placement
+tables/g3_nonretron_cm_placements.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	geometry-eligible placements at non-Retron-labelled RTs
+tables/g3_nonretron_vs_retron_geometry.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	the population named in the row
+tables/g3_overlap.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	n_in_population column
+tables/g3_pair_degree.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	exact sequences	the side named in the measure
+tables/g3_pair_recurrence.tsv	scripts/a03_topology.py	see run.sh: a03_topology.py	exact pairs	distinct exact pairs with a geometry-eligible placement
+tables/g3_pair_view_sizes.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	named per row	named per row
+tables/g3_populations.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	all placements in rt_ncrna_pairs_v1
+tables/g3_prior_reconciliation.tsv	scripts/c06_reconcile.py	see run.sh: c06_reconcile.py	named per row	named per row
+tables/g3_same_ncrna_different_rt.tsv	scripts/a03_topology.py	see run.sh: a03_topology.py	exact ncRNA sequences	exact ncRNA sequences paired with >1 RT (top 500)
+tables/g3_same_rt_different_ncrna.tsv	scripts/a03_topology.py	see run.sh: a03_topology.py	exact RTs	exact RTs paired with >1 ncRNA sequence (top 500)
+tables/g3_same_strand.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	n_in_population column
+tables/g3_second_counts.tsv	scripts/c06_reconcile.py	see run.sh: c06_reconcile.py	placements/records	named per row; both routes count the same population
+tables/g3_shipped_field_presence_by_stratum.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	placements of that family and database
+tables/g3_shipped_field_profile.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	all placements, or the non-null subset where stated
+tables/g3_shipped_field_qc.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	placements	all placements, or the subset named in the measure
+tables/g3_shipped_field_semantics.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	geometry-eligible placements where the field is non-null
+tables/g3_shipped_field_structure.tsv	scripts/a04_audits.py	see run.sh: a04_audits.py	placements	geometry-eligible placements where the field is non-null
+tables/g3_summary.tsv	scripts/assemble.py	see run.sh: assemble.py	named per row	named per row in the source_table column
+tables/g3_topology_components.tsv	scripts/a03_topology.py	see run.sh: a03_topology.py	connected components	components of the bipartite graph
+tables/g3_topology_degrees.tsv	scripts/a03_topology.py	see run.sh: a03_topology.py	exact sequences	the side named in the measure
+tables/g3_zero_class_by_family.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	loci	loci of that family label
+tables/g3_zero_class_retron_by_database.tsv	scripts/a02_priors.py	see run.sh: a02_priors.py	loci	Retron loci of that source_database
+figures/fig01_distance_distribution.png	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	CANONICAL and ATYPICAL placements with a defined signed distance
+figures/fig01_distance_distribution.svg	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	CANONICAL and ATYPICAL placements with a defined signed distance
+figures/fig02_cds_between.png	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	CANONICAL and ATYPICAL placements
+figures/fig02_cds_between.svg	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	CANONICAL and ATYPICAL placements
+figures/fig03_direction_by_family.png	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	CANONICAL placements of that family label (n >= 30)
+figures/fig03_direction_by_family.svg	scripts/fig01_geometry.py	see run.sh: fig01_geometry.py	placements	CANONICAL placements of that family label (n >= 30)

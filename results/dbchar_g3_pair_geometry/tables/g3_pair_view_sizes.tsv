@@ -1,0 +1,9 @@
+measure	n	unit	denominator
+placements_geometry_eligible	345313	named per row	named per row
+distinct_exact_pairs	30924	named per row	named per row
+distinct_exact_rt_in_pairs	29192	named per row	named per row
+distinct_exact_ncrna_in_pairs	16458	named per row	named per row
+loci_with_a_geometry_eligible_call	333957	named per row	named per row
+exact_pairs_seen_at_more_than_one_locus	14749	named per row	named per row
+exact_pairs_in_more_than_one_species	11699	named per row	named per row
+exact_pairs_with_more_than_one_direction	10	named per row	named per row

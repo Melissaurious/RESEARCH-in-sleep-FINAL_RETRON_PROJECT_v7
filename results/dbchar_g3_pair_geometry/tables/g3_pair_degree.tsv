@@ -1,0 +1,36 @@
+rt_seq_hash	n	measure	unit	denominator	nc_seq_hash
+1.0	13542	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+2.0	1563	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+3.0	484	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+4.0	235	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+5.0	138	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+6.0	104	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+7.0	67	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+8.0	47	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+9.0	39	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+10.0	28	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+11.0	22	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+12.0	19	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+13.0	17	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+14.0	18	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+15.0	9	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+16.0	4	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+17.0	2	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+18.0	5	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+19.0	6	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+20.0	109	distinct_exact_RTs_per_exact_ncRNA(capped_20)	exact ncRNA sequences	exact ncRNA sequences in the exact-pair view	
+	28271	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	1.0
+	724	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	2.0
+	115	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	3.0
+	36	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	4.0
+	12	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	5.0
+	8	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	6.0
+	4	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	7.0
+	4	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	8.0
+	5	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	9.0
+	2	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	10.0
+	1	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	11.0
+	2	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	12.0
+	1	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	13.0
+	1	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	19.0
+	6	distinct_exact_ncRNAs_per_exact_RT(capped_20)	exact RT sequences	exact RT sequences in the exact-pair view	20.0

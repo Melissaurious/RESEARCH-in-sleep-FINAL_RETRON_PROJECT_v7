@@ -1,0 +1,25 @@
+control	expected	observed	result
+recovered_with_overlap:recovery_state	RECOVERED	RECOVERED	PASS
+recovered_with_overlap:representation_class	rt_inside_window	rt_inside_window	PASS
+recovered_with_overlap:any_same_frame	True	True	PASS
+recovered_with_overlap:elig_rt_coords	True	True	PASS
+recovered_no_overlap:recovery_state	RECOVERED	RECOVERED	PASS
+recovered_no_overlap:representation_class	rt_inside_window	rt_inside_window	PASS
+recovered_no_overlap:n_overlapping	0	0	PASS
+recovered_no_overlap:elig_rt_coords	True	True	PASS
+beyond_window_end:recovery_state	SEQUENCE_ONLY	SEQUENCE_ONLY	PASS
+beyond_window_end:representation_class	rt_beyond_a_contig_end_clipped_window	rt_beyond_a_contig_end_clipped_window	PASS
+beyond_window_end:elig_rt_coords	False	False	PASS
+crossing_window_edge:recovery_state	SEQUENCE_ONLY	SEQUENCE_ONLY	PASS
+crossing_window_edge:representation_class	rt_crosses_a_contig_end_clipped_window	rt_crosses_a_contig_end_clipped_window	PASS
+inverted_window:recovery_state	SEQUENCE_ONLY	SEQUENCE_ONLY	PASS
+inverted_window:representation_class	window_inverted_no_sequence_retrieved	window_inverted_no_sequence_retrieved	PASS
+frameshift_ill_posed:recovery_state	ILL_POSED	ILL_POSED	PASS
+frameshift_ill_posed:elig_rt_coords	False	False	PASS
+every_declared_class_fires			PASS
+verdict exact	exact	exact	PASS
+verdict alt_start	alt_start	alt_start	PASS
+verdict recoded U	recoded_stop	recoded_stop	PASS
+verdict recoded W	recoded_stop	recoded_stop	PASS
+verdict mismatch	mismatch	mismatch	PASS
+verdict length mismatch	mismatch	mismatch	PASS

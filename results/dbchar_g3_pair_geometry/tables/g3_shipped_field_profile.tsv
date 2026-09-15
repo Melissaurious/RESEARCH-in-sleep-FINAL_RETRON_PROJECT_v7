@@ -1,0 +1,11 @@
+measure	value	pct	unit	denominator
+placements_total	346722.0		placements	all placements, or the non-null subset where stated
+field_null	331897.0	95.7242	placements	all placements, or the non-null subset where stated
+field_present	14825.0	4.2758	placements	all placements, or the non-null subset where stated
+field_present_and_geometry_eligible	14810.0		placements	all placements, or the non-null subset where stated
+field_value_min	-19637.0		placements	all placements, or the non-null subset where stated
+field_value_median	-1743.0		placements	all placements, or the non-null subset where stated
+field_value_max	10.0		placements	all placements, or the non-null subset where stated
+field_value_negative	9426.0		placements	all placements, or the non-null subset where stated
+field_value_zero	37.0		placements	all placements, or the non-null subset where stated
+field_present_on_minus_strand_RTs	4811.0		placements	all placements, or the non-null subset where stated

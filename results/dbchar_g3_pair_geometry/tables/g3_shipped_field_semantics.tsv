@@ -1,0 +1,13 @@
+candidate_reference_frame	n_equal	n_compared	pct_equal	n_equal_plus_strand	n_plus_strand	n_equal_minus_strand	n_minus_strand	unit	denominator
+nc_start_minus_rt_start	146	14810	0.9858	140	9999	6	4811	placements	geometry-eligible placements where the field is non-null
+computed_signed_distance_transcription_relative	11	14810	0.0743	0	9999	11	4811	placements	geometry-eligible placements where the field is non-null
+gap_bp_unsigned	10	14810	0.0675	0	9999	10	4811	placements	geometry-eligible placements where the field is non-null
+genomic_signed_gap_not_strand_corrected	10	14810	0.0675	0	9999	10	4811	placements	geometry-eligible placements where the field is non-null
+strand_corrected_gap_negated_on_minus	10	14810	0.0675	0	9999	10	4811	placements	geometry-eligible placements where the field is non-null
+nc_start_minus_rt_end	0	14810	0.0	0	9999	0	4811	placements	geometry-eligible placements where the field is non-null
+nc_end_minus_rt_start	0	14810	0.0	0	9999	0	4811	placements	geometry-eligible placements where the field is non-null
+nc_end_minus_rt_end	0	14810	0.0	0	9999	0	4811	placements	geometry-eligible placements where the field is non-null
+rt_start_minus_nc_end	0	14810	0.0	0	9999	0	4811	placements	geometry-eligible placements where the field is non-null
+rt_start_minus_nc_start	0	14810	0.0	0	9999	0	4811	placements	geometry-eligible placements where the field is non-null
+nc_start_minus_anchor_center	0	14810	0.0	0	9999	0	4811	placements	geometry-eligible placements where the field is non-null
+nc_start_minus_window_start	0	14810	0.0	0	9999	0	4811	placements	geometry-eligible placements where the field is non-null

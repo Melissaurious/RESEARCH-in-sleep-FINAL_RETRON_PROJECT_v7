@@ -24,3 +24,8 @@ site/resources_live.md
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Sandbox mount placeholders (character devices created inside a sandboxed command's cwd).
+# They are not files, never part of a bundle, and `git add` refuses them.
+results/**/.claude/
+results/**/.mcp.json

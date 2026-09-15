@@ -1,0 +1,5 @@
+population	n_placements	pct_of_ALL	unit	denominator
+ALL	346722	100.0	placements	all placements in rt_ncrna_pairs_v1
+ELIGIBLE	345313	99.5936	placements	all placements in rt_ncrna_pairs_v1
+CANONICAL	344154	99.2593	placements	all placements in rt_ncrna_pairs_v1
+ATYPICAL	1159	0.3343	placements	all placements in rt_ncrna_pairs_v1

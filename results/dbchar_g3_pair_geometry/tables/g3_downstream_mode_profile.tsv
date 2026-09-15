@@ -1,0 +1,11 @@
+measure	value	pct	unit	denominator
+canonical_downstream_placements	6761.0		placements	CANONICAL downstream placements
+median_signed_distance_bp	2682.0		placements	CANONICAL downstream placements
+placements_within_150bp_of_the_median	5234.0	77.415	placements	CANONICAL downstream placements
+iqr_bp	97.0		placements	CANONICAL downstream placements
+distinct_exact_ncrna_in_the_mode	18.0		placements	CANONICAL downstream placements
+distinct_exact_rt_in_the_mode	126.0		placements	CANONICAL downstream placements
+distinct_loci_in_the_mode	5229.0		placements	CANONICAL downstream placements
+distinct_species_in_the_mode	15.0		placements	CANONICAL downstream placements
+distinct_detection_models_in_the_mode	3.0		placements	CANONICAL downstream placements
+distinct_source_databases_in_the_mode	3.0		placements	CANONICAL downstream placements

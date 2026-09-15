@@ -242,6 +242,24 @@ independent merge rerun reproduced every file byte-identically.
 Views and pulls over them: `results/dbchar_g2_canonical_units/VIEWS.md` and `scripts/pull.py`.
 Trust: `RE-DERIVE` from the g1 corpus pin; not `FROZEN`.
 
+Produced by `results/dbchar_g2b_rt_cds_recovery` (registry: `g2b_derived_registry.tsv`):
+
+| dataset | grain | rows |
+|---|---|---:|
+| `rt_cds_recovery_v1.parquet` | one RT-anchored record with no marked RT CDS, with its recovery state, representation class and eligibility flags | 31,504 |
+
+Produced by `results/dbchar_g3_pair_geometry` (registry: `g3_derived_registry.tsv`):
+
+| dataset | grain | rows |
+|---|---|---:|
+| `rt_ncrna_pairs_v1.parquet` | one RT↔ncRNA placement, with signed distance, direction, strand, intervening CDS, overlap, edge state, model, family, database, eligibility | 346,722 |
+| `rt_ncrna_exact_pairs_v1.parquet` | one distinct (exact RT, exact ncRNA) pair | 30,924 |
+| `rt_ncrna_exact_pair_recurrence_v1.parquet` | the same pairs with their recurrence class (redeposition vs species vs cross-species) | 30,924 |
+| `rt_ncrna_nonretron_candidates_v1.parquet` | retron-CM placements beside **non-Retron-labelled** RTs — an atypical/candidate population, explicitly not called novel retrons | 266 |
+
+⛔ The ncRNA covariance models in this corpus are **retron** models. A zero-ncRNA rate outside
+Retron-labelled RTs measures detector scope, never biological absence (`g3_zero_class_by_family.tsv`).
+
 ## New-project derived assets
 
 Stage 1 may propose registered reusable derived artifacts such as:

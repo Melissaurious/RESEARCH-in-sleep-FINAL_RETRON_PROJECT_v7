@@ -1,0 +1,5 @@
+offset	median	std	n_distinct_values	n_placements	unit	denominator	note
+nc_start - win_start	3674.0	2740.5592053628734	538	6761	placements	CANONICAL downstream placements	a near-zero spread on a window-relative offset would mark an extraction artefact
+win_end - nc_end	303.0	3957.201894228585	464	6761	placements	CANONICAL downstream placements	a near-zero spread on a window-relative offset would mark an extraction artefact
+rt_start - win_start	2.0	3628.0304920174517	444	6761	placements	CANONICAL downstream placements	a near-zero spread on a window-relative offset would mark an extraction artefact
+signed_distance_bp	2682.0	1256.3906014199006	270	6761	placements	CANONICAL downstream placements	a near-zero spread on a window-relative offset would mark an extraction artefact

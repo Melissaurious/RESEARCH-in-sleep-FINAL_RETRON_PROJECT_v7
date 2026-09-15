@@ -1,0 +1,10 @@
+overlapping_partial_states	n_records	n_recovered	unit	denominator
+	162	14188	records	RECOVERED records
+00	12260	14188	records	RECOVERED records
+00|01	338	14188	records	RECOVERED records
+00|01|10	26	14188	records	RECOVERED records
+00|10	662	14188	records	RECOVERED records
+01	304	14188	records	RECOVERED records
+01|10	30	14188	records	RECOVERED records
+10	387	14188	records	RECOVERED records
+11	19	14188	records	RECOVERED records

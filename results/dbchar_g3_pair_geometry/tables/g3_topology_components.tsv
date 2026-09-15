@@ -1,0 +1,5 @@
+shape	n_components	n_exact_rt	n_exact_ncrna	max_rt_in_a_component	max_ncrna_in_a_component	n_components_total	unit	denominator
+1:1	12079	12079	12079	1	1	14918	connected components	components of the exact RT-ncRNA bipartite graph
+1:many	179	179	390	1	9	14918	connected components	components of the exact RT-ncRNA bipartite graph
+many:1	2293	8092	2293	214	1	14918	connected components	components of the exact RT-ncRNA bipartite graph
+many:many	367	8842	1696	706	190	14918	connected components	components of the exact RT-ncRNA bipartite graph

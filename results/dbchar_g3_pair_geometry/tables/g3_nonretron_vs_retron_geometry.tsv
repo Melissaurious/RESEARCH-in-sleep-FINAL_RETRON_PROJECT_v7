@@ -1,0 +1,5 @@
+population	n_placements	n_loci	pct_upstream	pct_downstream	pct_overlapping	median_abs_distance_bp	q25_abs_distance_bp	q75_abs_distance_bp	pct_same_strand	median_cds_between	pct_zero_cds_between	unit	denominator
+CANONICAL_Retron	343892	332769	94.541	1.934	3.525	52.0	25.0	1037.0	99.148	0.0	94.454	placements	the population named in the row
+ELIGIBLE_Retron	345047	333733	94.511	1.937	3.552	52.0	25.0	1037.0	99.135	0.0	94.452	placements	the population named in the row
+ELIGIBLE_non_Retron_single_family	260	218	57.692	41.538	0.769	2665.0	486.0	5497.0	58.462	2.0	32.308	placements	the population named in the row
+ELIGIBLE_MULTI_stratum	6	6	50.0	50.0	0.0	8332.5	7540.75	8627.0	66.667	7.5	0.0	placements	the population named in the row

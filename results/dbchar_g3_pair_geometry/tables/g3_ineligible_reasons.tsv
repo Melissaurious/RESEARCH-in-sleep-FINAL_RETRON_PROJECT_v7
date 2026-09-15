@@ -1,0 +1,5 @@
+geometry_ineligible_reason	n_placements	n_placements_total	unit	denominator
+byte_identical_duplicate_line	1303	346722	placements	all placements
+record:coords_unverified:not_testable_rt_partially_outside_window	41	346722	placements	all placements
+record:coords_unverified:not_testable_rt_outside_window	37	346722	placements	all placements
+record:coords_unverified:mismatch	28	346722	placements	all placements

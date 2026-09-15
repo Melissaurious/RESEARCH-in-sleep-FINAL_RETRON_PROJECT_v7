@@ -1,0 +1,5 @@
+measure	n	pct	unit	denominator	caveat
+exact_ncRNA_sequences	16458		exact ncRNA sequences	exact ncRNA sequences with a geometry-eligible placement	one model per call is imposed by the pipeline's selection step; this is not CM specificity
+called_by_exactly_one_model	16458	100.0	exact ncRNA sequences	exact ncRNA sequences with a geometry-eligible placement	one model per call is imposed by the pipeline's selection step; this is not CM specificity
+called_by_more_than_one_model	0	0.0	exact ncRNA sequences	exact ncRNA sequences with a geometry-eligible placement	one model per call is imposed by the pipeline's selection step; this is not CM specificity
+max_models_on_one_sequence	1		exact ncRNA sequences	exact ncRNA sequences with a geometry-eligible placement	one model per call is imposed by the pipeline's selection step; this is not CM specificity

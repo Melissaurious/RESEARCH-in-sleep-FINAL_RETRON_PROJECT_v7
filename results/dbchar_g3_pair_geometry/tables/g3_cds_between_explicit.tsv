@@ -1,0 +1,36 @@
+population	stratum	n_cds_between	n_placements	n_in_population	pct_of_population	unit	denominator
+ALL		0	327356	346722	94.4145	placements	placements of that population/stratum
+ALL		1	12497	346722	3.6043	placements	placements of that population/stratum
+ALL		2	955	346722	0.2754	placements	placements of that population/stratum
+ALL		3	551	346722	0.1589	placements	placements of that population/stratum
+ALL		>3	5363	346722	1.5468	placements	placements of that population/stratum
+ELIGIBLE		0	325989	345313	94.4039	placements	placements of that population/stratum
+ELIGIBLE		1	12473	345313	3.6121	placements	placements of that population/stratum
+ELIGIBLE		2	948	345313	0.2745	placements	placements of that population/stratum
+ELIGIBLE		3	548	345313	0.1587	placements	placements of that population/stratum
+ELIGIBLE		>3	5355	345313	1.5508	placements	placements of that population/stratum
+CANONICAL		0	324904	344154	94.4066	placements	placements of that population/stratum
+CANONICAL		1	12427	344154	3.6109	placements	placements of that population/stratum
+CANONICAL		2	939	344154	0.2728	placements	placements of that population/stratum
+CANONICAL		3	544	344154	0.1581	placements	placements of that population/stratum
+CANONICAL		>3	5340	344154	1.5516	placements	placements of that population/stratum
+ATYPICAL		0	1085	1159	93.6152	placements	placements of that population/stratum
+ATYPICAL		1	46	1159	3.9689	placements	placements of that population/stratum
+ATYPICAL		2	9	1159	0.7765	placements	placements of that population/stratum
+ATYPICAL		3	4	1159	0.3451	placements	placements of that population/stratum
+ATYPICAL		>3	15	1159	1.2942	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-DGRs	0	5	50	10.0	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-DGRs	1	8	50	16.0	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-DGRs	2	14	50	28.0	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-DGRs	3	7	50	14.0	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-DGRs	>3	16	50	32.0	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-GII	0	44	134	32.8358	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-GII	1	7	134	5.2239	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-GII	2	23	134	17.1642	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-GII	3	7	134	5.2239	placements	placements of that population/stratum
+CANONICAL_by_family	RVT-GII	>3	53	134	39.5522	placements	placements of that population/stratum
+CANONICAL_by_family	Retron	0	324821	343892	94.4544	placements	placements of that population/stratum
+CANONICAL_by_family	Retron	1	12405	343892	3.6072	placements	placements of that population/stratum
+CANONICAL_by_family	Retron	2	893	343892	0.2597	placements	placements of that population/stratum
+CANONICAL_by_family	Retron	3	522	343892	0.1518	placements	placements of that population/stratum
+CANONICAL_by_family	Retron	>3	5251	343892	1.5269	placements	placements of that population/stratum

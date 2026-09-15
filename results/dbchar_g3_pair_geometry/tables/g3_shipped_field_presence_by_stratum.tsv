@@ -1,0 +1,18 @@
+file_label	source_database	n_placements	n_field_present	unit	denominator
+MULTI	ncbi_bacteria	2	1	placements	placements of that family and database
+RVT-AbiP2	gtdb_bacteria	1	1	placements	placements of that family and database
+RVT-AbiP2	ncbi_bacteria	8	2	placements	placements of that family and database
+RVT-DGRs	gem	1	1	placements	placements of that family and database
+RVT-DGRs	gtdb_bacteria	20	2	placements	placements of that family and database
+RVT-DGRs	ncbi_bacteria	27	3	placements	placements of that family and database
+RVT-GII	ncbi_bacteria	79	1	placements	placements of that family and database
+RVT-UG7	gtdb_bacteria	1	1	placements	placements of that family and database
+RVT-UG7	ncbi_bacteria	1	1	placements	placements of that family and database
+Retron	gem	1274	49	placements	placements of that family and database
+Retron	gtdb_archaea	6	2	placements	placements of that family and database
+Retron	gtdb_bacteria	48939	2216	placements	placements of that family and database
+Retron	mgnify_human_gut	10691	247	placements	placements of that family and database
+Retron	mgnify_marine	942	60	placements	placements of that family and database
+Retron	mgnify_soil	828	17	placements	placements of that family and database
+Retron	ncbi_archaea	28	2	placements	placements of that family and database
+Retron	ncbi_bacteria	283747	12219	placements	placements of that family and database

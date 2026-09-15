@@ -1,0 +1,4 @@
+representation_class	clipped_end_flag	window_is_short	n_records	n_loci	median_bp_beyond_window_end	max_bp_beyond_window_end	median_window_span	n_anchor_center_inside	n_sequence_only	unit	denominator
+rt_beyond_a_contig_end_clipped_window	True	True	9128	9128	2956.0	15737.0	4085.0	0	16688	records	records that keep a sequence but no defensible context
+rt_crosses_a_contig_end_clipped_window	True	True	3636	3636	765.0	14774.0	3498.5	1864	16688	records	records that keep a sequence but no defensible context
+window_inverted_no_sequence_retrieved	True	False	3924	3924				0	16688	records	records that keep a sequence but no defensible context

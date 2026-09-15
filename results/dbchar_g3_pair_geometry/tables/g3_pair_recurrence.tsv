@@ -1,0 +1,7 @@
+recurrence_class	n_exact_pairs	n_placements	median_placements_per_pair	max_placements_per_pair	median_species_per_pair	n_exact_pairs_total	unit	denominator
+multiple_species	5056	274245	4.0	101792	2.0	30924	exact pairs	distinct (exact RT, exact ncRNA) pairs with a geometry-eligible placement
+one_genome_multiple_loci	36	72	2.0	2	1.0	30924	exact pairs	distinct (exact RT, exact ncRNA) pairs with a geometry-eligible placement
+one_physical_locus_multiple_database_copies	9362	18767	2.0	4	2.0	30924	exact pairs	distinct (exact RT, exact ncRNA) pairs with a geometry-eligible placement
+one_physical_locus_multiple_records	13	26	2.0	2	1.0	30924	exact pairs	distinct (exact RT, exact ncRNA) pairs with a geometry-eligible placement
+one_species_multiple_genomes	4452	40198	4.0	2055	1.0	30924	exact pairs	distinct (exact RT, exact ncRNA) pairs with a geometry-eligible placement
+single_placement	12005	12005	1.0	1	1.0	30924	exact pairs	distinct (exact RT, exact ncRNA) pairs with a geometry-eligible placement

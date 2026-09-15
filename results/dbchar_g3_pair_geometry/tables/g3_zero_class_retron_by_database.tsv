@@ -1,0 +1,9 @@
+source_database	n_loci	n_loci_with_call	n_loci_zero_ncrna	pct_zero	unit	denominator
+gem	3576	1272	2304	64.4295	loci	Retron loci of that source_database
+gtdb_archaea	145	5	140	96.5517	loci	Retron loci of that source_database
+gtdb_bacteria	104898	48811	56087	53.4681	loci	Retron loci of that source_database
+mgnify_human_gut	24902	10689	14213	57.0757	loci	Retron loci of that source_database
+mgnify_marine	2458	940	1518	61.7575	loci	Retron loci of that source_database
+mgnify_soil	1598	827	771	48.2478	loci	Retron loci of that source_database
+ncbi_archaea	367	27	340	92.6431	loci	Retron loci of that source_database
+ncbi_bacteria	525360	282264	243096	46.2723	loci	Retron loci of that source_database
