@@ -1,0 +1,5 @@
+# Tables in tables/ that are AUTHORED design documents, not machine-generated.
+# verify.sh asserts these exist but does not diff them, because no script produces them.
+# Every other table in tables/ is computed and MUST reproduce byte-identically.
+g4a_estimands.tsv
+external_asset_requirement_matrix.tsv

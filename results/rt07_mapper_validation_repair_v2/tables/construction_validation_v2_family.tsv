@@ -1,0 +1,8 @@
+family	n	median_mapped_fraction	min_mapped_fraction	max_mapped_fraction	n_ok	n_abstain_no_domain	n_abstain_few_anchors	catalytic_confirmed	catalytic_substituted	catalytic_ambiguous_or_unsupported	catalytic_state_deleted
+Retrons	40	0.4733	0.0000	0.7000	38	2	0	34	6	0	0
+GII	40	0.9500	0.4533	1.0000	40	0	0	40	0	0	0
+DGRs	40	0.8000	0.3267	0.9267	40	0	0	35	5	0	0
+CRISPR	40	0.9133	0.5200	0.9467	40	0	0	39	1	0	0
+UG3	40	0.5500	0.3600	0.7467	40	0	0	40	0	0	0
+AbiA	19	0.4933	0.2600	0.6333	19	0	0	19	0	0	0
+TOTAL	219				217	2	0	207	12	0	0

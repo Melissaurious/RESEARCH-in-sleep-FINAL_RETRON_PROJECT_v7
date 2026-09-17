@@ -1,0 +1,8 @@
+family	modal_dyad_match_state	n_seqs_at_that_state	total_dyad_hits_mapped	n_distinct_states_carrying_a_dyad
+Retrons	192	41	44	3
+GII	276	47	48	2
+DGRs	223	50	54	3
+CRISPR	221	50	58	5
+UG3	200	47	51	5
+UG5	287	37	47	11
+AbiA	257	11	13	2

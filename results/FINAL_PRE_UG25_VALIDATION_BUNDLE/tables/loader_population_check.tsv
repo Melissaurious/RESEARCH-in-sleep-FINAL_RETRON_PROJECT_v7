@@ -1,0 +1,7 @@
+family	expected_eligible	observed_eligible	match
+Retrons	95	95	YES
+GII	496	496	YES
+DGRs	488	488	YES
+CRISPR	129	129	YES
+UG3	86	86	YES
+AbiA	19	19	YES

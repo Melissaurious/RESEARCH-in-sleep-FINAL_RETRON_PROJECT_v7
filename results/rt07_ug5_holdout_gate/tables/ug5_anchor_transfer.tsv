@@ -1,0 +1,7 @@
+target	target_kind	n_frozen_anchors	n_anchors_mapped	pct_anchors_mapped	hhalign_probability	hhalign_evalue	aligned_columns
+UG5_challenge	REAL	150	135	90.0	97.3	2.7E-11	230
+UG5_evalref	REAL	150	148	98.7	97.9	5E-13	303
+UG5_challenge_SHUF	DECOY	150	0	0.0	0.0	0.98	1
+UG5_evalref_SHUF	DECOY	150	11	7.3	0.0	0.95	14
+UG5_comp1	REAL	150	135	90.0	97.0	7.9E-11	232
+UG5_comp2	REAL	150	54	36.0	92.8	4E-07	62

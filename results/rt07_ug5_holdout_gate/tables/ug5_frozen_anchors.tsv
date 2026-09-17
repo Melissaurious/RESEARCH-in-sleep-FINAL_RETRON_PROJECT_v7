@@ -1,0 +1,7 @@
+reference_family	GII
+n_partner_families	5
+n_frozen_anchors	150
+anchor_coordinate_span	107-317
+ug5_evaluation_reference_n	42
+ug5_challenge_n	25
+max_cross_subset_identity	0.3730

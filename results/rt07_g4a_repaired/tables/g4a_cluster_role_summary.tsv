@@ -1,0 +1,8 @@
+family	n_components	largest_component	n_singleton_components	n_components_derivation	n_components_development	n_components_challenge	challenge_independence
+Retrons	3	93	2	3	1	1	NON_INDEPENDENT_CHALLENGE
+GII	2	495	1	1	1	1	NON_INDEPENDENT_CHALLENGE
+DGRs	1	488	0	1	1	1	NON_INDEPENDENT_CHALLENGE
+CRISPR	2	125	0	2	2	1	NON_INDEPENDENT_CHALLENGE
+UG3	1	86	0	1	1	1	NON_INDEPENDENT_CHALLENGE
+UG5	4	42	1	1	2	1	INDEPENDENT_CHALLENGE
+AbiA	4	12	1	1	0	3	INDEPENDENT_CHALLENGE

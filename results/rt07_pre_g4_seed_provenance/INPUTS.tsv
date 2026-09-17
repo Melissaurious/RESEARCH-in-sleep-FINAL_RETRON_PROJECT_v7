@@ -1,0 +1,10 @@
+path	sha256	bytes	mtime	role
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/stage2b_assessor_redesign/step3_hmm/cache/all167.faa	48d48faadcc82434479459cfd492c92809a641a335764920cb16baa7a5d72c2d	88762	2026-07-29 20:59:32	the old seed under audit
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/stage2b_assessor_redesign/anchors/anchor_set_v1.faa	b1331aa52079b3c83b8ec2fea1a70e01fb32e1476321628c840ad603442ae8f8	39133	2026-07-28 15:52:49	the anchor set
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/stage2b_assessor_redesign/anchors/anchor_set_v1_provenance.tsv	b957ceb8d408e45d7e83e0e647f437a51b8a7c3343beb598773b7d23ab2ae95e	17553	2026-07-28 15:52:49	the anchor provenance table
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt07_external_assets/ALIGN_000044.aln	af570a4e8fb357f239992e4dacbd261dbdc0c3f6ca801f3a1b6ceb3429682a01	125092	2026-09-15 18:46:42	population read ONLY to measure overlap: align000044
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/historical/toro_2014_Rt0-Rt7.FASTA	6e43c4ccd3660f4cc1b8c3903ee53cb530552475c2b1d0eef9a55530d08e95b1	1186359	2026-08-16 14:44:11	population read ONLY to measure overlap: toro742
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/myrt/myRT-FastTree2.refpkg/RVT-ref.fst	63fb6594a4f4a25acbdef93471a15ce64279f28fba12082077495c23a41e5ebb	1937739	2025-11-19 14:11:44	population read ONLY to measure overlap: myrt1844
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/ARIS_OUTPUT/D_instrument/cache/sets/gold175_uniq.faa	4a1a2c920b5221935530b40599d0c61d8648e03da636d9edce5ed51a01a4ab4c	73106	2026-08-10 14:16:56	population read ONLY to measure overlap: gold171
+/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/ARIS_OUTPUT/D_instrument/cache/sets/anchors72.faa	6fad08bcbea6e1e12f3f57fc6b17260e5c43dc7fbabfa279ce8c9a9b601187aa	34545	2026-08-10 14:16:56	population read ONLY to measure overlap: anchors72
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.faa	bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655	230435383	2026-09-15 04:23:05	population read ONLY to measure overlap: stage1_exact_rt

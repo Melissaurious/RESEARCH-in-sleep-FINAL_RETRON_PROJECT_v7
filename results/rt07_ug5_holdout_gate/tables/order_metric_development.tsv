@@ -1,0 +1,6 @@
+metric	n_real	real_median	real_min	n_decoy	decoy_median	pct_real_at_or_beyond_0.9_threshold
+tau	812	1.0000	1.0000	0	n/a	100.0
+ordered_pair_frac	812	1.0000	1.0000	0	n/a	100.0
+inv_frac	812	0.0000	0.0000	0	n/a	100.0
+lms_frac	812	1.0000	1.0000	0	n/a	100.0
+monotone	812	1.0000	1.0000	0	n/a	100.0

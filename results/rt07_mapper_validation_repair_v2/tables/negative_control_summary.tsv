@@ -1,0 +1,26 @@
+# di-shuffle failed (no valid last-edge tree) for 3 sequence(s); those are ABSENT from the DI rows, which is why some DI n < real n
+# OPTIONAL-IMPLEMENTED-NOW: per-control-class p95 is reported alongside the
+# pooled figure. The pooled p95 of 0 HID the reverse class, whose own p95 is 10.
+family	control_kind	n	max_mapped_anchors	mean_mapped_anchors	p95_mapped_anchors	n_with_any_mapped	max_domain_bitscore
+Retrons	MONO	40	17	0.425	0	1	2.8
+Retrons	DI	40	19	0.675	8	2	1.8
+Retrons	REV	40	0	0.000	0	0	4.3
+GII	MONO	40	0	0.000	0	0	-0.4
+GII	DI	40	0	0.000	0	0	1.6
+GII	REV	40	12	0.600	12	2	5.3
+DGRs	MONO	40	0	0.000	0	0	8.1
+DGRs	DI	40	0	0.000	0	0	1.5
+DGRs	REV	40	25	1.275	15	3	3.0
+CRISPR	MONO	40	9	0.300	3	2	0.1
+CRISPR	DI	38	22	0.579	0	1	1.2
+CRISPR	REV	40	9	0.225	0	1	1.4
+UG3	MONO	40	0	0.000	0	0	0.9
+UG3	DI	39	24	0.615	0	1	5.2
+UG3	REV	40	12	1.600	11	6	2.6
+AbiA	MONO	19	0	0.000	0	0	-1.2
+AbiA	DI	19	0	0.000	0	0	3.1
+AbiA	REV	19	12	1.368	12	3	2.2
+ALL	MONO	219	17	0.132	0	3	NA
+ALL	DI	216	24	0.338	0	4	NA
+ALL	REV	219	25	0.795	10	15	NA
+ALL	POOLED	654	25	0.422	0	22	NA

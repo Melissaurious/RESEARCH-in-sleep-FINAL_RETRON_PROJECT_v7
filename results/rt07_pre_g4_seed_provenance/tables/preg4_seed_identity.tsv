@@ -1,0 +1,10 @@
+quantity	value	unit	denominator
+seed_path	/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/stage2b_assessor_redesign/step3_hmm/cache/all167.faa	seed property	167 sequences in all167.faa
+seed_sha256	48d48faadcc82434479459cfd492c92809a641a335764920cb16baa7a5d72c2d	seed property	167 sequences in all167.faa
+n_sequences	167	seed property	167 sequences in all167.faa
+n_unique_sequences	167	seed property	167 sequences in all167.faa
+n_anchor_members	72	seed property	167 sequences in all167.faa
+n_CAND_members	95	seed property	167 sequences in all167.faa
+composition	95 CAND_* + 26 PDB_* + 42 RETRON_* + 4 UNIPROT_*	seed property	167 sequences in all167.faa
+anchors_in_seed_by_construction	YES - the seed was built as anchors72 + 95 CAND_*, so 72/72 anchor membership is a property of how it was made, not a contamination discovery	seed property	167 sequences in all167.faa
+what_is_actually_circular	downstream reuse of seed components as purported independent validation material	seed property	167 sequences in all167.faa

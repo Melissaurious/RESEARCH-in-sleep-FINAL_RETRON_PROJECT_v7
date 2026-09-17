@@ -1,0 +1,5 @@
+control	kind	expected	observed	result	unit	denominator
+C1:frame_carrier_places_RT5_on_the_catalytic_region	POSITIVE	prior RT5 lands in the g2 region containing Y/FxDD (block 5)	g2 block 5 at LtrA 308	PASS	control	4 controls declared before measuring
+C2:seed_overlaps_reproduce_the_prior_audit_from_files	POSITIVE	exact reproduction of the prior audit's published overlaps	anchors72: prior 72/72, g3 72/72; gold175_uniq: prior 44/171, g3 44/171	PASS	control	4 controls declared before measuring
+C3:identity_measure_collapses_under_residue_shuffling	NULL	0 matches on shuffled residues, non-zero on real ones	shuffled 0, observed 72	PASS	control	4 controls declared before measuring
+C4:frames_the_prior_work_named_separately_are_one_file	POSITIVE	at least two registered frames share a sha256	RT17_CORE=B_span17, B_span17=RT17_CORE	PASS	control	4 controls declared before measuring

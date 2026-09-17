@@ -1,0 +1,9 @@
+# Only MAPPED is positive evidence. The others are reported, never counted.
+call_state	n_anchor_calls
+MAPPED	2400
+AMBIGUOUS	375
+UNSUPPORTED	297
+DELETED_STATE	1128
+
+verdict_reason	n_sequences
+OK	28

@@ -1,0 +1,12 @@
+# UG25 SEALED FROM DEVELOPMENT EXECUTION
+# This asserts that no development step materialised UG25. It does NOT assert
+# that UG25 is absent from the shared source collection - it is present there.
+check	status	detail
+authorised_family_list_excludes_sealed	SEALED	RT07_AUTHORISED_FAMILIES=Retrons,GII,DGRs,CRISPR,UG3,AbiA
+loader_materialisation_log_excludes_sealed	SEALED	materialised={'AbiA': 19, 'CRISPR': 129, 'DGRs': 488, 'GII': 496, 'Retrons': 95, 'UG3': 86}
+sealed_family_size_for_audit_only	SEALED	28 ids read by THIS AUDIT only, to search for leaks; no alignment, no score, no profile, discarded immediately
+no_sealed_identifier_in_computed_tables	SEALED	leaks=none
+no_sealed_sequence_bytes_in_computed_tables	SEALED	leaks=none
+no_sealed_alignment_or_profile_artefact	SEALED	work/ artefacts naming UG25: none
+no_sealed_identifier_in_work_artefacts	SEALED	work artefacts containing a sealed id: none
+no_pipeline_source_executably_references_sealed_family	SEALED	executable references to UG25 in pipeline sources: none (comments and docstrings explaining the seal are excluded by AST analysis; sealing_proof.py itself is exempt and is not part of the pipeline)

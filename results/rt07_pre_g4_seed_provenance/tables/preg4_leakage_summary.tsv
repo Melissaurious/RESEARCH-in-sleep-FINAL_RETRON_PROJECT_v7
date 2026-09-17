@@ -1,0 +1,7 @@
+population	n_population	n_seed_sequences	n_exact_duplicates	pct_exact	n_with_any_hit	n_ge_100pct_identity	n_ge_90pct_identity	n_ge_70pct_identity	n_ge_50pct_identity	n_ge_30pct_identity	population_role	unit	denominator
+align000044	66	167	1	0.60	161	1	1	2	18	45	the historical reconstruction substrate; overlap here would mean the old seed and the new frame share sequences	old-seed sequence	167 sequences in all167.faa
+toro742	742	167	0	0.00	63	1	1	9	17	46	published comparator; read ONLY to measure overlap, never to define	old-seed sequence	167 sequences in all167.faa
+myrt1844	1844	167	0	0.00	167	19	29	63	117	166	published comparator; read ONLY to measure overlap	old-seed sequence	167 sequences in all167.faa
+gold171	171	167	44	26.35	159	47	47	47	49	75	the retron literature challenge panel	old-seed sequence	167 sequences in all167.faa
+anchors72	72	167	72	43.11	166	72	72	73	79	132	the anchor set, which is inside the seed by construction	old-seed sequence	167 sequences in all167.faa
+stage1_exact_rt	501561	167	146	87.43	167	159	162	163	165	166	the frozen Stage-1 catalogue g4 will sample from	old-seed sequence	167 sequences in all167.faa

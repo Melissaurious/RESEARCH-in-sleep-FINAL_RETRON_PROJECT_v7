@@ -1,0 +1,30 @@
+# per-class AND pooled. The pooled p95 of 0 hides the reverse class (p95 10).
+# MONO intended null: amino-acid composition preserved, all order destroyed
+# MONO generation failures (0), NOT replaced: none
+# DI intended null: every adjacent-pair (dipeptide) count preserved, longer-range order destroyed
+# DI generation failures (3), NOT replaced: ADE85031.1_CRISPR,ESQ17084.1_CRISPR,WP_032822382.1_UG3
+# REV intended null: composition, length and all local pair structure preserved, read backwards
+# REV generation failures (0), NOT replaced: none
+family	control_class	n	max_mapped	mean_mapped	p95_mapped	n_with_any_mapped	max_domain_bitscore
+Retrons	MONO	40	17	0.425	0	1	2.8
+Retrons	DI	40	19	0.675	8	2	1.8
+Retrons	REV	40	0	0.000	0	0	4.3
+GII	MONO	40	0	0.000	0	0	-0.4
+GII	DI	40	0	0.000	0	0	1.6
+GII	REV	40	12	0.600	12	2	5.3
+DGRs	MONO	40	0	0.000	0	0	8.1
+DGRs	DI	40	0	0.000	0	0	1.5
+DGRs	REV	40	25	1.275	15	3	3.0
+CRISPR	MONO	40	9	0.300	3	2	0.1
+CRISPR	DI	38	22	0.579	0	1	1.2
+CRISPR	REV	40	9	0.225	0	1	1.4
+UG3	MONO	40	0	0.000	0	0	0.9
+UG3	DI	39	24	0.615	0	1	5.2
+UG3	REV	40	12	1.600	11	6	2.6
+AbiA	MONO	19	0	0.000	0	0	-1.2
+AbiA	DI	19	0	0.000	0	0	3.1
+AbiA	REV	19	12	1.368	12	3	2.2
+ALL	MONO	219	17	0.132	0	3	NA
+ALL	DI	216	24	0.338	0	4	NA
+ALL	REV	219	25	0.795	10	15	NA
+ALL	POOLED	654	25	0.422	0	22	NA

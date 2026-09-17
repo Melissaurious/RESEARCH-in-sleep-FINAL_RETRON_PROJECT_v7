@@ -1,0 +1,7 @@
+item_id	question	status_after_g3	what_g3_changed	unit	denominator
+U01	Where is the primary definition of domain 0 / RT0?	STILL_OPEN	Unchanged. Malik et al. 1999 remains unheld. g3 adds that the prior project's own RT0 region excludes the RT0 landmark, so no prior artefact substitutes for it.	open question	6 items carried
+U02	Which blocks do Simon & Zimmerly's 59 alignable characters fall in?	STILL_OPEN	Not addressed by g3; belongs to the comparator gate.	open question	6 items carried
+U08	Is domain 1's weaker support in 1990 the same object as a later RT1 concordance failure?	STILL_DEFERRED	g3 measured the RT1 failure and did NOT interpret it. One new fact for the operator's eventual decision: the prior RT1 landmark maps into the LtrA region Blocker assigns to RT0.	open question	6 items carried
+U09	Is the block COUNT recoverable at all?	STILL_OPEN	g3 adds evidence: 24 of 28 prior blocks were interpolated rather than anchored, and the prior seventh boundary falls inside a single g2 region.	open question	6 items carried
+U10	Does VOID_DO_NOT_CITE.md exist?	NEW_CLOSED_AS_ABSENT	Referenced by six prior documents and by this project's contract; absent from disk. g3 re-measured every prior figure it reports rather than quoting one.	open question	6 items carried
+U11	What is the tag offset in the 7 tagged anchors?	NEW_OPEN	Raised by g3. Seven anchors carry His6 and one carries SUMO, so any residue coordinate taken from them is offset unless the tag was stripped. The prior work does not record whether it was.	open question	6 items carried

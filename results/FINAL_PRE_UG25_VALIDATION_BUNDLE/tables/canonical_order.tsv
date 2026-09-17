@@ -1,0 +1,6 @@
+# Load-bearing: a shared RNG feeds control generation, so this order
+# determines which di-shuffles fail. NOT sorted. NOT derived.
+parameter	value
+CANONICAL_FAMILY_ORDER	Retrons|GII|DGRs|CRISPR|UG3|AbiA
+CANONICAL_SEED	20260917
+CANONICAL_ORDER_HASH	289d892c797847c26330329772a7fb0efec567f7b0210186b2201fa03bff12cb

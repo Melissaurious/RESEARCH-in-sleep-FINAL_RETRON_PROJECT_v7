@@ -1,0 +1,5 @@
+# Failed generations, landed by IDENTITY. Never substituted.
+control_class	n_failed	failed_sequence_ids
+MONO	0	none
+DI	3	ADE85031.1_CRISPR,ESQ17084.1_CRISPR,WP_032822382.1_UG3
+REV	0	none

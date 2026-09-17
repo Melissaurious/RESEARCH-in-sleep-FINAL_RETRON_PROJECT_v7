@@ -1,0 +1,6 @@
+pp_hi	median_real_mapped_fraction	negative_p95_mapped	negative_max_mapped	meets_both_targets
+0.55	0.7800	12	38	fail
+0.65	0.7600	8	29	fail
+0.75	0.7067	0	25	PASS
+0.85	0.6467	0	24	PASS
+0.95	0.5933	0	16	PASS

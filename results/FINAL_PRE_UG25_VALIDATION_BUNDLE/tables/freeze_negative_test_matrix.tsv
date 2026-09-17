@@ -1,0 +1,19 @@
+test	result	detail	expectation
+P1_intact_with_correct_pinned_root	PASS	exit=0	an untouched bundle with the correct external root verifies clean
+N1_added_regular_file	PASS	exit=1; FREEZE VIOLATION  ADDED    tables/extra.tsv; FREEZE VIOLATION  MANIFEST ROOT MISMATCH  81728ef4b54e291f != observed 917b33190b8bdf99; FREEZE VIOLATION	an added regular file fails
+N2_deleted_file	PASS	exit=1; FREEZE VIOLATION  REMOVED  tables/r.tsv; FREEZE VIOLATION  MANIFEST ROOT MISMATCH  81728ef4b54e291f != observed c43040ec49d97a70; FREEZE VIOLATION  EX	a deleted file fails
+N3_changed_file	PASS	exit=1; FREEZE VIOLATION  CHANGED  code/m.py; FREEZE VIOLATION  MANIFEST ROOT MISMATCH  81728ef4b54e291f != observed 30f6d89c464aa47f; FREEZE VIOLATION  EXTER	a modified file fails
+N4_renamed_file	PASS	exit=1; FREEZE VIOLATION  ADDED    tables/r2.tsv; FREEZE VIOLATION  REMOVED  tables/r.tsv; FREEZE VIOLATION  MANIFEST ROOT MISMATCH  81728ef4b54e291f != obser	a rename fails (as ADDED + REMOVED)
+N5_added_file_symlink	PASS	exit=1; FREEZE VIOLATION  SYMLINK PRESENT  code/injected.py  (symlinks are never permitted)	an added symlink fails - v2 SKIPPED symlinks and reported INTACT
+N6_symlink_replacing_registered_script	PASS	exit=1; FREEZE VIOLATION  SYMLINK PRESENT  code/m.py  (symlinks are never permitted); FREEZE VIOLATION  REMOVED  code/m.py; FREEZE VIOLATION  MANIFEST ROOT MI	a registered script replaced by a symlink fails
+N7_symlink_escaping_bundle_root	PASS	exit=1; FREEZE VIOLATION  SYMLINK PRESENT  code/escape.py  (symlinks are never permitted)	a symlink pointing outside the bundle fails
+N8_symlink_to_other_registered_artifact	PASS	exit=1; FREEZE VIOLATION  SYMLINK PRESENT  tables/alias.tsv  (symlinks are never permitted)	a symlink to another registered artifact fails
+N9_missing_manifest	PASS	exit=1; FREEZE VIOLATION  MANIFEST ABSENT  <MANIFEST>	a missing manifest fails
+N10_malformed_manifest	PASS	exit=1; FREEZE VIOLATION  MANIFEST MALFORMED  not enough values to unpack (expected 3, got 1)	a malformed manifest fails
+N11_corrupted_manifest_root	PASS	exit=1; FREEZE VIOLATION  MANIFEST ROOT MISMATCH  bbbbbbbbbbbbbbbb != observed 81728ef4b54e291f	a corrupted manifest root fails even with a recomputed sidecar
+N12_all_zero_pinned_root	PASS	exit=1	an all-zero external pinned root is rejected outright
+N13_wrong_external_pinned_root	PASS	exit=1	a wrong external pinned root fails
+N14_absent_pinned_root	PASS	exit=1	omitting the external root fails; v2 allowed an unpinned self-validating mode
+N15_self_consistent_rebuild_still_fails	PASS	exit=1	a jointly rebuilt bundle+manifest+sidecar cannot self-validate against the external root
+N16_unexpected_bytecode	PASS	exit=1; FREEZE VIOLATION  ADDED    code/__pycache__/m.cpython-312.pyc; FREEZE VIOLATION  MANIFEST ROOT MISMATCH  81728ef4b54e291f != observed f344c028cc28ba95	a stray .pyc is an ADDED violation, not an invisible file
+N17_hard_link_aliasing	PASS	exit=1; FREEZE VIOLATION  HARD-LINKED FILE  tables/r.tsv  (content aliased outside this path)	a file aliased by a hard link outside the bundle fails

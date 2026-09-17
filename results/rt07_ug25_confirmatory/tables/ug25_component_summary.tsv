@@ -1,0 +1,4 @@
+component	n_sequences	role	median_mapped_fraction	min	max	n_abstain
+0	19	QUALIFYING	0.5133	0.3600	0.7533	0
+1	5	QUALIFYING	0.5933	0.5600	0.6667	0
+2	4	descriptive_only	0.6600	0.4800	0.8000	0

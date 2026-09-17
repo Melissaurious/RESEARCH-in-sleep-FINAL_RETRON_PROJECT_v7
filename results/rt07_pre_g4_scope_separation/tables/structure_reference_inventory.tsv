@@ -1,0 +1,48 @@
+pdb	chain	rt_class_recorded	organism_or_protein	seq_len	expression_tag_MEASURED_BY_REGEX	in_26_anchor_set	in_ph38_panel	method	resolution_A	has_local_coordinate_file	allowed_role	note
+24NC	A	RVT-UG15 (DRT4)	Enterobacteriaceae RT domain-containing	540	none	YES	YES	EM	2.22	YES	structural comparator	thumb Jaccard 0.0 against the prior RT17 frame in d2j_boundary_crossval
+5G2X	C	RVT-GII	Lactococcus lactis LtrA P0A3U0	599	none	YES	NO	EM	3.8	YES	EXCLUDED from every structural test	the historical coordinate carrier; also the one structure ph38 did not use; its boundaries came from method=alignment not DSSP, with the largest frame offset (-50 residues, 103 gaps)
+5HHJ	A	RVT-GII	Roseburia intestinalis maturase RT D4L313	305	none	YES	YES	X-ray	1.2	YES	structural comparator	highest-resolution RT structure available
+5HHK	A	RVT-GII	R. intestinalis Se-Met	305	none	NO	YES	X-ray	1.4	YES	structural comparator	near-duplicate of 5HHJ; must be clustered, not counted as independent
+5HHL	A	RVT-GII	Eubacterium rectale D4JMT6	292	none	YES	YES	X-ray	2.1	YES	structural comparator
+5VBS	A	retroviral - NON-MEMBER	MMLV RT fragment P03355	259	none	NO	YES	X-ray	1.749	YES	outgroup only	recorded NON-MEMBER at 23.2 bits; not an RVT family member
+6AR1	A	RVT-G2L (ph38 said RVT-GII)	Geobacillus stearothermophilus GsI-IIC RT E2GM63	428	His8 C-terminal	YES	YES	X-ray	3.01	YES	structural comparator	AMBIGUOUS family call, 185.0 bits with only a 7.4-bit margin; YADD at 221-224
+6ME0	C	RVT-GII	Thermosynechococcus elongatus maturase Q8DMK2	562	none	YES	YES	EM	3.6	YES	structural comparator
+6MEC	C	RVT-GII	same, post-integration state	562	none	NO	YES	EM	3.6	YES	structural comparator	same protein as 6ME0; cluster
+7UIN	D	RVT-G2L (ambiguous, ph38 GII)	Eubacterium rectale GII RT/maturase	427	none	NO	YES	EM	2.8	YES	structural comparator
+7V9U	A	RVT-Retrons	E. coli retron Ec86 P23070	320	none	YES	YES	EM	3.12	YES	structural comparator
+7V9X	A	RVT-Retrons	Ec86 + effector	330	His8	NO	YES	EM	2.82	YES	structural comparator	same protein as 7V9U; cluster
+7XJG	A	RVT-Retrons	Ec86 + effector	330	His8	NO	YES	EM	2.51	YES	structural comparator	same protein as 7V9U/7V9X; cluster
+8FLI	B	RVT-GII	Thermosynechococcus vestitus maturase	562	none	NO	YES	EM	3.8	YES	structural comparator
+8QBM	A	RVT-Retrons	Retron-Eco1 filament P23070	349	His6 + TEV ENLYFQG	NO	YES	EM	3.09	YES	structural comparator	same UniProt as 7V9U; cluster
+8UBD	A	RVT-DGRs (ph38 mis-filed as UG17)	Bordetella phage BPP-1 bRT Q775D8	328	none	NO	YES	EM	3.05	YES	structural comparator
+9C0I	A	RVT-UG2 (DRT2)	Klebsiella pneumoniae	425	none	NO	YES	EM	2.91	YES	structural comparator
+9D5X	A	RVT-G2L4	Gammaproteobacteria G2L4 RT apo	411	none	NO	YES	X-ray	2.61	YES	structural comparator
+9E8Z	H	RVT-Retrons	E. coli retron Ec83 RT Q47526	312	none	YES	YES	EM	3.47	YES	structural comparator
+9NNB	B	RVT-Retrons (ph38 said UG3)	Retron I-A Ec78 RT A0AB38GW94	311	none on the RT chain	NO	YES	EM	2.75	YES	structural comparator	PtuB partner chain carries His6 + PreScission
+9VHE	A	RVT-Retrons	Retron Ec78 RT Q46666	311	none	NO	YES	EM	2.5	YES	structural comparator
+9WY8	A	RVT-UG12 (DRT6)	E. coli MBP-RT fusion P0AEX9	962	His6 + thrombin LVPRGS + PreScission + MBP	YES	YES	EM	2.69	YES	structural comparator after offset removal	a FUSION construct; native numbering must be restored before any residue comparison. thumb Jaccard 0.0
+9X94	A	RVT-Retrons	Retron Eco8 RT P0DV59	374	none	NO	YES	EM	2.57	YES	structural comparator
+9YFD	A	RVT-UG1 (DRT1)	E. coli DRT1 filament	1229	none	YES	YES	EM	2.6	YES	structural comparator	thumb Jaccard 0.0
+9Z6Z	A and H	two RTs: Drt3a RVT-UG3, Drt3b RVT-UG8 (ph38 said AbiK)	E. coli EcDRT3	426 / 650	Drt3a internal His6	YES - contributes TWO anchors	YES	EM	2.6	YES	structural comparator	one entry, two distinct RTs; thumb Jaccard 0.0
+8OZ7	PDB_8OZ7_1	RVT-AbiA	Lactococcus lactis AbiA	730	His6 + thrombin	YES	NO	X-ray	2.75	NO - anchor asset only	structural comparator after offset removal
+7R06	PDB_7R06_1	RVT-AbiK	L. lactis AbiK	601	none	YES	NO	EM	not recorded	NO	structural comparator
+7R08	PDB_7R08_1	RVT-AbiP2	Escherichia phage P2 RT	541	none	YES	NO	X-ray	3.10	NO	structural comparator
+7KFT	PDB_7KFT_2	RVT-CRISPR	Thiomicrospira sp. Cas6-RT-Cas1	984	none	YES	NO	EM	not recorded	NO	structural comparator	the only CRISPR-associated RT structure
+8UB7	PDB_8UB7_1	RVT-DGRs	Bordetella phage BPP-1 bRT	328	none	YES	NO	EM	3.2	NO	structural comparator	same protein as 8UBD; cluster
+9D4S	PDB_9D4S_1	RVT-G2L4	Gammaproteobacteria G2L4 RT	408	none	YES	NO	X-ray	2.77	NO	structural comparator	same protein as 9D5X; cluster
+9I2F	PDB_9I2F_2	RVT-Retrons	E. coli NCTC 86 retron Ec67	596	Strep WSHPQFEK	YES	NO	EM	2.80	NO	structural comparator after offset removal
+9N69	PDB_9N69_2	RVT-Retrons	E. coli RNA-directed DNA pol	311	none	YES	NO	EM	3.13	NO	structural comparator
+9L7P	PDB_9L7P_2	RVT-Retrons	Retron St85 family RT	311	none	YES (pool)	NO	EM	3.03	NO	structural comparator
+23OR	PDB_23OR_1	RVT-Retrons	Retron Eco8 RT	374	none	YES (pool)	NO	EM	3.11	NO	structural comparator	same protein as 9X94; cluster
+9LJE	PDB_9LJE_1	RVT-UG2	K. pneumoniae RNA-dep DNA pol	434	His6	YES	NO	EM	not recorded	NO	structural comparator after offset removal
+8BGJ	PDB_8BGJ_1	RVT-UG26	Caloramator australicus RC3	224	His6 + thrombin	YES	NO	X-ray	1.63	NO	structural comparator after offset removal
+9IOA	PDB_9IOA_2	RVT-UG28	E. coli RNA-dep DNA pol	499	none	YES	NO	EM	2.59	NO	structural comparator
+26CZ	PDB_26CZ_1	RVT-UG8	SUMO fusion expressed in S. cerevisiae	775	SUMO (recorded in RCSB entity description) + His6	YES	NO	EM	3.10	NO	structural comparator after offset removal	the one tag that is a RECORDED annotation rather than a regex inference
+1RTD	p66	viral - HIV-1 RT	HIV-1 reverse transcriptase p66	n/a	none	NO	NO	X-ray	n/a	YES	outgroup only	not an RVT family member
+SUMMARY_TOTAL	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	39 distinct RT-bearing PDB entries locally, 40 including the HIV-1 outgroup. The 26 anchors span 25 distinct entries because 9Z6Z contributes two RTs
+SUMMARY_CLASSES	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	Retron 12; RVT-GII 7; G2L/G2L4 4; UG 9 entries across UG1/2/3/8/12/15/26/28; Abi 3; DGR 2; CRISPR-associated 1; viral 2
+SUMMARY_ABSENT	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	ZERO non-LTR / R2-type structures and ZERO telomerase structures are available locally. RT0's defining claim is cross-class between group II intron and non-LTR RTs, so the comparison class required to test it has no local structural representative - this independently confirms estimand E09 as UNESTABLISHED
+SUMMARY_COVERAGE	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	21 of 38 RVT families have no grounded anchor of any kind, including all of UG4, UG5, UG6, UG7, UG9-UG11, UG13, UG16-UG25, UG27. The largest unrepresented are RVT-UG5 (6,439 corpus sequences), UG4 (4,705) and UG17 (4,702)
+SUMMARY_PRIOR_XVAL	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	d2j_boundary_crossval.tsv covers only 11 of 25 structures. Measured sequence-to-structure agreement is POOR at the thumb - Jaccard 0.0 for 24NC, 9WY8, 9YFD, 9Z6Z and 5G2X - and moderate at the fingers, 0.48-0.86. Any Stage 2C structural-correspondence expectation must be set against that prior, not against an assumption of agreement
+SUMMARY_TAGS	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	PROVENANCE WARNING: no expression-tag column exists in any landed or prior table. Every tag above except 26CZ's SUMO was measured by regex over deposited entity sequences in this session and is an inference from sequence, not a recorded annotation. Open item U11 is therefore still open and is now larger than the 7 His6 / 1 SUMO / 3 thrombin / 1 Strep that g3 recorded over anchors72 alone
+SUMMARY_DSSP	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	fingers/palm/thumb boundaries with DSSP already exist for 25 structures in MELISSA_DATA/crystal_structures/reference_boundaries.tsv, plus c6_boundary_donors.tsv (10 donors mapped to MSA columns), d2a_state_structure.tsv and a4_dyad_per_crystal.tsv. All are PRIOR artifacts and are comparator-only; none may define a sequence region

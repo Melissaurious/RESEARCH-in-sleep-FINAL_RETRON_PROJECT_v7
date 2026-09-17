@@ -1,0 +1,39 @@
+family	eligible_N	component_sizes	n_components_ge_5	passes_independence_rule	previously_used_in_construction	previously_used_in_development	eligible_as_fresh_candidate	reason
+AbiA	19		0	NO	YES	NO	NO	previously used - ineligible as a fresh holdout
+AbiK	5	5	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+AbiP2	12	12	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+CRISPR	129		0	NO	YES	NO	NO	previously used - ineligible as a fresh holdout
+DGRs	488		0	NO	YES	NO	NO	previously used - ineligible as a fresh holdout
+G2L	51	40/9/1/1	2	YES	NO	NO	YES	passes: >=2 components each >=5
+G2L4	8	8	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+GII	496		0	NO	YES	NO	NO	previously used - ineligible as a fresh holdout
+Retrons	95		0	NO	YES	NO	NO	previously used - ineligible as a fresh holdout
+UG1	31	30/1	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG10	8	2/2/1/1/1/1	0	NO	NO	NO	NO	fails: only 0 component(s) with >=5 sequences
+UG11	14	14	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG12	36	33/3	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG13	25	19/2/1/1/1/1	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG14	16	10/6	2	YES	NO	NO	YES	passes: >=2 components each >=5
+UG15	39	39	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG16	17	16/1	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG17	78	78	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG18	9	9	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG19	20	12/4/2/1/1	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG2	22	22	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG20	5	5	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG21	22	20/2	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG22	11	11	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG23	9	5/2/1/1	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG24	5	5	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG25	28	19/5/4	2	YES	NO	NO	YES	passes: >=2 components each >=5
+UG26	20	20	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG27	10	10	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG28	36	36	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG28b	14	14	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG3	86		0	NO	YES	NO	NO	previously used - ineligible as a fresh holdout
+UG4	45	45	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG5	67		0	NO	NO	YES	NO	previously used - ineligible as a fresh holdout
+UG6	13	9/1/1/1/1	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG7	77	76/1	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG8	83	83	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences
+UG9	17	13/4	1	NO	NO	NO	NO	fails: only 1 component(s) with >=5 sequences

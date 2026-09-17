@@ -1,0 +1,6 @@
+# Replicate identity binding, produced in production and re-verified by C6.
+# attempted == valid U failed, and valid & failed == empty, per class.
+control_class	n_attempted	n_valid	n_failed	failed_replicate_ids
+MONO	219	219	0	none
+DI	219	216	3	ADE85031.1_CRISPR#DI#0,ESQ17084.1_CRISPR#DI#0,WP_032822382.1_UG3#DI#0
+REV	219	219	0	none

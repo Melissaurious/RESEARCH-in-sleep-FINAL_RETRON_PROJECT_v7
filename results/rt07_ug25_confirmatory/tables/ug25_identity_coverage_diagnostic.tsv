@@ -1,0 +1,13 @@
+# POST-RUN DIAGNOSTIC, added after the one-shot gate. Changes no criterion and no
+# verdict. It exists because "median best identity 0.588" is misleading alone:
+# those hits cover ~2%% of the sequence, so they are short high-identity patches,
+# not sequence-level homology. This is why 0/28 link under the full rule.
+measure	value
+n_ug25_with_any_construction_hit	28 of 28
+best_hit_identity_median	0.5880
+best_hit_identity_max	0.8180
+min_coverage_at_best_hit_median	0.0210
+min_coverage_at_best_hit_max	0.0670
+link_rule_requires_min_coverage	0.50
+n_meeting_full_link_rule	0 of 28
+comparison_G2L_full_rule	28 of 51	G2L met the full rule for 28/51; UG25 for 0/28

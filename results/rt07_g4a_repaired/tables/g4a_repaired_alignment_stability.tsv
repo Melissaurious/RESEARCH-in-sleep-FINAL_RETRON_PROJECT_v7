@@ -1,0 +1,8 @@
+family	n_derivation	mafft_columns	muscle_columns	n_gapless_columns	median_entropy_mafft	median_entropy_muscle	n_distinct_dyad_columns	modal_dyad_column	n_seqs_at_modal_dyad_column	total_dyad_hits	denominator_n_derivation_sequences
+Retrons	50	1324	1740	92	1.627	0.918	2	618	43	44	50
+GII	50	866	997	33	2.396	2.035	5	394	50	54	50
+DGRs	50	873	1278	284	1.780	-0.000	4	525	45	52	50
+CRISPR	50	1418	1771	72	1.918	1.325	8	731	48	59	50
+UG3	47	704	784	201	2.069	1.819	5	371	47	52	47
+UG5	42	1269	1367	439	1.846	1.655	7	366	42	49	42
+AbiA	12	862	872	573	1.551	1.551	4	270	12	16	12

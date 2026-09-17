@@ -1,0 +1,13 @@
+population	membership_class	n	n_exact	pct_exact	median_best_identity	max_best_identity	n_no_hit	unit	denominator
+align000044	ANCHOR	72	1	1.39	0.2630	1.0000	2	old-seed sequence	72 ANCHOR members
+align000044	CANDIDATE	95	0	0.00	0.2680	0.7000	4	old-seed sequence	95 CANDIDATE members
+anchors72	ANCHOR	72	72	100.00	1.0000	1.0000	0	old-seed sequence	72 ANCHOR members
+anchors72	CANDIDATE	95	0	0.00	0.3210	0.7940	1	old-seed sequence	95 CANDIDATE members
+gold171	ANCHOR	72	44	61.11	1.0000	1.0000	1	old-seed sequence	72 ANCHOR members
+gold171	CANDIDATE	95	0	0.00	0.2710	0.5570	7	old-seed sequence	95 CANDIDATE members
+myrt1844	ANCHOR	72	0	0.00	0.5660	1.0000	0	old-seed sequence	72 ANCHOR members
+myrt1844	CANDIDATE	95	0	0.00	0.6640	1.0000	0	old-seed sequence	95 CANDIDATE members
+stage1_exact_rt	ANCHOR	72	51	70.83	1.0000	1.0000	0	old-seed sequence	72 ANCHOR members
+stage1_exact_rt	CANDIDATE	95	95	100.00	1.0000	1.0000	0	old-seed sequence	95 CANDIDATE members
+toro742	ANCHOR	72	0	0.00	0.3720	1.0000	44	old-seed sequence	72 ANCHOR members
+toro742	CANDIDATE	95	0	0.00	0.3300	0.8070	60	old-seed sequence	95 CANDIDATE members

@@ -1,0 +1,9 @@
+set_a	set_b	prior_reported	question
+anchors72	seed_all167	72 of 72, 100% (d_instrument_audit a1_seed_overlap.tsv)	Is the anchor set independent of the model it validates?
+gold175_uniq	seed_all167	44 of 171, 25.731% (a1_seed_overlap.tsv)	How much of the gold panel did the model already see?
+retron	seed_all167	49 of 78287, 0.0626% (a1_seed_overlap.tsv)	Is the retron population effectively unseen by the model?
+nonretron	seed_all167	97 of 423274, 0.0229% (a1_seed_overlap.tsv)	As above for the non-retron population.
+gold175_uniq	anchors72	not previously measured	Do the two prior evaluation sets overlap each other?
+anchors72	retron	not previously measured	Are the anchors drawn from the population they are used to score?
+gold175_uniq	retron	not previously measured	As above for the gold panel.
+gold175	gold175_uniq	175 vs 171 by name	Does the name of the gold panel match its content?

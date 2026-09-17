@@ -1,0 +1,5 @@
+parameter	value	derivation
+CAT_STATE	262	modal HMM state of [YF].DD across 210 dyad-bearing construction sequences
+CONSTRUCTION_AGREEMENT	0.9857	fraction with a motif at CAT_STATE (predeclared minimum 0.8)
+AGREEMENT_MIN	0.8	predeclared falsification condition
+ANCHOR_MEMBERSHIP	see tables	CAT_STATE is evaluated over all 471 states, not restricted to the 150 ALL_PARTNERS anchors

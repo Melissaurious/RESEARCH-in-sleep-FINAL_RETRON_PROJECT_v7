@@ -1,0 +1,5 @@
+component	subset	n_sequences	median_anchors_placed	median_pct_placed	median_kendall_tau	n_abstained	n_dyad_within_placed
+0	evaluation_reference	42	82	55.0	1.0000	1	38
+1	challenge	21	80	53.3	1.0000	1	18
+2	challenge	3	100	66.7	1.0000	0	3
+3	challenge	1	106	70.7	1.0000	0	1

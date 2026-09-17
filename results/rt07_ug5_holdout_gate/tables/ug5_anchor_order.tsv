@@ -1,0 +1,7 @@
+target	target_kind	n_anchors_mapped	monotone_order	mapped_coordinate_span
+UG5_challenge	REAL	135	YES	115-335
+UG5_evalref	REAL	148	YES	79-347
+UG5_challenge_SHUF	DECOY	0	YES	
+UG5_evalref_SHUF	DECOY	11	YES	475-485
+UG5_comp1	REAL	135	YES	116-341
+UG5_comp2	REAL	54	YES	269-331

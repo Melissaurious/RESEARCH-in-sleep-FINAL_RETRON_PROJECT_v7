@@ -1,0 +1,8 @@
+criterion	definition	observed	denominator	result	reason
+C1	every qualifying component (>= 5 seqs) median MAPPED fraction >= T1 = 0.32	comp0=0.5133; comp1=0.5933	2 qualifying components	PASS	all qualifying components >= T1
+C2	all calls use the frozen posterior rule (MAPPED requires p >= PP_HI)	PP_HI=0.75 PP_LO=0.5 read from frozen control table	28 sequences	PASS	thresholds loaded from SUPPORT_RULE_FROZEN.tsv; not restated in the gate
+C3	among sequences whose CAT_STATE(262) call is exactly MAPPED, fraction beginning [YF].DD >= 0.8	26/27 = 0.9630	27 CAT_STATE-MAPPED sequences	PASS	threshold 0.8
+C4	|median difference between qualifying components| <= D_MAX = 0.48  (WEAK: same-population null D_RANDOM = 0.067)	0.0800	2 qualifying components	PASS	a C4 pass is close to uninformative and is NOT evidence
+C5	every abstention carries a reason from the closed vocabulary; all four call classes representable	reasons={'OK': 28} calls={'MAPPED': 2400, 'AMBIGUOUS': 375, 'UNSUPPORTED': 297, 'DELETED_STATE': 1128}	28 sequences	PASS	closed vocabulary respected
+C6	per-class separation and exact identity accounting (one class violating fails C6 even if pooled is clean)	PASS: no violations	252 control replicates	PASS	per-class, never pooled
+C7	no threshold changed after UG25 was opened	all parameters read from the frozen control tables at run time	n/a	PASS	the gate restates no threshold of its own

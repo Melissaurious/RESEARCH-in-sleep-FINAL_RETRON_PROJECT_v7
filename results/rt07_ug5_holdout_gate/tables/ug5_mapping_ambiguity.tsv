@@ -1,0 +1,7 @@
+target	n_anchors_mapped	n_anchors_sharing_a_target_position	pct_ambiguous
+UG5_challenge	135	0	0.0
+UG5_evalref	148	0	0.0
+UG5_challenge_SHUF	0	0	0.0
+UG5_evalref_SHUF	11	0	0.0
+UG5_comp1	135	0	0.0
+UG5_comp2	54	0	0.0

@@ -1,0 +1,8 @@
+family	n_partner_families	n_positions_aligned_to_any_partner	full_hhm_consensus_length	n_ALL_PARTNERS	n_MULTI_FAMILY_2_to_n-1	n_SINGLE_PARTNER	pct_ALL_PARTNERS_of_covered	pct_ALL_PARTNERS_of_full_consensus	pct_ALL_or_MULTI_of_covered
+Retrons	6	260	475	102	155	3	39.2	21.5	98.8
+GII	6	370	539	148	206	16	40.0	27.5	95.7
+DGRs	6	331	406	111	206	14	33.5	27.3	95.8
+CRISPR	6	286	796	137	147	2	47.9	17.2	99.3
+UG3	6	342	421	115	174	53	33.6	27.3	84.5
+UG5	6	345	1014	76	182	87	22.0	7.5	74.8
+AbiA	6	249	708	75	142	32	30.1	10.6	87.1

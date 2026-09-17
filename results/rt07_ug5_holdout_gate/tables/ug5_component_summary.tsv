@@ -1,0 +1,5 @@
+component_index	subset	n_sequences	median_anchors_placed	median_pct_placed	n_monotone	n_with_ambiguity	n_dyad_within_anchors	n_abstained
+0	evaluation_reference	42	88	59.0	15	0	38	0
+1	challenge	21	86	57.3	13	2	19	0
+2	challenge	3	105	70.0	2	0	3	0
+3	challenge	1	112	74.7	1	0	1	0

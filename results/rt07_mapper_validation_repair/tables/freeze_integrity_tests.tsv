@@ -1,0 +1,10 @@
+test	classification	result	detail
+F1_intact_bundle_verifies	FALSIFIABLE_EMPIRICAL_TEST	PASS	exit=0
+F1b_root_hash_reproducible	FALSIFIABLE_EMPIRICAL_TEST	PASS	ROOT_SHA256 2cb4333db38a vs ROOT_SHA256 2cb4333db38a
+F1c_build_and_verify_agree	FALSIFIABLE_EMPIRICAL_TEST	PASS	2cb4333db38ad652/2cb4333db38ad652
+F2_added_file_detected	FALSIFIABLE_EMPIRICAL_TEST	PASS	exit=1
+F3_changed_file_detected	FALSIFIABLE_EMPIRICAL_TEST	PASS	exit=1
+F4_removed_file_detected	FALSIFIABLE_EMPIRICAL_TEST	PASS	exit=1
+F5_rename_detected	FALSIFIABLE_EMPIRICAL_TEST	PASS	exit=1
+F6_lock_blocks_writes	FALSIFIABLE_EMPIRICAL_TEST	PASS	locked=True write_blocked=True unlock_ok=True
+F7_sandbox_artefacts_excluded	IMPLEMENTATION_INVARIANT	PASS	'.claude/' ignored by policy

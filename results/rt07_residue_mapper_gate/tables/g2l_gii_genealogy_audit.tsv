@@ -1,0 +1,15 @@
+assessment	measurement	value	interpretation
+exact_sequence_overlap_all_construction	unique aa sequences shared with any of the 6 construction derivation sets	0	no G2L sequence is in construction
+exact_sequence_overlap_GII_construction	unique aa sequences shared with the 50 GII construction sequences	0	no G2L sequence is in the GII set
+g2l_ids_in_construction_sets	G2L identifiers present in any construction derivation set	0	no identifier-level contribution
+g2l_ids_by_content_scan	G2L ids found by scanning construction sequence and alignment objects	0	no G2L-derived object entered construction
+best_identity_to_GII_construction_max	max best identity, G2L -> GII construction	0.636	2 sequences reach >=50 percent
+best_identity_to_GII_construction_median	median best identity over all 51 G2L sequences	0.326	close, but below the 50 percent level
+best_identity_to_GII_construction_min	min best identity	0.296	every G2L sequence has a GII relative
+n_g2l_ge50pct_to_GII_construction	G2L sequences at >=50 percent identity to a GII construction sequence	2 of 51	a small high-identity tail
+n_g2l_ge30pct_to_GII_construction	G2L sequences at >=30 percent identity (the link-rule identity leg)	48 of 51	G2L sits mostly above the link-rule identity threshold relative to GII
+myrt_model_relationship	does G2L have its own myRT model distinct from GII	YES - RVT-G2L is a separate model from RVT-GII-I and RVT-GII-II in RVT-All.hmm	distinct family model, not a GII sub-model
+source_classification	how the source classification treats G2L	a separate family label in the myRT 45-model set; the name denotes group-II-LIKE	distinct family, adjacent lineage
+contribution_to_anchor_selection	did any G2L object enter anchor selection	NO - anchors are ALL_PARTNERS positions over the 6 construction families only	clean
+contribution_to_threshold_setting	did any G2L object enter placement-rule or threshold development	NO - development used Retrons, DGRs, CRISPR, UG3, AbiA	clean
+contribution_to_mapper_development	did any G2L object enter mapper development or unit tests	NO - unit tests used the GII HMM consensus; construction validation used the 6 construction families	clean

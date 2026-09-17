@@ -1,0 +1,8 @@
+family	lineage	N_eligible	pilot_N	n_derivation	n_development	n_challenge	n_cdhit_clusters_at_0.50	n_singleton_clusters	split_mode	median_len_aa
+Retrons	Retron	95	90	50	14	26	71	54	FULL_SPLIT	382
+GII	GII_like	496	111	47	24	40	149	73	FULL_SPLIT	478
+DGRs	DGR	488	97	50	21	26	194	109	FULL_SPLIT	367
+CRISPR	CRISPR	129	90	50	14	26	77	51	FULL_SPLIT	658
+UG3	UG	86	86	47	13	26	60	44	FULL_SPLIT	422
+UG5	UG	67	67	37	10	20	36	30	FULL_SPLIT	1000
+AbiA	Abi	19	19	11	0	8	15	11	SMALL_FAMILY	630

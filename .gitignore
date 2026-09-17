@@ -38,3 +38,44 @@ __pycache__/
 # They are not files, never part of a bundle, and `git add` refuses them.
 results/**/.claude/
 results/**/.mcp.json
+
+# ---------------------------------------------------------------------------------------
+# Added 2026-09-17 with the GitHub handoff. Rules are by LOCATION and PURPOSE, never by
+# extension: a blanket *.hmm / *.tsv / *.parquet rule would hide the frozen profile HMM,
+# the frozen control tables, the anchor set and every compact canonical summary, all of
+# which are load-bearing and must stay tracked.
+# ---------------------------------------------------------------------------------------
+
+# Large local corpus. Registered in data/README.md and docs/DATASET_REGISTRY.md; ~1.8 GB.
+MELISSA_DATA/
+
+# Harness, editor and shell artefacts injected into the repo root by the sandbox.
+# All are 0-byte placeholders or local tool config; none is project content.
+.claude/
+**/.claude/
+.mcp.json
+**/.mcp.json
+/.bashrc
+/.bash_profile
+/.profile
+/.zshrc
+/.zprofile
+/.gitconfig
+/.ripgreprc
+/.idea
+/.vscode
+/etc
+
+# Per-gate scratch INSIDE a landed bundle: alignment intermediates, HHsearch output and
+# per-shard working files. Regenerable from the bundle's own run.sh. ~98 MB across g4a and
+# ug5. The single exception is the frozen profile HMM, which defines the production
+# coordinate system and is re-included immediately below.
+results/**/work/
+# git cannot re-include a file whose parent directory is excluded, so the directory is
+# un-excluded, its contents re-excluded, and only the frozen ruler negated back in.
+!results/rt07_g4a_repaired/work/
+results/rt07_g4a_repaired/work/*
+!results/rt07_g4a_repaired/work/GII.deriv.hmm
+
+# Virtualenvs (the dbchar workbench carries a 72 MB .venv).
+**/.venv/

@@ -1,0 +1,15 @@
+quantity	value	what_it_means	unit	frame	denominator
+prior_frame_ltra_extent	53-361	the whole prior RT0-RT7 frame, in LtrA residues	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+prior_blocks_total	29	blocks in the prior frame table	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+prior_blocks_fixed_by_published_motif	4	blocks whose position is anchored to a published motif rather than interpolated	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+prior_blocks_order_interpolated	24	blocks placed by interpolating the order between anchored blocks	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+prior_block_named_RT0	NONE	there is no block named RT0 in the prior frame; the N-terminal interval is named RT0-RT1	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+prior_RT0_proximal_blocks_ltra_extent	53-87	the region whose occupancy the prior work reported as the RT0 result	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+prior_RT0_proximal_blocks_all_interpolated	YES	whether any published motif fixes the region the RT0 number was measured on	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+blocker_rt0_span_ltra	1-85	the LtrA region Blocker 2005 assigns to RT0, from rt07_g1 assignment B02	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+blocker_rt0_conserved_alanine_ltra	39	the conserved RT0 alanine, the single most specific RT0 landmark available	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+prior_frame_covers_that_alanine	NO	whether the region the prior RT0 number was measured on contains the RT0 landmark	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+prior_frame_starts_n_residues_after_the_alanine	14	how far the prior frame begins downstream of the RT0 landmark	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+g2_region_covering_that_alanine	1	whether the independently reconstructed g2 regions cover the RT0 landmark	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+object_verdict	OBJECT_MISMATCH	the prior RT0 number and the historically relevant RT0 region are different objects if the prior frame excludes the landmark that the independent reconstruction covers	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate
+rt0_scope_limit_carried	U01 remains open; the defining cross-class claim was NOT_TESTABLE_ON_SUBSTRATE in g2	RT0's defining source (Malik et al. 1999) is still unheld, and a group II intron alignment cannot test a claim about what RT0 is NOT conserved in	RT0 audit quantity	LtrA P0A3U0 residue numbering	n/a - object audit, not a rate

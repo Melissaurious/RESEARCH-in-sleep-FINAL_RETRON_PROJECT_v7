@@ -1,0 +1,8 @@
+candidate_rule	min_domain_bitscore	n_dev_sequences	real_median_anchors	real_max_anchors	real_pct_with_any_placement	decoy_median_anchors	decoy_max_anchors	decoy_pct_with_any_placement	median_separation
+envelope_only_v2_rule	none	817	150	150	99.9	0	150	21.7	150
+score_ge_0	0.0	817	150	150	99.8	0	39	1.7	150
+score_ge_5	5.0	817	150	150	99.6	0	9	0.1	150
+score_ge_10	10.0	817	150	150	99.3	0	0	0.0	150
+score_ge_20	20.0	817	150	150	98.2	0	0	0.0	150
+score_ge_30	30.0	817	150	150	93.9	0	0	0.0	150
+score_ge_50	50.0	817	150	150	76.5	0	0	0.0	150

@@ -1,0 +1,7 @@
+parameter	value	derivation
+CAT_STATE	262	modal HMM state of MAPPED [YF].DD occurrences over 210 dyad-bearing construction sequences
+CAT_STATE_COUNT	207	MAPPED motif occurrences at CAT_STATE
+RUNNER_UP_STATE	136	5 MAPPED occurrences
+CONSTRUCTION_AGREEMENT	0.9857	207/210, predeclared minimum 0.8
+AGREEMENT_MIN	0.8	predeclared falsification condition
+N_EXCLUDED_NON_MAPPED	9	landed in catalytic_excluded_occurrences.tsv

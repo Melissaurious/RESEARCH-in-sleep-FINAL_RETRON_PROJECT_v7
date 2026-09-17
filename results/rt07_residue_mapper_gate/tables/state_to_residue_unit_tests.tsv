@@ -1,0 +1,7 @@
+test	result	detail
+T1_consensus_identity	FAIL	L=471; states not mapping 1:1 = 1
+T2_internal_deletion	PASS	states 50-59 deleted = 10/10; state100 residue = 90 (expected ~90)
+T3_insertion	PASS	residues between state80 and 81 = 25 (expected 25); insert runs >=20 = [25]
+T4_terminal_clipping	PASS	N-term deleted 40/40, C-term 40/40, middle matched 40/40
+T5_coordinate_reversibility	PASS	residue_index -> amino-acid mismatches = 0
+T6_shuffled_behaviour	PASS	only 1 states mapped - acceptable

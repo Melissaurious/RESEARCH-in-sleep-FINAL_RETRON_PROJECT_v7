@@ -1,0 +1,9 @@
+test	classification	result	detail	passes_when	fails_when
+S1_complete_identity_accounting_passes	FALSIFIABLE_EMPIRICAL_TEST	PASS	PASS []	attempted == valid U failed, disjoint, typed, separated -> PASS	a fully correct control set is rejected, making every negative case meaningless
+S2_partial_failures_reconcile	FALSIFIABLE_EMPIRICAL_TEST	PASS	PASS []	80 valid + 4 failed = 84 attempted, disjoint, all ids known -> PASS	correct partial-failure accounting is rejected
+S3_empty_class_fails	FALSIFIABLE_EMPIRICAL_TEST	PASS	FAIL ['EMPTY_CONTROL_CLASS:DI (0 valid replicates) -> FAIL CLOSED']	a class with zero valid replicates fails closed	the gate proceeds on the surviving classes
+S4_single_class_violation_fails_despite_clean_pooled	FALSIFIABLE_EMPIRICAL_TEST	PASS	FAIL pooled_p95=0	one class touching the real minimum fails even when pooled is clean	pooling hides a single-class violation
+S5_high_p95_reported_not_failed	FALSIFIABLE_EMPIRICAL_TEST	PASS	PASS REV_p95=10	a class with p95>0 passes when separation holds; its p95 is reported	p95 becomes a pass condition, making C6 unpassable on real data
+S6_canonical_order_accepted	FALSIFIABLE_EMPIRICAL_TEST	PASS	order=Retrons|GII|DGRs|CRISPR|UG3|AbiA seed=20260917	the historical family order and seed are accepted	the canonical pair is rejected, blocking every run
+S7_reordered_family_list_fails_closed	FALSIFIABLE_EMPIRICAL_TEST	PASS	sorted order rejected=True	an accidental sort of the family list fails closed	a reorder passes silently, changing which di-shuffles fail
+S8_seed_drift_fails_closed	FALSIFIABLE_EMPIRICAL_TEST	PASS	seed drift rejected=True	a changed RNG seed fails closed	a seed change passes silently

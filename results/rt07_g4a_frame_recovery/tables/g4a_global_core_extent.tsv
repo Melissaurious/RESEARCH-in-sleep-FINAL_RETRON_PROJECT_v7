@@ -1,0 +1,8 @@
+family	n_global_candidate_positions	consensus_index_span	span_width	pct_of_span_that_is_global
+Retrons	81	107-200	94	86.2
+GII	70	180-283	104	67.3
+DGRs	89	155-256	102	87.3
+CRISPR	160	73-273	201	79.6
+UG3	85	168-270	103	82.5
+UG5	68	195-300	106	64.2
+AbiA	87	158-285	128	68.0

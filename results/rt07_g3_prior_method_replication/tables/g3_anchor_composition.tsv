@@ -1,0 +1,8 @@
+property	value	pct_of_set	why_it_matters	members	unit	denominator
+id_prefix:RETRON	42	58.33	carries no structure of its own		anchor	72 anchors
+id_prefix:PDB	26	36.11	PDB entries are the only members with an actual structure; the rest are sequence-propagated		anchor	72 anchors
+id_prefix:UNIPROT	4	5.56	carries no structure of its own		anchor	72 anchors
+expression_tag:His6	7	9.72	A purification tag is vector-derived sequence. Residue numbering taken from a tagged construct is offset from native numbering by the length of the tag, so any boundary read off it is shifted unless the offset was removed.	PDB_26CZ_1,PDB_6AR1_1,PDB_8BGJ_1,PDB_8OZ7_1,PDB_9LJE_1,PDB_9WY8_1,PDB_9Z6Z_1	anchor	72 anchors
+expression_tag:SUMO/SMT3	1	1.39	A purification tag is vector-derived sequence. Residue numbering taken from a tagged construct is offset from native numbering by the length of the tag, so any boundary read off it is shifted unless the offset was removed.	PDB_8OZ7_1	anchor	72 anchors
+expression_tag:thrombin_LVPRGS	3	4.17	A purification tag is vector-derived sequence. Residue numbering taken from a tagged construct is offset from native numbering by the length of the tag, so any boundary read off it is shifted unless the offset was removed.	PDB_8BGJ_1,PDB_8OZ7_1,PDB_9WY8_1	anchor	72 anchors
+expression_tag:Strep_WSHPQFEK	1	1.39	A purification tag is vector-derived sequence. Residue numbering taken from a tagged construct is offset from native numbering by the length of the tag, so any boundary read off it is shifted unless the offset was removed.	PDB_9I2F_2	anchor	72 anchors

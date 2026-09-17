@@ -1,0 +1,7 @@
+family	n_sequences	median_anchor_state_callability	median_anchor_deletion_rate	coordinate_reversibility_ok	monotone_mapped_order_IMPLEMENTATION_INVARIANT	dyad_within_3aa_of_a_mapped_anchor
+Retrons	40	0.713	0.287	40/40	40/40	1/40
+GII	40	0.953	0.047	40/40	40/40	3/40
+DGRs	40	0.927	0.073	40/40	40/40	4/40
+CRISPR	40	0.947	0.053	40/40	40/40	6/40
+UG3	40	0.733	0.267	40/40	40/40	0/40
+AbiA	19	0.733	0.267	19/19	19/19	4/19

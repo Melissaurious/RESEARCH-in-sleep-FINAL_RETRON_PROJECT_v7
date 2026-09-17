@@ -294,3 +294,47 @@ Stage 1 may propose registered reusable derived artifacts such as:
 These are created only after their producing bundles land, carry hashes, and are registered.
 The locus table is the canonical retained representation; downstream “clean” datasets are
 declared views/queries over it.
+
+## Registered derived assets — Stage 2 (`g5a` census and `g5` catalogue application)
+
+Added 2026-09-17. Full registry with sizes, row counts and sha256:
+**`docs/DATASET_REGISTRY.md`**. All are **LOCAL ONLY** — gitignored under `data/*`, never
+pushed.
+
+### `data/derived/rt07_g5a/` — the frozen eligibility partition
+
+Produced by `results/rt07_g5a_eligibility_census/`. Fixes the g5/g6 denominator.
+
+| file | rows | unit | sha256 |
+|---|---|---|---|
+| `g5a_eligibility_partition.tsv.gz` | 501,561 | exact RT | `249e334b04b2db79…` |
+| `g5a_eligible_ids.txt.gz` | 369,381 | exact RT | `6f2028fa46563ebe…` |
+| `g5a_ineligible_records.tsv.gz` | 132,180 | exact RT | `9fd48b77df6d8e3e…` |
+
+`G5_ELIGIBLE_N = 369,381` of 501,561. The 132,180 excluded records (108,439 below the frozen
+250 aa floor, 23,741 carrying a non-standard residue) are **retained in full with metadata**,
+never dropped.
+
+### `data/derived/rt07_g5/` — the canonical mapped dataset
+
+Produced by `results/rt07_g5_catalogue_application/` with instrument
+`rtmap-1.0.0/53a1e738a19b3896`. This is what `g6` consumes.
+
+| file | rows | unit | sha256 |
+|---|---|---|---|
+| `g5_states.parquet` | 55,407,150 | exact RT × frozen state | `5bdcb6e3ef4344da…` |
+| `g5_sequences.parquet` | 369,381 | exact RT | `55bd268a1b8ff01b…` |
+| `g5_catalytic.parquet` | 369,381 | exact RT | `95dcb20aac95946c…` |
+| `g5_ineligible.parquet` | 132,180 | exact RT | `253a092fd4d72b15…` |
+| `g5_run_failures.parquet` | 0 | failed record | `4b1d1ae5ce9033c3…` |
+| `g5_metadata_crosswalk.parquet` | 501,561 | exact RT | `02c6e54d12e4a1c2…` |
+
+All joins are on `rt_hash`. The crosswalk covers the whole catalogue with an
+`in_g5_eligible` flag, so any denominator can be taken without re-deriving eligibility.
+
+Verify with `bash results/rt07_g5_catalogue_application/verify.sh`.
+
+### Scratch not to delete yet
+
+`ARIS_OUTPUT/rt07_g5/` (12 GB) holds the 512 per-shard FASTAs, TSVs and `DONE` sidecars —
+the shard-level audit evidence. Deletion conditions are in `docs/DATASET_REGISTRY.md` §4.

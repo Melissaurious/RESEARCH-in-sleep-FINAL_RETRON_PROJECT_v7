@@ -1,0 +1,8 @@
+artifact	script	command	unit	denominator
+tables/preg4_seed_identity.tsv	scripts/s01_seed_lineage.py	see run.sh: s01_seed_lineage.py	seed property	167 sequences in all167.faa
+tables/preg4_sequence_lineage.tsv	scripts/s01_seed_lineage.py	see run.sh: s01_seed_lineage.py	seed member	167 sequences in all167.faa
+tables/preg4_leakage_audit.tsv	scripts/s02_leakage_audit.py	see run.sh: s02_leakage_audit.py	old-seed sequence vs one population	167 seed sequences vs 66 in align000044
+tables/preg4_leakage_summary.tsv	scripts/s02_leakage_audit.py	see run.sh: s02_leakage_audit.py	old-seed sequence	167 sequences in all167.faa
+tables/preg4_identity_distribution.tsv	scripts/s02_leakage_audit.py	see run.sh: s02_leakage_audit.py	old-seed sequence	72 ANCHOR members
+tables/preg4_model_lineage.tsv	scripts/s03_model_lineage.py	see run.sh: s03_model_lineage.py	prior model	profile HMMs found under the audited prior trees
+tables/preg4_cand_provenance.tsv	scripts/s04_cand_provenance.py	see run.sh: s04_cand_provenance.py	CAND_* seed member	95 CAND_* members of all167.faa

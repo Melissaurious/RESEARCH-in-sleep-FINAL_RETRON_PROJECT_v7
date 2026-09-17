@@ -1,0 +1,30 @@
+term	status	evidence_required_to_use_it	permitted_context	why
+operational conserved-region localization	ALLOWED	a landed per-sequence localization table with call states	any arm	names what the instrument actually does
+landmark localization offset	ALLOWED	Q03 - observed catalytic [YF]xDD position in the query, and the predicted interval, both landed	any arm, on sequences carrying the motif	the offset is measured against an anchor determined by the query's own residues
+operational_boundary_stability_interval	ALLOWED	Q09 - the declared perturbation ensemble and its percentiles	any region declared STABLE under AC3	names the interval as a property of the procedure, which is what it is
+ordered-architecture recovery rate	ALLOWED	Q02 - the ordered fraction with its denominator	any arm	a rate over a declared population
+transferability	ALLOWED	Q11-Q13 with the identity-distance or family stratum named	A3, A4	the launcher's own question is how reproducibly the definitions transfer
+structural correspondence	ALLOWED	Q14 - containment of the predicted dyad region in the palm	A2 only, after detector freeze	a containment statement between two representations
+derivational reproducibility	ALLOWED	A1 - rerun from landed inputs	A1 only	self-consistency under its own name
+not detected (inspectable)	ALLOWED	the launcher section 7a state plus the inspectability field	any arm	distinguishes four things a bare 'absent' would conflate
+candidate core substrate	ALLOWED	the landed coordinate and extraction tables	g5 onward	failed-review repair 15
+boundary accuracy	PROHIBITED	no evidence can license it in Stage 2	none	Q08 - no population supplies true region boundaries; declared UNESTABLISHED
+start accuracy / end accuracy	PROHIBITED	as above	none	Q06, Q07
+domain boundary	PROHIBITED	none	none	the sources state a procedure and no residue edges; g2 declares edge_precision_claim=INTERVAL_ONLY for all six regions
+validated	PROHIBITED	none in Stage 2	none	no arm supplies held-out truth for the quantity being predicted
+held-out accuracy	PROHIBITED	none	none	A2 and A3 are comparator and challenge arms; A4 has no boundary truth
+calibrated	RESTRICTED	Q15 only - the dyad-carrying region's presence event, on the named population	one sentence, naming the region and the population	calibration needs event labels and exactly one event has them
+boundary calibration	PROHIBITED	none	none	Q16 - declared UNESTABLISHED
+independent	RESTRICTED	only where independence FROM THE NEW DERIVATION SUBSTRATE has been measured and reported	A2 sequences, A4 sequences, each with its measured identity to the 66 derivation proteins	anchors72, CAND95 and the GOLD171 remainder are not independent of the old lineage, and independence from the OLD seed is not the relevant question for the new detector
+the 127 as a clean gold set	PROHIBITED	none	none	the 44-member overlap routes entirely through anchors72 and is disproportionately the activity-demonstrated part; removing it changes the panel's evidence composition
+ground truth	PROHIBITED	none	none	nothing in this track is ground truth for region boundaries
+RT0 occupancy	PROHIBITED	none	none	g2 created no RT0 block; g3 returned OBJECT_MISMATCH; AC8
+RT0-RT7 occupancy as one number	PROHIBITED	none	none	launcher section 1 forbids a single number that hides the RT0 distinction; and RT5/RT6 do not separate
+seven subdomains / the seven-way partition	PROHIBITED	none	none	block count never separates from a column-permutation null at any gap tested; 24 of 28 prior blocks were order_interpolated
+six regions, as a fixed object	PROHIBITED	none	none	six is the reporting point of a sweep that also returns 5 to 16; the count is a free parameter, not a finding
+absence	RESTRICTED	only with NOT_DETECTED_INSPECTABLE plus a passing positive control on an appropriate substrate	where both exist	governance requires a positive control before any zero
+RT1	RESTRICTED	may be named as an unresolved mapping only	the historical mapping table	U08 is deferred to the operator; RT1 may not be rescued by tuning and its interpretation is not settled by g4
+general RT detector	PROHIBITED	none	none	the derivation substrate is 66 group II intron ORFs; nothing supports a universal claim
+phylogeny-ready	PROHIBITED	none	none	failed-review repair 15 - orthology, recombination, homologous-column, masking, missingness and compositional checks are unspecified
+72/72 concordance	PROHIBITED	none	none	it is a sample size, not a concordance; banned by launcher section 5b
+structure-validated anchors	PROHIBITED	none	none	72 of 72 are seed members, only 26 have a structure, and the set contains tagged constructs

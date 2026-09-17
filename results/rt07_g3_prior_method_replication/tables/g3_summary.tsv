@@ -1,0 +1,18 @@
+quantity	value	source_table	unit	denominator
+prior_claims_audited	13	g3_prior_claim_verdicts.tsv	prior claim	see the source table
+verdict_reproduced_same_object_same_frame	2	g3_prior_claim_verdicts.tsv	prior claim	see the source table
+verdict_partially_reproduced	1	g3_prior_claim_verdicts.tsv	prior claim	see the source table
+verdict_circular_or_seed_dependent	3	g3_prior_claim_verdicts.tsv	prior claim	see the source table
+verdict_object_mismatch	2	g3_prior_claim_verdicts.tsv	prior claim	see the source table
+verdict_frame_mismatch	1	g3_prior_claim_verdicts.tsv	prior claim	see the source table
+verdict_withdrawn_by_prior_work	2	g3_prior_claim_verdicts.tsv	prior claim	see the source table
+verdict_not_testable	2	g3_prior_claim_verdicts.tsv	prior claim	see the source table
+anchors72_in_seed_pct	100.00	g3_set_overlap.tsv	percent of anchors72	see the source table
+anchors72_also_in_retron_population_pct	63.89	g3_set_overlap.tsv	percent of anchors72	see the source table
+gold175_uniq_in_seed_pct	25.73	g3_set_overlap.tsv	percent of the gold panel	see the source table
+gold_panel_members_outside_the_seed	127	g3_set_overlap.tsv	sequence	see the source table
+prior_landmarks_inside_a_g2_region	27/28	g3_prior_region_correspondence.tsv	landmark placement	see the source table
+prior_frame_blocks_fixed_by_a_published_motif	4/29	g3_prior_frame_correspondence.tsv	prior frame block	see the source table
+prior_labels_collapsing_onto_one_g2_region	RT5 and RT6	g3_prior_region_correspondence.tsv	prior label	see the source table
+rt0_object_verdict	OBJECT_MISMATCH	g3_rt0_object_audit.tsv	object comparison	see the source table
+controls_pass	4	g3_controls.tsv	control	see the source table

@@ -1,0 +1,17 @@
+artifact	script	command	unit	denominator
+tables/g3_set_identity.tsv	scripts/s02_contamination.py	see run.sh: s02_contamination.py	sequence set	prior sets declared in control/
+tables/g3_set_overlap.tsv	scripts/s02_contamination.py	see run.sh: s02_contamination.py	exact protein sequence (sha256 over residues)	72 unique sequences in anchors72
+tables/g3_anchor_composition.tsv	scripts/s02_contamination.py	see run.sh: s02_contamination.py	anchor	72 anchors
+tables/g3_frame_identity.tsv	scripts/s03_frame_correspondence.py	see run.sh: s03_frame_correspondence.py	prior frame	5 prior frames declared
+tables/g3_matchstate_to_ltra.tsv	scripts/s03_frame_correspondence.py	see run.sh: s03_frame_correspondence.py	HMM match state	305 match states in the model
+tables/g3_prior_region_correspondence.tsv	scripts/s03_frame_correspondence.py	see run.sh: s03_frame_correspondence.py	prior region mapped onto shared LtrA residues	6 independently reconstructed g2 regions
+tables/g3_prior_frame_correspondence.tsv	scripts/s04_prior_frame_and_rt0.py	see run.sh: s04_prior_frame_and_rt0.py	prior frame block mapped onto shared LtrA residues	29 prior frame blocks
+tables/g3_rt0_object_audit.tsv	scripts/s04_prior_frame_and_rt0.py	see run.sh: s04_prior_frame_and_rt0.py	RT0 audit quantity	n/a - object audit, not a rate
+tables/g3_prior_claim_verdicts.tsv	scripts/s05_verdicts.py	see run.sh: s05_verdicts.py	prior claim	13 prior claims audited
+tables/g3_controls.tsv	scripts/s06_controls_and_summary.py	see run.sh: s06_controls_and_summary.py	control	4 controls declared before measuring
+tables/g3_summary.tsv	scripts/s06_controls_and_summary.py	see run.sh: s06_controls_and_summary.py	prior claim	see the source table
+tables/g3_handoff_to_g4.tsv	scripts/s06_controls_and_summary.py	see run.sh: s06_controls_and_summary.py	design requirement	6 requirements raised by g3
+tables/g3_unresolved_carried_forward.tsv	scripts/s06_controls_and_summary.py	see run.sh: s06_controls_and_summary.py	open question	6 items carried
+tables/g3_resolved_values.tsv	scripts/assemble_report.py	see run.sh: assemble_report.py	resolved report value	29 declared lookups
+REPORT.md	scripts/assemble_report.py	see run.sh: assemble_report.py	report	n/a - narrative; every number resolves to a landed table
+REPORT.html	scripts/assemble_report.py	see run.sh: assemble_report.py	report	n/a - narrative; every number resolves to a landed table

@@ -1,0 +1,15 @@
+# C6 verdict: PASS
+# MONO intended null: amino-acid composition preserved, all order destroyed
+# MONO generation failures (0), NOT replaced: none
+# DI intended null: every adjacent-pair (dipeptide) count preserved, longer-range order destroyed
+# DI generation failures (0), NOT replaced: none
+# REV intended null: composition, length and all local pair structure preserved, read backwards
+# REV generation failures (0), NOT replaced: none
+# p95 is REPORTED, never a pass condition (C6_CONTROL_POLICY.md s3)
+# C6 is PER CLASS: one class violating fails C6 even if pooled is clean
+# identities reconciled: attempted == valid U failed, valid & failed empty
+control_class	n_attempted	n_valid	n_failed	max	mean	p95	n_with_any_mapped
+MONO	84	84	0	10	0.238	0	2
+DI	84	84	0	13	0.345	0	3
+REV	84	84	0	17	0.607	0	3
+POOLED	252	252	0	17	0.397	0	8

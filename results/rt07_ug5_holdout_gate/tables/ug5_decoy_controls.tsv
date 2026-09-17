@@ -1,0 +1,5 @@
+control	n_sequences	median_anchors_placed	median_pct_placed	max_anchors_placed
+REAL_UG5	67	89	59.3	128
+SHUF_rep0	67	0	0.0	117
+SHUF_rep1	67	0	0.0	67
+SHUF_rep2	67	0	0.0	150

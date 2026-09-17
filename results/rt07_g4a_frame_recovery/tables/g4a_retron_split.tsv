@@ -1,0 +1,9 @@
+role	n	n_with_dyad	pct_with_dyad	n_with_multiple_dyads	len_min	len_median	len_max
+derivation	50	43	86.0	1	294	393	613
+development	14	14	100.0	0	274	348	739
+challenge	26	24	92.3	0	258	328	572
+TOTAL_PILOT	90						
+N_ELIGIBLE_IN_myRT	95						
+NOT_DRAWN_INTO_PILOT	5						
+cdhit_clusters_at_0.50	71						
+singleton_clusters	54						

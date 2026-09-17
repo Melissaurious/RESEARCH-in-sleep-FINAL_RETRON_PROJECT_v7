@@ -1,0 +1,46 @@
+# Every row is an invalid C6 state that MUST return an explicit FAIL with the
+# named reason code, and MUST NOT raise. A raise is recorded as RAISED:<type>.
+test	category	result	verdict_returned	expected_reason_code	reason_reported
+T1_set_valued_valid_ids	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid must be exactly list[str], got set
+T2_set_valued_failed_ids	container-type	PASS	FAIL	INVALID_FAILED_IDS	INVALID_FAILED_IDS:MONO MONO.failed must be exactly list[str], got set
+T3_dict_valued_ids	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid must be exactly list[str], got dict
+T4_generator_valued_ids	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid must be exactly list[str], got generator
+T5_none_ids	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid is None; an explicit list[str] is required
+T6_integer_ids	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid must be exactly list[str], got int
+T7_scalar_string_ids	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid must be exactly list[str], got str
+T8_bytes_ids	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid must be exactly list[str], got bytes
+T9_non_string_list_element	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid[1]=7 is int, not str
+T10_nested_container_element	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid[0]=['MONO#r0'] is list, not str
+T11_tuple_valued_ids	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid must be exactly list[str], got tuple
+T12_blank_id	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid[0] is blank
+T13_duplicate_valid_id	identity	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid contains duplicate id(s): ['MONO#r0']
+T14_duplicate_failed_id	identity	PASS	FAIL	INVALID_FAILED_IDS	INVALID_FAILED_IDS:MONO MONO.failed contains duplicate id(s): ['MONO#r80']
+T15_valid_failed_overlap	identity	PASS	FAIL	REPLICATE_IN_BOTH_SETS:MONO	REPLICATE_IN_BOTH_SETS:MONO ['MONO#r0']
+T16_missing_attempted_id	identity	PASS	FAIL	UNACCOUNTED_ATTEMPTED_ID:MONO	UNACCOUNTED_ATTEMPTED_ID:MONO in neither valid nor failed: ['MONO#r80'] (1 total)
+T17_unknown_extra_id	identity	PASS	FAIL	UNKNOWN_VALID_ID:MONO	UNKNOWN_VALID_ID:MONO not in attempted universe: ['MONO#UNKNOWN']
+T18_count_list_mismatch	identity	PASS	FAIL	VALID_ID_COUNT_MISMATCH:MONO	VALID_ID_COUNT_MISMATCH:MONO 80 ids vs 70 values
+T19_no_valid_id_list_supplied	identity	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid is None; an explicit list[str] is required
+T20_no_failed_id_list_supplied	identity	PASS	FAIL	INVALID_FAILED_IDS	INVALID_FAILED_IDS:MONO MONO.failed is None; an explicit list[str] is required
+T21_no_attempted_id_list_supplied	identity	PASS	FAIL	INVALID_ATTEMPTED_IDS	INVALID_ATTEMPTED_IDS:MONO MONO.attempted is None; an explicit list[str] is required
+T22_attempted_count_vs_design	identity	PASS	FAIL	ATTEMPTED_ID_COUNT_MISMATCH:MONO	ATTEMPTED_ID_COUNT_MISMATCH:MONO 83 ids vs 84 attempted by design
+T24_whole_attempted_map_omitted	identity	PASS	FAIL	IDENTITY_MAP_NOT_SUPPLIED	IDENTITY_MAP_NOT_SUPPLIED: attempted_ids_by_class is mandatory and was omitted entirely
+T25_whole_valid_map_omitted	identity	PASS	FAIL	IDENTITY_MAP_NOT_SUPPLIED	IDENTITY_MAP_NOT_SUPPLIED: valid_ids_by_class is mandatory and was omitted entirely
+T26_whole_failed_map_omitted	identity	PASS	FAIL	IDENTITY_MAP_NOT_SUPPLIED	IDENTITY_MAP_NOT_SUPPLIED: failed_ids_by_class is mandatory and was omitted entirely
+T27_element_with_raising_repr	container-type	PASS	FAIL	INVALID_VALID_IDS	INVALID_VALID_IDS:MONO MONO.valid[0]=<unreprable _ExplodingRepr: RuntimeError> is _ExplodingRepr, not str
+T23_undeclared_class_in_attempted	identity	PASS	FAIL	UNDECLARED_CONTROL_CLASS	UNDECLARED_CONTROL_CLASS:'BOGUS' in attempted_ids_by_class
+V1_nan_in_controls	value	PASS	FAIL	INVALID_INPUT	INVALID_INPUT: MONO[0]=nan not finite
+V2_inf_in_controls	value	PASS	FAIL	INVALID_INPUT	INVALID_INPUT: MONO[0]=inf not finite
+V3_negative_control_count	value	PASS	FAIL	INVALID_INPUT	INVALID_INPUT: MONO[0]=-5 negative
+V4_non_integer_count	value	PASS	FAIL	INVALID_INPUT	INVALID_INPUT: MONO[0]=0.5 not an integer count
+V5_non_numeric_count	value	PASS	FAIL	INVALID_INPUT	INVALID_INPUT: MONO[0]='x' not numeric
+V6_nan_in_real	value	PASS	FAIL	INVALID_INPUT	INVALID_INPUT: real[0]=nan not finite
+V7_negative_real	value	PASS	FAIL	INVALID_INPUT	INVALID_INPUT: real[0]=-3 negative
+V8_n_real_exceeds_eligible	value	PASS	FAIL	IMPOSSIBLE_REAL_CARDINALITY	IMPOSSIBLE_REAL_CARDINALITY: 9999 real observations > n_eligible 28
+V9_no_real_observations	value	PASS	FAIL	NO_NON_ABSTAINING_REAL	NO_NON_ABSTAINING_REAL_SEQUENCES: C6 undefined -> FAIL CLOSED
+V10_zero_denominator	value	PASS	FAIL	INVALID_DENOMINATOR	INVALID_DENOMINATOR: n_eligible=0 must be a positive int
+V11_negative_denominator	value	PASS	FAIL	INVALID_DENOMINATOR	INVALID_DENOMINATOR: n_eligible=-28 must be a positive int
+V12_non_int_denominator	value	PASS	FAIL	INVALID_DENOMINATOR	INVALID_DENOMINATOR: n_eligible=28.5 must be a positive int
+V13_nan_denominator	value	PASS	FAIL	INVALID_DENOMINATOR	INVALID_DENOMINATOR: n_eligible=nan must be a positive int
+V14_invalid_design_parameter	value	PASS	FAIL	INVALID_DESIGN	INVALID_DESIGN: replicates_per_sequence=0 must be a positive int
+V15_controls_not_a_dict	value	PASS	FAIL	INVALID_CONTAINER	INVALID_CONTAINER: neg_by_class must be a dict, got str
+V16_attempted_not_a_dict	value	PASS	FAIL	INVALID_CONTAINER	INVALID_CONTAINER: attempted_ids_by_class must be a dict, got str

@@ -1,0 +1,7 @@
+set_id	relative_path	name_claims	role	note
+anchors72	D_instrument/cache/sets/anchors72.faa	72	prior validation anchor set AND, per d1d_ab_blocks.py, the seed of frame A	The set the prior work called its anchors. Whether it is a validation set or a seed is the question.
+gold175	D_instrument/cache/sets/gold175.faa	175	prior gold panel, as named	Named 175; the deduplicated form is the one the prior work measured on.
+gold175_uniq	D_instrument/cache/sets/gold175_uniq.faa	171	prior gold panel, deduplicated - the Khan experimental panel	The prior audit identified this as the Khan panel (gold_t* ids).
+retron	D_instrument/cache/sets/retron.faa	78287	prior retron population stratum	Selected on family label only, per the prior design.
+nonretron	D_instrument/cache/sets/nonretron.faa	423274	prior non-retron population stratum	Superseded by Stage 1 as a count; retained here as the object the prior numbers were computed on.
+seed_all167	/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/ARIS_OUTPUT/stage2b_assessor_redesign/step3_hmm/cache/all167.faa	167	THE SEED of the RT17_CORE / B_span17 model	Lives in the V3 tree, not V4. Every independence claim in the prior work is a claim about distance from this file.

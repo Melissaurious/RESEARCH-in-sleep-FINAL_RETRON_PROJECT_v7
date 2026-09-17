@@ -1,0 +1,9 @@
+assessment	value	interpretation
+exact_sequence_overlap_all_construction	0	no UG25 sequence is in construction
+exact_sequence_overlap_GII	0	vs the GII construction set
+ug25_ids_in_construction	0	identifier-level overlap
+median_best_identity_to_construction	0.5880	identity leg only
+n_ge_0.30_identity_only	28 of 28	identity leg alone (the figure G2L reported)
+n_meeting_FULL_link_rule	0 of 28	identity>=0.30 AND min(coverage)>=0.50 - BOTH reported per predeclaration
+max_best_identity	0.8180	
+CLASSIFICATION	FRESH_LINEAGE	recorded before mapping; not revised
