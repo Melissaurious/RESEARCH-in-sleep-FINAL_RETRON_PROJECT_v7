@@ -1,0 +1,7 @@
+analysis_id	null	n_replicates	median	p99	max	note
+DF_subtype	NULL-1 sequence-level (DECLARED, retained)	60	0.9529	0.9814	0.9831	conservative against the alternative - see control/REPAIR_1.md
+DF_subtype	NULL-2 cluster-level (REPAIR 1)	60	0.4633	0.8158	0.8659	anti-conservative - see control/REPAIR_1.md
+PL_subtype	NULL-1 sequence-level (DECLARED, retained)	60	0.9463	0.9782	0.9840	conservative against the alternative - see control/REPAIR_1.md
+PL_subtype	NULL-2 cluster-level (REPAIR 1)	60	0.2523	0.6687	0.7017	anti-conservative - see control/REPAIR_1.md
+LABEL_FREE	NULL-1 sequence-level (DECLARED, retained)	60	0.9203	0.9657	0.9752	conservative against the alternative - see control/REPAIR_1.md
+LABEL_FREE	NULL-2 cluster-level (REPAIR 1)	0	NA	NA	NA	anti-conservative - see control/REPAIR_1.md

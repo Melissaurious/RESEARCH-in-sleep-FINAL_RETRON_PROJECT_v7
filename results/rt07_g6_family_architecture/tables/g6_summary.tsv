@@ -1,0 +1,19 @@
+quantity	value	note
+population_catalogue	501561	context only, never a denominator
+population_eligible	369381	G5_ELIGIBLE_N
+population_inspectable	354102	verdict MAPPED - the architecture denominator
+families_total	42	stage1_collapsed_family
+families_qualifying	36	>=100 inspectable in BOTH halves
+clusters_primary_id0.90	181696	label-blind mmseqs linclust, 369,381 eligible sequences
+cluster_family_purity	0.9992	the evidence that triggered repair 1
+rho_between_family	0.9865	split-half, halves share no cluster
+null1_p99_between_family	0.9906	sequence-level - declared, retained
+null2_p99_between_family	0.9066	cluster-level - repair 1
+terminal_verdict_between_family	REPRODUCIBLE_UNDER_CLUSTER_NULL_ONLY	see g6_terminal_decision.tsv
+retron_subtype_strata_underpowered	20	of 50 strata, threshold 100 inspectable
+controls_pass	1	of 2 declared in s05
+repair_cycles_used	1 of 1	control/REPAIR_1.md - the allowance is now spent
+call_state_MAPPED	40217506	fraction 0.725854 of 55,407,150 state calls
+call_state_AMBIGUOUS	2685768	fraction 0.048473 of 55,407,150 state calls
+call_state_UNSUPPORTED	2559452	fraction 0.046194 of 55,407,150 state calls
+call_state_DELETED_STATE	9944424	fraction 0.179479 of 55,407,150 state calls

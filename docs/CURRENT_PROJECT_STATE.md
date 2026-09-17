@@ -22,7 +22,7 @@ beside it so you can re-check it in one command.
 | **`g4b` production freeze** | **COMPLETE** |
 | **`g5a` eligibility census** | **COMPLETE** |
 | **`g5` catalogue application** | **COMPLETE** |
-| `g6` family architecture | **AUTHORISED, NOT STARTED** |
+| **`g6` family architecture** | **COMPLETE — terminal, both arms** |
 | **`g7a` historical RT0–RT7 bridge** | **COMPLETE — the historical track is TERMINAL** |
 | `g7b` structural + published comparators | **NOT STARTED** |
 
@@ -125,7 +125,25 @@ RT0–RT7 architecture.
    binding. `results/rt07_g4b_production_mapper/control/CROSSWALK_RT0_RT7.tsv` is deliberately
    **unchanged and still `UNRESOLVED`** — production carries no historical label.
    Decision: `docs/decisions/2026-09-18_stage2_g7a_rt0_rt7_closure.md`.
-8. **Scope is `-M 50` only.**
+8. **`g6` is CLOSED, and its headline is a BRACKET, not a number.** Split-half reproducibility
+   of the between-group state-profile structure, on halves that share no sequence cluster:
+
+   | arm | ρ | vs sequence-level null | vs cluster-level null |
+   |---|---|---|---|
+   | between-family (36 families) | **0.9865** | 0.9906 ✗ | 0.9066 ✓ |
+   | within-Retron, DefenseFinder subtype | **0.8917** | 0.9814 ✗ | 0.8158 ✓ |
+   | within-Retron, PADLOC subtype | **0.9595** | 0.9782 ✗ | 0.6687 ✓ |
+   | within-Retron, label-free | 0.8061 | — | `UNDERPOWERED` |
+
+   The declared sequence-level null was found **invalid** (99.92 % of clusters span one family,
+   so permuting at sequence level destroys a real nuisance structure) and replaced under the
+   one permitted repair cycle; it is **retained and reported**, and the replacement errs the
+   other way, so the two bracket the truth. **Every visibility-restricted and every
+   relatedness-collapsed analysis exceeds BOTH nulls** — so the structure is not an artefact of
+   the mapper's visibility gradient or of near-duplicate redundancy.
+   Bundle `results/rt07_g6_family_architecture/`; nothing there carries a historical label, and
+   g7a was **not** read.
+9. **Scope is `-M 50` only.**
 
 ## 6 · Canonical datasets
 

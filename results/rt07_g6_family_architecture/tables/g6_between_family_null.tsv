@@ -1,0 +1,21 @@
+analysis_id	null	n_replicates	median	p99	max	note
+PRIMARY	NULL-1 sequence-level (DECLARED, retained)	200	0.9833	0.9906	0.9915	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+PRIMARY	NULL-2 cluster-level (REPAIR 1)	200	0.8121	0.9066	0.9111	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-VIS[0.0,0.5)	NULL-1 sequence-level (DECLARED, retained)	60	0.8095	0.8855	0.8882	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-VIS[0.0,0.5)	NULL-2 cluster-level (REPAIR 1)	60	0.3149	0.6808	0.7341	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-VIS[0.5,0.8)	NULL-1 sequence-level (DECLARED, retained)	60	0.9354	0.9671	0.9740	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-VIS[0.5,0.8)	NULL-2 cluster-level (REPAIR 1)	60	0.4570	0.6365	0.6438	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-VIS[0.8,1.01)	NULL-1 sequence-level (DECLARED, retained)	60	0.9515	0.9752	0.9759	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-VIS[0.8,1.01)	NULL-2 cluster-level (REPAIR 1)	60	0.5369	0.8426	0.8657	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-REL@0.90	NULL-1 sequence-level (DECLARED, retained)	60	0.9702	0.9824	0.9851	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-REL@0.90	NULL-2 cluster-level (REPAIR 1)	60	0.9710	0.9832	0.9833	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-REL@0.50	NULL-1 sequence-level (DECLARED, retained)	60	0.9372	0.9668	0.9684	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-REL@0.50	NULL-2 cluster-level (REPAIR 1)	60	0.9394	0.9655	0.9665	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-REL@0.30	NULL-1 sequence-level (DECLARED, retained)	60	0.9362	0.9708	0.9745	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-REL@0.30	NULL-2 cluster-level (REPAIR 1)	60	0.9428	0.9664	0.9667	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-COMP[all_complete]	NULL-1 sequence-level (DECLARED, retained)	60	0.9841	0.9906	0.9909	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-COMP[all_complete]	NULL-2 cluster-level (REPAIR 1)	60	0.8466	0.9113	0.9153	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-COMP[all_partial]	NULL-1 sequence-level (DECLARED, retained)	60	0.9686	0.9839	0.9881	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-COMP[all_partial]	NULL-2 cluster-level (REPAIR 1)	60	0.6922	0.9043	0.9063	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md
+CTRL-COMP[mixed_or_codon_evidence]	NULL-1 sequence-level (DECLARED, retained)	60	1.0000	1.0000	1.0000	breaks within-cluster label constancy; conservative against the alternative - see control/REPAIR_1.md
+CTRL-COMP[mixed_or_codon_evidence]	NULL-2 cluster-level (REPAIR 1)	60	1.0000	1.0000	1.0000	preserves within-cluster label constancy; anti-conservative because it breaks between-cluster relatedness - see control/REPAIR_1.md

@@ -1,0 +1,5 @@
+call_state	n_state_calls	fraction	unit	denominator
+MAPPED	40217506	0.725854	exact RT x frozen anchor state	55407150 = 369381 x 150
+AMBIGUOUS	2685768	0.048473	exact RT x frozen anchor state	55407150 = 369381 x 150
+UNSUPPORTED	2559452	0.046194	exact RT x frozen anchor state	55407150 = 369381 x 150
+DELETED_STATE	9944424	0.179479	exact RT x frozen anchor state	55407150 = 369381 x 150

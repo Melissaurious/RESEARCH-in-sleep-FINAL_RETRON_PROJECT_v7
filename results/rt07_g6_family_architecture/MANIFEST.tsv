@@ -1,0 +1,18 @@
+artifact	script	command	unit	denominator
+tables/g6_clustering_reuse_audit.tsv	scripts/s01_clustering.py	python3 s01_clustering.py	audit item	the reuse decision
+tables/g6_clustering_resource.tsv	scripts/s01_clustering.py	python3 s01_clustering.py	clustering run	3 declared identities
+tables/g6_call_state_totals.tsv	scripts/s02_matrix.py	python3 s02_matrix.py	exact RT x frozen anchor state	55,407,150 state calls
+tables/g6_between_family_rho.tsv	scripts/s03_between_family.py	python3 s03_between_family.py	analysis	primary plus declared controls
+tables/g6_between_family_null.tsv	scripts/s03_between_family.py	python3 s03_between_family.py	null distribution	both nulls per analysis
+tables/g6_family_state_profiles.tsv	scripts/s03_between_family.py	python3 s03_between_family.py	family	qualifying families
+tables/g6_cluster_family_purity.tsv	scripts/s03_between_family.py	python3 s03_between_family.py	cluster	clusters at identity 0.90
+tables/g6_within_retron_rho.tsv	scripts/s04_within_retron.py	python3 s04_within_retron.py	analysis	3 declared labellings
+tables/g6_within_retron_null.tsv	scripts/s04_within_retron.py	python3 s04_within_retron.py	null distribution	one per labelling
+tables/g6_retron_subtype_strata.tsv	scripts/s04_within_retron.py	python3 s04_within_retron.py	subtype stratum	per tool, own denominator, never pooled
+tables/g6_controls.tsv	scripts/s05_controls.py	python3 s05_controls.py	control	2 declared controls
+tables/g6_pc_pos_catalytic.tsv	scripts/s05_controls.py	python3 s05_controls.py	family	CAT_STATE-MAPPED in that family-half
+figures/g6_reproducibility.png	scripts/s06_figure.py	python3 s06_figure.py	analysis	all analyses
+figures/g6_reproducibility.svg	scripts/s06_figure.py	python3 s06_figure.py	analysis	all analyses
+tables/g6_reproducibility.tsv	scripts/s06_figure.py	python3 s06_figure.py	analysis	all analyses
+tables/g6_terminal_decision.tsv	scripts/s07_decision.py	python3 s07_decision.py	arm x labelling	2 arms
+tables/g6_summary.tsv	scripts/s07_decision.py	python3 s07_decision.py	resolved value	see each row
