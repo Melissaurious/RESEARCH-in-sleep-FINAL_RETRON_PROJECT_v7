@@ -130,6 +130,8 @@ bundle is modified by this track.
 | `references/rt0_rt7/PRIOR_WORK_INVENTORY.tsv` | 18 prior RT0–RT7 artifacts with reuse class and provenance status | `FROZEN` |
 | `general/RETRON_STAGES/02_rt0_rt7_definition.md` | prior scientific and design dossier; ideas, traps, paths and prior numbers | `RE-DERIVE` |
 | `docs/decisions/2026-09-15_stage2_prior_dossier_audit.md` | this track's binding classification of every prior-dossier item; its §D and §G unresolved items are superseded by the operator-decision record below | `FROZEN` |
+| `docs/decisions/2026-09-16_stage2_g4_design_amendment.md` | the amended g4 object, validation architecture and deliverables, and the corrected lineage of all167, anchors72, GOLD171, ph38 and CAND95 | `FROZEN` |
+| `results/rt07_pre_g4_seed_provenance/` | the measured seed-provenance and leakage audit the amendment rests on | `FROZEN` |
 | `docs/decisions/2026-09-15_stage2_operator_decisions.md` | the four resolved operator decisions this launcher encodes — `ALIGN_000044` acquisition, the external-structure inclusion rule, Stage 04 separation, Xiong & Eickbush Fig. 1 evidence priority — and the two that stay deferred | `FROZEN` |
 | `/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/ARIS_OUTPUT/D_instrument/` | prior main derivation arm, 50 scripts and 92 tables; code may be reused after inspection | `RE-DERIVE` |
 | `/home/borg/RESEARCH-in-sleep-RETRON-DB_V4/ARIS_OUTPUT/d_instrument_audit/` | prior audit arm that measured the seed-overlap and concordance defects | `RE-DERIVE` |
@@ -286,7 +288,7 @@ the landed inputs and reproduces its number (WA-G.2).
 | `rt07_g1_history_and_definition` | per (source, region-name) evidence class across the derivational primary literature: motif evidence, alignment block, explicit stated boundary, terminology only, or inherited-without-definition — counted, with the unresolved-definition register and the acquisition and source-resolution register covering `ALIGN_000044` | `FULL` | `C3` supporting, `C9` supporting | done when `results/rt07_g1_history_and_definition/` reruns and reproduces the terminology genealogy, literature evidence matrix, operational-evidence matrix, unresolved-definition register and the acquisition and source-resolution register, including the `ALIGN_000044` row |
 | `rt07_g2_reference_reconstruction` | recovery rate of the historical landmarks on the sequences and reference alignments from which they were derived, before any Toro, Mestre or myRT convention is consulted | `FULL` | `C3` supporting | done when `results/rt07_g2_reference_reconstruction/` reruns and reproduces the reconstructed reference alignment, the curated reference sequence set and the per-landmark recovery table |
 | `rt07_g3_prior_method_replication` | how many prior RT0–RT7 results survive independent regeneration under the Stage-1 inputs, with conditioning bias, seed overlap, frame identity and object identity audited per result | `FULL` | `C3` supporting, `C7` supporting | done when `results/rt07_g3_prior_method_replication/` reruns and reproduces the per-prior-result verdict table including each result's frame, stratum and n |
-| `rt07_g4_operational_boundary_model` | calibrated per-block call performance on a held-out inspectable population, derived on conservative full-length sequences only, with measured seed overlap of the validation set | `FULL` | `C3` primary, `C9` primary | done when `results/rt07_g4_operational_boundary_model/` reruns and reproduces the operational definition table, the calibration curves and the held-out validation audit table |
+| `rt07_g4_operational_boundary_model` | per-region detector performance across four separately reported validation arms — historical reconstruction, held-out PDB structures, the GOLD171 retron literature challenge and a bounded family-stratified Stage-1 sample — with detection evidence, boundary uncertainty and out-of-distribution context kept as separate quantities, and calibration claimed only on the population it was demonstrated on. **Amended 2026-09-16** by `docs/decisions/2026-09-16_stage2_g4_design_amendment.md`: the object is a portable detector of the independently reconstructed conserved regions, NOT seven per-block calls; historical RT0–RT7 is a mapping layer over those regions with `1:1`/`1:many`/`many:1`/`none`/`unresolved` cardinality | `FULL` | `C3` primary, `C9` primary | done when `results/rt07_g4_operational_boundary_model/` reruns and reproduces the operational region definitions, the historical-to-operational mapping, the method comparison, the per-arm validation tables, the leakage audit, the calibration and boundary-uncertainty tables, and a frozen portable detector package that annotates an unseen RT sequence |
 | `rt07_g5_catalogue_application` | per-block call-state distribution over the eligible Stage-1 exact-RT catalogue, family, MULTI and completeness strata retained | `FULL` | `C3` primary | done when `results/rt07_g5_catalogue_application/` reruns and reproduces the exact-RT by block call table and its per-stratum denominators |
 | `rt07_g6_family_architecture` | per-family differences in called block architecture — occupancy, length, start, end, normalized position, inter-block distance, missing-block combination, insertion and expansion, truncation and inspectability, confidence — retron against major non-retron RT families | `FULL` | `C4` primary, `C3` supporting | done when `results/rt07_g6_family_architecture/` reruns and reproduces the family architecture summary and the missing-block-pattern table |
 | `rt07_g7_structural_and_published_comparators` | agreement and disagreement between the independently reconstructed frame and each comparator — structures, Simon & Zimmerly's structural mapping, Toro 2014, Mestre, myRT, Toro 2026, prior project conventions | `FULL` | `C7` primary, `C3` supporting | done when `results/rt07_g7_structural_and_published_comparators/` reruns and reproduces the comparator-disagreement table and the ruler comparison figure from landed tables |
@@ -296,6 +298,35 @@ may be started as `LIGHT` recon and re-landed as `FULL`, which is one rerun (WA-
 
 `g1` and `g2` run before `g3`, and `g3` before `g4`; `g4` must be frozen before `g5`.
 `g6` and `g7` follow `g5`. Comparator assets are not read during `g2` at all.
+
+**Amendment 2026-09-17 — how `g4` was frozen.** The dependency above is unchanged; this
+records the artifact that satisfies it. `g4` was executed as two landed steps rather than
+one, and the freeze is the second:
+
+| step | what it did | landed at |
+|---|---|---|
+| `g4a` | mapper development and validation | `results/rt07_g4a_repaired/` and the repair bundles |
+| confirmatory transfer validation | the single UG25 holdout run that closed Stage-2 validation at Endpoint A | `results/FINAL_PRE_UG25_VALIDATION_BUNDLE/`, `results/rt07_ug25_confirmatory/` |
+| **`g4b`** | **production freeze** — the validated mapper packaged as a versioned instrument, with no scientific parameter, rule or call changed | **`results/rt07_g4b_production_mapper/`** |
+| `g5` | catalogue application | `results/rt07_g5_catalogue_application/` |
+
+**`results/rt07_g4b_production_mapper/` IS the frozen `g4` this launcher requires before
+`g5`.** Its instrument is `rtmap-1.0.0/53a1e738a19b3896`, instrument sha256
+`53a1e738a19b38967563b4f4d733047b26123f754a7d592fd0186e7bd9c331f5`, mapper code sha256
+`69575dc7ac74f6094bda3c35df100d0f8f5a0e4c25142ac61c5d1026f10fceef` (byte-identical to the
+validation bundle's), schema `rtmap-schema-1.0`, bundle root
+`0b025cbab192f64d05ef0a9aff47859b998fe3158dc0199cd47cbbd040620d3f`, landed in commit
+`dd9cdae`.
+
+`g5` was authorised by the **independent packaging review**, round 2, `9/10`,
+`MAY g5 BEGIN: YES` — a review of packaging fidelity only. Stage-2 scientific validation
+closed separately at Endpoint A and is not reopened by this amendment.
+
+`g4b` is a **packaging gate**: it produces no claim-bearing number, so it carries no row in
+the gate table above and no `FULL` weight. Its evidence is engineering reproduction, not
+measurement. Record:
+`docs/decisions/2026-09-17_stage2_g4b_production_packaging.md`, amendment recorded in
+`docs/decisions/2026-09-17_stage2_launcher_g4b_freeze_amendment.md`.
 
 ### 7a. Call-state vocabulary
 
@@ -328,7 +359,18 @@ Datasets, not only figures. Each lands in the gate named beside it.
 | literature and terminology evidence table | `g1` |
 | unresolved-definition register | `g1` |
 | acquisition and source-resolution register — one row per externally acquired or attempted asset (`ALIGN_000044` and any structure admitted under §9a), carrying asset identity, source URL or archive, retrieval date, licence/access state, byte count, SHA256, validation state and, where retrieval failed, `MISSING_PRIMARY_ASSET` | `g1` |
-| operational definition table | `g4` |
+| operational region definitions (`operational_region_definitions.tsv`) | `g4` |
+| historical-to-operational mapping, with cardinality (`historical_to_operational_mapping.tsv`) | `g4` |
+| per-arm validation population (`validation_population.tsv`) | `g4` |
+| sequence lineage and role table (`sequence_lineage.tsv`) | `g4` |
+| identity-and-coverage leakage audit (`leakage_audit.tsv`) | `g4` |
+| method comparison against a baseline and, where available, a challenger (`method_comparison.tsv`) | `g4` |
+| declared thresholds (`thresholds.tsv`) and calibration with its scope (`calibration.tsv`) | `g4` |
+| boundary uncertainty per region (`boundary_uncertainty.tsv`) | `g4` |
+| family-holdout transferability (`family_holdout_or_transferability.tsv`) | `g4` |
+| a versioned **portable detector package** — frozen model artifacts, coordinate definitions, thresholds, calibration scope, usage code and `MODEL_CARD.md` — able to annotate an unseen RT amino-acid sequence. The requirement is the instrument, not a preselected implementation; filenames are not forced to any method | `g4` |
+| phylogeny-ready core substrate: `rt_core_coordinates`, `rt_core_extracted`, `rt_core_alignment`, `rt_core_alignment_mask`, `phylogeny_eligibility` — landed only AFTER the detector is frozen and the catalogue stage has run; no phylogenetic inference happens in Stage 2 | `g5`+ |
+| inspectability-aware occupancy and architecture products: `region_occupancy_by_family.tsv`, `region_call_state_by_family.tsv`, `region_cooccurrence_patterns.tsv`, `region_length_distribution.tsv`, `inter_region_spacing.tsv`, `region_normalized_positions.tsv` | `g6` |
 | curated reference sequence set | `g2` |
 | reconstructed reference alignment | `g2` |
 | prior-result verdict table with frame, stratum and n | `g3` |
