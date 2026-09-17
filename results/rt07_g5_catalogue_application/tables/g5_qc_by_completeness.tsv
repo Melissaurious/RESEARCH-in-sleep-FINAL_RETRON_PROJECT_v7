@@ -1,0 +1,4 @@
+completeness_class	n_eligible	n_inspectable	inspectable_fraction	median_MAPPED_fraction_inspectable	median_AMBIGUOUS_fraction_inspectable	median_UNSUPPORTED_fraction_inspectable	median_DELETED_fraction_inspectable	n_cat_state_mapped	cat_mapped_fraction_of_eligible	n_cat_confirmed	cat_confirmed_over_cat_mapped
+all_complete	292654	282212	0.9643	0.8533	0.0267	0.0200	0.0600	283947	0.9702	273667	0.9638
+all_partial	73136	68439	0.9358	0.7733	0.0200	0.0067	0.1200	68910	0.9422	66924	0.9712
+mixed_or_codon_evidence	3591	3451	0.9610	0.8200	0.0133	0.0000	0.1133	3372	0.9390	3289	0.9754

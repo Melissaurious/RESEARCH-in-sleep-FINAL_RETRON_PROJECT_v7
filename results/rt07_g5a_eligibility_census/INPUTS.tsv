@@ -1,0 +1,7 @@
+path	sha256	bytes	mtime	role
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.faa	bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655	230435383	2026-09-15 04:23:05	the exact-RT catalogue the rule is applied to
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.parquet	44fd615e73f97134eb20e9c5d2e142ca4eff733e919746cc622ecd2cf05f7b9f	113736821	2026-09-15 04:23:05	canonical cross-check and metadata
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_family_baseline_v1.parquet	92e0197959174945eaad9b326c91a9e5030506fb6c4e166a721cf1c6ad9183e5	19012020	2026-09-15 15:52:35	Stage-1 collapsed family, completeness, view
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_tool_calls_v1.parquet	27c6b5c6fbf06f042fee8d5a46599124be51474966673a1079a3f2f786384009	72251025	2026-09-15 16:22:48	tool support; STRATA, never truth
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_records_v1.parquet	546605034a2e5f21794a842db17849dfa7018689aea3a1bf43ee63b0837dfb6f	701984868	2026-09-15 04:23:06	source database, system type, taxonomy
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/rt07_g4b_production_mapper/code/rtmap/run_mapper.py	ee0397d2aa1b813d01329250eb91c84cf2b507aa4c51781eee20bfeaf7c6c712	29817	2026-09-17 18:41:27	the frozen eligibility rule, imported not restated

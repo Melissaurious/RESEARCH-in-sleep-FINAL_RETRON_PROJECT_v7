@@ -1,0 +1,25 @@
+quantity	value	unit	note
+mapper_version	rtmap-1.0.0/53a1e738a19b3896	identifier	the frozen production instrument whose eligibility rule this census applies
+instrument_sha256	53a1e738a19b38967563b4f4d733047b26123f754a7d592fd0186e7bd9c331f5	sha256	
+eligibility_rule	MIN_AA=250;ALPHABET=ACDEFGHIKLMNPQRSTVWY;CLEAN=strip[-.]upper,rstrip*	rule	imported from the frozen package, not restated by this census
+MIN_AA	250	aa	the only operative length cutoff; unchanged
+n_total_exact_rt	501561	exact RT sequences	every record in rt_exact_v1.faa
+n_unique_rt_hash	501561	exact RT sequences	the catalogue is one row per exact sequence, so this equals the total
+n_duplicate_identifiers	0	identifiers	global duplicate-identifier census (G5 plan section 4)
+G5_ELIGIBLE_N	369381	exact RT sequences	THE FROZEN g5 DENOMINATOR
+n_ineligible	132180	exact RT sequences	
+eligible_fraction	0.736463	fraction of the catalogue	
+n_below_min_length	108439	exact RT sequences	cleaned length < 250 aa
+n_non_standard_residue	23741	exact RT sequences	at least one residue outside the 20 standard amino acids; all are >= MIN_AA because the frozen rule tests length first
+n_below_min_length_also_nonstandard	4000	exact RT sequences	secondary flag, reported so the frozen reason priority does not hide the overlap
+partition_reconciles	YES	verdict	369381 + 132180 = 501561, and no identifier appears on both sides
+parquet_hash_set_identical	YES	verdict	rt_exact_v1.faa and rt_exact_v1.parquet describe the same sequence set
+n_rt_aa_len_disagreements	0	exact RT sequences	rt_aa_len in the canonical parquet vs the cleaned length this census computed
+input.exact_rt_faa.sha256	bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655	sha256	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.faa
+input.exact_rt_parquet.sha256	44fd615e73f97134eb20e9c5d2e142ca4eff733e919746cc622ecd2cf05f7b9f	sha256	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.parquet
+input.family_baseline_parquet.sha256	92e0197959174945eaad9b326c91a9e5030506fb6c4e166a721cf1c6ad9183e5	sha256	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_family_baseline_v1.parquet
+input.tool_calls_parquet.sha256	27c6b5c6fbf06f042fee8d5a46599124be51474966673a1079a3f2f786384009	sha256	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_tool_calls_v1.parquet
+input.records_parquet.sha256	546605034a2e5f21794a842db17849dfa7018689aea3a1bf43ee63b0837dfb6f	sha256	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_records_v1.parquet
+output.g5a_eligibility_partition.tsv.gz	249e334b04b2db7975b498949d57bcc89613e43512baad5a007b47ea21de7dfa	sha256	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt07_g5a/g5a_eligibility_partition.tsv.gz
+output.g5a_ineligible_records.tsv.gz	9fd48b77df6d8e3e1af0aa7e2b1358b1690b587cfb6e0911804991da42139a06	sha256	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt07_g5a/g5a_ineligible_records.tsv.gz
+output.g5a_eligible_ids.txt.gz	6f2028fa46563ebedb11442bf21341ce0565b230d5ccf68f748ba3b676d02d11	sha256	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt07_g5a/g5a_eligible_ids.txt.gz

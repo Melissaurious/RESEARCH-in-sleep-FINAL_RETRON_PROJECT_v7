@@ -1,0 +1,13 @@
+path	sha256	bytes	mtime	role
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.faa	bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655	230435383	2026-09-15 04:23:05	the application population (FASTA)
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt07_g5a/g5a_eligibility_partition.tsv.gz	249e334b04b2db7975b498949d57bcc89613e43512baad5a007b47ea21de7dfa	20084071	2026-09-17 20:50:14	the FROZEN eligibility partition; the rule is not re-applied in g5
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt07_g5a/g5a_ineligible_records.tsv.gz	9fd48b77df6d8e3e1af0aa7e2b1358b1690b587cfb6e0911804991da42139a06	6937603	2026-09-17 20:50:16	the censused ineligible population, carried into g5_ineligible.parquet
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/rt07_g4a_repaired/work/GII.deriv.hmm	292495a4f4ec2d04c47cf73c658b0f5cbaec7b202de70d97e6fc2496dd82e97b	220026	2026-09-16 22:18:17	the frozen profile / production ruler
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/rt07_g4b_production_mapper/code/rtmap/mapper.py	69575dc7ac74f6094bda3c35df100d0f8f5a0e4c25142ac61c5d1026f10fceef	7079	2026-09-17 17:31:39	the frozen mapper
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/review-stage/roots/RT07_G4B.root	40757d2e8a60a575fe5c54298fdc586b9ad5b099106404e719c34c7d507b6d48	65	2026-09-17 18:46:01	the EXTERNAL pinned bundle root every shard verified against
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.parquet	44fd615e73f97134eb20e9c5d2e142ca4eff733e919746cc622ecd2cf05f7b9f	113736821	2026-09-15 04:23:05	metadata crosswalk source; joined AFTER mapping
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_family_baseline_v1.parquet	92e0197959174945eaad9b326c91a9e5030506fb6c4e166a721cf1c6ad9183e5	19012020	2026-09-15 15:52:35	metadata crosswalk source; joined AFTER mapping
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_tool_calls_v1.parquet	27c6b5c6fbf06f042fee8d5a46599124be51474966673a1079a3f2f786384009	72251025	2026-09-15 16:22:48	metadata crosswalk source; STRATA, never truth
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_records_v1.parquet	546605034a2e5f21794a842db17849dfa7018689aea3a1bf43ee63b0837dfb6f	701984868	2026-09-15 04:23:06	metadata crosswalk source; joined AFTER mapping
+/home/borg/miniconda3/envs/retron_tradicional/bin/hmmalign	532f1ed4c21dc03a12007b31c2dc0568e82cab659b0d75c20efd20e6374f53e2	475464	2025-04-30 12:44:12	part of the instrument identity
+/home/borg/miniconda3/envs/retron_tradicional/bin/hmmsearch	e73bad9d701f129795dd3ffb108ee2d4724ab4c8b1a46269bd5671bdcfcdc8f2	613144	2025-04-30 12:44:12	part of the instrument identity

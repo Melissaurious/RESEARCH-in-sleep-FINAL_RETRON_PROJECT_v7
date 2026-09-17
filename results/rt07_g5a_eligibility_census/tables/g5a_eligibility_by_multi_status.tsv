@@ -1,0 +1,4 @@
+multi_status	n_total	n_eligible	n_ineligible	eligible_fraction	delta_vs_catalogue	flag
+NON_MULTI	493963	366556	127407	0.7421	+0.0056	COMPARABLE
+MULTI	7598	2825	4773	0.3718	-0.3647	LOWER_THAN_CATALOGUE
+ALL_EXACT_RT	501561	369381	132180	0.7365	+0.0000	reference

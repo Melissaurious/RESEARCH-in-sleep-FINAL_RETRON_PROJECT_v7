@@ -1,0 +1,13 @@
+quantity	value	unit	note
+mapper_version	rtmap-1.0.0/53a1e738a19b3896	identifier	
+G5_ELIGIBLE_N	369381	exact RT sequences	the frozen census denominator
+n_processed	369381	exact RT sequences	produced a full scientific row; ELIGIBLE denominator
+n_tool_failures	0	exact RT sequences	ELIGIBLE denominator
+n_input_invalid_at_run	0	records	0 expected: ineligible records were censused out before sharding
+n_ineligible_censused	132180	exact RT sequences	retained in g5_ineligible.parquet, never silently dropped
+n_inspectable	354102	exact RT sequences	frozen verdict MAPPED; 0.9586 of ELIGIBLE
+n_abstained	15279	exact RT sequences	frozen abstention - NOT failure, NOT biological absence
+n_state_rows	55407150	state calls	150 frozen conserved states x ELIGIBLE
+n_cat_state_mapped	356229	exact RT sequences	CAT_STATE 262 call is MAPPED; SEPARATE denominator from the 150 anchors
+n_cat_state_confirmed	343880	exact RT sequences	CAT_STATE MAPPED and the residue begins [YF].DD; motif concordance at a state, NOT independent residue truth
+cat_confirmed_over_cat_mapped	0.9653	fraction	denominator is CAT-MAPPED, never ELIGIBLE

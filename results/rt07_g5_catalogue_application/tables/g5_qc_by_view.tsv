@@ -1,0 +1,4 @@
+view	n_eligible	n_inspectable	inspectable_fraction	median_MAPPED_fraction_inspectable	median_AMBIGUOUS_fraction_inspectable	median_UNSUPPORTED_fraction_inspectable	median_DELETED_fraction_inspectable	n_cat_state_mapped	cat_mapped_fraction_of_eligible	n_cat_confirmed	cat_confirmed_over_cat_mapped
+V-RT-SINGLE	366546	351507	0.9590	0.8467	0.0267	0.0133	0.0667	353718	0.9650	341561	0.9656
+V-RT-MULTI	2824	2584	0.9150	0.5133	0.0733	0.0600	0.2733	2500	0.8853	2309	0.9236
+V-RT-CROSS	11	11	1.0000	0.9267	0.0067	0.0000	0.0533	11	1.0000	10	0.9091

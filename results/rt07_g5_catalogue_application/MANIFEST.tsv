@@ -1,0 +1,25 @@
+artifact	script	command	unit	denominator
+tables/g5_qc_headline.tsv	scripts/qc.py	see run.sh: qc.py	application QC quantity	ELIGIBLE 369381 unless the row names another denominator
+tables/g5_qc_status_counts.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	369381 eligible exact RTs
+tables/g5_qc_verdict_reason.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	369381 eligible exact RTs
+tables/g5_qc_call_fraction_distributions.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	369381 eligible, or 354102 inspectable, as the row states
+tables/g5_qc_catalytic.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	ELIGIBLE 369381 or CAT-MAPPED 356229, as the row states; never pooled with the 150 anchors
+tables/g5_qc_by_family.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	each family's own eligible count
+tables/g5_qc_by_raw_myrt_family.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	each raw MyRT label set's own eligible count; a stratum, not truth
+tables/g5_qc_by_multi_status.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	MULTI 2825 and NON_MULTI 366556, separate populations
+tables/g5_qc_by_completeness.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	each completeness class's own eligible count
+tables/g5_qc_by_view.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	each view's own eligible count
+tables/g5_qc_by_tax_domain.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	each taxonomic domain set's own eligible count
+tables/g5_qc_by_source_database.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	each source-database set's own eligible count
+tables/g5_qc_by_tool_support.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	each myRT/PADLOC/DefenseFinder pattern's own eligible count; STRATA, never accuracy
+tables/g5_state_occupancy.tsv	scripts/qc.py	see run.sh: qc.py	per-state call	369381 eligible exact RTs per state; 150 frozen conserved states
+tables/g6_readiness_by_family.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	each family's own eligible and inspectable counts
+tables/g6_readiness_flagged_strata.tsv	scripts/qc.py	see run.sh: qc.py	exact RT sequence	families with >=100 eligible whose inspectable fraction is >0.10 below the run-wide 0.9586
+tables/g5_shard_manifest.tsv	scripts/merge.py	see run.sh: merge.py	shard	512 shards
+tables/g5_dataset_manifest.tsv	scripts/merge.py	see run.sh: merge.py	dataset file	6 canonical parquet files
+data/derived/rt07_g5/g5_sequences.parquet	scripts/run_all.sh	see run.sh: run_all.sh drives the FROZEN results/rt07_g4b_production_mapper/code/rtmap/run_mapper.py, then merge.py	exact RT sequence	369381 eligible exact RTs
+data/derived/rt07_g5/g5_states.parquet	scripts/run_all.sh	see run.sh: run_all.sh drives the FROZEN results/rt07_g4b_production_mapper/code/rtmap/run_mapper.py, then merge.py	per-state call	369381 x 150 frozen conserved states
+data/derived/rt07_g5/g5_catalytic.parquet	scripts/merge.py	see run.sh: merge.py	exact RT sequence	369381 eligible exact RTs; CAT_STATE 262, separate denominator
+data/derived/rt07_g5/g5_ineligible.parquet	scripts/merge.py	see run.sh: merge.py	exact RT sequence	132180 censused-ineligible exact RTs
+data/derived/rt07_g5/g5_run_failures.parquet	scripts/merge.py	see run.sh: merge.py	failed record	0 rows: no technical failure occurred
+data/derived/rt07_g5/g5_metadata_crosswalk.parquet	scripts/merge.py	see run.sh: merge.py	exact RT sequence	501561 exact RTs, the whole catalogue, with in_g5_eligible

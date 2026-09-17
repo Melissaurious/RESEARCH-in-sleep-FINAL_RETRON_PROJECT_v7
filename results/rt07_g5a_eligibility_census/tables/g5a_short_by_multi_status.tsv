@@ -1,0 +1,3 @@
+multi_status	n_below_min_length	n_total_in_stratum	fraction_of_stratum_below_min_length
+NON_MULTI	105044	493963	0.2127
+MULTI	3395	7598	0.4468

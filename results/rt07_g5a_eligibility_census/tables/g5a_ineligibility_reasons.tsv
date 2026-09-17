@@ -1,0 +1,4 @@
+reason	n	fraction_of_catalogue	fraction_of_ineligible
+BELOW_MIN_LENGTH	108439	0.2162	0.8204
+NON_STANDARD_RESIDUE	23741	0.0473	0.1796
+ELIGIBLE	369381	0.7365	

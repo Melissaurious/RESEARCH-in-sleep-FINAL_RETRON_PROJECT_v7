@@ -1,0 +1,6 @@
+tax_domains	n_eligible	n_inspectable	inspectable_fraction	median_MAPPED_fraction_inspectable	median_AMBIGUOUS_fraction_inspectable	median_UNSUPPORTED_fraction_inspectable	median_DELETED_fraction_inspectable	n_cat_state_mapped	cat_mapped_fraction_of_eligible	n_cat_confirmed	cat_confirmed_over_cat_mapped
+Bacteria	351193	336608	0.9585	0.8400	0.0267	0.0133	0.0667	338574	0.9641	326938	0.9656
+	7831	7536	0.9623	0.8667	0.0267	0.0133	0.0600	7564	0.9659	7282	0.9627
+;Bacteria	5362	5164	0.9631	0.8267	0.0400	0.0267	0.0667	5261	0.9812	5037	0.9574
+Archaea	4667	4476	0.9591	0.8800	0.0200	0.0200	0.0600	4507	0.9657	4316	0.9576
+Archaea;Bacteria	268	261	0.9739	0.8800	0.0267	0.0133	0.0600	265	0.9888	250	0.9434

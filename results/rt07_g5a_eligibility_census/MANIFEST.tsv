@@ -1,0 +1,23 @@
+artifact	script	command	unit	denominator
+tables/g5a_census_summary.tsv	scripts/census.py	see run.sh: census.py	census quantity	501561 exact RTs unless the row names another denominator
+tables/g5a_length_distribution.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	the population named in each row
+tables/g5a_length_bins.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	501561 exact RTs across 8 reporting bins
+tables/g5a_ineligibility_reasons.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	501561 exact RTs; fraction_of_ineligible over 132180
+tables/g5a_id_conflicts.tsv	scripts/census.py	see run.sh: census.py	identifier	0 rows: no identifier carries more than one sequence
+tables/g5a_eligibility_by_family.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each Stage-1 collapsed family's own total
+tables/g5a_eligibility_by_raw_myrt_family.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each raw MyRT label set's own total, >=100 only
+tables/g5a_eligibility_by_multi_status.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	MULTI 7598 and NON_MULTI 493963
+tables/g5a_eligibility_by_completeness.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each completeness class's own total
+tables/g5a_eligibility_by_view.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each view's own total
+tables/g5a_eligibility_by_source_database.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each source-database set's own total, >=100 only
+tables/g5a_eligibility_by_system_type.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each system-type set's own total, >=100 only
+tables/g5a_eligibility_by_tax_domain.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each taxonomic domain set's own total, >=100 only
+tables/g5a_eligibility_by_tool_support.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each myRT/PADLOC/DefenseFinder pattern's own total; STRATA, never accuracy
+tables/g5a_short_by_family.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each family's own total; numerator is its <250 aa count
+tables/g5a_short_by_raw_myrt_family.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each raw MyRT label set's own total
+tables/g5a_short_by_source_database.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each source-database set's own total
+tables/g5a_short_by_system_type.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	each system-type set's own total, top 200 by count
+tables/g5a_short_by_multi_status.tsv	scripts/census.py	see run.sh: census.py	exact RT sequence	MULTI and NON_MULTI totals
+data/derived/rt07_g5a/g5a_eligibility_partition.tsv.gz	scripts/census.py	see run.sh: census.py	exact RT sequence	501561 exact RTs, the full partition
+data/derived/rt07_g5a/g5a_eligible_ids.txt.gz	scripts/census.py	see run.sh: census.py	exact RT sequence	369381 eligible identifiers
+data/derived/rt07_g5a/g5a_ineligible_records.tsv.gz	scripts/census.py	see run.sh: census.py	exact RT sequence	132180 ineligible exact RTs, with metadata
