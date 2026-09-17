@@ -1,0 +1,7 @@
+recurrence_class	n_pairs	median_placements	median_physical_loci	median_genomes	median_species	pct_of_pairs
+single_placement	12005	1.0	1.0	1.0	1.0	38.821
+one_physical_locus_multiple_database_copies	9362	2.0	1.0	2.0	2.0	30.274
+multiple_species	5056	4.0	3.0	4.0	2.0	16.35
+one_species_multiple_genomes	4452	4.0	3.0	3.0	1.0	14.397
+one_genome_multiple_loci	36	2.0	2.0	1.0	1.0	0.116
+one_physical_locus_multiple_records	13	2.0	1.0	1.0	1.0	0.042

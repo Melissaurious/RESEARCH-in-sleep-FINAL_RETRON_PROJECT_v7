@@ -1,0 +1,5 @@
+overlap_extent	n	n_overlapping_the_RT_gene	n_overlapping_another_gene	pct
+a. <=10% of the ncRNA	7092	7086	1	58.5
+b. 10-50%	3925	3898	3	32.37
+c. 50-99%	841	815	8	6.94
+d. ncRNA fully enclosed by a CDS	266	5	33	2.19

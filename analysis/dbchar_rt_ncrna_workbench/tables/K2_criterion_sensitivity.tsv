@@ -1,0 +1,10 @@
+criterion	n_exact_pairs	pct_of_all_pairs
+all exact pairs derivable from CANONICAL placements	30427	100.0
+same strand	29916	98.32
+upstream only	26805	88.1
+no CDS between	28793	94.63
+distance <= 200 bp	25938	85.25
+distance <= 500 bp	26999	88.73
+not contig-start-clipped	20253	66.56
+1:1 partner topology	12079	39.7
+recurs across genomes/species	9544	31.37

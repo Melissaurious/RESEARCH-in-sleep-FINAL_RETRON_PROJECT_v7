@@ -1,0 +1,3 @@
+detection_model	n_placements	n_exact_ncrna	pct_upstream	pct_same_strand	median_abs_bp	median_score	pct_evalue_le_1e5
+OutgroupA	10851	3291	92.41544558105244	99.19823057782693	27.0	50.1	92.48917150493043
+OutgroupB	2005	329	96.50872817955111	100.0	25.0	119.0	98.60349127182046

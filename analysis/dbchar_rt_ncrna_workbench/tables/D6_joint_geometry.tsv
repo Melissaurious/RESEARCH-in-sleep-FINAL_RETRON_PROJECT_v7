@@ -1,0 +1,27 @@
+direction	strand	adjacency	distance_band	n_placements	n_physical_loci	n_exact_pairs	pct_placements	pct_physical_loci	pct_exact_pairs	pair_vs_placement_shift
+upstream	same	no CDS between	<=200 bp	190038	156748	22528	55.219	52.618	73.86	18.64
+upstream	same	no CDS between	1-5 kb	112969	108849	901	32.825	36.539	2.954	-29.87
+overlapping	same	no CDS between	overlapping (0)	12108	8938	3148	3.518	3.0	10.321	6.8
+upstream	same	>=1 CDS between	1-5 kb	9578	8333	597	2.783	2.797	1.957	-0.83
+upstream	same	no CDS between	200-1000 bp	8300	6140	1885	2.412	2.061	6.18	3.77
+downstream	same	>=1 CDS between	1-5 kb	5436	5359	196	1.58	1.799	0.643	-0.94
+upstream	opposite	>=1 CDS between	1-5 kb	2310	1234	270	0.671	0.414	0.885	0.21
+upstream	same	>=1 CDS between	200-1000 bp	1309	940	429	0.38	0.316	1.407	1.03
+downstream	same	no CDS between	<=200 bp	887	558	145	0.258	0.187	0.475	0.22
+upstream	opposite	no CDS between	<=200 bp	312	196	98	0.091	0.066	0.321	0.23
+upstream	opposite	>=1 CDS between	>5 kb	309	159	83	0.09	0.053	0.272	0.18
+downstream	same	no CDS between	200-1000 bp	217	150	55	0.063	0.05	0.18	0.12
+downstream	same	>=1 CDS between	>5 kb	144	131	42	0.042	0.044	0.138	0.1
+upstream	same	>=1 CDS between	>5 kb	81	56	46	0.024	0.019	0.151	0.13
+upstream	opposite	no CDS between	200-1000 bp	31	22	20	0.009	0.007	0.066	0.06
+upstream	same	>=1 CDS between	<=200 bp	30	23	5	0.009	0.008	0.016	0.01
+downstream	opposite	>=1 CDS between	>5 kb	19	13	12	0.006	0.004	0.039	0.03
+downstream	opposite	no CDS between	<=200 bp	17	13	8	0.005	0.004	0.026	0.02
+downstream	opposite	>=1 CDS between	1-5 kb	16	11	8	0.005	0.004	0.026	0.02
+overlapping	opposite	no CDS between	overlapping (0)	16	9	8	0.005	0.003	0.026	0.02
+downstream	same	>=1 CDS between	200-1000 bp	12	9	9	0.003	0.003	0.03	0.03
+downstream	opposite	>=1 CDS between	200-1000 bp	4	2	2	0.001	0.001	0.007	0.01
+downstream	same	no CDS between	1-5 kb	4	2	2	0.001	0.001	0.007	0.01
+downstream	opposite	no CDS between	200-1000 bp	3	2	2	0.001	0.001	0.007	0.01
+downstream	opposite	no CDS between	1-5 kb	2	1	1	0.001	0.0	0.003	0.0
+upstream	opposite	>=1 CDS between	200-1000 bp	2	1	1	0.001	0.0	0.003	0.0

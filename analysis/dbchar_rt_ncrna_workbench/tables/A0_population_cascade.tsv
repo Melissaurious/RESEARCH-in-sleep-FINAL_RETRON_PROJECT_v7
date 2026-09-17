@@ -1,0 +1,7 @@
+step	population	n	removed_at_this_step	pct_of_raw
+1	all raw records	3059700	0	100.0
+2	+ is_first_copy	3051238	8462	99.723
+3	+ drop the MULTI file	3042226	9012	99.429
+4	+ drop multilabel records	3042216	10	99.429
+5	+ elig_exact_rt  = POP_RT_SEQ	3042216	0	99.429
+6	+ elig_geometry  = POP_RT_CTX	3026000	16216	98.899

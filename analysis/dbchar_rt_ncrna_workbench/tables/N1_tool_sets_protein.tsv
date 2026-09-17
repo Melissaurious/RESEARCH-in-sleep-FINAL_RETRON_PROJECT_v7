@@ -1,0 +1,8 @@
+by_myRT	by_PADLOC	by_DefenseFinder	n_exact_rt	pct_exact_rt_with_ncrna	tool_set
+True	False	False	29436	18.6438374779182	myRT
+True	True	True	20203	53.25941691827946	myRT|PADLOC|DefenseFinder
+True	False	True	13199	24.44882188044549	myRT|DefenseFinder
+True	True	False	8994	87.58060929508561	myRT|PADLOC
+False	True	False	3492	25.08591065292096	PADLOC
+False	False	True	1731	18.833044482957828	DefenseFinder
+False	True	True	1232	48.9448051948052	PADLOC|DefenseFinder

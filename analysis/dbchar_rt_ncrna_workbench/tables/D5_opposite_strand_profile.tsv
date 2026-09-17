@@ -1,0 +1,3 @@
+stratum	n_placements	n_exact_ncrna	n_exact_rt	n_models	median_signed_bp	pct_no_cds_between	pct_true_start_clipped	pct_rt_on_minus_strand
+opposite strand	3041	288	439	19	-4750.0	12.528773429792832	33.771785596843145	51.20026307135811
+same strand	341113	15731	28544	21	-44.0	95.13650901607386	16.92958052023816	34.02069109063565

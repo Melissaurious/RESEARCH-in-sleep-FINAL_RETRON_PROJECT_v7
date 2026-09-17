@@ -1,0 +1,8 @@
+detected_by_set	n_tools	by_myRT	by_PADLOC	by_DefenseFinder	n_records	pct_records_with_ncrna
+myRT|PADLOC|DefenseFinder	3	True	True	True	352705	70.3885683503211
+myRT	1	True	False	False	126406	13.498568105944338
+myRT|DefenseFinder	2	True	False	True	74697	16.973907921335528
+myRT|PADLOC	2	True	True	False	61541	89.23481906371362
+PADLOC	1	False	True	False	26227	18.62584359629389
+PADLOC|DefenseFinder	2	False	True	True	13003	44.22825501807275
+DefenseFinder	1	False	False	True	8729	14.663764463283307

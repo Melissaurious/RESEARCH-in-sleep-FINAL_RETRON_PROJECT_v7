@@ -1,0 +1,8 @@
+step	rule	n_placements	n_exact_pairs	n_exact_rt	n_exact_ncrna	n_physical_loci	pairs_retained_pct
+1	canonical placements	344154	30427	28976	16011	297793	100.0
+2	+ Retron family only	343892	30287	28838	15906	297608	99.54
+3	+ same strand	340961	29837	28465	15666	296061	98.06
+4	+ upstream	322223	26293	25043	13793	280986	86.41
+5	+ no CDS between	311279	25295	24134	13252	271714	83.13
+6	+ within 200 bp	190028	22526	21610	11514	156741	74.03
+7	+ not contig-start-clipped	154066	14905	14268	8382	127057	48.99

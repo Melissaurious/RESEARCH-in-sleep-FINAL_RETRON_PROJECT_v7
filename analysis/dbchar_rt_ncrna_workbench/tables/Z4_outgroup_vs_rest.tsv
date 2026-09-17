@@ -1,0 +1,3 @@
+model_group	n_placements	n_exact_ncrna	pct_upstream	pct_same_strand	pct_no_cds_between	median_abs_bp	median_nc_len	median_score	pct_evalue_le_1e5
+other models (19)	331036	12286	94.5987747556157	99.1408789376382	94.27131792312619	55.0	158.0	114.5	97.97212387776555
+outgroup models (2)	12856	3620	93.05382700684505	99.32327317983821	99.16770379589298	27.0	128.0	55.4	93.44275046670815

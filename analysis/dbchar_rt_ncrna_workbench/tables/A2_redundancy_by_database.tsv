@@ -1,0 +1,9 @@
+source_database	n_records	n_loci	n_physical_loci	n_exact_rt	n_genomes	records_per_locus	loci_per_exact_rt	physical_loci_per_exact_rt	loci_per_genome
+ncbi_bacteria	2251359	2251354	2251354	409992	1237519	1.0	5.49	5.49	1.819
+gtdb_bacteria	600551	600551	600551	220934	299306	1.0	2.72	2.72	2.006
+mgnify_human_gut	142185	142185	142185	72910	87226	1.0	1.95	1.95	1.63
+gem	22271	22271	22271	15852	13645	1.0	1.4	1.4	1.632
+mgnify_soil	15658	15658	15658	14086	5461	1.0	1.11	1.11	2.867
+mgnify_marine	7952	7952	7952	6009	4817	1.0	1.32	1.32	1.651
+ncbi_archaea	7915	7915	7915	6956	4047	1.0	1.14	1.14	1.956
+gtdb_archaea	3347	3347	3347	2766	1806	1.0	1.21	1.21	1.853

@@ -1,0 +1,5 @@
+stratum	n_placements	n_exact_ncrna	n_exact_rt	n_models	median_bp	pct_true_start_clipped
+all canonical downstream	6761	230	440	19	2682.0	84.60286939801804
+THE MODE: within +/-150 bp of 2682 bp	5234	18	126	3	2714.5	99.80894153611005
+downstream, contig-start-clipped	5720	107	266	16	2683.0	100.0
+downstream, NOT clipped (near-range)	1041	149	207	19	64.0	0.0

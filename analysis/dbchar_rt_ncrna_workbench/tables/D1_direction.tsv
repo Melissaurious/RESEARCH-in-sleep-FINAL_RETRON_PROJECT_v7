@@ -1,0 +1,10 @@
+population	direction	n_placements
+ALL	downstream	6819
+ALL	overlapping	12338
+ALL	upstream	327565
+ELIGIBLE	overlapping	12259
+ELIGIBLE	upstream	326260
+ELIGIBLE	downstream	6794
+CANONICAL	upstream	325269
+CANONICAL	downstream	6761
+CANONICAL	overlapping	12124

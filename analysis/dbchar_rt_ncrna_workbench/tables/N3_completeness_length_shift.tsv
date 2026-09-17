@@ -1,0 +1,4 @@
+completeness_class	n_exact_rt	median_aa
+all_complete	339474	420.0
+all_partial	124667	280.0
+mixed_or_codon_evidence	29815	359.0

@@ -1,0 +1,4 @@
+stratum	n_proteins	n_seen_once	n_seen_twice	pct_seen_once
+a. all Retron proteins	78287	46887.0	17603.0	59.8911696705711
+b. drop metagenome-only	69240	39053.0	16868.0	56.402368573079144
+c. drop metagenome-only AND partial calls	45271	25642.0	11941.0	56.641116829758566

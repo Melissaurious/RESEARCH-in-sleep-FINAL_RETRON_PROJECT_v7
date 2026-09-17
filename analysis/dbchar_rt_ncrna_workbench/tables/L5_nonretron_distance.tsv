@@ -1,0 +1,4 @@
+direction	n_placements	median_signed_bp	median_abs_bp	mean_signed_bp	n_genomes	n_exact_ncrna
+upstream	150	-1801.5	1801.5	-2630.7266666666665	124	56
+downstream	108	4280.5	4280.5	4203.916666666667	84	51
+overlapping	2	0.0	0.0	0.0	2	2

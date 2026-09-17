@@ -1,0 +1,19 @@
+filter	category	sql_predicate	pairs_kept	pct_kept	pairs_lost	rts_kept	ncrnas_kept	note
+not_downstream	IN_T3	direction <> 'downstream'	29879	98.65	408	28474	15745	downstream is largely a window-truncation artefact
+same_strand	IN_T3	same_strand	29837	98.51	450	28465	15666	RNA on the same strand as the RT
+no_intervening_cds	IN_T3	n_cds_between = 0	28748	94.92	1539	27489	15178	no annotated CDS between RT and RNA
+evalue_le_1e5	IN_T3	evalue <= 1e-5	27908	92.15	2379	26526	14213	global CM threshold; hits models unevenly, see N6_cm_confidence_by_model
+within_200bp	IN_T3	abs(signed_distance_bp) <= 200	25926	85.6	4361	24919	13428	the joint-geometry mode; not a completeness bound
+nc_fully_in_window	NOOP	nc_in_window AND NOT nc_at_window_edge	30287	100.0	0	28838	15906	guaranteed by the canonical definition
+window_self_consistent	NOOP	window_len_consistent AND NOT window_inverted	30287	100.0	0	28838	15906	guaranteed by the canonical definition
+one_ncrna_seq_at_locus	NOOP	n_distinct_ncrna_seq_at_locus = 1	30169	99.61	118	28786	15801	effectively guaranteed; costs 118 pairs
+single_multiplicity	STRATIFY	multiplicity_class = 'single_call'	25678	84.78	4609	24518	12907	placement multiplicity; use for weighting, not filtering
+not_start_clipped	STRATIFY	NOT true_start_clipped	20149	66.53	10138	19133	11759	contig clipping is a stratification flag by project convention, not an exclusion
+not_end_clipped	STRATIFY	NOT clipped_end_flag	19445	64.2	10842	18468	11752	as above
+drop_outgroup_models	TRAP	detection_model NOT LIKE 'Outgroup%'	25372	83.77	4915	23988	12286	REJECTED: outgroup-model calls sit in canonical retron architecture - see Z4
+has_structure_annotation	TRAP	has_structure_annotation	1814	5.99	28473	1755	1226	populated on 1.37% of placements; records annotation coverage, not quality
+rt_fully_in_window	USE	rt_in_window AND NOT rt_at_window_edge	28851	95.26	1436	27425	15749	RT not abutting the extracted window edge
+backtranslation_exact	USE	bt_status = 'exact'	25925	85.6	4362	24598	13348	RT protein reproduces from window DNA; alt_start is the main other class
+single_call_at_locus	USE	n_calls_at_locus = 1	25678	84.78	4609	24518	12907	one RNA call at that locus
+score_ge_50	USE	score >= 50	23567	77.81	6720	22341	11592	bit-score alternative to the E-value cut
+evalue_le_1e10	USE	evalue <= 1e-10	19580	64.65	10707	18500	9522	stricter CM threshold

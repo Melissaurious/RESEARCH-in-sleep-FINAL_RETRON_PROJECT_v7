@@ -1,0 +1,5 @@
+partner_length_spread	n_exact_rt	pct
+a. <=5 nt  (boundary jitter)	659	71.55
+b. 6-20 nt	91	9.88
+c. 21-50 nt	61	6.62
+d. >50 nt  (genuinely different RNAs)	110	11.94

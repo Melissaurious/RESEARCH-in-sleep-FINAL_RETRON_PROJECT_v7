@@ -1,0 +1,3 @@
+population	n_records	n_loci	n_physical_loci	n_exact_rt	n_genomes
+POP_RT_SEQ (sequence-level default)	3042216	2838761	2467291	493964	1540869
+POP_RT_CTX (context-level default)	3026000	2822547	2451078	477956	1535827

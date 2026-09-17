@@ -1,0 +1,9 @@
+measure	n	pct
+exact RTs in the pair view	29192	
+exact RTs with exactly one ncRNA partner	28271	96.84502603453001
+exact RTs with more than one	921	3.154973965469992
+max ncRNA partners on one exact RT	176	
+exact ncRNAs in the pair view	16458	
+exact ncRNAs with exactly one RT partner	13542	82.28217280349982
+exact ncRNAs with more than one	2916	17.71782719650018
+max RT partners on one exact ncRNA	705	

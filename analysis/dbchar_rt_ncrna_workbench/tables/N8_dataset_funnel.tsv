@@ -1,0 +1,8 @@
+step	stage	n_pairs	reason	pct_retained	removed
+1	eligible, non-redundant placements	30427	de-duplication + coordinate verification	100.0	0
+2	Retron family only	30287	detection is retron-model-scoped	99.54	140
+3	same strand	29837	opposite strand is a distant single-model group	98.06	450
+4	upstream or overlapping	29440	downstream is largely window-truncation artefact	96.76	397
+5	no intervening CDS	28442	operonic architecture	93.48	998
+6	within 200 bp	25673	the joint-geometry mode	84.38	2769
+7	high-confidence CM hit (E <= 1e-5)	23680	detection confidence	77.83	1993

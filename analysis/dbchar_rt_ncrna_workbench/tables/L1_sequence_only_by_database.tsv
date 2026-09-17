@@ -1,0 +1,13 @@
+source_database	representation_class	n	n_all	pct_of_that_database
+mgnify_human_gut	rt_beyond_a_contig_end_clipped_window	8485	142185	5.9676
+mgnify_human_gut	window_inverted_no_sequence_retrieved	3611	142185	2.5396
+mgnify_human_gut	rt_crosses_a_contig_end_clipped_window	3268	142185	2.2984
+mgnify_marine	rt_beyond_a_contig_end_clipped_window	383	7952	4.8164
+mgnify_soil	rt_beyond_a_contig_end_clipped_window	257	15658	1.6413
+mgnify_marine	rt_crosses_a_contig_end_clipped_window	216	7952	2.7163
+mgnify_marine	window_inverted_no_sequence_retrieved	167	7952	2.1001
+mgnify_soil	rt_crosses_a_contig_end_clipped_window	149	15658	0.9516
+mgnify_soil	window_inverted_no_sequence_retrieved	127	15658	0.8111
+gem	window_inverted_no_sequence_retrieved	19	22271	0.0853
+gem	rt_beyond_a_contig_end_clipped_window	3	22271	0.0135
+gem	rt_crosses_a_contig_end_clipped_window	3	22271	0.0135

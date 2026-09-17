@@ -1,0 +1,13 @@
+database_set	n_databases	n_loci	pct_of_loci
+ncbi_bacteria	1	2047331	72.535
+gtdb_bacteria	1	399258	14.145
+gtdb_bacteria + ncbi_bacteria	2	200792	7.114
+mgnify_human_gut	1	124507	4.411
+gem	1	22235	0.788
+mgnify_soil	1	13655	0.484
+mgnify_marine	1	7041	0.249
+ncbi_archaea	1	4540	0.161
+gtdb_archaea + ncbi_archaea	2	2439	0.086
+gtdb_archaea	1	532	0.019
+gtdb_archaea + ncbi_bacteria	2	122	0.004
+gtdb_bacteria + ncbi_archaea	2	95	0.003

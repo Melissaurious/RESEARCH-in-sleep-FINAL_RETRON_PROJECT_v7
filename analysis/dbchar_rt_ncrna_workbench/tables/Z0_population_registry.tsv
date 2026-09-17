@@ -1,0 +1,19 @@
+pop_id	unit	n	definition	honest_for	not_honest_for
+REC-ALL	raw record	3059700	rt_records, all rows	provenance, per-file composition as mined	any biological rate
+REC-DIST	distinct record	3051238	is_first_copy	as REC-ALL, minus byte-identical duplicate lines	any biological rate
+LOC	accession-defined locus	2847312	distinct locus_key	per-locus architecture, contig context	counts a RefSeq/GenBank twin twice
+PLOC	physical locus	2475684	distinct physical_locus_key	locus counts corrected for twin publication	collapse only where supported
+GEN	genome identifier	1542433	distinct genome_id_norm	taxonomic breadth	genome-level prevalence (RT-carrying only)
+RT-BASE	exact RT protein	501561	distinct rt_seq_hash, whole corpus	the full exact-sequence baseline	any POP_RT-filtered statement
+RT-BASE-1F	exact RT protein	493956	rt_family_baseline view = V-RT-SINGLE	family composition of the baseline	the record-filtered sequence population
+RT-MULTI	exact RT protein	7593	rt_family_baseline view = V-RT-MULTI	the multi-label stratum, on its own	never appended to a single family
+RT-CROSS	exact RT protein	12	rt_family_baseline view = V-RT-CROSS	proteins seen under >1 single-family label	family denominators
+RT-SEQ	exact RT protein	493964	POP_RT_SEQ	family, length, completeness, diversity	geometry (no context guarantee)
+RT-CTX	exact RT protein	477956	POP_RT_CTX	geometry, ncRNA placement, architecture	sequence diversity (drops 16,008 usable)
+PL-ALL	placement	346722	rt_ncrna_pairs, all rows	call-level QC	geometry (contains QC failures)
+PL-ELIG	eligible placement	345313	geometry_eligible	geometry before de-duplication	counting distinct biology
+PL-CANON	eligible, non-redundant placement	344154	canonical	all geometry reported in the chapter	raw call frequency
+NC-ALL	exact ncRNA sequence	16466	distinct nc_seq_hash, all placements	the ncRNA sequence set as called	pairing with eligible placements
+NC-ELIG	exact ncRNA sequence	16458	distinct nc_seq_hash, eligible	the ncRNA side of the registered pair view	call-level composition
+PAIR-ELIG	exact RT-ncRNA pair	30924	distinct (rt,nc) over eligible	pair topology; matches rt_ncrna_exact_pairs_v1	geometry composition
+PAIR-CANON	exact RT-ncRNA pair	30427	distinct (rt,nc) over canonical	the dataset funnel and geometry composition	pair topology (497 pairs short of g3)

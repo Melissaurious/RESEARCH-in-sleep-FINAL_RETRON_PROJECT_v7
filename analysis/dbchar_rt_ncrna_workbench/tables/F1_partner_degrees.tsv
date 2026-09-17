@@ -1,0 +1,21 @@
+side	k_capped	n	pct_of_side
+exact RT -> n ncRNA partners	1	28271	96.845
+exact RT -> n ncRNA partners	2	724	2.48
+exact RT -> n ncRNA partners	3	115	0.394
+exact RT -> n ncRNA partners	4	36	0.123
+exact RT -> n ncRNA partners	5	12	0.041
+exact RT -> n ncRNA partners	6	8	0.027
+exact RT -> n ncRNA partners	7	4	0.014
+exact RT -> n ncRNA partners	8	4	0.014
+exact RT -> n ncRNA partners	9	5	0.017
+exact RT -> n ncRNA partners	10	13	0.045
+exact ncRNA -> n RT partners	1	13542	82.282
+exact ncRNA -> n RT partners	2	1563	9.497
+exact ncRNA -> n RT partners	3	484	2.941
+exact ncRNA -> n RT partners	4	235	1.428
+exact ncRNA -> n RT partners	5	138	0.838
+exact ncRNA -> n RT partners	6	104	0.632
+exact ncRNA -> n RT partners	7	67	0.407
+exact ncRNA -> n RT partners	8	47	0.286
+exact ncRNA -> n RT partners	9	39	0.237
+exact ncRNA -> n RT partners	10	239	1.452

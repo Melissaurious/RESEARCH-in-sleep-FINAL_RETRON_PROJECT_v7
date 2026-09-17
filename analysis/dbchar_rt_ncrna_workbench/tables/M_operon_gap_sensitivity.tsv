@@ -1,0 +1,6 @@
+max_gap_bp	n_loci	median_genes_in_run	pct_single_gene
+50	60	1.0	68.3
+100	60	1.0	61.7
+150	60	1.0	55.0
+300	60	2.0	36.7
+500	60	3.0	16.7

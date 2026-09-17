@@ -1,0 +1,6 @@
+recovery_state	representation_class	elig_geometry	n
+RECOVERED	rt_inside_window	True	14188
+SEQUENCE_ONLY	rt_beyond_a_contig_end_clipped_window	False	9128
+SEQUENCE_ONLY	window_inverted_no_sequence_retrieved	False	3924
+SEQUENCE_ONLY	rt_crosses_a_contig_end_clipped_window	False	3636
+ILL_POSED	rt_inside_window	False	628

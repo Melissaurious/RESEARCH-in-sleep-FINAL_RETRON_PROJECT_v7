@@ -1,0 +1,10 @@
+population	direction	n	q25	median	q75	min	max
+CANONICAL	downstream	6761	2633.0	2682.0	2730.0	10.0	9083.0
+CANONICAL	overlapping	12124	0.0	0.0	0.0	0.0	0.0
+CANONICAL	upstream	325269	-1037.0	-55.0	-27.0	-9287.0	0.0
+CANONICAL_by_clip: not_clipped	downstream	1041	64.0	64.0	208.0	10.0	9083.0
+CANONICAL_by_clip: not_clipped	overlapping	8456	0.0	0.0	0.0	0.0	0.0
+CANONICAL_by_clip: not_clipped	upstream	275881	-1037.0	-55.0	-31.0	-9287.0	0.0
+CANONICAL_by_clip: true_start_clipped	downstream	5720	2636.0	2683.0	2730.0	11.0	8952.0
+CANONICAL_by_clip: true_start_clipped	overlapping	3668	0.0	0.0	0.0	0.0	0.0
+CANONICAL_by_clip: true_start_clipped	upstream	49388	-664.0	-39.0	-22.0	-8666.0	0.0

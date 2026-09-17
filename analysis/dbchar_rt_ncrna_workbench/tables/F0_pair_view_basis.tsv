@@ -1,0 +1,5 @@
+placement_population	n_exact_pairs	n_exact_rt	n_exact_ncrna
+ALL placements	31029	29297	16466
+ELIGIBLE	30924	29192	16458
+CANONICAL	30427	28976	16011
+rt_ncrna_exact_pairs_v1 (the registered view)	30924	29192	16458

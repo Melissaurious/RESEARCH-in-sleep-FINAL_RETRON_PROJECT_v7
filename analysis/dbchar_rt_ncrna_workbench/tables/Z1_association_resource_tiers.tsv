@@ -1,0 +1,5 @@
+tier	n_placements	n_exact_pairs	n_rt_associations	n_exact_rt	n_exact_ncrna	n_physical_loci	n_species
+T1 observed	343892.0	30287	28845.0	28838	15906	297608.0	10370.0
+T2 architecture-filtered	202135.0	25673	24677.0	24677	13258	165678.0	9007.0
+T3 high-confidence	195764.0	23680	22727.0	22727	11849	161154.0	8098.0
+T4 independently recurrent		7476		7187	3829		

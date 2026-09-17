@@ -1,0 +1,9 @@
+source_database	n_loci_coverage	n_loci_exclusive	pct_of_partition	coverage_minus_exclusive
+ncbi_bacteria	2248245	2047331	72.535	200914
+gtdb_bacteria	600145	600145	21.263	0
+mgnify_human_gut	124507	124507	4.411	0
+gem	22235	22235	0.788	0
+mgnify_soil	13655	13655	0.484	0
+ncbi_archaea	7074	4540	0.161	2534
+mgnify_marine	7041	7041	0.249	0
+gtdb_archaea	3093	3093	0.11	0

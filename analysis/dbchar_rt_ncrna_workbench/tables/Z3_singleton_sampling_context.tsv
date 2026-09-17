@@ -1,0 +1,5 @@
+sampling_depth_of_its_species	n_proteins_seen_once
+a. >=1000 genomes of that species sequenced	11072
+b. 100-999	11091
+c. 10-99	9677
+d. <10	5798

@@ -1,0 +1,13 @@
+recurrence_class	ambiguity	n_pairs
+single_placement	ambiguous (>1 partner on a side)	7561
+one_physical_locus_multiple_database_copies	unambiguous (1:1)	4889
+one_physical_locus_multiple_database_copies	ambiguous (>1 partner on a side)	4473
+single_placement	unambiguous (1:1)	4444
+one_species_multiple_genomes	ambiguous (>1 partner on a side)	3647
+multiple_species	ambiguous (>1 partner on a side)	3132
+multiple_species	unambiguous (1:1)	1924
+one_species_multiple_genomes	unambiguous (1:1)	805
+one_genome_multiple_loci	ambiguous (>1 partner on a side)	26
+one_genome_multiple_loci	unambiguous (1:1)	10
+one_physical_locus_multiple_records	unambiguous (1:1)	7
+one_physical_locus_multiple_records	ambiguous (>1 partner on a side)	6
