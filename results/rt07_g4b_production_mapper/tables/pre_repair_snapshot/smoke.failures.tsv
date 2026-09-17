@@ -1,0 +1,5 @@
+rt_hash	sequence_id	sequence_length	mapper_version	inspectability_status	reason_code	detail
+	SMOKE_INVALID_SHORT	180	rtmap-1.0.0/46aa95cb0e197b40	INPUT_INVALID	BELOW_MIN_LENGTH	180 aa < registered minimum 250
+	AAL40743.1_Retrons	514	rtmap-1.0.0/46aa95cb0e197b40	INPUT_INVALID	DUPLICATE_SEQUENCE_ID	identifier already seen in this shard
+	SMOKE_INVALID_EMPTY	0	rtmap-1.0.0/46aa95cb0e197b40	INPUT_INVALID	EMPTY_SEQUENCE	no residues
+	SMOKE_INVALID_NONSTANDARD	302	rtmap-1.0.0/46aa95cb0e197b40	INPUT_INVALID	NON_STANDARD_RESIDUE	non-standard residue(s): BX

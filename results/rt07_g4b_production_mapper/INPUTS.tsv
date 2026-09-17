@@ -1,0 +1,13 @@
+path	sha256	bytes	mtime	role
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/rt07_g4a_repaired/work/GII.deriv.hmm	292495a4f4ec2d04c47cf73c658b0f5cbaec7b202de70d97e6fc2496dd82e97b	220026	2026-09-16 22:18:17
+/home/borg/RETRONS_january_2026/the-retron-project/src/myRT/Models/RTs-collection.faa	5efac6053021ba054692b10d50a7980768d81a500c6df1b829b345bbc654e5c9	1259707	2025-11-19 14:11:44
+/home/borg/miniconda3/envs/retron_tradicional/bin/hmmalign	532f1ed4c21dc03a12007b31c2dc0568e82cab659b0d75c20efd20e6374f53e2	475464	2025-04-30 12:44:12
+/home/borg/miniconda3/envs/retron_tradicional/bin/hmmsearch	e73bad9d701f129795dd3ffb108ee2d4724ab4c8b1a46269bd5671bdcfcdc8f2	613144	2025-04-30 12:44:12
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/FINAL_PRE_UG25_VALIDATION_BUNDLE/code/mapper.py	69575dc7ac74f6094bda3c35df100d0f8f5a0e4c25142ac61c5d1026f10fceef	7079	2026-09-17 13:51:52
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/FINAL_PRE_UG25_VALIDATION_BUNDLE/control/SUPPORT_RULE_FROZEN.tsv	ecb0451e9680de2edec76836ab630cee9c6526d2c429fbaf045b4f6e6acd7057	925	2026-09-17 16:47:27
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/FINAL_PRE_UG25_VALIDATION_BUNDLE/control/CATALYTIC_STATE_FROZEN.tsv	d6fc130148995e2320b7cec8047e920c0f26369b75a4f6e7922aefb2cff8ca78	417	2026-09-17 16:47:27
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/rt07_ug5_holdout_gate/tables/ug5_frozen_anchor_coordinates.tsv	c48315aef8dccdcee1f41ebef512cc69a63e51cfad22df28c73a84c564a30e49	2497	2026-09-16 22:29:11
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/FINAL_PRE_UG25_VALIDATION_BUNDLE/tables/construction_validation_sequence.tsv	85a683d3020b4dae4b8fab3aca9ced93d93021c94cc72ff586b8e9de591dfa1d	17373	2026-09-17 16:47:27
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/FINAL_PRE_UG25_VALIDATION_BUNDLE/code/loader.py	e39fb4eee45904cab3c681f033744950fe53e9316f5d54809a9c23285b2d3a24	4573	2026-09-17 13:53:18
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv	0726345ad46c8cff861a255b9471ac52a7739e4f5230aeabb3fa2947ab69cdf5	13100	2026-09-15 20:18:24
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.faa	bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655	230435383	2026-09-15 04:23:05	NOT READ IN g4b - registered because g5 will read it

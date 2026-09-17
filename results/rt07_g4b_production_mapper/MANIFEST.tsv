@@ -1,0 +1,15 @@
+artifact	script	command	unit	denominator
+tables/smoke_input.faa	scripts/make_smoke_input.py	see run.sh: make_smoke_input.py	sequence record	23 records: 18 construction sequences + 1 duplicate sequence + 1 duplicate identifier + 3 planted invalid
+tables/smoke_states.tsv	code/rtmap/run_mapper.py	see run.sh: run_mapper.py --shard smoke	per-state call	2850 = 19 mapped sequences x 150 frozen conserved states
+tables/smoke_sequences.tsv	code/rtmap/run_mapper.py	see run.sh: run_mapper.py --shard smoke	exact RT sequence	19 sequences that reached the mapper
+tables/smoke_failures.tsv	code/rtmap/run_mapper.py	see run.sh: run_mapper.py --shard smoke	rejected input record	4 records that produced no scientific statement
+tables/smoke_provenance.tsv	code/rtmap/run_mapper.py	see run.sh: run_mapper.py --shard smoke	provenance key	n/a - one key/value record per shard run, not a rate
+tables/smoke_run.log	scripts/run_smoke.sh	see run.sh: run_smoke.sh	log line	n/a - execution log, not a measurement
+tables/g4b_throughput_measurement.tsv	scripts/measure_throughput.py	see run.sh: measure_throughput.py	timing / size quantity	560 construction sequences, mean length 477 aa, single core
+tables/g4b_domain_scoring_repair_evidence.tsv	scripts/check_repairs.py	documented in PRODUCTION_SPEC.md section 3; reproduced by the batched-vs-per-sequence comparison described there	exact RT sequence	219 = the complete construction population (40 per family, AbiA 19)
+tables/g4b_repair_no_science_change.tsv	scripts/check_smoke.py	column-by-column diff of tables/pre_repair_snapshot/ against tables/smoke_*.tsv; command in tables/pre_repair_snapshot/README.md	output column	3 landed smoke tables, all columns compared
+tables/pre_repair_snapshot/smoke.states.tsv	code/rtmap/run_mapper.py	SUPERSEDED - produced before the five review repairs; retained as audit history only	per-state call	2850 = 19 sequences x 150 frozen conserved states
+tables/pre_repair_snapshot/smoke.sequences.tsv	code/rtmap/run_mapper.py	SUPERSEDED - produced before the five review repairs; retained as audit history only	exact RT sequence	19 sequences that reached the mapper
+tables/pre_repair_snapshot/smoke.failures.tsv	code/rtmap/run_mapper.py	SUPERSEDED - produced before the five review repairs; retained as audit history only	rejected input record	4 records that produced no scientific statement
+tables/pre_repair_snapshot/smoke.provenance.tsv	code/rtmap/run_mapper.py	SUPERSEDED - produced before the five review repairs; retained as audit history only	provenance key	n/a - one key/value record per shard run, not a rate
+control/CROSSWALK_RT0_RT7.tsv	code/rtmap/crosswalk.py	hand-assembled from landed g3 tables, sources cited per row; crosswalk.py reads it and fails closed unless every row is UNRESOLVED	historical landmark	8 = RT0..RT7

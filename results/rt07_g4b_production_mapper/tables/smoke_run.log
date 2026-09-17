@@ -1,0 +1,231 @@
+==============================================================
+ 1. FREEZE TESTS
+==============================================================
+
+== T1  the production mapper is the frozen mapper, byte for byte ==
+  ok    T1 mapper.py sha256 equals the frozen hash  [69575dc7ac74f6094bda3c35df100d0f8f5a0e4c25142ac61c5d1026f10fceef]
+  ok    T1 identical to FINAL_PRE_UG25_VALIDATION_BUNDLE/code/mapper.py
+  ok    T1 the alignment call is unchanged
+  ok    T1 endpoint interpolation was not reintroduced  [1 mention(s)]
+
+== T2  frozen scientific parameters ==
+  ok    T2 CAT_STATE == 262  [262]
+  ok    T2 D_MAX == 0.48  [0.48]
+  ok    T2 D_RANDOM == 0.067  [0.067]
+  ok    T2 K_MIN == 30  [30]
+  ok    T2 N_ANCHORS == 150  [150]
+  ok    T2 PP_HI == 0.75  [0.75]
+  ok    T2 PP_LO == 0.5  [0.5]
+  ok    T2 S_MIN == 10  [10]
+  ok    T2 T1 == 0.32  [0.32]
+  ok    T2 match-state definition is -M 50  [hhmake -M 50]
+  ok    T2 150 frozen anchors, ascending
+  ok    T2 CAT_STATE is NOT an anchor - the two denominators stay separate
+  ok    T2 profile HMM identity
+
+== T3  a tampered control table fails closed ==
+  ok    T3 a retuned PP_HI is rejected at import  [FAIL CLOSED: frozen control file CHANGED: SUPPORT_RULE_FROZEN.tsv]
+
+== T4  a tampered mapper fails closed ==
+  ok    T4 an edited mapper.py is rejected before any record is emitted
+
+== T5  the schema keeps every required field and state ==
+  ok    T5 per-state fields present  [[]]
+  ok    T5 per-sequence fields present  [[]]
+  ok    T5 exactly the four frozen call states
+  ok    T5 the six production statuses
+  ok    T5 no historical RT0-RT7 label appears in any production column
+
+== T6  historical RT0-RT7 stays a separate, unresolved crosswalk ==
+  ok    T6 every crosswalk row is UNRESOLVED
+  ok    T6 RT0..RT7 all present  [8]
+  ok    T6 no production state is claimed to correspond to a historical label
+  ok    T6 even CAT_STATE 262 carries no historical label
+
+== T7  absence language is not attached to abstention ==
+  ok    T7 NO_SUPPORTED_MAPPING is documented as not biological absence
+  ok    T7 AMBIGUOUS_MAPPING is not absence
+  ok    T7 DELETED_STATE is documented as an alignment-path statement
+
+== T8  the production package cannot reach for UG25 or a holdout ==
+  ok    T8 no production module has executable code referencing UG25
+  ok    T8 production does not use the family loader at all - it reads a FASTA shard
+  ok    T8 no RNG and no shuffling in the production path
+  ok    T8 production does not generate synthetic controls
+
+== T9  runner input contracts ==
+  ok    T9 only the valid record survives  [['a']]
+  ok    T9 every INPUT_INVALID reason is reachable  [['BELOW_MIN_LENGTH', 'DUPLICATE_SEQUENCE_ID', 'EMPTY_SEQUENCE', 'NON_STANDARD_RESIDUE', 'UNPARSEABLE_RECORD']]
+  ok    T9 an identifier with different sequences rejects EVERY occurrence
+  ok    T9 eligibility minimum inherited from the registered loader
+  ok    T9 MAPPABLE
+  ok    T9 PARTIAL_MAPPING below T1
+  ok    T9 AMBIGUOUS_MAPPING
+  ok    T9 NO_SUPPORTED_MAPPING
+
+== T10  the compact instrument identifier ==
+  ok    T10 identifier shape  [rtmap-1.0.0/53a1e738a19b3896]
+  ok    T10 a changed threshold changes the identifier
+  ok    T10 a changed mapper changes the identifier
+  ok    T10 a changed profile changes the identifier
+  ok    T10 a changed anchor set changes the identifier
+  ok    T10 a changed instrument_tree_sha256 changes the identifier
+  ok    T10 a changed eligibility_rule changes the identifier
+  ok    T10 a changed domain_scoring_protocol changes the identifier
+  ok    T10 identical components give an identical identifier
+
+== T11  the five review repairs are in place ==
+  ok    T11 R1 the wrapper, eligibility and protocol are instrument components
+  ok    T11 R1 tables/ is outside the instrument tree
+  ok    T11 R1 the domain-scoring protocol is recorded as per-sequence
+  ok    T11 R2 the conflict reason code exists
+  ok    T11 R3 the reconciliation assertion is present
+  ok    T11 R4 the DONE sidecar is validated, not merely present
+  ok    T11 R1 external pinned-root verification is available
+  ok    T11 R5 no invented anchor-count predicate remains
+  ok    T11 R5 the status map is a bijection onto the frozen abstention reasons
+
+FREEZE TESTS OK
+
+==============================================================
+ 2. PRODUCTION SMOKE TEST (engineering only)
+==============================================================
+== building smoke input (construction sequences only; UG25 is never touched) ==
+/tmp/claude-1000/vfin/smoke/smoke_input.faa: 18 real + 1 duplicate-sequence + 1 duplicate-id + 3 invalid
+  AAL40743.1_Retrons  514 aa
+  ACY91017.1_Retrons  311 aa
+  ADP10728.1_Retrons  323 aa
+  A.v.I1|CL1|IIB1|Azotobacter_GII  563 aa
+  A.v.I2|Bacterial_GII  455 aa
+  A.v.I3|CL1|IIB1|Azotobacter_GII  505 aa
+  AATN01000314.1_5649_6656_+_DGRs  335 aa
+  AAYH02000035.1_80908_82197_+_DGRs  429 aa
+  ABCB02000017.1_169604_170764_+_DGRs  386 aa
+  ACV77640.1_CRISPR  311 aa
+  ADE85031.1_CRISPR  533 aa
+  ADN17996.1_CRISPR  671 aa
+  ABS14021.1_UG3  424 aa
+  ADT87873.1_UG3  450 aa
+  AGQ03690.1_UG3  411 aa
+  AAA25159.1_AbiA  628 aa
+  AFZ16538.1_AbiA  642 aa
+  CP002739.1_1837008_1837916_-_NewM_AbiA  302 aa
+
+== run 1: default batching ==
+smoke: 19 sequences, 2850 state rows, 4 failures, 1 batch(es) -> /tmp/claude-1000/vfin/smoke/main
+== resume behaviour: a completed shard is skipped ==
+  ok    completed shard skipped without recomputing
+== run 2: rerun into a separate directory (determinism) ==
+smoke: 19 sequences, 2850 state rows, 4 failures, 1 batch(es) -> /tmp/claude-1000/vfin/smoke/rerun
+== run 3: batch size 1 (batch-composition invariance) ==
+smoke: 19 sequences, 2850 state rows, 4 failures, 18 batch(es) -> /tmp/claude-1000/vfin/smoke/batch1
+
+
+== S1  equivalence to the landed frozen construction results ==
+  ok    S1 at least one sequence compared against landed values  [18 compared]
+  ok    S1 all 18 sequences match the landed frozen values exactly
+
+== S2  per-state equivalence to a direct frozen-mapper call ==
+  ok    S2 imported the frozen mapper  [/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/FINAL_PRE_UG25_VALIDATION_BUNDLE/code/mapper.py]
+  ok    S2 2850 state calls identical to the frozen mapper
+
+== S3  determinism (byte-identical rerun) ==
+  ok    S3 smoke.states.tsv identical across runs  [9cdade798679e6e4]
+  ok    S3 smoke.sequences.tsv identical across runs  [16040edb1b13fcd4]
+  ok    S3 smoke.failures.tsv identical across runs  [a77f93763bed1ff7]
+
+== S4  batch-composition invariance ==
+  ok    S4 batch-size 1 and default batching agree on every scientific column, domain scores included
+
+== S5  call-state completeness ==
+  ok    S5 no call state outside the frozen four  [[]]
+  ok    S5 all four call states reachable in the output  [MAPPED=1858 AMBIGUOUS=302 UNSUPPORTED=244 DELETED_STATE=446]
+  ok    S5 every sequence carries all 150 frozen anchor rows
+  ok    S5 state row count = sequences x anchors  [2850 == 19 x 150]
+
+== S6  failure states ==
+  ok    S6 exactly one BELOW_MIN_LENGTH  [1]
+  ok    S6 exactly one NON_STANDARD_RESIDUE  [1]
+  ok    S6 exactly one EMPTY_SEQUENCE  [1]
+  ok    S6 exactly one DUPLICATE_SEQUENCE_ID  [1]
+  ok    S6 every failure row is INPUT_INVALID or TOOL_FAILURE
+  ok    S6 no engineering-failure status leaks into sequences.tsv
+
+== S7  deduplication ==
+  ok    S7 the planted duplicate sequence produced its own row
+  ok    S7 duplicate and original share one rt_hash  [5ec77a3b9b4da75d]
+  ok    S7 duplicate and original carry identical calls
+  ok    S7 provenance records exactly one collapsed duplicate  [1]
+  ok    S7 distinct rt_hash = valid inputs - 1
+
+SMOKE OK - production packaging reproduces the frozen mapper exactly.
+This is an ENGINEERING result. It is not new scientific validation.
+
+smoke artefacts: /tmp/claude-1000/vfin/smoke
+
+==============================================================
+ 3. REVIEW-REPAIR CHECKS R1-R5 (engineering only)
+==============================================================
+
+== R1  the identifier binds the production wrapper ==
+  ok    R1 instrument_tree_sha256 is an instrument component
+  ok    R1 changing instrument_tree_sha256 changes the identifier
+  ok    R1 eligibility_rule is an instrument component
+  ok    R1 changing eligibility_rule changes the identifier
+  ok    R1 domain_scoring_protocol is an instrument component
+  ok    R1 changing domain_scoring_protocol changes the identifier
+  ok    R1 editing run_mapper.py changes the instrument tree digest  [5b370fa94a75a6d9]
+  ok    R1 tables/ is excluded, so landing an output does not change the instrument
+  ok    R1 a correct pinned root is accepted
+  ok    R1 a wrong pinned root FAILS CLOSED before any record is emitted
+  ok    R1 nothing was written by the refused run
+  ok    R1 provenance records the verified bundle root  [VERIFIED]
+  ok    R1 provenance records the protocol and eligibility rule
+
+== R2  duplicate identifiers are order-independent ==
+  ok    R2 an identifier with two DIFFERENT sequences retains neither  [forward [] reverse []]
+  ok    R2 both occurrences are rejected as a conflict  [['DUPLICATE_SEQUENCE_ID_CONFLICT', 'DUPLICATE_SEQUENCE_ID_CONFLICT']]
+  ok    R2 an identifier repeated with an IDENTICAL sequence is kept once
+  ok    R2 the redundant copy is still logged
+  ok    R2 the global census reject list is honoured
+  ok    R2 the conflict reason is in the schema
+
+== R3  every valid input identifier reconciles to exactly one outcome ==
+  ok    R3 the two-alias shard runs
+  ok    R3 both aliases get a row  [['alias_a', 'alias_b']]
+  ok    R3 a planted mapper failure produces a TOOL_FAILURE row for BOTH aliases  [rc=0 ids=['alias_a', 'alias_b']]
+  ok    R3 dropping one alias's outcome FAILS CLOSED  [ must appear exactly once across sequences.tsv and the TOOL_FAILURE rows of failures.tsv.
+]
+
+== R4  a DONE sidecar is validated, not merely present ==
+  ok    R4 an EMPTY DONE does not skip the shard  [probe: 1 sequences, 150 state rows, 0 failures, 1 batch(es) -> /tmp/claude-1000/]
+  ok    R4 a genuine, verified DONE does skip  [SKIP probe: already complete and verified (/tmp/claude-1000/vfin/repairs/r4_out/probe.DONE).]
+  ok    R4 a tampered output forces a redo  [REDO probe: DONE present but NOT valid - output changed since it was written: probe.states]
+  ok    R4 a changed input forces a redo  [REDO probe: DONE present but NOT valid - input changed (sidecar ffc4962683cf69f4 != 7d37e2]
+
+== R5  the inspectability status introduces no predicate of its own ==
+  ok    R5 MAPPABLE
+  ok    R5 PARTIAL_MAPPING below the frozen T1
+  ok    R5 (ABSTAIN, INSUFFICIENT_SUPPORTED_ANCHORS) -> AMBIGUOUS_MAPPING by relabelling alone
+  ok    R5 (ABSTAIN, NO_QUALIFYING_DOMAIN) -> NO_SUPPORTED_MAPPING by relabelling alone
+  ok    R5 AMBIGUOUS_MAPPING no longer depends on any count comparison
+  ok    R5 no anchor-count comparison remains in the function body
+  ok    R5 the removed predicate is still named in the docstring, not erased
+  ok    R5 every documented status is reachable and none is undocumented
+  ok    R5 an unmapped frozen reason fails closed
+
+REPAIR CHECKS OK - all five review repairs hold.
+
+==============================================================
+ 4. REGENERATED SMOKE PRODUCTS vs LANDED
+==============================================================
+  ok    smoke_states.tsv
+  ok    smoke_sequences.tsv
+  ok    smoke_failures.tsv
+  ok    smoke_input.faa
+
+  provenance: comparing deterministic keys only
+  ok    45/45 deterministic provenance keys match
+
+g4b VERIFY OK
+artefacts: /tmp/claude-1000/vfin

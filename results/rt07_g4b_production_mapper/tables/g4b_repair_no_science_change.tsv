@@ -1,0 +1,11 @@
+# PROOF THAT THE FIVE REVIEW REPAIRS (R1-R5) CHANGED NO SCIENCE.
+# Method: the smoke products landed BEFORE the repairs were diffed, column by column, against
+# the same products regenerated AFTER them, on identical input. Any scientific drift would
+# appear as a differing scientific column.
+table	n_rows	columns_identical	rows_differing	columns_that_differ	interpretation
+smoke_states.tsv	2850	YES	2850	mapper_version	the ONLY change is the instrument identifier, which R1 deliberately changed by binding the wrapper, eligibility rule and domain-scoring protocol into it. Every call_state, residue index, amino acid, posterior, support and reason_code is identical.
+smoke_sequences.tsv	19	YES	19	mapper_version	identical anchor counts, mapped_fraction, verdict, reason, domain bitscore and E-value, catalytic block, inspectability status and architecture columns.
+smoke_failures.tsv	4	YES	4	mapper_version, detail	`detail` is free-text explanation, not a measurement; its wording changed because R2 replaced the duplicate-identifier policy. Every reason_code and status is unchanged.
+# Independently: smoke check S1 still matches all 18 landed frozen construction results
+# exactly, and S2 still matches 2850 per-state calls to the frozen mapper imported directly
+# from FINAL_PRE_UG25_VALIDATION_BUNDLE. The repairs are packaging, as claimed.

@@ -1,0 +1,21 @@
+# EVIDENCE FOR THE PER-SEQUENCE DOMAIN-SCORING REPAIR (PRODUCTION_SPEC.md section 3).
+# Question: can scoring domains one sequence at a time, instead of one batch at a time,
+# change a frozen verdict on the population the instrument was calibrated on?
+# Substrate: the complete 219-sequence construction population (40 per family, AbiA 19),
+# materialised with the registered loader. Batched arm reproduces the frozen pipeline's own
+# geometry: one hmmsearch call per family of 40. Per-sequence arm is production behaviour.
+# Qualifying-domain test is classify_sequence's own: (dom is None or dom[0] < S_MIN) -> ABSTAIN.
+quantity	value	unit	interpretation
+construction_population	219	sequences	40 per family, AbiA capped at 19
+n_reported_batched	219	sequences	every sequence had a reported domain under family-sized batches
+n_reported_per_sequence	219	sequences	every sequence had a reported domain under database size 1
+reported_only_per_sequence	0	sequences	the repair added no reports on this population
+reported_only_batched	0	sequences	the repair LOST no reports - it is not less inclusive
+bitscore_differences	0	sequences	bit scores are database-size independent, as expected
+verdict_flips	0	sequences	NO sequence changes its qualifying-domain verdict
+min_margin_above_S_MIN	0.3	bits	CBK99617.1_Retrons at bitscore 10.3 against S_MIN 10 - the narrowest margin in the population, and the concrete reason the shard-size hazard is worth closing before Stage-1 shard sizes
+# LIMIT, stated rather than glossed: this evidence covers the construction population only.
+# UG25 was consumed as the terminal confirmatory family and is not re-scored here; re-running
+# it to re-check a packaging repair is exactly the kind of holdout reuse the closure decision
+# forbids. The construction population is the one the instrument was calibrated on and the one
+# the landed expected values come from.

@@ -1,0 +1,15 @@
+# HISTORICAL RT0-RT7 CROSSWALK - interpretation layer, NOT a production label.
+# Production emits `state_id` in the GII.deriv.hmm coordinate system (LENG 471, sha256
+# 292495a4...). The historical landmarks are POINTS in the prior frame RT17_CORE/B_span17
+# (LENG 305, sha256 f3ddb0b5...), carried onto LtrA P0A3U0 residue numbering by g3.
+# No measurement bridges production state -> prior frame. Every correspondence is therefore
+# UNRESOLVED and stays UNRESOLVED until g7 lands one. See code/rtmap/crosswalk.py.
+historical_label	historical_frame	historical_frame_leng	historical_coordinate_kind	historical_match_state	ltra_residue	operational_state	historical_RT0_RT7_correspondence_if_supported	status_reason	source
+RT0	NONE	305	no_such_block	NA	NA	UNRESOLVED	UNRESOLVED	OBJECT_MISMATCH - there is no block named RT0 in the prior frame; the N-terminal interval is named RT0-RT1 and excludes the RT0 landmark. g3 ruled RT0 occupancy out of scope.	results/rt07_g3_prior_method_replication/tables/g3_rt0_object_audit.tsv
+RT1	RT17_CORE	305	hmm_match_state_point	42	49	UNRESOLVED	UNRESOLVED	NO_MEASURED_BRIDGE_PRODUCTION_STATE_TO_PRIOR_FRAME; additionally RT1 is the only landmark that moves between prior frames and maps into the Blocker RT0 zone on LtrA - a declared uncertainty.	results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv
+RT2	RT17_CORE	305	hmm_match_state_point	87	102	UNRESOLVED	UNRESOLVED	NO_MEASURED_BRIDGE_PRODUCTION_STATE_TO_PRIOR_FRAME	results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv
+RT3	RT17_CORE	305	hmm_match_state_point	146	160	UNRESOLVED	UNRESOLVED	NO_MEASURED_BRIDGE_PRODUCTION_STATE_TO_PRIOR_FRAME	results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv
+RT4	RT17_CORE	305	hmm_match_state_point	193	213	UNRESOLVED	UNRESOLVED	NO_MEASURED_BRIDGE_PRODUCTION_STATE_TO_PRIOR_FRAME	results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv
+RT5	RT17_CORE	305	hmm_match_state_point	229	308	UNRESOLVED	UNRESOLVED	NO_MEASURED_BRIDGE_PRODUCTION_STATE_TO_PRIOR_FRAME; additionally RT5 and RT6 collapse onto a single independently reconstructed g2 region, so a seven-way partition is not inheritable.	results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv
+RT6	RT17_CORE	305	hmm_match_state_point	263	344	UNRESOLVED	UNRESOLVED	NO_MEASURED_BRIDGE_PRODUCTION_STATE_TO_PRIOR_FRAME; additionally RT5 and RT6 collapse onto a single independently reconstructed g2 region, so a seven-way partition is not inheritable.	results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv
+RT7	RT17_CORE	305	hmm_match_state_point	276	357	UNRESOLVED	UNRESOLVED	NO_MEASURED_BRIDGE_PRODUCTION_STATE_TO_PRIOR_FRAME	results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv

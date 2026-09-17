@@ -1,0 +1,22 @@
+# MEASURED production throughput, produced by scripts/measure_throughput.py in a
+# SINGLE run on a SINGLE substrate, so components and total are commensurable.
+# Single core, one process, no parallelism. CPU only, no GPU, no Ibex.
+# Construction-family sequences only; UG25 is never touched.
+# Wall-clock numbers vary a few per cent between runs; they are measurements,
+# not frozen constants, and are NOT part of the instrument identifier.
+quantity	value	unit	note
+n_sequences_timed	560	sequences	120 per construction family, capped by family size
+mean_sequence_length	477.3	aa	Stage-1 family medians run 253-1232 aa; see docs/G5_EXECUTION_PLAN.md
+wall_end_to_end	7.33	s	the production runner, one process, one core, default batching
+per_sequence_cost	13.1	ms	end-to-end wall / n; this is the number the g5 estimate uses
+component_alignment	1.4	ms	batched hmmalign over the whole substrate, in-process
+component_domain_search	11.4	ms	per-sequence hmmsearch, production protocol, in-process
+component_sum	12.8	ms	the two components add to LESS than the end-to-end cost; the remainder is process startup, I/O and row rendering, and is why the total - not the sum - is what the g5 estimate uses
+states_bytes_per_row	175.7	bytes	measured on 84000 emitted state rows
+sequences_bytes_per_row	277.0	bytes	measured on 560 emitted sequence rows
+states_gzip_ratio	22.2	x	gzip -9 default, measured on this file
+projected_stage1_core_hours	1.82	core-hours	501561 x per_sequence_cost. NOT an upper bound: it is a full-count extrapolation AT THIS SUBSTRATE'S RATE. Two effects push in opposite directions - the eligible population is smaller than 501561 (censused in g5 step 1), but the Stage-1 length distribution is wider than this 477 aa substrate (family medians 253-1232 aa) and hmmalign cost scales with length, so the per-record cost can be higher
+projected_states_rows	75.2	million rows	501561 x 150 anchors
+projected_states_gb_raw	13.2	GB	
+projected_states_gb_gzip	0.60	GB	storage, not compute, is the binding constraint
+projected_sequences_mb	139	MB	
