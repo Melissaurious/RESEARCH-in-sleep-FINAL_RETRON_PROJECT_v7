@@ -70,6 +70,49 @@ Integrity check at any time:
 bash results/rt07_g5_catalogue_application/verify.sh
 ```
 
+## 3b · embed_g0 — oriented ncRNA sequences — `data/derived/rt_ncrna_oriented_v1.*`
+
+Produced by the `embed` track (`launchers/LAUNCHER_03_rt_ncrna_embedding_compatibility.md`),
+script `ARIS_OUTPUT/embed_g0_population_audit/scripts/a02_ncrna_fasta.py`.
+
+**Why it exists.** The Stage-1 derived layer carries `nc_seq_hash` and `nc_seq_len` but **no
+ncRNA sequence**. This dataset closes that gap. It unblocks RNA language-model
+representations *and* the ncRNA clustering that the dbchar workbench records as its
+outstanding blocker.
+
+| name | path | bytes | records | unit | sha256 | GitHub |
+|---|---|---|---|---|---|---|
+| oriented ncRNA (FASTA) | `data/derived/rt_ncrna_oriented_v1.fna` | 3,953,406 | 16,458 | exact oriented ncRNA | `d04297a823e249061a320897233afac581bbfb0bf26b33942f5c0f6630258e35` | **LOCAL ONLY** |
+| oriented ncRNA (parquet) | `data/derived/rt_ncrna_oriented_v1.parquet` | 1,492,723 | 16,458 | exact oriented ncRNA | `5c81dfe91e0dac8144839c945f1d7694d388354cbf2841ad14d7097f98187706` | LOCAL ONLY |
+| provenance | `data/derived/rt_ncrna_oriented_v1.provenance.json` | 1,143 | — | — | `c04b6048359e6b5f6a5a8a5ce2e6bbd5ef778f018bc65f9f3f5210bf7b13632f` | LOCAL ONLY |
+| manifest | `data/derived/rt_ncrna_oriented_v1.MANIFEST.tsv` | 364 | 3 | file | — | LOCAL ONLY |
+
+| | |
+|---|---|
+| **key** | `nc_seq_hash` — joins `rt_ncrna_pairs_v1`, `rt_ncrna_exact_pairs_v1`, `ncrna_family_baseline_v1` |
+| **population** | PAIR-ELIG — every ncRNA in `rt_ncrna_exact_pairs_v1.parquet` (30,924 pairs) |
+| **orientation** | `sequence_oriented` as stored in the raw corpus. All source placements carry `orientation_corrected = True`; **zero** hashes appear under conflicting orientation states |
+| **verification** | **16,458 / 16,458 sha256 round-trip.** Every sequence's `sha256(seq.upper())` was recomputed and asserted equal to its registered `nc_seq_hash`, which is how `dbchar_g2` defined that hash (`e01_extract.py:294`). Zero mismatches |
+| **determinism** | order is `sorted(nc_seq_hash)`, one sequence per line; a re-run is byte-identical |
+| **alphabet** | `ACGKNRTY` — 214 sequences (1.30 %) carry IUPAC ambiguity, 4,117 nt (0.151 %), almost all `N` |
+| **lengths** | 34–395 nt, median 151, total 2,719,581 |
+| **source** | `/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/json_files_input_june/` (corpus pin `8e9b7999954b460d2bdfc558c605d26610d58e6901788f61720e11eafdc41d00`); 16,351 hashes from the Retron master, 107 from 17 others |
+| **producer** | `a02_ncrna_fasta.py` sha256 `2d2192d450ac3cf98e357bf64fce7dfa8699230aca1c22343eac790e3eb976ea`, git `53ce532` |
+| **rebuild cost** | 32 s, single pass, CPU only |
+
+⚠️ **Placement caveat — an operator step remains.** The canonical derived layer is in the main
+worktree and is read-only from the `embed` track's sandbox, so these files were written to the
+**`embeddings-g0` worktree's** `data/derived/`. Promoting them to
+`/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/` is a copy of four
+byte-identical files verified against `rt_ncrna_oriented_v1.MANIFEST.tsv`. Until that copy is
+made, **two derived layers exist** and a consumer must be told which one it is reading.
+
+Verify at any time:
+
+```bash
+cd <worktree> && sha256sum -c <(awk 'NR>1{print $3"  "$1}' data/derived/rt_ncrna_oriented_v1.MANIFEST.tsv)
+```
+
 ## 4 · g5 shard scratch — `ARIS_OUTPUT/rt07_g5/` — **DO NOT DELETE YET**
 
 | | |
