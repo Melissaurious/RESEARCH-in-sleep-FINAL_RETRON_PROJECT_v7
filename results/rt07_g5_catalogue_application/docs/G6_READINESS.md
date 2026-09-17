@@ -43,14 +43,19 @@ sequences — a reporting triage threshold, not a scientific parameter, and it f
 | RVT-CRISPR | 3,531 | 3,526 | 0.9986 | 0.9267 | 3,481 |
 | RVT-CRISPR-like | 1,837 | 1,698 | 0.9243 | 0.7267 | 1,655 |
 | MULTI | 2,824 | 2,584 | 0.9150 | 0.5133 | 2,500 |
-| RVT-AbiA | 7 | — | — | — | — |
+| RVT-AbiA | 7 | 7 | 1.0000 | 0.5733 | 7 |
 
 Coverage the operator asked for: **retron 61,395 eligible / 53,722 inspectable**;
-**GII 176,126 / 175,588**; **DGR 59,487 / 58,975**; **AbiP2 5,665 / 5,623** (RVT-AbiA is
-n=7 and cannot support anything); **CRISPR 3,531 / 3,526** plus CRISPR-like 1,837 / 1,698;
-the **UG** families run from UG2 at 6,510 down to single digits — 24 of the 42 families have
-fewer than 1,000 eligible sequences. **MULTI is 2,824 eligible**, its own population, never
-folded into a single family.
+**GII 176,126 / 175,588**; **DGR 59,487 / 58,975**; **AbiP2 5,665 / 5,623** (the separate
+`RVT-AbiA` label is n=7 — see below); **CRISPR 3,531 / 3,526** plus CRISPR-like 1,837 / 1,698;
+the **UG** families run from UG2 at 6,510 down to UG18 at 168, the smallest UG stratum —
+**23 of the 42 families have fewer than 1,000 eligible sequences**. **MULTI is 2,824
+eligible**, its own population, never folded into a single family.
+
+`RVT-AbiA` is the only family with fewer than 10 eligible sequences (7 eligible, all 7
+inspectable, all 7 CAT-MAPPED). It is `UNDERPOWERED_FOR_BETWEEN_FAMILY_COMPARISON` — which
+is a statement about comparison, not about usability: those 7 sequences are fully described
+in the dataset like any other.
 
 ## 3 · Strata where the instrument commits least often
 
@@ -144,8 +149,9 @@ not treat tool disagreement as mapper error. No independent truth for those esti
 3. **`DELETED_STATE` ≠ absent region.** Alignment-path statement only.
 4. **Abstention ≠ failure.** 15,279 sequences abstained under the frozen rule; 0 sequences
    failed technically.
-5. **24 of 42 families have < 1,000 eligible sequences**; several have < 10. Under-powered
-   strata must be reported as such rather than compared.
+5. **23 of 42 families have < 1,000 eligible sequences**, and one (`RVT-AbiA`, n=7) has
+   fewer than 10. Under-powered strata must be reported as such rather than compared; they
+   are still fully described in the dataset.
 6. **Scope is `-M 50` only.** No `-M 60` or `-M a2m` claim, and no universal RT architecture,
    residue-level accuracy, or transfer claim beyond UG25 follows from this dataset.
 7. **Historical RT0–RT7 remains `UNRESOLVED`.** States are `state_id`; no g5 output carries a

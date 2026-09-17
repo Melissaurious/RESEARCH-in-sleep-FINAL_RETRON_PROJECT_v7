@@ -55,9 +55,14 @@ catalytic fields, deterministic rerun and batch-size independence.
     369,381 identifiers, each appearing exactly once
     0 duplicated · 0 missing · 0 unexpected
 
-Asserted in `merge.py`, not merely reported, before a single row was written. The eligibility
-rule was applied **once**, in `rt07_g5a_eligibility_census`; this stage reads that partition
-and cannot disagree with it.
+Asserted in `merge.py`, not merely reported, before a single row was written.
+
+**Precisely:** the eligibility rule *selects the population* exactly once, in
+`rt07_g5a_eligibility_census`. `shard.py` reads that partition and never re-applies the rule,
+so the denominator cannot drift. The production runner does still re-validate its own input
+on every shard — that is the frozen runner's own fail-closed contract, not a second selection
+— and it rejected **0** records, so the two agree exactly. The independent review asked for
+this distinction to be stated rather than glossed as "applied exactly once".
 
 ## 3 · Application QC — descriptive only
 
@@ -91,9 +96,17 @@ concordance at a state, not independent residue truth.
 | `g5_metadata_crosswalk.parquet` | 501,561 | 56,149,583 |
 
 Gitignored by project convention (`data/*`); every file is hashed in
-`tables/g5_dataset_manifest.tsv` and in `PROVENANCE.md`. All joins are on `rt_hash`. The
-crosswalk covers the **whole** catalogue with an `in_g5_eligible` flag, so g6 can take any
-denominator without re-deriving eligibility.
+`tables/g5_dataset_manifest.tsv` and in `PROVENANCE.md`.
+
+Parquet stores `posterior`, `support`, `mapped_fraction`, `domain_bitscore`,
+`domain_evalue` and `cat_support` as IEEE doubles, not as the decimal strings the shard TSVs
+emitted. The review found two sampled `domain_evalue` values differing from a direct decimal
+parse by one floating-point ULP, both of which reformat exactly to their original
+three-significant-digit TSV text. No call state, residue index or amino acid is affected. If
+lexical identity is ever needed, the per-shard TSVs in scratch are the lexical record.
+
+All joins are on `rt_hash`. The crosswalk covers the **whole** catalogue with an
+`in_g5_eligible` flag, so g6 can take any denominator without re-deriving eligibility.
 
 Per-shard TSV outputs (~12 GB) remain in `ARIS_OUTPUT/rt07_g5/` and are deleted only after
 review — `merge.py` verified each against its `DONE` sidecar before anything was merged.

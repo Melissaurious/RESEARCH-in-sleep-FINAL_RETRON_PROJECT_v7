@@ -36,6 +36,11 @@ the population the instrument has ever been exercised on.
 | — `NON_STANDARD_RESIDUE` | 23,741 |
 | — short records *also* carrying a non-standard residue | 4,000 (secondary flag) |
 
+This census is where the eligibility rule **selects the population**. It runs once here; g5
+reads the resulting partition and never re-applies it. (The production runner separately
+re-validates its own input on every shard, as its own fail-closed contract; on this partition
+it rejected 0 records.)
+
 The rule is imported from the frozen production package, not restated:
 `MIN_AA=250; ALPHABET=ACDEFGHIKLMNPQRSTVWY; CLEAN=strip[-.]upper,rstrip*`, applied by
 `rtmap.run_mapper.validate` — the same function the production runner calls. Reason priority

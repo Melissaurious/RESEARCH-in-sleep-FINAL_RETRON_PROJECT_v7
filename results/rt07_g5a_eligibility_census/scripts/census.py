@@ -46,6 +46,12 @@ RECORDS = f"{ROOT}/data/derived/rt_records_v1.parquet"
 
 TABLES, DERIVED = sys.argv[1], sys.argv[2]
 
+# The note recorded beside each output hash names the CANONICAL landing directory, never the
+# directory this particular invocation happened to write to. verify.sh regenerates into a
+# temp tree, and an absolute temp path in a landed table would make the summary differ from
+# run to run for no substantive reason - which the independent application review caught.
+CANONICAL_DERIVED = "data/derived/rt07_g5a"
+
 # Length bins. Declared here as a REPORTING convenience only - no bin edge is a threshold,
 # and none of them is used to include or exclude anything. The only operative cutoff is the
 # frozen MIN_AA, which the 200-249 / 250-299 boundary happens to sit on.
@@ -363,10 +369,12 @@ def main():
         ["n_rt_aa_len_disagreements", len_mismatch, "exact RT sequences",
          "rt_aa_len in the canonical parquet vs the cleaned length this census computed"],
     ] + [[f"input.{n}.sha256", sha256_file(p), "sha256", p] for n, p in inputs] \
-      + [["output.g5a_eligibility_partition.tsv.gz", sha256_file(part), "sha256", part],
+      + [["output.g5a_eligibility_partition.tsv.gz", sha256_file(part), "sha256",
+          CANONICAL_DERIVED],
          ["output.g5a_ineligible_records.tsv.gz", sha256_file(inel_path), "sha256",
-          inel_path],
-         ["output.g5a_eligible_ids.txt.gz", sha256_file(elig_path), "sha256", elig_path]]
+          CANONICAL_DERIVED],
+         ["output.g5a_eligible_ids.txt.gz", sha256_file(elig_path), "sha256",
+          CANONICAL_DERIVED]]
     write_tsv(f"{TABLES}/g5a_census_summary.tsv",
               ["quantity", "value", "unit", "note"], srows)
 
