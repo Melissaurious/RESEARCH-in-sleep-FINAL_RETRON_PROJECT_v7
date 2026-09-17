@@ -1,7 +1,7 @@
 # CURRENT PROJECT STATE
 
 **Read this first.** It is the single place that says where the project is. Updated
-2026-09-17, at the close of `g5`.
+2026-09-18, at the close of `g7a` — the historical RT0–RT7 bridge.
 
 Every number below was read from a landed artifact, not from memory. The artifact is named
 beside it so you can re-check it in one command.
@@ -23,9 +23,15 @@ beside it so you can re-check it in one command.
 | **`g5a` eligibility census** | **COMPLETE** |
 | **`g5` catalogue application** | **COMPLETE** |
 | `g6` family architecture | **AUTHORISED, NOT STARTED** |
-| `g7` structural + published comparators | **NOT STARTED** |
+| **`g7a` historical RT0–RT7 bridge** | **COMPLETE — the historical track is TERMINAL** |
+| `g7b` structural + published comparators | **NOT STARTED** |
 
 Do not start `g6` without reading `results/rt07_g5_catalogue_application/docs/G6_READINESS.md`.
+
+`LAUNCHER_02`'s `g7` was split into `g7a` (the historical bridge, now closed) and `g7b` (the
+remaining comparator campaign), recorded in
+`docs/decisions/2026-09-18_stage2_g7_split_amendment.md`. `LAUNCHER_02` is unchanged and remains
+planning authority; `g7a` was run under `launchers/LAUNCHER_03_rt0_rt7_closure.md`.
 
 ## 2 · The frozen instrument
 
@@ -101,8 +107,24 @@ RT0–RT7 architecture.
    specificity, precision, recall, F1 or ROC against a tool label, ever. Allowed: *"among
    sequences labelled F, state S was MAPPED in X % of inspectable sequences."*
 6. **`MULTI` is its own population** and is never folded into a single family.
-7. **Historical RT0–RT7 remains `UNRESOLVED`** in all eight rows. Production emits `state_id`.
-   The bridge that could resolve it is registered for `g7`.
+7. **Historical RT0–RT7 is CLOSED at `g7a`, and production still emits `state_id` only.**
+   The bridge was measured and the track is terminal — **4 `ESTABLISHED`, 2 `PARTIAL`,
+   2 `UNRESOLVED`**:
+
+   | | |
+   |---|---|
+   | `ESTABLISHED OPERATIONAL CORRESPONDENCE` | **RT3, RT4, RT5, RT7** |
+   | `PARTIAL / INTERPRETIVE CORRESPONDENCE` | **RT2**; **RT6** (only jointly with RT5) |
+   | `UNRESOLVED / NOT IDENTIFIABLE` | **RT0, RT1** |
+
+   Everything measured was measured **on LtrA**. The frozen mapper's 150 anchors reach LtrA
+   **97–363**, which is why RT0 (≤85) and RT1 (39–61) can have no operational boundary — a
+   statement about the instrument, not the biology.
+   The crosswalk of record is `results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv`;
+   **what downstream work may say per label** is `tables/g7a_closure_decision.tsv` and it is
+   binding. `results/rt07_g4b_production_mapper/control/CROSSWALK_RT0_RT7.tsv` is deliberately
+   **unchanged and still `UNRESOLVED`** — production carries no historical label.
+   Decision: `docs/decisions/2026-09-18_stage2_g7a_rt0_rt7_closure.md`.
 8. **Scope is `-M 50` only.**
 
 ## 6 · Canonical datasets
@@ -131,4 +153,6 @@ Full registry with sizes, row counts and sha256: **`docs/DATASET_REGISTRY.md`**.
 4. `idea-stage/docs/research_contract.md` — the single claim authority
 5. `launchers/LAUNCHER_02_rt0_rt7_definition.md` — the active track
 6. `results/rt07_g5_catalogue_application/docs/G6_READINESS.md` — what g6 may ask
-7. `docs/decisions/` — settled decisions, newest last
+7. `results/rt07_g7a_rt0_rt7_bridge/tables/g7a_closure_decision.tsv` — **what you may say about
+   each historical RT0–RT7 label.** Binding, and shorter than it looks
+8. `docs/decisions/` — settled decisions, newest last

@@ -1,0 +1,16 @@
+quantity	value	source_table	unit	denominator
+historical_labels_in_scope	8	g7a_closure_decision.tsv	historical label	8 historical labels
+terminal_ESTABLISHED	4	g7a_closure_decision.tsv	historical label	8 historical labels
+terminal_PARTIAL	2	g7a_closure_decision.tsv	historical label	8 historical labels
+terminal_UNRESOLVED	2	g7a_closure_decision.tsv	historical label	8 historical labels
+evidence_register_rows	35	g7a_historical_evidence_register.tsv	(label, source) pair	labels x the sources that name them
+evidence_rows_source_stated	30	g7a_historical_evidence_register.tsv	(label, source) pair	all evidence register rows
+anchors_mapped_on_ltra	143	g7a_state_to_residue.tsv	frozen anchor state	150 frozen anchor states
+anchor_state_span	107-317	g7a_state_to_residue.tsv	state_id	n/a - a span
+anchor_ltra_residue_span	97-363	g7a_state_to_residue.tsv	LtrA residue	n/a - a span
+controls_pass	6	g7a_controls.tsv	control	9 declared controls
+controls_fail	0	g7a_controls.tsv	control	9 declared controls
+controls_inconclusive	1	g7a_controls.tsv	control	9 declared controls
+ltra_numbering_checks_agree	12/12 residues, 3/4 Edman sequences	g7a_ltra_numbering_control.tsv	stated residue identity	12 Blocker-stated residues
+structural_comparators_independent	0	g7a_structural_comparators.tsv	structure	3 declared structural comparators
+missing_primary_assets	1	g7a_acquisition_register.tsv	asset	assets this gate needed

@@ -54,6 +54,7 @@ Every bundle carries `README.md`, `PROVENANCE.md`, `MANIFEST.tsv`, `INPUTS.tsv`,
 | **`rt07_g4b_production_mapper`** | **the frozen production instrument** |
 | **`rt07_g5a_eligibility_census`** | **the frozen denominator** |
 | **`rt07_g5_catalogue_application`** | **the canonical mapped dataset** |
+| **`rt07_g7a_rt0_rt7_bridge`** | **the historical RT0–RT7 crosswalk of record — terminal** |
 
 Superseded bundles are retained as audit history. They are **not** rebuilt to satisfy later
 packaging conventions; see `docs/decisions/2026-09-17_stage2_launcher_g4b_freeze_amendment.md` §2.

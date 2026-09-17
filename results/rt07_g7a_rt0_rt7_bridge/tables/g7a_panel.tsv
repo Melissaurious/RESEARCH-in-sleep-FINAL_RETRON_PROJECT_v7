@@ -1,0 +1,7 @@
+sequence_id	role	length	source	n_unmodelled_gaps	note
+LtrA	BRIDGE_SUBSTRATE	599	rt07_g2_reference_reconstruction/reference/g2_reference_set.faa (GenBank AAB06503)	0	the protein every held historical coordinate is denominated in
+LtrA_SHUF	NEGATIVE_CONTROL_NC1	599	seeded shuffle of LtrA, seed=20260918	0	identical amino-acid composition, no sequence order. The decoy convention declared in g4a step3.
+LtrA_REV	NEGATIVE_CONTROL_NC2	599	reversed LtrA	0	the other g4a decoy convention.
+MMLV_5VBS_A	PANEL	246	5VBS chain A, modelled residues 24-278	2	NC-3 out-of-population real protein (retroviral RT, recorded NON-MEMBER of the bacterial RT set). Built from MODELLED residues only: 2 internal chain break(s). Illustrative, not a transfer claim.
+GsIIIC_6AR1_A	PANEL	417	6AR1 chain A, modelled residues 2-418	0	secondary comparator, GsI-IIC RT. Built from MODELLED residues only: 0 internal chain break(s). Illustrative, not a transfer claim.
+Ec86_7V9U_A	PANEL	309	7V9U chain A, modelled residues 3-311	0	secondary comparator, retron Ec86 RT. Built from MODELLED residues only: 0 internal chain break(s). Illustrative, not a transfer claim.

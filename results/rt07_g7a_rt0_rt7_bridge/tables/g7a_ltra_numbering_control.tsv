@@ -1,0 +1,18 @@
+check_id	kind	expected	observed	result	note
+NUM-1	stated_residue_identity	M1	M1	AGREE	Table 1, 10-kDa fragment start
+NUM-85	stated_residue_identity	R85	R85	AGREE	Table 1, 10-kDa fragment end; text: cleavage site IN RT1
+NUM-86	stated_residue_identity	R86	R86	AGREE	Table 1, 33-kDa and 60-kDa fragment start
+NUM-364	stated_residue_identity	R364	R364	AGREE	Table 1, 33-kDa and 43-kDa fragment end
+NUM-365	stated_residue_identity	R365	R365	AGREE	Table 1, 27-kDa fragment start; junction RT7/domain X
+NUM-599	stated_residue_identity	K599	K599	AGREE	Table 1, 60-kDa and 27-kDa fragment end
+NUM-372	stated_residue_identity	S372	S372	AGREE	Table 1, X-D-E-2 fragment start
+NUM-39	stated_residue_identity	A39	A39	AGREE	text: conserved alanine in the N-terminal portion of RT0
+NUM-371	stated_residue_identity	R371	R371	AGREE	discussion, R371
+NUM-462	stated_residue_identity	S462	S462	AGREE	Fig. 3 legend, key residue
+NUM-483	stated_residue_identity	K483	K483	AGREE	Fig. 3 legend, key residue
+NUM-529	stated_residue_identity	Y529	Y529	AGREE	Fig. 3 legend, key residue
+EDMAN-1	published_N_terminal_sequence	1-MKPTM	1-MKPTM	AGREE	Edman degradation N-term, Blocker Table 1
+EDMAN-86	published_N_terminal_sequence	86-RMIYA	86-RMYIA	DISAGREE	Edman degradation N-term, Blocker Table 1
+EDMAN-365	published_N_terminal_sequence	365-RSGTI	365-RSGTI	AGREE	Edman degradation N-term, Blocker Table 1
+EDMAN-372	published_N_terminal_sequence	372-SGKVK	372-SGKVK	AGREE	Edman degradation N-term, Blocker Table 1
+NUM-SUMMARY	summary	12 stated residue identities agree	12/12 agree; 3/4 Edman sequences agree	PASS	This is what licenses treating Blocker's LtrA coordinates and the project's AAB06503/P0A3U0 record as ONE coordinate system. A measurement, not an assumption.
