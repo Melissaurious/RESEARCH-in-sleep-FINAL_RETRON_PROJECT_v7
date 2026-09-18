@@ -754,44 +754,69 @@ This is a data-acquisition and population-design problem. It would be materially
 
 ## D · OpenCRISPR as a methodological precedent
 
-**Architectural precedent only. This is not evidence for or against the retron hypothesis.**
+**Expanded into a standalone bounded comparison: `OPENCRISPR_METHOD_COMPARISON.md`.**
+Architectural and methodological precedent only — not evidence for or against the retron
+hypothesis, and OpenCRISPR performance is **not** used as a benchmark against the CCA result.
+The biological tasks and validation endpoints differ.
 
-Profluent's OpenCRISPR / `grna-modeling` protein-conditioned guide-RNA model generates a gRNA
-conditioned on a Cas9 protein representation. As published, the method uses:
+### What could and could not be established
 
-- a **frozen pretrained ESM-2 protein encoder**;
-- an **additional bidirectional transformer layer** over the protein representation;
-- a **three-layer autoregressive RNA decoder**;
-- **causal self-attention** over the RNA;
-- **cross-attention** from the RNA decoder to the protein representation;
-- approximately **700k trainable parameters** — the protein encoder stays frozen.
+The published methods could **not** be read from this environment (Nature 303-redirects to
+authentication; bioRxiv returns HTTP 429; Europe PMC 403). The comparison is therefore built on
+the **released code and checkpoint**, which are locally available and were read directly, and
+every item that could not be verified is recorded as *not determinable from available material*
+— **never** as *not done*. In particular, **no absence of homology control is inferred from
+silence.**
 
-An analogous retron architecture would be:
+### Reconstructed from the released artifacts (high confidence)
 
-```
-RT sequence → frozen protein LM (ESM-C / ESM-2)
-            → trainable conditioning layer
-            → autoregressive ncRNA decoder with cross-attention to the RT representation
-```
+| element | value |
+|---|---|
+| protein encoder | ESM2 `esm2_t6_8M_UR50D`, `d_s_protein = 320` |
+| frozen? | **yes, by construction** — ESM2 is never instantiated inside the module; `forward` consumes a precomputed `protein_embs` tensor, so no gradient path exists |
+| conditioning | `Linear(320 → 128)` + **1 bidirectional self-attention encoder layer**, 8 heads |
+| decoder | **3 layers**, each RNA causal self-attention + **cross-attention to the protein**, 8 heads, `d_s = 128` |
+| trainable parameters | **705,930** |
+| objective | next-token cross-entropy on the RNA, padding and sentinels masked |
+| optimizer | lr 2e-4, warmup 4,000, weight decay 0, `acc_batches` 2 |
+| vocabulary | 10 tokens `a c g t 1 2 3 4 - _`; `1`/`2` bracket tracrRNA, `3`/`4` crRNA — **one protein conditioning two linked RNA segments, which maps directly onto retron msr/msd** |
+| train/validation | a split existed: 3,120 train vs 388 validation batches per epoch (≈ 88.9 % / 11.1 %), 40 epochs, 62,400 optimizer steps. **No test-loop state in the checkpoint**; batch size unrecorded, so dataset size is not recoverable |
+| negatives | **none in the released objective** — no contrastive or mismatch term anywhere in `forward` |
 
-This asks a **different question** from CCA or retrieval. Retrieval asks *can the observed
-partner be ranked above controlled alternatives*; conditional generation asks *does knowing the
-RT change the distribution over plausible ncRNAs*. A generative model can score highly by
-producing plausible retron ncRNAs in general, so its evaluation must separate at least three
-things:
+### Not determinable from available material
 
-1. **retron-type RNA grammar** — does it produce ncRNA of the right *type*?
-2. **general ncRNA plausibility** — would it produce this ncRNA for any RT?
-3. **individual RT-conditioned specificity** — does the identity of *this* RT change the output?
+Training-set composition and size, the split *construction rule*, protein-side and RNA-side
+homology control, whether grouping was joint, family composition across folds, evaluation
+metrics, and whether generated gRNAs were validated independently of the protein. The checkpoint
+*filename* carries the token `id90`, which is consistent with a 90 %-identity step, but nothing
+inside the checkpoint corroborates it and a filename is not a method.
 
-Only (3) addresses level 2, and (1) and (2) will absorb most of the achievable likelihood. The
-historical audit (§E) shows this concern is empirically grounded rather than theoretical: that
-exact architecture, retargeted to retrons, was found to do family recognition rather than partner
-recognition.
+### The structural point that holds regardless
 
-**Not implemented in this task.**
+A protein-side identity control, at any threshold, does not by construction prevent RNA-side
+family information from crossing a split boundary — the two are jointly controlled only if the
+grouping is joint. In retron data that is not theoretical: **one ncRNA is observed with 705
+distinct RTs** (and 17.72 % of ncRNAs have more than one RT partner), so a protein-only split
+places near-identical RNAs on both sides.
 
----
+**And the endpoint decides how much the split must carry.** A wet-lab functional endpoint
+tolerates training-set homology — if a designed editor cuts DNA in cells, leakage cannot explain
+the phenotype. A retrieval or partner-specificity endpoint does not, because leakage inflates the
+statistic directly. This is why the two designs should not be scored against one another.
+
+### Transfer verdict
+
+**Transfers largely intact**: the frozen protein language-model encoder, the lightweight
+trainable conditioning layer, the autoregressive RNA decoder with causal self-attention, the
+cross-attention from decoder to protein representation, the two-segment sentinel vocabulary, and
+the ~0.7 M-parameter budget.
+
+**Cannot transfer without redesign**: split construction, definition of mismatched candidates,
+evaluation of individual partner specificity, handling of multiple valid ncRNAs per RT or type
+(3.15 % of RTs have >1 observed partner, max 176), and homology-aware inference.
+
+A proposed non-executed architecture and its seven prerequisites are in
+`OPENCRISPR_METHOD_COMPARISON.md` §6–§7.
 
 ## E · Historical model-work audit
 

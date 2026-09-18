@@ -7,6 +7,7 @@ Closed 2026-09-18. Nothing here re-runs a model; every number is read from a fro
 | **`RT_NCRNA_EMBEDDING_REPORT.md`** | the full scientific report — question, data, split, models, results, interpretation, escalation decision, feasibility, OpenCRISPR precedent, future triggers |
 | `RT_NCRNA_EMBEDDING_REPORT.tex` | thesis-ready LaTeX condensation of the same frozen numbers |
 | **`SUPERVISOR_SUMMARY.md`** | 2–4 page summary for a supervision meeting, with split diagram, model schematic and next steps |
+| **`OPENCRISPR_METHOD_COMPARISON.md`** | bounded OpenCRISPR ↔ retron design comparison: evidence tiers, 16-item fact table, transfer verdict, proposed non-executed architecture and prerequisites |
 | `HISTORICAL_MODEL_ASSET_AUDIT.md` | prior embedding / contrastive / cross-attention work across all project trees, with paths, hashes and GREEN/AMBER/RED/DEAD-ROUTE classification |
 | `FUTURE_MODELLING_DECISION_NOTE.md` | why contrastive escalation stopped, reopening triggers, standing requirements, and the engineering that already exists |
 | `FIGURE_INDEX.md` | captions, plotting tables, scripts, descriptive vs inferential |
