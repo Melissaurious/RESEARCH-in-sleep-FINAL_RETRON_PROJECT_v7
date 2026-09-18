@@ -469,3 +469,30 @@ recommended default (WA-S.1).
 - Residual engineering risk (hostile-object `__eq__` in C6 membership) closed by operator
   disposition as OUT-OF-SCOPE / NON-LOAD-BEARING; no registered path admits such an object.
 - Errata U1-U3 recorded against the executor's own reporting; the frozen bundle is not edited.
+
+## 2026-09-18 · g6 BS-15 independent review OPEN — blocked on an external usage limit
+
+- **Needed:** an adversarial review of `results/rt07_g6_family_architecture/` by a model
+  DISJOINT from `claude-opus-5[1m]`, which produced both the bundle and the self-audit.
+- **Why blocked:** attempt 1 routed to the `codex` MCP (cross-vendor, read-only, no write access
+  to the bundle) and **failed before producing any finding**:
+  `You've hit your usage limit. ... try again at Sep 19th, 2026 12:16 PM.`
+  Purely an external account limit — not a refusal, not a timeout, not a defect in the packet or
+  the bundle, and **not a scientific finding**. **Zero review content exists**; nothing from the
+  attempt may be cited in either direction, and the failure is not tacit acceptance.
+- **Options:** (a) rerun the same packet against `codex` after the limit resets; (b) purchase
+  credits and rerun sooner; (c) substitute a non-Opus Claude model, which satisfies BS-15 as
+  literally written but is materially weaker than cross-vendor independence; (d) proceed without
+  review.
+- **Operator decision (not a default taken by a session):** **(a)**. No Claude substitution at
+  this stage. Same packet, same reviewer, after reset.
+- **Packet:** durable tracked copy `review-stage/INDEPENDENT_REVIEW_REQUEST_g6.md`; working
+  original `ARIS_OUTPUT/rt07_g6_review/CLAUDE_SELF_AUDIT.md` (gitignored scratch, hence the
+  tracked copy). Propositions C1-C10 are stated to be confirmed or refuted individually.
+- **Meanwhile:** g6 is CLOSED as a reproducible descriptive analysis. Descriptive figures and
+  Stage-3 use of the frozen state coordinate system are permitted with the documented
+  qualifications. Thesis-level biological claims, classification reassessment and any claim of
+  independent validation are **BLOCKED**. No further g6 science; the bundle is **not** altered to
+  anticipate the reviewer.
+  Record: `docs/decisions/2026-09-18_stage2_g6_bs15_open_and_bounded_use.md`.
+- **Status:** OPEN. Earliest retry 2026-09-19 12:16.

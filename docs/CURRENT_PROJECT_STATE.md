@@ -22,7 +22,7 @@ beside it so you can re-check it in one command.
 | **`g4b` production freeze** | **COMPLETE** |
 | **`g5a` eligibility census** | **COMPLETE** |
 | **`g5` catalogue application** | **COMPLETE** |
-| **`g6` family architecture** | **COMPLETE — terminal, both arms** |
+| **`g6` family architecture** | **CLOSED as a reproducible DESCRIPTIVE analysis. BS-15 independent review OPEN — see §5.9.** |
 | **`g7a` historical RT0–RT7 bridge** | **COMPLETE — the historical track is TERMINAL** |
 | `g7b` structural + published comparators | **NOT STARTED** |
 
@@ -143,7 +143,27 @@ RT0–RT7 architecture.
    the mapper's visibility gradient or of near-duplicate redundancy.
    Bundle `results/rt07_g6_family_architecture/`; nothing there carries a historical label, and
    g7a was **not** read.
-9. **Scope is `-M 50` only.**
+9. **`g6` has had NO independent review, and what it may be used for is bounded.**
+   The g6 bundle **and** its self-audit were both produced by `claude-opus-5[1m]`, so BS-15 is
+   **not** satisfied — the self-audit is a Layer-2 preflight, not the adversarial pass. The
+   first attempt (cross-vendor `codex`, read-only) **failed on an external usage limit and
+   produced zero review content**; that failure is **not** tacit acceptance and may not be
+   cited in either direction.
+
+   | use | status |
+   |---|---|
+   | g6 as a reproducible **descriptive** analysis | **CLOSED** |
+   | descriptive figures, with the documented qualifications | **PERMITTED** |
+   | Stage-3 structural mapping on the frozen `state_id` system, with visibility/occupancy caveats | **PERMITTED** |
+   | thesis-level biological claims | **BLOCKED** |
+   | classification reassessment | **BLOCKED** |
+   | any claim of independent validation | **BLOCKED** |
+
+   No further g6 science, and the bundle is **not** altered to anticipate the reviewer. Retry is
+   the same packet against the same reviewer after 2026-09-19 12:16.
+   Records: `docs/decisions/2026-09-18_stage2_g6_bs15_open_and_bounded_use.md`,
+   `docs/BLOCKED.md`, packet `review-stage/INDEPENDENT_REVIEW_REQUEST_g6.md`.
+10. **Scope is `-M 50` only.**
 
 ## 6 · Canonical datasets
 
