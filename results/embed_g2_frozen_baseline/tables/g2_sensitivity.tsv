@@ -1,0 +1,11 @@
+model	rung	n_queries	n_components	mrr	ci_lo	ci_hi	mrr_expected_ties	top1	top5	status
+M-CCA	rung1_random	1525	284.0	0.4329	0.391	0.4751	0.4329	0.2282	0.5915	OK
+B-kmer	rung1_random	1525	284.0	0.2295	0.1985	0.2629	0.2295	0.1174	0.3934	OK
+M-CCA	rung2_len_gc	1328	247.0	0.2219	0.1885	0.257	0.2219	0.0663	0.2342	OK
+B-kmer	rung2_len_gc	1328	247.0	0.1389	0.1138	0.166	0.1389	0.0316	0.1393	OK
+M-CCA	rung3_model	1310	230.0	0.1936	0.1596	0.2301	0.1936	0.055	0.1771	OK
+B-kmer	rung3_model	1310	230.0	0.1511	0.123	0.1821	0.1511	0.0366	0.1511	OK
+	rung4_nc_cluster	0								INSUFFICIENT
+M-CCA	rung5_rt_cluster	340	4.0	0.0913	0.0864	0.0962	0.0913	0.0235	0.0941	OK
+B-kmer	rung5_rt_cluster	340	4.0	0.1019	0.0858	0.118	0.1019	0.0206	0.1206	OK
+	rung6_species	44								INSUFFICIENT
