@@ -1,0 +1,83 @@
+{
+  "preferred_reviewer": "Codex",
+  "codex_status": "UNAVAILABLE - external usage limit; ZERO scientific review content produced. Verbatim: \"You've hit your usage limit. ... try again at Sep 19th, 2026 12:16 PM.\"",
+  "fallback_provider": "Google Gemini",
+  "configured_mcp_default_model": "gemini-3.6-flash",
+  "configured_fallback_model": "gemini-3.6-flash",
+  "api_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+  "mcp_serverInfo_reported": {
+    "name": "gemini",
+    "version": "2.0.0"
+  },
+  "mcp_tools_reported": [
+    "chat"
+  ],
+  "serving_model_status": "UNCONFIRMED. The MCP server returns assistant text only and does not echo a serving model, so the serving model CANNOT be verified. The configured default is gemini-3.6-flash; this must NOT be described as confirmed.",
+  "invocation_route": "Direct stdio JSON-RPC to the configured `gemini` MCP server. Its tools were not exposed to the Claude session (only `codex` connected), so the same server binary and env from ~/.claude.json were driven directly.",
+  "delivery": "SECTIONED across separate calls because the server caps output at 4096 tokens; a single call truncated at 555 chars.",
+  "first_attempt_failures": [
+    "API 503 UNAVAILABLE (high demand) on the first single-call attempt",
+    "single-call attempt truncated at 555 chars"
+  ],
+  "calls": [
+    {
+      "section": "A1",
+      "ok": false,
+      "chars": 0,
+      "attempts": 5,
+      "seconds": 240.0,
+      "error": "Error: API error 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"
+    },
+    {
+      "section": "A2",
+      "ok": false,
+      "chars": 0,
+      "attempts": 5,
+      "seconds": 327.1,
+      "error": "Error: API error 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"
+    },
+    {
+      "section": "A3",
+      "ok": false,
+      "chars": 0,
+      "attempts": 5,
+      "seconds": 228.9,
+      "error": "Error: API error 429: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/r"
+    },
+    {
+      "section": "B",
+      "ok": false,
+      "chars": 0,
+      "attempts": 5,
+      "seconds": 204.0,
+      "error": "Error: API error 429: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/r"
+    },
+    {
+      "section": "C",
+      "ok": false,
+      "chars": 0,
+      "attempts": 5,
+      "seconds": 208.9,
+      "error": "Error: API error 429: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/r"
+    },
+    {
+      "section": "D",
+      "ok": false,
+      "chars": 0,
+      "attempts": 5,
+      "seconds": 204.3,
+      "error": "Error: API error 429: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/r"
+    },
+    {
+      "section": "EF",
+      "ok": false,
+      "chars": 0,
+      "attempts": 5,
+      "seconds": 204.3,
+      "error": "Error: API error 429: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/r"
+    }
+  ],
+  "sections_ok": 0,
+  "sections_total": 7,
+  "timestamp_utc": "2026-09-18T10:54:40Z"
+}

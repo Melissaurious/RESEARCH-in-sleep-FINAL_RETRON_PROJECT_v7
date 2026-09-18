@@ -23,7 +23,7 @@ beside it so you can re-check it in one command.
 | **`g5a` eligibility census** | **COMPLETE** |
 | **`g5` catalogue application** | **COMPLETE** |
 | **`g6` family architecture** | **CLOSED as a reproducible DESCRIPTIVE analysis. BS-15 independent review OPEN — see §5.9.** |
-| **`g7a` historical RT0–RT7 bridge** | **COMPLETE — the historical track is TERMINAL** |
+| **`g7a` historical RT0–RT7 bridge** | **COMPLETE — the historical track is TERMINAL. Independent review gate OPEN — see §5.7a.** |
 | `g7b` structural + published comparators | **NOT STARTED** |
 
 Do not start `g6` without reading `results/rt07_g5_catalogue_application/docs/G6_READINESS.md`.
@@ -125,6 +125,19 @@ RT0–RT7 architecture.
    binding. `results/rt07_g4b_production_mapper/control/CROSSWALK_RT0_RT7.tsv` is deliberately
    **unchanged and still `UNRESOLVED`** — production carries no historical label.
    Decision: `docs/decisions/2026-09-18_stage2_g7a_rt0_rt7_closure.md`.
+
+   **7a · The g7a independent-review gate is OPEN. The eight statuses above are UNTESTED.**
+   `results/rt07_g7a_rt0_rt7_bridge/PROVENANCE.md` records that the bundle has had **no
+   adversarial pass**. An attempt on 2026-09-18 **produced no scientific review**: Codex
+   (preferred) hit an external usage limit with zero content, and the authorised Gemini
+   fallback returned transient **503**s and then **429 quota exhaustion**, yielding **0 of 7
+   sections**. The only emitted text is a 555-character fragment stopping mid-word in section
+   A/RT0, labelled `INCOMPLETE_REVIEW_FRAGMENT — NOT SCIENTIFIC REVIEW`; it confirms and refutes
+   nothing. **Failure is not tacit acceptance**, and **no status was changed** on its basis.
+   Durable record: `review-stage/INDEPENDENT_REVIEW_REQUEST_g7a.md` and
+   `review-stage/g7a_review_packet/`. Infrastructure causes, kept separate:
+   `docs/INFRASTRUCTURE_INCIDENTS.md` INF-1. Do **not** call Gemini during the exhausted quota
+   window; Codex remains preferred.
 8. **`g6` is CLOSED, and its headline is a BRACKET, not a number.** Split-half reproducibility
    of the between-group state-profile structure, on halves that share no sequence cluster:
 

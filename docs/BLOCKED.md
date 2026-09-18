@@ -496,3 +496,29 @@ recommended default (WA-S.1).
   anticipate the reviewer.
   Record: `docs/decisions/2026-09-18_stage2_g6_bs15_open_and_bounded_use.md`.
 - **Status:** OPEN. Earliest retry 2026-09-19 12:16.
+
+## 2026-09-18 · g7a independent review OPEN — both reviewers unavailable, NO review produced
+
+- **Needed:** an independent adversarial review of the frozen
+  `results/rt07_g7a_rt0_rt7_bridge/` RT0-RT7 historical bridge.
+- **Why blocked:** both reviewers failed on external capacity.
+  - **Codex (preferred):** external usage limit. Verbatim `You've hit your usage limit. ... try
+    again at Sep 19th, 2026 12:16 PM.` **Zero scientific review content.**
+  - **Gemini (authorised fallback):** transient **503** on first sections, then **429 quota
+    exceeded** for all remaining sections. **0 of 7 sections returned content.** The only
+    emitted text is a 555-character fragment that stops mid-word in section A/RT0, labelled
+    `INCOMPLETE_REVIEW_FRAGMENT - NOT SCIENTIFIC REVIEW`; it confirms and refutes nothing.
+- **Executor error, recorded:** a retry storm (up to 35 calls x ~102 KB payload, 20-80 s
+  backoff) probably consumed the remaining Gemini quota. See `docs/INFRASTRUCTURE_INCIDENTS.md`
+  INF-1.
+- **Operator decision:** gate stays **OPEN**; **no RT0-RT7 status changed** on the basis of this
+  attempt; **do not call Gemini during the exhausted quota window**; Codex remains preferred.
+  Any future sectioned review must use **deterministic, hashed, section-specific packets**
+  carrying only the evidence each section needs, preserving the same frozen questions, and a
+  **429 must abort immediately**.
+- **Durable record:** `review-stage/INDEPENDENT_REVIEW_REQUEST_g7a.md` plus
+  `review-stage/g7a_review_packet/` (exact request, provenance, artifact hashes, truncated
+  fragment, raw failure log).
+- **Meanwhile:** the eight RT0-RT7 terminal statuses stand **unchanged and untested**. Failure
+  is **not** tacit acceptance. The bundle is unmodified and its `verify.sh` passes 0 failures.
+- **Status:** OPEN. Codex retry earliest 2026-09-19 12:16; Gemini reset time unreported.
