@@ -84,7 +84,7 @@ outstanding blocker.
 |---|---|---|---|---|---|---|
 | oriented ncRNA (FASTA) | `data/derived/rt_ncrna_oriented_v1.fna` | 3,953,406 | 16,458 | exact oriented ncRNA | `d04297a823e249061a320897233afac581bbfb0bf26b33942f5c0f6630258e35` | **LOCAL ONLY** |
 | oriented ncRNA (parquet) | `data/derived/rt_ncrna_oriented_v1.parquet` | 1,492,723 | 16,458 | exact oriented ncRNA | `5c81dfe91e0dac8144839c945f1d7694d388354cbf2841ad14d7097f98187706` | LOCAL ONLY |
-| provenance | `data/derived/rt_ncrna_oriented_v1.provenance.json` | 1,143 | — | — | `c04b6048359e6b5f6a5a8a5ce2e6bbd5ef778f018bc65f9f3f5210bf7b13632f` | LOCAL ONLY |
+| provenance | `data/derived/rt_ncrna_oriented_v1.provenance.json` | 1,122 | — | — | `7240465d473ed49242c5b97c1558db5b5fe63f60b29f7874fe7563281f740efb` | LOCAL ONLY |
 | manifest | `data/derived/rt_ncrna_oriented_v1.MANIFEST.tsv` | 364 | 3 | file | — | LOCAL ONLY |
 
 | | |
@@ -160,3 +160,34 @@ Do not let any future ignore rule catch these:
 `rt_exact_v1.faa` 220 MiB × 4). The canonical copy is the one in `data/derived/`. The
 `ARIS_OUTPUT` copies are rerun scratch and are safe to delete independently of §4; they are
 not referenced by any landed bundle.
+
+## 8 · embed_g1 — frozen representation caches — **IBEX, not this host**
+
+Produced by the `embed` track on Ibex (operator decision 2026-09-18: keep borg's GPUs clear of
+`rt07_g6`). Bundle: `results/embed_g1_representations/`.
+
+**Persistent home — the only copy:**
+`/ibex/project/c2366/RETRONS/FINAL_RETRON_PROJECT_v7/embeddings/`
+
+| cache | path | size | records | unit | dim | GitHub |
+|---|---|---|---|---|---|---|
+| ESM-C 300M | `esmc300m_v1/shards/shard_0000…0007/` | 21 GB | 29,192 seq / 11,236,474 residues | exact RT | 960 | **IBEX ONLY** |
+| RiNALMo giga-v1 | `rinalmo_giga_v1/shards/shard_0000…0004/` | 6.6 GB | 16,458 seq / 2,719,581 nt | exact oriented ncRNA | 1280 | **IBEX ONLY** |
+
+Each shard holds `pooled.npy` (N, D) fp16, `tokens.npy` (ΣL, D) fp16 ragged,
+`pooled_index.tsv`, `tokens_index.tsv`, `PROVENANCE.json` and `DONE.json` — all mode `444`.
+Per-file sha256 are in `manifests/<cache>.tsv`, mirrored into the bundle's `tables/`.
+
+| | |
+|---|---|
+| **key** | exact sequence hash — `rt_seq_hash` / `nc_seq_hash`, joining every Stage-1 derived table |
+| **population** | PAIR-ELIG, from `rt_ncrna_exact_pairs_v1` (30,924 pairs) |
+| **inputs** | `rt_pair_universe.faa` `db87de17…` · `rt_ncrna_oriented_v1.fna` `d04297a8…` |
+| **verification** | 29,192/29,192 and 16,458/16,458 sequences, unit totals exact, no duplicate, no gap, every shard the contiguous block of the frozen order its position implies, one identical frozen contract across all shards |
+| **gpu_arch** | **sm_80 (A100) for both caches** — a contract field, not a note; a cache mixing sm_80 and sm_89 is refused at merge |
+| **truncation** | none, either cache |
+| **rebuild** | `sbatch code/prod_*.sbatch`; ~1 min per shard on A100; resume is shard-level and never recomputes a validated shard |
+
+⚠️ **This is the only copy and it is not on this workstation.** Pooled representations are
+~0.1 GB total and are cheap to mirror locally for Phase-2 work; the ~27.6 GB of token arrays
+are deliberately left on Ibex until a token-level analysis is actually authorised.

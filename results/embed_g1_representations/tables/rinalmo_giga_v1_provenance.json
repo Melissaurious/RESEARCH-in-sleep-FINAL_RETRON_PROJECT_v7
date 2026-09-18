@@ -1,0 +1,27 @@
+{
+  "cache": "rinalmo_giga_v1",
+  "dim": 1280,
+  "frozen_contract": {
+    "alphabet_rule": "DNA as stored; encode() aliases U->T; IUPAC native; no <unk>",
+    "batching_rule": "sorted by (len, hash); BATCH=8; shard boundaries at multiples of 8",
+    "dim": 1280,
+    "dtype": "float16",
+    "gpu_arch": "sm_80",
+    "input_fasta_sha256": "d04297a823e249061a320897233afac581bbfb0bf26b33942f5c0f6630258e35",
+    "layer": "final encoder output (the model's returned representation)",
+    "model": "RiNALMo giga-v1",
+    "model_id": "giga-v1",
+    "orientation_rule": "sequence_oriented as stored; all placements orientation_corrected",
+    "package_version": "rinalmo (git install)",
+    "pooling": "unweighted mean over real residue/nucleotide tokens, fp32 accumulate",
+    "special_tokens": "CLS/EOS stripped, rows 1..L",
+    "torch": "2.1.0",
+    "truncation": "none",
+    "weights_identity": "~/.cache/rinalmo_pretrained/giga-v1.pt sha256 cd93c3f21eb3e767373c9491192686b5846247bd1110693e453c1dd0f321c0db"
+  },
+  "pooled_layout": "per-shard pooled.npy; use manifests/rinalmo_giga_v1_pooled_index.tsv -> (shard, row)",
+  "sequences": 16458,
+  "shards": 5,
+  "token_layout": "per-shard tokens.npy, ragged; use manifests/rinalmo_giga_v1_tokens_index.tsv -> (shard, offset, length)",
+  "units": 2719581
+}
