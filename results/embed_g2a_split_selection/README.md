@@ -87,3 +87,55 @@ not both. At the strictest feasible blocking effective n collapses to ~4; at com
 (RT 0.70+) leakage reaches ~90 %. The recommendation sits at n_eff ≈ 14 with ~55 % of held-out
 RTs having a ≥50 %-identity training relative. The confirmatory readout therefore measures
 **generalization to moderately diverged RTs, not to unrelated ones**, and must say so.
+
+---
+
+# Addendum — the fragment-leakage channel (operator check, 2026-09-18)
+
+Motivated by a problem the threshold analysis itself exposed: the primary clustering requires
+80 % coverage, so a near-identical **fragment** of a training sequence fails the coverage test,
+forms its own cluster, and is free to cross into the held-out fold. Identity thresholds were
+**not** touched — RT stays 0.50, ncRNA stays 0.80.
+
+## The channel, measured exactly (held-out vs training-only database, no censoring)
+
+| modality | id≥0.50 & cov≥0.50 | id≥0.70 & cov≥0.50 | id≥0.90 & cov≥0.30 |
+|---|---|---|---|
+| RT | 3,685 / 4,469 = 82.46 % | 57 / 4,469 = **1.28 %** | 3 / 4,469 = **0.07 %** |
+| ncRNA | 1,175 / 2,756 = 42.63 % | 1,122 / 2,756 = 40.71 % | 263 / 2,756 = **9.54 %** |
+
+**The RT fragment channel is already closed under Option A** — three sequences out of 4,469.
+The premise that motivated this check does not hold on the protein side. The ncRNA side is the
+real channel, at 9.54 %.
+
+## An artefact that invalidates unfiltered ncRNA identity
+
+Every held-out ncRNA (2,756 / 2,756, median identity **1.000**) has a 100 %-identity training
+match at <30 % coverage. These are short conserved msr/msd motifs, not homology. Unfiltered
+maximum ncRNA identity is saturated at 1.0 and carries no information; only coverage-filtered
+numbers are interpretable. At cov ≥ 0.80 only 21.3 % of held-out ncRNAs have any hit at all.
+
+## Option B costs more than it buys
+
+| | components | largest | train/val/test | test n_eff | val n_eff | T3 test | T4 test |
+|---|---|---|---|---|---|---|---|
+| **A — no bridge** | 1,075 | 18.5 % | 21,647/4,639/4,638 | **14.1** | **14.2** | 14.48 % | 13.26 % |
+| B, id≥0.50 cov≥0.50 | 137 | 94.3 % | 29,163/881/880 | 1.6 | 1.2 | 2.09 % | 2.18 % |
+| B, id≥0.70 cov≥0.50 | 480 | 34.1 % | 21,457/5,018/4,449 | 7.1 | **1.0** | 13.21 % | 13.44 % |
+| B, id≥0.90 cov≥0.30 | 882 | 21.8 % | 21,647/4,639/4,638 | 13.3 | **2.6** | 12.69 % | 12.56 % |
+
+And the bridge was **verified, not assumed** (`g2_bridge_verification.tsv`). The best variant
+closes the RT channel completely (3 → 0) but only reduces the ncRNA channel 263 → 54 (1.96 %),
+because bridges are built from a probe capped at 300 hits per query. It costs **82 % of
+validation independence** (n_eff 14.2 → 2.6) to buy that.
+
+A surgical alternative — quarantine the 73 test components containing an offender into train —
+was also priced: test falls to 1,525 pairs (4.93 %) and T4 test retention to 3.20 %.
+
+## Recommendation: **A**, plus a declared near-duplicate sensitivity stratum
+
+No structural change. The 263 held-out ncRNAs and 3 held-out RTs crossing at id ≥ 0.90 /
+cov ≥ 0.30 are recorded as a predeclared **near-duplicate stratum**, and the confirmatory
+readout is reported twice: on the full test fold (4,638 pairs, n_eff 14.1) and on the
+near-duplicate-free subset (1,525 pairs, n_eff 24.5, T4 3.20 %). That turns the residual from
+an untested assumption into a measured sensitivity, at zero cost to the primary split.

@@ -1,0 +1,13 @@
+option	modality	criterion	n_heldout	n_crossing	frac
+A - no bridge	RT	id>=0.50 & cov>=0.50	4469	3685	0.8246
+A - no bridge	RT	id>=0.70 & cov>=0.50	4469	57	0.0128
+A - no bridge	RT	id>=0.90 & cov>=0.30	4469	3	0.0007
+A - no bridge	ncRNA	id>=0.50 & cov>=0.50	2756	1175	0.4263
+A - no bridge	ncRNA	id>=0.70 & cov>=0.50	2756	1122	0.4071
+A - no bridge	ncRNA	id>=0.90 & cov>=0.30	2756	263	0.0954
+B - bridge 0.9/0.3	RT	id>=0.50 & cov>=0.50	4401	2769	0.6292
+B - bridge 0.9/0.3	RT	id>=0.70 & cov>=0.50	4401	117	0.0266
+B - bridge 0.9/0.3	RT	id>=0.90 & cov>=0.30	4401	0	0.0
+B - bridge 0.9/0.3	ncRNA	id>=0.50 & cov>=0.50	2762	930	0.3367
+B - bridge 0.9/0.3	ncRNA	id>=0.70 & cov>=0.50	2762	861	0.3117
+B - bridge 0.9/0.3	ncRNA	id>=0.90 & cov>=0.30	2762	54	0.0196
