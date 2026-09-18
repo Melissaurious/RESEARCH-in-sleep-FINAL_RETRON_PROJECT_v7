@@ -1,0 +1,16 @@
+{
+  "cache": "esmc300m_v1",
+  "K": 32,
+  "dim": 960,
+  "records": 29192,
+  "rule": "chunk j = mean of residues [floor(jL/K), floor((j+1)L/K)); empty chunks zero-filled and masked False",
+  "dtype": "float16",
+  "shape": [
+    29192,
+    32,
+    960
+  ],
+  "short_rts_below_K": 1,
+  "sha256_chunks": "740dd0596732db3038e483037ea743f11bd3d46a9525cb8b8edcbb292da50b4f",
+  "sha256_mask": "19016cd5c4853b2666fa4b3efa161510ecea877bc6eaa5443d07cb8f889da4c5"
+}

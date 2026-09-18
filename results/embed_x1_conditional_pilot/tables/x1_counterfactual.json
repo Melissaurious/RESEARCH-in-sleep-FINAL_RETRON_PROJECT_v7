@@ -1,0 +1,11 @@
+{
+  "n_eligible": 4630,
+  "n_alternatives": 8,
+  "min_type_rts": 9,
+  "n_components": 355,
+  "delta_logP_per_nt": 0.013512,
+  "ci_lo": 0.00682,
+  "ci_hi": 0.018813,
+  "frac_pairs_favouring_observed": 0.7102,
+  "frac_components_favouring_observed": 0.7577
+}
