@@ -33,6 +33,7 @@
 | the figure/table manifest and the plots still to build | `docs/dbchar_workbench_snapshot/exports_v2/FIGURE_SET.md` |
 | what changed in the notebook and what is still open | `docs/dbchar_workbench_snapshot/exports_v2/IMPLEMENTED.md` |
 | decisions and discrepancies found along the way | `docs/dbchar_workbench_snapshot/notes/` |
+| **matched vs unmatched retron loci — start here for absence work** | the **Z6** section of `…/RT_NCRNA_DATASET_HANDOVER.md` |
 | which build script holds which notebook section | `docs/dbchar_workbench_snapshot/exports_v2/SCRIPTS_README.md` |
 
 **This directory holds the reproducible evidence and analysis layer** — the numbers those
@@ -42,7 +43,7 @@ source. Prose there, evidence here.
 ## Layout
 
 ```
-tables/    86 TSV — the evidence layer. Every number in the chapter traces to one of these.
+tables/    87 TSV — the evidence layer. Every number in the chapter traces to one of these.
 scripts/   17 py — the notebook generator plus two checkers. Regenerates everything.
            Its section map is the canonical SCRIPTS_README.md linked above, not duplicated here.
 figures/   13 PNG — the chapter figure set.
@@ -70,6 +71,29 @@ a proposal, not an adopted project population.**
 
 "assoc." counts distinct `(rt_seq_hash, detection_model)` — invariant to the boundary trimming
 that inflates exact pairs by 4.0 %.
+
+## Matched vs unmatched retron loci — Z6
+
+`tables/Z6_matched_summary.tsv` carries the aggregates. The **row-level table
+`Z6_locus_matched_status.parquet` (630,741 rows, one per Retron locus, 53 MB) is NOT in this
+snapshot** — it lives in the workbench at `ARIS_OUTPUT/dbchar_workbench/tables/` and is rebuilt by
+notebook section Z6. Keys to rejoin it: `locus_key`, `physical_locus_key`, `rt_system_id`,
+`record_key_any`, `rt_seq_hash`, `genome_id_norm`, `contig_norm`.
+
+The unmatched class is `NO_NCRNA_CALL_IN_RETAINED_WINDOW` — **not** biological absence. One
+detector, one retained window, no positive control. Never relabel it.
+
+| stratum | loci | unmatched |
+|---|---|---|
+| overall | 630,741 | 47.24 % |
+| window clipped at a contig edge | 212,449 | 62.52 % |
+| window intact | 418,292 | 39.48 % |
+| **< 200 bp retained upstream of the RT** | 44,038 | **87.27 %** |
+| 200–1000 bp upstream | 24,923 | 74.07 % |
+| ≥ 1000 bp upstream | 561,780 | 42.91 % |
+
+`bp_available_upstream` separates detector absence from unavailable search space. Condition on it
+before any matched-vs-unmatched comparison, or the difference you measure is mostly instrument.
 
 ## Filtering further — and what the categories mean
 

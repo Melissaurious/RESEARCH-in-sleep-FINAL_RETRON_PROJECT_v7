@@ -1278,3 +1278,175 @@ print("\nbaseline (tier T1, canonical Retron pairs): "
 print("Costs are MARGINAL - each filter applied alone to the baseline, never cumulatively.")
 print("For the cumulative tiers see Z1_association_resource_tiers.")
 ''')
+
+md(r"""
+---
+
+# Z6 — Retron loci: matched against unmatched, per locus
+
+* **Question.** For every Retron locus in the context population, did the retron covariance-model
+  library produce a call inside the retained window, and — where it did not — was there any search
+  space in which it could have?
+* **Unit.** One accession-defined locus (`locus_key`).
+* **Denominator.** Retron loci of `POP_RT_CTX`.
+* **Language.** The unmatched class is `NO_NCRNA_CALL_IN_RETAINED_WINDOW`. It is **not** an
+  absence of ncRNA. It is a statement about one detector operating on one retained window, and
+  `CLAUDE.md` requires a positive control before any absence claim. There is none here.
+
+**The flags that separate detector absence from unavailable search space** are
+`bp_available_upstream` (strand-aware sequence between the window edge and the RT start — where
+essentially all real calls sit), `any_window_clipped`, `win_len_retained` and
+`rt_at_window_edge`. A locus with no upstream space was never searched where the signal lives,
+and must never be pooled with one that was.
+
+Row-level output is `tables/Z6_locus_matched_status.parquet`; the committed snapshot carries the
+aggregates. Join keys back to the rest of the project: `locus_key`, `physical_locus_key`,
+`rt_system_id`, `record_key_any`, `rt_seq_hash`, `genome_id_norm`, `contig_norm`.
+""")
+
+code(r'''
+_RET = ("is_first_copy AND file_label = 'Retron' AND NOT multilabel "
+        "AND elig_exact_rt AND elig_geometry")
+
+# tiers, reproduced here so the per-locus evidence level matches Z1's definitions exactly
+_T2 = ("same_strand AND direction <> 'downstream' AND n_cds_between = 0 "
+       "AND abs(signed_distance_bp) <= 200")
+_T3 = _T2 + " AND evalue <= 1e-5"
+
+_Z6_SQL = f"""
+WITH loci AS (
+  SELECT
+    locus_key,
+    any_value(physical_locus_key)            AS physical_locus_key,
+    any_value(rt_system_id)                  AS rt_system_id,
+    min(record_key)                          AS record_key_any,
+    count(*)                                 AS n_records_at_locus,
+    any_value(rt_seq_hash)                   AS rt_seq_hash,
+    count(DISTINCT rt_seq_hash)              AS n_distinct_rt_seq,
+    any_value(genome_id_norm)                AS genome_id_norm,
+    any_value(contig_norm)                   AS contig_norm,
+    any_value(source_database)               AS source_database,
+    any_value(taxonomy_system)               AS taxonomy_system,
+    any_value(tax_domain)                    AS tax_domain,
+    any_value(tax_species)                   AS tax_species,
+    any_value(file_label)                    AS family_label,
+    any_value(type_set_norm)                 AS system_type_norm,
+    any_value(system_subtypes_raw)           AS system_subtype_raw,
+    -- window geometry: retained vs intended
+    max(win_end - win_start)                 AS win_len_retained,
+    any_value(win_len_field)                 AS win_len_field,
+    any_value(rt_start)                      AS rt_start,
+    any_value(rt_end)                        AS rt_end,
+    any_value(rt_strand)                     AS rt_strand,
+    any_value(win_start)                     AS win_start,
+    any_value(win_end)                       AS win_end,
+    -- clipping, left and right kept separate
+    max(CASE WHEN true_start_clipped    THEN 1 ELSE 0 END) AS clipped_start,
+    max(CASE WHEN clipped_start_flag_raw THEN 1 ELSE 0 END) AS clipped_start_raw,
+    max(CASE WHEN clipped_end_flag      THEN 1 ELSE 0 END) AS clipped_end,
+    -- contig context
+    any_value(dist_rt_to_contig_start)       AS dist_rt_to_contig_start,
+    any_value(dist_rt_to_contig_end)         AS dist_rt_to_contig_end,
+    any_value(contig_len_lower_bound)        AS contig_len_lower_bound,
+    -- RT quality / completeness
+    any_value(rt_aa_len)                     AS rt_aa_len,
+    any_value(rtcds_partial)                 AS rtcds_partial,
+    any_value(bt_status)                     AS bt_status,
+    max(CASE WHEN rt_seq_wellformed THEN 1 ELSE 0 END)  AS rt_seq_wellformed,
+    max(CASE WHEN elig_rt_completeness THEN 1 ELSE 0 END) AS elig_rt_completeness,
+    -- genomic-context availability
+    max(CASE WHEN rt_in_window       THEN 1 ELSE 0 END)  AS rt_in_window,
+    max(CASE WHEN rt_at_window_edge  THEN 1 ELSE 0 END)  AS rt_at_window_edge,
+    max(CASE WHEN window_inverted    THEN 1 ELSE 0 END)  AS window_inverted,
+    max(CASE WHEN window_len_consistent THEN 1 ELSE 0 END) AS window_len_consistent
+  FROM rt_records WHERE {_RET} GROUP BY locus_key
+),
+calls AS (
+  SELECT locus_key,
+         count(*)                                   AS n_ncrna_calls,
+         count(DISTINCT nc_seq_hash)                AS n_distinct_ncrna,
+         string_agg(DISTINCT detection_model, '|' ORDER BY detection_model) AS detection_models,
+         min(evalue)                                AS best_evalue,
+         max(score)                                 AS best_score,
+         max(CASE WHEN {_T2} THEN 1 ELSE 0 END)     AS meets_T2,
+         max(CASE WHEN {_T3} THEN 1 ELSE 0 END)     AS meets_T3
+  FROM rt_ncrna_pairs WHERE canonical GROUP BY locus_key
+)
+SELECT
+  l.*,
+  CASE WHEN c.locus_key IS NULL THEN 'NO_NCRNA_CALL_IN_RETAINED_WINDOW'
+       ELSE 'NCRNA_CALL_PRESENT' END              AS ncrna_status,
+  coalesce(c.n_ncrna_calls, 0)                    AS n_ncrna_calls,
+  coalesce(c.n_distinct_ncrna, 0)                 AS n_distinct_ncrna,
+  c.detection_models, c.best_evalue, c.best_score,
+  CASE WHEN c.locus_key IS NULL THEN 'UNMATCHED'
+       WHEN c.meets_T3 = 1      THEN 'T3_HIGH_CONFIDENCE'
+       WHEN c.meets_T2 = 1      THEN 'T2_ARCHITECTURE'
+       ELSE 'T1_OBSERVED' END                     AS evidence_tier,
+  -- search space actually available upstream of the RT, strand aware
+  CASE WHEN l.rt_strand = '-' THEN l.win_end - l.rt_end
+       ELSE l.rt_start - l.win_start END          AS bp_available_upstream,
+  CASE WHEN l.clipped_start = 1 OR l.clipped_end = 1 THEN 1 ELSE 0 END AS any_window_clipped
+FROM loci l LEFT JOIN calls c USING (locus_key)
+"""
+
+_p = TABLES / "Z6_locus_matched_status.parquet"
+if not _p.exists():
+    con_ = con()
+    try:
+        con_.execute(f"COPY ({_Z6_SQL}) TO '{_p}' (FORMAT PARQUET, COMPRESSION ZSTD)")
+    finally:
+        con_.close()
+print(f"row-level table: {_p.name}  {_p.stat().st_size/1048576:.1f} MB")
+Z6 = f"read_parquet('{_p}')"
+print(Q(f"SELECT count(*) n_loci, count(DISTINCT locus_key) distinct_keys FROM {Z6}").to_string(index=False))
+''')
+
+code(r'''
+# ---- summary checks, against the values quoted at handover -------------------------------
+tot  = Q(f"SELECT count(*) n FROM {Z6}").n.iloc[0]
+hasc = Q(f"SELECT count(*) n FROM {Z6} WHERE ncrna_status='NCRNA_CALL_PRESENT'").n.iloc[0]
+noc  = Q(f"SELECT count(*) n FROM {Z6} WHERE ncrna_status='NO_NCRNA_CALL_IN_RETAINED_WINDOW'").n.iloc[0]
+nrt  = Q(f"SELECT count(DISTINCT rt_seq_hash) n FROM {Z6}").n.iloc[0]
+mrt  = Q(f"SELECT count(DISTINCT rt_seq_hash) n FROM {Z6} "
+         f"WHERE ncrna_status='NCRNA_CALL_PRESENT'").n.iloc[0]
+print("summary checks")
+for lab, got, exp in [("total Retron loci", tot, 630741), ("loci with >=1 call", hasc, 332769),
+                      ("loci with no call", noc, 297972), ("distinct exact RTs", nrt, 76381),
+                      ("exact RTs with >=1 matched locus", mrt, 28838)]:
+    print(f"  [{'MATCH' if got == exp else ' DIFF'}] {lab:<34} Z6={got:>8,}  expected={exp:>8,}")
+assert hasc + noc == tot, "matched + unmatched must equal the total"
+
+agg = cache("Z6_matched_summary", fn=lambda: Q(f"""
+    SELECT 'overall' AS stratum, 'all' AS level, count(*) AS n_loci,
+           sum(CASE WHEN ncrna_status='NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END) AS n_matched,
+           sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END) AS n_unmatched,
+           100.0*sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END)/count(*) AS pct_unmatched
+    FROM {Z6}
+    UNION ALL SELECT 'window_clipped', CASE WHEN any_window_clipped=1 THEN 'clipped' ELSE 'intact' END,
+           count(*), sum(CASE WHEN ncrna_status='NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END),
+           sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END),
+           100.0*sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END)/count(*)
+    FROM {Z6} GROUP BY 2
+    UNION ALL SELECT 'source_database', source_database, count(*),
+           sum(CASE WHEN ncrna_status='NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END),
+           sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END),
+           100.0*sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END)/count(*)
+    FROM {Z6} GROUP BY 2
+    UNION ALL SELECT 'upstream_search_space',
+           CASE WHEN bp_available_upstream IS NULL THEN 'unknown'
+                WHEN bp_available_upstream < 200  THEN 'a. <200 bp upstream retained'
+                WHEN bp_available_upstream < 1000 THEN 'b. 200-1000 bp'
+                ELSE 'c. >=1000 bp' END,
+           count(*), sum(CASE WHEN ncrna_status='NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END),
+           sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END),
+           100.0*sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END)/count(*)
+    FROM {Z6} GROUP BY 2
+    UNION ALL SELECT 'evidence_tier', evidence_tier, count(*),
+           sum(CASE WHEN ncrna_status='NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END),
+           sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END),
+           100.0*sum(CASE WHEN ncrna_status<>'NCRNA_CALL_PRESENT' THEN 1 ELSE 0 END)/count(*)
+    FROM {Z6} GROUP BY 2
+    ORDER BY 1, 2"""), pop="RT-CTX")
+display(agg.round(2))
+''')

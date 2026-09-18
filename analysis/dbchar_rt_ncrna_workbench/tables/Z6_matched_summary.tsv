@@ -1,0 +1,19 @@
+stratum	level	n_loci	n_matched	n_unmatched	pct_unmatched
+evidence_tier	T1_OBSERVED	139072	139072.0	0.0	0.0
+evidence_tier	T2_ARCHITECTURE	5449	5449.0	0.0	0.0
+evidence_tier	T3_HIGH_CONFIDENCE	188248	188248.0	0.0	0.0
+evidence_tier	UNMATCHED	297972	0.0	297972.0	100.0
+overall	all	630741	332769.0	297972.0	47.24157776329746
+source_database	gem	3564	1267.0	2297.0	64.45005611672278
+source_database	gtdb_archaea	145	5.0	140.0	96.55172413793103
+source_database	gtdb_bacteria	91508	43870.0	47638.0	52.058836385889755
+source_database	mgnify_human_gut	23167	10534.0	12633.0	54.53015064531446
+source_database	mgnify_marine	2292	928.0	1364.0	59.511343804537525
+source_database	mgnify_soil	1565	822.0	743.0	47.47603833865815
+source_database	ncbi_archaea	262	22.0	240.0	91.6030534351145
+source_database	ncbi_bacteria	508238	275321.0	232917.0	45.82833239545253
+upstream_search_space	a. <200 bp upstream retained	44038	5604.0	38434.0	87.27462645896726
+upstream_search_space	b. 200-1000 bp	24923	6462.0	18461.0	74.07214219796975
+upstream_search_space	c. >=1000 bp	561780	320703.0	241077.0	42.913062052760864
+window_clipped	clipped	212449	79618.0	132831.0	62.52371157313049
+window_clipped	intact	418292	253151.0	165141.0	39.479837051629005

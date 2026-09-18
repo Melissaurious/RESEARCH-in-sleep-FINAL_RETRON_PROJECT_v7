@@ -120,6 +120,63 @@ upstream by the canonical definition — don't spend a filter step on them.
 
 ---
 
+## Z6 — Matched vs unmatched retron loci (**start here for any absence work**)
+
+`tables/Z6_locus_matched_status.parquet` is the **canonical entry point for any matched-vs-
+unmatched ncRNA work.** One row per Retron locus of the context population, 630,741 rows.
+Aggregates are in `tables/Z6_matched_summary.tsv`; the row-level parquet is 53 MB and lives in
+the workbench, not in the committed snapshot.
+
+**Language.** The unmatched class is `NO_NCRNA_CALL_IN_RETAINED_WINDOW`. It is **not** biological
+absence of an ncRNA. It says one retron-derived covariance-model library produced no call inside
+one retained window. `CLAUDE.md` requires a positive control before any absence claim, and there
+is none. Never relabel this column.
+
+| | loci | unmatched |
+|---|---|---|
+| overall | 630,741 | **47.24 %** |
+
+**Condition before comparing anything.** Three strata change the answer materially:
+
+| stratum | loci | unmatched |
+|---|---|---|
+| window clipped at a contig edge | 212,449 | 62.52 % |
+| window intact | 418,292 | 39.48 % |
+| **< 200 bp retained upstream of the RT** | 44,038 | **87.27 %** |
+| 200–1000 bp upstream | 24,923 | 74.07 % |
+| ≥ 1000 bp upstream | 561,780 | 42.91 % |
+
+`bp_available_upstream` is the field that separates *detector absence* from *unavailable search
+space*: essentially every real call sits upstream, so a locus retaining under 200 bp there was
+never searched where the signal lives. 68,961 loci are in that position. Comparing matched
+against unmatched without conditioning on it produces a difference that is mostly instrument.
+
+Note that search space explains part and not the bulk — at ≥ 1000 bp upstream, 42.9 % are still
+unmatched.
+
+**Unit effect.** At locus level 52.8 % are matched; at protein level only 37.8 % (28,838 of
+76,381 exact RTs). Matched RTs are the heavily deposited ones occupying many loci.
+
+**Join keys** back to the rest of the project: `locus_key`, `physical_locus_key`, `rt_system_id`,
+`record_key_any`, `rt_seq_hash`, `genome_id_norm`, `contig_norm`.
+
+**Columns** include the identifiers above; `source_database`, `taxonomy_system`, `tax_domain`,
+`tax_species`; `family_label`, `system_type_norm`, `system_subtype_raw`; `ncrna_status`,
+`n_ncrna_calls`, `n_distinct_ncrna`, `detection_models`, `best_evalue`, `best_score`,
+`evidence_tier` (`T3_HIGH_CONFIDENCE` / `T2_ARCHITECTURE` / `T1_OBSERVED` / `UNMATCHED`);
+`win_len_retained`, `win_len_field`, `win_start`, `win_end`, `rt_start`, `rt_end`, `rt_strand`;
+`clipped_start`, `clipped_start_raw`, `clipped_end`, `any_window_clipped`;
+`dist_rt_to_contig_start`, `dist_rt_to_contig_end`, `contig_len_lower_bound`;
+`rt_aa_len`, `rtcds_partial`, `bt_status`, `rt_seq_wellformed`, `elig_rt_completeness`;
+`rt_in_window`, `rt_at_window_edge`, `window_inverted`, `window_len_consistent`;
+and `bp_available_upstream`.
+
+Five summary checks are asserted in notebook section Z6 and all reproduce: 630,741 total loci;
+332,769 matched; 297,972 unmatched; 76,381 distinct exact RTs; 28,838 exact RTs with at least one
+matched locus.
+
+---
+
 ## 4. The outgroup models — retained, and why
 
 `OutgroupA` and `OutgroupB` are two of the 21 covariance models. They contribute **22 % of distinct
