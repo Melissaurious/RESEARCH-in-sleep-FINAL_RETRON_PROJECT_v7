@@ -255,8 +255,35 @@ data and said so.
 
 ## 8. Compute
 
-- Expected: borg GPU 1 (RTX 4090, 24 GB) — measured idle at launch; Ibex is not used unless a
-  measured pilot shows borg cannot hold the job.
+**Operator decision 2026-09-18: `embed_g1` production runs on Ibex, not borg**, so that it does
+not compete with the active `rt07_g6` work and other local sessions. Borg stays the pilot and
+development machine. The `embed_g0` pilot numbers below remain the borg baseline against which
+Ibex throughput is compared.
+
+Persistent Ibex namespace:
+`/ibex/project/c2366/RETRONS/FINAL_RETRON_PROJECT_v7/embeddings/` — `inputs/`, `esmc300m_v1/`,
+`rinalmo_giga_v1/`, `manifests/`, `logs/`, `code/`. Inputs and landed shards are mode 444;
+write-once. Transient work goes to **node-local** scratch, which is probed inside the job and
+never assumed — nothing transient is written to `/ibex/project`.
+
+**A100 is a correctness requirement, not a preference.** The first Ibex submission was routed
+to a GTX 1080 Ti. ESM-C ran there and validated, at 4,412 res/s against borg's 69,900.
+**RiNALMo died**: `Current CUDA Device does not support bfloat16`. RiNALMo's frozen contract is
+a bf16 autocast forward, so dropping to fp16 to fit Pascal would produce a cache that is not
+the declared computation. `embed_shard.py` now refuses any GPU without bf16 before a single
+forward runs, and both caches are pinned to one GPU architecture so shards of the same cache
+stay numerically comparable.
+
+**ESM-C and RiNALMo are separate jobs and separate resource requests**, and stay that way
+unless measured evidence supports combining them.
+
+**Shard-level resume.** Shards are contiguous blocks of the frozen (len, hash) order with
+boundaries at multiples of `BATCH`, so shard-local batch geometry equals a single-stream run.
+A shard that is present and validates against its own `DONE.json` is skipped — re-submitting
+the array *is* the resume, and a validated shard is never recomputed.
+
+- Local pilot baseline (borg, RTX 4090): ESM-C 69,900 res/s, 1.20 GB VRAM; RiNALMo 25,634 nt/s,
+  3.84 GB VRAM.
 - Estimated **2** GPU-hours for the whole `embed_g1` production across both models, from the
   workload size: 29,192 proteins / 11,236,474 residues and 16,458 RNAs / 2,719,581 nt, no ncRNA
   over 395 nt. This estimate is **replaced** by the measured smoke-test rate before production.
