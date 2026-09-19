@@ -1,0 +1,6 @@
+chain	stratum	n_primary	n_p4	overlap	C4_primary
+7KFT_C	flagged	3	4	0.8468	AMBIGUOUS
+8UW3_A	flagged	8	9	0.9225	CALL
+9C0I_A	primary	3	3	0.8	CALL
+9N69_E	primary	3	3	0.8279	CALL
+9Z6Z_H	flagged	2	6	0.4657	CALL

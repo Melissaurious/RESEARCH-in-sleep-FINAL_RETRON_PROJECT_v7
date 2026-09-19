@@ -1,0 +1,10 @@
+stratum	region	C6_status	C6_median	C6_group_pairs	C6_absent_in_Y	C7_status	C7_median	C7_groups	C7_numbering_excluded	region_meets_all_bars
+primary	palm-like	RECURRENT	0.798	35	304	STABLE	0.798	8	7	False
+primary	thumb-like	UNDERPOWERED	0.000	7	141	NOT_STABLE	0.000	5	7	False
+primary	fingers-like	UNDERPOWERED	0.721	8	249	NOT_STABLE	0.000	5	7	False
+flagged	palm-like	UNDERPOWERED	0.223	2	18	UNDERPOWERED	0.456	2	1	False
+flagged	thumb-like	UNDERPOWERED	nan	0	12	UNDERPOWERED	nan	0	1	False
+flagged	fingers-like	UNDERPOWERED	0.000	1	8	UNDERPOWERED	0.000	2	1	False
+all_nonexposed	palm-like	RECURRENT	0.796	39	330	STABLE	0.770	10	8	False
+all_nonexposed	thumb-like	UNDERPOWERED	0.000	7	153	NOT_STABLE	0.000	5	8	False
+all_nonexposed	fingers-like	RECURRENT	0.695	11	265	NOT_STABLE	0.000	7	8	False

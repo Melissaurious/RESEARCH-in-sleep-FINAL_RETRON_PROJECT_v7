@@ -1,0 +1,14 @@
+biological_group	chains	strata	unit_counts	distinct_counts	pair_agreement	palm_calls
+RG01	5	design_exposed,primary	2,2,2,3,4	3	3/10	4/5
+RG02	5	flagged	4,5,8,7,6	5	0/10	1/5
+RG03	6	primary	2,3,3,2,2,2	2	7/15	0/6
+RG04	3	primary	4,3,5	3	0/3	1/3
+RG05	4	primary	3,3,2,2	2	2/6	4/4
+RG06	6	primary	4,3,4,3,4,4	2	7/15	6/6
+RG07	2	primary	3,3	1	1/1	0/2
+RG08	2	primary	3,2	2	0/1	2/2
+RG09	2	primary	3,2	2	0/1	1/2
+RG10	2	flagged	7,5	2	0/1	2/2
+RG24	3	primary	5,4,4	2	1/3	3/3
+RG30	2	primary	3,3	1	1/1	2/2
+RG31	2	flagged	6,2	2	0/1	2/2

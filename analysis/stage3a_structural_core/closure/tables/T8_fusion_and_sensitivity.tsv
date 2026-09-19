@@ -1,0 +1,6 @@
+analysis	n	verdict	palm_call_rate	thumb_call_rate	fingers_call_rate	replicate_count_agreement
+stratum:primary	46	FAIL	0.565	0.130	0.304	0.385 (52 pairs)
+stratum:flagged	15	FAIL	0.467	0.133	0.200	0.000 (12 pairs)
+stratum:all_nonexposed	61	FAIL	0.541	0.131	0.279	0.312 (64 pairs)
+BJ-p4 parser (primary)	46	FAIL	0.565	0.130	0.304	0.385 (52 pairs)
+LOGO (22 folds, primary)	45-46 minus group	{'FAIL': 22}	0.500-0.650	0.091-0.150	0.225-0.350	flips: []

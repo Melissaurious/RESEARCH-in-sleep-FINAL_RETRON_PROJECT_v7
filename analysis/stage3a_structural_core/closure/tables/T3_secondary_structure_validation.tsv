@@ -1,0 +1,10 @@
+state	metric	value	n	bar	result
+E	kappa	0.986	62	0.75	PASS
+E	recall	0.986	62	0.8	PASS
+E	precision	1.000	62	0.8	PASS
+H	kappa	0.981	62	0.75	PASS
+H	recall	0.994	62	0.8	PASS
+H	precision	0.993	62	0.8	PASS
+cohort	frac_chain_ss_gate	1.000	62	0.9	PASS
+E	min per-chain kappa	0.846	62	0.70 (chain gate)	PASS
+H	min per-chain kappa	0.925	62	0.70 (chain gate)	PASS

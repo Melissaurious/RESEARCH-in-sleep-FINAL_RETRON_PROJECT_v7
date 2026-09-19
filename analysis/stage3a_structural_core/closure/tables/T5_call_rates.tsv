@@ -1,0 +1,10 @@
+stratum	n	region	criterion	call_rate	bar	meets_rate	status_counts
+primary	46	palm-like	C4	0.565	0.70	no	{'AMBIGUOUS': 1, 'CALL': 26, 'NO_CALL': 19}
+primary	46	thumb-like	C5	0.130	0.70	no	{'NOT_EVALUABLE': 20, 'NO_CALL': 18, 'AMBIGUOUS': 2, 'CALL': 6}
+primary	46	fingers-like	C4b	0.304	0.70	no	{'NOT_EVALUABLE': 20, 'CALL': 14, 'NO_CALL': 11, 'AMBIGUOUS': 1}
+flagged	15	palm-like	C4	0.467	0.70	no	{'NO_CALL': 7, 'AMBIGUOUS': 1, 'CALL': 7}
+flagged	15	thumb-like	C5	0.133	0.70	no	{'NOT_EVALUABLE': 8, 'AMBIGUOUS': 1, 'NO_CALL': 4, 'CALL': 2}
+flagged	15	fingers-like	C4b	0.200	0.70	no	{'NOT_EVALUABLE': 8, 'NO_CALL': 4, 'CALL': 3}
+all_nonexposed	61	palm-like	C4	0.541	0.70	no	{'AMBIGUOUS': 2, 'CALL': 33, 'NO_CALL': 26}
+all_nonexposed	61	thumb-like	C5	0.131	0.70	no	{'NOT_EVALUABLE': 28, 'NO_CALL': 22, 'AMBIGUOUS': 3, 'CALL': 8}
+all_nonexposed	61	fingers-like	C4b	0.279	0.70	no	{'NOT_EVALUABLE': 28, 'CALL': 17, 'NO_CALL': 15, 'AMBIGUOUS': 1}
