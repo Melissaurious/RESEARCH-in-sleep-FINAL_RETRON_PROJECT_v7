@@ -1,0 +1,13 @@
+P0 baseline interval: -166..-32 (n=160,066 A_T3 loci outside benchmark)
+category                              existing pair not rediscovered  existing pair predicted with altered boundary  existing pair rediscovered  method abstention  system unsuitable for this method
+arm                    rule                                                                                                                                                                          
+A_SPIRE                PRIMARY_SPIRE                               0                                             10                          12                354                                  1
+                       SENS_ANY_COV                               40                                            127                         152                 57                                  1
+                       STRUCT_ONLY                                 0                                            126                         250                  0                                  1
+B_SEQ_CACOFOLD         PRIMARY_SPIRE                               5                                              0                           0                371                                  1
+                       SENS_ANY_COV                               13                                             40                         116                207                                  1
+                       STRUCT_ONLY                                 0                                            160                         216                  0                                  1
+B_STRUCT_CACOFOLD      PRIMARY_SPIRE                               8                                             30                          19                319                                  1
+                       SENS_ANY_COV                               40                                            126                         153                 57                                  1
+                       STRUCT_ONLY                                 0                                            164                         212                  0                                  1
+P0_POSITIONAL_BASELINE BASELINE                                   11                                            134                         232                  0                                  0

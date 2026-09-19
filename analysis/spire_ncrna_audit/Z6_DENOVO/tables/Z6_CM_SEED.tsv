@@ -1,0 +1,3 @@
+set_id	arm	cohort	heldout_W	heldout_distal	hits_W	hits_distal	hit_rate_W	hit_rate_distal	W_hits_within_50nt_of_set_median	heldout_matched_hit	heldout_unmatched_hit	note
+DN3_01_VII-A1	MLOC	DENOVO_S3	4	3	2	0	0.5	0.0	2	2	2	experimental CM; not a production model
+MIX_05_XIII	MLOC	MIXED	40	38	30	1	0.75	0.02631578947368421	17	30	0	experimental CM; not a production model

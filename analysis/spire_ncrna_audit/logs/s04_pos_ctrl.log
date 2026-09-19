@@ -1,0 +1,5 @@
+83 sets, 3369 rows -> /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/ARIS_OUTPUT/spire_ncrna_audit/predictions_POS_POS_S5_CTRL_DISTAL_CTRL_INTRAGENIC_CTRL_NONRETRON.tsv
+arm                status
+A_SPIRE            OK        1123
+B_SEQ_CACOFOLD     OK        1123
+B_STRUCT_CACOFOLD  OK        1123

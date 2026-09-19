@@ -1,0 +1,3 @@
+stage	utc	sha256	path
+POS+CTRL predictions frozen before reference join	2026-09-18T13:39:39Z	93880f4a2fdef02e761d531411ecdb9c5e9f592078de21acb0ed8345533dabfc	ARIS_OUTPUT/spire_ncrna_audit/predictions_POS_POS_S5_CTRL_DISTAL_CTRL_INTRAGENIC_CTRL_NONRETRON.tsv
+PIL+GII predictions frozen before any homolog-reference or CM comparison	2026-09-18T13:42:55Z	813f4915ebd37053d9a88a931e537b0f74aa54c8ff4264ffaa0838a9e82aee81	ARIS_OUTPUT/spire_ncrna_audit/predictions_PIL_CTRL_GII_HARD.tsv

@@ -1,0 +1,5 @@
+23 sets, 726 rows -> /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/ARIS_OUTPUT/spire_ncrna_audit/predictions_PIL_CTRL_GII_HARD.tsv
+arm                status
+A_SPIRE            OK        242
+B_SEQ_CACOFOLD     OK        242
+B_STRUCT_CACOFOLD  OK        242

@@ -1,0 +1,9 @@
+candidate_class	scope	n_candidate_members	n_newly_paired_loci	n_newly_paired_exact_RTs	n_exact_RTs_already_paired_elsewhere	n_unique_ncRNA_seqs	n_retron_types	retron_types	cm_models	n_rt_components_touched	n_NEW_rt_components	n_candidates_matching_existing_ncRNA	n_NEW_ncRNA_components	within_type_rt_components_A_T3_before_to_after	gains_TypeIIIA3_or_TypeIB1	infeasible_types_touched	exploited
+CM_WINDOW_RESCUE	pilot (219 CM-negative members, 20 sets)	23.0	23	23	2.0	22.0	8.0	I-A;I-C;II-A;III-A;IV;IX;UNLABELLED;XIII	OutgroupA;TypeIC1_IC2;TypeIIIA3;TypeIV;TypeIX;TypeXIIIC_Mx162	7	0.0	19.0	4.0	I-A:59->60 I-C:191->192 II-A:40->41 III-A:204->204 IV:19->19 IX:26->26 UNLABELLED:1097->1097 XIII:64->64	True		NO — calculated only
+DENOVO_WEAK	pilot (219 CM-negative members, 20 sets)	8.0	8	8	0.0	8.0	2.0	III-A;XII	none	2	2.0	0.0	8.0	III-A:204->205 XII:0->1	False	XII	NO — calculated only
+REFERENCE_current_TypeIIIA3	A_T3 loci, whole population		3053	909						151							reference only
+REFERENCE_current_TypeIB1	A_T3 loci, whole population		2225	508						53							reference only
+CEILING_B_S1_SYSTEM_CONTEXT_2TOOLS	all suitable B loci (upper bound if every one yielded)		69092	6352						877	725.0						NO — ceiling only
+CEILING_B_S2_SYSTEM_CONTEXT_1TOOL	all suitable B loci (upper bound if every one yielded)		64751	8688						1903	1728.0						NO — ceiling only
+CEILING_B_S3_FUSED_RT_RULE_ONLY	all suitable B loci (upper bound if every one yielded)		30501	7022						1208	1124.0						NO — ceiling only
+CEILING_B_S5_SEQUENCE_ONLY	all suitable B loci (upper bound if every one yielded)		58280	14482						4786	4528.0						NO — ceiling only

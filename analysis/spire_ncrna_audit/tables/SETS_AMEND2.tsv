@@ -1,0 +1,4 @@
+set_id	cohort	stratum	rt50	n_members	type_label	n_type_labels	n_phyla	win_from	win_to	note
+CTRL_GII_HARD_1	CTRL_GII_HARD	RVT-GII	11cec2d82c2015e0f690d8adb76e06bf246ef36444a098c87570994145496adc	10	RVT-GII	1	4	-300	-1	Amendment 2
+CTRL_GII_HARD_2	CTRL_GII_HARD	RVT-GII	f1fbe5e0bfaf3011c95782ce48709732204015f7c98b92d48a885ce6f1641a8a	7	RVT-GII	1	2	-300	-1	Amendment 2
+CTRL_GII_HARD_3	CTRL_GII_HARD	RVT-GII	03eb6ffb647d187caf6c9bad5389e411dcaa1fa2d9d177ba825edee8f05f1a5d	6	RVT-GII	1	1	-300	-1	Amendment 2

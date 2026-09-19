@@ -60,3 +60,28 @@ Notes that are not gates (WA-G.1).
   technical: 96.9% of those downstream placements sit in g3's contig-start-clipped mode. Nothing in
   g1–g7 was modified; `human_input_audit` PENDING. ⚠️ `REPORT.html` was NOT seen rendered — the only
   browser here is a snap that cannot run in this environment; all 34 figures were inspected as images.
+
+- **2026-09-18 · SPIRE/Toro ncRNA-method audit + bounded benchmark (exploratory, `analysis/spire_ncrna_audit/`, not a gate).**
+  ZIP audited file by file: the ncRNA wrapper `07` runs verbatim after two env shims, assigns no boundary, and its
+  summary parser always prints 0 significant pairs (reads the substitutions column). Master RT-system table over the
+  project's own population (563,701 physical loci; A/B/C status, S1–S5 evidence strata from the tools' rule files).
+  Design frozen and hashed before outcomes; references revealed after prediction hashes. On 377 blinded CM-positive
+  loci, SPIRE's rule abstains on 94 % and rediscovers at chance (12 vs 12.2); covariation on mLocARNA alignments is
+  non-specific (distal 88 %, non-retron RT 75 %, group II intron 3/3 vs POS 74 %); a fixed positional baseline beats
+  every comparative arm on overlap. CM-negative pilot (219 loci): no credible de novo-only ncRNA; 23 loci carry a
+  padlocdb.cm hit (E ≤ 1e-5) that the intergenic-only corpus route never searched (an annotated ORF covers msr/msd),
+  a situation that holds for 38–40 % of S1/S2 CM-negative loci. PROPOSED: do not scale SPIRE; windowed Infernal rescan
+  first (`NEXT_SCALE_PLAN.md`), operator decision required. 977-ncRNA set not found (`docs/BLOCKED.md`).
+
+- **2026-09-19 · SPIRE ncRNA task re-based on Z6 (`analysis/spire_ncrna_audit/Z6_DENOVO/`, exploratory).**
+  Z6 read from `dbchar-workbench@12ea561a`, all five population checks reproduced. The 23 pilot "CM rescues"
+  reconciled against canonical records (`RECONCILIATION_23.md`): 12 hits overlap no intergenic region of the record,
+  4 calls registered under a neighbouring Retron record, 7 unexplained locally; no global search-space claim, and the
+  earlier production-CM rescan proposal is withdrawn. Z6 classes: 187,160 matched-local adequate, 241,077 unmatched
+  adequate, 56,895 unmatched context-limited; 10,925 RT50 groups (173 positive-feasible, 57 mixed, 186 + 93 de novo
+  feasible). Frozen 24-set benchmark + distal controls: CMfinder localises hidden ncRNAs far above chance (62/120 at
+  IoU ≥ 0.5 vs 8.1 expected) but rarely reaches covariation with power; mLocARNA covariation passes on 16/24 distal
+  controls vs 13/24 real windows. Two discovery-cohort candidates followed up by seeded experimental CMs; neither is
+  credible (MIX_05_XIII: 30/32 held-out matched vs 0/8 unmatched). No new independent RT–ncRNA component. PROPOSED:
+  a second bounded round (CMfinder whole-ncRNA length, power-aware gate calibrated on controls) before any scale-up;
+  scale-up population 509 groups ≈ 815 core-h, operator decision required.

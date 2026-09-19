@@ -1,0 +1,2 @@
+comparison	n	A_better	P0_better	tie	median_IoU_A	median_IoU_P0
+A_SPIRE SENS_ANY_COV vs P0, members with an A call	320	178	141	1	0.4371151782183811	0.5528890959925443

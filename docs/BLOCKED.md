@@ -469,3 +469,18 @@ recommended default (WA-S.1).
 - Residual engineering risk (hostile-object `__eq__` in C6 membership) closed by operator
   disposition as OUT-OF-SCOPE / NON-LOAD-BEARING; no registered path admits such an object.
 - Errata U1-U3 recorded against the executor's own reporting; the frozen bundle is not edited.
+
+## 2026-09-18 · SPIRE ncRNA audit — "977 validated retron ncRNAs" set not found locally (LOW-STAKES, default taken)
+
+- **Needed:** the operator-described 977-ncRNA boundary set (84–331 nt, ±200 nt context, RNAfold/bpRNA) as positive truth for `analysis/spire_ncrna_audit/`.
+- **Why blocked:** a very thorough read-only search of `/home/borg` found no file with 977 records and no
+  document describing one. Closest: `RETRONS_january_2026/the-retron-project/REPEATE_positive_dataset/POSITIVE_WITH_RBS.h5ad`
+  (1,216 ncRNAs, 52–331 nt) and `dependency_maps/h5ad_files/positive.h5ad` (936 ncRNAs). In both, "validated" means
+  the RT protein matches Mestre 2020; the ncRNAs are Infernal/padlocdb.cm calls (`validated_ncrna` True for 165 only),
+  so they are **not independent of the CM route** under test. The 1,230-record Rfam negative set was found
+  (`dependency_maps/validated_negative_dataset_metadata.json`); it has no RT context and no RF03022 records.
+- **Options:** (a) use the project's own CM-positive population (`A_T3/A_T2`) as reference, tagging loci whose ncRNA
+  matches the 175 published, experimentally characterised ncRNAs (`41587_2024_2384_MOESM4_ESM_extracted_ncRNAs.fasta`);
+  (b) wait for the operator to point to the 977 file (maybe on Ibex); (c) rebuild a 977-like set from the h5ad.
+- **Default taken:** (a). If the 977 file is located later, it can be mapped onto the master table by ncRNA sequence
+  and the evaluation re-run without re-running any prediction (predictions are blind and frozen).

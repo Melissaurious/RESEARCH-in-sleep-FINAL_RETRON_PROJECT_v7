@@ -1,0 +1,8 @@
+rule	arm	n	existing pair rediscovered	existing pair predicted with altered boundary	existing pair not rediscovered	method abstention	system unsuitable for this method
+PRIMARY_SPIRE	A_SPIRE	377	12	10	0	354	1
+PRIMARY_SPIRE	B_STRUCT_CACOFOLD	377	19	30	8	319	1
+PRIMARY_SPIRE	B_SEQ_CACOFOLD	377	0	0	5	371	1
+SENS_ANY_COV	A_SPIRE	377	152	127	40	57	1
+SENS_ANY_COV	B_STRUCT_CACOFOLD	377	153	126	40	57	1
+SENS_ANY_COV	B_SEQ_CACOFOLD	377	116	40	13	207	1
+BASELINE	P0_POSITIONAL_BASELINE	377	232	134	11	0	0
