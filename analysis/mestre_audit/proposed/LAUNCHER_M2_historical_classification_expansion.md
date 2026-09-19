@@ -1,9 +1,23 @@
-# LAUNCHER — m2_historical_classification_expansion  (PROPOSED v2 — NOT ACTIVE)
+# LAUNCHER — m2_historical_classification_expansion  (PROPOSED rev-3 — M2a–c APPROVED, PAUSED)
 
-> ⛔ **Status: PROPOSED, revision 2 (2026-09-18), written after the operator's scope
-> corrections to revision 1. Do not execute.** It becomes active only when the operator copies
-> it to `launchers/`, signs §9 and records a decision under `docs/decisions/`. **M2c ends in a
-> mandatory operator review; M2d cannot start without a second, separate approval.**
+> ⛔ **Status: revision 3 (2026-09-19).**
+> - The operator approved **M2a–c** within ≤ 60 CPU-h on 2026-09-19. **M2d is NOT approved.**
+> - Execution is **PAUSED**, under the operator's own rule: the Toro 2014 source audit (M1
+>   report §14–17) materially changes the historical-core definition. The operator must
+>   choose the extraction contract in §4a (**MCC-v3**, recommended, or MCC-v2 required-core)
+>   before anything is frozen.
+> - After that choice, this file is copied to `launchers/` with the decision recorded.
+> - **M2c ends in a mandatory independent (Codex) review and operator stop.**
+
+### Three things this track keeps apart
+
+1. **Exact historical reproduction.** Impossible: Mestre's RT0–RT7 extraction and MSA are
+   unrecoverable (M1).
+2. **Historical reconstruction.** The primary task (M2a): rebuild the classification as
+   faithfully as the recoverable evidence allows, then test whether historical clade
+   membership can be recovered **without the clade label constructing the placement**.
+3. **Modern classification-space placement.** Downstream (M2b–c now; M2d later, if approved),
+   only once item 2 passes validation.
 >
 > **Title:** *Historical-classification expansion and placement test.*
 > **Question:** how does **modern retron / retron-like RT** diversity relate to the Mestre 2020
@@ -126,7 +140,35 @@ Declared before any M2 number exists.
 
 ⛔ Read-only, always. Probe real values (WA-D.4).
 
-### 4a. The operational interval — MCC-v2
+### 4a. The operational interval — ⛔ PENDING OPERATOR CHOICE: MCC-v3 (recommended) or MCC-v2
+
+**Why this is open.** The Toro 2014 source audit (M1 §14–17) found **source-stated RT0–RT7
+boundaries on 76 clean Mestre proteins**: Toro 2014 retron extracts occurring verbatim, or
+at ≥ 0.95 identity, inside them. Scored against those boundaries, with no Mestre label:
+
+| | extracted of 76 | start / end within 5 aa | median error start / end | clean historical extracted | RNAP control |
+|---|---:|---|---|---:|---:|
+| **MCC-v3 boundaries = Toro-template extraction (TTE, `m09`)** | **76** | **0.658 / 0.816** | **0 / 0 aa** | **1,814 / 1,814** | 0 / 15 |
+| MCC-v2 window | 71 | 0.225 / 0.718 | 11 / 2 aa | 1,729 / 1,814 | 0 / 15 |
+| MCC-v2 required core (the approved primary) | 71 | 0.000 / 0.127 | 29 / 10 aa | 1,729 / 1,814 | 0 / 15 |
+
+**The MCC-v3 contract (proposed):**
+- **Primary edges:** TTE. The templates are the 102 Table S1 "Retrons" extracts; take the best
+  bitscore template covering ≥ 0.80 of itself. Leave-near-self-out (< 0.90 identity) applies
+  in historical validation only; for modern queries every template is eligible and the
+  template identity is recorded.
+- **Core QC:** the MCC-v2 hmmalign route must place ≥ 70 % of required-core states
+  (blocks 4–28) inside the TTE interval; otherwise the status is
+  `UNABLE_TO_EXTRACT_MCC_RELIABLY`.
+- **Primary alignment input:** the full TTE interval. **Sensitivity:** the MCC-v2
+  required-core columns, reported beside every primary number.
+
+The difference is provenance-driven: it was measured on source-stated ground truth before any
+tree, placement or clade evaluation, and run once with rules declared in `m09`.
+**If the operator keeps MCC-v2**, the text below stands unchanged and TTE becomes a sensitivity
+analysis.
+
+*MCC-v2 specification (unchanged; under MCC-v3 it becomes the core-QC route):*
 
 - **Name and meaning.** MCC-v2, the *Mestre-comparable core, version 2*. It is **not**
   Mestre's RT0–RT7: that alignment was never published, and no historical asset preserves it
@@ -239,9 +281,17 @@ Neither 4 nor 5 is a "new retron family", and neither is evidence that Mestre 20
 
 ### 7a. M2a — historical RT0–RT7-comparable reference reconstruction
 
+0. **Denominator ledger, reported at every step:**
+   - source entries (1,928 tips, 1,927 clade-labelled + 1 Orphan);
+   - clean proteins (1,814 terminals, 1,813 distinct);
+   - extractable under the chosen contract;
+   - unsuitable or excluded, with the reason.
+   `UNABLE_TO_EXTRACT_MCC_RELIABLY` is an extraction status, not evidence of a non-retron.
 1. **Clean accession set.** Published tips whose held protein carries the published accession
    (1,814 terminals; 1,813 distinct sequences). The 114 others are `NO_PUBLISHED_PROTEIN`.
-2. **Extraction.** MCC-v2, frozen by the sha256 of `m07`. Output: extracted sequences and a
+   Reuse the existing verified download; nothing is re-downloaded.
+2. **Extraction.** The contract chosen in §4a (MCC-v3 = `m09` TTE + `m07` core QC, or MCC-v2 =
+   `m07`), frozen by sha256. Output: extracted sequences and a
    full-length ↔ extract coordinate table (protein start and end, per-block residue
    positions from both routes, RT0-zone and RT7-tail residue counts, status). Non-extractable
    tips are `NO_EXTRACTABLE_CORE` and are pruned. Identical extracts are collapsed to one
@@ -260,13 +310,40 @@ Neither 4 nor 5 is a "new retron family", and neither is evidence that Mestre 20
    RAxML-NG `--evaluate` finds the closest EPA-ng-representable model; ΔlnL and ΔBIC are
    reported against LG+F+R10. The AU test uses one unconstrained IQ-TREE ML search on the
    same alignment.
-6. **Leave-out placement.** 10 replicates, each holding out 10 % of reference taxa,
-   stratified by clade.
-   - For each replicate: prune, re-fit branch lengths on the fixed topology, align the
-     held-outs by the **same query route used for modern RTs**, then run EPA-ng.
+5b. **Historical-tree comparison.** Infer one **clean** ML tree from the reference alignment
+   with `LG+F+R10` (IQ-TREE 3.1.3 in `retron_tradicional`; the version difference from Mestre's
+   IQ-TREE 1.6.12 is recorded, and the 546-model ModelFinder step is not repeated). Compare
+   three trees:
+   - the **published** tree;
+   - the **recovered contaminated V4** trees. Their Ibex products are reused as comparator
+     assets per `K0_FIRED_RESOLVED_COMPARATOR_ONLY` and are **not recomputed**;
+   - the **clean reconstruction**.
+   For each of the 11 clades, report whether it is recovered (unrooted split; purity; UFBoot
+   support). The reconciliation table states the exact denominator behind every historical
+   statement:
+   - `10/11`: unrooted monophyly on the published tree, 11 clades;
+   - `9/10`: the K1 criterion, 10 monophyletic clades after pruning;
+   - `≤3/11`: V4 support-based clade count on 1,843-taxon trees;
+   - V4 purity-only `4–6/11`.
+   The aim is to quantify which clades are reproducible, not to force the topology.
+6. **Leave-out placement — PRIMARY: relatedness-blocked.**
+   - Cluster the reference extracts at the frozen **85 % identity** rule (MMseqs2,
+     `--min-seq-id 0.85 -c 0.8`). Every member of an 85 % group stays on the same side of a
+     split.
+   - **10 replicates**, each withholding about 10 % of **groups**, stratified by clade. Per
+     replicate: prune the withheld taxa, re-fit branch lengths on the fixed published
+     topology, align the withheld sequences by the **same query route used for modern RTs**,
+     then run EPA-ng.
+   - Historical labels are revealed **only after** each replicate's placements are fixed.
    - Replicates 1–5 **calibrate** τ_LWR (clade-level LWR), τ_EDPL and τ_pend(clade).
-     Replicates 6–10 **evaluate** K2. Clade 10 (paraphyletic w.r.t. clade 11) is reported
-     separately and does not count toward K2.
+     Replicates 6–10 **evaluate** K2.
+   - **Secondary comparison only:** sequence-level random 10 % holdout, reported beside the
+     primary.
+   - **Per clade, never pooled:** reference sequence count, independent 85 % group count,
+     withheld count, `CONFIDENTLY_PLACED` correct, `AMBIGUOUS`, confident wrong placement,
+     `UNABLE_TO_ALIGN_OR_PLACE_RELIABLY`, and an underpowered flag (< 5 independent groups).
+     Clade 10 (paraphyletic w.r.t. clade 11) is reported separately and does not count toward
+     K2. The K1–K3 stop criteria are unchanged.
 7. **Controls.**
    - the 15 RNA-polymerase substitutes (must fail extraction; must never be placed);
    - the other 97 substitutes (reported separately; never in the reference);
@@ -306,23 +383,43 @@ The excluded fraction is reported **per stratum**, as a result.
 
 Stratified, **seed 2026**, drawn from the frozen M2b table after M2a passes:
 
-| stratum | n | expectation declared now |
-|---|---:|---|
-| A, identical to a clean Mestre protein | 40 | `CONFIDENTLY_PLACED` into its own published clade (positive control) |
-| A, nearest reference ≥ 90 % identity (MMseqs2 on MCC) | 40 | mostly category 1 |
-| A, nearest reference 50–70 % identity | 40 | no expectation stated; behaviour reported |
-| A, nearest reference < 50 % identity | 40 | no expectation stated; behaviour reported |
-| B1 | 40 | reported separately from A |
-| B0 | 40 | reported separately from A |
-| M | 20 | separate stratum |
-| 15 RNA-polymerase substitutes | 15 | never reach placement |
-| column-shuffled A queries | 40 | ≤ 1 % confident |
-| non-retron panel (Toro non-retron + X sample) | 60 | ≤ 5 % confident |
+Nearest-reference identity is measured by MMseqs2 on the extracted core against the frozen
+reference. The bins are half-open and cover the full range: `[0.90, 1.00)`, `[0.70, 0.90)`,
+`[0.50, 0.70)`, `[0, 0.50)`, plus the separate identical class `1.00`. A bin with fewer
+available sequences than its quota takes all of them, and the shortfall is reported, never
+back-filled from another bin.
+
+| stratum | identity bins | n per bin | n | expectation declared now |
+|---|---|---:|---:|---|
+| A, identical to a clean Mestre protein | 1.00 | — | 40 | `CONFIDENTLY_PLACED` into its own published clade (positive control) |
+| A | the four bins above | 30 | 120 | no expectation stated for the lower bins; behaviour reported |
+| B1 | the four bins above | 15 | 60 | reported separately from A |
+| B0 | the four bins above | 15 | 60 | reported separately from A |
+| M (MULTI / mixed) | unbinned | — | 20 | separate stratum |
+| 15 RNA-polymerase substitutes | — | — | 15 | never reach placement |
+| column-shuffled A queries | — | — | 40 | ≤ 1 % confident |
+| non-retron panel: Toro-2014 non-retron extracts + stratum-X sample | — | — | 60 (30 + 30) | ≤ 5 % confident |
+| **total** | | | **415** | |
+
+Arithmetic check: 40 + 120 + 60 + 60 + 20 + 15 + 40 + 60 = **415**. The rev-2 table summed to
+375 while the text said about 415, and it omitted the 70–90 % range; both are corrected here.
 
 - **Query route:** identical to M2a step 6.
 - **Status rules:** the τ values frozen in M2a.
 - **Deliverables:** per-stratum status counts, EPA-ng runtime per query (it sizes M2d), and
-  any rule that behaved unexpectedly. **The run stops here for operator review.**
+  any rule that behaved unexpectedly. The purpose is to check that the rules behave as
+  declared, **not to discover new clades**; `OUTSIDE_WELL_SUPPORTED_HISTORICAL_CLADE_SPACE` is
+  never renamed as a family or clade.
+- **Carried identifiers, never used to place:** every query and reference row keeps its keys
+  to ncRNA family, accessory architecture, current system/type calls, taxonomy, and RT
+  structural/sequence architecture. They are for later **independent** tests of whether the
+  historical classification tracks other biology.
+- **Independent review (mandatory, before the stop).** Codex receives the bundle paths and
+  the neutral review questions only; no desired conclusion is stated. It reviews:
+  historical-reference cleaning, the extraction contract's anti-circularity, the blocked
+  validation, the recovered-V4 comparator interpretation, the placement confidence rule,
+  control behaviour, and whether any claim exceeds the evidence. Its verdict is recorded
+  verbatim. **The run then stops for operator review.**
 
 ### 7d. M2d — scale, only after M2a–c pass and a second approval
 

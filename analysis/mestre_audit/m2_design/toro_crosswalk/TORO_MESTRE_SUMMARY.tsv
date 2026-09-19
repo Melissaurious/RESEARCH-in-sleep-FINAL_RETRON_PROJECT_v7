@@ -1,0 +1,27 @@
+toro2014_fasta_sequences	742
+toro2014_aligned_columns	[1466]
+toro2014_joined_to_TableS1	685
+toro2014_join_key_types	{'gi': 137, 'gii_db_name': 139, 'patric_fid': 465, 'accession': 1}
+toro2014_by_S1_phylogeny	{'Group II Intron': 369, '': 57, 'CRISPR-RT': 14, 'UNC': 9, 'UG11': 1, 'DGRs': 61, 'UG10 (G2L3)': 16, 'UG4': 3, 'UG3': 14, 'Abi*': 25, 'G2L4': 3, 'Abi': 33, 'Retrons': 102, 'UG2': 22, 'UG5': 9, 'UG6': 4}
+toro2014_distinct_extract_sequences	741
+toro_tree_tips	9141
+mestre_tree_tips	1928
+mestre_table_rows_with_node	1928
+mestre_rows_in_mestre_tree	1928
+mestre_rows_in_toro_tree_by_identifier	1912
+clean_mestre_proteins	1814
+toro2014_extracts_mapped_to_a_clean_mestre_protein	73
+  of_which_retrons	73
+  of_which_exact_substring	58
+  mapped_non_retron_classes	{'Retrons': 73}
+clean_mestre_proteins_with_a_toro2014_extract	76
+v1: n_compared (extractable)	50
+v1: window_start - toro_start  median / |d|<=5 frac	10.5 / 0.240
+v1: window_end - toro_end      median / |d|<=5 frac	-1.0 / 0.880
+v1: required core inside toro interval	0.900
+v1: mapped proteins not extractable	26
+v2: n_compared (extractable)	71
+v2: window_start - toro_start  median / |d|<=5 frac	10.0 / 0.225
+v2: window_end - toro_end      median / |d|<=5 frac	-1.0 / 0.718
+v2: required core inside toro interval	0.944
+v2: mapped proteins not extractable	5

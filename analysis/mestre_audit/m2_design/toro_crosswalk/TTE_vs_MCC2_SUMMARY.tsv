@@ -1,0 +1,22 @@
+ground-truth proteins (Toro-stated interval)	76
+TTE interval: extracted / compared	76 / 76
+TTE interval: start within 5 aa / end within 5 aa	0.658 / 0.816
+TTE interval: median |d start| / |d end|	0.0 / 0.0
+MCC-v2 window: extracted / compared	71 / 76
+MCC-v2 window: start within 5 aa / end within 5 aa	0.225 / 0.718
+MCC-v2 window: median |d start| / |d end|	11.0 / 2.0
+MCC-v2 required core: extracted / compared	71 / 76
+MCC-v2 required core: start within 5 aa / end within 5 aa	0.000 / 0.127
+MCC-v2 required core: median |d start| / |d end|	29.0 / 10.0
+CLEAN: TTE extracted	1814 / 1814
+CLEAN: MCC-v2 extractable	1729 / 1814
+OTHER_SUBSTITUTE: TTE extracted	78 / 97
+OTHER_SUBSTITUTE: MCC-v2 extractable	78 / 97
+RNAP_SUBSTITUTE: TTE extracted	0 / 15
+RNAP_SUBSTITUTE: MCC-v2 extractable	0 / 15
+CLEAN: extracted by both	1729
+CLEAN: TTE only / MCC-v2 only / neither	85 / 0 / 0
+CLEAN both: TTE start - MCC-v2 core start (median)	-26.0
+CLEAN both: TTE end - MCC-v2 core end (median)	10.0
+CLEAN both: TTE contains MCC-v2 required core (frac)	0.8751
+CLEAN TTE: extracted length median	231.5

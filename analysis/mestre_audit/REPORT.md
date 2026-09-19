@@ -468,3 +468,108 @@ The stages are:
 
 Budget: M2a–c ≤ 60 CPU-h; **M2d ≈ 40 CPU-h expected, 100 CPU-h budget, 0 GPU**, re-sized from
 the M2c measurement. Nothing is activated.
+
+---
+
+# Addendum 2026-09-19 (b) — Toro 2014 source audit, before any MCC freeze
+
+Scripts: `scripts/m08_toro_mestre_crosswalk.py` and `m09_toro_template_extraction.py`.
+Outputs: `m2_design/toro_crosswalk/`. No Mestre clade label is used to build anything here;
+clade appears only as an `…_EVALUATION_ONLY` column.
+
+## 14 · What the historical sources are, and are not
+
+| asset (sha256) | contents | what it is | what it is **not** |
+|---|---|---|---|
+| `toro_2014_Rt0-Rt7.FASTA` (`6e43c4cc…95b1`) | 742 gapped sequences × 1,466 columns (741 distinct extracts). Three header schemes: GenBank GI 137 + 1 by accession; PATRIC fid 465 (with a taxon-group prefix, `Afid`/`Gfid`/`cianobacteriafid`…); group-II-database name 139 | **Toro RT0–RT7 definition/reference.** Every sequence is an RT0–RT7 *extract*, already aligned | not the Mestre MSA; not a tree |
+| `TableS1_Toro_2014.XLSX` (`385e8043…8505`) | 742 rows; 685 join to FASTA headers by key. By RT phylogeny: Group II 425, **Retrons 102**, DGRs 62, Abi 33 + Abi* 25, UG* 78, CRISPR-RT 14, UNC 9 | the class labels of the 742; Retrons = 102 | not all retrons: 640 are other RT classes |
+| `Suppl_Toro_Tree.txt` (`ea0ee646…be31`) | 9,141 tips labelled `accession \| species` | Toro's later 9,141-representative RT tree, **the source population of Mestre 2020** | **not the Toro 2014 tree**: only 34/675 Toro 2014 accessions occur in it; no 2014 tree is on disk |
+| `Supplementary_mestre_Tree.nwk` (`7a9a1129…34ce`) | 1,928 tips | Mestre 2020 tree: **1,912 Toro-tree tips + the 16 experimentally validated retrons** (all 16 absent from the Toro tree carry a `Retron_name`), which reproduces "1,912 + 16" by identifier; 11 clades + 1 Orphan in the per-tip table | — |
+
+All copies of each asset across V4, the v7 references and v7 `MELISSA_DATA` are byte-identical.
+Register: `m2_design/toro_crosswalk/TORO_MESTRE_SOURCE_ASSETS.tsv`.
+
+**The crosswalk: Toro 2014 → Mestre 2020 by sequence** (`TORO2014_x_MESTRE2020_CROSSWALK.tsv`)
+- Identifiers changed between 2014 and 2020 (old PATRIC fids and GIs versus `fig|genome.peg`
+  and `WP_`), so the crosswalk is by sequence.
+- **73 Toro 2014 extracts map to 76 clean Mestre proteins** (≥ 0.95 identity, ≥ 0.95 extract
+  coverage). 58 are exact substrings, and **all 73 are Table S1 "Retrons"** — a clean
+  class-level positive control.
+- 29 of the 102 Toro retrons map to no clean Mestre protein (median best identity 0.55).
+- Retron-Sen2 (St85, terminal 116), one of the 16 validated retrons, is an RNA-polymerase
+  substitute in our download, so it is absent from the clean reference.
+
+## 15 · The material finding: Toro states RT0–RT7 boundaries on 76 clean Mestre proteins
+
+For those 76 proteins, the extract's position is a **source-stated** RT0–RT7 interval. Two
+label-independent extractors were scored against it (`TTE_vs_MCC2_SUMMARY.tsv`).
+**TTE** (*Toro-template extraction*) was declared in `m09` before it ran. Templates are the 102
+Toro 2014 retron extracts; for each protein, the best template with < 0.90 identity is used
+(near-self excluded) and must cover ≥ 0.80 of itself; its boundaries are transferred to the
+protein.
+
+| on the 76 source-stated proteins | **TTE** | MCC-v2 window | MCC-v2 required core |
+|---|---|---|---|
+| extracted | **76 / 76** | 71 / 76 | 71 / 76 |
+| start within 5 aa / end within 5 aa | **0.658 / 0.816** | 0.225 / 0.718 | 0.000 / 0.127 |
+| median absolute error, start / end | **0 / 0 aa** | 11 / 2 aa | 29 / 10 aa |
+
+| all sets | TTE | MCC-v2 |
+|---|---|---|
+| clean historical proteins extracted | **1,814 / 1,814** | 1,729 / 1,814 |
+| other substitutes | 78 / 97 | 78 / 97 |
+| 15 RNA-polymerase substitutes (negative control) | **0 / 15** | 0 / 15 |
+| median extract length (clean) | 231.5 aa (Toro retron extracts: 231) | 217 aa window |
+
+- On the 1,729 clean proteins both extract, the TTE interval starts a median **26 aa before**
+  the MCC-v2 required core and ends **10 aa after** it, and contains the required core in
+  87.5 %.
+- **The Toro-stated historical RT0–RT7 interval for retrons therefore includes about 36
+  residues per protein that an MCC-v2 required-core-only primary would discard.**
+- TTE recovers those edges stably on historical proteins: median error 0 aa.
+
+**Why this is provenance-driven, not outcome-driven.** It was measured on source-stated
+boundaries before any placement, tree or clade evaluation. No Mestre clade entered either
+extractor. The comparison was run once, with rules declared in the script.
+
+## 16 · The three objects, kept apart
+
+| object | status |
+|---|---|
+| **Toro RT0–RT7 definition/reference** (2014 extracts) | on disk, hashed; source-stated boundaries on 76 clean Mestre proteins |
+| **Mestre RT0–RT7 alignment** | **not recoverable**; exact reproduction is impossible |
+| **Our operational reconstruction** (MCC-v2, or the proposed TTE-based contract) | a choice we make; never called "the Mestre alignment" |
+
+## 17 · Revised extraction contract — PAUSED for the operator
+
+The operator's rule applies: *"if this audit materially changes the historical-core
+definition, pause before M2 execution and report the revised extraction contract."* It does,
+so **M2a–c have not been activated and nothing is frozen.**
+
+**Proposed `MCC-v3` (Toro-template contract):**
+1. **Primary boundaries: TTE**, which transfers Toro 2014 retron-extract boundaries.
+   - templates: the 102 Table S1 "Retrons" extracts;
+   - template selection: best bitscore, template coverage ≥ 0.80;
+   - leave-near-self-out (< 0.90 identity) **for historical validation only**. For modern
+     queries every template is eligible, and the template identity is recorded.
+2. **Core QC from the profile route.** The MCC-v2 hmmalign route must place ≥ 70 % of the
+   required-core states (blocks 4–28) **inside** the TTE interval; failing that, the status
+   is `UNABLE_TO_EXTRACT_MCC_RELIABLY`.
+   - This keeps the profile route as an anti-truncation check, but it no longer sets the
+     edges.
+   - It is an extraction status, not evidence that a sequence is non-retron.
+3. **Primary alignment input:** the full TTE interval, so the reference matches the
+   source-stated RT0–RT7 extent. **Sensitivity:** the same alignment restricted to the
+   MCC-v2 required-core columns, reported beside the primary for every validation number.
+4. **Not used anywhere:** Stage-2 `CAT_STATE`, the 150 anchors, Stage-2 RT5, Stage-3
+   structure, or Mestre clade labels.
+
+**The alternative** is to keep the approved primary, MCC-v2 required core only, and report
+TTE as a sensitivity analysis. Under that choice, 85 clean historical proteins fall out as
+non-extractable, and the ~36 source-stated residues per protein stay out of the primary
+alignment.
+
+**Recommendation: MCC-v3**, because it reproduces the only source-stated boundary evidence
+(median error 0 aa) and extracts every clean historical protein. Its known risk: for **modern**
+sequences distant from every Toro retron, no template may reach 0.80 coverage. Those sequences
+get `UNABLE_TO_EXTRACT_MCC_RELIABLY` (category 5); they are never forced.
