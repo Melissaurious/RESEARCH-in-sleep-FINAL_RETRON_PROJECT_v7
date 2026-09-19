@@ -1,0 +1,8 @@
+state	metric	median	n_defined	n_undefined	bar	pass
+E	kappa	0.9864	62	0	0.75	1
+E	recall	0.9858	62	0	0.8	1
+E	precision	1.0000	62	0	0.8	1
+H	kappa	0.9811	62	0	0.75	1
+H	recall	0.9943	62	0	0.8	1
+H	precision	0.9931	62	0	0.8	1
+cohort	frac_chain_ss_gate	1.0000	62	0	0.9	1
