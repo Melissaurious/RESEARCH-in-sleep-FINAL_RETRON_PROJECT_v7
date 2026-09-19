@@ -1,0 +1,31 @@
+{
+  "name": "MCC-v3.1",
+  "frozen_utc": "2026-09-19T12:59:42.768189+00:00",
+  "script_sha256": "9aef3627a7691ed701f006084152dedc39efa225e9c928ae8c9b40f126f12255",
+  "toro_fasta_sha256": "6e43c4ccd3660f4cc1b8c3903ee53cb530552475c2b1d0eef9a55530d08e95b1",
+  "n_templates": 102,
+  "LEAVE_NEAR_SELF": 0.9,
+  "MIN_TCOV": 0.8,
+  "TIE_BITS_FRAC": 0.005,
+  "CONCORD_BITS_FRAC": 0.9,
+  "MIN_IDENT": 0.3503,
+  "MIN_IDENT_basis": "5th percentile of nearest-neighbour identity within the Toro retron reference set",
+  "MAX_BOUNDARY_UNC": 16,
+  "MAX_BOUNDARY_UNC_basis": "95th percentile of the concordant-template boundary spread within the Toro retron reference set (v3.1 correction: the quantity R5 applies)",
+  "calib_nn_ident": {
+    "n": 99,
+    "p05": 0.3503,
+    "median": 0.517,
+    "min": 0.267
+  },
+  "calib_boundary_spread": {
+    "n": 96,
+    "p50": 0.0,
+    "p90": 9.0,
+    "p95": 16.5,
+    "max": 24.0
+  },
+  "superseded": "v3.0 (R5 calibrated on best-template deviation, 10 aa): outputs in superseded_v3.0/",
+  "core_qc": "MCC-v2 hmmalign route: >= 70 % of required-core states (blocks 4-28) inside the interval",
+  "mestre_labels_used": "none"
+}

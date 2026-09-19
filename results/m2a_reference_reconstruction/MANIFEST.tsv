@@ -1,0 +1,14 @@
+artifact	script	command	unit	denominator
+tables/DENOMINATOR_LEDGER.json	scripts/a01_reference_sets.py	python3 scripts/a01_reference_sets.py	published tips	1,928 per extractor
+tables/v3_tip_status.tsv / v2_tip_status.tsv	scripts/a01_reference_sets.py	same	tip	1,928
+tables/v3_pruned_monophyly_EVALUATION.json / v2_...	scripts/a01_reference_sets.py	same	clade	10 published-monophyletic clades + clade 10
+tables/v3_te.iqtree / v2_te.iqtree	run.sh	iqtree -te pruned -m LG+F+R10 -nt 8	log-likelihood	1,486 / 1,723 taxa
+tables/v3_tau_FROZEN.json / v2_tau_FROZEN.json	scripts/a04_calibrate_evaluate.py	python3 scripts/a04_calibrate_evaluate.py <x>	threshold	calibration reps 1-5 (745 / 861 real queries)
+tables/*_blocked_per_clade.tsv, *_random_per_clade.tsv	scripts/a04_calibrate_evaluate.py	same	withheld placements per clade	evaluation reps (blocked 6-10; random 1-5)
+tables/*_SUMMARY.json	scripts/a04_calibrate_evaluate.py	same	fraction	K2: clades 1-9,11 held-out real queries; shuffled: all shuffled queries
+tables/*_evaluation_rows.tsv	scripts/a04_calibrate_evaluate.py	same	query	per evaluation replicate
+tables/TREE_COMPARISON_per_clade.tsv / _summary.tsv	scripts/a05_tree_comparison.py	python3 scripts/a05_tree_comparison.py	clade	11 clades x 7 trees
+tables/CONTROLS_v3.tsv / CONTROLS_v3_K3.json	scripts/a06_controls.py	python3 scripts/a06_controls.py	control sequence	583 Toro non-retron + 500 X + 15 RNAP + 97 other substitutes
+tables/MCC_V3_*	scripts/m10_mcc_v3_freeze.py	see run.sh step 0	historical protein	1,926 held proteins (1,814 clean)
+tables/M2B_inclusion_by_stratum.tsv, M2B_QUERY_FREEZE.sha256	scripts/b01_query_freeze.py	python3 scripts/b01_query_freeze.py	exact RT	501,561
+val/<ext>_<design>_rNN/*	scripts/a03_leaveout_validation.py	python3 scripts/a03_leaveout_validation.py <ext> <design> <rep>	withheld query	~149 (v3) / ~172 (v2) per replicate
