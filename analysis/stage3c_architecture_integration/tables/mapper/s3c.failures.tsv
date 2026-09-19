@@ -1,0 +1,3 @@
+rt_hash	sequence_id	sequence_length	mapper_version	inspectability_status	reason_code	detail
+	5VBS_A	246	rtmap-1.0.0/53a1e738a19b3896	INPUT_INVALID	BELOW_MIN_LENGTH	246 aa < registered minimum 250
+	8BGJ_A	203	rtmap-1.0.0/53a1e738a19b3896	INPUT_INVALID	BELOW_MIN_LENGTH	203 aa < registered minimum 250

@@ -6,6 +6,7 @@ mirror LAUNCHER_03C section 7a.
 """
 import collections
 import csv
+import functools
 import hashlib
 import itertools
 import os
@@ -93,18 +94,22 @@ def write_tsv(path, rows, columns):
 
 
 # ---------------------------------------------------------------- 3A frozen structure layer
+@functools.lru_cache(maxsize=None)
 def chains():
     return sorted(r["chain"] for r in read_tsv(T1))
 
 
+@functools.lru_cache(maxsize=None)
 def t1():
     return {r["chain"]: r for r in read_tsv(T1)}
 
 
+@functools.lru_cache(maxsize=None)
 def register():
     return {f"{r['pdb_id']}_{r['chain']}": r for r in read_tsv(REGISTER)}
 
 
+@functools.lru_cache(maxsize=None)
 def ss_residues(chain):
     """Canonical ordered residue list of a chain (residues carrying CA; 3A's index space)."""
     out = []
@@ -114,8 +119,12 @@ def ss_residues(chain):
     return out
 
 
+@functools.lru_cache(maxsize=None)
 def pdp_labels(arm="primary"):
-    """{chain: {(resnum, icode): label}}; label 0 = PDP-unassigned. Keys absent = PDP_ABSENT."""
+    """{chain: {(resnum, icode): label}}; label 0 = PDP-unassigned. Keys absent = PDP_ABSENT.
+
+    The frozen-table readers are memoised: they are read-only inputs, read once per process.
+    Callers must not mutate what they return."""
     lab = collections.defaultdict(dict)
     for r in read_tsv(PDP[arm]):
         lab[r["chain"]][(int(r["resnum"]), r["icode"])] = int(r["domain"])
@@ -141,11 +150,13 @@ def unit_members(labels_chain):
     return dict(m)
 
 
+@functools.lru_cache(maxsize=None)
 def units_table(arm="primary"):
     """{(chain, unit): row} from the frozen units table."""
     return {(r["chain"], int(r["unit"])): r for r in read_tsv(UNITS[arm])}
 
 
+@functools.lru_cache(maxsize=None)
 def calls_table(arm="primary"):
     return {r["chain"]: r for r in read_tsv(CALLS[arm])}
 

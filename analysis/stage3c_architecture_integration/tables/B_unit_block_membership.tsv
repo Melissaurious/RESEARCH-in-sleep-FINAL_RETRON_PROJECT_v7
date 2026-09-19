@@ -1,0 +1,445 @@
+chain	arm	unit	unit_n_res	unit_role	blocks_contained	n_blocks_contained	CAT262_in_unit	merge
+1RTD_A	primary	1	243	unclassified		0	NO	NO_BLOCK
+1RTD_A	primary	2	71	unclassified		0	NO	NO_BLOCK
+1RTD_A	primary	3	111	unclassified		0	NO	NO_BLOCK
+1RTD_A	primary	4	129	unclassified		0	NO	NO_BLOCK
+1RTD_A	p4	1	243	unclassified		0	NO	NO_BLOCK
+1RTD_A	p4	2	71	unclassified		0	NO	NO_BLOCK
+1RTD_A	p4	3	111	unclassified		0	NO	NO_BLOCK
+1RTD_A	p4	4	129	unclassified		0	NO	NO_BLOCK
+23OR_A	primary	1	100	fingers-like		0	NO	NO_BLOCK
+23OR_A	primary	2	150	palm-like	SB56,SB7	2	YES	MERGE
+23OR_A	primary	3	55	unclassified		0	NO	NO_BLOCK
+23OR_A	primary	4	49	unclassified		0	NO	NO_BLOCK
+23OR_A	p4	1	100	fingers-like		0	NO	NO_BLOCK
+23OR_A	p4	2	150	palm-like	SB56,SB7	2	YES	MERGE
+23OR_A	p4	3	55	unclassified		0	NO	NO_BLOCK
+23OR_A	p4	4	49	unclassified		0	NO	NO_BLOCK
+24NC_A	primary	1	193	unclassified		0	NO	NO_BLOCK
+24NC_A	primary	2	140	unclassified	SB56	1	YES	ONE_BLOCK
+24NC_A	primary	3	35	unclassified		0	NO	NO_BLOCK
+24NC_A	primary	4	69	unclassified		0	NO	NO_BLOCK
+24NC_A	primary	5	83	unclassified		0	NO	NO_BLOCK
+24NC_A	p4	1	193	unclassified		0	NO	NO_BLOCK
+24NC_A	p4	2	140	unclassified	SB56	1	YES	ONE_BLOCK
+24NC_A	p4	3	35	unclassified		0	NO	NO_BLOCK
+24NC_A	p4	4	69	unclassified		0	NO	NO_BLOCK
+24NC_A	p4	5	83	unclassified		0	NO	NO_BLOCK
+26CZ_A	primary	1	57	unclassified		0	NO	NO_BLOCK
+26CZ_A	primary	2	210	unclassified		0	NO	NO_BLOCK
+26CZ_A	primary	3	175	unclassified	SB56	1	YES	ONE_BLOCK
+26CZ_A	primary	4	198	unclassified		0	NO	NO_BLOCK
+26CZ_A	p4	1	57	unclassified		0	NO	NO_BLOCK
+26CZ_A	p4	2	210	unclassified		0	NO	NO_BLOCK
+26CZ_A	p4	3	175	unclassified	SB56	1	YES	ONE_BLOCK
+26CZ_A	p4	4	198	unclassified		0	NO	NO_BLOCK
+5G2X_C	primary	1	297	unclassified	SB2p,SB3,SB4,SB56	4	YES	MERGE
+5G2X_C	primary	2	189	unclassified	SB7	1	NO	ONE_BLOCK
+5G2X_C	p4	1	297	unclassified	SB2p,SB3,SB4,SB56	4	YES	MERGE
+5G2X_C	p4	2	189	unclassified	SB7	1	NO	ONE_BLOCK
+5HHJ_A	primary	1	155	fingers-like	SB4	1	NO	ONE_BLOCK
+5HHJ_A	primary	2	139	palm-like	SB3,SB56,SB7	3	YES	MERGE
+5HHJ_A	p4	1	155	fingers-like	SB4	1	NO	ONE_BLOCK
+5HHJ_A	p4	2	139	palm-like	SB3,SB56,SB7	3	YES	MERGE
+5HHK_A	primary	1	154	fingers-like	SB4	1	NO	ONE_BLOCK
+5HHK_A	primary	2	139	palm-like	SB3,SB56,SB7	3	YES	MERGE
+5HHK_A	p4	1	154	fingers-like	SB4	1	NO	ONE_BLOCK
+5HHK_A	p4	2	139	palm-like	SB3,SB56,SB7	3	YES	MERGE
+5HHL_A	primary	1	150	fingers-like	SB4	1	NO	ONE_BLOCK
+5HHL_A	primary	2	142	palm-like	SB3,SB56,SB7	3	YES	MERGE
+5HHL_A	p4	1	150	fingers-like	SB4	1	NO	ONE_BLOCK
+5HHL_A	p4	2	142	palm-like	SB3,SB56,SB7	3	YES	MERGE
+5VBS_A	primary	1	246	palm-like		0	NO	NO_BLOCK
+5VBS_A	p4	1	246	palm-like		0	NO	NO_BLOCK
+6AR1_A	primary	1	135	unclassified		0	NO	NO_BLOCK
+6AR1_A	primary	2	151	unclassified	SB3,SB56,SB7	3	YES	MERGE
+6AR1_A	primary	3	71	unclassified		0	NO	NO_BLOCK
+6AR1_A	primary	4	60	unclassified		0	NO	NO_BLOCK
+6AR1_A	p4	1	135	unclassified		0	NO	NO_BLOCK
+6AR1_A	p4	2	151	unclassified	SB3,SB56,SB7	3	YES	MERGE
+6AR1_A	p4	3	71	unclassified		0	NO	NO_BLOCK
+6AR1_A	p4	4	60	unclassified		0	NO	NO_BLOCK
+6ME0_C	primary	1	66	unclassified		0	NO	NO_BLOCK
+6ME0_C	primary	2	58	unclassified		0	NO	NO_BLOCK
+6ME0_C	primary	3	183	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+6ME0_C	primary	4	107	unclassified		0	NO	NO_BLOCK
+6ME0_C	p4	1	66	unclassified		0	NO	NO_BLOCK
+6ME0_C	p4	2	58	unclassified		0	NO	NO_BLOCK
+6ME0_C	p4	3	183	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+6ME0_C	p4	4	107	unclassified		0	NO	NO_BLOCK
+6MEC_C	primary	1	124	unclassified	SB2p	1	NO	ONE_BLOCK
+6MEC_C	primary	2	183	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+6MEC_C	primary	3	107	unclassified		0	NO	NO_BLOCK
+6MEC_C	p4	1	124	unclassified	SB2p	1	NO	ONE_BLOCK
+6MEC_C	p4	2	183	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+6MEC_C	p4	3	107	unclassified		0	NO	NO_BLOCK
+7KFT_C	primary	1	144	unclassified		0	NO	NO_BLOCK
+7KFT_C	primary	2	144	unclassified		0	NO	NO_BLOCK
+7KFT_C	primary	3	193	unclassified	SB2p,SB4,SB7	3	NO	MERGE
+7KFT_C	p4	1	144	unclassified		0	NO	NO_BLOCK
+7KFT_C	p4	2	144	unclassified		0	NO	NO_BLOCK
+7KFT_C	p4	3	193	unclassified	SB2p,SB4,SB7	3	NO	MERGE
+7KFT_C	p4	4	87	unclassified		0	YES	NO_BLOCK
+7R06_A	primary	1	289	unclassified	SB56	1	YES	ONE_BLOCK
+7R06_A	primary	2	124	unclassified		0	NO	NO_BLOCK
+7R06_A	primary	3	184	unclassified		0	NO	NO_BLOCK
+7R06_A	p4	1	289	unclassified	SB56	1	YES	ONE_BLOCK
+7R06_A	p4	2	124	unclassified		0	NO	NO_BLOCK
+7R06_A	p4	3	184	unclassified		0	NO	NO_BLOCK
+7R08_A	primary	1	224	fingers-like		0	NO	NO_BLOCK
+7R08_A	primary	2	120	palm-like	SB56	1	YES	ONE_BLOCK
+7R08_A	primary	3	143	unclassified		0	NO	NO_BLOCK
+7R08_A	p4	1	224	fingers-like		0	NO	NO_BLOCK
+7R08_A	p4	2	120	palm-like	SB56	1	YES	ONE_BLOCK
+7R08_A	p4	3	143	unclassified		0	NO	NO_BLOCK
+7UIM_D	primary	1	73	unclassified		0	NO	NO_BLOCK
+7UIM_D	primary	2	178	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+7UIM_D	primary	3	136	unclassified		0	NO	NO_BLOCK
+7UIM_D	p4	1	73	unclassified		0	NO	NO_BLOCK
+7UIM_D	p4	2	178	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+7UIM_D	p4	3	136	unclassified		0	NO	NO_BLOCK
+7UIN_D	primary	1	112	unclassified		0	NO	NO_BLOCK
+7UIN_D	primary	2	140	palm-like	SB3,SB56,SB7	3	YES	MERGE
+7UIN_D	primary	3	89	unclassified		0	NO	NO_BLOCK
+7UIN_D	primary	4	46	unclassified		0	NO	NO_BLOCK
+7UIN_D	p4	1	112	unclassified		0	NO	NO_BLOCK
+7UIN_D	p4	2	140	palm-like	SB3,SB56,SB7	3	YES	MERGE
+7UIN_D	p4	3	89	unclassified		0	NO	NO_BLOCK
+7UIN_D	p4	4	46	unclassified		0	NO	NO_BLOCK
+7V9U_A	primary	1	234	unclassified	SB56,SB7	2	YES	MERGE
+7V9U_A	primary	2	58	unclassified		0	NO	NO_BLOCK
+7V9U_A	p4	1	234	unclassified	SB56,SB7	2	YES	MERGE
+7V9U_A	p4	2	58	unclassified		0	NO	NO_BLOCK
+7V9X_A	primary	1	37	unclassified		0	NO	NO_BLOCK
+7V9X_A	primary	2	214	unclassified	SB56,SB7	2	YES	MERGE
+7V9X_A	primary	3	63	unclassified		0	NO	NO_BLOCK
+7V9X_A	p4	1	37	unclassified		0	NO	NO_BLOCK
+7V9X_A	p4	2	214	unclassified	SB56,SB7	2	YES	MERGE
+7V9X_A	p4	3	63	unclassified		0	NO	NO_BLOCK
+7XJG_A	primary	1	37	unclassified		0	NO	NO_BLOCK
+7XJG_A	primary	2	214	unclassified	SB56,SB7	2	YES	MERGE
+7XJG_A	primary	3	63	unclassified		0	NO	NO_BLOCK
+7XJG_A	p4	1	37	unclassified		0	NO	NO_BLOCK
+7XJG_A	p4	2	214	unclassified	SB56,SB7	2	YES	MERGE
+7XJG_A	p4	3	63	unclassified		0	NO	NO_BLOCK
+8BGJ_A	primary	1	203	unclassified		0	NO	NO_BLOCK
+8BGJ_A	p4	1	203	unclassified		0	NO	NO_BLOCK
+8C8J_A	primary	1	449	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+8C8J_A	primary	2	74	unclassified		0	NO	NO_BLOCK
+8C8J_A	primary	3	96	unclassified		0	NO	NO_BLOCK
+8C8J_A	primary	4	78	unclassified		0	NO	NO_BLOCK
+8C8J_A	p4	1	449	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+8C8J_A	p4	2	74	unclassified		0	NO	NO_BLOCK
+8C8J_A	p4	3	96	unclassified		0	NO	NO_BLOCK
+8C8J_A	p4	4	78	unclassified		0	NO	NO_BLOCK
+8FLI_B	primary	1	68	thumb-like		0	NO	NO_BLOCK
+8FLI_B	primary	2	61	unclassified		0	NO	NO_BLOCK
+8FLI_B	primary	3	149	palm-like	SB56,SB7	2	YES	MERGE
+8FLI_B	primary	4	36	unclassified		0	NO	NO_BLOCK
+8FLI_B	primary	5	122	unclassified		0	NO	NO_BLOCK
+8FLI_B	p4	1	68	thumb-like		0	NO	NO_BLOCK
+8FLI_B	p4	2	61	unclassified		0	NO	NO_BLOCK
+8FLI_B	p4	3	149	palm-like	SB56,SB7	2	YES	MERGE
+8FLI_B	p4	4	36	unclassified		0	NO	NO_BLOCK
+8FLI_B	p4	5	122	unclassified		0	NO	NO_BLOCK
+8GH6_A	primary	1	393	unclassified	SB4,SB56	2	YES	MERGE
+8GH6_A	primary	2	61	unclassified		0	NO	NO_BLOCK
+8GH6_A	primary	3	168	unclassified		0	NO	NO_BLOCK
+8GH6_A	primary	4	140	palm-like		0	NO	NO_BLOCK
+8GH6_A	primary	5	98	unclassified		0	NO	NO_BLOCK
+8GH6_A	p4	1	384	unclassified	SB4,SB56	2	YES	MERGE
+8GH6_A	p4	2	61	unclassified		0	NO	NO_BLOCK
+8GH6_A	p4	3	177	unclassified		0	NO	NO_BLOCK
+8GH6_A	p4	4	140	palm-like		0	NO	NO_BLOCK
+8GH6_A	p4	5	98	unclassified		0	NO	NO_BLOCK
+8OZ7_A	primary	1	159	fingers-like		0	NO	NO_BLOCK
+8OZ7_A	primary	2	149	palm-like		0	YES	NO_BLOCK
+8OZ7_A	primary	3	144	unclassified		0	NO	NO_BLOCK
+8OZ7_A	primary	4	145	unclassified		0	NO	NO_BLOCK
+8OZ7_A	p4	1	159	fingers-like		0	NO	NO_BLOCK
+8OZ7_A	p4	2	149	palm-like		0	YES	NO_BLOCK
+8OZ7_A	p4	3	144	unclassified		0	NO	NO_BLOCK
+8OZ7_A	p4	4	145	unclassified		0	NO	NO_BLOCK
+8QBK_A	primary	1	251	unclassified	SB56,SB7	2	YES	MERGE
+8QBK_A	primary	2	58	unclassified		0	NO	NO_BLOCK
+8QBK_A	p4	1	251	unclassified	SB56,SB7	2	YES	MERGE
+8QBK_A	p4	2	58	unclassified		0	NO	NO_BLOCK
+8QBL_A	primary	1	251	unclassified	SB56,SB7	2	YES	MERGE
+8QBL_A	primary	2	58	unclassified		0	NO	NO_BLOCK
+8QBL_A	p4	1	251	unclassified	SB56,SB7	2	YES	MERGE
+8QBL_A	p4	2	58	unclassified		0	NO	NO_BLOCK
+8QBM_A	primary	1	251	unclassified	SB56,SB7	2	YES	MERGE
+8QBM_A	primary	2	58	unclassified		0	NO	NO_BLOCK
+8QBM_A	p4	1	251	unclassified	SB56,SB7	2	YES	MERGE
+8QBM_A	p4	2	58	unclassified		0	NO	NO_BLOCK
+8SXT_A	primary	1	57	unclassified		0	NO	NO_BLOCK
+8SXT_A	primary	2	391	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+8SXT_A	primary	3	93	unclassified		0	NO	NO_BLOCK
+8SXT_A	primary	4	107	unclassified		0	NO	NO_BLOCK
+8SXT_A	primary	5	78	unclassified		0	NO	NO_BLOCK
+8SXT_A	p4	1	57	unclassified		0	NO	NO_BLOCK
+8SXT_A	p4	2	391	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+8SXT_A	p4	3	93	unclassified		0	NO	NO_BLOCK
+8SXT_A	p4	4	107	unclassified		0	NO	NO_BLOCK
+8SXT_A	p4	5	78	unclassified		0	NO	NO_BLOCK
+8UB7_A	primary	1	194	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+8UB7_A	primary	2	77	unclassified		0	NO	NO_BLOCK
+8UB7_A	primary	3	57	unclassified		0	NO	NO_BLOCK
+8UB7_A	p4	1	194	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+8UB7_A	p4	2	77	unclassified		0	NO	NO_BLOCK
+8UB7_A	p4	3	57	unclassified		0	NO	NO_BLOCK
+8UBD_A	primary	1	194	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+8UBD_A	primary	2	74	unclassified		0	NO	NO_BLOCK
+8UBD_A	primary	3	57	unclassified		0	NO	NO_BLOCK
+8UBD_A	p4	1	194	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+8UBD_A	p4	2	74	unclassified		0	NO	NO_BLOCK
+8UBD_A	p4	3	57	unclassified		0	NO	NO_BLOCK
+8UW3_A	primary	1	129	fingers-like		0	NO	NO_BLOCK
+8UW3_A	primary	2	108	palm-like		0	NO	NO_BLOCK
+8UW3_A	primary	3	491	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+8UW3_A	primary	4	99	unclassified		0	NO	NO_BLOCK
+8UW3_A	primary	5	110	unclassified		0	NO	NO_BLOCK
+8UW3_A	primary	6	78	unclassified		0	NO	NO_BLOCK
+8UW3_A	primary	7	42	unclassified		0	NO	NO_BLOCK
+8UW3_A	primary	8	208	unclassified		0	NO	NO_BLOCK
+8UW3_A	p4	1	129	fingers-like		0	NO	NO_BLOCK
+8UW3_A	p4	2	108	palm-like		0	NO	NO_BLOCK
+8UW3_A	p4	3	78	unclassified		0	NO	NO_BLOCK
+8UW3_A	p4	4	119	unclassified		0	NO	NO_BLOCK
+8UW3_A	p4	5	393	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+8UW3_A	p4	6	110	unclassified		0	NO	NO_BLOCK
+8UW3_A	p4	7	78	unclassified		0	NO	NO_BLOCK
+8UW3_A	p4	8	42	unclassified		0	NO	NO_BLOCK
+8UW3_A	p4	9	208	unclassified		0	NO	NO_BLOCK
+9C0I_A	primary	1	203	palm-like	SB56,SB7	2	YES	MERGE
+9C0I_A	primary	2	43	unclassified		0	NO	NO_BLOCK
+9C0I_A	primary	3	94	thumb-like		0	NO	NO_BLOCK
+9C0I_A	p4	1	203	palm-like	SB56,SB7	2	YES	MERGE
+9C0I_A	p4	2	43	unclassified		0	NO	NO_BLOCK
+9C0I_A	p4	3	94	thumb-like		0	NO	NO_BLOCK
+9D4S_A	primary	1	177	unclassified	SB2p,SB4	2	NO	MERGE
+9D4S_A	primary	2	122	palm-like	SB3,SB56,SB7	3	YES	MERGE
+9D4S_A	primary	3	109	unclassified		0	NO	NO_BLOCK
+9D4S_A	p4	1	177	unclassified	SB2p,SB4	2	NO	MERGE
+9D4S_A	p4	2	122	palm-like	SB3,SB56,SB7	3	YES	MERGE
+9D4S_A	p4	3	109	unclassified		0	NO	NO_BLOCK
+9D5X_A	primary	1	290	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+9D5X_A	primary	2	92	unclassified		0	NO	NO_BLOCK
+9D5X_A	p4	1	290	unclassified	SB3,SB4,SB56,SB7	4	YES	MERGE
+9D5X_A	p4	2	92	unclassified		0	NO	NO_BLOCK
+9DOU_A	primary	1	65	unclassified		0	NO	NO_BLOCK
+9DOU_A	primary	2	295	palm-like	SB4,SB56	2	YES	MERGE
+9DOU_A	primary	3	121	thumb-like		0	NO	NO_BLOCK
+9DOU_A	primary	4	101	unclassified		0	NO	NO_BLOCK
+9DOU_A	primary	5	76	unclassified		0	NO	NO_BLOCK
+9DOU_A	primary	6	104	unclassified		0	NO	NO_BLOCK
+9DOU_A	primary	7	117	unclassified		0	NO	NO_BLOCK
+9DOU_A	p4	1	65	unclassified		0	NO	NO_BLOCK
+9DOU_A	p4	2	295	palm-like	SB4,SB56	2	YES	MERGE
+9DOU_A	p4	3	121	thumb-like		0	NO	NO_BLOCK
+9DOU_A	p4	4	101	unclassified		0	NO	NO_BLOCK
+9DOU_A	p4	5	76	unclassified		0	NO	NO_BLOCK
+9DOU_A	p4	6	104	unclassified		0	NO	NO_BLOCK
+9DOU_A	p4	7	117	unclassified		0	NO	NO_BLOCK
+9E8Z_H	primary	1	243	unclassified	SB4	1	YES	ONE_BLOCK
+9E8Z_H	primary	2	63	unclassified		0	NO	NO_BLOCK
+9E8Z_H	p4	1	243	unclassified	SB4	1	YES	ONE_BLOCK
+9E8Z_H	p4	2	63	unclassified		0	NO	NO_BLOCK
+9HDO_A	primary	1	59	unclassified		0	NO	NO_BLOCK
+9HDO_A	primary	2	44	unclassified		0	NO	NO_BLOCK
+9HDO_A	primary	3	243	unclassified		0	NO	NO_BLOCK
+9HDO_A	primary	4	396	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+9HDO_A	primary	5	96	unclassified		0	NO	NO_BLOCK
+9HDO_A	primary	6	109	unclassified		0	NO	NO_BLOCK
+9HDO_A	primary	7	78	unclassified		0	NO	NO_BLOCK
+9HDO_A	p4	1	59	unclassified		0	NO	NO_BLOCK
+9HDO_A	p4	2	44	unclassified		0	NO	NO_BLOCK
+9HDO_A	p4	3	243	unclassified		0	NO	NO_BLOCK
+9HDO_A	p4	4	396	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+9HDO_A	p4	5	96	unclassified		0	NO	NO_BLOCK
+9HDO_A	p4	6	109	unclassified		0	NO	NO_BLOCK
+9HDO_A	p4	7	78	unclassified		0	NO	NO_BLOCK
+9I2F_A	primary	1	136	fingers-like	SB2p	1	NO	ONE_BLOCK
+9I2F_A	primary	2	128	palm-like	SB3	1	YES	ONE_BLOCK
+9I2F_A	primary	3	90	unclassified		0	NO	NO_BLOCK
+9I2F_A	primary	4	184	unclassified		0	NO	NO_BLOCK
+9I2F_A	primary	5	42	unclassified		0	NO	NO_BLOCK
+9I2F_A	p4	1	136	fingers-like	SB2p	1	NO	ONE_BLOCK
+9I2F_A	p4	2	128	palm-like	SB3	1	YES	ONE_BLOCK
+9I2F_A	p4	3	90	unclassified		0	NO	NO_BLOCK
+9I2F_A	p4	4	184	unclassified		0	NO	NO_BLOCK
+9I2F_A	p4	5	42	unclassified		0	NO	NO_BLOCK
+9I2G_B	primary	1	136	fingers-like	SB2p	1	NO	ONE_BLOCK
+9I2G_B	primary	2	128	palm-like	SB3	1	YES	ONE_BLOCK
+9I2G_B	primary	3	90	unclassified		0	NO	NO_BLOCK
+9I2G_B	primary	4	224	unclassified		0	NO	NO_BLOCK
+9I2G_B	p4	1	136	fingers-like	SB2p	1	NO	ONE_BLOCK
+9I2G_B	p4	2	128	palm-like	SB3	1	YES	ONE_BLOCK
+9I2G_B	p4	3	90	unclassified		0	NO	NO_BLOCK
+9I2G_B	p4	4	224	unclassified		0	NO	NO_BLOCK
+9IOA_A	primary	1	116	unclassified		0	NO	NO_BLOCK
+9IOA_A	primary	2	192	unclassified	SB3,SB56,SB7	3	YES	MERGE
+9IOA_A	primary	3	180	unclassified		0	NO	NO_BLOCK
+9IOA_A	p4	1	116	unclassified		0	NO	NO_BLOCK
+9IOA_A	p4	2	192	unclassified	SB3,SB56,SB7	3	YES	MERGE
+9IOA_A	p4	3	180	unclassified		0	NO	NO_BLOCK
+9K6G_A	primary	1	455	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+9K6G_A	primary	2	47	unclassified		0	NO	NO_BLOCK
+9K6G_A	primary	3	223	unclassified		0	NO	NO_BLOCK
+9K6G_A	primary	4	129	unclassified		0	NO	NO_BLOCK
+9K6G_A	primary	5	96	unclassified		0	NO	NO_BLOCK
+9K6G_A	primary	6	78	unclassified		0	NO	NO_BLOCK
+9K6G_A	p4	1	455	unclassified	SB2p,SB3,SB4,SB56,SB7	5	YES	MERGE
+9K6G_A	p4	2	47	unclassified		0	NO	NO_BLOCK
+9K6G_A	p4	3	223	unclassified		0	NO	NO_BLOCK
+9K6G_A	p4	4	129	unclassified		0	NO	NO_BLOCK
+9K6G_A	p4	5	96	unclassified		0	NO	NO_BLOCK
+9K6G_A	p4	6	78	unclassified		0	NO	NO_BLOCK
+9L7P_E	primary	1	120	fingers-like		0	NO	NO_BLOCK
+9L7P_E	primary	2	128	palm-like	SB3,SB56	2	YES	MERGE
+9L7P_E	primary	3	61	unclassified		0	NO	NO_BLOCK
+9L7P_E	p4	1	120	fingers-like		0	NO	NO_BLOCK
+9L7P_E	p4	2	128	palm-like	SB3,SB56	2	YES	MERGE
+9L7P_E	p4	3	61	unclassified		0	NO	NO_BLOCK
+9LBQ_A	primary	1	226	palm-like	SB56,SB7	2	YES	MERGE
+9LBQ_A	primary	2	44	unclassified		0	NO	NO_BLOCK
+9LBQ_A	primary	3	49	unclassified		0	NO	NO_BLOCK
+9LBQ_A	p4	1	226	palm-like	SB56,SB7	2	YES	MERGE
+9LBQ_A	p4	2	44	unclassified		0	NO	NO_BLOCK
+9LBQ_A	p4	3	49	unclassified		0	NO	NO_BLOCK
+9LJE_A	primary	1	323	palm-like	SB56,SB7	2	YES	MERGE
+9LJE_A	primary	2	94	thumb-like		0	NO	NO_BLOCK
+9LJE_A	p4	1	323	palm-like	SB56,SB7	2	YES	MERGE
+9LJE_A	p4	2	94	thumb-like		0	NO	NO_BLOCK
+9LPA_A	primary	1	100	fingers-like		0	NO	NO_BLOCK
+9LPA_A	primary	2	150	palm-like	SB56,SB7	2	YES	MERGE
+9LPA_A	primary	3	55	unclassified		0	NO	NO_BLOCK
+9LPA_A	primary	4	52	unclassified		0	NO	NO_BLOCK
+9LPA_A	p4	1	100	fingers-like		0	NO	NO_BLOCK
+9LPA_A	p4	2	150	palm-like	SB56,SB7	2	YES	MERGE
+9LPA_A	p4	3	55	unclassified		0	NO	NO_BLOCK
+9LPA_A	p4	4	52	unclassified		0	NO	NO_BLOCK
+9N69_E	primary	1	151	palm-like	SB3,SB56	2	YES	MERGE
+9N69_E	primary	2	41	unclassified		0	NO	NO_BLOCK
+9N69_E	primary	3	63	unclassified		0	NO	NO_BLOCK
+9N69_E	p4	1	151	palm-like	SB3,SB56	2	YES	MERGE
+9N69_E	p4	2	41	unclassified		0	NO	NO_BLOCK
+9N69_E	p4	3	63	unclassified		0	NO	NO_BLOCK
+9NL2_A	primary	1	70	unclassified		0	NO	NO_BLOCK
+9NL2_A	primary	2	512	unclassified	SB2p,SB3,SB4,SB56	4	YES	MERGE
+9NL2_A	primary	3	62	unclassified		0	NO	NO_BLOCK
+9NL2_A	primary	4	128	unclassified		0	NO	NO_BLOCK
+9NL2_A	primary	5	52	unclassified		0	NO	NO_BLOCK
+9NL2_A	primary	6	101	unclassified		0	NO	NO_BLOCK
+9NL2_A	primary	7	121	unclassified		0	NO	NO_BLOCK
+9NL2_A	p4	1	70	unclassified		0	NO	NO_BLOCK
+9NL2_A	p4	2	512	unclassified	SB2p,SB3,SB4,SB56	4	YES	MERGE
+9NL2_A	p4	3	62	unclassified		0	NO	NO_BLOCK
+9NL2_A	p4	4	128	unclassified		0	NO	NO_BLOCK
+9NL2_A	p4	5	52	unclassified		0	NO	NO_BLOCK
+9NL2_A	p4	6	101	unclassified		0	NO	NO_BLOCK
+9NL2_A	p4	7	121	unclassified		0	NO	NO_BLOCK
+9NL3_A	primary	1	69	unclassified		0	NO	NO_BLOCK
+9NL3_A	primary	2	707	fingers-like	SB4,SB56	2	YES	MERGE
+9NL3_A	primary	3	50	unclassified		0	NO	NO_BLOCK
+9NL3_A	primary	4	100	thumb-like		0	NO	NO_BLOCK
+9NL3_A	primary	5	121	palm-like		0	NO	NO_BLOCK
+9NL3_A	p4	1	69	unclassified		0	NO	NO_BLOCK
+9NL3_A	p4	2	707	fingers-like	SB4,SB56	2	YES	MERGE
+9NL3_A	p4	3	50	unclassified		0	NO	NO_BLOCK
+9NL3_A	p4	4	100	thumb-like		0	NO	NO_BLOCK
+9NL3_A	p4	5	121	palm-like		0	NO	NO_BLOCK
+9NNB_B	primary	1	120	fingers-like		0	NO	NO_BLOCK
+9NNB_B	primary	2	128	palm-like	SB3,SB56	2	YES	MERGE
+9NNB_B	primary	3	63	unclassified		0	NO	NO_BLOCK
+9NNB_B	p4	1	120	fingers-like		0	NO	NO_BLOCK
+9NNB_B	p4	2	128	palm-like	SB3,SB56	2	YES	MERGE
+9NNB_B	p4	3	63	unclassified		0	NO	NO_BLOCK
+9S1F_B	primary	1	131	thumb-like		0	NO	NO_BLOCK
+9S1F_B	primary	2	128	palm-like	SB3	1	YES	ONE_BLOCK
+9S1F_B	primary	3	90	unclassified		0	NO	NO_BLOCK
+9S1F_B	primary	4	221	unclassified		0	NO	NO_BLOCK
+9S1F_B	p4	1	131	thumb-like		0	NO	NO_BLOCK
+9S1F_B	p4	2	128	palm-like	SB3	1	YES	ONE_BLOCK
+9S1F_B	p4	3	90	unclassified		0	NO	NO_BLOCK
+9S1F_B	p4	4	221	unclassified		0	NO	NO_BLOCK
+9VHE_A	primary	1	214	palm-like	SB3,SB4,SB56	3	YES	MERGE
+9VHE_A	primary	2	59	unclassified		0	NO	NO_BLOCK
+9VHE_A	p4	1	214	palm-like	SB3,SB4,SB56	3	YES	MERGE
+9VHE_A	p4	2	59	unclassified		0	NO	NO_BLOCK
+9VHL_A	primary	1	214	palm-like	SB3,SB4,SB56	3	YES	MERGE
+9VHL_A	primary	2	59	unclassified		0	NO	NO_BLOCK
+9VHL_A	p4	1	214	palm-like	SB3,SB4,SB56	3	YES	MERGE
+9VHL_A	p4	2	59	unclassified		0	NO	NO_BLOCK
+9WN8_A	primary	1	64	fingers-like		0	NO	NO_BLOCK
+9WN8_A	primary	2	155	palm-like	SB56,SB7	2	YES	MERGE
+9WN8_A	primary	3	91	thumb-like		0	NO	NO_BLOCK
+9WN8_A	p4	1	64	fingers-like		0	NO	NO_BLOCK
+9WN8_A	p4	2	155	palm-like	SB56,SB7	2	YES	MERGE
+9WN8_A	p4	3	91	thumb-like		0	NO	NO_BLOCK
+9WY8_A	primary	1	303	unclassified		0	NO	NO_BLOCK
+9WY8_A	primary	2	192	unclassified	SB3,SB56	2	YES	MERGE
+9WY8_A	p4	1	303	unclassified		0	NO	NO_BLOCK
+9WY8_A	p4	2	192	unclassified	SB3,SB56	2	YES	MERGE
+9X94_A	primary	1	116	fingers-like		0	NO	NO_BLOCK
+9X94_A	primary	2	147	palm-like	SB56,SB7	2	YES	MERGE
+9X94_A	primary	3	47	unclassified		0	NO	NO_BLOCK
+9X94_A	primary	4	46	unclassified		0	NO	NO_BLOCK
+9X94_A	p4	1	116	fingers-like		0	NO	NO_BLOCK
+9X94_A	p4	2	147	palm-like	SB56,SB7	2	YES	MERGE
+9X94_A	p4	3	47	unclassified		0	NO	NO_BLOCK
+9X94_A	p4	4	46	unclassified		0	NO	NO_BLOCK
+9X9B_A	primary	1	100	fingers-like		0	NO	NO_BLOCK
+9X9B_A	primary	2	150	palm-like	SB56,SB7	2	YES	MERGE
+9X9B_A	primary	3	47	unclassified		0	NO	NO_BLOCK
+9X9B_A	primary	4	46	unclassified		0	NO	NO_BLOCK
+9X9B_A	p4	1	100	fingers-like		0	NO	NO_BLOCK
+9X9B_A	p4	2	150	palm-like	SB56,SB7	2	YES	MERGE
+9X9B_A	p4	3	47	unclassified		0	NO	NO_BLOCK
+9X9B_A	p4	4	46	unclassified		0	NO	NO_BLOCK
+9YFD_A	primary	1	228	unclassified		0	NO	NO_BLOCK
+9YFD_A	primary	2	112	unclassified		0	NO	NO_BLOCK
+9YFD_A	primary	3	197	unclassified		0	NO	NO_BLOCK
+9YFD_A	primary	4	66	unclassified		0	NO	NO_BLOCK
+9YFD_A	primary	5	136	unclassified	SB56	1	YES	ONE_BLOCK
+9YFD_A	primary	6	80	unclassified		0	NO	NO_BLOCK
+9YFD_A	primary	7	287	palm-like		0	NO	NO_BLOCK
+9YFD_A	p4	1	228	unclassified		0	NO	NO_BLOCK
+9YFD_A	p4	2	112	unclassified		0	NO	NO_BLOCK
+9YFD_A	p4	3	197	unclassified		0	NO	NO_BLOCK
+9YFD_A	p4	4	66	unclassified		0	NO	NO_BLOCK
+9YFD_A	p4	5	136	unclassified	SB56	1	YES	ONE_BLOCK
+9YFD_A	p4	6	80	unclassified		0	NO	NO_BLOCK
+9YFD_A	p4	7	287	palm-like		0	NO	NO_BLOCK
+9Z6Y_A	primary	1	75	fingers-like		0	NO	NO_BLOCK
+9Z6Y_A	primary	2	203	palm-like	SB4,SB56,SB7	3	YES	MERGE
+9Z6Y_A	primary	3	137	thumb-like		0	NO	NO_BLOCK
+9Z6Y_A	p4	1	75	fingers-like		0	NO	NO_BLOCK
+9Z6Y_A	p4	2	203	palm-like	SB4,SB56,SB7	3	YES	MERGE
+9Z6Y_A	p4	3	137	thumb-like		0	NO	NO_BLOCK
+9Z6Y_H	primary	1	76	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	primary	2	84	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	primary	3	113	palm-like	SB3,SB56	2	YES	MERGE
+9Z6Y_H	primary	4	58	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	primary	5	188	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	primary	6	106	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	p4	1	76	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	p4	2	84	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	p4	3	113	palm-like	SB3,SB56	2	YES	MERGE
+9Z6Y_H	p4	4	58	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	p4	5	188	unclassified		0	NO	NO_BLOCK
+9Z6Y_H	p4	6	106	unclassified		0	NO	NO_BLOCK
+9Z6Z_A	primary	1	76	unclassified		0	NO	NO_BLOCK
+9Z6Z_A	primary	2	205	palm-like	SB4,SB56,SB7	3	YES	MERGE
+9Z6Z_A	primary	3	136	unclassified		0	NO	NO_BLOCK
+9Z6Z_A	p4	1	76	unclassified		0	NO	NO_BLOCK
+9Z6Z_A	p4	2	205	palm-like	SB4,SB56,SB7	3	YES	MERGE
+9Z6Z_A	p4	3	136	unclassified		0	NO	NO_BLOCK
+9Z6Z_H	primary	1	524	fingers-like		0	NO	NO_BLOCK
+9Z6Z_H	primary	2	103	palm-like	SB3,SB56	2	YES	MERGE
+9Z6Z_H	p4	1	79	unclassified		0	NO	NO_BLOCK
+9Z6Z_H	p4	2	82	unclassified		0	NO	NO_BLOCK
+9Z6Z_H	p4	3	113	unclassified	SB3,SB56	2	YES	MERGE
+9Z6Z_H	p4	4	58	unclassified		0	NO	NO_BLOCK
+9Z6Z_H	p4	5	189	unclassified		0	NO	NO_BLOCK
+9Z6Z_H	p4	6	106	unclassified		0	NO	NO_BLOCK
