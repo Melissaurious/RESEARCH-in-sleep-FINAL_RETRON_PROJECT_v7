@@ -16,12 +16,17 @@ with tempfile.TemporaryDirectory(dir=os.environ.get("TMPDIR")) as tmp:
                     "--alignment-type", "1", "-e", "inf", "--exhaustive-search", "1", "--tmscore-threshold", "0.0",
                     "--max-seqs", "200", "--format-output", COLS, "-v", "1"], check=True, capture_output=True, text=True)
     new = [l.rstrip("\n").split("\t") for l in open(o)]
+old = {(r[0], r[1]): r[2:8] for r in (l.rstrip("\n").split("\t") for l in open(g2))}
+newk = {(r[0].replace(".pdb", ""), r[1].replace(".pdb", "")): r[2:8] for r in new}
+oldk = {(k[0].replace(".pdb", ""), k[1].replace(".pdb", "")): v for k, v in old.items()}
+same = sum(1 for k in oldk if k in newk and newk[k] == oldk[k])
+print(f"rows g2={len(oldk)} g2r={len(newk)}; identical alignments (start/end/aln strings): {same}/{len(oldk)}")
+# R2 B7: the pinned alignment set is enforced, not just reported
+if not (len(new) == len(old) and set(newk) == set(oldk) and same == len(oldk)):
+    sys.exit("ABORT: alignments differ from the pinned g2 table; nothing written")
 with open(out, "w") as fh:
     fh.write("\t".join(COLS.split(",")) + "\n")
     for r in new:
         r[0], r[1] = r[0].replace(".pdb", ""), r[1].replace(".pdb", "")
+    for r in sorted(new, key=lambda r: (r[0], r[1])):   # deterministic row order (foldseek threads reorder)
         fh.write("\t".join(r) + "\n")
-old = {(r[0], r[1]): r[2:8] for r in (l.rstrip("\n").split("\t") for l in open(g2))}
-newk = {(r[0], r[1]): r[2:8] for r in new}
-same = sum(1 for k in old if k in newk and newk[k] == old[k])
-print(f"rows g2={len(old)} g2r={len(newk)}; identical alignments (start/end/aln strings): {same}/{len(old)}")

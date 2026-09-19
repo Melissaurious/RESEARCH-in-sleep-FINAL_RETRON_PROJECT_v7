@@ -6,7 +6,8 @@
 //   idx  model  chain  resnum  icode  resname  domain   (domain = 1..n; 0 = not in any returned domain)
 // and prints one summary line per input: SUMMARY <file> <n_atoms> <n_domains> <status>.
 // Preflight (F2): exactly one model, exactly one chain carrying representative atoms, unique residue keys.
-// A violation writes no assignment and reports status PREFLIGHT_FAIL:<reason>.
+// A violation writes no assignment and reports status PREFLIGHT_FAIL:<reason>; a parser exception on one
+// chain reports PARSER_FAIL:<exception> for that chain and the batch continues (review R2 B1).
 import org.biojava.nbio.structure.*;
 import org.biojava.nbio.structure.io.PDBFileReader;
 import org.biojava.nbio.structure.domain.LocalProteinDomainParser;
@@ -28,6 +29,15 @@ public class RunPDP {
     File outDir = new File(args[0]); outDir.mkdirs();
     for (int a = 1; a < args.length; a++) {
       String f = args[a];
+      try { one(r, outDir, f); }
+      catch (Throwable t) {  // B1: read/output failures also fail this chain only
+        System.out.println("SUMMARY\t" + f + "\tNA\tNA\tPARSER_FAIL:" + t.getClass().getSimpleName());
+      }
+    }
+  }
+
+  static void one(PDBFileReader r, File outDir, String f) throws Exception {
+    {
       String base = new File(f).getName().replaceAll("\\.pdb$", "");
       Structure s = r.getStructure(f);
       Atom[] ca = StructureTools.getRepresentativeAtomArray(s);
@@ -44,9 +54,15 @@ public class RunPDP {
       }
       if (fail == null && chains.size() != 1) fail = "chains=" + chains;
       if (fail == null && ca.length < 20) fail = "too_few_atoms=" + ca.length;  // disclosed driver guard
-      if (fail != null) { System.out.println("SUMMARY\t" + f + "\t" + ca.length + "\tNA\tPREFLIGHT_FAIL:" + fail); continue; }
+      if (fail != null) { System.out.println("SUMMARY\t" + f + "\t" + ca.length + "\tNA\tPREFLIGHT_FAIL:" + fail); return; }
 
-      List<Domain> doms = LocalProteinDomainParser.suggestDomains(ca);
+      List<Domain> doms;
+      try {
+        doms = LocalProteinDomainParser.suggestDomains(ca);   // B1: a parser exception fails this chain only
+      } catch (Throwable t) {
+        System.out.println("SUMMARY\t" + f + "\t" + ca.length + "\tNA\tPARSER_FAIL:" + t.getClass().getSimpleName());
+        return;
+      }
       int[] lab = new int[ca.length];
       String status = "OK";
       int di = 0;

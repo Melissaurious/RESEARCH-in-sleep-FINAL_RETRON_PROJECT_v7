@@ -12,17 +12,20 @@ INPUT ALLOWLIST (F4). Nothing else is read:
 Design-exposed chains (listed on the command line) are excluded from the primary population.
 
 Usage: g2r_units.py <pdp_prefix> <ss_dir> <ssgate_prefix> <extract_dir> <ava.tsv> <register.tsv> <out_prefix>
-                    [--exposed CHAIN ...]
+                    <cath_gates.tsv> --exposed CHAIN [...]
+The C3r external-validation gates (cath_score.py .gates.tsv of the PRIMARY instrument) and the population SS
+gate are enforced here: if either failed, every verdict line is INSTRUMENT_LIMITED (R2 B6).
 """
 import sys, csv, collections, statistics, itertools
 import gemmi
 import numpy as np
 
 args = sys.argv[1:]
-exposed = set()
-if "--exposed" in args:
-    i = args.index("--exposed"); exposed = set(args[i + 1:]); args = args[:i]
-PDP, SSD, SSG, EXD, AVA, REG, OUT = args
+assert "--exposed" in args, "--exposed is required (frozen design-exposure set)"
+i = args.index("--exposed"); exposed = set(args[i + 1:]); args = args[:i]
+assert exposed, "empty exposure set"
+PDP, SSD, SSG, EXD, AVA, REG, OUT, CATHG = args
+cath_ok = all(int(r["pass"]) for r in csv.DictReader(open(CATHG), delimiter="\t"))
 
 ALLOWED = ("pdb_id", "chain", "biological_group", "fused_or_accessory", "n_modelled_residues")
 reg = {}
@@ -96,8 +99,11 @@ def pieces(c, unit_idx, state, minlen):
 
 
 def sheet_of(c, p):
-    labs = [SS[c][i]["sheet"] for i in p if SS[c][i]["sheet"]]
-    return collections.Counter(labs).most_common(1)[0][0] if labs else None
+    """majority mkdssp sheet label of the piece; a tie between labels -> no sheet (R2 B8, conservative)"""
+    labs = collections.Counter(SS[c][i]["sheet"] for i in p if SS[c][i]["sheet"]).most_common()
+    if not labs or (len(labs) > 1 and labs[0][1] == labs[1][1]):
+        return None
+    return labs[0][0]
 
 
 def contacts(c, u, v):
@@ -116,7 +122,7 @@ def unit_features(c, u):
     hairpin = False
     for p, q in itertools.combinations(sorted(strands), 2):
         if sheet_of(c, p) and sheet_of(c, p) == sheet_of(c, q) and q[0] - p[-1] - 1 <= 8:
-            if any(SS[c][i]["bp"] & set(q) for i in p):
+            if any(SS[c][i]["bp"] & set(q) for i in p) or any(SS[c][j]["bp"] & set(p) for j in q):  # B8: either direction
                 hairpin = True
     return dict(n=n, fE=fE, fH=fH, n_strands=len(strands), max_strands_one_sheet=max_sheet,
                 n_helices8=len(helices), hairpin=hairpin)
@@ -188,6 +194,7 @@ for r in csv.DictReader(open(AVA), delimiter="\t"):
         if a != "-" and b != "-": m[qi] = ti
         if a != "-": qi += 1
         if b != "-": ti += 1
+    assert qi == int(r["qend"]) and ti == int(r["tend"]), (q, t)
     ALN[(q, t)] = (tm, m)
 
 ROLES = {"C4": "palm", "C5": "thumb", "C4b": "fingers"}
@@ -249,6 +256,8 @@ def evaluate(pop):
 
 
 def verdict(ev):
+    if not cath_ok or not pop_ss_ok:
+        return "INSTRUMENT_LIMITED"
     k = sum(ev[T]["meets"] for T in ev)
     return "PASS" if k == 3 else ("PARTIAL" if k >= 1 else "FAIL")
 
@@ -281,7 +290,9 @@ with open(OUT + ".calls.tsv", "w") as fh:
         r = calls[c]
         fh.write(f"{c}\t{group[c]}\t{s}\t{r['n_units']}\t{r['C4']}\t{r['C5']}\t{r['C4b']}\t{r['palm'] or ''}\t{r['thumb'] or ''}\t{r['fingers'] or ''}\n")
 
-rep = []
+rep = [f"# instruments: C3r external validation {'ACCEPT' if cath_ok else 'FAIL'}; population SS gate "
+       f"{'RELIABLE' if pop_ss_ok else 'UNRELIABLE'}; design-exposed: {sorted(exposed)}; flagged: {len(flagged)}; "
+       f"primary: {len(primary)}"]
 for label, pop in (("primary", primary), ("flagged", sorted(flagged - exposed)), ("all_nonexposed", [c for c in chains if c not in exposed])):
     ev = evaluate(pop)
     rep.append(f"## {label} (n={len(pop)})  verdict-rule outcome: {verdict(ev)}")

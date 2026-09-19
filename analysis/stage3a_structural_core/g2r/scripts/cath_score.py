@@ -4,7 +4,8 @@
 Residue universe U (per chain): residues of the extract carrying a representative atom (the PDP per-residue
 table, keyed by (author seq number, insertion code)) that fall inside a CATH domain segment. A CATH segment
 spans the ordered residues from its start key to its end key inclusive; an endpoint key that is not observed
-is resolved to the first observed residue at/after (start) or last at/before (end) by sequence number.
+is resolved to the first observed residue at/after (start) or last at/before (end) under the (seqnum, icode)
+order (R2 B3); a segment whose resolved start follows its end is dropped and logged.
 Residues in no CATH segment (tails, linkers, fragments) are outside U. PDP residues in no PDP domain
 (label 0) stay in U and can match nothing.
 Overlap = max over one-to-one (partial) matchings between CATH and PDP domains of the summed residue
@@ -12,7 +13,7 @@ intersection, divided by |U| (Hungarian assignment; maximises the total intersec
 Preflight failures / missing output count as count-incorrect with overlap 0.
 
 Acceptance (all required): A count agreement >= 0.60; B CATH-1 parsed as 1 >= 0.70; C CATH-multi parsed as
->= 2 >= 0.60; D median overlap among count-correct >= 0.80; E1 discontinuous stratum parsed as >= 2 >= 0.60;
+>= 2 >= 0.60; D median overlap among count-correct >= 0.80; E1 discontinuous-stratum chains with >= 2 CATH domains parsed as >= 2 >= 0.60 (R2 B2);
 E2 median overlap over the discontinuous stratum >= 0.70.
 
 Usage: cath_score.py <benchmark_final.tsv> <pdp_prefix> <chain_dir> <out_prefix>
@@ -46,7 +47,14 @@ def key(s):
     return int(m.group(1)), m.group(2)
 
 
+def order(k):
+    """frozen total order on residue keys: seqnum, then insertion code ('' before 'A' before 'B' ...)"""
+    return (k[0], k[1])
+
+
 def cath_labels(keys, dom_str):
+    """B3: missing endpoints resolve under the (seqnum, icode) order; a segment whose resolved start follows its
+    resolved end is dropped and logged as seg_fail."""
     pos = {k: i for i, k in enumerate(keys)}
     lab = [0] * len(keys)
     notes = []
@@ -56,15 +64,18 @@ def cath_labels(keys, dom_str):
             if s in pos:
                 i0 = pos[s]
             else:
-                c = [i for i, k in enumerate(keys) if k[0] >= s[0]]
+                c = [i for i, k in enumerate(keys) if order(k) >= order(s)]
                 i0 = c[0] if c else len(keys)
                 notes.append(f"start{s}~")
             if e in pos:
                 i1 = pos[e]
             else:
-                c = [i for i, k in enumerate(keys) if k[0] <= e[0]]
+                c = [i for i, k in enumerate(keys) if order(k) <= order(e)]
                 i1 = c[-1] if c else -1
                 notes.append(f"end{e}~")
+            if i0 > i1:
+                notes.append(f"seg_fail{s}-{e}")
+                continue
             for i in range(i0, i1 + 1):
                 if lab[i] not in (0, d):
                     notes.append(f"cath_overlap@{keys[i]}")
@@ -117,11 +128,11 @@ C = frac([int(r["n_pdp"] >= 2) for r in rows if r["n_cath"] >= 2])
 Dv = [r["overlap"] for r in rows if r["count_ok"]]
 D = (statistics.median(Dv), len(Dv)) if Dv else (float("nan"), 0)
 disc = [r for r in rows if r["discontinuous"]]
-E1 = frac([int(r["n_pdp"] >= 2) for r in disc])
+E1 = frac([int(r["n_pdp"] >= 2) for r in disc if r["n_cath"] >= 2])   # B2: multi-domain discontinuous chains
 E2 = (statistics.median([r["overlap"] for r in disc]), len(disc)) if disc else (float("nan"), 0)
 gates = [("A", "count agreement", A, 0.60), ("B", "CATH-1 parsed as 1", Bm, 0.70),
          ("C", "CATH-multi parsed >=2", C, 0.60), ("D", "median overlap | count-correct", D, 0.80),
-         ("E1", "discontinuous parsed >=2", E1, 0.60), ("E2", "median overlap | discontinuous", E2, 0.70)]
+         ("E1", "discontinuous multi-domain parsed >=2", E1, 0.60), ("E2", "median overlap | discontinuous", E2, 0.70)]
 with open(out + ".gates.tsv", "w") as fh:
     fh.write("gate\tmetric\tvalue\tn\tbar\tpass\n")
     for g, m, (v, n), bar in gates:

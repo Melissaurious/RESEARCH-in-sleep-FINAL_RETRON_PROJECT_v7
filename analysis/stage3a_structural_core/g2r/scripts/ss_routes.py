@@ -21,6 +21,7 @@ import gemmi
 MKDSSP = "/home/borg/miniconda3/envs/retron_tradicional/bin/mkdssp"
 DIC = "/home/borg/miniconda3/envs/retron_tradicional/share/libcifpp/mmcif_pdbx.dic"
 PYB = "/home/borg/miniconda3/envs/opencrispr_retrons/bin/python"
+SPACER = 6
 ROUTE_B = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pydssp_route.py")
 
 
@@ -92,20 +93,24 @@ def main():
             assert ch == m["chain"], (name, ch, m["chain"])
             A = run_mkdssp(m["source_cif"], m["chain"], tmp)
             num2idx = {A[k]["num"]: i for i, k in enumerate(keys) if k in A}
-            # route B input: residues with complete backbone, in order; donor disabled after any break
+            # route B input (R2 B4): canonical order; residues with incomplete backbone become NaN rows (real=0,
+            # not reported), and every chain break gets SPACER NaN rows. SPACER = 6 > the longest pydssp turn
+            # offset (5), so no turn, bridge neighbourhood, local mask or amide-H placement spans a break;
+            # NaN energies are never > 0, so NaN rows form no H-bond.
             bpath, opath = os.path.join(tmp, "bb.tsv"), os.path.join(tmp, "b.tsv")
+            NAN = "\t".join(["nan"] * 12)
             with open(bpath, "w") as fh:
-                fh.write("idx\tdonor_ok\t" + "\t".join(f"{a}_{c}" for a in ("N", "CA", "C", "O") for c in "xyz") + "\n")
-                last = None
+                fh.write("idx\treal\tdonor_ok\t" + "\t".join(f"{a}_{c}" for a in ("N", "CA", "C", "O") for c in "xyz") + "\n")
                 for x in rows:
+                    if x["break_before"] and x["idx"] > 0:
+                        for _ in range(SPACER):
+                            fh.write(f"-1\t0\t0\t{NAN}\n")
                     if not x["bb_complete"]:
-                        last = None
+                        fh.write(f"{x['idx']}\t0\t0\t{NAN}\n")
                         continue
-                    contiguous = (last is not None and last == x["idx"] - 1 and not x["break_before"])
-                    donor = int(contiguous and x["resname"] != "PRO")
+                    donor = int(x["resname"] != "PRO")
                     xyz = [f"{getattr(x['at'][a].pos, c):.3f}" for a in ("N", "CA", "C", "O") for c in "xyz"]
-                    fh.write(f"{x['idx']}\t{donor}\t" + "\t".join(xyz) + "\n")
-                    last = x["idx"]
+                    fh.write(f"{x['idx']}\t1\t{donor}\t" + "\t".join(xyz) + "\n")
             subprocess.run([PYB, ROUTE_B, bpath, opath], check=True, capture_output=True, text=True)
             B = {int(l.split("\t")[0]): l.split("\t")[1].strip() for l in list(open(opath))[1:]}
         with open(os.path.join(out_dir, name + ".ss.tsv"), "w") as fh:

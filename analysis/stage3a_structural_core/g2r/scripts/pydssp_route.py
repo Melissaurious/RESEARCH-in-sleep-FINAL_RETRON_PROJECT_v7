@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """g2r secondary-structure route B: pydssp 0.9.1 (numpy backend), run in env `opencrispr_retrons`.
 
-Input : backbone TSV written by ss_routes.py (ordered residues with complete N, CA, C, O; column
-        `donor_ok` = 0 for Pro, for the first residue, and for any residue whose peptide bond to the
-        previous listed residue is broken, since pydssp places the amide H from the previous C).
+Input : backbone TSV written by ss_routes.py in canonical order with NaN spacer rows at every chain break and
+        NaN rows for incomplete-backbone residues (R2 B4); `real` = 1 marks rows to report; `donor_ok` = 0 for
+        Pro. pydssp is used unmodified; NaN geometry yields no H-bond.
 Output: TSV  idx  B_ss3   (B_ss3 in {H, E, C}; pydssp's helix = 3/4/5-turn helices, strand = any bridge,
         i.e. the same partition as mkdssp {H,G,I} / {E,B} / rest).
 Usage : pydssp_route.py <backbone.tsv> <out.tsv>
 """
 import sys
 import numpy as np
+np.seterr(all="ignore")
 import pydssp
 from pydssp import pydssp_numpy
 
@@ -24,4 +25,5 @@ ss = np.array(["C", "H", "E"])[onehot.argmax(-1)]
 with open(out, "w") as fh:
     fh.write("idx\tB_ss3\n")
     for r, s in zip(rows, ss):
-        fh.write(f"{r[ix['idx']]}\t{s}\n")
+        if r[ix["real"]] == "1":
+            fh.write(f"{r[ix['idx']]}\t{s}\n")

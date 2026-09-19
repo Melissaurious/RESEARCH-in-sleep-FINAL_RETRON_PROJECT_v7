@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run the C3r PDP driver on a list of single-chain extracts and collect a combined per-residue table.
 
-variant  primary : BioJava 7.1.4 jars, unmodified            (classpath  lib/*:drv2)
-         p4      : same, with p4cls/ (make_pdp_p4.py) first   (classpath  p4cls:lib/*:drv2) — sensitivity only
+variant  primary : BioJava 7.1.4 jars, unmodified            (classpath  lib/*:drv3)
+         p4      : same, with p4cls/ (make_pdp_p4.py) first   (classpath  p4cls:lib/*:drv3) — sensitivity only
 Writes <out_prefix>.residues.tsv (chain + RunPDP per-residue columns) and <out_prefix>.summary.tsv.
 
 Usage: pdp_run.py <variant> <work_dir> <out_prefix> <chain.pdb> [...]
@@ -11,7 +11,7 @@ import sys, os, subprocess, tempfile
 
 JAVA = "/home/borg/miniconda3/envs/retron_tradicional/bin/java"
 variant, work, prefix, files = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4:]
-cp = {"primary": f"{work}/lib/*:{work}/drv2", "p4": f"{work}/p4cls:{work}/lib/*:{work}/drv2"}[variant]
+cp = {"primary": f"{work}/lib/*:{work}/drv3", "p4": f"{work}/p4cls:{work}/lib/*:{work}/drv3"}[variant]
 jtmp = f"{work}/jtmp"
 os.makedirs(jtmp, exist_ok=True)
 with tempfile.TemporaryDirectory(dir=os.environ.get("TMPDIR")) as od:
