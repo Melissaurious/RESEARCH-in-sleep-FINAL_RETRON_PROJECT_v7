@@ -1,7 +1,8 @@
 # PUBLICATION OPTIONS
 
 **Package edition, 2026-09-19.** Evidence base: `embed_x2` (results `4f8550b`, **closure `fdf0872` —
-governing**) and Stage 3C (`34000ee`) **as corrected by its failed independent review** (`eeaf0ae`).
+governing**, chapter reporting package **`d7d3ece`**) and Stage 3C (`34000ee`) **as corrected by its
+failed independent review** (`eeaf0ae`).
 The Nature Microbiology classification-style paper is a **conceptual comparator only**.
 
 ⛔ **Option C2 is materially downgraded in this edition.** Stage 3C returned `FAIL_BLOCK` 4.5/10 on
@@ -62,9 +63,11 @@ Revision 2: this is a publishable paper, provided its claim is pitched at the le
 supports.**
 [REV-1 CORRECTED — the substantive upgrade]
 
-⛔ **X2 must never be reported as PASS or FAIL.** The frozen gate returned `X2-A`, but the
-**conclusion of record is the qualified paragraph, not the label** (`X2_CLOSURE.md` §2). Any
-write-up carries the four levels separately:
+⛔ **X2 must never be reported as PASS or FAIL, and `X2-A` must never appear as a headline
+biological conclusion.** `X2-A` is the name of a *gate outcome*. The **conclusion of record is the
+qualified paragraph** (`X2_CLOSURE.md` §2), and the reporting package `d7d3ece` is built on that
+wording throughout — every claim travels with its qualifier attached. Any write-up carries the four
+levels separately:
 
 | level | what may be said |
 |---|---|
@@ -84,19 +87,27 @@ write-up carries the four levels separately:
 > demonstrated** (the effect decays ~10-fold from C1 +0.0177 to C4 +0.0017, and at C3 only 52.5 % of
 > pairs favour the observed RT); and **biochemical compatibility is untested**.
 
-**Evidence already available:** the full X2 table set; the frozen split and its leakage measurements;
-the retrieval ladder (rung 3 fails at +0.0298 [−0.0048, +0.0633]); the permutation control (P − T
-−0.00590, **not flat**); the generalisation gradient (Q1 R − T spans zero); tier resolution (T4
-−0.02594 over 247 components).
+**Evidence already available, and now fully reported (`d7d3ece`):** the full X2 table set with the
+two canonical exports (`X2_COMPONENT_LEVEL_EXPORT.tsv` = the inference file, 1,075 rows;
+`X2_PAIR_LEVEL_EFFECTS.tsv.gz` = join only, 30,924 rows); the frozen split and its leakage
+measurements; the retrieval ladder (rung 3 fails at +0.0298 [−0.0048, +0.0633]); the permutation
+control (P − T −0.00590, **not flat**); the generalisation gradient (Q1 R − T spans zero); tier
+resolution (T4 −0.02594 over 247 components); replication in **all 5 folds and all 3 seeds**;
+**28 of 36 strata** with the whole CI below zero; the repeated-event class `multiple_species`
+(−0.02507, 364 components) showing the effect is not a deposition artefact; and two **UNDETERMINED**
+strata (RT homolog groups > 100: 22 components; ncRNA clusters > 100: 14) reported as undetermined
+rather than as nulls.
 
-**Strongest figures:**
-1. **The arm ladder** U → T → G → R with paired component-level CIs — it *shows* the decomposition of
-   lineage versus exact-RT information in one panel.
-2. **The counterfactual decay curve** C1 → C2 → C3 → C4, with the % of pairs favouring the observed
-   RT on a second axis. This is the honest centrepiece: the effect and its limit in one figure.
-3. **The generalisation gradient** by nearest-training-RT similarity quartile, with Q1 spanning zero.
-4. **Seed replication** (3 seeds, R − T and R − G) — rarely shown, and it is what makes Q2 credible.
-5. The **split/leakage schematic** (component-blocked folds; 82.46 % RT homology at ≥ 0.50 id).
+**Strongest figures — these now exist, generated from landed tables (`d7d3ece`):**
+1. **F8 · cross-fitted confirmation** — the arm ladder U → T → G → R with paired component-level CIs,
+   plus per-fold replication. It *shows* the lineage-versus-exact-RT decomposition in one panel.
+2. **F9 · counterfactual decay** — C1 → C2 → C3 → C4 with the component-versus-pair weighting on the
+   same figure. The honest centrepiece: the effect and its limit together, including the C3 sign flip.
+3. **F10 · bounds** — lineage share (~78 %), seed spread, and the relatedness gradient with Q1
+   spanning zero.
+4. **F1** the split/leakage schematic (component-blocked folds; 82.46 % RT homology at ≥ 0.50 id).
+5. **F6** shared-space evidence with the UNDETERMINED rungs shaded.
+⚠️ **F7 is a synthetic methods schematic** and must be labelled as such wherever it appears.
 
 **Missing decisive analyses — now short:**
 - the predeclared **rung-0 positive control** (never run);

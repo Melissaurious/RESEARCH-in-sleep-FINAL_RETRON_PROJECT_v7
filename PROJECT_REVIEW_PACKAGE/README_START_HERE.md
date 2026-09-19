@@ -49,7 +49,7 @@ RNA-linked DNA — **msDNA**. See `WHAT_IS_A_RETRON.md`, which separates three d
 | Mestre · historical classification | **FAILED / closed** | re-inference failed; placement into the 11-clade system failed its control gate (shuffled placed at 7.9 %) |
 | SPIRE · de novo ncRNA discovery | **CLOSED at held-out failure** | a fixed positional interval beats the method (901 vs 343); **two positional features are inherited** |
 | Embeddings · retrieval | **CLOSED, escalation refused** | signal is real but **type-level**; the type-matched rung fails |
-| X1 / X2 · conditional modelling | **X2 CLOSED** | lineage dominates; a small exact-RT residual survives; pair-level discrimination does not |
+| X1 / X2 · conditional modelling | **X2 CLOSED**; chapter reporting package **FINAL** (`d7d3ece`) | lineage dominates (~78 % of the gain); a small, seed-unstable exact-RT residual survives; pair-level discrimination does not |
 | Experimental panel | **REGISTERED with an exposure map** | only **16 of 175** elements are fully external |
 | ncRNA boundary prediction | **NOT_YET_TESTED**; comparative recovery FAILED | the assumed 977-element truth set **does not exist** |
 | Phylogeny / co-evolution | **NOT_YET_TESTED** | no phylogeny exists anywhere in this project |
@@ -61,11 +61,17 @@ RNA-linked DNA — **msDNA**. See `WHAT_IS_A_RETRON.md`, which separates three d
    not.** Four instrument families were each pushed to a predeclared criterion and each stopped at
    the same place.
 2. **The single strongest positive result** is `embed_x2`, and it must be read at **four levels**,
-   never as PASS/FAIL: broad RT lineage predicts the ncRNA (G − U −0.04256); the exact RT adds a
-   small residual beyond its own homolog group (R − G −0.00551, sign replicated across 3 seeds,
-   **magnitude undetermined**, sd ≈ the estimate); close-counterfactual pair discrimination is not
-   demonstrated (at C3, 52.5 % of pairs, raw pair-level mean **−0.000205**); biochemical
-   compatibility is **untested**.
+   never as PASS/FAIL — ⛔ **and `X2-A` is a gate label, not a biological conclusion**. The
+   conclusion of record is the qualified paragraph in `X2_CLOSURE.md` §2: *specific RT sequence
+   information improves prediction of the cognate ncRNA beyond broad type and beyond a coarse
+   50 %-identity homolog representation, but **most of the gain is explained at the homolog-lineage
+   level**, and the additional specific-RT effect is small, weak at pair level under close
+   counterfactuals, and uncertain in magnitude across seeds.* The four levels: broad RT lineage
+   predicts the ncRNA (G − U −0.04256; G − T is **~78 %** of R − T); the exact RT adds a small
+   residual (R − G −0.00551, sign replicated across 3 seeds, **magnitude undetermined**);
+   close-counterfactual pair discrimination is **not demonstrated** (at C3, 52.5 % of pairs, and the
+   raw pair-weighted mean is **−0.000205**, nominally negative); biochemical compatibility is
+   **untested**, and there is no local data with which to test it.
 3. **The frozen mapper is a real instrument** with a stated scope, and it is the project's most
    reusable asset — but its frame is group-II-intron-centred (median MAPPED 0.94 GII → 0.49 Retron),
    which confounds every between-family architectural comparison.
@@ -152,6 +158,8 @@ layer is empty.
 | Stage 3A / 3B / 3C + review | `…_v7-stage3c/analysis/` | bundle `34000ee`; review + errata `eeaf0ae` |
 | Stage-3C errata (**binding**) | `…_v7-stage3c/docs/errata/2026-09-19_stage3c_review_errata.md` | `eeaf0ae` |
 | embeddings, X1, X2 | `…_v7-embeddings/results/` | X2 results `4f8550b`; **X2 closure `fdf0872` governs** |
+| RT-ncRNA chapter reporting package | `…_v7-embedding-report/analysis/embedding_report/` | **`d7d3ece`** — final; figures F8–F10, 29 claims, six-point OpenCRISPR subsection |
+| X2 canonical exports | `…_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/` | `X2_COMPONENT_LEVEL_EXPORT.tsv` = **inference file** (1,075 rows); `X2_PAIR_LEVEL_EFFECTS.tsv.gz` = **join only** (30,924 rows) |
 | Mestre audit + closure | `…_v7-mestre-audit/analysis/mestre_audit/` | `b05934f`; closure `033bfcb`; MCC-v3.1 freeze `e047fdc` |
 | SPIRE | `…_v7-spire-ncrna/analysis/spire_ncrna_audit/` | `ed4a663` |
 | full synthesis (long form) | `…_v7-synthesis/analysis/project_synthesis/` | `48f9e1b` |

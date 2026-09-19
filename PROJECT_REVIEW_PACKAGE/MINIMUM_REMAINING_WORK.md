@@ -1,7 +1,14 @@
 # MINIMUM REMAINING WORK
 
 **Package edition, 2026-09-19.** Evidence base: `embed_x2` (results `4f8550b`, closure `fdf0872`
-governing) and Stage 3C (`34000ee`) **plus its failed independent review** (`eeaf0ae`).
+governing, chapter reporting package `d7d3ece`) and Stage 3C (`34000ee`) **plus its failed
+independent review** (`eeaf0ae`).
+
+**One item is now retired.** The X1 reporting repair (report the pooled and pair-weighted R − T
+beside the component mean) is **superseded**: `d7d3ece` rebuilds the chapter on the frozen X2 result,
+and the component-versus-pair weighting is reported as a finding in its own right (claim C-28,
+figure F9), including the C3 sign flip. What remains of that repair is only the X1 bundle's own
+prose, which the chapter no longer depends on.
 
 Only analyses that materially affect the final thesis or paper are listed. Each carries its
 scientific question, dependency, expected information gain, compute cost, whether it can falsify a
@@ -42,7 +49,7 @@ control before absence-flavoured statements, and the retrieval track has none of
 ### 1.3 A relatedness backbone for permutation controls — **APPROVED** (strengthened by X2)
 
 X2 makes this more valuable, not less: the effect it measures lives largely **in** lineage structure
-(G − T = −0.019 of R − T = −0.025, i.e. the homolog group explains ~77 %). Build an
+(G − T = −0.019 of R − T = −0.025, i.e. the homolog group explains ~78 %). Build an
 identity/ANI-based **blocking structure for PP-style block-constrained permutation** — explicitly not
 a publication tree. ⛔ Mantel stays ruled out. **Decision required: yes.**
 
@@ -199,7 +206,7 @@ before the two blocked Ibex items — with 2.1 as a separate preregistered decis
 
 | item | scientific question | dependency | expected information gain | compute cost | can it falsify a major claim? | optional? |
 |---|---|---|---|---|---|---|
-| **Tier 0** (8 repairs) | what may legitimately be written | none | high — 4 change claim wording | none | yes (already did, for Stage 3C) | **no** |
+| **Tier 0** (8 repairs; **T0-4 now largely superseded by `d7d3ece`**) | what may legitimately be written | none | high — 3 still change claim wording | none | yes (already did, for Stage 3C) | **no** |
 | **1.1** confirmatory population | where can any pairing model be confirmed? | none | high — blocks all follow-up | none | no | **no** |
 | **2.3** Stage-3C R1–R5 | can any Stage-3C number be cited? | operator authorisation | high | low | yes | **no**, if 3C is used |
 | **1.2** rung-0 positive control | can the retrieval instrument see what it should? | none | medium — separates "cannot see" from "not there" | low | yes | no |

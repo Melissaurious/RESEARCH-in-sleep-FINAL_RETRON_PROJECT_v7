@@ -72,16 +72,32 @@ model, never their own validation**, since both are CM-derived.
 ## Part IV — The pairing question
 
 ### Ch 10 · RT–ncRNA correspondence: lineage, residual, and the limit — **the project's main positive result**
-Structured exactly at the four levels, never as PASS/FAIL:
+Drafted material already exists: `…_v7-embedding-report/analysis/embedding_report/` at **`d7d3ece`**
+supplies the Methods and Results prose, the 29-claim reporting matrix, and figures **F8/F9/F10**.
+⛔ The chapter is written around *"supported only with its qualifier attached"*, and **`X2-A` never
+appears as a biological conclusion** — it is a gate label; the conclusion of record is the qualified
+paragraph. Structured exactly at the four levels, never as PASS/FAIL:
 1. **lineage** — G − U −0.04256 [−0.04619, −0.03893], 86.0 % of components;
 2. **exact-RT residual** — R − G −0.00551 [−0.00797, −0.00312], sign replicated on 3/3 seeds,
-   magnitude undetermined (sd ≈ estimate), homolog group explaining ~77 % of R − T;
+   magnitude undetermined (sd ≈ estimate), homolog group explaining ~78 % of R − T;
 3. **pair discrimination** — C1 +0.0177 → C4 +0.0017; at C3, 52.5 % of pairs and a raw pair-level
    mean of −0.000205;
 4. **biochemical compatibility** — untested, and untestable with current assets.
 With the permutation control (not flat: P − T −0.00590), the generalisation gradient (least-similar
-quartile spans zero), and the methodological precedent (OpenCRISPR: audited and adapted, **not**
-replicated; their split, performance claims and negatives not reused).
+quartile spans zero), the pair-versus-component weighting (at C3 the two **differ in sign**), and
+replication across all 5 folds and all 3 seeds.
+
+**§1.4 · OpenCRISPR as precedent** — a six-point drop-in subsection already drafted at `d7d3ece`:
+what they did (a ~0.7 M-parameter protein-conditioned gRNA decoder, plain next-token loss, **no**
+contrastive term, validated *functionally*); what was reused (`transformer.py` at a pinned sha256,
+architecture shape, capacity class, objective, optimiser, frozen-encoder pattern); what was rejected
+(their checkpoint weights, ESM2 8M, the sentinel vocabulary, their split, and **any** OpenCRISPR
+sequence); what was reproduced (the *question*, turned from a qualitative demo into a graded
+statistical experiment) — **an adaptation, not a replication**; why the design is component-blocked
+and lineage-controlled (one ncRNA has **705** RT partners; the homolog representative alone gives
+~78 % of the gain); and why their exchangeability validation **cannot** be reproduced here — there
+are no experimentally labelled compatible/incompatible RT–ncRNA combinations, which makes acquiring
+them a **precondition**, not a refinement.
 
 ## Part V — Prospective
 

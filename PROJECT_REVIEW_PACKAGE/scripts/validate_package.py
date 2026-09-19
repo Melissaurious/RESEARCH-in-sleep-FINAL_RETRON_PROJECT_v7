@@ -158,6 +158,7 @@ READ_ONLY = {
     V7 + "-embeddings": ["results"],
     V7 + "-mestre-audit": ["analysis/mestre_audit", "results"],
     V7 + "-spire-ncrna": ["analysis/spire_ncrna_audit"],
+    V7 + "-embedding-report": ["analysis/embedding_report"],
 }
 for wt, dirs in READ_ONLY.items():
     if not os.path.isdir(wt):
@@ -197,7 +198,13 @@ BANNED = [
     (r"13/14", "Stage-3C replicate figure withdrawn by blocker B1 (declared scope: 7/7 from 2 groups)"),
     (r"33/62", "Stage-3C Region-X coverage withdrawn by blocker B4 (declared rule: 24/62)"),
     (r"\bX2 (?:PASSED|FAILED)\b", "X2 must never be reported as PASS/FAIL"),
+    (r"X2-A", "X2-A is a GATE LABEL, not a biological conclusion - it may appear only with its "
+              "qualifier (gate/label/outcome/not a conclusion/conclusion of record)"),
 ]
+# context words that make a mention of a banned token legitimate
+ALLOW_CTX = (r"withdraw|corrected|erratum|blocker|exploratory|never|originally|not the declared"
+             r"|\(not |rather than|hybrid|weaker|superseded|gate|label|outcome|qualified"
+             r"|conclusion of record|headline|must not|may not|not a biological")
 for md in [f for f in REQUIRED_FILES if f.endswith(".md")]:
     p = os.path.join(PKG, md)
     if not os.path.exists(p):
@@ -207,9 +214,7 @@ for md in [f for f in REQUIRED_FILES if f.endswith(".md")]:
         for m in re.finditer(pat, text):
             line = text[:m.start()].count("\n") + 1
             ctx = text[max(0, m.start() - 120):m.start() + 120].replace("\n", " ")
-            if re.search(r"withdraw|corrected|erratum|blocker|exploratory|never|originally"
-                         r"|not the declared|\(not |rather than|hybrid|weaker|superseded",
-                         ctx, re.I):
+            if re.search(ALLOW_CTX, ctx, re.I):
                 continue                    # quoted with its correction - that is the point
             errors.append("%s:%d asserts a withdrawn/prohibited figure (%s)" % (md, line, why))
 
