@@ -469,3 +469,27 @@ recommended default (WA-S.1).
 - Residual engineering risk (hostile-object `__eq__` in C6 membership) closed by operator
   disposition as OUT-OF-SCOPE / NON-LOAD-BEARING; no registered path admits such an object.
 - Errata U1-U3 recorded against the executor's own reporting; the frozen bundle is not edited.
+
+## 2026-09-19 · Stage 3C · `specs_exist.sh` fails on a pre-existing reference (LOW-STAKES, default taken)
+
+- **Needed:** `bash general/checks/specs_exist.sh` to print OK before provenance-bearing execution.
+- **Why blocked:** it reports `MISSING: docs/BLOCKED.md references proposed/research_contract_C3_C9_amendment.md`.
+  That file was **withdrawn as a rescue** (entry 2026-09-16 above; `2026-09-17_stage2_launcher_g4b_freeze_amendment.md`
+  §107) and the reference is historical text in a record that is never rewritten.
+- **Options:** (a) proceed, recording the failure as known and unrelated to 3C inputs; (b) rewrite the
+  historical BLOCKED entry (forbidden: records are superseded, not rewritten); (c) stop.
+- **Default taken:** (a). Stage 3C inputs are checked by their own hashes (`INPUT_PROVENANCE.tsv`).
+  Fix proposal for the layer: let the check skip paths explicitly marked withdrawn.
+
+## 2026-09-19 · Stage 3C · Tier-B/C 3B truth labels excluded from Comparison A (OPERATOR DECISION, default taken)
+
+- **Needed:** catalytic-site locations for retron chains (Ec86, Ec67, Eco8 are Tier B; Ec78, Ec83, St85
+  are Tier C). None of them is inside 3B's valid scope.
+- **Why:** `LAUNCHER_03B` closure: *"Tier B was never opened and contributes zero rows to any
+  evaluation. No Tier-B inference is permitted."* The truth labels themselves are independent of the
+  detector, but using them would place 3B evidence outside the scope 3B closed with.
+- **Options:** (a) exclude — Comparison A covers only the 19 Tier-A truth-bearing chains, none of them
+  a retron; (b) admit Tier-B truth labels (not detector output) as a separately labelled descriptive
+  stratum; (c) derive retron catalytic positions another way in 3C (forbidden: re-estimation).
+- **Default taken:** (a). **Consequence stated in the 3C report:** Comparison A says nothing about
+  retron RTs. (b) is an operator decision because it changes the scope of a closed stage.
