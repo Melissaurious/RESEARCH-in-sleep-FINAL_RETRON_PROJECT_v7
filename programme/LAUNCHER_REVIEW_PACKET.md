@@ -27,8 +27,6 @@ The review these launchers derive from is at
 were reversed during the review by discovering prior work outside the declared project, so treat any
 "this has never been done" claim in a launcher with suspicion and say so if you see one.
 
----
-
 ## PROGRAM LAUNCHER
 
 # PROGRAM LAUNCHER — retron RT/ncRNA programme
@@ -315,6 +313,7 @@ match; or the task would need to change its own criterion.
 
 ---
 task_id: T-A0-lineage-variance
+governance_base: b5443e1
 stage_id: S10
 title: Lineage-clustered variance for the X2 decomposition
 state: AUTHORIZED
@@ -406,6 +405,7 @@ stage synthesis, and the operator has been asked to pre-commit to that verdict.
 
 ---
 task_id: T-A16-reciprocal-frame
+governance_base: b5443e1
 stage_id: S02
 title: Reciprocal family-frame analysis of RT core content
 state: AUTHORIZED
@@ -492,6 +492,7 @@ Where a retron-discriminative signal is. That is T-A18, and it depends on this r
 
 ---
 task_id: T-A23-crosspair-curation
+governance_base: b5443e1
 stage_id: S12
 title: Literature curation of measured cross-pair outcomes
 state: AUTHORIZED
@@ -570,6 +571,7 @@ treat a cognate failure as an orthogonality result.
 
 ---
 task_id: T-A2-ladder-population
+governance_base: b5443e1
 stage_id: S10
 title: Counterfactual ladder on a fixed common population
 state: AUTHORIZED
@@ -650,6 +652,7 @@ Whether pair-level discrimination exists. It describes the shape of an existing 
 
 ---
 task_id: T-A3-confirmatory-population
+governance_base: b5443e1
 stage_id: S00
 title: Freeze the pairing confirmatory population
 state: AWAITING_ADOPTION
@@ -756,6 +759,7 @@ result come out better.
 
 ---
 task_id: T-A5b-msrmsd-coordinates
+governance_base: b5443e1
 stage_id: S08
 title: msr/msd coordinates and RT-DNA extent, anchored on experimental RT-DNA
 state: AUTHORIZED
@@ -870,6 +874,7 @@ only the anchored subset is. Anything about the branching guanosine. Anything ab
 
 ---
 task_id: T-LINT-prose-numbers
+governance_base: b5443e1
 stage_id: S00
 title: Numeric provenance linter over prose
 state: AUTHORIZED
@@ -946,6 +951,7 @@ That a flagged number is wrong. Unresolved means unresolved. Adjudication is a s
 
 ---
 task_id: T-REG-asset-registration
+governance_base: b5443e1
 stage_id: S00
 title: Register the discovered asset base
 state: AUTHORIZED
