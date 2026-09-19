@@ -1,0 +1,37 @@
+group	n	metric	median	minimum	maximum	unit
+palm_CALL	34	n_modelled	411.5000	246.0000	1265.0000	chain
+palm_CALL	34	n_units	3.0000	1.0000	8.0000	chain
+palm_CALL	34	n_units_outside_core	2.0000	0.0000	7.0000	chain
+palm_CALL	34	n_extra_domain_units	0.0000	0.0000	7.0000	chain
+palm_CALL	34	mapper_total_inserted_residues	195.0000	5.0000	1000.0000	chain
+palm_CALL	34	mapper_max_insertion_run	99.0000	2.0000	774.0000	chain
+palm_CALL [anchor series complete]	7	frac_outside_rt_core	0.4583	0.3048	0.8063	chain
+palm_CALL [anchor series complete]	7	n_nterm_extension_residues	76.0000	60.0000	520.0000	chain
+palm_CALL [anchor series complete]	7	n_cterm_extension_residues	112.0000	13.0000	500.0000	chain
+palm_NO_CALL_or_AMBIGUOUS	28	n_modelled	415.5000	203.0000	1107.0000	chain
+palm_NO_CALL_or_AMBIGUOUS	28	n_units	3.0000	1.0000	7.0000	chain
+palm_NO_CALL_or_AMBIGUOUS	28	n_units_outside_core	1.0000	0.0000	6.0000	chain
+palm_NO_CALL_or_AMBIGUOUS	28	n_extra_domain_units	0.0000	0.0000	4.0000	chain
+palm_NO_CALL_or_AMBIGUOUS	28	mapper_total_inserted_residues	155.0000	7.0000	848.0000	chain
+palm_NO_CALL_or_AMBIGUOUS	28	mapper_max_insertion_run	108.0000	4.0000	481.0000	chain
+palm_NO_CALL_or_AMBIGUOUS [anchor series complete]	13	frac_outside_rt_core	0.5535	0.4031	0.7617	chain
+palm_NO_CALL_or_AMBIGUOUS [anchor series complete]	13	n_nterm_extension_residues	99.0000	60.0000	347.0000	chain
+palm_NO_CALL_or_AMBIGUOUS [anchor series complete]	13	n_cterm_extension_residues	145.0000	18.0000	500.0000	chain
+stratum_primary	46	n_modelled	368.5000	203.0000	598.0000	chain
+stratum_primary	46	n_units	3.0000	1.0000	5.0000	chain
+stratum_primary	46	n_units_outside_core	1.0000	0.0000	3.0000	chain
+stratum_primary	46	n_extra_domain_units	0.0000	0.0000	4.0000	chain
+stratum_primary	46	mapper_total_inserted_residues	155.0000	5.0000	517.0000	chain
+stratum_primary	46	mapper_max_insertion_run	99.0000	2.0000	334.0000	chain
+stratum_primary [anchor series complete]	13	frac_outside_rt_core	0.5290	0.3048	0.5799	chain
+stratum_primary [anchor series complete]	13	n_nterm_extension_residues	76.0000	60.0000	104.0000	chain
+stratum_primary [anchor series complete]	13	n_cterm_extension_residues	120.0000	13.0000	181.0000	chain
+stratum_flagged	15	n_modelled	898.0000	495.0000	1265.0000	chain
+stratum_flagged	15	n_units	5.0000	2.0000	8.0000	chain
+stratum_flagged	15	n_units_outside_core	3.0000	0.0000	7.0000	chain
+stratum_flagged	15	n_extra_domain_units	0.0000	0.0000	7.0000	chain
+stratum_flagged	15	mapper_total_inserted_residues	657.0000	301.0000	1000.0000	chain
+stratum_flagged	15	mapper_max_insertion_run	370.0000	158.0000	774.0000	chain
+stratum_flagged [anchor series complete]	6	frac_outside_rt_core	0.7118	0.6426	0.8063	chain
+stratum_flagged [anchor series complete]	6	n_nterm_extension_residues	282.5000	195.0000	520.0000	chain
+stratum_flagged [anchor series complete]	6	n_cterm_extension_residues	392.0000	18.0000	500.0000	chain

@@ -1,0 +1,34 @@
+chain	biological_group	family_METADATA	after_state	before_state	resnum_start	resnum_end	observed_gap_residues	ltra_gap_residues	excess_residues	units_spanned	meets_declared_threshold	unit	note
+24NC_A	RG12	RVT-UG15 (DRT4)	179	208	157	192	34	28	6	3	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8C8J_A	RG02	non-LTR (LINE-1 ORF2p)	146	162	569	591	21	14	7	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8C8J_A	RG02	non-LTR (LINE-1 ORF2p)	204	228	633	663	29	23	6	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8C8J_A	RG02	non-LTR (LINE-1 ORF2p)	301	307	740	765	24	5	19	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8GH6_A	RG21	non-LTR (R2Bm)	204	228	562	592	29	23	6	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8SXT_A	RG02	non-LTR (LINE-1 ORF2p)	146	162	569	591	21	14	7	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8SXT_A	RG02	non-LTR (LINE-1 ORF2p)	205	228	634	663	28	22	6	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8SXT_A	RG02	non-LTR (LINE-1 ORF2p)	306	307	745	765	19	0	19	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8UW3_A	RG02	non-LTR (LINE-1 ORF2p)	146	162	569	591	21	14	7	3	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8UW3_A	RG02	non-LTR (LINE-1 ORF2p)	204	228	633	663	29	23	6	3	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+8UW3_A	RG02	non-LTR (LINE-1 ORF2p)	302	307	741	765	23	4	19	3	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9C0I_A	RG08	RVT-UG2 (DRT2)	305	307	309	320	10	1	9	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9D4S_A	RG09	RVT-G2L4	211	228	185	211	25	16	9	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9D4S_A	RG09	RVT-G2L4	297	307	272	287	14	9	5	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9D5X_A	RG09	RVT-G2L4	211	228	185	211	25	16	9	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9D5X_A	RG09	RVT-G2L4	297	307	272	287	14	9	5	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9DOU_A	RG10	non-LTR (R2Tg)	201	228	807	841	33	26	7	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9HDO_A	RG02	non-LTR (LINE-1 ORF2p)	146	162	569	591	21	14	7	4	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9HDO_A	RG02	non-LTR (LINE-1 ORF2p)	204	228	633	663	29	23	6	4	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9HDO_A	RG02	non-LTR (LINE-1 ORF2p)	302	307	741	765	23	4	19	4	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9I2F_A	RG24	RVT-Retrons (Ec67)	136	138	84	92	7	1	6	1,2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9I2G_B	RG24	RVT-Retrons (Ec67)	136	138	84	92	7	1	6	1,2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9IOA_A	RG25	RVT-UG28	297	307	278	300	18	9	9	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9K6G_A	RG02	non-LTR (LINE-1 ORF2p)	146	162	569	591	21	14	7	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9K6G_A	RG02	non-LTR (LINE-1 ORF2p)	204	228	633	663	29	23	6	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9K6G_A	RG02	non-LTR (LINE-1 ORF2p)	302	307	741	765	23	4	19	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9LJE_A	RG08	RVT-UG2	305	307	309	320	10	1	9	1	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9NL2_A	RG27	non-LTR (R2Pm)	204	228	539	569	29	23	6	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9NL3_A	RG10	non-LTR (R2Tg)	201	228	586	620	33	26	7	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9YFD_A	RG29	RVT-UG1 (DRT1)	188	194	229	244	14	5	9	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9YFD_A	RG29	RVT-UG1 (DRT1)	206	228	256	285	28	21	7	3,5	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9Z6Y_A	RG30	RVT-UG3 / RVT-UG8 (EcDRT3)	303	307	236	255	14	3	11	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
+9Z6Z_A	RG30	RVT-UG3 / RVT-UG8 (EcDRT3)	303	307	236	255	16	3	13	2	NO	internal insertion	an insertion relative to the LtrA frame of the frozen instrument, not a domain call
