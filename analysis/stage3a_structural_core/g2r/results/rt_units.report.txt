@@ -1,0 +1,26 @@
+# instruments: C3r external validation ACCEPT; population SS gate RELIABLE; design-exposed: ['5HHJ_A']; flagged: 15; primary: 46
+## primary (n=46)  verdict-rule outcome: FAIL
+C4	call_rate=0.565	C6=RECURRENT(median=0.798,group_pairs=35,absent_in_Y=304)	C7=STABLE(median=0.798,groups=8,numbering_excluded=7)	meets=False
+C5	call_rate=0.130	C6=UNDERPOWERED(median=0.000,group_pairs=7,absent_in_Y=141)	C7=NOT_STABLE(median=0.000,groups=5,numbering_excluded=7)	meets=False
+C4b	call_rate=0.304	C6=UNDERPOWERED(median=0.721,group_pairs=8,absent_in_Y=249)	C7=NOT_STABLE(median=0.000,groups=5,numbering_excluded=7)	meets=False
+replicate PDP domain-count agreement: 0.385 over 52 pairs
+call-status counts: C4: {'AMBIGUOUS': 1, 'CALL': 26, 'NO_CALL': 19}; C5: {'NOT_EVALUABLE': 20, 'NO_CALL': 18, 'AMBIGUOUS': 2, 'CALL': 6}; C4b: {'NOT_EVALUABLE': 20, 'CALL': 14, 'NO_CALL': 11, 'AMBIGUOUS': 1}
+## flagged (n=15)  verdict-rule outcome: FAIL
+C4	call_rate=0.467	C6=UNDERPOWERED(median=0.223,group_pairs=2,absent_in_Y=18)	C7=UNDERPOWERED(median=0.456,groups=2,numbering_excluded=1)	meets=False
+C5	call_rate=0.133	C6=UNDERPOWERED(median=nan,group_pairs=0,absent_in_Y=12)	C7=UNDERPOWERED(median=nan,groups=0,numbering_excluded=1)	meets=False
+C4b	call_rate=0.200	C6=UNDERPOWERED(median=0.000,group_pairs=1,absent_in_Y=8)	C7=UNDERPOWERED(median=0.000,groups=2,numbering_excluded=1)	meets=False
+replicate PDP domain-count agreement: 0.000 over 12 pairs
+call-status counts: C4: {'NO_CALL': 7, 'AMBIGUOUS': 1, 'CALL': 7}; C5: {'NOT_EVALUABLE': 8, 'AMBIGUOUS': 1, 'NO_CALL': 4, 'CALL': 2}; C4b: {'NOT_EVALUABLE': 8, 'NO_CALL': 4, 'CALL': 3}
+## all_nonexposed (n=61)  verdict-rule outcome: FAIL
+C4	call_rate=0.541	C6=RECURRENT(median=0.796,group_pairs=39,absent_in_Y=330)	C7=STABLE(median=0.770,groups=10,numbering_excluded=8)	meets=False
+C5	call_rate=0.131	C6=UNDERPOWERED(median=0.000,group_pairs=7,absent_in_Y=153)	C7=NOT_STABLE(median=0.000,groups=5,numbering_excluded=8)	meets=False
+C4b	call_rate=0.279	C6=RECURRENT(median=0.695,group_pairs=11,absent_in_Y=265)	C7=NOT_STABLE(median=0.000,groups=7,numbering_excluded=8)	meets=False
+replicate PDP domain-count agreement: 0.312 over 64 pairs
+call-status counts: C4: {'AMBIGUOUS': 2, 'CALL': 33, 'NO_CALL': 26}; C5: {'NOT_EVALUABLE': 28, 'NO_CALL': 22, 'AMBIGUOUS': 3, 'CALL': 8}; C4b: {'NOT_EVALUABLE': 28, 'CALL': 17, 'NO_CALL': 15, 'AMBIGUOUS': 1}
+## LOGO influence (primary)
+C4	call_rate 0.500-0.650	C6 median 0.778-0.831	C7 median 0.628-0.968
+C5	call_rate 0.091-0.150	C6 median 0.000-0.652	C7 median 0.000-0.000
+C4b	call_rate 0.225-0.350	C6 median 0.707-0.747	C7 median 0.000-0.320
+LOGO folds by verdict: {'FAIL': 22}; folds flipping a region's bar outcome: []
+PDP_ABSENT residues (not in BioJava's representative-atom array): 7R06_A[44:PTR], 8C8J_A[661:CSX], 9Z6Y_H[650:PTR], 9Z6Z_H[650:PTR]
+EXTRA_DOMAIN units: 26 / 219 (flagged chains: 18)
