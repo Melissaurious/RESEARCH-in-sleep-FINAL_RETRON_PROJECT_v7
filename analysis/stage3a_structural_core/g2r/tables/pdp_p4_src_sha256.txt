@@ -1,0 +1,2 @@
+ea18883d33e0c51640f09971523c00c46aadb05db7bb3091feb37b5291e03d75  org/biojava/nbio/structure/domain/pdp/CutDomain.java
+e0ffdc2a7430f25ad3bf535cdca0ab5b55a59fed6d6be841721ff82a2b3056d6  org/biojava/nbio/structure/domain/pdp/Cut.java

@@ -1,0 +1,4 @@
+0505e9dca6bd364fe7be9e8ed37df345a9e36e3eebf7a31c44dda155d1ca34da  cath-domain-boundaries.txt
+fd784c87ea37d3e1a43a4bcc7dec00731acceb8a05ed7757d13f88a5c01f5a37  cath-domain-list-S35.txt
+2f87544bb8844ff37ad1d9348dfe0a23a7c9e4837e0d207733935148e088cc81  cath-domain-list.txt
+9a7b68548a4b755ceda673cfcaba3f19733e1d571f6fafca34e54f62675cdd3a  cath-names.txt
