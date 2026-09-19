@@ -1,0 +1,28 @@
+input	status	stage_at_which_allowed	rationale
+Cartesian coordinates of the RT chain (all atoms)	ALLOWED as boundary input	g1, g2	the primary observable
+backbone N, CA, C, O geometry	ALLOWED as boundary input	g1, g2	input to the hydrogen-bond secondary-structure assignment
+CA-only geometry (distances, pseudo-angle, pseudo-dihedral)	ALLOWED as boundary input	g1, g2	input to the independent P-SEA assignment
+secondary structure computed de novo from the candidate chain	ALLOWED as boundary input	g1, g2	computed here, never read from any prior table
+secondary-structure ELEMENT boundaries derived from those assignments	ALLOWED as boundary input	g1, g2	
+residue-residue and element-element spatial contacts	ALLOWED as boundary input	g1, g2	the module-detection observable
+beta-sheet membership and bridge partners derived de novo	ALLOWED as boundary input	g1, g2	positive criterion for the sheet-containing module
+contact density, modularity, spectral structure of the contact graph	ALLOWED as boundary input	g1, g2	
+solvent accessibility computed de novo	ALLOWED as boundary input	g1, g2	
+chain length, residue census, missing-residue spans	ALLOWED as boundary input	g1, g2	
+structural superposition between chains (pinned foldseek build)	ALLOWED as boundary input	g2	recurrence across proteins; the build is pinned in STRUCTURAL_ALIGNMENT_PROVENANCE.md
+conformational state across replicate depositions of one protein	ALLOWED as boundary input	g2	stability test
+YXDD / YADD / any motif search or regex	FORBIDDEN	external comparison only, after freeze	the stage question is whether the fold can be partitioned without the motif
+known catalytic-Asp sequence coordinates	FORBIDDEN	external comparison only, after freeze	
+Stage-3B detector output, its truth table, its candidate pairs or its thresholds	FORBIDDEN	external comparison only, after freeze (Stage-3C style)	Stage 3B is CLOSED; its catalytic outputs may not create structural truth
+Stage-2 RT5 / CAT_STATE coordinates	FORBIDDEN	external comparison only, after freeze	
+Stage-2 150-state anchor boundaries	FORBIDDEN	external comparison only, after freeze	
+historical RT0-RT7 coordinates or the g3 bridge	FORBIDDEN	external comparison only, after freeze	
+MyRT / PADLOC / DefenseFinder family labels	FORBIDDEN as a boundary determinant	stratified sampling and post-freeze reporting only	labels may describe a result, never produce one
+old reference_boundaries.tsv / .json / .py and boundary_extraction_report.txt	FORBIDDEN	external historical comparison layer only	graded RED by the prior asset audit
+reference_boundaries_24_116.json	FORBIDDEN	n/a - absent locally	named by the historical drivers, never recovered
+the rule "fingers = everything before the palm"	FORBIDDEN	never	the residual-flank construction this stage exists to replace
+the rule "thumb = everything after the palm"	FORBIDDEN	never	same
+any single anchor structure used to define universal boundaries	FORBIDDEN	never	the historical 5HHJ-anchored design is not repeated
+ligand, nucleic-acid or metal contacts	FORBIDDEN as a boundary determinant	supportive context and post-freeze description only	apo structures must remain assignable
+literature fingers/palm/thumb annotation	FORBIDDEN as a boundary determinant	external source layer, recorded separately and never silently reconciled	
+held-out validation set structures or their outcomes	FORBIDDEN during criterion design	after the criteria are frozen	
