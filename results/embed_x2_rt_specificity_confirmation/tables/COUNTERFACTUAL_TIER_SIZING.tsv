@@ -1,0 +1,5 @@
+tier	eligible_pairs	pct_of_population	n_components	mean_alternatives	forward_passes	adjudicable
+C1	30796	99.59	1019	8.0	246368	YES
+C2	29459	95.26	832	8.0	235672	YES
+C3	30922	99.99	1073	7.98	246852	YES
+C4	29186	94.38	451	7.44	217282	YES

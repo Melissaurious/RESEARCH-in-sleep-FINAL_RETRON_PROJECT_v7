@@ -1,0 +1,12 @@
+{
+  "k_folds": 5,
+  "pairs": 30924,
+  "components": 1075,
+  "assignment_rule": "largest component to the currently smallest fold; deterministic, no RNG, never optimised against any outcome",
+  "nesting": "fold k: test=k, validation=(k+1) mod 5, train=the other three",
+  "blocking": "component, RT cluster and ncRNA cluster all verified non-crossing",
+  "G_arm": "ESM-C representation of the frozen rt_id0.50 cluster representative",
+  "sha256_manifest": "65228b34f7a1fec983c34d5d639a9c7029b5123e749e4797ead15412cc4a6a12",
+  "is_internal_crossfit": true,
+  "note": "INTERNAL cross-fitted confirmation, NOT external validation. The frozen embed_g2b test fold and the X1 result are untouched and retain their original interpretation."
+}
