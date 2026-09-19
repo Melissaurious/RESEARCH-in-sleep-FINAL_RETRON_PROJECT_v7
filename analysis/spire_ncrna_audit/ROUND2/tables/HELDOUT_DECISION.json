@@ -1,0 +1,92 @@
+{
+  "rule": {
+    "W": "W500",
+    "span": 260,
+    "ranking": "R_B",
+    "c": 0.5,
+    "s": 50,
+    "k": 0.5,
+    "b": 0,
+    "gate": {
+      "G1_ratio": 3.0,
+      "G1_p": 0.01,
+      "G2_min_diff": 0.3457,
+      "G2_max_ctrl": 0.1,
+      "G3_min_precision": 0.7798,
+      "G4_min_stability": 0.6,
+      "G5_max_abstention": 0.4586,
+      "G6_max_coding": 0.1,
+      "G7_positional_prior": {
+        "P0_from": -193,
+        "P0_to": -24,
+        "rule": "method IoU>=0.5 count >= P0 count on same held-out in-window members"
+      },
+      "min_passes_for_decision": 20
+    },
+    "dev_metrics": {
+      "real_final_pass": 0.691358024691358,
+      "ctrl_pass": 0.0,
+      "diff": 0.691358024691358,
+      "precision": 0.9298245614035088,
+      "stability": 0.6410256410256411,
+      "lco_survival": 0.7948717948717948,
+      "abstention": 0.308641975308642,
+      "coding_rate": 0.0,
+      "n_dev": 83,
+      "n_testable_rule_pass": 39
+    },
+    "selected_by": "Amendment 2",
+    "z6_commit": "12ea561a5565aca29eeaacbfe8863dc244838fa3"
+  },
+  "n_heldout_groups": 81,
+  "n_with_ref_in_window": 80,
+  "checks": {
+    "G1_enrichment": {
+      "obs": 343,
+      "expected": 118.94564894675264,
+      "ratio": 2.8836700042180428,
+      "perm_p": 4.999750012499375e-05,
+      "pass_": false
+    },
+    "G2_discrimination": {
+      "real": 0.7375,
+      "ctrl": 0.024691358024691357,
+      "diff": 0.7128086419753087,
+      "pass_": true
+    },
+    "G3_precision": {
+      "precision": 0.9666666666666667,
+      "n_pass": 60,
+      "pass_": true
+    },
+    "G4_stability": {
+      "rate": 0.7567567567567568,
+      "n_testable_pass": 37,
+      "pass_": true
+    },
+    "G5_abstention": {
+      "abstention": 0.26249999999999996,
+      "pass_": true
+    },
+    "G6_coding": {
+      "rate": 0.0,
+      "pass_": true
+    },
+    "G7_positional_prior": {
+      "method_iou50": 343,
+      "P0_iou50": 901,
+      "method_ends20": 60,
+      "P0_ends20": 87,
+      "pass_": false
+    }
+  },
+  "decision": "ROUND2_FAIL_STOP",
+  "decision_predeclared_G1_G6": "ROUND2_FAIL_STOP",
+  "members_in_window": 1051,
+  "any_overlap": 724,
+  "both_ends_20": 60,
+  "median_abs_err5": 29.5,
+  "median_abs_err3": 37.0,
+  "median_len_err": -69.5,
+  "nonretron_pass": "2/4"
+}

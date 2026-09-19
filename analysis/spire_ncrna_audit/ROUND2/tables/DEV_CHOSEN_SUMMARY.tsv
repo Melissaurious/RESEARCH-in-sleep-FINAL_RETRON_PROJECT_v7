@@ -1,0 +1,2 @@
+rule	J	real_pass	ctrl_pass	precision	abstention	members_in_window	rediscovered_iou50	chance_expected	any_overlap	both_ends_20
+W500 span100 R_B c0.5 s50 k0.5 b0	0.8395061728395061	0.8518518518518519	0.0	0.9855072463768116	0.14814814814814814	1125	157	43.49221019948192	852	28

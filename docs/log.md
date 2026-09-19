@@ -85,3 +85,10 @@ Notes that are not gates (WA-G.1).
   credible (MIX_05_XIII: 30/32 held-out matched vs 0/8 unmatched). No new independent RT–ncRNA component. PROPOSED:
   a second bounded round (CMfinder whole-ncRNA length, power-aware gate calibrated on controls) before any scale-up;
   scale-up population 509 groups ≈ 815 core-h, operator decision required.
+
+- **2026-09-19 · SPIRE ncRNA Round 2 (`analysis/spire_ncrna_audit/ROUND2/`): `ROUND2_FAIL_STOP`.** Round 1 committed
+  (`bcb6cee`). 23 pilot cases: 12 R1 / 4 R2 reconciled, 7 unresolved (no June per-genome outputs found). 173 groups split
+  by group (DEV 88 / HELDOUT 85); CMfinder span 260, W500, composite rule with covariation as supporting evidence, frozen
+  on DEV. Held-out: real 73.8 % vs distal control 2.5 %, precision 96.7 %, stability 75.7 %, but enrichment 2.88× chance
+  (gate 3×) and 343 vs 901 IoU ≥ 0.5 against the fixed positional prior −193…−24; non-retron RT controls 2/4.
+  No unresolved pilot; 509-group scale-up and the Mestre-style stage remain inactive.

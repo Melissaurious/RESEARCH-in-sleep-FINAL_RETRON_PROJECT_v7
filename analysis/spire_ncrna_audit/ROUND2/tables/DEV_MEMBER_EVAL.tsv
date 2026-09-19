@@ -1,0 +1,1141 @@
+gid	member_id	ref_from	ref_to	ref_len	detection_model	evalue	signed_distance_bp	topology	rel_from	rel_to	set_passes	in_window	call	IoU	any_overlap	err5	err3	both_ends_20	len_err	chance_p
+02744525a93a1c91	m06	-161	-2	160	TypeIB2	6.9e-15	-1.0	overlapping_adjacent_CDS	-47.0	34.0	True	True	True	0.23469387755102042	True	114.0	36.0	False	-78.0	0.19285714285714287
+02744525a93a1c91	m01	-160	-2	159	TypeIB2	1.6e-11	-1.0	overlapping_adjacent_CDS	-47.0	34.0	True	True	True	0.2358974358974359	True	113.0	36.0	False	-77.0	0.19047619047619047
+02744525a93a1c91	m07	-160	-2	159	TypeIB2	3.7e-13	-1.0	overlapping_adjacent_CDS	-47.0	34.0	True	True	True	0.2358974358974359	True	113.0	36.0	False	-77.0	0.19047619047619047
+02744525a93a1c91	m08	-161	-2	160	TypeIB2	1.4e-14	-1.0	overlapping_adjacent_CDS	-47.0	34.0	True	True	True	0.23469387755102042	True	114.0	36.0	False	-78.0	0.19285714285714287
+02744525a93a1c91	m02	-161	-2	160	TypeIB2	9.1e-11	-1.0	overlapping_adjacent_CDS	-47.0	34.0	True	True	True	0.23469387755102042	True	114.0	36.0	False	-78.0	0.19285714285714287
+02744525a93a1c91	m00	-160	-2	159	TypeIB2	4.6e-14	-1.0	overlapping_adjacent_CDS	-47.0	34.0	True	True	True	0.2358974358974359	True	113.0	36.0	False	-77.0	0.19047619047619047
+02744525a93a1c91	m03	-161	-2	160	TypeIB2	3.9e-12	-1.0	overlapping_adjacent_CDS	-48.0	34.0	True	True	True	0.23979591836734693	True	113.0	36.0	False	-77.0	0.1957040572792363
+02744525a93a1c91	m05	-161	-2	160	TypeIB2	1.6e-15	-1.0	overlapping_adjacent_CDS	-47.0	34.0	True	True	True	0.23469387755102042	True	114.0	36.0	False	-78.0	0.19285714285714287
+02744525a93a1c91	m04	-162	-2	161	TypeIB2	9.9e-14	-1.0	overlapping_adjacent_CDS	-47.0	34.0	True	True	True	0.233502538071066	True	115.0	36.0	False	-79.0	0.19523809523809524
+09c19c449b3724b5	m01	-78	16	95	TypeIV	5.6e-13	0.0	overlaps_RT_start	-80.0	18.0	True	True	True	0.9595959595959596	True	-2.0	2.0	True	4.0	0.16129032258064516
+09c19c449b3724b5	m06	-77	16	94	TypeIV	2e-11	0.0	overlaps_RT_start			True	True	False		False			False		
+09c19c449b3724b5	m08	-118	-26	93	TypeIV	1.9e-15	-25.0	overlapping_adjacent_CDS	-120.0	-24.0	True	True	True	0.9587628865979382	True	-2.0	2.0	True	4.0	0.15555555555555556
+09c19c449b3724b5	m09	-77	16	94	TypeIV	5.3e-13	0.0	overlaps_RT_start	-79.0	18.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+09c19c449b3724b5	m07	-78	16	95	TypeIV	4.9e-12	0.0	overlaps_RT_start	-80.0	18.0	True	True	True	0.9595959595959596	True	-2.0	2.0	True	4.0	0.16129032258064516
+09c19c449b3724b5	m10	-77	16	94	TypeIV	2e-11	0.0	overlaps_RT_start	-79.0	18.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+09c19c449b3724b5	m05	-128	-35	94	TypeIV	1.7e-12	-34.0	upstream	-130.0	-33.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+09c19c449b3724b5	m00	-118	-26	93	TypeIV	1.9e-15	-25.0	overlapping_adjacent_CDS			True	True	False		False			False		
+09c19c449b3724b5	m03	-121	-28	94	TypeIV	1.2e-11	-27.0	upstream	-123.0	-26.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+09c19c449b3724b5	m02	-88	5	94	TypeIV	7.2e-13	0.0	overlaps_RT_start	-90.0	7.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+09c19c449b3724b5	m04	-127	-34	94	TypeIV	7.2e-13	-33.0	upstream	-129.0	-32.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+0a04ed3a68339417	m08	-259	-36	224	TypeXIIIB_Ne144	8.3e-26	-35.0	upstream	-173.0	-81.0	True	True	True	0.41517857142857145	True	86.0	-45.0	False	-131.0	0.0
+0a04ed3a68339417	m09	-281	-61	221	TypeXIIIB_Ne144	1.6e-26	-60.0	upstream	-196.0	-106.0	True	True	True	0.4117647058823529	True	85.0	-45.0	False	-130.0	0.0
+0a04ed3a68339417	m18	-259	-30	230	TypeXIIIB_Ne144	4.7e-23	-29.0	upstream	-175.0	-84.0	True	True	True	0.4	True	84.0	-54.0	False	-138.0	0.0
+0a04ed3a68339417	m07	-260	-40	221	TypeXIIIB_Ne144	2.7e-30	-39.0	upstream	-176.0	-85.0	True	True	True	0.416289592760181	True	84.0	-45.0	False	-129.0	0.0
+0a04ed3a68339417	m12	-270	-37	234	TypeXIIIB_Ne144	4.3e-22	-36.0	upstream	-184.0	-93.0	True	True	True	0.39316239316239315	True	86.0	-56.0	False	-142.0	0.0
+0a04ed3a68339417	m13	-301	-72	230	TypeXIIIB_Ne144	4e-22	-71.0	upstream	-217.0	-126.0	True	True	True	0.4	True	84.0	-54.0	False	-138.0	0.0
+0a04ed3a68339417	m05	-253	-24	230	TypeXIIIB_Ne144	2.5e-19	-23.0	upstream	-169.0	-78.0	True	True	True	0.4	True	84.0	-54.0	False	-138.0	0.0
+0a04ed3a68339417	m01	-283	-60	224	TypeXIIIB_Ne144	1e-29	-59.0	upstream	-197.0	-105.0	True	True	True	0.41517857142857145	True	86.0	-45.0	False	-131.0	0.0
+0a04ed3a68339417	m17	-349	-120	230	TypeXIIIB_Ne144	4e-22	-119.0	upstream	-265.0	-174.0	True	True	True	0.4	True	84.0	-54.0	False	-138.0	0.0
+0a04ed3a68339417	m06	-280	-51	230	TypeXIIIB_Ne144	1.4e-18	-50.0	upstream	-196.0	-105.0	True	True	True	0.4	True	84.0	-54.0	False	-138.0	0.0
+0a04ed3a68339417	m14	-289	-60	230	TypeXIIIB_Ne144	7.4e-22	-59.0	upstream	-205.0	-114.0	True	True	True	0.4	True	84.0	-54.0	False	-138.0	0.0
+0a04ed3a68339417	m04	-277	-54	224	TypeXIIIB_Ne144	3.3e-25	-53.0	upstream			True	True	False		False			False		
+0a04ed3a68339417	m19	-277	-54	224	TypeXIIIB_Ne144	6e-31	-53.0	upstream	-191.0	-99.0	True	True	True	0.41517857142857145	True	86.0	-45.0	False	-131.0	0.0
+0a04ed3a68339417	m16	-233	-13	221	TypeXIIIB_Ne144	5.2e-26	-12.0	upstream	-148.0	-58.0	True	True	True	0.4117647058823529	True	85.0	-45.0	False	-130.0	0.0
+0a04ed3a68339417	m02	-280	-51	230	TypeXIIIB_Ne144	7e-19	-50.0	upstream			True	True	False		False			False		
+0a04ed3a68339417	m15	-259	-30	230	TypeXIIIB_Ne144	6.4e-24	-29.0	upstream			True	True	False		False			False		
+0a04ed3a68339417	m00	-281	-61	221	TypeXIIIB_Ne144	1e-27	-60.0	upstream	-196.0	-106.0	True	True	True	0.4117647058823529	True	85.0	-45.0	False	-130.0	0.0
+0a04ed3a68339417	m03	-292	-69	224	TypeXIIIB_Ne144	3.5e-25	-68.0	upstream			True	True	False		False			False		
+0a04ed3a68339417	m10	-310	-81	230	TypeXIIIB_Ne144	1.5e-20	-80.0	upstream	-226.0	-135.0	True	True	True	0.4	True	84.0	-54.0	False	-138.0	0.0
+0a04ed3a68339417	m11	-311	-82	230	TypeXIIIB_Ne144	2.6e-20	-81.0	upstream	-227.0	-136.0	True	True	True	0.4	True	84.0	-54.0	False	-138.0	0.0
+0a5f202fd45814bb	m06	-283	-154	130	TypeIX	6.3e-17	-153.0	upstream			False	True	False		False			False		
+0a5f202fd45814bb	m14	-130	-5	126	TypeIX	1.4e-13	-4.0	upstream			False	True	False		False			False		
+0a5f202fd45814bb	m19	-141	-1	141	TypeIX	1.4e-20	0.0	overlapping_adjacent_CDS			False	True	False		False			False		
+0a5f202fd45814bb	m01	-13	134	148	TypeIX	2.6e-21	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m05	-31	112	144	TypeIX	4.8e-16	0.0	overlapping_adjacent_CDS			False	True	False		False			False		
+0a5f202fd45814bb	m10	-99	7	107	TypeIX	7.1e-18	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m11	-55	63	119	TypeIX	1e-10	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m08	-87	32	120	TypeIX	1.3e-14	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m09	-147	-4	144	TypeIX	5.6e-16	-3.0	upstream			False	True	False		False			False		
+0a5f202fd45814bb	m18	-134	-4	131	TypeIX	7.6e-15	-3.0	upstream			False	True	False		False			False		
+0a5f202fd45814bb	m04	-137	7	145	TypeIX	7.9e-12	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m07	-132	0	133	TypeIX	2.7e-18	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m12	-137	-9	129	TypeIX	1e-18	-8.0	upstream			False	True	False		False			False		
+0a5f202fd45814bb	m13	-138	6	145	TypeIX	8.1e-21	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m00	-139	10	150	TypeIX	3.1e-20	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m03	-215	-84	132	TypeIX	8.6e-17	-83.0	upstream			False	True	False		False			False		
+0a5f202fd45814bb	m16	-327	-180	148	TypeIX	4.3e-16	-179.0	overlapping_adjacent_CDS			False	True	False		False			False		
+0a5f202fd45814bb	m02	-139	-6	134	TypeIX	4.9e-18	-5.0	upstream			False	True	False		False			False		
+0a5f202fd45814bb	m15	-140	4	145	TypeIX	1.9e-21	0.0	overlaps_RT_start			False	True	False		False			False		
+0a5f202fd45814bb	m17	-134	-4	131	TypeIX	3.2e-11	-3.0	upstream			False	True	False		False			False		
+0aa6b2246c2a9bf6	m04	-134	-6	129	TypeIX	2.3e-12	-5.0	upstream	-105.0	-25.0	True	True	True	0.627906976744186	True	29.0	-19.0	False	-48.0	0.16864608076009502
+0aa6b2246c2a9bf6	m00	-131	7	139	TypeIX	4.4e-11	0.0	overlaps_RT_start	-102.0	-22.0	True	True	True	0.5827338129496403	True	29.0	-29.0	False	-58.0	0.17339667458432304
+0aa6b2246c2a9bf6	m03	-2	130	133	TypeIX	1.8e-13	0.0	overlaps_RT_start			True	True	False		False			False		
+0aa6b2246c2a9bf6	m10	-140	-6	135	TypeIX	5.7e-09	-5.0	upstream	-111.0	-31.0	True	True	True	0.6	True	29.0	-25.0	False	-54.0	0.17339667458432304
+0aa6b2246c2a9bf6	m11	-140	-6	135	TypeIX	2.5e-12	-5.0	upstream	-111.0	-31.0	True	True	True	0.6	True	29.0	-25.0	False	-54.0	0.17339667458432304
+0aa6b2246c2a9bf6	m05	-134	-6	129	TypeIX	6.3e-10	-5.0	upstream	-105.0	-24.0	True	True	True	0.6356589147286822	True	29.0	-18.0	False	-47.0	0.16666666666666666
+0aa6b2246c2a9bf6	m02	-139	-2	138	TypeIX	8.8e-15	-1.0	upstream	-110.0	-30.0	True	True	True	0.5869565217391305	True	29.0	-28.0	False	-57.0	0.17577197149643706
+0aa6b2246c2a9bf6	m08	-134	-2	133	TypeIX	2e-13	-1.0	upstream	-105.0	-25.0	True	True	True	0.6090225563909775	True	29.0	-23.0	False	-52.0	0.16864608076009502
+0aa6b2246c2a9bf6	m09	-134	-6	129	TypeIX	3.6e-10	-5.0	upstream	-105.0	-24.0	True	True	True	0.6356589147286822	True	29.0	-18.0	False	-47.0	0.16666666666666666
+0aa6b2246c2a9bf6	m06	-134	-2	133	TypeIX	3.8e-13	-1.0	upstream	-105.0	-25.0	True	True	True	0.6090225563909775	True	29.0	-23.0	False	-52.0	0.16864608076009502
+0aa6b2246c2a9bf6	m14	-134	-2	133	TypeIX	3.7e-14	-1.0	upstream	-105.0	-25.0	True	True	True	0.6090225563909775	True	29.0	-23.0	False	-52.0	0.16864608076009502
+0aa6b2246c2a9bf6	m07	-134	-2	133	TypeIX	6.9e-13	-1.0	upstream	-105.0	-25.0	True	True	True	0.6090225563909775	True	29.0	-23.0	False	-52.0	0.16864608076009502
+0aa6b2246c2a9bf6	m12	-134	-7	128	TypeIX	3.6e-14	-6.0	upstream	-105.0	-25.0	True	True	True	0.6328125	True	29.0	-18.0	False	-47.0	0.166270783847981
+0aa6b2246c2a9bf6	m13	-136	-7	130	TypeIX	1.1e-11	-6.0	upstream	-110.0	-30.0	True	True	True	0.6230769230769231	True	26.0	-23.0	False	-49.0	0.166270783847981
+0aa6b2246c2a9bf6	m01	-2	130	133	TypeIX	1.8e-13	0.0	overlaps_RT_start			True	True	False		False			False		
+0efb463136764449	m07	-161	-18	144	TypeIC1_IC2	8.8e-05	-17.0	upstream	-141.0	-86.0	True	True	True	0.3888888888888889	True	20.0	-68.0	False	-88.0	0.0
+0efb463136764449	m12	-157	-18	140	TypeIC1_IC2	1.7e-06	-17.0	upstream	-137.0	-82.0	True	True	True	0.4	True	20.0	-64.0	False	-84.0	0.0
+0efb463136764449	m13	-163	-19	145	TypeIC1_IC2	4.3e-07	-18.0	upstream	-143.0	-87.0	True	True	True	0.3931034482758621	True	20.0	-68.0	False	-88.0	0.0
+0efb463136764449	m05	-161	-19	143	TypeIC1_IC2	1.7e-07	-18.0	upstream	-141.0	-85.0	True	True	True	0.3986013986013986	True	20.0	-66.0	False	-86.0	0.0
+0efb463136764449	m08	-216	-76	141	TypeIC1_IC2	9.7e-05	-75.0	upstream	-196.0	-140.0	True	True	True	0.40425531914893614	True	20.0	-64.0	False	-84.0	0.0
+0efb463136764449	m09	-307	-171	137	TypeIC1_IC2	2.4e-05	-170.0	upstream	-287.0	-231.0	True	True	True	0.41605839416058393	True	20.0	-60.0	False	-80.0	0.0
+0efb463136764449	m18	-163	-19	145	TypeIC1_IC2	0.00036	-18.0	upstream	-143.0	-87.0	True	True	True	0.3931034482758621	True	20.0	-68.0	False	-88.0	0.0
+0efb463136764449	m06	-147	-7	141	TypeIC1_IC2	3.5e-05	-6.0	upstream	-127.0	-71.0	True	True	True	0.40425531914893614	True	20.0	-64.0	False	-84.0	0.0
+0efb463136764449	m14	-156	-18	139	TypeIC1_IC2	3.4e-06	-17.0	upstream	-136.0	-80.0	True	True	True	0.41007194244604317	True	20.0	-62.0	False	-82.0	0.0
+0efb463136764449	m00	-159	-19	141	TypeIC1_IC2	6.8e-06	-18.0	upstream	-139.0	-83.0	True	True	True	0.40425531914893614	True	20.0	-64.0	False	-84.0	0.0
+0efb463136764449	m03	-161	-19	143	TypeIC1_IC2	0.00051	-18.0	upstream	-141.0	-85.0	True	True	True	0.3986013986013986	True	20.0	-66.0	False	-86.0	0.0
+0efb463136764449	m01	-242	-98	145	TypeIC1_IC2	3e-05	-97.0	upstream	-222.0	-165.0	True	True	True	0.4	True	20.0	-67.0	False	-87.0	0.0
+0efb463136764449	m19	-162	-18	145	TypeIC1_IC2	5e-06	-17.0	upstream	-142.0	-86.0	True	True	True	0.3931034482758621	True	20.0	-68.0	False	-88.0	0.0
+0efb463136764449	m16	-161	-21	141	TypeIC1_IC2	7.9e-05	-20.0	upstream	-141.0	-85.0	True	True	True	0.40425531914893614	True	20.0	-64.0	False	-84.0	0.0
+0efb463136764449	m10	-164	-21	144	TypeIC1_IC2	9.3e-05	-20.0	upstream	-144.0	-90.0	True	True	True	0.3819444444444444	True	20.0	-69.0	False	-89.0	0.0
+0efb463136764449	m11	-158	-19	140	TypeIC1_IC2	2.1e-06	-18.0	upstream	-138.0	-82.0	True	True	True	0.40714285714285714	True	20.0	-63.0	False	-83.0	0.0
+0efb463136764449	m04	-164	-18	147	TypeIC1_IC2	5.5e-06	-17.0	upstream	-144.0	-89.0	True	True	True	0.38095238095238093	True	20.0	-71.0	False	-91.0	0.0
+0efb463136764449	m17	-154	-18	137	TypeIC1_IC2	1.3e-06	-17.0	upstream	-134.0	-78.0	True	True	True	0.41605839416058393	True	20.0	-60.0	False	-80.0	0.0
+0efb463136764449	m02	-158	-19	140	TypeIC1_IC2	0.00019	-18.0	upstream	-138.0	-83.0	True	True	True	0.4	True	20.0	-64.0	False	-84.0	0.0
+0efb463136764449	m15	-159	-19	141	TypeIC1_IC2	8.2e-05	-18.0	upstream	-139.0	-83.0	True	True	True	0.40425531914893614	True	20.0	-64.0	False	-84.0	0.0
+10e640a14b669f34	m17	-178	-2	177	TypeIB2	1.1e-17	-1.0	overlapping_adjacent_CDS	-46.0	7.0	True	True	True	0.24193548387096775	True	132.0	9.0	False	-123.0	0.0
+10e640a14b669f34	m00	-201	-1	201	TypeIB2	5.2e-22	0.0	overlapping_adjacent_CDS			True	True	False		False			False		
+10e640a14b669f34	m03	-210	-1	210	TypeIB2	1.4e-21	0.0	overlapping_adjacent_CDS	-45.0	7.0	True	True	True	0.20642201834862386	True	165.0	8.0	False	-157.0	0.0
+10e640a14b669f34	m04	-184	-2	183	TypeIB2	5.1e-18	-1.0	overlapping_adjacent_CDS	-46.0	7.0	True	True	True	0.234375	True	138.0	9.0	False	-129.0	0.0
+10e640a14b669f34	m08	-206	-1	206	TypeIB2	1.4e-26	0.0	overlapping_adjacent_CDS	-45.0	7.0	True	True	True	0.2102803738317757	True	161.0	8.0	False	-153.0	0.0
+10e640a14b669f34	m09	-207	-1	207	TypeIB2	2.3e-20	0.0	overlapping_adjacent_CDS	-45.0	7.0	True	True	True	0.20930232558139536	True	162.0	8.0	False	-154.0	0.0
+10e640a14b669f34	m18	-178	-2	177	TypeIB2	9.7e-18	-1.0	overlapping_adjacent_CDS	-46.0	7.0	True	True	True	0.24193548387096775	True	132.0	9.0	False	-123.0	0.0
+10e640a14b669f34	m16	-182	-4	179	TypeIB2	2.4e-17	-3.0	overlapping_adjacent_CDS	-48.0	7.0	True	True	True	0.23684210526315788	True	134.0	11.0	False	-123.0	0.0
+10e640a14b669f34	m05	-201	-1	201	TypeIB2	5.3e-22	0.0	overlapping_adjacent_CDS			True	True	False		False			False		
+10e640a14b669f34	m10	-179	-13	167	TypeIB2	7.4e-19	-12.0	overlapping_adjacent_CDS	-57.0	-2.0	True	True	True	0.25280898876404495	True	122.0	11.0	False	-111.0	0.0
+10e640a14b669f34	m11	-210	-4	207	TypeIB2	2.9e-25	-3.0	overlapping_adjacent_CDS	-48.0	7.0	True	True	True	0.20642201834862386	True	162.0	11.0	False	-151.0	0.0
+10e640a14b669f34	m01	-207	-1	207	TypeIB2	1.8e-25	0.0	overlapping_adjacent_CDS	-45.0	7.0	True	True	True	0.20930232558139536	True	162.0	8.0	False	-154.0	0.0
+10e640a14b669f34	m02	-207	-1	207	TypeIB2	5.4e-21	0.0	overlapping_adjacent_CDS	-45.0	7.0	True	True	True	0.20930232558139536	True	162.0	8.0	False	-154.0	0.0
+10e640a14b669f34	m15	-199	-1	199	TypeIB2	2.8e-20	0.0	overlapping_adjacent_CDS	-45.0	7.0	True	True	True	0.21739130434782608	True	154.0	8.0	False	-146.0	0.0
+10e640a14b669f34	m06	-207	-1	207	TypeIB2	3.3e-24	0.0	overlapping_adjacent_CDS	-45.0	7.0	True	True	True	0.20930232558139536	True	162.0	8.0	False	-154.0	0.0
+10e640a14b669f34	m14	-175	-3	173	TypeIB2	4.8e-19	-2.0	overlapping_adjacent_CDS	-46.0	7.0	True	True	True	0.24043715846994534	True	129.0	10.0	False	-119.0	0.0
+10e640a14b669f34	m19	-189	-10	180	TypeIB2	2.3e-15	-9.0	overlapping_adjacent_CDS	-54.0	1.0	True	True	True	0.2356020942408377	True	135.0	11.0	False	-124.0	0.0
+10e640a14b669f34	m07	-174	-2	173	TypeIB2	3.5e-19	-1.0	overlapping_adjacent_CDS	-45.0	7.0	True	True	True	0.24175824175824176	True	129.0	9.0	False	-120.0	0.0
+10e640a14b669f34	m12	-175	-2	174	TypeIB2	4e-17	-1.0	overlapping_adjacent_CDS	-46.0	7.0	True	True	True	0.2459016393442623	True	129.0	9.0	False	-120.0	0.0
+10e640a14b669f34	m13	-164	-3	162	TypeIB2	1.4e-17	-2.0	overlapping_adjacent_CDS	-46.0	7.0	True	True	True	0.2558139534883721	True	118.0	10.0	False	-108.0	0.0
+125ed024481686be	m19	-247	21	269	TypeIIIA3	3.2e-16	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m01	-233	21	255	TypeIIIA3	3.2e-18	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m06	-234	21	256	TypeIIIA3	2.8e-17	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m14	-314	-42	273	TypeIIIA3	2.3e-16	-41.0	overlapping_adjacent_CDS			False	True	False		False			False		
+125ed024481686be	m02	-315	-45	271	TypeIIIA3	8.9e-12	-44.0	overlapping_adjacent_CDS			False	True	False		False			False		
+125ed024481686be	m15	-244	21	266	TypeIIIA3	9.5e-15	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m05	-248	21	270	TypeIIIA3	2.8e-16	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m16	-231	21	253	TypeIIIA3	1.2e-17	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m07	-255	21	277	TypeIIIA3	3.5e-19	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m12	-241	21	263	TypeIIIA3	1e-11	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m13	-316	-45	272	TypeIIIA3	3.4e-12	-44.0	overlapping_adjacent_CDS			False	True	False		False			False		
+125ed024481686be	m08	-242	21	264	TypeIIIA3	7.9e-18	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m09	-249	21	271	TypeIIIA3	3.9e-14	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m18	-245	21	267	TypeIIIA3	5.1e-14	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m04	-265	21	287	TypeIIIA3	1.3e-15	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m17	-313	-45	269	TypeIIIA3	3.9e-12	-44.0	overlapping_adjacent_CDS			False	True	False		False			False		
+125ed024481686be	m10	-231	21	253	TypeIIIA3	2e-20	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m11	-261	21	283	TypeIIIA3	1.7e-14	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m00	-249	21	271	TypeIIIA3	5.2e-12	0.0	overlaps_RT_start			False	True	False		False			False		
+125ed024481686be	m03	-247	21	269	TypeIIIA3	8.7e-12	0.0	overlaps_RT_start			False	True	False		False			False		
+186dceba21899f7b	m10	-211	-47	165	TypeIA_IIAI	9.5e-26	-46.0	upstream	-185.0	-94.0	True	True	True	0.5575757575757576	True	26.0	-47.0	False	-73.0	0.2097560975609756
+186dceba21899f7b	m11	-213	-50	164	TypeIA_IIAI	3.4e-25	-49.0	upstream	-187.0	-96.0	True	True	True	0.5609756097560976	True	26.0	-46.0	False	-72.0	0.2073170731707317
+186dceba21899f7b	m16	-186	-40	147	TypeIA_IIAI	4.3e-28	-39.0	upstream	-160.0	-79.0	True	True	True	0.5578231292517006	True	26.0	-39.0	False	-65.0	0.18095238095238095
+186dceba21899f7b	m02	-253	-87	167	TypeIA_IIAI	1.1e-25	-86.0	upstream	-210.0	-122.0	True	True	True	0.5329341317365269	True	43.0	-35.0	False	-78.0	0.20581113801452786
+186dceba21899f7b	m15	-211	-47	165	TypeIA_IIAI	1.2e-25	-46.0	upstream	-185.0	-94.0	True	True	True	0.5575757575757576	True	26.0	-47.0	False	-73.0	0.2097560975609756
+186dceba21899f7b	m04	-212	-50	163	TypeIA_IIAI	1.3e-25	-49.0	upstream	-186.0	-96.0	True	True	True	0.558282208588957	True	26.0	-46.0	False	-72.0	0.20681265206812652
+186dceba21899f7b	m01	-205	-55	151	TypeIA_IIAI	5.1e-28	-54.0	upstream			True	True	False		False			False		
+186dceba21899f7b	m17	-213	-50	164	TypeIA_IIAI	3.3e-27	-49.0	upstream	-187.0	-96.0	True	True	True	0.5609756097560976	True	26.0	-46.0	False	-72.0	0.2073170731707317
+186dceba21899f7b	m05	-211	-47	165	TypeIA_IIAI	4e-27	-46.0	upstream	-185.0	-94.0	True	True	True	0.5575757575757576	True	26.0	-47.0	False	-73.0	0.2097560975609756
+186dceba21899f7b	m00	-212	-50	163	TypeIA_IIAI	1.3e-25	-49.0	upstream			True	True	False		False			False		
+186dceba21899f7b	m03	-201	-58	144	TypeIA_IIAI	7.5e-26	-57.0	upstream	-177.0	-101.0	True	True	True	0.5347222222222222	True	24.0	-43.0	False	-67.0	0.17411764705882352
+186dceba21899f7b	m07	-210	-47	164	TypeIA_IIAI	1.9e-24	-46.0	upstream	-184.0	-94.0	True	True	True	0.5548780487804879	True	26.0	-47.0	False	-73.0	0.20924574209245742
+186dceba21899f7b	m12	-137	27	165	TypeIA_IIAI	6.8e-27	0.0	overlaps_RT_start	-111.0	-20.0	True	True	True	0.5575757575757576	True	26.0	-47.0	False	-73.0	0.2097560975609756
+186dceba21899f7b	m13	-212	-49	164	TypeIA_IIAI	1.2e-25	-48.0	upstream	-186.0	-96.0	True	True	True	0.5548780487804879	True	26.0	-47.0	False	-73.0	0.20924574209245742
+186dceba21899f7b	m06	-207	-38	170	TypeIA_IIAI	1.2e-25	-37.0	upstream	-177.0	-92.0	True	True	True	0.5058823529411764	True	30.0	-54.0	False	-84.0	0.20432692307692307
+186dceba21899f7b	m14	-214	-40	175	TypeIA_IIAI	6.2e-26	-39.0	upstream	-175.0	-94.0	True	True	True	0.4685714285714286	True	39.0	-54.0	False	-93.0	0.0
+186dceba21899f7b	m19	-205	-55	151	TypeIA_IIAI	5.1e-28	-54.0	upstream	-175.0	-93.0	True	True	True	0.5496688741721855	True	30.0	-38.0	False	-68.0	0.18854415274463007
+186dceba21899f7b	m08	-186	-40	147	TypeIA_IIAI	7.9e-27	-39.0	upstream	-160.0	-79.0	True	True	True	0.5578231292517006	True	26.0	-39.0	False	-65.0	0.18095238095238095
+186dceba21899f7b	m09	-212	-42	171	TypeIA_IIAI	3.5e-27	-41.0	upstream	-184.0	-102.0	True	True	True	0.4853801169590643	True	28.0	-60.0	False	-88.0	0.0
+186dceba21899f7b	m18	-212	-48	165	TypeIA_IIAI	3.5e-27	-47.0	upstream	-179.0	-100.0	True	True	True	0.48484848484848486	True	33.0	-52.0	False	-85.0	0.0
+19819d72c63b67a5	m02	-315	-98	218	TypeXIIIB_Ne144	1.1e-29	-97.0	upstream	-226.0	-146.0	True	True	True	0.37155963302752293	True	89.0	-48.0	False	-137.0	0.0
+19819d72c63b67a5	m15	-241	-18	224	TypeXIIIB_Ne144	5.9e-23	-17.0	upstream	-150.0	-68.0	True	True	True	0.3705357142857143	True	91.0	-50.0	False	-141.0	0.0
+19819d72c63b67a5	m10	-235	-14	222	TypeXIIIB_Ne144	2.4e-23	-13.0	upstream	-144.0	-63.0	True	True	True	0.36936936936936937	True	91.0	-49.0	False	-140.0	0.0
+19819d72c63b67a5	m11	-229	-8	222	TypeXIIIB_Ne144	7.6e-26	-7.0	upstream	-138.0	-57.0	True	True	True	0.36936936936936937	True	91.0	-49.0	False	-140.0	0.0
+19819d72c63b67a5	m16	-246	-19	228	TypeXIIIB_Ne144	4.5e-24	-18.0	upstream	-153.0	-69.0	True	True	True	0.37280701754385964	True	93.0	-50.0	False	-143.0	0.0
+19819d72c63b67a5	m19	-238	-19	220	TypeXIIIB_Ne144	3.3e-24	-18.0	upstream	-148.0	-68.0	True	True	True	0.36818181818181817	True	90.0	-49.0	False	-139.0	0.0
+19819d72c63b67a5	m04	-246	-19	228	TypeXIIIB_Ne144	5.8e-25	-18.0	upstream	-153.0	-69.0	True	True	True	0.37280701754385964	True	93.0	-50.0	False	-143.0	0.0
+19819d72c63b67a5	m06	-277	-61	217	TypeXIIIB_Ne144	1.8e-27	-60.0	upstream			True	True	False		False			False		
+19819d72c63b67a5	m14	-247	-19	229	TypeXIIIB_Ne144	1.5e-21	-18.0	upstream	-153.0	-69.0	True	True	True	0.37117903930131	True	94.0	-50.0	False	-144.0	0.0
+19819d72c63b67a5	m00	-232	-10	223	TypeXIIIB_Ne144	2.2e-25	-9.0	upstream	-141.0	-59.0	True	True	True	0.3721973094170404	True	91.0	-49.0	False	-140.0	0.0
+19819d72c63b67a5	m03	-245	-18	228	TypeXIIIB_Ne144	4.5e-23	-17.0	upstream	-152.0	-68.0	True	True	True	0.37280701754385964	True	93.0	-50.0	False	-143.0	0.0
+19819d72c63b67a5	m17	-295	-76	220	TypeXIIIB_Ne144	3.3e-38	-75.0	upstream	-205.0	-125.0	True	True	True	0.36818181818181817	True	90.0	-49.0	False	-139.0	0.0
+19819d72c63b67a5	m05	-238	-19	220	TypeXIIIB_Ne144	5.7e-24	-18.0	upstream	-148.0	-68.0	True	True	True	0.36818181818181817	True	90.0	-49.0	False	-139.0	0.0
+19819d72c63b67a5	m08	-258	-37	222	TypeXIIIB_Ne144	1.3e-27	-36.0	upstream	-167.0	-86.0	True	True	True	0.36936936936936937	True	91.0	-49.0	False	-140.0	0.0
+19819d72c63b67a5	m09	-247	-34	214	TypeXIIIB_Ne144	1.3e-22	-33.0	upstream	-159.0	-81.0	True	True	True	0.3691588785046729	True	88.0	-47.0	False	-135.0	0.0
+19819d72c63b67a5	m18	-244	-23	222	TypeXIIIB_Ne144	2.2e-27	-22.0	upstream	-153.0	-72.0	True	True	True	0.36936936936936937	True	91.0	-49.0	False	-140.0	0.0
+19819d72c63b67a5	m01	-275	-52	224	TypeXIIIB_Ne144	9.5e-31	-51.0	upstream			True	True	False		False			False		
+19819d72c63b67a5	m07	-280	-51	230	TypeXIIIB_Ne144	7e-19	-50.0	upstream	-191.0	-111.0	True	True	True	0.3521739130434783	True	89.0	-60.0	False	-149.0	0.0
+19819d72c63b67a5	m12	-243	-17	227	TypeXIIIB_Ne144	7.7e-36	-16.0	upstream	-151.0	-73.0	True	True	True	0.34801762114537443	True	92.0	-56.0	False	-148.0	0.0
+19819d72c63b67a5	m13	-247	-19	229	TypeXIIIB_Ne144	2e-22	-18.0	upstream	-153.0	-69.0	True	True	True	0.37117903930131	True	94.0	-50.0	False	-144.0	0.0
+19f104611bfbc3cb	m00	-149	-18	132	TypeIC1_IC2	2.4e-11	-17.0	upstream	-83.0	-19.0	True	True	True	0.49242424242424243	True	66.0	-1.0	False	-67.0	0.0
+19f104611bfbc3cb	m03	-150	-18	133	TypeIC1_IC2	1.1e-11	-17.0	upstream	-83.0	-19.0	True	True	True	0.48872180451127817	True	67.0	-1.0	False	-68.0	0.0
+19f104611bfbc3cb	m04	-148	-18	131	TypeIC1_IC2	3.8e-12	-17.0	upstream	-82.0	-19.0	True	True	True	0.48854961832061067	True	66.0	-1.0	False	-67.0	0.0
+19f104611bfbc3cb	m07	-154	-23	132	TypeIC1_IC2	1.8e-13	-22.0	upstream	-87.0	-24.0	True	True	True	0.48484848484848486	True	67.0	-1.0	False	-68.0	0.0
+19f104611bfbc3cb	m12	-150	-18	133	TypeIC1_IC2	3.3e-12	-17.0	upstream	-83.0	-19.0	True	True	True	0.48872180451127817	True	67.0	-1.0	False	-68.0	0.0
+19f104611bfbc3cb	m13	-148	-18	131	TypeIC1_IC2	4.7e-11	-17.0	upstream	-80.0	-19.0	True	True	True	0.4732824427480916	True	68.0	-1.0	False	-69.0	0.0
+19f104611bfbc3cb	m02	-147	-17	131	TypeIC1_IC2	3.9e-13	-16.0	upstream	-81.0	-18.0	True	True	True	0.48854961832061067	True	66.0	-1.0	False	-67.0	0.0
+19f104611bfbc3cb	m15	-147	-18	130	TypeIC1_IC2	3.3e-14	-17.0	upstream	-80.0	-19.0	True	True	True	0.47692307692307695	True	67.0	-1.0	False	-68.0	0.0
+19f104611bfbc3cb	m06	-148	-18	131	TypeIC1_IC2	3.9e-10	-17.0	upstream			True	True	False		False			False		
+19f104611bfbc3cb	m14	-149	-18	132	TypeIC1_IC2	2.8e-11	-17.0	upstream	-83.0	-19.0	True	True	True	0.49242424242424243	True	66.0	-1.0	False	-67.0	0.0
+19f104611bfbc3cb	m10	-149	-18	132	TypeIC1_IC2	3.6e-09	-17.0	upstream	-83.0	-19.0	True	True	True	0.49242424242424243	True	66.0	-1.0	False	-67.0	0.0
+19f104611bfbc3cb	m11	-154	-23	132	TypeIC1_IC2	2.9e-12	-22.0	upstream	-87.0	-24.0	True	True	True	0.48484848484848486	True	67.0	-1.0	False	-68.0	0.0
+19f104611bfbc3cb	m01	-149	-18	132	TypeIC1_IC2	1.6e-11	-17.0	upstream	-83.0	-19.0	True	True	True	0.49242424242424243	True	66.0	-1.0	False	-67.0	0.0
+19f104611bfbc3cb	m05	-151	-19	133	TypeIC1_IC2	6.1e-14	-18.0	upstream	-84.0	-20.0	True	True	True	0.48872180451127817	True	67.0	-1.0	False	-68.0	0.0
+19f104611bfbc3cb	m08	-155	-23	133	TypeIC1_IC2	3e-11	-22.0	upstream	-88.0	-24.0	True	True	True	0.48872180451127817	True	67.0	-1.0	False	-68.0	0.0
+19f104611bfbc3cb	m09	-149	-18	132	TypeIC1_IC2	9.5e-13	-17.0	upstream	-82.0	-19.0	True	True	True	0.48484848484848486	True	67.0	-1.0	False	-68.0	0.0
+1c6ec0690edafe82	m06	-198	-54	145	TypeIA_IIAI	4.6e-21	-53.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m14	-186	-46	141	TypeIA_IIAI	2e-27	-45.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m19	-206	-44	163	TypeIA_IIAI	2e-27	-43.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m01	-196	-54	143	TypeIA_IIAI	1.1e-25	-53.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m05	-190	-48	143	TypeIA_IIAI	4.5e-27	-47.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m10	-205	-64	142	TypeIA_IIAI	2.1e-19	-63.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m11	-192	-62	131	TypeIA_IIAI	8.9e-23	-61.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m08	-200	-58	143	TypeIA_IIAI	5.4e-27	-57.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m09	-219	-66	154	TypeIA_IIAI	2.9e-29	-65.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m18	-205	-62	144	TypeIA_IIAI	1e-29	-61.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m04	-214	-69	146	TypeIA_IIAI	8.6e-24	-68.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m07	-196	-53	144	TypeIA_IIAI	1.4e-20	-52.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m12	-208	-52	157	TypeIA_IIAI	5.5e-20	-51.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m13	-215	-46	170	TypeIA_IIAI	8.6e-27	-45.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m00	-161	-21	141	TypeIA_IIAI	3.6e-24	-20.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m03	-215	-69	147	TypeIA_IIAI	1.1e-25	-68.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m16	-213	-70	144	TypeIA_IIAI	2.3e-26	-69.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m02	-207	-66	142	TypeIA_IIAI	3.3e-21	-65.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m15	-213	-69	145	TypeIA_IIAI	3e-24	-68.0	upstream			False	True	False		False			False		
+1c6ec0690edafe82	m17	-209	-51	159	TypeIA_IIAI	2.4e-20	-50.0	upstream			False	True	False		False			False		
+1d5778fb61beb2af	m02	-168	-2	167	TypeIB2	1.9e-17	-1.0	overlapping_adjacent_CDS	-115.0	-41.0	True	True	True	0.4491017964071856	True	53.0	-39.0	False	-92.0	0.0
+1d5778fb61beb2af	m01	-160	-2	159	TypeIB2	6e-21	-1.0	overlapping_adjacent_CDS	-116.0	-41.0	True	True	True	0.4779874213836478	True	44.0	-39.0	False	-83.0	0.0
+1d5778fb61beb2af	m00	-188	-3	186	TypeIB2	1.6e-12	-2.0	overlapping_adjacent_CDS	-117.0	-42.0	True	True	True	0.40860215053763443	True	71.0	-39.0	False	-110.0	0.0
+1d5778fb61beb2af	m03	-158	-3	156	TypeIB2	2.7e-20	-2.0	overlapping_adjacent_CDS	-114.0	-42.0	True	True	True	0.46794871794871795	True	44.0	-39.0	False	-83.0	0.0
+1d5778fb61beb2af	m04	-161	-2	160	TypeIB2	1.7e-20	-1.0	overlapping_adjacent_CDS	-117.0	-42.0	True	True	True	0.475	True	44.0	-40.0	False	-84.0	0.0
+1d5778fb61beb2af	m07	-157	-3	155	TypeIB2	1.3e-15	-2.0	overlapping_adjacent_CDS	-116.0	-41.0	True	True	True	0.49032258064516127	True	41.0	-38.0	False	-79.0	0.0
+1d5778fb61beb2af	m06	-162	-2	161	TypeIB2	2.5e-18	-1.0	overlapping_adjacent_CDS	-117.0	-41.0	True	True	True	0.4782608695652174	True	45.0	-39.0	False	-84.0	0.0
+1d5778fb61beb2af	m05	-146	13	160	TypeIB2	2.3e-21	0.0	overlaps_RT_start	-102.0	-26.0	True	True	True	0.48125	True	44.0	-39.0	False	-83.0	0.0
+1f69a766a0ac3c62	m01	-191	-52	140	TypeIA_IIAI	5.4e-17	-51.0	upstream	-163.0	-84.0	True	True	True	0.5714285714285714	True	28.0	-32.0	False	-60.0	0.17298578199052134
+1f69a766a0ac3c62	m06	-206	-50	157	TypeIA_IIAI	4.7e-21	-49.0	upstream	-178.0	-98.0	True	True	True	0.5159235668789809	True	28.0	-48.0	False	-76.0	0.1876484560570071
+1f69a766a0ac3c62	m14	-194	-50	145	TypeIA_IIAI	1.8e-19	-49.0	upstream	-166.0	-82.0	True	True	True	0.5862068965517241	True	28.0	-32.0	False	-60.0	0.18465227817745802
+1f69a766a0ac3c62	m02	-187	-49	139	TypeIA_IIAI	8.4e-19	-48.0	upstream	-159.0	-79.0	True	True	True	0.5827338129496403	True	28.0	-30.0	False	-58.0	0.17339667458432304
+1f69a766a0ac3c62	m05	-212	-54	159	TypeIA_IIAI	8.6e-20	-53.0	upstream	-182.0	-102.0	True	True	True	0.5094339622641509	True	30.0	-48.0	False	-78.0	0.19239904988123516
+1f69a766a0ac3c62	m07	-211	-53	159	TypeIA_IIAI	3.1e-21	-52.0	upstream	-181.0	-101.0	True	True	True	0.5094339622641509	True	30.0	-48.0	False	-78.0	0.19239904988123516
+1f69a766a0ac3c62	m12	-204	-54	151	TypeIA_IIAI	8e-16	-53.0	upstream	-176.0	-86.0	True	True	True	0.6026490066225165	True	28.0	-32.0	False	-60.0	0.19708029197080293
+1f69a766a0ac3c62	m13	-194	-50	145	TypeIA_IIAI	1.8e-19	-49.0	upstream			True	True	False		False			False		
+1f69a766a0ac3c62	m08	-190	-51	140	TypeIA_IIAI	3.5e-18	-50.0	upstream	-162.0	-83.0	True	True	True	0.5714285714285714	True	28.0	-32.0	False	-60.0	0.17298578199052134
+1f69a766a0ac3c62	m09	-196	-52	145	TypeIA_IIAI	1.3e-19	-51.0	upstream	-168.0	-84.0	True	True	True	0.5862068965517241	True	28.0	-32.0	False	-60.0	0.18465227817745802
+1f69a766a0ac3c62	m04	-195	-51	145	TypeIA_IIAI	4.3e-20	-50.0	upstream	-167.0	-83.0	True	True	True	0.5862068965517241	True	28.0	-32.0	False	-60.0	0.18465227817745802
+1f69a766a0ac3c62	m10	-194	-53	142	TypeIA_IIAI	2.4e-20	-52.0	upstream	-166.0	-85.0	True	True	True	0.5774647887323944	True	28.0	-32.0	False	-60.0	0.17857142857142858
+1f69a766a0ac3c62	m11	-200	-49	152	TypeIA_IIAI	3.9e-21	-48.0	upstream	-172.0	-91.0	True	True	True	0.5394736842105263	True	28.0	-42.0	False	-70.0	0.1880952380952381
+1f69a766a0ac3c62	m00	-190	-51	140	TypeIA_IIAI	6e-18	-50.0	upstream	-162.0	-83.0	True	True	True	0.5714285714285714	True	28.0	-32.0	False	-60.0	0.17298578199052134
+1f69a766a0ac3c62	m03	-194	-50	145	TypeIA_IIAI	1.9e-19	-49.0	upstream	-166.0	-82.0	True	True	True	0.5862068965517241	True	28.0	-32.0	False	-60.0	0.18465227817745802
+2046942939648498	m00	-155	-15	141	TypeIC1_IC2	0.0048	-14.0	upstream	-147.0	-90.0	True	True	True	0.41134751773049644	True	8.0	-75.0	False	-83.0	0.0
+2046942939648498	m03	-146	-16	131	TypeIC1_IC2	7.7e-08	-15.0	upstream	-138.0	-81.0	True	True	True	0.44274809160305345	True	8.0	-65.0	False	-73.0	0.0
+2046942939648498	m04	-147	-15	133	TypeIC1_IC2	3e-05	-14.0	upstream	-139.0	-82.0	True	True	True	0.43609022556390975	True	8.0	-67.0	False	-75.0	0.0
+2046942939648498	m05	-148	-15	134	TypeIC1_IC2	1.9e-05	-14.0	upstream	-140.0	-83.0	True	True	True	0.43283582089552236	True	8.0	-68.0	False	-76.0	0.0
+2046942939648498	m01	-149	-14	136	TypeIC1_IC2	9.3e-08	-13.0	upstream	-141.0	-83.0	True	True	True	0.4338235294117647	True	8.0	-69.0	False	-77.0	0.0
+2046942939648498	m02	-149	-17	133	TypeIC1_IC2	0.00012	-16.0	upstream	-141.0	-85.0	True	True	True	0.42857142857142855	True	8.0	-68.0	False	-76.0	0.0
+24c1a8882e1032d4	m07	1168	1421	254	TypeIIIA3	2e-64	0.0	other_uncertain			True	False	False		False			False		
+24c1a8882e1032d4	m05	1165	1418	254	TypeIIIA3	8.3e-77	0.0	other_uncertain	12.0	73.0	True	False	True	0.0	False	-1153.0	-1345.0	False	-192.0	0.0
+24c1a8882e1032d4	m01	1165	1418	254	TypeIIIA3	1e-71	0.0	other_uncertain	12.0	73.0	True	False	True	0.0	False	-1153.0	-1345.0	False	-192.0	0.0
+24c1a8882e1032d4	m06	1171	1424	254	TypeIIIA3	3.8e-60	0.0	other_uncertain			True	False	False		False			False		
+24c1a8882e1032d4	m04	1171	1424	254	TypeIIIA3	5.9e-71	0.0	other_uncertain			True	False	False		False			False		
+24c1a8882e1032d4	m02	1172	1424	253	TypeIIIA3	1.3e-71	0.0	other_uncertain			True	False	False		False			False		
+24c1a8882e1032d4	m00	1162	1415	254	TypeIIIA3	7.4e-74	0.0	other_uncertain	34.0	99.0	True	False	True	0.0	False	-1128.0	-1316.0	False	-188.0	0.0
+24c1a8882e1032d4	m03	1165	1418	254	TypeIIIA3	1e-72	0.0	other_uncertain	12.0	73.0	True	False	True	0.0	False	-1153.0	-1345.0	False	-192.0	0.0
+252d3ea9cf1c984b	m08	-233	-96	138	TypeIIIA1	0.0011	-95.0	upstream	-161.0	-85.0	True	True	True	0.4429530201342282	True	72.0	11.0	False	-61.0	0.16941176470588235
+252d3ea9cf1c984b	m09	-296	-136	161	TypeIIIA1	8.9e-05	-135.0	overlapping_adjacent_CDS	-198.0	-134.0	True	True	True	0.38650306748466257	True	98.0	2.0	False	-96.0	0.0
+252d3ea9cf1c984b	m18	-244	-106	139	TypeIIIA1	0.0058	-105.0	upstream	-171.0	-98.0	True	True	True	0.4489795918367347	True	73.0	8.0	False	-65.0	0.16822429906542055
+252d3ea9cf1c984b	m07	-234	-92	143	TypeIIIA1	0.0015	-91.0	upstream	-157.0	-81.0	True	True	True	0.42857142857142855	True	77.0	11.0	False	-66.0	0.17176470588235293
+252d3ea9cf1c984b	m12	-190	-45	146	TypeIIA3_proteo	0.0084	-44.0	upstream			True	True	False		False			False		
+252d3ea9cf1c984b	m13	-236	-99	138	TypeIIIA1	4.6e-05	-98.0	overlapping_adjacent_CDS			True	True	False		False			False		
+252d3ea9cf1c984b	m05	-227	-90	138	Ec107_like	0.00021	-89.0	upstream	-151.0	-86.0	True	True	True	0.43661971830985913	True	76.0	4.0	False	-72.0	0.0
+252d3ea9cf1c984b	m01	-239	-104	136	TypeIIIA1	5.5e-06	-103.0	upstream	-169.0	-96.0	True	True	True	0.4583333333333333	True	70.0	8.0	False	-62.0	0.1658878504672897
+252d3ea9cf1c984b	m17	-254	-121	134	TypeIIIA1	7.5e-06	-120.0	upstream	-185.0	-111.0	True	True	True	0.4513888888888889	True	69.0	10.0	False	-59.0	0.16393442622950818
+252d3ea9cf1c984b	m06	-250	-104	147	TypeIIIA1	0.00036	-103.0	upstream	-172.0	-103.0	True	True	True	0.46621621621621623	True	78.0	1.0	False	-77.0	0.0
+252d3ea9cf1c984b	m14	-264	-131	134	TypeIIIA1	1.2e-09	-130.0	upstream			True	True	False		False			False		
+252d3ea9cf1c984b	m04	-238	-104	135	TypeIIIA1	9.1e-05	-103.0	upstream	-163.0	-92.0	True	True	True	0.40816326530612246	True	75.0	12.0	False	-63.0	0.16279069767441862
+252d3ea9cf1c984b	m19	-212	-80	133	TypeIIIA1	0.00055	-79.0	upstream	-139.0	-65.0	True	True	True	0.40540540540540543	True	73.0	15.0	False	-58.0	0.16159250585480095
+252d3ea9cf1c984b	m16	-175	-49	127	TypeIIIA1	0.00058	-48.0	upstream	-108.0	-35.0	True	True	True	0.425531914893617	True	67.0	14.0	False	-53.0	0.1588785046728972
+252d3ea9cf1c984b	m02	-271	-129	143	TypeIIIA1	0.005	-128.0	upstream			True	True	False		False			False		
+252d3ea9cf1c984b	m15	-270	-107	164	TypeIIIA1	0.0008	-106.0	overlapping_adjacent_CDS	-167.0	-94.0	True	True	True	0.3446327683615819	True	103.0	13.0	False	-90.0	0.0
+252d3ea9cf1c984b	m00	-263	-121	143	TypeIIIA1	0.001	-120.0	upstream	-185.0	-111.0	True	True	True	0.42483660130718953	True	78.0	10.0	False	-68.0	0.17096018735362997
+252d3ea9cf1c984b	m03	-229	-91	139	TypeIIIA1	0.0016	-90.0	upstream	-156.0	-80.0	True	True	True	0.44	True	73.0	11.0	False	-62.0	0.17176470588235293
+252d3ea9cf1c984b	m10	-210	-80	131	TypeIIIA1	3.8e-06	-79.0	upstream			True	True	False		False			False		
+252d3ea9cf1c984b	m11	-215	-72	144	TypeIIIA1	9.7e-05	-71.0	upstream	-137.0	-64.0	True	True	True	0.4342105263157895	True	78.0	8.0	False	-70.0	0.1705607476635514
+290c9fea04d686e3	m10	-191	-48	144	TypeIA_IIAI	1.9e-26	-47.0	upstream	-122.0	-41.0	True	True	True	0.4966887417218543	True	69.0	7.0	False	-62.0	0.17857142857142858
+290c9fea04d686e3	m11	-191	-47	145	TypeIA_IIAI	1.1e-29	-46.0	upstream	-121.0	-40.0	True	True	True	0.4934210526315789	True	70.0	7.0	False	-63.0	0.18095238095238095
+290c9fea04d686e3	m02	-190	-46	145	TypeIA_IIAI	1.4e-28	-45.0	upstream	-120.0	-39.0	True	True	True	0.4934210526315789	True	70.0	7.0	False	-63.0	0.18095238095238095
+290c9fea04d686e3	m00	-186	-43	144	TypeIA_IIAI	1.1e-30	-42.0	upstream	-117.0	-36.0	True	True	True	0.4966887417218543	True	69.0	7.0	False	-62.0	0.17857142857142858
+290c9fea04d686e3	m03	-192	-48	145	TypeIA_IIAI	7.6e-26	-47.0	upstream	-122.0	-41.0	True	True	True	0.4934210526315789	True	70.0	7.0	False	-63.0	0.18095238095238095
+290c9fea04d686e3	m06	-212	-51	162	TypeIA_IIAI	1.9e-27	-50.0	upstream	-143.0	-44.0	True	True	True	0.5502958579881657	True	69.0	7.0	False	-62.0	0.21641791044776118
+290c9fea04d686e3	m07	-188	-50	139	TypeIA_IIAI	4.6e-27	-49.0	upstream	-119.0	-42.0	True	True	True	0.47619047619047616	True	69.0	8.0	False	-61.0	0.16981132075471697
+290c9fea04d686e3	m12	-192	-48	145	TypeIA_IIAI	3.5e-29	-47.0	upstream	-122.0	-41.0	True	True	True	0.4934210526315789	True	70.0	7.0	False	-63.0	0.18095238095238095
+290c9fea04d686e3	m04	-189	-45	145	TypeIA_IIAI	1.6e-31	-44.0	upstream	-119.0	-38.0	True	True	True	0.4934210526315789	True	70.0	7.0	False	-63.0	0.18095238095238095
+290c9fea04d686e3	m08	-191	-47	145	TypeIA_IIAI	1.3e-28	-46.0	upstream	-121.0	-40.0	True	True	True	0.4934210526315789	True	70.0	7.0	False	-63.0	0.18095238095238095
+290c9fea04d686e3	m09	-188	-45	144	TypeIA_IIAI	5.1e-28	-44.0	upstream	-119.0	-38.0	True	True	True	0.4966887417218543	True	69.0	7.0	False	-62.0	0.17857142857142858
+290c9fea04d686e3	m05	-190	-46	145	TypeIA_IIAI	1.3e-29	-45.0	upstream	-120.0	-39.0	True	True	True	0.4934210526315789	True	70.0	7.0	False	-63.0	0.18095238095238095
+290c9fea04d686e3	m01	-192	-48	145	TypeIA_IIAI	1.7e-28	-47.0	upstream	-122.0	-41.0	True	True	True	0.4934210526315789	True	70.0	7.0	False	-63.0	0.18095238095238095
+3124a83eed341d73	m06	-154	-20	135	TypeIC1_IC2	7.5e-11	-19.0	upstream	-146.0	-89.0	True	True	True	0.42962962962962964	True	8.0	-69.0	False	-77.0	0.0
+3124a83eed341d73	m14	-152	-18	135	TypeIC1_IC2	7.4e-10	-17.0	upstream	-144.0	-87.0	True	True	True	0.42962962962962964	True	8.0	-69.0	False	-77.0	0.0
+3124a83eed341d73	m19	-145	-19	127	TypeIC1_IC2	6.4e-09	-18.0	upstream	-137.0	-81.0	True	True	True	0.44881889763779526	True	8.0	-62.0	False	-70.0	0.0
+3124a83eed341d73	m01	-153	-20	134	TypeIC1_IC2	1.4e-10	-19.0	upstream			True	True	False		False			False		
+3124a83eed341d73	m05	-156	-27	130	TypeIC1_IC2	1.5e-09	-26.0	upstream	-148.0	-91.0	True	True	True	0.4461538461538462	True	8.0	-64.0	False	-72.0	0.0
+3124a83eed341d73	m10	-210	-84	127	TypeIC1_IC2	1.2e-10	-83.0	upstream	-202.0	-145.0	True	True	True	0.4566929133858268	True	8.0	-61.0	False	-69.0	0.0
+3124a83eed341d73	m11	-145	-19	127	TypeIC1_IC2	1.2e-08	-18.0	upstream	-137.0	-81.0	True	True	True	0.44881889763779526	True	8.0	-62.0	False	-70.0	0.0
+3124a83eed341d73	m08	-146	-21	126	TypeIC1_IC2	1.6e-08	-20.0	upstream	-138.0	-80.0	True	True	True	0.46825396825396826	True	8.0	-59.0	False	-67.0	0.0
+3124a83eed341d73	m09	-152	-27	126	TypeIC1_IC2	7.8e-11	-26.0	upstream	-144.0	-87.0	True	True	True	0.4603174603174603	True	8.0	-60.0	False	-68.0	0.0
+3124a83eed341d73	m18	-188	-62	127	TypeIC1_IC2	8e-10	-61.0	upstream	-180.0	-122.0	True	True	True	0.4645669291338583	True	8.0	-60.0	False	-68.0	0.0
+3124a83eed341d73	m04	-155	-19	137	TypeIC1_IC2	2.3e-08	-18.0	upstream	-147.0	-90.0	True	True	True	0.4233576642335766	True	8.0	-71.0	False	-79.0	0.0
+3124a83eed341d73	m07	-155	-29	127	TypeIC1_IC2	1.7e-09	-28.0	upstream	-147.0	-90.0	True	True	True	0.4566929133858268	True	8.0	-61.0	False	-69.0	0.0
+3124a83eed341d73	m12	-149	-21	129	TypeIC1_IC2	8.2e-10	-20.0	upstream	-141.0	-84.0	True	True	True	0.4496124031007752	True	8.0	-63.0	False	-71.0	0.0
+3124a83eed341d73	m13	-151	-28	124	TypeIC1_IC2	5.8e-11	-27.0	upstream	-143.0	-86.0	True	True	True	0.46774193548387094	True	8.0	-58.0	False	-66.0	0.0
+3124a83eed341d73	m00	-334	-200	135	TypeIC1_IC2	7.7e-10	-199.0	upstream	-326.0	-269.0	True	True	True	0.42962962962962964	True	8.0	-69.0	False	-77.0	0.0
+3124a83eed341d73	m03	-154	-30	125	TypeIC1_IC2	2.1e-10	-29.0	upstream	-146.0	-88.0	True	True	True	0.472	True	8.0	-58.0	False	-66.0	0.0
+3124a83eed341d73	m16	-149	-22	128	TypeIC1_IC2	2.4e-08	-21.0	upstream	-141.0	-83.0	True	True	True	0.4609375	True	8.0	-61.0	False	-69.0	0.0
+3124a83eed341d73	m02	-153	-19	135	TypeIC1_IC2	1.3e-09	-18.0	upstream			True	True	False		False			False		
+3124a83eed341d73	m15	-146	-24	123	TypeIC1_IC2	3.1e-10	-23.0	upstream	-138.0	-81.0	True	True	True	0.4715447154471545	True	8.0	-57.0	False	-65.0	0.0
+3124a83eed341d73	m17	-151	-25	127	TypeIC1_IC2	2.8e-08	-24.0	upstream	-143.0	-86.0	True	True	True	0.4566929133858268	True	8.0	-61.0	False	-69.0	0.0
+318981fcc560bcd4	m08	-236	-26	211	TypeIIIA2	2.2e-21	-25.0	upstream	-195.0	-139.0	True	True	True	0.27014218009478674	True	41.0	-113.0	False	-154.0	0.0
+318981fcc560bcd4	m09	-229	-25	205	TypeIIIA2	1.9e-39	-24.0	upstream	-190.0	-140.0	True	True	True	0.24878048780487805	True	39.0	-115.0	False	-154.0	0.0
+318981fcc560bcd4	m18	-225	-15	211	TypeIIIA2	1.7e-45	-14.0	upstream	-186.0	-124.0	True	True	True	0.2985781990521327	True	39.0	-109.0	False	-148.0	0.0
+318981fcc560bcd4	m05	-237	-19	219	TypeIIIA2	2.9e-36	-18.0	upstream	-196.0	-137.0	True	True	True	0.273972602739726	True	41.0	-118.0	False	-159.0	0.0
+318981fcc560bcd4	m07	-243	-27	217	TypeIIIA2	1.3e-45	-26.0	upstream	-204.0	-143.0	True	True	True	0.2857142857142857	True	39.0	-116.0	False	-155.0	0.0
+318981fcc560bcd4	m12	-264	-21	244	TypeIIIA2	5.2e-23	-20.0	upstream	-223.0	-166.0	True	True	True	0.23770491803278687	True	41.0	-145.0	False	-186.0	0.0
+318981fcc560bcd4	m13	-235	-6	230	TypeIIIA2	3.9e-43	-5.0	upstream	-196.0	-132.0	True	True	True	0.2826086956521739	True	39.0	-126.0	False	-165.0	0.0
+318981fcc560bcd4	m19	-223	-10	214	TypeIIIA2	3.4e-48	-9.0	upstream	-184.0	-122.0	True	True	True	0.29439252336448596	True	39.0	-112.0	False	-151.0	0.0
+318981fcc560bcd4	m00	-230	-23	208	TypeIIIA2	1.5e-22	-22.0	upstream	-186.0	-137.0	True	True	True	0.2403846153846154	True	44.0	-114.0	False	-158.0	0.0
+318981fcc560bcd4	m03	-249	-29	221	TypeIIIA2	1.9e-35	-28.0	upstream	-210.0	-148.0	True	True	True	0.2850678733031674	True	39.0	-119.0	False	-158.0	0.0
+318981fcc560bcd4	m06	-235	-15	221	TypeIIIA2	1.9e-25	-14.0	overlapping_adjacent_CDS	-191.0	-129.0	True	True	True	0.2850678733031674	True	44.0	-114.0	False	-158.0	0.0
+318981fcc560bcd4	m14	-222	-4	219	TypeIIIA2	7.5e-46	-3.0	upstream	-183.0	-120.0	True	True	True	0.2922374429223744	True	39.0	-116.0	False	-155.0	0.0
+318981fcc560bcd4	m02	-236	-8	229	TypeIIIA2	1.4e-41	-7.0	upstream			True	True	False		False			False		
+318981fcc560bcd4	m15	-223	-7	217	TypeIIIA2	5.9e-38	-6.0	upstream	-182.0	-127.0	True	True	True	0.25806451612903225	True	41.0	-120.0	False	-161.0	0.0
+318981fcc560bcd4	m01	-239	-7	233	TypeIIIA2	3e-41	-6.0	upstream	-199.0	-133.0	True	True	True	0.2875536480686695	True	40.0	-126.0	False	-166.0	0.0
+318981fcc560bcd4	m10	-228	-17	212	TypeIIIA2	1.4e-48	-16.0	overlapping_adjacent_CDS	-189.0	-129.0	True	True	True	0.28773584905660377	True	39.0	-112.0	False	-151.0	0.0
+318981fcc560bcd4	m11	-233	-4	230	TypeIIIA2	1.7e-42	-3.0	upstream	-194.0	-130.0	True	True	True	0.2826086956521739	True	39.0	-126.0	False	-165.0	0.0
+318981fcc560bcd4	m17	-221	-10	212	TypeIIIA2	1.2e-46	-9.0	upstream	-182.0	-120.0	True	True	True	0.2971698113207547	True	39.0	-110.0	False	-149.0	0.0
+318981fcc560bcd4	m04	-243	-26	218	TypeIIIA2	2e-41	-25.0	upstream	-198.0	-143.0	True	True	True	0.25688073394495414	True	45.0	-117.0	False	-162.0	0.0
+318981fcc560bcd4	m16	-217	-29	189	TypeIIIA2	1.6e-36	-28.0	upstream	-178.0	-108.0	True	True	True	0.37566137566137564	True	39.0	-79.0	False	-118.0	0.0
+318e3e73c910f004	m05	-116	-24	93	TypeIV	2.1e-12	-23.0	upstream	-126.0	-53.0	True	True	True	0.6213592233009708	True	-10.0	-29.0	False	-19.0	0.1308411214953271
+318e3e73c910f004	m00	-123	-30	94	TypeIV	3.4e-08	-29.0	upstream	-133.0	-60.0	True	True	True	0.6153846153846154	True	-10.0	-30.0	False	-20.0	0.13317757009345793
+318e3e73c910f004	m03	-114	-22	93	TypeIV	1.7e-14	-21.0	upstream	-124.0	-51.0	True	True	True	0.6213592233009708	True	-10.0	-29.0	False	-19.0	0.1308411214953271
+318e3e73c910f004	m06	-114	-22	93	TypeIV	1.3e-15	-21.0	upstream	-124.0	-51.0	True	True	True	0.6213592233009708	True	-10.0	-29.0	False	-19.0	0.1308411214953271
+318e3e73c910f004	m02	-113	-22	92	TypeIV	9e-13	-21.0	upstream	-123.0	-51.0	True	True	True	0.6176470588235294	True	-10.0	-29.0	False	-19.0	0.13053613053613053
+318e3e73c910f004	m01	-127	-31	97	TypeIV	0.00044	-30.0	upstream	-137.0	-61.0	True	True	True	0.6261682242990654	True	-10.0	-30.0	False	-20.0	0.1388235294117647
+318e3e73c910f004	m04	-115	-23	93	TypeIV	1.8e-13	-22.0	upstream	-125.0	-52.0	True	True	True	0.6213592233009708	True	-10.0	-29.0	False	-19.0	0.1308411214953271
+34eef4ff57673988	m06	-145	-15	131	TypeIC1_IC2	2.7e-08	-14.0	overlapping_adjacent_CDS	-143.0	-78.0	True	True	True	0.5038167938931297	True	2.0	-63.0	False	-65.0	0.15137614678899083
+34eef4ff57673988	m01	-147	-17	131	TypeIC1_IC2	2.3e-08	-16.0	upstream	-145.0	-81.0	True	True	True	0.4961832061068702	True	2.0	-64.0	False	-66.0	0.0
+34eef4ff57673988	m07	-144	-15	130	TypeIC1_IC2	2.2e-08	-14.0	upstream	-142.0	-78.0	True	True	True	0.5	True	2.0	-63.0	False	-65.0	0.15102974828375287
+34eef4ff57673988	m08	-147	-10	138	TypeIC1_IC2	1.3e-07	-9.0	upstream	-145.0	-81.0	True	True	True	0.47101449275362317	True	2.0	-71.0	False	-73.0	0.0
+34eef4ff57673988	m09	-180	-48	133	TypeIC1_IC2	2.9e-05	-47.0	overlapping_adjacent_CDS	-178.0	-114.0	True	True	True	0.48872180451127817	True	2.0	-66.0	False	-68.0	0.0
+34eef4ff57673988	m02	-142	-12	131	TypeIC1_IC2	3.4e-07	-11.0	upstream	-140.0	-75.0	True	True	True	0.5038167938931297	True	2.0	-63.0	False	-65.0	0.15137614678899083
+34eef4ff57673988	m00	-281	-150	132	TypeIC1_IC2	1.9e-05	-149.0	upstream	-279.0	-215.0	True	True	True	0.49242424242424243	True	2.0	-65.0	False	-67.0	0.0
+34eef4ff57673988	m03	-141	-12	130	TypeIC1_IC2	3.5e-07	-11.0	upstream	-139.0	-74.0	True	True	True	0.5076923076923077	True	2.0	-62.0	False	-64.0	0.14908256880733944
+34eef4ff57673988	m05	-143	-15	129	TypeIC1_IC2	6.4e-06	-14.0	upstream	-141.0	-77.0	True	True	True	0.5038759689922481	True	2.0	-62.0	False	-64.0	0.14874141876430205
+34eef4ff57673988	m04	-144	-13	132	TypeIC1_IC2	4.8e-07	-12.0	upstream	-142.0	-78.0	True	True	True	0.49242424242424243	True	2.0	-65.0	False	-67.0	0.0
+35e8a719e7fd949b	m07	-306	17	324	TypeIIIA3	3.7e-08	0.0	overlaps_RT_start	-109.0	-20.0	True	True	True	0.2777777777777778	True	197.0	-37.0	False	-234.0	0.0
+35e8a719e7fd949b	m05	-261	20	282	TypeIIIA3	2.4e-10	0.0	overlaps_RT_start	-94.0	-17.0	True	True	True	0.2765957446808511	True	167.0	-37.0	False	-204.0	0.0
+35e8a719e7fd949b	m08	-287	20	308	TypeIIIA3	1.1e-07	0.0	overlaps_RT_start	-106.0	-17.0	True	True	True	0.2922077922077922	True	181.0	-37.0	False	-218.0	0.0
+35e8a719e7fd949b	m09	-294	20	315	TypeIIIA3	3e-10	0.0	overlaps_RT_start	-107.0	-17.0	True	True	True	0.28888888888888886	True	187.0	-37.0	False	-224.0	0.0
+35e8a719e7fd949b	m06	-276	20	297	TypeIIIA3	2.1e-07	0.0	overlaps_RT_start	-104.0	-17.0	True	True	True	0.2962962962962963	True	172.0	-37.0	False	-209.0	0.0
+35e8a719e7fd949b	m00	-291	20	312	TypeIIIA3	1.1e-08	0.0	overlaps_RT_start	-106.0	-17.0	True	True	True	0.28846153846153844	True	185.0	-37.0	False	-222.0	0.0
+35e8a719e7fd949b	m03	-291	20	312	TypeIIIA3	1.9e-07	0.0	overlaps_RT_start	-106.0	-17.0	True	True	True	0.28846153846153844	True	185.0	-37.0	False	-222.0	0.0
+35e8a719e7fd949b	m01	-293	17	311	TypeIIIA3	9e-07	0.0	overlaps_RT_start	-109.0	-20.0	True	True	True	0.28938906752411575	True	184.0	-37.0	False	-221.0	0.0
+35e8a719e7fd949b	m04	-272	20	293	TypeIIIA3	2.5e-09	0.0	overlaps_RT_start	-108.0	-17.0	True	True	True	0.31399317406143346	True	164.0	-37.0	False	-201.0	0.0
+35e8a719e7fd949b	m02	-295	20	316	TypeIIIA3	2.4e-07	0.0	overlaps_RT_start	-106.0	-17.0	True	True	True	0.2848101265822785	True	189.0	-37.0	False	-226.0	0.0
+39ec37829c055842	m08	-186	-23	164	TypeIIA3_proteo	1.3e-05	-22.0	overlapping_adjacent_CDS	-174.0	-115.0	True	True	True	0.36585365853658536	True	12.0	-92.0	False	-104.0	0.0
+39ec37829c055842	m07	-166	-29	138	TypeIIA3_proteo	1.6e-05	-28.0	overlapping_adjacent_CDS	-159.0	-112.0	True	True	True	0.34782608695652173	True	7.0	-83.0	False	-90.0	0.0
+39ec37829c055842	m05	-193	-53	141	TypeIIA3_proteo	3.6e-06	-52.0	overlapping_adjacent_CDS	-189.0	-142.0	True	True	True	0.3404255319148936	True	4.0	-89.0	False	-93.0	0.0
+39ec37829c055842	m01	-198	-43	156	TypeIIA3_firmi	4.1e-06	-42.0	overlapping_adjacent_CDS	-185.0	-125.0	True	True	True	0.391025641025641	True	13.0	-82.0	False	-95.0	0.0
+39ec37829c055842	m06	-189	-28	162	TypeIIA3_proteo	3.6e-05	-27.0	overlapping_adjacent_CDS	-177.0	-119.0	True	True	True	0.36419753086419754	True	12.0	-91.0	False	-103.0	0.0
+39ec37829c055842	m04	-199	-42	158	TypeIIA3_firmi	1.2e-09	-41.0	overlapping_adjacent_CDS	-199.0	-139.0	True	True	True	0.3860759493670886	True	0.0	-97.0	False	-97.0	0.0
+39ec37829c055842	m02	-178	-38	141	TypeIIA3_proteo	6.2e-10	-37.0	upstream	-187.0	-124.0	True	True	True	0.36666666666666664	True	-9.0	-86.0	False	-77.0	0.0
+39ec37829c055842	m00	-190	-63	128	TypeIIA3_proteo	9.8e-05	-62.0	upstream	-200.0	-138.0	True	True	True	0.38405797101449274	True	-10.0	-75.0	False	-65.0	0.0
+39ec37829c055842	m03	-209	-71	139	TypeIIA3_proteo	0.00019	-70.0	overlapping_adjacent_CDS	-218.0	-150.0	True	True	True	0.40540540540540543	True	-9.0	-79.0	False	-70.0	0.0
+3a9af2485aac89b1	m05	-160	-4	157	TypeIB2	8e-14	-3.0	overlapping_adjacent_CDS	-84.0	-32.0	True	True	True	0.3375796178343949	True	76.0	-28.0	False	-104.0	0.0
+3a9af2485aac89b1	m01	-160	-4	157	TypeIB2	5.3e-16	-3.0	overlapping_adjacent_CDS	-84.0	-32.0	True	True	True	0.3375796178343949	True	76.0	-28.0	False	-104.0	0.0
+3a9af2485aac89b1	m06	-160	-4	157	TypeIB2	6.5e-16	-3.0	overlapping_adjacent_CDS	-84.0	-32.0	True	True	True	0.3375796178343949	True	76.0	-28.0	False	-104.0	0.0
+3a9af2485aac89b1	m04	-160	-4	157	TypeIB2	5e-15	-3.0	overlapping_adjacent_CDS	-84.0	-32.0	True	True	True	0.3375796178343949	True	76.0	-28.0	False	-104.0	0.0
+3a9af2485aac89b1	m02	-161	-5	157	TypeIB2	1.1e-16	-4.0	overlapping_adjacent_CDS	-85.0	-33.0	True	True	True	0.3375796178343949	True	76.0	-28.0	False	-104.0	0.0
+3a9af2485aac89b1	m00	-160	-4	157	TypeIB2	1.2e-16	-3.0	overlapping_adjacent_CDS	-84.0	-32.0	True	True	True	0.3375796178343949	True	76.0	-28.0	False	-104.0	0.0
+3a9af2485aac89b1	m03	-160	-4	157	TypeIB2	6.5e-14	-3.0	overlapping_adjacent_CDS	-83.0	-32.0	True	True	True	0.33121019108280253	True	77.0	-28.0	False	-105.0	0.0
+450a398b75fe3508	m02	-234	-53	182	TypeIA_IIAI	4.5e-25	-52.0	upstream	-199.0	-109.0	True	True	True	0.5	True	35.0	-56.0	False	-91.0	0.22384428223844283
+450a398b75fe3508	m01	-229	-52	178	TypeIA_IIAI	9.1e-28	-51.0	upstream	-196.0	-108.0	True	True	True	0.5	True	33.0	-56.0	False	-89.0	0.2179176755447942
+450a398b75fe3508	m00	-223	-56	168	TypeIA_IIAI	8.3e-28	-55.0	upstream			True	True	False		False			False		
+450a398b75fe3508	m03	-197	-19	179	TypeIA_IIAI	5.3e-27	-18.0	upstream	-163.0	-75.0	True	True	True	0.4972067039106145	True	34.0	-56.0	False	-90.0	0.0
+450a398b75fe3508	m04	-231	-53	179	TypeIA_IIAI	2.5e-28	-52.0	upstream	-197.0	-109.0	True	True	True	0.4972067039106145	True	34.0	-56.0	False	-90.0	0.0
+450a398b75fe3508	m07	-229	-53	177	TypeIA_IIAI	1.3e-26	-52.0	upstream	-195.0	-108.0	True	True	True	0.4971751412429379	True	34.0	-55.0	False	-89.0	0.0
+450a398b75fe3508	m06	-223	-56	168	TypeIA_IIAI	1.3e-27	-55.0	upstream	-190.0	-110.0	True	True	True	0.48214285714285715	True	33.0	-54.0	False	-87.0	0.0
+450a398b75fe3508	m05	-223	-56	168	TypeIA_IIAI	8.3e-28	-55.0	upstream	-190.0	-110.0	True	True	True	0.48214285714285715	True	33.0	-54.0	False	-87.0	0.0
+485feefcab1b21e8	m02	-188	-2	187	TypeIB2	2.6e-20	-1.0	overlapping_adjacent_CDS	-81.0	13.0	True	True	True	0.39603960396039606	True	107.0	15.0	False	-92.0	0.2334152334152334
+485feefcab1b21e8	m01	-186	-2	185	TypeIB2	1.3e-19	-1.0	overlapping_adjacent_CDS	-81.0	13.0	True	True	True	0.4	True	105.0	15.0	False	-90.0	0.2285012285012285
+485feefcab1b21e8	m00	-179	-2	178	TypeIB2	2.5e-22	-1.0	overlapping_adjacent_CDS	-81.0	13.0	True	True	True	0.41450777202072536	True	98.0	15.0	False	-83.0	0.22604422604422605
+485feefcab1b21e8	m03	-183	-2	182	TypeIB2	4.9e-17	-1.0	overlapping_adjacent_CDS	-81.0	13.0	True	True	True	0.40609137055837563	True	102.0	15.0	False	-87.0	0.22604422604422605
+485feefcab1b21e8	m04	-189	-2	188	TypeIB2	3.3e-19	-1.0	overlapping_adjacent_CDS	-81.0	13.0	True	True	True	0.39408866995073893	True	108.0	15.0	False	-93.0	0.23095823095823095
+485feefcab1b21e8	m06	-177	-2	176	TypeIB2	1.5e-18	-1.0	overlapping_adjacent_CDS	-80.0	13.0	True	True	True	0.41361256544502617	True	97.0	15.0	False	-82.0	0.22303921568627452
+485feefcab1b21e8	m05	-172	-2	171	TypeIB2	6.5e-16	-1.0	overlapping_adjacent_CDS	-80.0	13.0	True	True	True	0.42473118279569894	True	92.0	15.0	False	-77.0	0.21568627450980393
+4d567d6d6e3c04c7	m05	-337	-144	194	TypeV	1.2e-09	-143.0	overlapping_adjacent_CDS	-372.0	-323.0	True	True	True	0.06550218340611354	True	-35.0	-179.0	False	-144.0	0.0
+4d567d6d6e3c04c7	m07	-301	-120	182	TypeV	5.3e-15	-119.0	overlapping_adjacent_CDS	-334.0	-278.0	True	True	True	0.11162790697674418	True	-33.0	-158.0	False	-125.0	0.0
+4d567d6d6e3c04c7	m12	-311	-134	178	TypeV	2.2e-08	-133.0	overlapping_adjacent_CDS	-344.0	-287.0	True	True	True	0.11848341232227488	True	-33.0	-153.0	False	-120.0	0.0
+4d567d6d6e3c04c7	m13	-323	-137	187	TypeV	7.2e-15	-136.0	overlapping_adjacent_CDS	-354.0	-300.0	True	True	True	0.11009174311926606	True	-31.0	-163.0	False	-132.0	0.0
+4d567d6d6e3c04c7	m08	-309	-130	180	TypeV	1.3e-11	-129.0	overlapping_adjacent_CDS	-341.0	-286.0	True	True	True	0.11320754716981132	True	-32.0	-156.0	False	-124.0	0.0
+4d567d6d6e3c04c7	m09	-328	-142	187	TypeV	3.2e-13	-141.0	overlapping_adjacent_CDS	-360.0	-305.0	True	True	True	0.1095890410958904	True	-32.0	-163.0	False	-131.0	0.0
+4d567d6d6e3c04c7	m18	-331	-133	199	TypeV	2.9e-07	-132.0	overlapping_adjacent_CDS	-364.0	-317.0	True	True	True	0.06465517241379311	True	-33.0	-184.0	False	-151.0	0.0
+4d567d6d6e3c04c7	m04	-320	-133	188	TypeV	1.8e-11	-132.0	overlapping_adjacent_CDS	-352.0	-297.0	True	True	True	0.10909090909090909	True	-32.0	-164.0	False	-132.0	0.0
+4d567d6d6e3c04c7	m19	-326	-135	192	TypeV	7.6e-11	-134.0	overlapping_adjacent_CDS	-360.0	-312.0	True	True	True	0.06637168141592921	True	-34.0	-177.0	False	-143.0	0.0
+4d567d6d6e3c04c7	m17	-305	-126	180	TypeV	4.7e-14	-125.0	overlapping_adjacent_CDS	-339.0	-291.0	True	True	True	0.07009345794392523	True	-34.0	-165.0	False	-131.0	0.0
+4d567d6d6e3c04c7	m01	-330	-142	189	TypeV	8.2e-12	-141.0	overlapping_adjacent_CDS			True	True	False		False			False		
+4d567d6d6e3c04c7	m10	-323	-134	190	TypeV	1.8e-14	-133.0	overlapping_adjacent_CDS	-356.0	-300.0	True	True	True	0.10762331838565023	True	-33.0	-166.0	False	-133.0	0.0
+4d567d6d6e3c04c7	m11	-324	-134	191	TypeV	5.8e-13	-133.0	overlapping_adjacent_CDS	-356.0	-301.0	True	True	True	0.10762331838565023	True	-32.0	-167.0	False	-135.0	0.0
+4d567d6d6e3c04c7	m06	-332	-144	189	TypeV	2.5e-12	-143.0	overlapping_adjacent_CDS	-364.0	-309.0	True	True	True	0.1085972850678733	True	-32.0	-165.0	False	-133.0	0.0
+4d567d6d6e3c04c7	m14	-330	-142	189	TypeV	2.7e-15	-141.0	overlapping_adjacent_CDS	-362.0	-307.0	True	True	True	0.1085972850678733	True	-32.0	-165.0	False	-133.0	0.0
+4d567d6d6e3c04c7	m02	-301	-123	179	TypeV	2e-11	-122.0	overlapping_adjacent_CDS	-334.0	-278.0	True	True	True	0.11320754716981132	True	-33.0	-155.0	False	-122.0	0.0
+4d567d6d6e3c04c7	m15	-328	-142	187	TypeV	5.7e-13	-141.0	overlapping_adjacent_CDS	-360.0	-305.0	True	True	True	0.1095890410958904	True	-32.0	-163.0	False	-131.0	0.0
+4d567d6d6e3c04c7	m16	-321	-133	189	TypeV	1e-11	-132.0	overlapping_adjacent_CDS	-353.0	-298.0	True	True	True	0.1085972850678733	True	-32.0	-165.0	False	-133.0	0.0
+4d567d6d6e3c04c7	m00	-305	-121	185	TypeV	3.8e-12	-120.0	overlapping_adjacent_CDS	-338.0	-282.0	True	True	True	0.11009174311926606	True	-33.0	-161.0	False	-128.0	0.0
+4d567d6d6e3c04c7	m03	-329	-142	188	TypeV	4.4e-17	-141.0	overlapping_adjacent_CDS			True	True	False		False			False		
+4deaafe66612f533	m04	-261	21	283	TypeIIIA3	1e-12	0.0	overlaps_RT_start	-236.0	-155.0	True	True	True	0.28975265017667845	True	25.0	-176.0	False	-201.0	0.0
+4deaafe66612f533	m00	-258	21	280	TypeIIIA3	2.1e-13	0.0	overlaps_RT_start	-233.0	-155.0	True	True	True	0.28214285714285714	True	25.0	-176.0	False	-201.0	0.0
+4deaafe66612f533	m03	-258	21	280	TypeIIIA3	8.5e-14	0.0	overlaps_RT_start	-233.0	-155.0	True	True	True	0.28214285714285714	True	25.0	-176.0	False	-201.0	0.0
+4deaafe66612f533	m05	-260	21	282	TypeIIIA3	1e-12	0.0	overlaps_RT_start	-235.0	-157.0	True	True	True	0.2801418439716312	True	25.0	-178.0	False	-203.0	0.0
+4deaafe66612f533	m02	-261	24	286	TypeIIIA3	1.6e-09	0.0	overlaps_RT_start	-236.0	-155.0	True	True	True	0.2867132867132867	True	25.0	-179.0	False	-204.0	0.0
+4deaafe66612f533	m06	-261	24	286	TypeIIIA3	9.9e-09	0.0	overlaps_RT_start	-236.0	-155.0	True	True	True	0.2867132867132867	True	25.0	-179.0	False	-204.0	0.0
+4deaafe66612f533	m01	-261	24	286	TypeIIIA3	1.2e-09	0.0	overlaps_RT_start	-236.0	-155.0	True	True	True	0.2867132867132867	True	25.0	-179.0	False	-204.0	0.0
+4f4a7615b530ad66	m16	-288	-90	199	TypeXIIIA_firmi	6.3e-06	-89.0	overlapping_adjacent_CDS	-204.0	-112.0	True	True	True	0.46733668341708545	True	84.0	-22.0	False	-106.0	0.0
+4f4a7615b530ad66	m10	-221	-21	201	TypeXIIIA_firmi	0.0025	-20.0	upstream	-136.0	-43.0	True	True	True	0.46766169154228854	True	85.0	-22.0	False	-107.0	0.0
+4f4a7615b530ad66	m11	-358	-156	203	TypeXIIIA_firmi	0.0013	-155.0	upstream	-276.0	-175.0	True	True	True	0.5024630541871922	True	82.0	-19.0	False	-101.0	0.255
+4f4a7615b530ad66	m02	-234	-25	210	TypeXIIIA_firmi	4.6e-06	-24.0	upstream	-149.0	-48.0	True	True	True	0.4857142857142857	True	85.0	-23.0	False	-108.0	0.0
+4f4a7615b530ad66	m15	-238	-17	222	TypeXIII_Mx65	0.0078	-16.0	upstream	-147.0	-52.0	True	True	True	0.43243243243243246	True	91.0	-35.0	False	-126.0	0.0
+4f4a7615b530ad66	m00	-401	-200	202	TypeXIIIA_firmi	0.00032	-199.0	upstream	-316.0	-223.0	True	True	True	0.46534653465346537	True	85.0	-23.0	False	-108.0	0.0
+4f4a7615b530ad66	m03	-290	-88	203	TypeXIIIA_firmi	5.1e-07	-87.0	overlapping_adjacent_CDS	-204.0	-112.0	True	True	True	0.458128078817734	True	86.0	-24.0	False	-110.0	0.0
+4f4a7615b530ad66	m06	-256	-37	220	TypeXIII_Mx65	5e-05	-36.0	upstream	-167.0	-69.0	True	True	True	0.45	True	89.0	-32.0	False	-121.0	0.0
+4f4a7615b530ad66	m14	-267	-59	209	TypeXIIIA_firmi	0.0074	-58.0	upstream	-181.0	-81.0	True	True	True	0.48325358851674644	True	86.0	-22.0	False	-108.0	0.0
+4f4a7615b530ad66	m17	-235	-36	200	TypeXIIIA_firmi	0.0046	-35.0	upstream	-151.0	-59.0	True	True	True	0.465	True	84.0	-23.0	False	-107.0	0.0
+4f4a7615b530ad66	m19	-259	-107	153	TypeXIII_Mx65	0.00014	-106.0	upstream	-166.0	-74.0	True	True	True	0.3225806451612903	True	93.0	33.0	False	-60.0	0.20293398533007334
+4f4a7615b530ad66	m07	-243	-40	204	TypeXIIIA_firmi	1e-06	-39.0	upstream	-156.0	-64.0	True	True	True	0.45588235294117646	True	87.0	-24.0	False	-111.0	0.0
+4f4a7615b530ad66	m12	-225	-63	163	TypeXIII_Mx65	0.001	-62.0	upstream	-138.0	-47.0	True	True	True	0.4245810055865922	True	87.0	16.0	False	-71.0	0.2097560975609756
+4f4a7615b530ad66	m13	-259	-51	209	TypeXIIIA_firmi	4.3e-06	-50.0	upstream	-173.0	-74.0	True	True	True	0.4784688995215311	True	86.0	-23.0	False	-109.0	0.0
+4f4a7615b530ad66	m04	-246	-46	201	TypeXIIIA_firmi	0.00029	-45.0	upstream	-161.0	-69.0	True	True	True	0.4626865671641791	True	85.0	-23.0	False	-108.0	0.0
+4f4a7615b530ad66	m08	-243	-38	206	TypeXIIIA_firmi	0.00054	-37.0	upstream	-156.0	-63.0	True	True	True	0.4563106796116505	True	87.0	-25.0	False	-112.0	0.0
+4f4a7615b530ad66	m09	-247	-46	202	TypeXIIIA_firmi	0.00011	-45.0	upstream	-162.0	-69.0	True	True	True	0.46534653465346537	True	85.0	-23.0	False	-108.0	0.0
+4f4a7615b530ad66	m18	-290	-88	203	TypeXIIIA_firmi	7e-06	-87.0	upstream	-204.0	-112.0	True	True	True	0.458128078817734	True	86.0	-24.0	False	-110.0	0.0
+4f4a7615b530ad66	m05	-303	-103	201	TypeXIIIA_firmi	0.00027	-102.0	upstream	-218.0	-126.0	True	True	True	0.4626865671641791	True	85.0	-23.0	False	-108.0	0.0
+4f4a7615b530ad66	m01	-232	-74	159	TypeXIII_Mx65	0.0078	-73.0	upstream	-156.0	-63.0	True	True	True	0.48823529411764705	True	76.0	11.0	False	-65.0	0.20588235294117646
+4fa61784fe085139	m00	-183	-49	135	TypeIC1_IC2	3.5e-05	-48.0	upstream	-174.0	-132.0	True	True	True	0.31851851851851853	True	9.0	-83.0	False	-92.0	0.0
+4fa61784fe085139	m03	-149	-17	133	TypeIC1_IC2	1.1e-09	-16.0	upstream	-138.0	-96.0	True	True	True	0.3233082706766917	True	11.0	-79.0	False	-90.0	0.0
+4fa61784fe085139	m04	-152	-18	135	TypeIC1_IC2	6e-05	-17.0	upstream	-143.0	-101.0	True	True	True	0.31851851851851853	True	9.0	-83.0	False	-92.0	0.0
+4fa61784fe085139	m07	-159	-26	134	TypeIC1_IC2	1.1e-08	-25.0	upstream	-150.0	-108.0	True	True	True	0.3208955223880597	True	9.0	-82.0	False	-91.0	0.0
+4fa61784fe085139	m02	-164	-23	142	TypeIC1_IC2	1.7e-08	-22.0	upstream	-155.0	-112.0	True	True	True	0.30985915492957744	True	9.0	-89.0	False	-98.0	0.0
+4fa61784fe085139	m06	-158	-22	137	TypeIC1_IC2	2.3e-08	-21.0	upstream	-149.0	-107.0	True	True	True	0.31386861313868614	True	9.0	-85.0	False	-94.0	0.0
+4fa61784fe085139	m01	-146	-18	129	TypeIC1_IC2	1.2e-05	-17.0	upstream	-137.0	-94.0	True	True	True	0.34108527131782945	True	9.0	-76.0	False	-85.0	0.0
+4fa61784fe085139	m05	-160	-22	139	TypeIC1_IC2	3.2e-06	-21.0	upstream	-151.0	-109.0	True	True	True	0.30935251798561153	True	9.0	-87.0	False	-96.0	0.0
+4fa61784fe085139	m08	-149	-17	133	TypeIC1_IC2	4.6e-05	-16.0	upstream	-140.0	-98.0	True	True	True	0.3233082706766917	True	9.0	-81.0	False	-90.0	0.0
+4fa61784fe085139	m09	-161	-22	140	TypeIC1_IC2	7.8e-08	-21.0	upstream	-152.0	-110.0	True	True	True	0.30714285714285716	True	9.0	-88.0	False	-97.0	0.0
+505cebc4e8503e5f	m04	-139	-3	137	TypeIX	1.7e-20	-2.0	upstream			False	True	False		False			False		
+505cebc4e8503e5f	m00	-150	-12	139	TypeIX	3.3e-15	-11.0	upstream			False	True	False		False			False		
+505cebc4e8503e5f	m03	-150	-12	139	TypeIX	6.1e-15	-11.0	upstream			False	True	False		False			False		
+505cebc4e8503e5f	m02	-238	-96	143	TypeIX	5.6e-21	-95.0	upstream			False	True	False		False			False		
+505cebc4e8503e5f	m01	-133	-4	130	TypeIX	7.5e-18	-3.0	upstream			False	True	False		False			False		
+505cebc4e8503e5f	m05	-66	82	149	TypeIX	1.9e-26	0.0	overlaps_RT_start			False	True	False		False			False		
+506454c901426f91	m02	-410	-180	231	TypeIIIA2	7.1e-10	-179.0	upstream			False	True	False		False			False		
+506454c901426f91	m00	-232	-1	232	TypeIIIA2	2e-15	0.0	overlapping_adjacent_CDS			False	True	False		False			False		
+506454c901426f91	m03	-144	70	215	TypeIIIA2	4.1e-12	0.0	overlaps_RT_start			False	True	False		False			False		
+506454c901426f91	m06	-237	-7	231	TypeIIIA2	1.2e-11	-6.0	overlapping_adjacent_CDS			False	True	False		False			False		
+506454c901426f91	m07	-232	-2	231	TypeIIIA2	2.1e-17	-1.0	upstream			False	True	False		False			False		
+506454c901426f91	m04	-230	-2	229	TypeIIIA2	5e-15	-1.0	upstream			False	True	False		False			False		
+506454c901426f91	m08	-238	-3	236	TypeIIIA2	9.8e-15	-2.0	upstream			False	True	False		False			False		
+506454c901426f91	m09	-195	37	233	TypeIIIA2	9e-15	0.0	overlaps_RT_start			False	True	False		False			False		
+506454c901426f91	m05	-409	-174	236	TypeIIIA2	1.8e-14	-173.0	upstream			False	True	False		False			False		
+506454c901426f91	m01	-234	-5	230	TypeIIIA2	1.3e-14	-4.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b0aa8588cbc7388	m17	-180	-42	139	TypeIIIA1	3.5e-23	-41.0	upstream	-103.0	-18.0	True	True	True	0.3803680981595092	True	77.0	24.0	False	-53.0	0.18269230769230768
+5b0aa8588cbc7388	m00	-173	-35	139	TypeIIIA1	7e-16	-34.0	overlapping_adjacent_CDS	-94.0	-16.0	True	True	True	0.379746835443038	True	79.0	19.0	False	-60.0	0.17257683215130024
+5b0aa8588cbc7388	m03	-183	-45	139	TypeIIIA1	1.4e-12	-44.0	overlapping_adjacent_CDS	-105.0	-17.0	True	True	True	0.3652694610778443	True	78.0	28.0	False	-50.0	0.1864406779661017
+5b0aa8588cbc7388	m04	-176	-39	138	TypeIIIA1	2.4e-17	-38.0	upstream	-100.0	-16.0	True	True	True	0.38509316770186336	True	76.0	23.0	False	-53.0	0.1774580335731415
+5b0aa8588cbc7388	m08	-163	-30	134	TypeIIIA1	8e-18	-29.0	overlapping_adjacent_CDS	-88.0	-12.0	True	True	True	0.3881578947368421	True	75.0	18.0	False	-57.0	0.16470588235294117
+5b0aa8588cbc7388	m09	-170	-33	138	TypeIIIA1	5.1e-19	-32.0	overlapping_adjacent_CDS	-92.0	-16.0	True	True	True	0.3870967741935484	True	78.0	17.0	False	-61.0	0.16941176470588235
+5b0aa8588cbc7388	m18	-203	-36	168	TypeIIIA1	2.8e-08	-35.0	overlapping_adjacent_CDS			True	True	False		False			False		
+5b0aa8588cbc7388	m16	-179	-42	138	TypeIIIA1	1.6e-22	-41.0	upstream	-101.0	-16.0	True	True	True	0.36585365853658536	True	78.0	26.0	False	-52.0	0.18028846153846154
+5b0aa8588cbc7388	m05	-180	-41	140	TypeIIIA1	4.3e-19	-40.0	upstream	-103.0	-17.0	True	True	True	0.38414634146341464	True	77.0	24.0	False	-53.0	0.18313253012048192
+5b0aa8588cbc7388	m10	-168	-26	143	TypeIIIA1	3.8e-06	-25.0	overlapping_adjacent_CDS	-85.0	-6.0	True	True	True	0.36809815950920244	True	83.0	20.0	False	-63.0	0.17535545023696683
+5b0aa8588cbc7388	m11	-180	-43	138	TypeIIIA1	4.3e-16	-42.0	upstream	-104.0	-16.0	True	True	True	0.37575757575757573	True	76.0	27.0	False	-49.0	0.18401937046004843
+5b0aa8588cbc7388	m01	-128	5	134	TypeIIIA1	2.1e-17	0.0	overlaps_RT_start	-54.0	23.0	True	True	True	0.39473684210526316	True	74.0	18.0	False	-56.0	0.16745283018867924
+5b0aa8588cbc7388	m02	-178	-43	136	TypeIIIA1	1.3e-10	-42.0	overlapping_adjacent_CDS	-103.0	-17.0	True	True	True	0.3765432098765432	True	75.0	26.0	False	-49.0	0.1783132530120482
+5b0aa8588cbc7388	m15	-212	-44	169	TypeIIIA1	3.9e-10	-43.0	overlapping_adjacent_CDS	-96.0	-17.0	True	True	True	0.27040816326530615	True	116.0	27.0	False	-89.0	0.0
+5b0aa8588cbc7388	m06	-174	-39	136	TypeIIIA1	5.7e-09	-38.0	upstream	-99.0	-16.0	True	True	True	0.3836477987421384	True	75.0	23.0	False	-52.0	0.17464114832535885
+5b0aa8588cbc7388	m14	-181	-44	138	TypeIIIA1	3.9e-15	-43.0	overlapping_adjacent_CDS	-104.0	-18.0	True	True	True	0.3719512195121951	True	77.0	26.0	False	-51.0	0.18313253012048192
+5b0aa8588cbc7388	m19	-168	-30	139	TypeIIIA1	2.7e-17	-29.0	overlapping_adjacent_CDS	-89.0	-12.0	True	True	True	0.3821656050955414	True	79.0	18.0	False	-61.0	0.16981132075471697
+5b0aa8588cbc7388	m07	-177	-39	139	TypeIIIA1	7.1e-23	-38.0	upstream	-100.0	-17.0	True	True	True	0.38509316770186336	True	77.0	22.0	False	-55.0	0.17703349282296652
+5b0aa8588cbc7388	m12	-178	-41	138	TypeIIIA1	3.8e-19	-40.0	upstream	-101.0	-17.0	True	True	True	0.3765432098765432	True	77.0	24.0	False	-53.0	0.1774580335731415
+5b0aa8588cbc7388	m13	-178	-38	141	TypeIIIA1	2.6e-17	-37.0	upstream	-97.0	-14.0	True	True	True	0.36363636363636365	True	81.0	24.0	False	-57.0	0.18181818181818182
+5b1d4e37ce54cbea	m05	-341	-144	198	TypeV	1e-05	-143.0	upstream			False	True	False		False			False		
+5b1d4e37ce54cbea	m07	-326	-139	188	TypeV	3.8e-12	-138.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m12	-319	-130	190	TypeV	6.2e-16	-129.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m13	-341	-152	190	TypeV	1.5e-15	-151.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m08	-328	-140	189	TypeV	3e-16	-139.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m09	-340	-151	190	TypeV	2.3e-16	-150.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m18	-329	-141	189	TypeV	8.1e-17	-140.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m04	-336	-146	191	TypeV	3.4e-15	-145.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m17	-332	-142	191	TypeV	4.8e-14	-141.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m01	-370	-182	189	TypeV	2.1e-16	-181.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m10	-344	-155	190	TypeV	4.4e-17	-154.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m11	-326	-139	188	TypeV	2.9e-16	-138.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m06	-339	-150	190	TypeV	4.3e-09	-149.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m14	-318	-135	184	TypeV	1.2e-12	-134.0	upstream			False	True	False		False			False		
+5b1d4e37ce54cbea	m02	-319	-141	179	TypeV	3.5e-13	-140.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m15	-322	-141	182	TypeV	1.6e-14	-140.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m16	-320	-141	180	TypeV	9.2e-11	-140.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m00	-319	-141	179	TypeV	9.1e-11	-140.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5b1d4e37ce54cbea	m03	-322	-140	183	TypeV	2.5e-18	-139.0	overlapping_adjacent_CDS			False	True	False		False			False		
+5c5f7870778d1a41	m10	-165	-20	146	TypeIC1_IC2	9.1e-08	-19.0	upstream	-145.0	-92.0	True	True	True	0.3698630136986301	True	20.0	-72.0	False	-92.0	0.0
+5c5f7870778d1a41	m11	-164	-22	143	TypeIC1_IC2	6.1e-09	-21.0	upstream	-144.0	-98.0	True	True	True	0.32867132867132864	True	20.0	-76.0	False	-96.0	0.0
+5c5f7870778d1a41	m02	-153	-20	134	TypeIC1_IC2	8.9e-11	-19.0	upstream	-133.0	-87.0	True	True	True	0.35074626865671643	True	20.0	-67.0	False	-87.0	0.0
+5c5f7870778d1a41	m04	-165	-15	151	TypeIC1_IC2	1.4e-06	-14.0	upstream	-144.0	-98.0	True	True	True	0.31125827814569534	True	21.0	-83.0	False	-104.0	0.0
+5c5f7870778d1a41	m01	-159	-18	142	TypeIC1_IC2	2.3e-09	-17.0	upstream	-139.0	-93.0	True	True	True	0.33098591549295775	True	20.0	-75.0	False	-95.0	0.0
+5c5f7870778d1a41	m05	-146	-18	129	TypeIC1_IC2	3.2e-12	-17.0	upstream	-126.0	-80.0	True	True	True	0.3643410852713178	True	20.0	-62.0	False	-82.0	0.0
+5c5f7870778d1a41	m00	-113	29	143	TypeIC1_IC2	8.1e-09	0.0	overlaps_RT_start	-92.0	-47.0	True	True	True	0.32167832167832167	True	21.0	-76.0	False	-97.0	0.0
+5c5f7870778d1a41	m03	-162	-18	145	TypeIC1_IC2	1.3e-10	-17.0	overlapping_adjacent_CDS	-141.0	-96.0	True	True	True	0.31724137931034485	True	21.0	-78.0	False	-99.0	0.0
+5c5f7870778d1a41	m07	-160	-21	140	TypeIC1_IC2	9.1e-09	-20.0	upstream	-140.0	-94.0	True	True	True	0.3357142857142857	True	20.0	-73.0	False	-93.0	0.0
+5c5f7870778d1a41	m12	-162	-21	142	TypeIC1_IC2	1.6e-05	-20.0	upstream	-141.0	-96.0	True	True	True	0.323943661971831	True	21.0	-75.0	False	-96.0	0.0
+5c5f7870778d1a41	m06	-152	-21	132	TypeIC1_IC2	1.9e-10	-20.0	upstream	-132.0	-86.0	True	True	True	0.3560606060606061	True	20.0	-65.0	False	-85.0	0.0
+5c5f7870778d1a41	m08	-151	-22	130	TypeIC1_IC2	3e-08	-21.0	upstream	-131.0	-81.0	True	True	True	0.3923076923076923	True	20.0	-59.0	False	-79.0	0.0
+5c5f7870778d1a41	m09	-165	-20	146	TypeIC1_IC2	2e-07	-19.0	upstream	-145.0	-92.0	True	True	True	0.3698630136986301	True	20.0	-72.0	False	-92.0	0.0
+5c694a9dbecbf1a5	m02	-185	-40	146	TypeIIIA1	5e-14	-39.0	overlapping_adjacent_CDS	-109.0	-22.0	True	True	True	0.4268292682926829	True	76.0	18.0	False	-58.0	0.19082125603864733
+5c694a9dbecbf1a5	m04	-182	-41	142	TypeIIIA1	2.9e-10	-40.0	overlapping_adjacent_CDS	-110.0	-14.0	True	True	True	0.41420118343195267	True	72.0	27.0	False	-45.0	0.19753086419753085
+5c694a9dbecbf1a5	m00	-187	-35	153	TypeIIIA1	1.5e-11	-34.0	overlapping_adjacent_CDS	-110.0	-17.0	True	True	True	0.4444444444444444	True	77.0	18.0	False	-59.0	0.20098039215686275
+5c694a9dbecbf1a5	m03	-185	-38	148	TypeIIIA1	7.3e-13	-37.0	overlapping_adjacent_CDS	-106.0	-17.0	True	True	True	0.40828402366863903	True	79.0	21.0	False	-58.0	0.19174757281553398
+5c694a9dbecbf1a5	m05	-183	-38	146	TypeIIIA1	1.4e-10	-37.0	overlapping_adjacent_CDS	-107.0	-18.0	True	True	True	0.42168674698795183	True	76.0	20.0	False	-56.0	0.19174757281553398
+5c694a9dbecbf1a5	m01	-180	-35	146	TypeIIIA1	5.6e-16	-34.0	overlapping_adjacent_CDS	-105.0	-14.0	True	True	True	0.4251497005988024	True	75.0	21.0	False	-54.0	0.1926829268292683
+5cf1550444c7013f	m19	-262	16	279	TypeIIIA3	2.7e-07	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m01	-265	15	281	TypeIIIA3	4e-09	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m06	-243	15	259	TypeIIIA3	3.8e-13	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m14	-243	15	259	TypeIIIA3	3.6e-16	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m02	-271	15	287	TypeIIIA3	1.9e-10	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m15	-243	15	259	TypeIIIA3	1.7e-10	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m05	-244	15	260	TypeIIIA3	5.8e-08	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m16	-205	54	260	TypeIIIA3	6.8e-11	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m07	-247	15	263	TypeIIIA3	2.7e-05	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m12	-240	16	257	TypeIIIA3	1.5e-09	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m13	-246	15	262	TypeIIIA3	1.4e-08	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m08	-238	15	254	TypeIIIA3	7.6e-13	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m09	-252	15	268	TypeIIIA3	4.1e-09	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m18	-289	15	305	TypeIIIA3	1.9e-07	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m04	-265	15	281	TypeIIIA3	3.2e-08	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m17	-247	15	263	TypeIIIA3	7.1e-12	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m10	-247	15	263	TypeIIIA3	9.2e-14	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m11	-230	15	246	TypeIIIA3	3.7e-11	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m00	-265	15	281	TypeIIIA3	1.5e-08	0.0	overlaps_RT_start			False	True	False		False			False		
+5cf1550444c7013f	m03	-265	15	281	TypeIIIA3	5.2e-11	0.0	overlaps_RT_start			False	True	False		False			False		
+622c10b6364c4c9f	m08	-193	-7	187	TypeIB2	1.3e-14	-6.0	overlapping_adjacent_CDS	-62.0	6.0	True	True	True	0.28	True	131.0	13.0	False	-118.0	0.0
+622c10b6364c4c9f	m09	-191	-5	187	TypeIB2	2.4e-16	-4.0	overlapping_adjacent_CDS	-60.0	6.0	True	True	True	0.2828282828282828	True	131.0	11.0	False	-120.0	0.0
+622c10b6364c4c9f	m07	-193	-6	188	TypeIB2	2.6e-17	-5.0	overlapping_adjacent_CDS	-61.0	6.0	True	True	True	0.28	True	132.0	12.0	False	-120.0	0.0
+622c10b6364c4c9f	m05	-192	-7	186	TypeIB2	1.2e-16	-6.0	overlapping_adjacent_CDS	-62.0	6.0	True	True	True	0.2814070351758794	True	130.0	13.0	False	-117.0	0.0
+622c10b6364c4c9f	m01	-184	-5	180	TypeIB2	1.1e-14	-4.0	overlapping_adjacent_CDS	-58.0	6.0	True	True	True	0.28272251308900526	True	126.0	11.0	False	-115.0	0.0
+622c10b6364c4c9f	m06	-188	-1	188	TypeIB2	1.2e-15	0.0	overlapping_adjacent_CDS	-56.0	6.0	True	True	True	0.28717948717948716	True	132.0	7.0	False	-125.0	0.0
+622c10b6364c4c9f	m04	-192	-7	186	TypeIB2	3.1e-17	-6.0	overlapping_adjacent_CDS	-61.0	6.0	True	True	True	0.27638190954773867	True	131.0	13.0	False	-118.0	0.0
+622c10b6364c4c9f	m02	-176	-3	174	TypeIB2	4.1e-11	-2.0	overlapping_adjacent_CDS	-56.0	9.0	True	True	True	0.2903225806451613	True	120.0	12.0	False	-108.0	0.0
+622c10b6364c4c9f	m00	-193	-7	187	TypeIB2	3.1e-17	-6.0	overlapping_adjacent_CDS	-62.0	6.0	True	True	True	0.28	True	131.0	13.0	False	-118.0	0.0
+622c10b6364c4c9f	m03	-193	-7	187	TypeIB2	2.8e-17	-6.0	overlapping_adjacent_CDS	-62.0	6.0	True	True	True	0.28	True	131.0	13.0	False	-118.0	0.0
+622c10b6364c4c9f	m10	-163	18	182	TypeIB2	5.6e-12	0.0	overlaps_RT_start	-37.0	30.0	True	True	True	0.28865979381443296	True	126.0	12.0	False	-114.0	0.0
+622c10b6364c4c9f	m11	-168	-5	164	TypeIB2	5.2e-12	-4.0	overlapping_adjacent_CDS	-58.0	6.0	True	True	True	0.30857142857142855	True	110.0	11.0	False	-99.0	0.0
+6687b64b00cdcc94	m06	-188	-5	184	TypeIIIA2	1e-05	-4.0	upstream	-175.0	-126.0	True	True	True	0.2717391304347826	True	13.0	-121.0	False	-134.0	0.0
+6687b64b00cdcc94	m14	-206	-13	194	TypeIIIA2	1.7e-09	-12.0	upstream	-193.0	-145.0	True	True	True	0.25257731958762886	True	13.0	-132.0	False	-145.0	0.0
+6687b64b00cdcc94	m01	-156	22	179	TypeIIIA2	2.5e-09	0.0	overlaps_RT_start	-143.0	-95.0	True	True	True	0.2737430167597765	True	13.0	-117.0	False	-130.0	0.0
+6687b64b00cdcc94	m07	-177	-16	162	TypeIIIA2	1.2e-08	-15.0	upstream	-166.0	-118.0	True	True	True	0.30246913580246915	True	11.0	-102.0	False	-113.0	0.0
+6687b64b00cdcc94	m12	-178	-10	169	TypeIIIA2	7.4e-08	-9.0	upstream	-165.0	-116.0	True	True	True	0.2958579881656805	True	13.0	-106.0	False	-119.0	0.0
+6687b64b00cdcc94	m13	-181	10	192	TypeIIIA2	0.0037	0.0	overlaps_RT_start	-167.0	-119.0	True	True	True	0.2552083333333333	True	14.0	-129.0	False	-143.0	0.0
+6687b64b00cdcc94	m08	-193	-6	188	TypeIIIA2	4.6e-14	-5.0	upstream	-180.0	-132.0	True	True	True	0.26063829787234044	True	13.0	-126.0	False	-139.0	0.0
+6687b64b00cdcc94	m09	-184	-7	178	TypeIIIA2	1.1e-09	-6.0	upstream	-171.0	-123.0	True	True	True	0.2752808988764045	True	13.0	-116.0	False	-129.0	0.0
+6687b64b00cdcc94	m02	-306	-150	157	TypeIIIA2	3e-07	-149.0	upstream	-295.0	-247.0	True	True	True	0.31210191082802546	True	11.0	-97.0	False	-108.0	0.0
+6687b64b00cdcc94	m15	-200	-23	178	TypeIIIA2	3.1e-08	-22.0	upstream	-187.0	-139.0	True	True	True	0.2752808988764045	True	13.0	-116.0	False	-129.0	0.0
+6687b64b00cdcc94	m00	-169	-13	157	TypeIIIA2	9.4e-05	-12.0	upstream	-159.0	-111.0	True	True	True	0.31210191082802546	True	10.0	-98.0	False	-108.0	0.0
+6687b64b00cdcc94	m03	-185	-7	179	TypeIIIA2	1.5e-05	-6.0	upstream	-172.0	-124.0	True	True	True	0.2737430167597765	True	13.0	-117.0	False	-130.0	0.0
+6687b64b00cdcc94	m05	-188	-7	182	TypeIIIA2	5.4e-11	-6.0	upstream	-175.0	-127.0	True	True	True	0.2692307692307692	True	13.0	-120.0	False	-133.0	0.0
+6687b64b00cdcc94	m04	-173	-10	164	TypeIIIA2	1.3e-06	-9.0	upstream	-160.0	-111.0	True	True	True	0.3048780487804878	True	13.0	-101.0	False	-114.0	0.0
+6687b64b00cdcc94	m10	-144	39	184	TypeIIIA2	2e-06	0.0	overlaps_RT_start	-131.0	-83.0	True	True	True	0.266304347826087	True	13.0	-122.0	False	-135.0	0.0
+6687b64b00cdcc94	m11	-189	-6	184	TypeIIIA2	1.5e-05	-5.0	upstream	-176.0	-127.0	True	True	True	0.2717391304347826	True	13.0	-121.0	False	-134.0	0.0
+672030cf71b54aac	m01	-149	-25	125	TypeIC1_IC2	4.1e-10	-24.0	upstream	-166.0	-106.0	True	True	True	0.30985915492957744	True	-17.0	-81.0	False	-64.0	0.0
+672030cf71b54aac	m06	-148	-20	129	TypeIC1_IC2	1e-08	-19.0	upstream	-167.0	-105.0	True	True	True	0.2972972972972973	True	-19.0	-85.0	False	-66.0	0.0
+672030cf71b54aac	m14	-162	-37	126	TypeIC1_IC2	5.8e-07	-36.0	upstream	-182.0	-119.0	True	True	True	0.3013698630136986	True	-20.0	-82.0	False	-62.0	0.14383561643835616
+672030cf71b54aac	m08	-153	-28	126	TypeIC1_IC2	1.6e-08	-27.0	upstream	-172.0	-110.0	True	True	True	0.30344827586206896	True	-19.0	-82.0	False	-63.0	0.14578587699316628
+672030cf71b54aac	m09	-154	-29	126	TypeIC1_IC2	1.7e-07	-28.0	upstream	-173.0	-111.0	True	True	True	0.30344827586206896	True	-19.0	-82.0	False	-63.0	0.14578587699316628
+672030cf71b54aac	m07	-157	-30	128	TypeIC1_IC2	6.5e-08	-29.0	upstream	-176.0	-114.0	True	True	True	0.29931972789115646	True	-19.0	-84.0	False	-65.0	0.0
+672030cf71b54aac	m12	-146	-22	125	TypeIC1_IC2	1.4e-09	-21.0	upstream	-163.0	-103.0	True	True	True	0.30985915492957744	True	-17.0	-81.0	False	-64.0	0.0
+672030cf71b54aac	m13	-150	-25	126	TypeIC1_IC2	1.1e-07	-24.0	upstream	-168.0	-107.0	True	True	True	0.3055555555555556	True	-18.0	-82.0	False	-64.0	0.0
+672030cf71b54aac	m10	-149	-24	126	TypeIC1_IC2	1.9e-06	-23.0	upstream	-168.0	-106.0	True	True	True	0.30344827586206896	True	-19.0	-82.0	False	-63.0	0.14578587699316628
+672030cf71b54aac	m11	-146	-22	125	TypeIC1_IC2	2.3e-09	-21.0	upstream	-163.0	-104.0	True	True	True	0.3028169014084507	True	-17.0	-82.0	False	-65.0	0.0
+672030cf71b54aac	m05	-151	-28	124	TypeIC1_IC2	1.2e-06	-27.0	upstream	-169.0	-108.0	True	True	True	0.30985915492957744	True	-18.0	-80.0	False	-62.0	0.1431818181818182
+672030cf71b54aac	m00	-149	-25	125	TypeIC1_IC2	4.5e-09	-24.0	upstream	-165.0	-106.0	True	True	True	0.3120567375886525	True	-16.0	-81.0	False	-65.0	0.0
+672030cf71b54aac	m03	-154	-29	126	TypeIC1_IC2	1.1e-08	-28.0	upstream	-172.0	-111.0	True	True	True	0.3055555555555556	True	-18.0	-82.0	False	-64.0	0.0
+672030cf71b54aac	m02	-149	-25	125	TypeIC1_IC2	2.7e-09	-24.0	upstream	-166.0	-106.0	True	True	True	0.30985915492957744	True	-17.0	-81.0	False	-64.0	0.0
+672030cf71b54aac	m15	-153	-28	126	TypeIC1_IC2	5.5e-09	-27.0	upstream	-172.0	-110.0	True	True	True	0.30344827586206896	True	-19.0	-82.0	False	-63.0	0.14578587699316628
+672030cf71b54aac	m16	-244	-118	127	TypeIC1_IC2	6.5e-08	-117.0	upstream	-261.0	-202.0	True	True	True	0.2986111111111111	True	-17.0	-84.0	False	-67.0	0.0
+672030cf71b54aac	m04	-154	-29	126	TypeIC1_IC2	3.7e-09	-28.0	upstream	-173.0	-111.0	True	True	True	0.30344827586206896	True	-19.0	-82.0	False	-63.0	0.14578587699316628
+6ce60f5761400513	m05	-232	21	254	TypeIIIA3	1.2e-08	0.0	overlaps_RT_start	-164.0	-96.0	True	True	True	0.27165354330708663	True	68.0	-117.0	False	-185.0	0.0
+6ce60f5761400513	m00	-235	21	257	TypeIIIA3	4.3e-14	0.0	overlaps_RT_start	-167.0	-96.0	True	True	True	0.2801556420233463	True	68.0	-117.0	False	-185.0	0.0
+6ce60f5761400513	m03	-247	21	269	TypeIIIA3	9.6e-13	0.0	overlaps_RT_start	-177.0	-96.0	True	True	True	0.3048327137546468	True	70.0	-117.0	False	-187.0	0.0
+6ce60f5761400513	m06	-252	18	271	TypeIIIA3	4.3e-10	0.0	overlaps_RT_start	-185.0	-94.0	True	True	True	0.33948339483394835	True	67.0	-112.0	False	-179.0	0.0
+6ce60f5761400513	m02	-238	18	257	TypeIIIA3	2.1e-07	0.0	overlaps_RT_start	-172.0	-94.0	True	True	True	0.30739299610894943	True	66.0	-112.0	False	-178.0	0.0
+6ce60f5761400513	m01	-253	21	275	TypeIIIA3	1.7e-08	0.0	overlaps_RT_start	-186.0	-95.0	True	True	True	0.33454545454545453	True	67.0	-116.0	False	-183.0	0.0
+6ce60f5761400513	m04	-232	21	254	TypeIIIA3	1.3e-09	0.0	overlaps_RT_start	-164.0	-96.0	True	True	True	0.27165354330708663	True	68.0	-117.0	False	-185.0	0.0
+6e5f58049467eb4d	m02	-159	-22	138	TypeIC1_IC2	4.9e-05	-21.0	upstream	-138.0	-87.0	True	True	True	0.37681159420289856	True	21.0	-65.0	False	-86.0	0.0
+6e5f58049467eb4d	m04	-166	-18	149	TypeIC1_IC2	1.9e-06	-17.0	upstream	-145.0	-95.0	True	True	True	0.3422818791946309	True	21.0	-77.0	False	-98.0	0.0
+6e5f58049467eb4d	m01	-170	-27	144	TypeIC1_IC2	2.8e-07	-26.0	upstream	-150.0	-99.0	True	True	True	0.3611111111111111	True	20.0	-72.0	False	-92.0	0.0
+6e5f58049467eb4d	m05	-113	29	143	TypeIC1_IC2	8.1e-09	0.0	overlaps_RT_start	-93.0	-42.0	True	True	True	0.36363636363636365	True	20.0	-71.0	False	-91.0	0.0
+6e5f58049467eb4d	m00	-170	-27	144	TypeIC1_IC2	8.4e-07	-26.0	upstream	-150.0	-99.0	True	True	True	0.3611111111111111	True	20.0	-72.0	False	-92.0	0.0
+6e5f58049467eb4d	m03	-146	-5	142	TypeIC1_IC2	0.0047	-4.0	upstream	-125.0	-75.0	True	True	True	0.3591549295774648	True	21.0	-70.0	False	-91.0	0.0
+6f53e98ece3c9c1d	m06	-203	4	208	TypeIIA3_firmi	2.3e-23	0.0	overlaps_RT_start	-174.0	-110.0	True	True	True	0.3125	True	29.0	-114.0	False	-143.0	0.0
+6f53e98ece3c9c1d	m01	-205	-3	203	TypeIIA3_firmi	7.3e-17	-2.0	overlapping_adjacent_CDS	-178.0	-114.0	True	True	True	0.32019704433497537	True	27.0	-111.0	False	-138.0	0.0
+6f53e98ece3c9c1d	m07	-202	2	205	TypeIIA3_firmi	7.8e-21	0.0	overlaps_RT_start	-175.0	-110.0	True	True	True	0.32195121951219513	True	27.0	-112.0	False	-139.0	0.0
+6f53e98ece3c9c1d	m12	-178	2	181	TypeIIA3_firmi	1.2e-16	0.0	overlaps_RT_start	-165.0	-109.0	True	True	True	0.3149171270718232	True	13.0	-111.0	False	-124.0	0.0
+6f53e98ece3c9c1d	m13	-193	4	198	TypeIIA3_firmi	3.8e-22	0.0	overlaps_RT_start	-171.0	-109.0	True	True	True	0.3181818181818182	True	22.0	-113.0	False	-135.0	0.0
+6f53e98ece3c9c1d	m08	-202	2	205	TypeIIA3_firmi	1.4e-18	0.0	overlaps_RT_start	-176.0	-109.0	True	True	True	0.33170731707317075	True	26.0	-111.0	False	-137.0	0.0
+6f53e98ece3c9c1d	m09	-204	4	209	TypeIIA3_firmi	1.7e-20	0.0	overlaps_RT_start	-175.0	-110.0	True	True	True	0.3157894736842105	True	29.0	-114.0	False	-143.0	0.0
+6f53e98ece3c9c1d	m02	-203	4	208	TypeIIA3_firmi	9.1e-22	0.0	overlaps_RT_start	-174.0	-110.0	True	True	True	0.3125	True	29.0	-114.0	False	-143.0	0.0
+6f53e98ece3c9c1d	m00	-204	3	208	TypeIIA3_firmi	1.3e-17	0.0	overlaps_RT_start	-176.0	-110.0	True	True	True	0.32211538461538464	True	28.0	-113.0	False	-141.0	0.0
+6f53e98ece3c9c1d	m03	-255	-47	209	TypeIIA3_firmi	4.9e-18	-46.0	overlapping_adjacent_CDS	-226.0	-160.0	True	True	True	0.32057416267942584	True	29.0	-113.0	False	-142.0	0.0
+6f53e98ece3c9c1d	m05	-206	2	209	TypeIIA3_firmi	4.5e-22	0.0	overlaps_RT_start	-177.0	-110.0	True	True	True	0.3253588516746411	True	29.0	-112.0	False	-141.0	0.0
+6f53e98ece3c9c1d	m04	-203	0	204	TypeIIA3_firmi	5.2e-22	0.0	overlaps_RT_start	-177.0	-111.0	True	True	True	0.3284313725490196	True	26.0	-111.0	False	-137.0	0.0
+6f53e98ece3c9c1d	m10	-210	0	211	TypeIIA3_firmi	1.3e-16	0.0	overlaps_RT_start	-180.0	-112.0	True	True	True	0.32701421800947866	True	30.0	-112.0	False	-142.0	0.0
+6f53e98ece3c9c1d	m11	-206	-2	205	TypeIIA3_firmi	2.1e-21	-1.0	overlapping_adjacent_CDS	-178.0	-113.0	True	True	True	0.32195121951219513	True	28.0	-111.0	False	-139.0	0.0
+75b244cdc0a4c235	m16	-352	-121	232	TypeXIIIB_Ne144	8.6e-35	-120.0	upstream	-256.0	-183.0	True	True	True	0.31896551724137934	True	96.0	-62.0	False	-158.0	0.0
+75b244cdc0a4c235	m10	-292	-70	223	TypeXIIIB_Ne144	8.8e-33	-69.0	upstream	-198.0	-125.0	True	True	True	0.33183856502242154	True	94.0	-55.0	False	-149.0	0.0
+75b244cdc0a4c235	m11	-386	-156	231	TypeXIIIB_Ne144	1.6e-38	-155.0	upstream	-290.0	-217.0	True	True	True	0.3203463203463203	True	96.0	-61.0	False	-157.0	0.0
+75b244cdc0a4c235	m02	-270	-44	227	TypeXIIIB_Ne144	8.3e-37	-43.0	upstream	-174.0	-101.0	True	True	True	0.32599118942731276	True	96.0	-57.0	False	-153.0	0.0
+75b244cdc0a4c235	m15	-276	-53	224	TypeXIIIB_Ne144	5.8e-30	-52.0	upstream	-183.0	-110.0	True	True	True	0.33035714285714285	True	93.0	-57.0	False	-150.0	0.0
+75b244cdc0a4c235	m00	-284	-54	231	TypeXIIIB_Ne144	1.1e-27	-53.0	upstream			True	True	False		False			False		
+75b244cdc0a4c235	m03	-302	-72	231	TypeXIIIB_Ne144	4.9e-32	-71.0	upstream	-206.0	-133.0	True	True	True	0.3203463203463203	True	96.0	-61.0	False	-157.0	0.0
+75b244cdc0a4c235	m06	-284	-54	231	TypeXIIIB_Ne144	1.2e-27	-53.0	upstream	-188.0	-115.0	True	True	True	0.3203463203463203	True	96.0	-61.0	False	-157.0	0.0
+75b244cdc0a4c235	m14	-284	-54	231	TypeXIIIB_Ne144	1.1e-26	-53.0	upstream	-188.0	-115.0	True	True	True	0.3203463203463203	True	96.0	-61.0	False	-157.0	0.0
+75b244cdc0a4c235	m17	-284	-54	231	TypeXIIIB_Ne144	1.1e-27	-53.0	upstream	-188.0	-115.0	True	True	True	0.3203463203463203	True	96.0	-61.0	False	-157.0	0.0
+75b244cdc0a4c235	m07	-296	-75	222	TypeXIIIB_Ne144	1.6e-30	-74.0	upstream	-203.0	-130.0	True	True	True	0.3333333333333333	True	93.0	-55.0	False	-148.0	0.0
+75b244cdc0a4c235	m12	-257	-36	222	TypeXIIIB_Ne144	1.1e-31	-35.0	upstream	-163.0	-92.0	True	True	True	0.32432432432432434	True	94.0	-56.0	False	-150.0	0.0
+75b244cdc0a4c235	m13	-247	-24	224	TypeXIIIB_Ne144	3.5e-32	-23.0	upstream	-153.0	-80.0	True	True	True	0.33035714285714285	True	94.0	-56.0	False	-150.0	0.0
+75b244cdc0a4c235	m04	-247	-24	224	TypeXIIIB_Ne144	2.6e-31	-23.0	upstream	-153.0	-80.0	True	True	True	0.33035714285714285	True	94.0	-56.0	False	-150.0	0.0
+75b244cdc0a4c235	m08	-291	-65	227	TypeXIIIB_Ne144	1.1e-35	-64.0	upstream	-197.0	-124.0	True	True	True	0.32599118942731276	True	94.0	-59.0	False	-153.0	0.0
+75b244cdc0a4c235	m09	-338	-108	231	TypeXIIIB_Ne144	1.1e-36	-107.0	upstream	-242.0	-169.0	True	True	True	0.3203463203463203	True	96.0	-61.0	False	-157.0	0.0
+75b244cdc0a4c235	m18	-294	-68	227	TypeXIIIB_Ne144	1e-29	-67.0	upstream	-200.0	-127.0	True	True	True	0.32599118942731276	True	94.0	-59.0	False	-153.0	0.0
+75b244cdc0a4c235	m05	-284	-54	231	TypeXIIIB_Ne144	1.1e-27	-53.0	upstream			True	True	False		False			False		
+75b244cdc0a4c235	m01	-281	-57	225	TypeXIIIB_Ne144	1.5e-25	-56.0	overlapping_adjacent_CDS			True	True	False		False			False		
+7ab38dd5eed23e61	m01	-257	-35	223	TypeXIIIB_Ne144	4.9e-32	-34.0	upstream	-167.0	-90.0	True	True	True	0.34977578475336324	True	90.0	-55.0	False	-145.0	0.0
+7ab38dd5eed23e61	m02	-260	-38	223	TypeXIIIB_Ne144	7.9e-31	-37.0	upstream	-169.0	-94.0	True	True	True	0.34080717488789236	True	91.0	-56.0	False	-147.0	0.0
+7ab38dd5eed23e61	m05	-262	-35	228	TypeXIIIB_Ne144	1.1e-30	-34.0	upstream	-170.0	-93.0	True	True	True	0.34210526315789475	True	92.0	-58.0	False	-150.0	0.0
+7ab38dd5eed23e61	m04	-262	-35	228	TypeXIIIB_Ne144	7.1e-31	-34.0	upstream	-170.0	-93.0	True	True	True	0.34210526315789475	True	92.0	-58.0	False	-150.0	0.0
+7ab38dd5eed23e61	m00	-249	-31	219	TypeXIIIB_Ne144	1.5e-30	-30.0	upstream	-160.0	-85.0	True	True	True	0.3470319634703196	True	89.0	-54.0	False	-143.0	0.0
+7ab38dd5eed23e61	m03	-259	-32	228	TypeXIIIB_Ne144	1.3e-31	-31.0	upstream	-167.0	-90.0	True	True	True	0.34210526315789475	True	92.0	-58.0	False	-150.0	0.0
+7be69237244cc512	m02	-165	-21	145	TypeIC1_IC2	2.2e-06	-20.0	upstream	-194.0	-127.0	True	True	True	0.22413793103448276	True	-29.0	-106.0	False	-77.0	0.0
+7be69237244cc512	m15	-165	-18	148	TypeIC1_IC2	2.5e-06	-17.0	upstream	-187.0	-126.0	True	True	True	0.23529411764705882	True	-22.0	-108.0	False	-86.0	0.0
+7be69237244cc512	m16	-146	-22	125	TypeIC1_IC2	4.2e-08	-21.0	upstream	-165.0	-108.0	True	True	True	0.2708333333333333	True	-19.0	-86.0	False	-67.0	0.0
+7be69237244cc512	m10	-131	5	137	TypeIC1_IC2	1.3e-07	0.0	overlaps_RT_start	-152.0	-93.0	True	True	True	0.2468354430379747	True	-21.0	-98.0	False	-77.0	0.0
+7be69237244cc512	m11	-139	-24	116	TypeIC1_IC2	3e-06	-23.0	upstream	-171.0	-105.0	True	True	True	0.23648648648648649	True	-32.0	-81.0	False	-49.0	0.1425287356321839
+7be69237244cc512	m17	-187	-19	169	TypeIC1_IC2	0.0021	-18.0	upstream	-215.0	-150.0	True	True	True	0.19289340101522842	True	-28.0	-131.0	False	-103.0	0.0
+7be69237244cc512	m01	-164	-19	146	TypeIC1_IC2	2.8e-07	-18.0	upstream	-185.0	-126.0	True	True	True	0.23353293413173654	True	-21.0	-107.0	False	-86.0	0.0
+7be69237244cc512	m00	-146	-20	127	TypeIC1_IC2	2.3e-07	-19.0	upstream	-174.0	-109.0	True	True	True	0.24516129032258063	True	-28.0	-89.0	False	-61.0	0.14678899082568808
+7be69237244cc512	m03	-153	-20	134	TypeIC1_IC2	7.5e-11	-19.0	upstream	-177.0	-115.0	True	True	True	0.2468354430379747	True	-24.0	-95.0	False	-71.0	0.0
+7be69237244cc512	m04	-166	-20	147	TypeIC1_IC2	7.4e-08	-19.0	upstream	-190.0	-127.0	True	True	True	0.23391812865497075	True	-24.0	-107.0	False	-83.0	0.0
+7be69237244cc512	m08	-179	-31	149	TypeIC1_IC2	8.4e-06	-30.0	upstream	-201.0	-141.0	True	True	True	0.22807017543859648	True	-22.0	-110.0	False	-88.0	0.0
+7be69237244cc512	m09	-143	-12	132	TypeIC1_IC2	1.5e-10	-11.0	overlapping_adjacent_CDS	-169.0	-105.0	True	True	True	0.2468354430379747	True	-26.0	-93.0	False	-67.0	0.0
+7be69237244cc512	m18	-181	-49	133	TypeIC1_IC2	8.7e-07	-48.0	upstream	-207.0	-143.0	True	True	True	0.24528301886792453	True	-26.0	-94.0	False	-68.0	0.0
+7be69237244cc512	m07	-155	-20	136	TypeIC1_IC2	3.4e-07	-19.0	upstream	-176.0	-117.0	True	True	True	0.2484076433121019	True	-21.0	-97.0	False	-76.0	0.0
+7be69237244cc512	m12	-165	-20	146	TypeIC1_IC2	7.1e-07	-19.0	upstream	-194.0	-127.0	True	True	True	0.22285714285714286	True	-29.0	-107.0	False	-78.0	0.0
+7be69237244cc512	m13	-162	-29	134	TypeIC1_IC2	2e-09	-28.0	upstream	-184.0	-124.0	True	True	True	0.25	True	-22.0	-95.0	False	-73.0	0.0
+7be69237244cc512	m19	-148	-22	127	TypeIC1_IC2	1.5e-10	-21.0	upstream	-169.0	-110.0	True	True	True	0.2635135135135135	True	-21.0	-88.0	False	-67.0	0.0
+7be69237244cc512	m06	-116	17	134	TypeIC1_IC2	8.3e-06	0.0	overlaps_RT_start	-136.0	-78.0	True	True	True	0.2532467532467532	True	-20.0	-95.0	False	-75.0	0.0
+7be69237244cc512	m14	-150	-20	131	TypeIC1_IC2	2.9e-10	-19.0	upstream	-176.0	-112.0	True	True	True	0.2484076433121019	True	-26.0	-92.0	False	-66.0	0.0
+7be69237244cc512	m05	-163	-21	143	TypeIC1_IC2	3.2e-06	-20.0	upstream	-183.0	-124.0	True	True	True	0.24539877300613497	True	-20.0	-103.0	False	-83.0	0.0
+8120394c21a5bcc7	m17	-341	-144	198	TypeV	1.8e-08	-143.0	overlapping_adjacent_CDS			True	True	False		False			False		
+8120394c21a5bcc7	m00	-314	-125	190	TypeV	1.3e-22	-124.0	upstream	-286.0	-206.0	True	True	True	0.4263157894736842	True	28.0	-81.0	False	-109.0	0.0
+8120394c21a5bcc7	m03	-331	-136	196	TypeV	3.4e-11	-135.0	overlapping_adjacent_CDS	-299.0	-223.0	True	True	True	0.39285714285714285	True	32.0	-87.0	False	-119.0	0.0
+8120394c21a5bcc7	m04	-313	-121	193	TypeV	1.6e-15	-120.0	overlapping_adjacent_CDS			True	True	False		False			False		
+8120394c21a5bcc7	m08	-316	-120	197	TypeV	2.5e-12	-119.0	overlapping_adjacent_CDS	-283.0	-207.0	True	True	True	0.39086294416243655	True	33.0	-87.0	False	-120.0	0.0
+8120394c21a5bcc7	m09	-316	-126	191	TypeV	1.3e-19	-125.0	overlapping_adjacent_CDS	-286.0	-209.0	True	True	True	0.4083769633507853	True	30.0	-83.0	False	-113.0	0.0
+8120394c21a5bcc7	m16	-329	-134	196	TypeV	1.8e-07	-133.0	overlapping_adjacent_CDS			True	True	False		False			False		
+8120394c21a5bcc7	m05	-313	-124	190	TypeV	4.9e-19	-123.0	upstream	-286.0	-205.0	True	True	True	0.43157894736842106	True	27.0	-81.0	False	-108.0	0.0
+8120394c21a5bcc7	m10	-312	-123	190	TypeV	1.1e-22	-122.0	upstream	-283.0	-204.0	True	True	True	0.42105263157894735	True	29.0	-81.0	False	-110.0	0.0
+8120394c21a5bcc7	m11	-315	-121	195	TypeV	5.1e-14	-120.0	overlapping_adjacent_CDS	-280.0	-208.0	True	True	True	0.37435897435897436	True	35.0	-87.0	False	-122.0	0.0
+8120394c21a5bcc7	m01	-324	-129	196	TypeV	3.3e-19	-128.0	overlapping_adjacent_CDS	-294.0	-208.0	True	True	True	0.44387755102040816	True	30.0	-79.0	False	-109.0	0.0
+8120394c21a5bcc7	m02	-330	-134	197	TypeV	8.5e-13	-133.0	overlapping_adjacent_CDS	-297.0	-221.0	True	True	True	0.39086294416243655	True	33.0	-87.0	False	-120.0	0.0
+8120394c21a5bcc7	m15	-313	-134	180	TypeV	3.9e-05	-133.0	overlapping_adjacent_CDS			True	True	False		False			False		
+8120394c21a5bcc7	m06	-309	-118	192	TypeV	5e-17	-117.0	overlapping_adjacent_CDS	-282.0	-199.0	True	True	True	0.4375	True	27.0	-81.0	False	-108.0	0.0
+8120394c21a5bcc7	m14	-304	-125	180	TypeV	0.0014	-124.0	overlapping_adjacent_CDS			True	True	False		False			False		
+8120394c21a5bcc7	m07	-330	-136	195	TypeV	3.3e-11	-135.0	overlapping_adjacent_CDS	-301.0	-221.0	True	True	True	0.4153846153846154	True	29.0	-85.0	False	-114.0	0.0
+8120394c21a5bcc7	m12	-310	-118	193	TypeV	3.7e-20	-117.0	overlapping_adjacent_CDS	-283.0	-202.0	True	True	True	0.42487046632124353	True	27.0	-84.0	False	-111.0	0.0
+8120394c21a5bcc7	m13	-313	-124	190	TypeV	3.5e-15	-123.0	overlapping_adjacent_CDS	-284.0	-205.0	True	True	True	0.42105263157894735	True	29.0	-81.0	False	-110.0	0.0
+836a2fc62058adb3	m02	-183	-25	159	Ec107_like	2.4e-23	-24.0	upstream	-296.0	-247.0	True	True	True	0.0	False	-113.0	-222.0	False	-109.0	0.0
+836a2fc62058adb3	m04	-183	-25	159	Ec107_like	2.4e-23	-24.0	upstream			True	True	False		False			False		
+836a2fc62058adb3	m01	-183	-25	159	Ec107_like	2.4e-23	-24.0	upstream	-296.0	-247.0	True	True	True	0.0	False	-113.0	-222.0	False	-109.0	0.0
+836a2fc62058adb3	m05	-183	-25	159	Ec107_like	2.4e-23	-24.0	upstream	-296.0	-247.0	True	True	True	0.0	False	-113.0	-222.0	False	-109.0	0.0
+836a2fc62058adb3	m00	-183	-25	159	Ec107_like	4.3e-23	-24.0	upstream			True	True	False		False			False		
+836a2fc62058adb3	m03	-183	-25	159	Ec107_like	2.4e-23	-24.0	upstream			True	True	False		False			False		
+86e08f8b606add2a	m02	-111	17	129	TypeIC1_IC2	1.1e-09	0.0	overlaps_RT_start	-59.0	22.0	True	True	True	0.5746268656716418	True	52.0	5.0	False	-47.0	0.16666666666666666
+86e08f8b606add2a	m00	-140	-11	130	TypeIC1_IC2	9.7e-05	-10.0	upstream			True	True	False		False			False		
+86e08f8b606add2a	m03	-140	-12	129	TypeIC1_IC2	2.8e-05	-11.0	upstream	-88.0	-7.0	True	True	True	0.5746268656716418	True	52.0	5.0	False	-47.0	0.16666666666666666
+86e08f8b606add2a	m04	-103	24	128	TypeIC1_IC2	1.3e-09	0.0	overlaps_RT_start	-51.0	29.0	True	True	True	0.5714285714285714	True	52.0	5.0	False	-47.0	0.166270783847981
+86e08f8b606add2a	m05	-48	80	129	TypeIC1_IC2	1.2e-09	0.0	overlaps_RT_start	4.0	85.0	True	True	True	0.5746268656716418	True	52.0	5.0	False	-47.0	0.16666666666666666
+86e08f8b606add2a	m01	-111	17	129	TypeIC1_IC2	6.3e-09	0.0	overlaps_RT_start	-59.0	22.0	True	True	True	0.5746268656716418	True	52.0	5.0	False	-47.0	0.16666666666666666
+87c68f39addcee63	m01	-245	21	267	TypeIIIA3	2.5e-15	0.0	overlaps_RT_start	-72.0	-11.0	True	True	True	0.23220973782771537	True	173.0	-32.0	False	-205.0	0.0
+87c68f39addcee63	m05	-247	21	269	TypeIIIA3	1.3e-11	0.0	overlaps_RT_start	-73.0	-10.0	True	True	True	0.2379182156133829	True	174.0	-31.0	False	-205.0	0.0
+87c68f39addcee63	m00	-246	21	268	TypeIIIA3	3.3e-16	0.0	overlaps_RT_start	-73.0	-10.0	True	True	True	0.23880597014925373	True	173.0	-31.0	False	-204.0	0.0
+87c68f39addcee63	m03	-246	21	268	TypeIIIA3	2.4e-19	0.0	overlaps_RT_start	-73.0	-10.0	True	True	True	0.23880597014925373	True	173.0	-31.0	False	-204.0	0.0
+87c68f39addcee63	m02	-247	21	269	TypeIIIA3	1.2e-15	0.0	overlaps_RT_start	-72.0	-11.0	True	True	True	0.23048327137546468	True	175.0	-32.0	False	-207.0	0.0
+87c68f39addcee63	m04	-246	21	268	TypeIIIA3	1.2e-17	0.0	overlaps_RT_start	-73.0	-10.0	True	True	True	0.23880597014925373	True	173.0	-31.0	False	-204.0	0.0
+88298ccb7afd1e94	m19	-187	-41	147	TypeIB1	5.4e-08	-40.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m01	-183	-43	141	TypeIB1	1e-06	-42.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m06	-178	-35	144	TypeIB1	2.7e-09	-34.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m14	-183	-42	142	TypeIB1	5e-09	-41.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m02	-187	-49	139	TypeIB1	8.4e-08	-48.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m15	-191	-78	114	TypeIB1	3.6e-06	-77.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m05	-182	-50	133	TypeIB1	8.9e-08	-49.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m16	-187	-101	87	TypeIB1	3.9e-05	-100.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m07	-199	-56	144	TypeIB1	1e-09	-55.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m12	-189	-46	144	TypeIB1	9.4e-07	-45.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m13	-182	-45	138	TypeIB1	5.7e-08	-44.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m08	-190	-45	146	TypeIB1	2.9e-06	-44.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m09	-189	-40	150	TypeIB1	4.1e-08	-39.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m18	-179	-44	136	TypeIB1	3.2e-08	-43.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m04	-180	-39	142	TypeIB1	0.00015	-38.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m17	-175	-92	84	TypeIB1	9.3e-08	-91.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m10	-182	-48	135	TypeIB1	1e-06	-47.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m11	-181	-53	129	TypeIB1	5e-08	-52.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m00	-183	-39	145	TypeIB1	1.5e-06	-38.0	upstream			False	True	False		False			False		
+88298ccb7afd1e94	m03	-211	-71	141	TypeIB1	1.5e-10	-70.0	upstream			False	True	False		False			False		
+89ee0d022c299562	m00	-276	-49	228	TypeXIIIB_Ne144	3.2e-33	-48.0	upstream	-179.0	-107.0	True	True	True	0.3201754385964912	True	97.0	-58.0	False	-155.0	0.0
+89ee0d022c299562	m03	-232	-13	220	TypeXIIIB_Ne144	5.6e-38	-12.0	upstream	-139.0	-65.0	True	True	True	0.3409090909090909	True	93.0	-52.0	False	-145.0	0.0
+89ee0d022c299562	m04	-256	-38	219	TypeXIIIB_Ne144	1.4e-21	-37.0	overlapping_adjacent_CDS			True	True	False		False			False		
+89ee0d022c299562	m05	-234	-14	221	TypeXIIIB_Ne144	2.2e-41	-13.0	upstream	-140.0	-67.0	True	True	True	0.334841628959276	True	94.0	-53.0	False	-147.0	0.0
+89ee0d022c299562	m01	-232	-17	216	TypeXIIIB_Ne144	6.2e-31	-16.0	upstream	-141.0	-68.0	True	True	True	0.3425925925925926	True	91.0	-51.0	False	-142.0	0.0
+89ee0d022c299562	m02	-232	-17	216	TypeXIIIB_Ne144	5.1e-33	-16.0	upstream	-141.0	-68.0	True	True	True	0.3425925925925926	True	91.0	-51.0	False	-142.0	0.0
+89ee0d022c299562	m06	-284	-53	232	TypeXIIIB_Ne144	5.4e-18	-52.0	upstream			True	True	False		False			False		
+8b525b2b44076384	m06	-166	-36	131	TypeIC1_IC2	1.4e-31	-35.0	upstream	-323.0	-283.0	True	True	True	0.0	False	-157.0	-247.0	False	-90.0	0.0
+8b525b2b44076384	m01	-168	-38	131	TypeIC1_IC2	1e-27	-37.0	upstream	-314.0	-274.0	True	True	True	0.0	False	-146.0	-236.0	False	-90.0	0.0
+8b525b2b44076384	m05	-166	-36	131	TypeIC1_IC2	2.8e-31	-35.0	upstream	-323.0	-283.0	True	True	True	0.0	False	-157.0	-247.0	False	-90.0	0.0
+8b525b2b44076384	m04	-168	-38	131	TypeIC1_IC2	1e-27	-37.0	upstream	-314.0	-274.0	True	True	True	0.0	False	-146.0	-236.0	False	-90.0	0.0
+8b525b2b44076384	m07	-169	-39	131	TypeIC1_IC2	5.3e-29	-38.0	upstream	-319.0	-279.0	True	True	True	0.0	False	-150.0	-240.0	False	-90.0	0.0
+8b525b2b44076384	m00	-164	-34	131	TypeIC1_IC2	1.5e-29	-33.0	upstream	-310.0	-271.0	True	True	True	0.0	False	-146.0	-237.0	False	-91.0	0.0
+8b525b2b44076384	m03	-168	-38	131	TypeIC1_IC2	1e-27	-37.0	upstream	-314.0	-274.0	True	True	True	0.0	False	-146.0	-236.0	False	-90.0	0.0
+8b525b2b44076384	m02	-166	-36	131	TypeIC1_IC2	2.8e-31	-35.0	upstream	-323.0	-283.0	True	True	True	0.0	False	-157.0	-247.0	False	-90.0	0.0
+8ea0f62d7be41161	m02	-246	18	265	TypeIIIA3	1.1e-12	0.0	overlaps_RT_start	-84.0	-8.0	True	True	True	0.29056603773584905	True	162.0	-26.0	False	-188.0	0.0
+8ea0f62d7be41161	m04	-246	18	265	TypeIIIA3	1.2e-13	0.0	overlaps_RT_start	-84.0	-8.0	True	True	True	0.29056603773584905	True	162.0	-26.0	False	-188.0	0.0
+8ea0f62d7be41161	m01	-263	21	285	TypeIIIA3	1.9e-08	0.0	overlaps_RT_start	-86.0	-7.0	True	True	True	0.2807017543859649	True	177.0	-28.0	False	-205.0	0.0
+8ea0f62d7be41161	m05	-240	21	262	TypeIIIA3	4.2e-20	0.0	overlaps_RT_start	-83.0	-8.0	True	True	True	0.2900763358778626	True	157.0	-29.0	False	-186.0	0.0
+8ea0f62d7be41161	m00	-263	21	285	TypeIIIA3	1.2e-10	0.0	overlaps_RT_start	-86.0	-7.0	True	True	True	0.2807017543859649	True	177.0	-28.0	False	-205.0	0.0
+8ea0f62d7be41161	m03	-246	18	265	TypeIIIA3	5.2e-15	0.0	overlaps_RT_start	-84.0	-8.0	True	True	True	0.29056603773584905	True	162.0	-26.0	False	-188.0	0.0
+8ea0f62d7be41161	m07	-264	21	286	TypeIIIA3	4.9e-16	0.0	overlaps_RT_start	-87.0	-8.0	True	True	True	0.27972027972027974	True	177.0	-29.0	False	-206.0	0.0
+8ea0f62d7be41161	m06	-246	21	268	TypeIIIA3	1.8e-15	0.0	overlaps_RT_start	-86.0	-7.0	True	True	True	0.29850746268656714	True	160.0	-28.0	False	-188.0	0.0
+8ea0f62d7be41161	m08	-256	21	278	TypeIIIA3	6.8e-13	0.0	overlaps_RT_start	-85.0	-7.0	True	True	True	0.2841726618705036	True	171.0	-28.0	False	-199.0	0.0
+91ec3d1539f4bfce	m04	-181	0	182	TypeIIA3_firmi	2.9e-22	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.44505494505494503	True	91.0	-10.0	False	-101.0	0.0
+91ec3d1539f4bfce	m00	-182	0	183	TypeIIA3_firmi	6.9e-26	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.4426229508196721	True	92.0	-10.0	False	-102.0	0.0
+91ec3d1539f4bfce	m03	-173	9	183	TypeIIA3_firmi	3.2e-25	0.0	overlaps_RT_start	-81.0	-1.0	True	True	True	0.4426229508196721	True	92.0	-10.0	False	-102.0	0.0
+91ec3d1539f4bfce	m02	-172	9	182	TypeIIA3_firmi	2.5e-23	0.0	overlaps_RT_start	-81.0	-1.0	True	True	True	0.44505494505494503	True	91.0	-10.0	False	-101.0	0.0
+91ec3d1539f4bfce	m15	-173	9	183	TypeIIA3_firmi	3e-17	0.0	overlaps_RT_start	-81.0	-1.0	True	True	True	0.4426229508196721	True	92.0	-10.0	False	-102.0	0.0
+91ec3d1539f4bfce	m10	-185	0	186	TypeIIA3_firmi	1.3e-19	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.43548387096774194	True	95.0	-10.0	False	-105.0	0.0
+91ec3d1539f4bfce	m11	-182	0	183	TypeIIA3_firmi	1e-24	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.4426229508196721	True	92.0	-10.0	False	-102.0	0.0
+91ec3d1539f4bfce	m07	-181	0	182	TypeIIA3_firmi	5.5e-22	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.44505494505494503	True	91.0	-10.0	False	-101.0	0.0
+91ec3d1539f4bfce	m12	-172	9	182	TypeIIA3_firmi	8.6e-25	0.0	overlaps_RT_start	-81.0	-1.0	True	True	True	0.44505494505494503	True	91.0	-10.0	False	-101.0	0.0
+91ec3d1539f4bfce	m13	-173	9	183	TypeIIA3_firmi	3e-22	0.0	overlaps_RT_start	-81.0	-1.0	True	True	True	0.4426229508196721	True	92.0	-10.0	False	-102.0	0.0
+91ec3d1539f4bfce	m01	-181	0	182	TypeIIA3_firmi	2e-24	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.44505494505494503	True	91.0	-10.0	False	-101.0	0.0
+91ec3d1539f4bfce	m08	-173	9	183	TypeIIA3_firmi	1.6e-22	0.0	overlaps_RT_start	-81.0	-1.0	True	True	True	0.4426229508196721	True	92.0	-10.0	False	-102.0	0.0
+91ec3d1539f4bfce	m09	-181	0	182	TypeIIA3_firmi	4.8e-22	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.44505494505494503	True	91.0	-10.0	False	-101.0	0.0
+91ec3d1539f4bfce	m05	-181	0	182	TypeIIA3_firmi	9.1e-23	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.44505494505494503	True	91.0	-10.0	False	-101.0	0.0
+91ec3d1539f4bfce	m06	-172	9	182	TypeIIA3_firmi	8.7e-23	0.0	overlaps_RT_start	-81.0	-1.0	True	True	True	0.44505494505494503	True	91.0	-10.0	False	-101.0	0.0
+91ec3d1539f4bfce	m14	-182	0	183	TypeIIA3_firmi	8.8e-23	0.0	overlaps_RT_start	-90.0	-10.0	True	True	True	0.4426229508196721	True	92.0	-10.0	False	-102.0	0.0
+9607e388e7a82831	m08	-236	-59	178	TypeIA_IIAI	6.6e-25	-58.0	upstream	-195.0	-114.0	True	True	True	0.4606741573033708	True	41.0	-55.0	False	-96.0	0.0
+9607e388e7a82831	m09	-238	-59	180	TypeIA_IIAI	6e-24	-58.0	upstream	-196.0	-115.0	True	True	True	0.45555555555555555	True	42.0	-56.0	False	-98.0	0.0
+9607e388e7a82831	m18	-230	-54	177	TypeIA_IIAI	3.9e-23	-53.0	upstream	-187.0	-107.0	True	True	True	0.4576271186440678	True	43.0	-53.0	False	-96.0	0.0
+9607e388e7a82831	m07	-235	-54	182	TypeIA_IIAI	6.1e-19	-53.0	upstream	-193.0	-111.0	True	True	True	0.45604395604395603	True	42.0	-57.0	False	-99.0	0.0
+9607e388e7a82831	m12	-225	-45	181	TypeIA_IIAI	1e-19	-44.0	upstream	-183.0	-101.0	True	True	True	0.4585635359116022	True	42.0	-56.0	False	-98.0	0.0
+9607e388e7a82831	m13	-227	-54	174	TypeIA_IIAI	6.1e-24	-53.0	upstream	-191.0	-110.0	True	True	True	0.47126436781609193	True	36.0	-56.0	False	-92.0	0.0
+9607e388e7a82831	m05	-238	-59	180	TypeIA_IIAI	1.5e-23	-58.0	upstream	-196.0	-115.0	True	True	True	0.45555555555555555	True	42.0	-56.0	False	-98.0	0.0
+9607e388e7a82831	m01	-253	-87	167	TypeIA_IIAI	1.1e-25	-86.0	upstream	-209.0	-127.0	True	True	True	0.49700598802395207	True	44.0	-40.0	False	-84.0	0.0
+9607e388e7a82831	m17	-220	-46	175	TypeIA_IIAI	4.6e-24	-45.0	upstream	-181.0	-99.0	True	True	True	0.4742857142857143	True	39.0	-53.0	False	-92.0	0.0
+9607e388e7a82831	m06	-275	-112	164	TypeIA_IIAI	1.2e-22	-111.0	upstream	-231.0	-151.0	True	True	True	0.49390243902439024	True	44.0	-39.0	False	-83.0	0.0
+9607e388e7a82831	m14	-235	-58	178	TypeIA_IIAI	7.7e-26	-57.0	upstream	-194.0	-113.0	True	True	True	0.4606741573033708	True	41.0	-55.0	False	-96.0	0.0
+9607e388e7a82831	m04	-234	-55	180	TypeIA_IIAI	6.2e-21	-54.0	upstream	-192.0	-111.0	True	True	True	0.45555555555555555	True	42.0	-56.0	False	-98.0	0.0
+9607e388e7a82831	m19	-224	-47	178	TypeIA_IIAI	8.9e-23	-46.0	upstream	-183.0	-102.0	True	True	True	0.4606741573033708	True	41.0	-55.0	False	-96.0	0.0
+9607e388e7a82831	m16	-214	-36	179	TypeIA_IIAI	2e-22	-35.0	upstream	-173.0	-92.0	True	True	True	0.4581005586592179	True	41.0	-56.0	False	-97.0	0.0
+9607e388e7a82831	m02	-236	-55	182	TypeIA_IIAI	5.5e-22	-54.0	upstream	-192.0	-111.0	True	True	True	0.45054945054945056	True	44.0	-56.0	False	-100.0	0.0
+9607e388e7a82831	m15	-235	-59	177	TypeIA_IIAI	7.8e-24	-58.0	upstream	-195.0	-114.0	True	True	True	0.4632768361581921	True	40.0	-55.0	False	-95.0	0.0
+9607e388e7a82831	m00	-235	-59	177	TypeIA_IIAI	3.8e-24	-58.0	upstream	-195.0	-114.0	True	True	True	0.4632768361581921	True	40.0	-55.0	False	-95.0	0.0
+9607e388e7a82831	m03	-237	-60	178	TypeIA_IIAI	1.1e-24	-59.0	upstream	-196.0	-115.0	True	True	True	0.4606741573033708	True	41.0	-55.0	False	-96.0	0.0
+9607e388e7a82831	m10	-234	-58	177	TypeIA_IIAI	3.3e-25	-57.0	upstream	-194.0	-113.0	True	True	True	0.4632768361581921	True	40.0	-55.0	False	-95.0	0.0
+9607e388e7a82831	m11	-242	-71	172	TypeIA_IIAI	2.3e-23	-70.0	upstream	-206.0	-126.0	True	True	True	0.47093023255813954	True	36.0	-55.0	False	-91.0	0.0
+9c0d9e75fc77a440	m08	-151	-20	132	TypeIC1_IC2	0.0063	-19.0	upstream	-141.0	-99.0	True	True	True	0.32575757575757575	True	10.0	-79.0	False	-89.0	0.0
+9c0d9e75fc77a440	m09	-163	-31	133	TypeIC1_IC2	8.3e-11	-30.0	upstream	-154.0	-112.0	True	True	True	0.3233082706766917	True	9.0	-81.0	False	-90.0	0.0
+9c0d9e75fc77a440	m18	-149	-13	137	TypeIC1_IC2	0.0018	-12.0	upstream	-139.0	-97.0	True	True	True	0.31386861313868614	True	10.0	-84.0	False	-94.0	0.0
+9c0d9e75fc77a440	m07	-170	-23	148	TypeIC1_IC2	0.00012	-22.0	upstream			True	True	False		False			False		
+9c0d9e75fc77a440	m12	-170	-23	148	TypeIC1_IC2	7e-05	-22.0	overlapping_adjacent_CDS	-161.0	-120.0	True	True	True	0.28378378378378377	True	9.0	-97.0	False	-106.0	0.0
+9c0d9e75fc77a440	m13	-146	-15	132	TypeIC1_IC2	7.5e-07	-14.0	upstream	-137.0	-95.0	True	True	True	0.32575757575757575	True	9.0	-80.0	False	-89.0	0.0
+9c0d9e75fc77a440	m05	-151	-16	136	TypeIC1_IC2	0.0048	-15.0	overlapping_adjacent_CDS	-141.0	-101.0	True	True	True	0.3014705882352941	True	10.0	-85.0	False	-95.0	0.0
+9c0d9e75fc77a440	m01	-180	-48	133	TypeIC1_IC2	2.9e-05	-47.0	upstream	-171.0	-129.0	True	True	True	0.3233082706766917	True	9.0	-81.0	False	-90.0	0.0
+9c0d9e75fc77a440	m17	-143	-10	134	TypeIC1_IC2	6.7e-07	-9.0	upstream	-134.0	-92.0	True	True	True	0.3208955223880597	True	9.0	-82.0	False	-91.0	0.0
+9c0d9e75fc77a440	m06	-229	-95	135	TypeIC1_IC2	2.8e-11	-94.0	upstream	-220.0	-178.0	True	True	True	0.31851851851851853	True	9.0	-83.0	False	-92.0	0.0
+9c0d9e75fc77a440	m14	-155	-24	132	TypeIC1_IC2	5.4e-07	-23.0	upstream	-146.0	-104.0	True	True	True	0.32575757575757575	True	9.0	-80.0	False	-89.0	0.0
+9c0d9e75fc77a440	m04	-170	-33	138	TypeIC1_IC2	0.0011	-32.0	upstream	-161.0	-119.0	True	True	True	0.3115942028985507	True	9.0	-86.0	False	-95.0	0.0
+9c0d9e75fc77a440	m19	-156	-23	134	TypeIC1_IC2	5.9e-07	-22.0	upstream	-147.0	-104.0	True	True	True	0.3283582089552239	True	9.0	-81.0	False	-90.0	0.0
+9c0d9e75fc77a440	m16	-156	-22	135	TypeIC1_IC2	1.8e-06	-21.0	upstream	-147.0	-105.0	True	True	True	0.31851851851851853	True	9.0	-83.0	False	-92.0	0.0
+9c0d9e75fc77a440	m02	-148	-12	137	TypeIC1_IC2	3.8e-05	-11.0	upstream	-139.0	-98.0	True	True	True	0.30656934306569344	True	9.0	-86.0	False	-95.0	0.0
+9c0d9e75fc77a440	m15	-159	-23	137	TypeIC1_IC2	4e-09	-22.0	upstream	-150.0	-108.0	True	True	True	0.31386861313868614	True	9.0	-85.0	False	-94.0	0.0
+9c0d9e75fc77a440	m00	-47	87	135	TypeIC1_IC2	0.00099	0.0	overlaps_RT_start	-38.0	4.0	True	True	True	0.31851851851851853	True	9.0	-83.0	False	-92.0	0.0
+9c0d9e75fc77a440	m03	-145	-16	130	TypeIC1_IC2	1.6e-06	-15.0	upstream	-136.0	-95.0	True	True	True	0.3230769230769231	True	9.0	-79.0	False	-88.0	0.0
+9c0d9e75fc77a440	m10	-160	-25	136	TypeIC1_IC2	1.8e-05	-24.0	overlapping_adjacent_CDS	-151.0	-109.0	True	True	True	0.3161764705882353	True	9.0	-84.0	False	-93.0	0.0
+9c0d9e75fc77a440	m11	-145	-19	127	TypeIC1_IC2	3.4e-05	-18.0	upstream	-137.0	-95.0	True	True	True	0.33858267716535434	True	8.0	-76.0	False	-84.0	0.0
+a900b7588e4e41ff	m04	-149	-22	128	TypeIC1_IC2	2.8e-09	-21.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m00	-138	-14	125	TypeIC1_IC2	5.7e-07	-13.0	overlapping_adjacent_CDS			False	True	False		False			False		
+a900b7588e4e41ff	m03	-141	-18	124	TypeIC1_IC2	1.3e-07	-17.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m17	-31	92	124	TypeIC1_IC2	1.2e-09	0.0	overlaps_RT_start			False	True	False		False			False		
+a900b7588e4e41ff	m10	-149	-22	128	TypeIC1_IC2	0.00028	-21.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m11	-160	-24	137	TypeIC1_IC2	3.7e-06	-23.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m05	-149	-22	128	TypeIC1_IC2	8.8e-07	-21.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m02	-140	-10	131	TypeIC1_IC2	1.1e-07	-9.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m15	-31	96	128	TypeIC1_IC2	4.3e-05	0.0	overlaps_RT_start			False	True	False		False			False		
+a900b7588e4e41ff	m08	-151	-23	129	TypeIC1_IC2	4.8e-07	-22.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m09	-222	-95	128	TypeIC1_IC2	6.8e-06	-94.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m18	-152	-24	129	TypeIC1_IC2	7.1e-10	-23.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m16	-98	23	122	TypeIC1_IC2	6.2e-07	0.0	overlaps_RT_start			False	True	False		False			False		
+a900b7588e4e41ff	m19	-100	35	136	TypeIC1_IC2	1.1e-08	0.0	overlaps_RT_start			False	True	False		False			False		
+a900b7588e4e41ff	m06	-236	-99	138	TypeIC1_IC2	2.3e-06	-98.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m14	-153	-25	129	TypeIC1_IC2	3.9e-07	-24.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m07	-139	-12	128	TypeIC1_IC2	2e-07	-11.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m12	-143	-19	125	TypeIC1_IC2	2.9e-06	-18.0	upstream			False	True	False		False			False		
+a900b7588e4e41ff	m13	-61	70	132	TypeIC1_IC2	4.5e-09	0.0	overlaps_RT_start			False	True	False		False			False		
+a900b7588e4e41ff	m01	-147	-22	126	TypeIC1_IC2	1.4e-06	-21.0	upstream			False	True	False		False			False		
+ae85f7d186c5e286	m00	-150	-3	148	TypeIX	1.1e-18	-2.0	upstream	-155.0	-69.0	True	True	True	0.5359477124183006	True	-5.0	-66.0	False	-61.0	0.18795180722891566
+ae85f7d186c5e286	m03	-149	-5	145	TypeIX	2.6e-22	-4.0	upstream	-155.0	-69.0	True	True	True	0.5364238410596026	True	-6.0	-64.0	False	-58.0	0.1855421686746988
+ae85f7d186c5e286	m04	-150	-8	143	TypeIX	8.2e-21	-7.0	upstream	-155.0	-69.0	True	True	True	0.5540540540540541	True	-5.0	-61.0	False	-56.0	0.1855421686746988
+ae85f7d186c5e286	m08	-149	-5	145	TypeIX	1.4e-22	-4.0	upstream			True	True	False		False			False		
+ae85f7d186c5e286	m09	-150	-3	148	TypeIX	7.5e-18	-2.0	upstream	-155.0	-69.0	True	True	True	0.5359477124183006	True	-5.0	-66.0	False	-61.0	0.18795180722891566
+ae85f7d186c5e286	m05	-150	-3	148	TypeIX	1.1e-18	-2.0	upstream	-155.0	-69.0	True	True	True	0.5359477124183006	True	-5.0	-66.0	False	-61.0	0.18795180722891566
+ae85f7d186c5e286	m10	-149	-3	147	TypeIX	1.5e-21	-2.0	overlapping_adjacent_CDS	-154.0	-68.0	True	True	True	0.5394736842105263	True	-5.0	-65.0	False	-60.0	0.19036144578313252
+ae85f7d186c5e286	m11	-150	-2	149	TypeIX	6.8e-19	-1.0	upstream	-155.0	-69.0	True	True	True	0.5324675324675324	True	-5.0	-67.0	False	-62.0	0.19036144578313252
+ae85f7d186c5e286	m01	-150	-3	148	TypeIX	7.5e-18	-2.0	upstream			True	True	False		False			False		
+ae85f7d186c5e286	m02	-149	-2	148	TypeIX	2.6e-19	-1.0	upstream	-154.0	-68.0	True	True	True	0.5359477124183006	True	-5.0	-66.0	False	-61.0	0.18795180722891566
+ae85f7d186c5e286	m06	-148	-2	147	TypeIX	1.8e-20	-1.0	upstream	-153.0	-67.0	True	True	True	0.5394736842105263	True	-5.0	-65.0	False	-60.0	0.19036144578313252
+ae85f7d186c5e286	m07	-147	-8	140	TypeIX	9.3e-21	-7.0	upstream	-155.0	-69.0	True	True	True	0.5337837837837838	True	-8.0	-61.0	False	-53.0	0.18313253012048192
+ae85f7d186c5e286	m12	-149	-5	145	TypeIX	1.4e-22	-4.0	upstream	-155.0	-69.0	True	True	True	0.5364238410596026	True	-6.0	-64.0	False	-58.0	0.1855421686746988
+ae85f7d186c5e286	m13	-150	-3	148	TypeIX	7.2e-18	-2.0	upstream	-155.0	-69.0	True	True	True	0.5359477124183006	True	-5.0	-66.0	False	-61.0	0.18795180722891566
+b1008ea97cc5e69c	m04	-117	-22	96	TypeIV	8.4e-09	-21.0	upstream	-61.0	-7.0	True	True	True	0.36036036036036034	True	56.0	15.0	False	-41.0	0.11185682326621924
+b1008ea97cc5e69c	m00	-82	15	98	TypeIV	0.00081	0.0	overlaps_RT_start	-20.0	30.0	True	True	True	0.3185840707964602	True	62.0	15.0	False	-47.0	0.11086474501108648
+b1008ea97cc5e69c	m03	-121	-25	97	TypeIV	1e-06	-24.0	upstream	-68.0	-10.0	True	True	True	0.39285714285714285	True	53.0	15.0	False	-38.0	0.11963882618510158
+b1008ea97cc5e69c	m02	-114	-20	95	TypeIV	7.3e-08	-19.0	upstream	-62.0	-6.0	True	True	True	0.3944954128440367	True	52.0	14.0	False	-38.0	0.1146067415730337
+b1008ea97cc5e69c	m07	-118	-22	97	TypeIV	1.2e-07	-21.0	upstream	-65.0	-7.0	True	True	True	0.39285714285714285	True	53.0	15.0	False	-38.0	0.11963882618510158
+b1008ea97cc5e69c	m01	-80	15	96	TypeIV	5.2e-07	0.0	overlaps_RT_start	-24.0	30.0	True	True	True	0.36036036036036034	True	56.0	15.0	False	-41.0	0.11185682326621924
+b1008ea97cc5e69c	m05	-119	-24	96	TypeIV	0.0001	-23.0	upstream	-67.0	-9.0	True	True	True	0.3963963963963964	True	52.0	15.0	False	-37.0	0.11738148984198646
+b1008ea97cc5e69c	m06	-116	-21	96	TypeIV	5e-05	-20.0	upstream	-60.0	-6.0	True	True	True	0.36036036036036034	True	56.0	15.0	False	-41.0	0.11185682326621924
+b68a7d8439bdc3c2	m17	-168	-29	140	TypeXIII_Mx65	3.1e-13	-28.0	upstream	-144.0	-91.0	True	True	True	0.38571428571428573	True	24.0	-62.0	False	-86.0	0.0
+b68a7d8439bdc3c2	m04	-137	4	142	TypeXIII_Mx65	1.5e-14	0.0	overlaps_RT_start	-114.0	-61.0	True	True	True	0.38028169014084506	True	23.0	-65.0	False	-88.0	0.0
+b68a7d8439bdc3c2	m00	-180	-34	147	TypeXIII_Mx65	6.5e-13	-33.0	overlapping_adjacent_CDS	-152.0	-99.0	True	True	True	0.3673469387755102	True	28.0	-65.0	False	-93.0	0.0
+b68a7d8439bdc3c2	m03	-173	-31	143	TypeXIII_Mx65	5.1e-06	-30.0	upstream	-150.0	-98.0	True	True	True	0.3706293706293706	True	23.0	-67.0	False	-90.0	0.0
+b68a7d8439bdc3c2	m02	-170	-28	143	TypeXIII_Mx65	2e-11	-27.0	upstream	-147.0	-94.0	True	True	True	0.3776223776223776	True	23.0	-66.0	False	-89.0	0.0
+b68a7d8439bdc3c2	m15	-165	-27	139	TypeXIII_Mx65	1.2e-10	-26.0	upstream	-143.0	-90.0	True	True	True	0.38848920863309355	True	22.0	-63.0	False	-85.0	0.0
+b68a7d8439bdc3c2	m10	-167	-28	140	TypeXIII_Mx65	5.3e-11	-27.0	upstream	-143.0	-90.0	True	True	True	0.38571428571428573	True	24.0	-62.0	False	-86.0	0.0
+b68a7d8439bdc3c2	m11	-193	-54	140	TypeXIII_Mx65	4.2e-07	-53.0	upstream	-170.0	-117.0	True	True	True	0.38571428571428573	True	23.0	-63.0	False	-86.0	0.0
+b68a7d8439bdc3c2	m07	-130	4	135	TypeXIII_Mx65	1.8e-11	0.0	overlaps_RT_start	-109.0	-54.0	True	True	True	0.4148148148148148	True	21.0	-58.0	False	-79.0	0.0
+b68a7d8439bdc3c2	m12	-166	-28	139	TypeXIII_Mx65	5.2e-14	-27.0	upstream	-143.0	-90.0	True	True	True	0.38848920863309355	True	23.0	-62.0	False	-85.0	0.0
+b68a7d8439bdc3c2	m13	-165	-28	138	TypeXIII_Mx65	2.7e-15	-27.0	upstream	-143.0	-90.0	True	True	True	0.391304347826087	True	22.0	-62.0	False	-84.0	0.0
+b68a7d8439bdc3c2	m16	-146	-5	142	TypeXIII_Mx65	5e-17	-4.0	upstream	-121.0	-68.0	True	True	True	0.38028169014084506	True	25.0	-63.0	False	-88.0	0.0
+b68a7d8439bdc3c2	m01	-166	-29	138	TypeXIII_Mx65	1.9e-13	-28.0	upstream	-144.0	-91.0	True	True	True	0.391304347826087	True	22.0	-62.0	False	-84.0	0.0
+b68a7d8439bdc3c2	m08	-208	-76	133	TypeXIII_Mx65	1.3e-16	-75.0	upstream	-188.0	-135.0	True	True	True	0.40601503759398494	True	20.0	-59.0	False	-79.0	0.0
+b68a7d8439bdc3c2	m09	-155	-17	139	TypeXIII_Mx65	9.3e-14	-16.0	upstream	-132.0	-79.0	True	True	True	0.38848920863309355	True	23.0	-62.0	False	-85.0	0.0
+b68a7d8439bdc3c2	m18	-204	-55	150	TypeXIII_Mx65	2.7e-14	-54.0	upstream	-176.0	-123.0	True	True	True	0.36	True	28.0	-68.0	False	-96.0	0.0
+b68a7d8439bdc3c2	m05	-196	-49	148	TypeXIII_Mx65	6.9e-14	-48.0	upstream	-168.0	-115.0	True	True	True	0.36486486486486486	True	28.0	-66.0	False	-94.0	0.0
+b68a7d8439bdc3c2	m06	-158	-20	139	TypeXIII_Mx65	1.2e-09	-19.0	upstream	-134.0	-80.0	True	True	True	0.39568345323741005	True	24.0	-60.0	False	-84.0	0.0
+b68a7d8439bdc3c2	m14	-194	-56	139	TypeXIII_Mx65	5.1e-14	-55.0	upstream	-171.0	-118.0	True	True	True	0.38848920863309355	True	23.0	-62.0	False	-85.0	0.0
+b72373a9556a0e36	m00	-346	-114	233	TypeXIIIB_Ne144	1.7e-23	-113.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m03	-110	112	223	TypeXIIIB_Ne144	2.8e-30	0.0	overlaps_RT_start			False	True	False		False			False		
+b72373a9556a0e36	m04	-367	-136	232	TypeXIIIB_Ne144	2.8e-27	-135.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m17	-278	-37	242	TypeXIIIB_Ne144	3.8e-20	-36.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m16	-268	-52	217	TypeXIIIB_Ne144	1.3e-15	-51.0	overlapping_adjacent_CDS			False	True	False		False			False		
+b72373a9556a0e36	m07	-271	-61	211	TypeXIIIB_Ne144	2.1e-14	-60.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m12	-349	-117	233	TypeXIIIB_Ne144	1e-23	-116.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m13	-268	-28	241	TypeXIIIB_Ne144	3.6e-23	-27.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m02	-260	-36	225	TypeXIIIB_Ne144	5.6e-29	-35.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m15	-260	-37	224	TypeXIIIB_Ne144	5.7e-30	-36.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m06	-283	-59	225	TypeXIIIB_Ne144	3.2e-33	-58.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m14	-250	-27	224	TypeXIIIB_Ne144	5e-28	-26.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m10	-337	-101	237	TypeXIIIB_Ne144	2.9e-21	-100.0	overlapping_adjacent_CDS			False	True	False		False			False		
+b72373a9556a0e36	m11	-348	-124	225	TypeXIIIB_Ne144	7.4e-28	-123.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m01	-292	-72	221	TypeXIIIB_Ne144	7.7e-37	-71.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m05	-259	-37	223	TypeXIIIB_Ne144	1.7e-31	-36.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m08	-355	-96	260	TypeXIIIB_Ne144	1.3e-13	-95.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m09	-389	-158	232	TypeXIIIB_Ne144	2.4e-26	-157.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m18	-278	-47	232	TypeXIIIB_Ne144	1.4e-17	-46.0	upstream			False	True	False		False			False		
+b72373a9556a0e36	m19	-659	-433	227	TypeXIIIB_Ne144	1.9e-27	-432.0	upstream			False	False	False		False			False		
+b7ba199a0ca24395	m16	-184	-32	153	TypeIB1	1.1e-10	-31.0	upstream	-142.0	-47.0	True	True	True	0.6274509803921569	True	42.0	-15.0	False	-57.0	0.20689655172413793
+b7ba199a0ca24395	m10	-196	-45	152	TypeIB1	6.1e-08	-44.0	upstream	-153.0	-63.0	True	True	True	0.5986842105263158	True	43.0	-18.0	False	-61.0	0.19951338199513383
+b7ba199a0ca24395	m11	-210	-67	144	TypeIB1	2e-08	-66.0	upstream	-167.0	-74.0	True	True	True	0.6527777777777778	True	43.0	-7.0	False	-50.0	0.19362745098039216
+b7ba199a0ca24395	m02	-199	-50	150	TypeIB1	1.7e-10	-49.0	upstream	-156.0	-66.0	True	True	True	0.6066666666666667	True	43.0	-16.0	False	-59.0	0.19464720194647203
+b7ba199a0ca24395	m15	-192	-44	149	TypeIB1	2.2e-11	-43.0	upstream	-150.0	-61.0	True	True	True	0.6040268456375839	True	42.0	-17.0	False	-59.0	0.1941747572815534
+b7ba199a0ca24395	m00	-195	-52	144	TypeIB1	1.5e-09	-51.0	upstream	-153.0	-63.0	True	True	True	0.6319444444444444	True	42.0	-11.0	False	-53.0	0.1897810218978102
+b7ba199a0ca24395	m03	-194	-46	149	TypeIB1	4e-09	-45.0	upstream	-152.0	-62.0	True	True	True	0.610738255033557	True	42.0	-16.0	False	-58.0	0.19708029197080293
+b7ba199a0ca24395	m06	-188	-41	148	TypeIB1	9.3e-12	-40.0	upstream	-148.0	-57.0	True	True	True	0.6216216216216216	True	40.0	-16.0	False	-56.0	0.1975609756097561
+b7ba199a0ca24395	m14	-194	-45	150	TypeIB1	4.6e-09	-44.0	upstream	-154.0	-64.0	True	True	True	0.6066666666666667	True	40.0	-19.0	False	-59.0	0.19464720194647203
+b7ba199a0ca24395	m07	-195	-55	141	TypeIB1	5.8e-10	-54.0	upstream	-152.0	-62.0	True	True	True	0.6453900709219859	True	43.0	-7.0	False	-50.0	0.1873479318734793
+b7ba199a0ca24395	m12	-202	-57	146	TypeIB1	1.3e-12	-56.0	upstream	-160.0	-69.0	True	True	True	0.6301369863013698	True	42.0	-12.0	False	-54.0	0.1926829268292683
+b7ba199a0ca24395	m13	-179	-29	151	TypeIB1	7e-09	-28.0	upstream	-137.0	-44.0	True	True	True	0.6225165562913907	True	42.0	-15.0	False	-57.0	0.20098039215686275
+b7ba199a0ca24395	m04	-179	-27	153	TypeIB1	2.4e-10	-26.0	upstream	-137.0	-46.0	True	True	True	0.6013071895424836	True	42.0	-19.0	False	-61.0	0.2
+b7ba199a0ca24395	m08	-190	-42	149	TypeIB1	2.1e-10	-41.0	upstream	-148.0	-57.0	True	True	True	0.6174496644295302	True	42.0	-15.0	False	-57.0	0.1951219512195122
+b7ba199a0ca24395	m09	-195	-45	151	TypeIB1	6.6e-14	-44.0	upstream	-153.0	-61.0	True	True	True	0.6158940397350994	True	42.0	-16.0	False	-58.0	0.1980440097799511
+b7ba199a0ca24395	m05	-195	-45	151	TypeIB1	2e-10	-44.0	upstream	-152.0	-62.0	True	True	True	0.6026490066225165	True	43.0	-17.0	False	-60.0	0.19708029197080293
+b7ba199a0ca24395	m01	-195	-55	141	TypeIB1	5.2e-10	-54.0	upstream	-152.0	-63.0	True	True	True	0.6382978723404256	True	43.0	-8.0	False	-51.0	0.18932038834951456
+c26da08c55d02a6a	m02	1102	1383	282	TypeIIIA3	3.8e-16	0.0	other_uncertain	1.0	42.0	True	False	True	0.0	False	-1101.0	-1341.0	False	-240.0	0.0
+c26da08c55d02a6a	m04	1105	1386	282	TypeIIIA3	5e-18	0.0	other_uncertain	1.0	41.0	True	False	True	0.0	False	-1104.0	-1345.0	False	-241.0	0.0
+c26da08c55d02a6a	m01	1195	1478	284	TypeIIIA3	1.6e-09	0.0	other_uncertain			True	False	False		False			False		
+c26da08c55d02a6a	m05	1093	1375	283	TypeIIIA3	1.3e-13	0.0	other_uncertain	-11.0	30.0	True	False	True	0.0	False	-1104.0	-1345.0	False	-241.0	0.0
+c26da08c55d02a6a	m00	1102	1388	287	TypeIIIA3	2.6e-15	0.0	other_uncertain	1.0	47.0	True	False	True	0.0	False	-1101.0	-1341.0	False	-240.0	0.0
+c26da08c55d02a6a	m03	1195	1477	283	TypeIIIA3	5.1e-14	0.0	other_uncertain			True	False	False		False			False		
+c34f95fe6fe5db37	m04	-293	-148	146	TypeIB1	8.6e-09	-147.0	upstream	-279.0	-207.0	True	True	True	0.5	True	14.0	-59.0	False	-73.0	0.17249417249417248
+c34f95fe6fe5db37	m00	-296	-154	143	TypeIB1	4.4e-07	-153.0	upstream	-285.0	-213.0	True	True	True	0.5104895104895105	True	11.0	-59.0	False	-70.0	0.17016317016317017
+c34f95fe6fe5db37	m03	-293	-145	149	TypeIB1	1.1e-05	-144.0	upstream	-279.0	-207.0	True	True	True	0.4899328859060403	True	14.0	-62.0	False	-76.0	0.0
+c34f95fe6fe5db37	m10	-311	-163	149	TypeIB1	1.6e-10	-162.0	upstream	-297.0	-226.0	True	True	True	0.48322147651006714	True	14.0	-63.0	False	-77.0	0.0
+c34f95fe6fe5db37	m11	-322	-175	148	TypeIB1	2.7e-08	-174.0	upstream	-313.0	-241.0	True	True	True	0.49324324324324326	True	9.0	-66.0	False	-75.0	0.0
+c34f95fe6fe5db37	m05	-313	-161	153	TypeIB1	3e-06	-160.0	upstream	-299.0	-226.0	True	True	True	0.48366013071895425	True	14.0	-65.0	False	-79.0	0.0
+c34f95fe6fe5db37	m02	-274	-125	150	TypeIB1	4.2e-07	-124.0	upstream	-262.0	-190.0	True	True	True	0.4866666666666667	True	12.0	-65.0	False	-77.0	0.0
+c34f95fe6fe5db37	m15	-329	-188	142	TypeIB1	1e-06	-187.0	upstream	-315.0	-243.0	True	True	True	0.5140845070422535	True	14.0	-55.0	False	-69.0	0.16783216783216784
+c34f95fe6fe5db37	m08	-321	-178	144	TypeIB1	1.6e-10	-177.0	upstream	-307.0	-235.0	True	True	True	0.5069444444444444	True	14.0	-57.0	False	-71.0	0.16783216783216784
+c34f95fe6fe5db37	m09	-277	-136	142	TypeIB1	1.4e-05	-135.0	upstream	-264.0	-192.0	True	True	True	0.5140845070422535	True	13.0	-56.0	False	-69.0	0.16783216783216784
+c34f95fe6fe5db37	m16	-301	-152	150	TypeIB1	1e-10	-151.0	upstream	-287.0	-215.0	True	True	True	0.4866666666666667	True	14.0	-63.0	False	-77.0	0.0
+c34f95fe6fe5db37	m06	-309	-160	150	TypeIB1	3.9e-08	-159.0	upstream	-295.0	-224.0	True	True	True	0.48	True	14.0	-64.0	False	-78.0	0.0
+c34f95fe6fe5db37	m14	-217	-105	113	TypeIB1	4.9e-05	-104.0	upstream	-203.0	-131.0	True	True	True	0.6460176991150443	True	14.0	-26.0	False	-40.0	0.14685314685314685
+c34f95fe6fe5db37	m07	-269	-114	156	TypeIB1	4.2e-09	-113.0	upstream	-255.0	-183.0	True	True	True	0.46794871794871795	True	14.0	-69.0	False	-83.0	0.0
+c34f95fe6fe5db37	m12	-295	-169	127	TypeIB1	1.4e-11	-168.0	upstream	-281.0	-209.0	True	True	True	0.5748031496062992	True	14.0	-40.0	False	-54.0	0.1561771561771562
+c34f95fe6fe5db37	m13	-334	-179	156	TypeIB1	1.4e-10	-178.0	upstream	-320.0	-248.0	True	True	True	0.46794871794871795	True	14.0	-69.0	False	-83.0	0.0
+c34f95fe6fe5db37	m01	-294	-139	156	TypeIB1	1.2e-12	-138.0	upstream	-280.0	-208.0	True	True	True	0.46794871794871795	True	14.0	-69.0	False	-83.0	0.0
+c3c41dfe14f1d01b	m16	-117	-26	92	TypeIV	3.4e-14	-25.0	upstream	-119.0	-24.0	True	True	True	0.9583333333333334	True	-2.0	2.0	True	4.0	0.15517241379310345
+c3c41dfe14f1d01b	m10	-113	-19	95	TypeIV	3.6e-10	-18.0	upstream	-115.0	-17.0	True	True	True	0.9595959595959596	True	-2.0	2.0	True	4.0	0.16129032258064516
+c3c41dfe14f1d01b	m11	-78	11	90	TypeIV	3.2e-13	0.0	overlaps_RT_start	-80.0	13.0	True	True	True	0.9574468085106383	True	-2.0	2.0	True	4.0	0.14950980392156862
+c3c41dfe14f1d01b	m02	-118	-25	94	TypeIV	1.9e-11	-24.0	upstream	-120.0	-23.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+c3c41dfe14f1d01b	m15	-118	-23	96	TypeIV	1e-06	-22.0	upstream	-120.0	-21.0	True	True	True	0.96	True	-2.0	2.0	True	4.0	0.16169154228855723
+c3c41dfe14f1d01b	m00	-165	-69	97	TypeIV	3.6e-10	-68.0	upstream	-167.0	-67.0	True	True	True	0.9603960396039604	True	-2.0	2.0	True	4.0	0.16708229426433915
+c3c41dfe14f1d01b	m03	-115	-19	97	TypeIV	4.8e-05	-18.0	upstream	-117.0	-17.0	True	True	True	0.9603960396039604	True	-2.0	2.0	True	4.0	0.16708229426433915
+c3c41dfe14f1d01b	m06	-86	4	91	TypeIV	8.1e-10	0.0	overlaps_RT_start	-89.0	7.0	True	True	True	0.9381443298969072	True	-3.0	3.0	True	6.0	0.15555555555555556
+c3c41dfe14f1d01b	m14	-113	-19	95	TypeIV	1.4e-05	-18.0	upstream	-115.0	-17.0	True	True	True	0.9595959595959596	True	-2.0	2.0	True	4.0	0.16129032258064516
+c3c41dfe14f1d01b	m17	-121	-26	96	TypeIV	1.4e-10	-25.0	upstream	-123.0	-24.0	True	True	True	0.96	True	-2.0	2.0	True	4.0	0.16169154228855723
+c3c41dfe14f1d01b	m19	-105	-12	94	TypeIV	0.00085	-11.0	upstream	-107.0	-10.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+c3c41dfe14f1d01b	m07	-122	-31	92	TypeIV	9.4e-19	-30.0	upstream	-124.0	-29.0	True	True	True	0.9583333333333334	True	-2.0	2.0	True	4.0	0.15517241379310345
+c3c41dfe14f1d01b	m12	-114	-31	84	TypeIV	0.00036	-30.0	upstream			True	True	False		False			False		
+c3c41dfe14f1d01b	m13	-121	-28	94	TypeIV	1.5e-10	-27.0	upstream	-123.0	-26.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+c3c41dfe14f1d01b	m04	-105	-10	96	TypeIV	0.00016	-9.0	upstream	-107.0	-8.0	True	True	True	0.96	True	-2.0	2.0	True	4.0	0.16169154228855723
+c3c41dfe14f1d01b	m08	-114	-21	94	TypeIV	1.3e-16	-20.0	upstream	-116.0	-19.0	True	True	True	0.9591836734693877	True	-2.0	2.0	True	4.0	0.1608910891089109
+c3c41dfe14f1d01b	m09	-112	-20	93	TypeIV	1e-09	-19.0	upstream	-114.0	-18.0	True	True	True	0.9587628865979382	True	-2.0	2.0	True	4.0	0.15555555555555556
+c3c41dfe14f1d01b	m18	-87	4	92	TypeIV	2.1e-08	0.0	overlaps_RT_start	-90.0	7.0	True	True	True	0.9387755102040817	True	-3.0	3.0	True	6.0	0.15594059405940594
+c3c41dfe14f1d01b	m05	-111	-21	91	TypeIV	7.6e-13	-20.0	upstream	-113.0	-19.0	True	True	True	0.9578947368421052	True	-2.0	2.0	True	4.0	0.1547911547911548
+c3c41dfe14f1d01b	m01	-111	-22	90	TypeIV	6.1e-12	-21.0	upstream	-113.0	-20.0	True	True	True	0.9574468085106383	True	-2.0	2.0	True	4.0	0.14950980392156862
+cb32802455fd406c	m04	-299	-46	254	TypeXIIIC_Mx162	2.7e-47	-45.0	upstream	-278.0	-236.0	True	True	True	0.16929133858267717	True	21.0	-190.0	False	-211.0	0.0
+cb32802455fd406c	m00	-307	-54	254	TypeXIIIC_Mx162	9e-51	-53.0	upstream	-286.0	-244.0	True	True	True	0.16929133858267717	True	21.0	-190.0	False	-211.0	0.0
+cb32802455fd406c	m03	-291	-32	260	TypeXIIIC_Mx162	8.5e-35	-31.0	upstream	-265.0	-223.0	True	True	True	0.16538461538461538	True	26.0	-191.0	False	-217.0	0.0
+cb32802455fd406c	m05	-275	-23	253	TypeXIIIC_Mx162	4.8e-47	-22.0	upstream	-254.0	-212.0	True	True	True	0.16996047430830039	True	21.0	-189.0	False	-210.0	0.0
+cb32802455fd406c	m02	-276	-33	244	TypeXIIIC_Mx162	5.9e-40	-32.0	upstream	-262.0	-224.0	True	True	True	0.1598360655737705	True	14.0	-191.0	False	-205.0	0.0
+cb32802455fd406c	m06	-290	-37	254	TypeXIIIC_Mx162	3.8e-52	-36.0	upstream	-269.0	-227.0	True	True	True	0.16929133858267717	True	21.0	-190.0	False	-211.0	0.0
+cb32802455fd406c	m01	-318	-65	254	TypeXIIIC_Mx162	1.1e-45	-64.0	upstream	-297.0	-255.0	True	True	True	0.16929133858267717	True	21.0	-190.0	False	-211.0	0.0
+cf7e39634e835f92	m02	-200	1	202	TypeIIA3_firmi	3.2e-10	0.0	overlaps_RT_start	-87.0	-29.0	True	True	True	0.29207920792079206	True	113.0	-30.0	False	-143.0	0.0
+cf7e39634e835f92	m04	-179	2	182	TypeIIA3_firmi	2.1e-16	0.0	overlaps_RT_start	-86.0	-29.0	True	True	True	0.31868131868131866	True	93.0	-31.0	False	-124.0	0.0
+cf7e39634e835f92	m06	-187	-1	187	TypeIIA3_firmi	2.8e-16	0.0	overlapping_adjacent_CDS	-95.0	-34.0	True	True	True	0.3315508021390374	True	92.0	-33.0	False	-125.0	0.0
+cf7e39634e835f92	m00	-179	2	182	TypeIIA3_firmi	4.6e-11	0.0	overlaps_RT_start	-84.0	-29.0	True	True	True	0.3076923076923077	True	95.0	-31.0	False	-126.0	0.0
+cf7e39634e835f92	m03	-171	2	174	TypeIIA3_firmi	1.9e-19	0.0	overlaps_RT_start	-86.0	-29.0	True	True	True	0.3333333333333333	True	85.0	-31.0	False	-116.0	0.0
+cf7e39634e835f92	m05	-178	2	181	TypeIIA3_firmi	5.9e-22	0.0	overlaps_RT_start	-86.0	-29.0	True	True	True	0.32044198895027626	True	92.0	-31.0	False	-123.0	0.0
+cf7e39634e835f92	m01	-171	2	174	TypeIIA3_firmi	7.8e-20	0.0	overlaps_RT_start	-86.0	-29.0	True	True	True	0.3333333333333333	True	85.0	-31.0	False	-116.0	0.0
+d9a7aceedf5dcd45	m10	-160	-33	128	TypeIC1_IC2	1.8e-26	-32.0	upstream	-181.0	-116.0	True	True	True	0.30201342281879195	True	-21.0	-83.0	False	-62.0	0.14908256880733944
+d9a7aceedf5dcd45	m11	-148	-18	131	TypeIC1_IC2	3.8e-12	-17.0	upstream	-166.0	-104.0	True	True	True	0.30201342281879195	True	-18.0	-86.0	False	-68.0	0.0
+d9a7aceedf5dcd45	m02	-166	-36	131	TypeIC1_IC2	2.8e-31	-35.0	upstream	-186.0	-121.0	True	True	True	0.304635761589404	True	-20.0	-85.0	False	-65.0	0.15137614678899083
+d9a7aceedf5dcd45	m04	-166	-36	131	TypeIC1_IC2	3.5e-13	-35.0	overlapping_adjacent_CDS	-186.0	-122.0	True	True	True	0.2980132450331126	True	-20.0	-86.0	False	-66.0	0.0
+d9a7aceedf5dcd45	m01	-149	-18	132	TypeIC1_IC2	6.3e-12	-17.0	upstream	-158.0	-105.0	True	True	True	0.3191489361702128	True	-9.0	-87.0	False	-78.0	0.0
+d9a7aceedf5dcd45	m05	-160	-33	128	TypeIC1_IC2	8e-27	-32.0	upstream	-181.0	-116.0	True	True	True	0.30201342281879195	True	-21.0	-83.0	False	-62.0	0.14908256880733944
+d9a7aceedf5dcd45	m00	-166	-36	131	TypeIC1_IC2	1.4e-31	-35.0	upstream	-186.0	-121.0	True	True	True	0.304635761589404	True	-20.0	-85.0	False	-65.0	0.15137614678899083
+d9a7aceedf5dcd45	m03	-148	-18	131	TypeIC1_IC2	3.9e-10	-17.0	upstream	-157.0	-104.0	True	True	True	0.32142857142857145	True	-9.0	-86.0	False	-77.0	0.0
+d9a7aceedf5dcd45	m07	-149	-18	132	TypeIC1_IC2	2.8e-11	-17.0	upstream	-159.0	-105.0	True	True	True	0.31690140845070425	True	-10.0	-87.0	False	-77.0	0.0
+d9a7aceedf5dcd45	m12	-166	-36	131	TypeIC1_IC2	1.4e-31	-35.0	upstream			True	True	False		False			False		
+d9a7aceedf5dcd45	m13	-155	-27	129	TypeIC1_IC2	2.6e-19	-26.0	upstream	-170.0	-111.0	True	True	True	0.3125	True	-15.0	-84.0	False	-69.0	0.0
+d9a7aceedf5dcd45	m06	-166	-36	131	TypeIC1_IC2	1.4e-31	-35.0	upstream			True	True	False		False			False		
+d9a7aceedf5dcd45	m14	-166	-36	131	TypeIC1_IC2	1.4e-31	-35.0	upstream	-186.0	-121.0	True	True	True	0.304635761589404	True	-20.0	-85.0	False	-65.0	0.15137614678899083
+d9a7aceedf5dcd45	m08	-169	-39	131	TypeIC1_IC2	5.3e-29	-38.0	upstream	-188.0	-125.0	True	True	True	0.3	True	-19.0	-86.0	False	-67.0	0.0
+d9a7aceedf5dcd45	m09	-166	-36	131	TypeIC1_IC2	1.4e-31	-35.0	upstream			True	True	False		False			False		
+dba5847d3fe58cdb	m05	-197	-3	195	TypeIIA3_firmi	2.2e-23	-2.0	overlapping_adjacent_CDS	-102.0	-10.0	True	True	True	0.47692307692307695	True	95.0	-7.0	False	-102.0	0.0
+dba5847d3fe58cdb	m07	-192	0	193	TypeIIA3_firmi	7e-26	0.0	overlaps_RT_start	-103.0	-10.0	True	True	True	0.48704663212435234	True	89.0	-10.0	False	-99.0	0.0
+dba5847d3fe58cdb	m12	-215	-23	193	TypeIIA3_firmi	9.8e-22	-22.0	overlapping_adjacent_CDS	-124.0	-31.0	True	True	True	0.48704663212435234	True	91.0	-8.0	False	-99.0	0.0
+dba5847d3fe58cdb	m13	-186	1	188	TypeIIA3_firmi	5.2e-22	0.0	overlaps_RT_start	-100.0	-7.0	True	True	True	0.5	True	86.0	-8.0	False	-94.0	0.23284313725490197
+dba5847d3fe58cdb	m08	-188	-3	186	TypeIIA3_firmi	8.4e-19	-2.0	upstream	-103.0	-11.0	True	True	True	0.5	True	85.0	-8.0	False	-93.0	0.22982885085574573
+dba5847d3fe58cdb	m09	-209	-23	187	TypeIIA3_firmi	5.7e-23	-22.0	overlapping_adjacent_CDS	-123.0	-31.0	True	True	True	0.49732620320855614	True	86.0	-8.0	False	-94.0	0.0
+dba5847d3fe58cdb	m18	-182	0	183	TypeIIA3_firmi	6.2e-23	0.0	overlaps_RT_start	-103.0	-10.0	True	True	True	0.5136612021857924	True	79.0	-10.0	False	-89.0	0.22549019607843138
+dba5847d3fe58cdb	m04	-182	0	183	TypeIIA3_firmi	4.5e-23	0.0	overlaps_RT_start	-102.0	-10.0	True	True	True	0.5081967213114754	True	80.0	-10.0	False	-90.0	0.2273838630806846
+dba5847d3fe58cdb	m19	-361	-165	197	TypeIIA3_firmi	3.6e-14	-164.0	upstream	-267.0	-173.0	True	True	True	0.48223350253807107	True	94.0	-8.0	False	-102.0	0.0
+dba5847d3fe58cdb	m17	-209	-23	187	TypeIIA3_firmi	1e-20	-22.0	overlapping_adjacent_CDS	-123.0	-31.0	True	True	True	0.49732620320855614	True	86.0	-8.0	False	-94.0	0.0
+dba5847d3fe58cdb	m01	-183	0	184	TypeIIA3_firmi	3e-25	0.0	overlaps_RT_start	-103.0	-10.0	True	True	True	0.5108695652173914	True	80.0	-10.0	False	-90.0	0.22794117647058823
+dba5847d3fe58cdb	m10	-191	-2	190	TypeIIA3_firmi	3.2e-22	-1.0	overlapping_adjacent_CDS	-103.0	-10.0	True	True	True	0.49473684210526314	True	88.0	-8.0	False	-96.0	0.0
+dba5847d3fe58cdb	m11	-188	-1	188	TypeIIA3_firmi	3e-19	0.0	overlapping_adjacent_CDS	-101.0	-8.0	True	True	True	0.5	True	87.0	-7.0	False	-94.0	0.23284313725490197
+dba5847d3fe58cdb	m06	-184	0	185	TypeIIA3_firmi	1.5e-22	0.0	overlaps_RT_start	-103.0	-10.0	True	True	True	0.5081081081081081	True	81.0	-10.0	False	-91.0	0.23039215686274508
+dba5847d3fe58cdb	m14	-183	0	184	TypeIIA3_firmi	3.4e-22	0.0	overlaps_RT_start	-103.0	-10.0	True	True	True	0.5108695652173914	True	80.0	-10.0	False	-90.0	0.22794117647058823
+dba5847d3fe58cdb	m02	-237	-50	188	TypeIIA3_firmi	2.3e-19	-49.0	overlapping_adjacent_CDS	-151.0	-58.0	True	True	True	0.5	True	86.0	-8.0	False	-94.0	0.23284313725490197
+dba5847d3fe58cdb	m15	-210	-23	188	TypeIIA3_firmi	1.2e-20	-22.0	overlapping_adjacent_CDS	-124.0	-31.0	True	True	True	0.5	True	86.0	-8.0	False	-94.0	0.23284313725490197
+dba5847d3fe58cdb	m16	-184	0	185	TypeIIA3_firmi	7e-23	0.0	overlaps_RT_start	-100.0	-8.0	True	True	True	0.5027027027027027	True	84.0	-8.0	False	-92.0	0.2273838630806846
+dba5847d3fe58cdb	m00	-189	5	195	TypeIIA3_firmi	7.9e-16	0.0	overlaps_RT_start	-98.0	-4.0	True	True	True	0.48717948717948717	True	91.0	-9.0	False	-100.0	0.0
+dba5847d3fe58cdb	m03	-236	-50	187	TypeIIA3_firmi	1.2e-22	-49.0	overlapping_adjacent_CDS	-150.0	-58.0	True	True	True	0.49732620320855614	True	86.0	-8.0	False	-94.0	0.0
+dfc1007ca068f582	m06	-190	-70	121	TypeIC1_IC2	3.9e-07	-69.0	upstream	-181.0	-139.0	True	True	True	0.35537190082644626	True	9.0	-69.0	False	-78.0	0.0
+dfc1007ca068f582	m14	-165	-22	144	TypeIC1_IC2	2.9e-06	-21.0	upstream	-156.0	-114.0	True	True	True	0.2986111111111111	True	9.0	-92.0	False	-101.0	0.0
+dfc1007ca068f582	m01	-166	-29	138	TypeIC1_IC2	3.2e-06	-28.0	upstream	-159.0	-117.0	True	True	True	0.3115942028985507	True	7.0	-88.0	False	-95.0	0.0
+dfc1007ca068f582	m19	-283	-140	144	TypeIC1_IC2	0.0003	-139.0	upstream	-274.0	-233.0	True	True	True	0.2916666666666667	True	9.0	-93.0	False	-102.0	0.0
+dfc1007ca068f582	m07	-145	-10	136	TypeIC1_IC2	1.4e-06	-9.0	upstream	-136.0	-94.0	True	True	True	0.3161764705882353	True	9.0	-84.0	False	-93.0	0.0
+dfc1007ca068f582	m12	-180	-40	141	TypeIC1_IC2	6.3e-10	-39.0	overlapping_adjacent_CDS	-171.0	-129.0	True	True	True	0.3049645390070922	True	9.0	-89.0	False	-98.0	0.0
+dfc1007ca068f582	m13	-170	-26	145	TypeIC1_IC2	4.7e-07	-25.0	upstream	-161.0	-117.0	True	True	True	0.3103448275862069	True	9.0	-91.0	False	-100.0	0.0
+dfc1007ca068f582	m16	-154	-13	142	TypeIC1_IC2	0.0017	-12.0	upstream	-145.0	-103.0	True	True	True	0.3028169014084507	True	9.0	-90.0	False	-99.0	0.0
+dfc1007ca068f582	m08	-174	-27	148	TypeIC1_IC2	7.8e-10	-26.0	upstream	-165.0	-123.0	True	True	True	0.2905405405405405	True	9.0	-96.0	False	-105.0	0.0
+dfc1007ca068f582	m09	-173	-26	148	TypeIC1_IC2	2.4e-09	-25.0	upstream	-164.0	-122.0	True	True	True	0.2905405405405405	True	9.0	-96.0	False	-105.0	0.0
+dfc1007ca068f582	m18	-144	-19	126	TypeIC1_IC2	2.8e-09	-18.0	upstream	-135.0	-92.0	True	True	True	0.3492063492063492	True	9.0	-73.0	False	-82.0	0.0
+dfc1007ca068f582	m02	-156	-26	131	TypeIC1_IC2	5.9e-11	-25.0	upstream	-147.0	-105.0	True	True	True	0.3282442748091603	True	9.0	-79.0	False	-88.0	0.0
+dfc1007ca068f582	m15	-166	-25	142	TypeIC1_IC2	9.4e-08	-24.0	upstream	-157.0	-115.0	True	True	True	0.3028169014084507	True	9.0	-90.0	False	-99.0	0.0
+dfc1007ca068f582	m00	-172	-27	146	TypeIC1_IC2	2.3e-06	-26.0	upstream	-163.0	-120.0	True	True	True	0.3013698630136986	True	9.0	-93.0	False	-102.0	0.0
+dfc1007ca068f582	m03	-168	-24	145	TypeIC1_IC2	7.1e-08	-23.0	upstream	-159.0	-117.0	True	True	True	0.296551724137931	True	9.0	-93.0	False	-102.0	0.0
+dfc1007ca068f582	m05	-160	-24	137	TypeIC1_IC2	1.1e-07	-23.0	upstream	-151.0	-109.0	True	True	True	0.31386861313868614	True	9.0	-85.0	False	-94.0	0.0
+dfc1007ca068f582	m17	-155	-28	128	TypeIC1_IC2	1.3e-07	-27.0	upstream	-146.0	-104.0	True	True	True	0.3359375	True	9.0	-76.0	False	-85.0	0.0
+dfc1007ca068f582	m04	-174	-27	148	TypeIC1_IC2	0.00037	-26.0	upstream	-165.0	-123.0	True	True	True	0.2905405405405405	True	9.0	-96.0	False	-105.0	0.0
+dfc1007ca068f582	m10	-160	-25	136	TypeIC1_IC2	1.2e-05	-24.0	upstream	-151.0	-107.0	True	True	True	0.33088235294117646	True	9.0	-82.0	False	-91.0	0.0
+dfc1007ca068f582	m11	-150	-23	128	TypeIC1_IC2	2.2e-10	-22.0	upstream	-141.0	-99.0	True	True	True	0.3359375	True	9.0	-76.0	False	-85.0	0.0
+e23501aa84029925	m05	-155	-25	131	TypeIC1_IC2	1.1e-11	-24.0	upstream	-115.0	-34.0	True	True	True	0.6259541984732825	True	40.0	-9.0	False	-49.0	0.17142857142857143
+e23501aa84029925	m00	-157	-25	133	TypeIC1_IC2	1.7e-09	-24.0	upstream	-117.0	-34.0	True	True	True	0.631578947368421	True	40.0	-9.0	False	-49.0	0.1722488038277512
+e23501aa84029925	m03	-150	-20	131	TypeIC1_IC2	4.2e-10	-19.0	upstream	-110.0	-29.0	True	True	True	0.6259541984732825	True	40.0	-9.0	False	-49.0	0.17142857142857143
+e23501aa84029925	m06	-157	-25	133	TypeIC1_IC2	3.4e-11	-24.0	upstream	-116.0	-34.0	True	True	True	0.6240601503759399	True	41.0	-9.0	False	-50.0	0.17422434367541767
+e23501aa84029925	m02	-151	-21	131	TypeIC1_IC2	4.2e-10	-20.0	upstream			True	True	False		False			False		
+e23501aa84029925	m01	-156	-25	132	TypeIC1_IC2	1.4e-11	-24.0	upstream	-116.0	-34.0	True	True	True	0.6287878787878788	True	40.0	-9.0	False	-49.0	0.1718377088305489
+e23501aa84029925	m04	-161	-30	132	TypeIC1_IC2	6e-10	-29.0	upstream	-121.0	-39.0	True	True	True	0.6287878787878788	True	40.0	-9.0	False	-49.0	0.1718377088305489
+e6867966150bb9c5	m10	-345	-199	147	TypeIB1	1.2e-15	-198.0	upstream	-302.0	-226.0	True	True	True	0.5238095238095238	True	43.0	-27.0	False	-70.0	0.17647058823529413
+e6867966150bb9c5	m11	-143	1	145	TypeIB1	3.6e-12	0.0	overlaps_RT_start	-100.0	-24.0	True	True	True	0.5310344827586206	True	43.0	-25.0	False	-68.0	0.17647058823529413
+e6867966150bb9c5	m02	-330	-186	145	TypeIB1	1.2e-14	-185.0	upstream	-287.0	-211.0	True	True	True	0.5310344827586206	True	43.0	-25.0	False	-68.0	0.17647058823529413
+e6867966150bb9c5	m04	-334	-189	146	TypeIB1	1.9e-12	-188.0	upstream	-291.0	-215.0	True	True	True	0.5273972602739726	True	43.0	-26.0	False	-69.0	0.17411764705882352
+e6867966150bb9c5	m01	-303	-157	147	TypeIB1	5.8e-16	-156.0	upstream	-261.0	-184.0	True	True	True	0.5306122448979592	True	42.0	-27.0	False	-69.0	0.1792452830188679
+e6867966150bb9c5	m05	-287	-147	141	TypeIB1	6e-12	-146.0	upstream	-245.0	-168.0	True	True	True	0.5531914893617021	True	42.0	-21.0	False	-63.0	0.17452830188679244
+e6867966150bb9c5	m00	-291	-147	145	TypeIB1	3e-12	-146.0	upstream	-249.0	-172.0	True	True	True	0.5379310344827586	True	42.0	-25.0	False	-67.0	0.17452830188679244
+e6867966150bb9c5	m03	-292	-146	147	TypeIB1	4e-11	-145.0	upstream	-250.0	-173.0	True	True	True	0.5306122448979592	True	42.0	-27.0	False	-69.0	0.1792452830188679
+e6867966150bb9c5	m07	-321	-180	142	TypeIB1	1.4e-13	-179.0	upstream	-279.0	-202.0	True	True	True	0.5492957746478874	True	42.0	-22.0	False	-64.0	0.1721698113207547
+e6867966150bb9c5	m12	-316	-184	133	TypeIB1	1.4e-08	-183.0	upstream	-273.0	-198.0	True	True	True	0.5714285714285714	True	43.0	-14.0	False	-57.0	0.1643192488262911
+e6867966150bb9c5	m06	-270	-121	150	TypeIB1	5.7e-12	-120.0	upstream	-227.0	-151.0	True	True	True	0.5133333333333333	True	43.0	-30.0	False	-73.0	0.17882352941176471
+e6867966150bb9c5	m08	-311	-166	146	TypeIB1	1.8e-15	-165.0	upstream	-268.0	-191.0	True	True	True	0.5342465753424658	True	43.0	-25.0	False	-68.0	0.17688679245283018
+e6867966150bb9c5	m09	-263	-114	150	TypeIB1	2.9e-14	-113.0	upstream	-221.0	-145.0	True	True	True	0.5133333333333333	True	42.0	-31.0	False	-73.0	0.17882352941176471
+e79d0eaec20bb0ef	m02	-250	-38	213	TypeXIIIA_firmi	2.7e-07	-37.0	upstream	-164.0	-83.0	True	True	True	0.38497652582159625	True	86.0	-45.0	False	-131.0	0.0
+e79d0eaec20bb0ef	m04	-232	-20	213	TypeXIIIA_firmi	8.9e-05	-19.0	overlapping_adjacent_CDS	-146.0	-65.0	True	True	True	0.38497652582159625	True	86.0	-45.0	False	-131.0	0.0
+e79d0eaec20bb0ef	m01	-272	-64	209	TypeXIIIA_firmi	6.2e-07	-63.0	upstream	-185.0	-109.0	True	True	True	0.3684210526315789	True	87.0	-45.0	False	-132.0	0.0
+e79d0eaec20bb0ef	m05	-256	-47	210	TypeXIIIA_firmi	3.3e-05	-46.0	upstream	-170.0	-92.0	True	True	True	0.3761904761904762	True	86.0	-45.0	False	-131.0	0.0
+e79d0eaec20bb0ef	m00	-234	-25	210	TypeXIIIA_firmi	4.6e-06	-24.0	upstream	-148.0	-70.0	True	True	True	0.3761904761904762	True	86.0	-45.0	False	-131.0	0.0
+e79d0eaec20bb0ef	m03	-248	-39	210	TypeXIIIA_firmi	1.1e-05	-38.0	upstream	-162.0	-84.0	True	True	True	0.3761904761904762	True	86.0	-45.0	False	-131.0	0.0
+e79d0eaec20bb0ef	m06	-249	-39	211	TypeXIIIA_firmi	5.4e-07	-38.0	upstream	-163.0	-85.0	True	True	True	0.3744075829383886	True	86.0	-46.0	False	-132.0	0.0
+e923f79b3ab4fe4a	m05	-223	21	245	TypeIIIA3	2e-09	0.0	overlaps_RT_start	-148.0	-96.0	True	True	True	0.2163265306122449	True	75.0	-117.0	False	-192.0	0.0
+e923f79b3ab4fe4a	m07	-218	21	240	TypeIIIA3	4.1e-14	0.0	overlaps_RT_start	-149.0	-101.0	True	True	True	0.20416666666666666	True	69.0	-122.0	False	-191.0	0.0
+e923f79b3ab4fe4a	m12	-276	-30	247	TypeIIIA3	3.4e-12	-29.0	overlapping_adjacent_CDS	-201.0	-149.0	True	True	True	0.2145748987854251	True	75.0	-119.0	False	-194.0	0.0
+e923f79b3ab4fe4a	m13	-224	21	246	TypeIIIA3	4.3e-08	0.0	overlaps_RT_start	-149.0	-98.0	True	True	True	0.21138211382113822	True	75.0	-119.0	False	-194.0	0.0
+e923f79b3ab4fe4a	m08	-222	21	244	TypeIIIA3	8e-12	0.0	overlaps_RT_start	-149.0	-98.0	True	True	True	0.21311475409836064	True	73.0	-119.0	False	-192.0	0.0
+e923f79b3ab4fe4a	m09	-217	21	239	TypeIIIA3	5.7e-10	0.0	overlaps_RT_start	-149.0	-97.0	True	True	True	0.2217573221757322	True	68.0	-118.0	False	-186.0	0.0
+e923f79b3ab4fe4a	m18	-215	21	237	TypeIIIA3	2.4e-12	0.0	overlaps_RT_start	-147.0	-97.0	True	True	True	0.21518987341772153	True	68.0	-118.0	False	-186.0	0.0
+e923f79b3ab4fe4a	m04	-215	21	237	TypeIIIA3	4.4e-09	0.0	overlaps_RT_start	-150.0	-98.0	True	True	True	0.22362869198312235	True	65.0	-119.0	False	-184.0	0.0
+e923f79b3ab4fe4a	m17	-223	21	245	TypeIIIA3	1e-10	0.0	overlaps_RT_start	-148.0	-96.0	True	True	True	0.2163265306122449	True	75.0	-117.0	False	-192.0	0.0
+e923f79b3ab4fe4a	m01	-219	21	241	TypeIIIA3	4.7e-08	0.0	overlaps_RT_start	-147.0	-97.0	True	True	True	0.21161825726141079	True	72.0	-118.0	False	-190.0	0.0
+e923f79b3ab4fe4a	m10	-225	21	247	TypeIIIA3	8e-07	0.0	overlaps_RT_start	-150.0	-98.0	True	True	True	0.2145748987854251	True	75.0	-119.0	False	-194.0	0.0
+e923f79b3ab4fe4a	m11	-216	21	238	TypeIIIA3	4.9e-10	0.0	overlaps_RT_start	-147.0	-102.0	True	True	True	0.19327731092436976	True	69.0	-123.0	False	-192.0	0.0
+e923f79b3ab4fe4a	m06	-267	-30	238	TypeIIIA3	4.4e-12	-29.0	overlapping_adjacent_CDS	-199.0	-149.0	True	True	True	0.21428571428571427	True	68.0	-119.0	False	-187.0	0.0
+e923f79b3ab4fe4a	m14	-209	21	231	TypeIIIA3	2.2e-11	0.0	overlaps_RT_start	-147.0	-97.0	True	True	True	0.22077922077922077	True	62.0	-118.0	False	-180.0	0.0
+e923f79b3ab4fe4a	m02	-211	21	233	TypeIIIA3	1.9e-10	0.0	overlaps_RT_start	-148.0	-96.0	True	True	True	0.22746781115879827	True	63.0	-117.0	False	-180.0	0.0
+e923f79b3ab4fe4a	m15	-218	21	240	TypeIIIA3	2.5e-11	0.0	overlaps_RT_start	-150.0	-97.0	True	True	True	0.225	True	68.0	-118.0	False	-186.0	0.0
+e923f79b3ab4fe4a	m16	-224	21	246	TypeIIIA3	1.4e-05	0.0	overlaps_RT_start	-149.0	-97.0	True	True	True	0.21544715447154472	True	75.0	-118.0	False	-193.0	0.0
+e923f79b3ab4fe4a	m00	-224	21	246	TypeIIIA3	9.7e-10	0.0	overlaps_RT_start	-149.0	-98.0	True	True	True	0.21138211382113822	True	75.0	-119.0	False	-194.0	0.0
+e923f79b3ab4fe4a	m03	-223	21	245	TypeIIIA3	2.8e-07	0.0	overlaps_RT_start	-148.0	-96.0	True	True	True	0.2163265306122449	True	75.0	-117.0	False	-192.0	0.0
+ebb64398e9194d29	m00	-192	1	194	TypeIIA3_firmi	6.7e-10	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m03	-171	2	174	TypeIIA3_firmi	1.9e-19	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m04	-166	1	168	TypeIIA3_firmi	6.5e-13	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m17	-187	2	190	TypeIIA3_firmi	2.1e-12	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m16	-189	1	191	TypeIIA3_firmi	6.9e-13	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m07	-179	0	180	TypeIIA3_firmi	3.5e-21	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m12	-171	2	174	TypeIIA3_firmi	3.9e-19	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m13	-177	2	180	TypeIIA3_firmi	4.4e-24	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m02	-180	2	183	TypeIIA3_firmi	1.6e-19	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m15	-186	2	189	TypeIIA3_firmi	3e-13	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m06	-184	-2	183	TypeIIA3_firmi	1.4e-20	-1.0	overlapping_adjacent_CDS			False	True	False		False			False		
+ebb64398e9194d29	m14	-180	1	182	TypeIIA3_firmi	4.9e-21	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m10	-176	2	179	TypeIIA3_firmi	4.2e-21	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m11	-171	2	174	TypeIIA3_firmi	2.9e-19	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m01	-187	2	190	TypeIIA3_firmi	3e-10	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m05	-171	2	174	TypeIIA3_firmi	4.8e-19	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m08	-180	2	183	TypeIIA3_firmi	1.5e-19	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m09	-192	1	194	TypeIIA3_firmi	2.2e-10	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m18	-172	2	175	TypeIIA3_firmi	6.4e-15	0.0	overlaps_RT_start			False	True	False		False			False		
+ebb64398e9194d29	m19	-176	2	179	TypeIIA3_firmi	7.9e-22	0.0	overlaps_RT_start			False	True	False		False			False		
+ee41c17b96e38f55	m06	-138	-13	126	TypeIC1_IC2	5.4e-10	-12.0	upstream	-135.0	-81.0	True	True	True	0.4365079365079365	True	3.0	-68.0	False	-71.0	0.0
+ee41c17b96e38f55	m01	-143	-16	128	TypeIC1_IC2	1.4e-06	-15.0	upstream	-140.0	-84.0	True	True	True	0.4453125	True	3.0	-68.0	False	-71.0	0.0
+ee41c17b96e38f55	m02	-213	-90	124	TypeIC1_IC2	1.3e-07	-89.0	upstream	-210.0	-155.0	True	True	True	0.45161290322580644	True	3.0	-65.0	False	-68.0	0.0
+ee41c17b96e38f55	m00	-139	-15	125	TypeIC1_IC2	6.5e-07	-14.0	upstream	-136.0	-81.0	True	True	True	0.448	True	3.0	-66.0	False	-69.0	0.0
+ee41c17b96e38f55	m03	-144	-20	125	TypeIC1_IC2	3.5e-09	-19.0	upstream	-141.0	-88.0	True	True	True	0.432	True	3.0	-68.0	False	-71.0	0.0
+ee41c17b96e38f55	m05	-148	-22	127	TypeIC1_IC2	2.7e-10	-21.0	upstream	-145.0	-91.0	True	True	True	0.4330708661417323	True	3.0	-69.0	False	-72.0	0.0
+ee41c17b96e38f55	m04	-141	-16	126	TypeIC1_IC2	8.3e-07	-15.0	upstream	-138.0	-82.0	True	True	True	0.4523809523809524	True	3.0	-66.0	False	-69.0	0.0
+ee69c83053518f46	m06	-252	21	274	TypeIIIA3	8.7e-12	0.0	overlaps_RT_start	-225.0	-153.0	True	True	True	0.2664233576642336	True	27.0	-174.0	False	-201.0	0.0
+ee69c83053518f46	m01	-258	21	280	TypeIIIA3	3.1e-05	0.0	overlaps_RT_start	-228.0	-157.0	True	True	True	0.2571428571428571	True	30.0	-178.0	False	-208.0	0.0
+ee69c83053518f46	m05	-254	21	276	TypeIIIA3	3.6e-07	0.0	overlaps_RT_start	-227.0	-156.0	True	True	True	0.2608695652173913	True	27.0	-177.0	False	-204.0	0.0
+ee69c83053518f46	m04	-325	-54	272	TypeIIIA3	0.00051	-53.0	overlapping_adjacent_CDS	-301.0	-229.0	True	True	True	0.26838235294117646	True	24.0	-175.0	False	-199.0	0.0
+ee69c83053518f46	m07	-251	21	273	TypeIIIA3	7e-09	0.0	overlaps_RT_start	-227.0	-156.0	True	True	True	0.26373626373626374	True	24.0	-177.0	False	-201.0	0.0
+ee69c83053518f46	m00	-254	21	276	TypeIIIA3	2.5e-07	0.0	overlaps_RT_start	-227.0	-155.0	True	True	True	0.2644927536231884	True	27.0	-176.0	False	-203.0	0.0
+ee69c83053518f46	m03	-247	19	267	TypeIIIA3	7.9e-08	0.0	overlaps_RT_start	-220.0	-153.0	True	True	True	0.2546816479400749	True	27.0	-172.0	False	-199.0	0.0
+ee69c83053518f46	m02	-253	21	275	TypeIIIA3	8e-10	0.0	overlaps_RT_start	-225.0	-153.0	True	True	True	0.26545454545454544	True	28.0	-174.0	False	-202.0	0.0
+eee04e946187aff1	m02	-291	-48	244	TypeXIIIC_Mx162	3.8e-36	-47.0	upstream	-263.0	-197.0	True	True	True	0.27459016393442626	True	28.0	-149.0	False	-177.0	0.0
+eee04e946187aff1	m15	-326	-71	256	TypeXIIIC_Mx162	2.6e-39	-70.0	upstream	-286.0	-219.0	True	True	True	0.265625	True	40.0	-148.0	False	-188.0	0.0
+eee04e946187aff1	m16	-325	-73	253	TypeXIIIC_Mx162	1.3e-42	-72.0	upstream	-286.0	-220.0	True	True	True	0.2648221343873518	True	39.0	-147.0	False	-186.0	0.0
+eee04e946187aff1	m10	-327	-74	254	TypeXIIIC_Mx162	6.1e-41	-73.0	upstream	-288.0	-221.0	True	True	True	0.2677165354330709	True	39.0	-147.0	False	-186.0	0.0
+eee04e946187aff1	m11	-277	-34	244	TypeXIIIC_Mx162	1.3e-41	-33.0	upstream	-248.0	-182.0	True	True	True	0.27459016393442626	True	29.0	-148.0	False	-177.0	0.0
+eee04e946187aff1	m17	-316	-63	254	TypeXIIIC_Mx162	3.9e-38	-62.0	upstream	-277.0	-210.0	True	True	True	0.2677165354330709	True	39.0	-147.0	False	-186.0	0.0
+eee04e946187aff1	m01	-373	-122	252	TypeXIIIC_Mx162	7.6e-47	-121.0	upstream	-336.0	-270.0	True	True	True	0.26587301587301587	True	37.0	-148.0	False	-185.0	0.0
+eee04e946187aff1	m00	-325	-70	256	TypeXIIIC_Mx162	2e-39	-69.0	upstream	-284.0	-217.0	True	True	True	0.265625	True	41.0	-147.0	False	-188.0	0.0
+eee04e946187aff1	m03	-302	-48	255	TypeXIIIC_Mx162	1.2e-40	-47.0	upstream	-262.0	-196.0	True	True	True	0.2627450980392157	True	40.0	-148.0	False	-188.0	0.0
+eee04e946187aff1	m04	-296	-45	252	TypeXIIIC_Mx162	2.7e-47	-44.0	upstream	-259.0	-193.0	True	True	True	0.26587301587301587	True	37.0	-148.0	False	-185.0	0.0
+eee04e946187aff1	m08	-324	-70	255	TypeXIIIC_Mx162	1.7e-38	-69.0	upstream	-284.0	-217.0	True	True	True	0.26666666666666666	True	40.0	-147.0	False	-187.0	0.0
+eee04e946187aff1	m09	-317	-64	254	TypeXIIIC_Mx162	2.5e-51	-63.0	upstream	-277.0	-211.0	True	True	True	0.2637795275590551	True	40.0	-147.0	False	-187.0	0.0
+eee04e946187aff1	m18	-334	-78	257	TypeXIIIC_Mx162	1.7e-40	-77.0	upstream	-293.0	-226.0	True	True	True	0.26459143968871596	True	41.0	-148.0	False	-189.0	0.0
+eee04e946187aff1	m07	-291	-40	252	TypeXIIIC_Mx162	1.4e-40	-39.0	upstream	-253.0	-187.0	True	True	True	0.26587301587301587	True	38.0	-147.0	False	-185.0	0.0
+eee04e946187aff1	m12	-387	-136	252	TypeXIIIC_Mx162	3.8e-46	-135.0	upstream	-350.0	-284.0	True	True	True	0.26587301587301587	True	37.0	-148.0	False	-185.0	0.0
+eee04e946187aff1	m13	-354	-102	253	TypeXIIIC_Mx162	9.3e-47	-101.0	upstream	-316.0	-250.0	True	True	True	0.2648221343873518	True	38.0	-148.0	False	-186.0	0.0
+eee04e946187aff1	m19	-338	-82	257	TypeXIIIC_Mx162	1.1e-40	-81.0	upstream	-296.0	-229.0	True	True	True	0.26459143968871596	True	42.0	-147.0	False	-189.0	0.0
+eee04e946187aff1	m06	-249	-35	215	TypeXIIIC_Mx162	9.1e-31	-34.0	upstream	-220.0	-154.0	True	True	True	0.3116279069767442	True	29.0	-119.0	False	-148.0	0.0
+eee04e946187aff1	m14	-315	-61	255	TypeXIIIC_Mx162	5.3e-38	-60.0	upstream	-275.0	-208.0	True	True	True	0.26666666666666666	True	40.0	-147.0	False	-187.0	0.0
+eee04e946187aff1	m05	-320	-67	254	TypeXIIIC_Mx162	5.6e-52	-66.0	upstream	-281.0	-215.0	True	True	True	0.2637795275590551	True	39.0	-148.0	False	-187.0	0.0
+f05637012679e4fe	m00	-342	-200	143	TypeIB1	4.2e-18	-199.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m03	-231	-85	147	TypeIB1	8.1e-16	-84.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m04	-334	-185	150	TypeIB1	2.3e-12	-184.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m08	-254	-103	152	TypeIB1	4.2e-14	-102.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m09	-301	-156	146	TypeIB1	2.1e-16	-155.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m16	-286	-143	144	TypeIB1	1.6e-13	-142.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m05	-213	-64	150	TypeIB1	1.2e-12	-63.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m10	-238	-88	151	TypeIB1	3.8e-17	-87.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m11	-316	-174	143	TypeIB1	9.7e-16	-173.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m01	-258	-107	152	TypeIB1	1.5e-16	-106.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m02	-306	-160	147	TypeIB1	7.9e-18	-159.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m15	-323	-164	160	TypeIB1	1.6e-16	-163.0	overlapping_adjacent_CDS			False	True	False		False			False		
+f05637012679e4fe	m06	-328	-169	160	TypeIB1	1.1e-16	-168.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m14	-228	-88	141	TypeIB1	4.4e-19	-87.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m07	-134	13	148	TypeIB1	1.1e-13	0.0	overlaps_RT_start			False	True	False		False			False		
+f05637012679e4fe	m12	-310	-159	152	TypeIB1	1.8e-19	-158.0	upstream			False	True	False		False			False		
+f05637012679e4fe	m13	-334	-177	158	TypeIB1	3.8e-16	-176.0	upstream			False	True	False		False			False		
+f912462ef8e39dad	m07	-220	-4	217	TypeIIIA2	1.1e-45	-3.0	upstream	-173.0	-116.0	True	True	True	0.2672811059907834	True	47.0	-112.0	False	-159.0	0.0
+f912462ef8e39dad	m05	-221	-5	217	TypeIIIA2	3e-45	-4.0	upstream			True	True	False		False			False		
+f912462ef8e39dad	m08	-218	-5	214	TypeIIIA2	8e-40	-4.0	upstream	-171.0	-115.0	True	True	True	0.26635514018691586	True	47.0	-110.0	False	-157.0	0.0
+f912462ef8e39dad	m06	-221	-5	217	TypeIIIA2	1.5e-45	-4.0	upstream	-174.0	-117.0	True	True	True	0.2672811059907834	True	47.0	-112.0	False	-159.0	0.0
+f912462ef8e39dad	m00	-242	-5	238	TypeIIIA2	4.5e-42	-4.0	upstream	-195.0	-138.0	True	True	True	0.24369747899159663	True	47.0	-133.0	False	-180.0	0.0
+f912462ef8e39dad	m03	-221	-5	217	TypeIIIA2	2e-41	-4.0	upstream	-174.0	-117.0	True	True	True	0.2672811059907834	True	47.0	-112.0	False	-159.0	0.0
+f912462ef8e39dad	m01	-221	-5	217	TypeIIIA2	6.8e-44	-4.0	upstream	-174.0	-117.0	True	True	True	0.2672811059907834	True	47.0	-112.0	False	-159.0	0.0
+f912462ef8e39dad	m04	-221	-5	217	TypeIIIA2	4.4e-44	-4.0	upstream	-174.0	-117.0	True	True	True	0.2672811059907834	True	47.0	-112.0	False	-159.0	0.0
+f912462ef8e39dad	m02	-221	-5	217	TypeIIIA2	7.4e-45	-4.0	upstream	-174.0	-117.0	True	True	True	0.2672811059907834	True	47.0	-112.0	False	-159.0	0.0
+f922605741f14dc1	m19	-185	-29	157	TypeXIII_Mx65	1e-14	-28.0	upstream	-112.0	-47.0	True	True	True	0.42038216560509556	True	73.0	-18.0	False	-91.0	0.0
+f922605741f14dc1	m01	-184	-34	151	TypeXIII_Mx65	3.3e-30	-33.0	upstream	-111.0	-51.0	True	True	True	0.40397350993377484	True	73.0	-17.0	False	-90.0	0.0
+f922605741f14dc1	m06	-194	-43	152	TypeXIII_Mx65	5.9e-18	-42.0	upstream	-122.0	-56.0	True	True	True	0.4407894736842105	True	72.0	-13.0	False	-85.0	0.0
+f922605741f14dc1	m14	-190	-42	149	TypeXIII_Mx65	2.4e-18	-41.0	upstream	-119.0	-59.0	True	True	True	0.40939597315436244	True	71.0	-17.0	False	-88.0	0.0
+f922605741f14dc1	m02	-154	-7	148	TypeXIII_Mx65	1.1e-25	-6.0	upstream	-81.0	-16.0	True	True	True	0.44594594594594594	True	73.0	-9.0	False	-82.0	0.0
+f922605741f14dc1	m15	-154	-7	148	TypeXIII_Mx65	3.4e-25	-6.0	upstream	-81.0	-16.0	True	True	True	0.44594594594594594	True	73.0	-9.0	False	-82.0	0.0
+f922605741f14dc1	m05	-181	-29	153	TypeXIII_Mx65	7.8e-28	-28.0	overlapping_adjacent_CDS	-108.0	-42.0	True	True	True	0.43790849673202614	True	73.0	-13.0	False	-86.0	0.0
+f922605741f14dc1	m16	-268	-116	153	TypeXIII_Mx65	5.2e-26	-115.0	upstream	-195.0	-128.0	True	True	True	0.4444444444444444	True	73.0	-12.0	False	-85.0	0.0
+f922605741f14dc1	m07	-197	-45	153	TypeXIII_Mx65	2e-23	-44.0	upstream	-124.0	-58.0	True	True	True	0.43790849673202614	True	73.0	-13.0	False	-86.0	0.0
+f922605741f14dc1	m12	-166	-20	147	TypeXIII_Mx65	7e-22	-19.0	upstream	-95.0	-29.0	True	True	True	0.4557823129251701	True	71.0	-9.0	False	-80.0	0.0
+f922605741f14dc1	m13	-247	-91	157	TypeXIII_Mx65	1.2e-19	-90.0	upstream	-173.0	-107.0	True	True	True	0.4267515923566879	True	74.0	-16.0	False	-90.0	0.0
+f922605741f14dc1	m08	-154	-7	148	TypeXIII_Mx65	3.9e-22	-6.0	upstream	-81.0	-16.0	True	True	True	0.44594594594594594	True	73.0	-9.0	False	-82.0	0.0
+f922605741f14dc1	m09	-156	-8	149	TypeXIII_Mx65	2e-17	-7.0	upstream	-83.0	-21.0	True	True	True	0.4228187919463087	True	73.0	-13.0	False	-86.0	0.0
+f922605741f14dc1	m18	-217	-65	153	TypeXIII_Mx65	4.7e-27	-64.0	overlapping_adjacent_CDS	-144.0	-78.0	True	True	True	0.43790849673202614	True	73.0	-13.0	False	-86.0	0.0
+f922605741f14dc1	m04	-169	-24	146	TypeXIII_Mx65	1.3e-18	-23.0	upstream	-100.0	-36.0	True	True	True	0.4452054794520548	True	69.0	-12.0	False	-81.0	0.0
+f922605741f14dc1	m17	-181	-29	153	TypeXIII_Mx65	6.1e-27	-28.0	overlapping_adjacent_CDS	-108.0	-42.0	True	True	True	0.43790849673202614	True	73.0	-13.0	False	-86.0	0.0
+f922605741f14dc1	m10	-165	-19	147	TypeXIII_Mx65	9.5e-18	-18.0	upstream	-99.0	-35.0	True	True	True	0.4421768707482993	True	66.0	-16.0	False	-82.0	0.0
+f922605741f14dc1	m11	-61	89	151	TypeXIII_Mx65	2.2e-21	0.0	overlaps_RT_start	12.0	76.0	True	True	True	0.4304635761589404	True	73.0	-13.0	False	-86.0	0.0
+f922605741f14dc1	m00	-154	-7	148	TypeXIII_Mx65	3e-21	-6.0	upstream	-81.0	-16.0	True	True	True	0.44594594594594594	True	73.0	-9.0	False	-82.0	0.0
+f922605741f14dc1	m03	-183	-42	142	TypeXIII_Mx65	8.5e-18	-41.0	upstream	-116.0	-50.0	True	True	True	0.47183098591549294	True	67.0	-8.0	False	-75.0	0.0

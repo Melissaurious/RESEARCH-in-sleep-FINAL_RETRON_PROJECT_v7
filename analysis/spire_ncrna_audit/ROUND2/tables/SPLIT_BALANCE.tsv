@@ -1,0 +1,29 @@
+feature	bin	DEV	HELDOUT
+pool_rt90	(0.0, 9.0]	32	32
+pool_rt90	(9.0, 19.0]	27	25
+pool_rt90	(19.0, 1000000000.0]	29	28
+divergence_rt70_per_rt90	(0.0, 0.34]	16	7
+divergence_rt70_per_rt90	(0.34, 0.67]	42	51
+divergence_rt70_per_rt90	(0.67, 1.01]	29	26
+loci	(0.0, 100.0]	36	36
+loci	(100.0, 1000.0]	39	41
+loci	(1000.0, 1000000000.0]	13	8
+ref_len_median	(0.0, 120.0]	4	1
+ref_len_median	(120.0, 180.0]	50	50
+ref_len_median	(180.0, 1000000000.0]	34	33
+ref_dist_median	(-1.0, 20.0]	41	44
+ref_dist_median	(20.0, 60.0]	39	29
+ref_dist_median	(60.0, 1000000000.0]	8	11
+type_modal	I-A	7	5
+type_modal	I-B	11	9
+type_modal	I-C	21	25
+type_modal	II-A	7	6
+type_modal	III-A	18	22
+type_modal	IV	4	1
+type_modal	IX	5	2
+type_modal	V	3	1
+type_modal	XIII	12	14
+topology_modal	NA	0	1
+topology_modal	intragenic_or_overlapping_RT	18	18
+topology_modal	overlapping_adjacent_CDS	14	16
+topology_modal	upstream	56	50

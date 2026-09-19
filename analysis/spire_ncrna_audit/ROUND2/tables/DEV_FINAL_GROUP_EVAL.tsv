@@ -1,0 +1,84 @@
+gid	testable	rule_pass	final	ctrl	has_ref	correct	halfA	halfB	lco	coding
+02744525a93a1c91	False	True	True	False	True	True				0.160721397280537
+09c19c449b3724b5	False	True	True	False	True	True				0.0641466208476517
+0a04ed3a68339417	True	True	True	False	True	True	True	True	True	0.0
+0a5f202fd45814bb	True	False	False	False	True	False	False	False	False	0.1860741971207087
+0aa6b2246c2a9bf6	True	True	False	False	True	False	True	False	True	0.0
+0efb463136764449	True	False	False	False	True	False	True	True	True	0.0
+10e640a14b669f34	True	True	True	False	True	True	True	True	True	0.0143692564745196
+125ed024481686be	True	True	False	False	True	False	False	False	True	0.0
+186dceba21899f7b	True	True	False	False	True	False	False	True	True	0.0
+19819d72c63b67a5	True	True	True	False	True	True	True	True	True	0.0
+19f104611bfbc3cb	True	True	True	False	True	True	True	True	True	0.0
+1c6ec0690edafe82	True	True	True	False	True	True	True	True	True	0.0
+1d5778fb61beb2af	False	True	True	False	True	False				0.4934505150022392
+1f69a766a0ac3c62	True	True	True	False	True	True	True	True	True	0.0
+2046942939648498	False	True	True	False	True	True				0.0
+24c1a8882e1032d4	False	False	False	False	False	False				0.2649572649572649
+252d3ea9cf1c984b	True	True	False	False	True	False	True	False	False	0.0
+290c9fea04d686e3	True	True	False	False	True	False	True	False	True	0.0
+3124a83eed341d73	True	True	False	False	True	False	False	True	True	0.0
+318981fcc560bcd4	True	True	True	False	True	True	True	True	False	0.0526315789473684
+318e3e73c910f004	False	True	True	False	True	True				0.0
+34eef4ff57673988	False	True	True	False	True	True				0.1418414918414918
+35e8a719e7fd949b	False	True	True	False	True	True				0.0
+39ec37829c055842	False	True	True	False	True	True				0.4689038533482977
+3a9af2485aac89b1	False	True	True	False	True	True				0.0
+450a398b75fe3508	False	True	True	False	True	True				0.0
+485feefcab1b21e8	False	True	True	False	True	True				0.0
+4d567d6d6e3c04c7	True	True	True	False	True	True	True	True	False	0.1026785714285714
+4deaafe66612f533	False	True	True	False	True	True				0.399880915626516
+4f4a7615b530ad66	True	True	False	False	True	False	False	True	True	0.0472868217054263
+4fa61784fe085139	False	True	True	False	True	True				0.0
+505cebc4e8503e5f	False	False	False	False	True	False				0.0
+506454c901426f91	False	False	False	False	True	False				0.4
+5b0aa8588cbc7388	True	True	True	False	True	True	True	True	True	0.0
+5b1d4e37ce54cbea	True	False	False	False	True	False	False	True	True	0.4529490084147993
+5c5f7870778d1a41	True	True	True	False	True	True	True	True	True	0.0887573964497041
+5c694a9dbecbf1a5	False	True	True	False	True	True				0.0
+5cf1550444c7013f	True	False	False	False	True	False	True	True	False	0.35
+622c10b6364c4c9f	True	True	True	False	True	True	True	True	True	0.0
+6687b64b00cdcc94	True	True	False	False	True	False	True	False	True	0.0
+672030cf71b54aac	True	True	True	False	True	True	True	True	True	0.0
+6ce60f5761400513	False	True	True	False	True	True				0.0
+6e5f58049467eb4d	False	True	True	False	True	True				0.0
+6f53e98ece3c9c1d	True	True	True	False	True	True	True	True	True	0.0211884008426561
+75b244cdc0a4c235	True	True	True	False	True	True	True	True	True	0.0211104684788895
+7ab38dd5eed23e61	False	True	True	False	True	True				0.0
+7be69237244cc512	True	False	False	False	True	False	True	True	True	0.0067901234567901
+8120394c21a5bcc7	True	True	False	False	True	False	False	True	False	0.1545978086129797
+836a2fc62058adb3	False	True	True	False	True	False				0.0
+86e08f8b606add2a	False	True	True	False	True	True				0.0
+87c68f39addcee63	False	True	True	False	True	True				0.0
+88298ccb7afd1e94	True	True	True	False	True	True	True	True	True	0.0
+89ee0d022c299562	False	True	True	False	True	True				0.072
+8b525b2b44076384	False	True	True	False	True	False				0.0
+8ea0f62d7be41161	False	True	True	False	True	True				0.1111111111111111
+91ec3d1539f4bfce	True	True	True	False	True	True	True	True	False	0.0208333333333333
+9607e388e7a82831	True	True	True	False	True	True	True	True	True	0.0
+9c0d9e75fc77a440	True	True	True	False	True	True	True	True	True	0.0821530570612577
+a900b7588e4e41ff	True	False	False	False	True	False	True	False	False	0.0217105263157894
+ae85f7d186c5e286	True	True	False	False	True	False	True	False	False	0.4074182770453314
+b1008ea97cc5e69c	False	True	True	False	True	True				0.0
+b68a7d8439bdc3c2	True	True	False	False	True	False	False	True	True	0.0
+b72373a9556a0e36	True	False	False	False	True	False	True	False	False	0.0891382868937048
+b7ba199a0ca24395	True	True	True	False	True	True	True	True	True	0.0
+c26da08c55d02a6a	False	True	True	False	False	False				0.0
+c34f95fe6fe5db37	True	True	True	False	True	True	True	True	True	0.0071467839472237
+c3c41dfe14f1d01b	True	True	True	False	True	True	True	True	True	0.0
+cb32802455fd406c	False	True	True	False	True	True				0.0
+cf7e39634e835f92	False	True	True	False	True	True				0.0
+d9a7aceedf5dcd45	True	True	False	False	True	False	False	True	True	0.073076923076923
+dba5847d3fe58cdb	True	True	False	False	True	False	False	True	True	0.0
+dfc1007ca068f582	True	False	False	False	True	False	True	True	True	0.05
+e23501aa84029925	False	True	True	False	True	True				0.0
+e6867966150bb9c5	True	True	False	False	True	False	True	False	True	0.0
+e79d0eaec20bb0ef	False	True	True	False	True	True				0.0
+e923f79b3ab4fe4a	True	True	True	False	True	True	True	True	False	0.0
+ebb64398e9194d29	True	True	True	False	True	True	True	True	False	0.0159574468085106
+ee41c17b96e38f55	False	True	True	False	True	True				0.0
+ee69c83053518f46	False	True	True	False	True	True				0.4736645514370131
+eee04e946187aff1	True	True	True	False	True	True	True	True	True	0.0
+f05637012679e4fe	True	False	False	False	True	False	True	False	False	0.0089126559714795
+f912462ef8e39dad	False	True	True	False	True	True				0.0
+f922605741f14dc1	True	True	True	False	True	True	True	True	True	0.0

@@ -1,0 +1,39 @@
+{
+  "W": "W500",
+  "span": 260,
+  "ranking": "R_B",
+  "c": 0.5,
+  "s": 50,
+  "k": 0.5,
+  "b": 0,
+  "gate": {
+    "G1_ratio": 3.0,
+    "G1_p": 0.01,
+    "G2_min_diff": 0.3457,
+    "G2_max_ctrl": 0.1,
+    "G3_min_precision": 0.7798,
+    "G4_min_stability": 0.6,
+    "G5_max_abstention": 0.4586,
+    "G6_max_coding": 0.1,
+    "G7_positional_prior": {
+      "P0_from": -193,
+      "P0_to": -24,
+      "rule": "method IoU>=0.5 count >= P0 count on same held-out in-window members"
+    },
+    "min_passes_for_decision": 20
+  },
+  "dev_metrics": {
+    "real_final_pass": 0.691358024691358,
+    "ctrl_pass": 0.0,
+    "diff": 0.691358024691358,
+    "precision": 0.9298245614035088,
+    "stability": 0.6410256410256411,
+    "lco_survival": 0.7948717948717948,
+    "abstention": 0.308641975308642,
+    "coding_rate": 0.0,
+    "n_dev": 83,
+    "n_testable_rule_pass": 39
+  },
+  "selected_by": "Amendment 2",
+  "z6_commit": "12ea561a5565aca29eeaacbfe8863dc244838fa3"
+}

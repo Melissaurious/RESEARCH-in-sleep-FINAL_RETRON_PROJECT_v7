@@ -1,0 +1,2 @@
+W	span	ranking	c	s	k	b	dev_groups	groups_with_ref_in_window	real_pass	correct_pass	ctrl_pass	precision	J	looseness	cost
+W500	100	R_B	0.5	50	0.5	0	83	81	0.8518518518518519	0.8395061728395061	0.0	0.9855072463768116	0.8395061728395061	0.5	1.0
