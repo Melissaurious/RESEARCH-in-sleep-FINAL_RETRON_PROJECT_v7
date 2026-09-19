@@ -493,3 +493,33 @@ recommended default (WA-S.1).
   stratum; (c) derive retron catalytic positions another way in 3C (forbidden: re-estimation).
 - **Default taken:** (a). **Consequence stated in the 3C report:** Comparison A says nothing about
   retron RTs. (b) is an operator decision because it changes the scope of a closed stage.
+
+## 2026-09-19 · Stage 3C · independent review returned FAIL_BLOCK; repairs unauthorised (HIGH-STAKES, stopped)
+
+- **What happened:** the completed Stage-3C bundle (`34000ee`) was reviewed by an independent,
+  model-disjoint, read-only reviewer (Codex GPT-5.x) per BS-15. Verdict **FAIL_BLOCK, 4.5/10, 5
+  blockers**. All five were re-derived and **upheld** by the author before acceptance
+  (`docs/errata/2026-09-19_stage3c_review_errata.md` §1).
+- **The load-bearing two:** (B1) the `13/14` replicate Jaccard mixes truth-based and detector-based
+  pairs and is not the declared "same pairs" analysis — truth-only gives **7/7 vs 0/7** over **two**
+  groups; (B4) every Region-X motif hit comes from an **undeclared wide-window fallback** — under the
+  launcher's two-block rule X is defined in **24/62** (3/21 retron) with **zero** NAXXH/AXXH hits.
+- **Why blocked:** repairing either changes a landed primary table. The operator's standing
+  instruction is that Stage 3C remains frozen, so R1–R5 (errata §3) are specified, not run.
+- **Options:** (a) authorise R1–R5, re-run, re-seal and re-review; (b) leave the bundle frozen and
+  carry the errata as the authoritative reading; (c) retire Comparison A and the Region-X primary.
+- **Recommended default: (a).** Until then **nothing in Stage 3C may be promoted**, and claim rows
+  S05, S11, S12 and the Region-X part of S16 are WITHDRAWN.
+- **Status:** OPEN. Decisions D1-D4 in `docs/decisions/2026-09-19_stage3c_independent_review_outcome.md`.
+
+## 2026-09-19 · Stage 3C · Tier-B retron appendix — disposition proposed, not executed (OPERATOR DECISION)
+
+- **Needed:** whether to add a clearly separate, descriptive, lower-confidence Tier-B retron appendix.
+- **What the evidence supports:** only **5** Tier-B chains carry an own-chain, metal-coordinated,
+  explicitly labelled residue — of which **3 are retron** (7XJG_A, 8QBL_A both Ec86/RG03; 9I2G_B
+  Ec67/RG24) and 2 are UG2. The six Eco8 rows (`truth_source = NONE`, motif-named) and the six
+  transferred rows are **not** admissible as labels; `9S1F_B`'s only site is the TOPRIM nuclease.
+- **Options:** A build it as specified after R1-R5; B do not build, record retron architecture as
+  untested; C widen the population (not recommended, unsupported by the review).
+- **Recommended default: A**, with the 3-retron-chain yield stated in its first sentence.
+- **Status:** OPEN. Full proposal: `review-stage/TIERB_APPENDIX_PROPOSAL_stage3c.md`.
