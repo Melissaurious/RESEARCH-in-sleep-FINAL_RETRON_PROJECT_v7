@@ -1,0 +1,77 @@
+control	chain	n_trials	n_hits	observed	detail	unit
+negative_shuffle_X_strict	5G2X_C	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	5HHJ_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	5HHK_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	5HHL_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	6AR1_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	6ME0_C	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	6MEC_C	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	7KFT_C	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	7UIM_D	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	7UIN_D	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	8C8J_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	8FLI_B	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	8SXT_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	8UB7_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	8UBD_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	8UW3_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	9D4S_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 10	shuffle
+negative_shuffle_X_strict	9D5X_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 111	shuffle
+negative_shuffle_X_strict	9HDO_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	9I2F_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	9I2G_B	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	9IOA_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	9K6G_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	9L7P_E	100	0	NAXXH_STRICT	interval length 86	shuffle
+negative_shuffle_X_strict	9N69_E	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	9NL2_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 2	shuffle
+negative_shuffle_X_strict	9NNB_B	100	0	NAXXH_STRICT	interval length 86	shuffle
+negative_shuffle_X_strict	9S1F_B	100	0	NO_MOTIF_IN_INTERVAL	interval length 85	shuffle
+negative_shuffle_X_strict	9VHE_A	100	1	NAXXH_STRICT	interval length 62	shuffle
+negative_shuffle_X_strict	9VHL_A	100	2	NAXXH_STRICT	interval length 62	shuffle
+negative_shuffle_X_strict	9WY8_A	100	0	NO_MOTIF_IN_INTERVAL	interval length 123	shuffle
+negative_shuffle_X_strict	9Z6Y_H	100	0	AXXH_RELAXED	interval length 162	shuffle
+negative_shuffle_X_strict	9Z6Z_H	100	1	AXXH_RELAXED	interval length 163	shuffle
+external_literature_position	7V9U_A	1	1	NAxxH stated 105-109: found 'NATPH'	Wang 2022 Nat Microbiol (Ec86)	literature statement
+external_literature_position	7V9X_A	1	1	NAxxH stated 105-109: found 'NATPH'	Wang 2022 Nat Microbiol (Ec86)	literature statement
+external_literature_position	7XJG_A	1	1	NAxxH stated 105-109: found 'NATPH'	Wang 2022 Nat Microbiol (Ec86)	literature statement
+external_literature_position	7V9U_A	1	1	VTG stated 243-245: found 'VTG'	Wang 2022 Nat Microbiol (Ec86)	literature statement
+external_literature_position	7V9X_A	1	1	VTG stated 243-245: found 'VTG'	Wang 2022 Nat Microbiol (Ec86)	literature statement
+external_literature_position	7XJG_A	1	1	VTG stated 243-245: found 'VTG'	Wang 2022 Nat Microbiol (Ec86)	literature statement
+external_literature_position	7V9U_A	1	1	YADD stated 195-198: found 'YADD'	Wang 2022 Nat Microbiol (Ec86)	literature statement
+external_literature_position	9VHE_A	1	1	NAxxH stated 82-86: found 'NAAAH'	Wang 2025 NAR (Retron-Eco7); PDB linkage tested here, not assumed	literature statement
+external_literature_position	9VHE_A	1	1	VTG stated 236-238: found 'VTG'	Wang 2025 NAR (Retron-Eco7); PDB linkage tested here, not assumed	literature statement
+positive_YxDD_at_3B_truth	1RTD_A	1	1	YxDD-like window found near truth residue 185:YMDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	1RTD_A	3	3	3B SUBSTRATE_NA residues [76, 185, 186]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	24NC_A	1	1	YxDD-like window found near truth residue 240:YIDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_YxDD_at_3B_truth	26CZ_A	1	1	YxDD-like window found near truth residue 278:YVDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	26CZ_A	1	1	3B SUBSTRATE_NA residues [278]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	6AR1_A	1	1	YxDD-like window found near truth residue 223:YADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	6AR1_A	1	1	3B SUBSTRATE_NA residues [223]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	8BGJ_A	1	1	YxDD-like window found near truth residue 154:FCDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_YxDD_at_3B_truth	8C8J_A	1	1	YxDD-like window found near truth residue 702:FADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	8C8J_A	2	2	3B SUBSTRATE_NA residues [702, 703]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	8GH6_A	1	1	YxDD-like window found near truth residue 628:YADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	8GH6_A	3	3	3B SUBSTRATE_NA residues [500, 783, 902]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	8SXT_A	1	1	YxDD-like window found near truth residue 702:FADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	8SXT_A	1	1	3B SUBSTRATE_NA residues [703]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	8UB7_A	1	1	YxDD-like window found near truth residue 215:YMDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	8UB7_A	3	3	3B SUBSTRATE_NA residues [203, 215, 311]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	8UW3_A	1	1	YxDD-like window found near truth residue 702:FADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	8UW3_A	1	1	3B SUBSTRATE_NA residues [374]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	9D4S_A	1	1	YxDD-like window found near truth residue 239:YIDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_YxDD_at_3B_truth	9DOU_A	1	1	YxDD-like window found near truth residue 878:FADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	9DOU_A	5	5	3B SUBSTRATE_NA residues [573, 878, 879, 923, 1037]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	9HDO_A	1	1	YxDD-like window found near truth residue 702:FADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	9HDO_A	2	2	3B SUBSTRATE_NA residues [600, 702]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	9NL2_A	1	1	YxDD-like window found near truth residue 606:FADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	9NL2_A	8	8	3B SUBSTRATE_NA residues [51, 302, 606, 607, 651, 762, 1004, 1104]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	9NL3_A	1	1	YxDD-like window found near truth residue 657:FADD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	9NL3_A	6	6	3B SUBSTRATE_NA residues [163, 352, 657, 658, 702, 816]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	9YFD_A	1	1	YxDD-like window found near truth residue 324:YVDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_YxDD_at_3B_truth	9Z6Y_A	1	1	YxDD-like window found near truth residue 197:YVDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	9Z6Y_A	3	3	3B SUBSTRATE_NA residues [197, 198, 328]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	9Z6Y_H	1	1	YxDD-like window found near truth residue 291:YVDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	9Z6Y_H	3	3	3B SUBSTRATE_NA residues [192, 291, 292]	independent recomputation at 4.0 A of contacts 3B recorded	residue
+positive_YxDD_at_3B_truth	9Z6Z_H	1	1	YxDD-like window found near truth residue 291:YVDD	the same scanning code must recover a YxDD-like window at independently evidenced truth	chain
+positive_NA_contact_reproduces_3B	9Z6Z_H	2	2	3B SUBSTRATE_NA residues [192, 291]	independent recomputation at 4.0 A of contacts 3B recorded	residue

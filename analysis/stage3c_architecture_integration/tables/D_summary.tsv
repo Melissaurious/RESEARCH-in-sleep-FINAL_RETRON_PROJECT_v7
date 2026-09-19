@@ -1,0 +1,35 @@
+stratum	n_chains	n_groups	n_X_interval_from_blocks	n_X_interval_wide_window	n_X_undefined	n_NAXXH_strict	n_AXXH_relaxed	n_no_motif_in_scanned_interval	frac_NAXXH_of_scanned	n_Y_interval_from_VTG	frac_Y_defined	n_no_VTG_like_in_window	median_Y_length	n_chains_with_nucleic_acid	unit	note
+ALL	62	31	24	9	29	4	2	27	0.1212	19	0.3065	43	76	52	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+retron	21	6	3	5	13	4	0	4	0.5000	15	0.7143	6	74	21	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-AbiA	1	1	0	0	1	0	0	0		0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-AbiK	1	1	0	0	1	0	0	0		0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-AbiP2	1	1	0	0	1	0	0	0		0	0.0000	1		0	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-CRISPR	1	1	1	0	0	0	0	1	0.0000	0	0.0000	1		0	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-DGRs (bRT)	2	1	2	0	0	0	0	2	0.0000	0	0.0000	2		2	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-G2L (GsI-IIC)	1	1	1	0	0	0	0	1	0.0000	0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-G2L4	2	1	1	1	0	0	0	2	0.0000	0	0.0000	2		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-GII (LtrA)	1	1	1	0	0	0	0	1	0.0000	0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-GII maturase	8	2	8	0	0	0	0	8	0.0000	3	0.3750	5	170	5	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-Retrons	1	1	1	0	0	0	0	1	0.0000	1	1.0000	0	76	1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-Retrons (Ec67)	3	1	2	1	0	0	0	3	0.0000	3	1.0000	0	325	3	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-Retrons (Ec78)	3	1	0	3	0	3	0	0	1.0000	3	1.0000	0	72	3	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-Retrons (Ec83)	1	1	0	0	1	0	0	0		1	1.0000	0	76	1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-Retrons (Ec86)	6	1	0	0	6	0	0	0		6	1.0000	0	69.0000	6	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-Retrons (Eco8)	6	1	0	0	6	0	0	0		0	0.0000	6		6	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-Retrons (St85)	1	1	0	1	0	1	0	0	1.0000	1	1.0000	0	74	1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG1 (DRT1)	1	1	0	0	1	0	0	0		0	0.0000	1		0	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG12 (DRT6)	1	1	0	1	0	0	0	1	0.0000	0	0.0000	1		0	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG15 (DRT4)	1	1	0	0	1	0	0	0		0	0.0000	1		0	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG2	1	1	0	0	1	0	0	0		0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG2 (DRT2)	1	1	0	0	1	0	0	0		0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG26	1	1	0	0	1	0	0	0		0	0.0000	1		0	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG28	1	1	1	0	0	0	0	1	0.0000	0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG3 / RVT-UG8 (EcDRT3)	4	2	0	2	2	0	2	0	0.0000	0	0.0000	4		4	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:RVT-UG8	1	1	0	0	1	0	0	0		1	1.0000	0	344	1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:non-LTR (LINE-1 ORF2p)	5	1	5	0	0	0	0	5	0.0000	0	0.0000	5		5	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:non-LTR (R2Bm)	1	1	0	0	1	0	0	0		0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:non-LTR (R2Pm)	1	1	1	0	0	0	0	1	0.0000	0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:non-LTR (R2Tg)	2	1	0	0	2	0	0	0		0	0.0000	2		2	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:retroviral (HIV-1)	1	1	0	0	1	0	0	0		0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+family:retroviral (MMLV)	1	1	0	0	1	0	0	0		0	0.0000	1		1	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3
+non-retron	41	25	21	4	16	0	2	23	0.0000	4	0.0976	37	185.5000	31	chain	a motif absence is not a region absence; X scanning depends on the GII-centred mapper reaching SB2p/SB3

@@ -1,0 +1,20 @@
+chain	family_METADATA	is_retron_family	region_Y_length	literature_expectation_aa	difference	within_1_5x	fused_or_accessory_register	external_accessions	n_units_outside_core	interpretation	unit
+26CZ_A	RVT-UG8	NO	344	90	254	NO	no	Q12306	1	the VTG-to-C-terminus rule also swallows C-terminal accessory or fused content in this chain; the literature '~90 aa' does not describe it	chain
+6ME0_C	RVT-GII maturase	NO	170	90	80	NO	no	Q8DMK2	1	the VTG-to-C-terminus rule also swallows C-terminal accessory or fused content in this chain; the literature '~90 aa' does not describe it	chain
+6MEC_C	RVT-GII maturase	NO	170	90	80	NO	no	Q8DMK2	1	the VTG-to-C-terminus rule also swallows C-terminal accessory or fused content in this chain; the literature '~90 aa' does not describe it	chain
+7V9U_A	RVT-Retrons (Ec86)	YES	69	90	-21	YES	no	P23070	1	consistent with the literature ~90 aa C-terminal region	chain
+7V9X_A	RVT-Retrons (Ec86)	YES	74	90	-16	YES	no	P23070	2	consistent with the literature ~90 aa C-terminal region	chain
+7XJG_A	RVT-Retrons (Ec86)	YES	74	90	-16	YES	no	P23070	2	consistent with the literature ~90 aa C-terminal region	chain
+8FLI_B	RVT-GII maturase	NO	201	90	111	NO	no	Q8DMK2	1	the VTG-to-C-terminus rule also swallows C-terminal accessory or fused content in this chain; the literature '~90 aa' does not describe it	chain
+8QBK_A	RVT-Retrons (Ec86)	YES	69	90	-21	YES	no	P23070	1	consistent with the literature ~90 aa C-terminal region	chain
+8QBL_A	RVT-Retrons (Ec86)	YES	69	90	-21	YES	no	P23070	1	consistent with the literature ~90 aa C-terminal region	chain
+8QBM_A	RVT-Retrons (Ec86)	YES	69	90	-21	YES	no	P23070	1	consistent with the literature ~90 aa C-terminal region	chain
+9E8Z_H	RVT-Retrons (Ec83)	YES	76	90	-14	YES	no	Q47526	1	consistent with the literature ~90 aa C-terminal region	chain
+9I2F_A	RVT-Retrons (Ec67)	YES	327	90	237	NO	no	P21325	3	the VTG-to-C-terminus rule also swallows C-terminal accessory or fused content in this chain; the literature '~90 aa' does not describe it	chain
+9I2G_B	RVT-Retrons (Ec67)	YES	325	90	235	NO	no	P21325	2	the VTG-to-C-terminus rule also swallows C-terminal accessory or fused content in this chain; the literature '~90 aa' does not describe it	chain
+9L7P_E	RVT-Retrons (St85)	YES	74	90	-16	YES	no	A0AAW7FAU3	1	consistent with the literature ~90 aa C-terminal region	chain
+9N69_E	RVT-Retrons	YES	76	90	-14	YES	no	A0AAD2V6H6	1	consistent with the literature ~90 aa C-terminal region	chain
+9NNB_B	RVT-Retrons (Ec78)	YES	76	90	-14	YES	no	A0AB38GW94	1	consistent with the literature ~90 aa C-terminal region	chain
+9S1F_B	RVT-Retrons (Ec67)	YES	322	90	232	NO	no	P21325	2	the VTG-to-C-terminus rule also swallows C-terminal accessory or fused content in this chain; the literature '~90 aa' does not describe it	chain
+9VHE_A	RVT-Retrons (Ec78)	YES	72	90	-18	YES	no	Q46666	1	consistent with the literature ~90 aa C-terminal region	chain
+9VHL_A	RVT-Retrons (Ec78)	YES	72	90	-18	YES	no	Q46666	1	consistent with the literature ~90 aa C-terminal region	chain

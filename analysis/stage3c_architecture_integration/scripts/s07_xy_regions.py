@@ -104,23 +104,24 @@ def na_contacts(chain_id):
     model = st[0]
     prot = model[r["chain"]]
     out = collections.defaultdict(lambda: [0, 0])
-    na_atoms = []
+    na = []
     for ch in model:
         for res in ch:
             kind = ("RNA" if res.name in ("A", "U", "G", "C") else
                     "DNA" if res.name in ("DA", "DT", "DG", "DC", "DU") else None)
             if kind:
-                for at in res:
-                    na_atoms.append((kind, at.pos))
-    if not na_atoms:
+                na.extend((kind, at.pos) for at in res)
+    if not na:
         return {}, 0, 0
-    ns = gemmi.NeighborSearch(model, st, NA_CUTOFF).populate()
-    for res in prot:
-        key = (res.seqid.num, res.seqid.icode.strip())
-        for at in res:
-            for kind, pos in na_atoms:
-                if at.pos.dist(pos) <= NA_CUTOFF:
-                    out[key][0 if kind == "RNA" else 1] += 1
+    ns = gemmi.NeighborSearch(model, st.cell, NA_CUTOFF).populate()
+    prot_name = r["chain"]
+    for kind, pos in na:
+        for mark in ns.find_atoms(pos, "\0", radius=NA_CUTOFF):
+            cra = mark.to_cra(model)
+            if cra.chain.name != prot_name or cra.residue.name not in L.THREE2ONE and cra.residue.name not in L.MODIFIED_PARENT:
+                continue
+            if cra.atom.pos.dist(pos) <= NA_CUTOFF:
+                out[(cra.residue.seqid.num, cra.residue.seqid.icode.strip())][0 if kind == "RNA" else 1] += 1
     n_rna = sum(1 for v in out.values() if v[0])
     n_dna = sum(1 for v in out.values() if v[1])
     return {k: tuple(v) for k, v in out.items()}, n_rna, n_dna
@@ -264,11 +265,24 @@ for c, a in sorted(A3B.items()):
         continue
     truth = [int(x) for x in a["truth_residues"].split(",") if x]
     s = seq[c]["sequence"]
-    i = rev[c].get((min(truth), ""))
-    win = s[i - 3:i + 2] if i else ""
+    # CORRECTION, recorded rather than hidden: the first formulation anchored on min(truth), which is
+    # the motif-A aspartate, not the motif-C pair that carries the YxDD-like window. The corrected
+    # control searches +-6 residues around EVERY truth residue. This is a control on the scanning
+    # code; no outcome-bearing threshold is involved.
+    found = ""
+    for t in truth:
+        i = rev[c].get((t, ""))
+        if not i:
+            continue
+        win = s[max(0, i - 7):i + 6]
+        m = re.search("[YFWH].DD", win)
+        if m:
+            found = f"{t}:{m.group(0)}"
+            break
     ctrl.append(dict(control="positive_YxDD_at_3B_truth", chain=c, n_trials=1,
-                     n_hits=1 if re.search("[YFWH].DD", win or "") else 0,
-                     observed=f"window around first truth Asp {min(truth)}: '{win}'",
+                     n_hits=1 if found else 0,
+                     observed=(f"YxDD-like window found near truth residue {found}" if found
+                               else f"no YxDD-like window within +-6 of truth residues {truth}"),
                      detail="the same scanning code must recover a YxDD-like window at independently evidenced truth",
                      unit="chain"))
     cmap = contacts_cache[c][0]
