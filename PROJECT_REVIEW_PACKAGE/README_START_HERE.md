@@ -144,26 +144,58 @@ items. Not approved: a compatibility model, cross-pair scoring, lab candidate pr
 | 9 | `WHAT_IS_A_RETRON.md` | the definitional question, evidence-graded |
 | 10 | `PUBLICATION_OPTIONS.md`, `THESIS_ARCHITECTURE.md`, `MINIMUM_REMAINING_WORK.md` | planning |
 
-## 10 · Canonical evidence — exact paths and commits
+## 10 · Canonical evidence — paths, commits and GitHub branches
 
-Repository root: `/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7` (worktrees are siblings with
-suffixes). `general/` is a **git submodule** — clone with `--recurse-submodules` or the governance
-layer is empty.
+Repository: `github.com/Melissaurious/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7`. Local root:
+`/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7` (worktrees are siblings with suffixes).
+`general/` is a **git submodule** — clone with `--recurse-submodules` or the governance layer is
+empty.
 
-| what | where | commit |
+### 10.1 · Repository architecture — three tiers, deliberately not merged
+
+| tier | branch | what it is |
 |---|---|---|
-| Stage 1 + Stage 2 bundles | `…_v7/results/` | `94a1a78` (reviewed state); Stage-2 final report `46414f4` |
-| Stage-2 binding errata | `…_v7/docs/errata/g7a_closure_decision_erratum_2026-09-19.tsv` | `94a1a78` |
-| g6 reading rules | `…_v7/docs/decisions/2026-09-19_stage2_g6_review_errata.md` | `94a1a78` |
-| Stage 3A / 3B / 3C + review | `…_v7-stage3c/analysis/` | bundle `34000ee`; review + errata `eeaf0ae` |
-| Stage-3C errata (**binding**) | `…_v7-stage3c/docs/errata/2026-09-19_stage3c_review_errata.md` | `eeaf0ae` |
-| embeddings, X1, X2 | `…_v7-embeddings/results/` | X2 results `4f8550b`; **X2 closure `fdf0872` governs** |
-| RT-ncRNA chapter reporting package | `…_v7-embedding-report/analysis/embedding_report/` | **`d7d3ece`** — final; figures F8–F10, 29 claims, six-point OpenCRISPR subsection |
-| X2 canonical exports | `…_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/` | `X2_COMPONENT_LEVEL_EXPORT.tsv` = **inference file** (1,075 rows); `X2_PAIR_LEVEL_EFFECTS.tsv.gz` = **join only** (30,924 rows) |
-| Mestre audit + closure | `…_v7-mestre-audit/analysis/mestre_audit/` | `b05934f`; closure `033bfcb`; MCC-v3.1 freeze `e047fdc` |
-| SPIRE | `…_v7-spire-ncrna/analysis/spire_ncrna_audit/` | `ed4a663` |
-| full synthesis (long form) | `…_v7-synthesis/analysis/project_synthesis/` | `48f9e1b` |
+| **index / review** | **`project-synthesis`** | this package plus the long-form synthesis. A lightweight, citable index over everything else. It **does not** contain the evidence and the task branches are **not merged into it** |
+| **evidence / reports** | the eight task branches below | the actual bundles, reviews, errata and reporting packages, each on its own branch |
+| **promoted state** | **`main`** | the formally promoted, governed project state — currently `94a1a78` |
 
-⚠️ **`origin/main` is at `94a1a78`.** Everything else listed above is **local only** and has not been
-pushed. `human_input_audit` is **PENDING on every bundle**, which governance requires before any
-number becomes a thesis or paper claim.
+Consequence for a reviewer: `main` is **not** the whole project. Several closed results (the Stage-2
+final report, Stage 3C and its failed review, X2 and its closure, the Mestre closure) live only on
+their own branches and are **not** on `main`.
+
+### 10.2 · Evidence sources — local path ↔ GitHub branch
+
+| what | local worktree path | GitHub branch | commit |
+|---|---|---|---|
+| Stage 1 + Stage 2 bundles; Stage-2 **final report** | `…_v7/results/` | **`rt07-stage2-final-report`** | `46414f4` (one ahead of `main`) |
+| Stage-2 binding errata (`g7a_closure_decision_erratum_2026-09-19.tsv`) | `…_v7/docs/errata/` | `main` · `rt07-stage2-final-report` | `94a1a78` |
+| g6 reading rules (`2026-09-19_stage2_g6_review_errata.md`) | `…_v7/docs/decisions/` | `main` · `rt07-stage2-final-report` | `94a1a78` |
+| Stage 3A / 3B / 3C + **failed independent review** | `…_v7-stage3c/analysis/` | **`worktree-stage3c`** | bundle `34000ee`; review + errata `eeaf0ae` |
+| Stage-3C errata (**binding — the report may not be cited without it**) | `…_v7-stage3c/docs/errata/2026-09-19_stage3c_review_errata.md` | **`worktree-stage3c`** | `eeaf0ae` |
+| Stage 3A closure / Stage 3B design, as first landed | `…_v7-asset-audit/analysis/` | **`prior-asset-audit`** | `67c137b` |
+| embeddings, X1, **X2 + closure** | `…_v7-embeddings/results/` | **`embeddings-g0`** | X2 results `4f8550b`; **closure `fdf0872` governs** |
+| X2 canonical exports | `…_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/` | **`embeddings-g0`** | `X2_COMPONENT_LEVEL_EXPORT.tsv` = **inference file** (1,075 rows); `X2_PAIR_LEVEL_EFFECTS.tsv.gz` = **join only** (30,924 rows) |
+| RT-ncRNA chapter reporting package | `…_v7-embedding-report/analysis/embedding_report/` | **`worktree-embedding-report`** | **`d7d3ece`** — figures F8–F10, 29 claims, six-point OpenCRISPR subsection |
+| Mestre audit + closure | `…_v7-mestre-audit/analysis/mestre_audit/` | **`worktree-mestre-audit`** | `b05934f`; closure `033bfcb`; MCC-v3.1 freeze `e047fdc` |
+| SPIRE de novo ncRNA | `…_v7-spire-ncrna/analysis/spire_ncrna_audit/` | **`worktree-spire-ncrna`** | `ed4a663` |
+| Stage-1 workbench (exploratory) | `…_v7-dbchar-workbench/analysis/` | **`dbchar-workbench`** | `12ea561` |
+| full synthesis (long form) | `…_v7-synthesis/analysis/project_synthesis/` | **`project-synthesis`** | `48f9e1b` |
+| **this package** | `…_v7-synthesis/PROJECT_REVIEW_PACKAGE/` | **`project-synthesis`** | current tip |
+
+Per-branch publication state, including which tips are published, is in `WORKTREE_REGISTRY.tsv`
+(`github_branch`, `published_state`); per-bundle branch attribution is in
+`RESULT_BUNDLE_REGISTRY.tsv` (`github_branch`).
+
+### 10.3 · What is still NOT on GitHub
+
+- **Heavy data**: the corpus (~76 GB), `data/derived/` (2.2 GB), `MELISSA_DATA/` (1.8 GB), the
+  embedding caches (~28 GB) and the X1/X2 model scratch (~3.6 GB) are gitignored. They are
+  registered by absolute path, size and hash in `DATASET_REGISTRY.tsv`.
+- **The Stage-1 writing workbench**: `…-dbchar-workbench/ARIS_OUTPUT/dbchar_workbench/` (88 MB) is
+  gitignored and therefore in **no** branch, published or not — a genuine single point of failure.
+  Only a text snapshot is tracked, at `docs/dbchar_workbench_snapshot/`.
+- **The experimental panel and structures**, which live outside this repository entirely (paths and
+  sha256 in `DATASET_REGISTRY.tsv`).
+
+⚠️ **`human_input_audit` is PENDING on every bundle**, which governance requires before any number
+becomes a thesis or paper claim. Publication to GitHub does not change that.

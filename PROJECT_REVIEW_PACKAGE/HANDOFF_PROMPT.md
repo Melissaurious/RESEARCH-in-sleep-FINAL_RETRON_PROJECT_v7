@@ -93,6 +93,20 @@ DELIVERABLES - produce these, in this order:
      and necessity - not by novelty.
   7. Anything you believe should be closed permanently, with the evidence that closes it.
 
+REPOSITORY LAYOUT: this package is the index tier. The evidence lives on separate GitHub branches
+and is deliberately NOT merged into the index branch:
+  project-synthesis          = this package + the long-form synthesis (the index)
+  main                       = the formally promoted, governed project state - NOT the whole project
+  rt07-stage2-final-report   = Stage 1 + Stage 2 bundles and the Stage-2 final report
+  worktree-stage3c           = Stage 3A / 3B / 3C and Stage 3C's FAILED independent review
+  prior-asset-audit          = Stage 3A closure / Stage 3B design as first landed
+  embeddings-g0              = embeddings, X1, X2 and the X2 closure
+  worktree-embedding-report  = the RT-ncRNA chapter reporting package
+  worktree-mestre-audit      = the Mestre historical audit and its closure
+  worktree-spire-ncrna       = the SPIRE de novo ncRNA branch
+  dbchar-workbench           = the Stage-1 exploratory workbench
+Several closed results are NOT on main. Do not assume main is the project.
+
 HEAVY DATA: the package deliberately contains no large files. DATASET_REGISTRY.tsv gives absolute
 paths, sizes, hashes and purposes for the corpus, the sequence catalogues, the embedding caches, the
 structures and the model scratch. If you are an agent with filesystem access you may read those
