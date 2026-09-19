@@ -1,0 +1,47 @@
+quantity	rederived	frozen	match
+U test_nll_component_mean	1.41097	1.41097	True
+U ci_lo	1.40847	1.40847	True
+U ci_hi	1.41347	1.41347	True
+U test_nll_pooled	1.41913	1.41913	True
+U n_components	357.0	357.0	True
+T test_nll_component_mean	1.37513	1.37513	True
+T ci_lo	1.36748	1.36748	True
+T ci_hi	1.38273	1.38273	True
+T test_nll_pooled	1.39562	1.39562	True
+T n_components	357.0	357.0	True
+R test_nll_component_mean	1.35734	1.35734	True
+R ci_lo	1.34787	1.34787	True
+R ci_hi	1.3671	1.3671	True
+R test_nll_pooled	1.39496	1.39496	True
+R n_components	357.0	357.0	True
+T-U diff	-0.0358473613	-0.0358473472	True
+T-U ci_lo	-0.0426218825	-0.0426218919	True
+T-U ci_hi	-0.0292447534	-0.0292447228	True
+T-U frac_components_favouring_a	0.8067226891	0.8067226891	True
+T-U n_components	357.0	357.0	True
+R-U diff	-0.0536317755	-0.053631749	True
+R-U ci_lo	-0.0622392843	-0.062239252	True
+R-U ci_hi	-0.0445403549	-0.0445403308	True
+R-U frac_components_favouring_a	0.8291316527	0.8291316527	True
+R-U n_components	357.0	357.0	True
+R-T diff	-0.0177844143	-0.0177844018	True
+R-T ci_lo	-0.0242768724	-0.0242768582	True
+R-T ci_hi	-0.0105182202	-0.0105182193	True
+R-T frac_components_favouring_a	0.649859944	0.649859944	True
+R-T n_components	357.0	357.0	True
+stratum T1 R-T diff	-0.0207035799	-0.0207035691	True
+stratum T1 R-T ci_lo	-0.0274376266	-0.0274376031	True
+stratum T1 R-T ci_hi	-0.0135898952	-0.0135899	True
+stratum T1 R-T n_components	339.0	339.0	True
+stratum T2 R-T diff	-0.0229772928	-0.0229772814	True
+stratum T2 R-T ci_lo	-0.0290361021	-0.0290360861	True
+stratum T2 R-T ci_hi	-0.0171982303	-0.0171982087	True
+stratum T2 R-T n_components	265.0	265.0	True
+stratum T3 R-T diff	-0.0216774461	-0.021677427	True
+stratum T3 R-T ci_lo	-0.0285375048	-0.0285374857	True
+stratum T3 R-T ci_hi	-0.0150246561	-0.0150246285	True
+stratum T3 R-T n_components	200.0	200.0	True
+stratum T4 R-T diff	-0.0077570736	-0.0077570635	True
+stratum T4 R-T ci_lo	-0.0176064174	-0.0176063813	True
+stratum T4 R-T ci_hi	0.0016892217	0.0016892272	True
+stratum T4 R-T n_components	83.0	83.0	True
