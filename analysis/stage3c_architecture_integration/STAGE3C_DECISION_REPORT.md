@@ -36,7 +36,7 @@ stage for the first time; that transition is recorded here, and those labels are
 |---|---|---|
 | A | Stage-3B catalytic truth + frozen detector | **19** Tier-A truth-bearing chains; **none is a retron** |
 | B | frozen mapper `rtmap-1.0.0/53a1e738a19b3896`, applied unmodified | 59 chains MAPPED, 1 ABSTAIN, 2 below the instrument's 250-aa minimum |
-| C | literature + the inherited historical product | **17** usable boundary statements over **8** chains, plus 25 historical rows |
+| C | literature + the inherited historical product | **17** usable boundary statements over **7** chains, plus 25 historical rows |
 | D | Region X / Region Y literature, then an operational annotation | 62 chains scanned; 21 retron |
 | E | the experimental register + the mapped anchor span | 62 chains; extensions interpretable in 20 |
 

@@ -18,7 +18,7 @@ Governed by `launchers/LAUNCHER_03C_architecture_integration.md`. Read
     n_dropped:     0 chains dropped — but coverage differs per comparison, and that is the point:
                      A  19/62 chains (Stage-3B Tier-A truth-bearing; NONE is a retron)
                      B  59/62 mapped, 1 ABSTAIN, 2 below the instrument's 250-aa minimum
-                     C  8/62 chains carry a usable literature boundary (17 statements)
+                     C  7/62 chains carry a usable literature boundary (17 statements)
                      D  62/62 scanned; Region X definable in 33, Region Y in 19
                      E  62/62 described; terminal extensions interpretable in 20
 
