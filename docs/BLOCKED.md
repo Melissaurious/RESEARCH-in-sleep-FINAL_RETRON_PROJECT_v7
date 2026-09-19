@@ -522,3 +522,27 @@ recommended default (WA-S.1).
 - **Meanwhile:** the eight RT0-RT7 terminal statuses stand **unchanged and untested**. Failure
   is **not** tacit acceptance. The bundle is unmodified and its `verify.sh` passes 0 failures.
 - **Status:** OPEN. Codex retry earliest 2026-09-19 12:16; Gemini reset time unreported.
+
+## 2026-09-19 · RESOLVED — g6 and g7a independent reviews COMPLETED
+
+- **Resolves:** "2026-09-18 · g6 BS-15 independent review OPEN" and "2026-09-18 · g7a
+  independent review OPEN" above. Both entries are left as written.
+- **What happened:** the same landed packets, unchanged, were re-run against Codex
+  (`gpt-5.6-sol`, xhigh, read-only) after the usage-limit reset.
+  - g6: `PASS_WITH_REQUIRED_REPAIRS`, 6/10, **0 blockers**, 8 required repairs — thread `01a0b99f`.
+  - g7a: `PASS_WITH_REQUIRED_REPAIRS`, 7/10, **0 blockers**, 5 required repairs — thread `01a0b9a1`.
+    All eight label statuses upheld; **RT0 and RT1 remain UNRESOLVED**.
+- **Repairs:** all 13 applied as additive errata; no frozen output altered, nothing recomputed.
+  `docs/decisions/2026-09-19_stage2_g6_review_errata.md`,
+  `docs/decisions/2026-09-19_stage2_g7a_review_errata.md`,
+  `docs/errata/g7a_closure_decision_erratum_2026-09-19.tsv`.
+- **Records:** `review-stage/INDEPENDENT_REVIEW_RESULT_g6.md`,
+  `review-stage/INDEPENDENT_REVIEW_RESULT_g7a.md`,
+  `docs/decisions/2026-09-19_stage2_g6_g7a_independent_reviews.md`.
+- **Carried open, deliberately — not blockers:**
+  - RT0 and RT1 unresolved; only primary historical evidence (e.g. Malik, Burke & Eickbush 1999,
+    not held) could change them. No inferential resolution is permitted.
+  - g6's rank statistic uses non-standard tie handling; the per-half vectors needed to
+    recompute under standard Spearman were not landed. Result frozen as reported; a re-run
+    needs explicit future authorisation.
+- **Status:** RESOLVED.
