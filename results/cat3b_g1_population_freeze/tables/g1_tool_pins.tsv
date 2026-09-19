@@ -1,0 +1,4 @@
+tool	path	version	sha256	basis
+foldseek	/home/borg/miniconda3/envs/esmologs/bin/foldseek	10.941cd33	ce5f08d8f1e15598f618ac6155a756608fe0939b9534e773b5b5472a74acb842	the only local build reporting a semantic version; identical version string to the Ibex module foldseek/10-941cd33. The unversioned /home/borg/foldseek/bin/foldseek (commit d609cff8) remains DO-NOT-USE.
+python	/home/borg/miniconda3/envs/retron_tradicional/bin/python	3.12.12		primary local env retron_tradicional
+gemmi	python module	0.7.5		coordinate parsing

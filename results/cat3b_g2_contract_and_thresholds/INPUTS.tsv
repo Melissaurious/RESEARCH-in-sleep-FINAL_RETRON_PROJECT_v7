@@ -1,0 +1,5 @@
+path	sha256	role
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/TRUTH_TABLE.tsv	35cbba7cf9223f506fe57827c70bb627b33cf2ad39f90be17978feadf1d887c2	truth table, schema v2.1
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/results/cat3b_g1_population_freeze/tables/g1_population.tsv	8548b98c0c5e5b11f9561e74fbf8a56a2550eef0720bcce5aa9f994bc20b2d6d	frozen population
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/results/cat3b_g1_population_freeze/tables/g1_declared_criteria.tsv	146d1ccf16c141abf9b2140d45eadd695b60362a2dff7f7e865f3377ae3ab244	declared resolution criterion
+/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/ANTICIRCULARITY_CONTRACT.tsv	73a12d6e6164c2ed04280297d103d8e83f1fab3a5b58a2bd16c540489f444782	input contract

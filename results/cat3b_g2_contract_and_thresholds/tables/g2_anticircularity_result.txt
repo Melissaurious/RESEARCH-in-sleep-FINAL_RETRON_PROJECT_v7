@@ -1,0 +1,4 @@
+selftest: frozen detector clean = True ([]); seeded-bad module rejected = True (["RT0-RT7 / state coords: matched 'CAT_STATE'", "family labels: matched 'family'"])
+SELFTEST PASS
+
+ACCEPT /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/results/cat3b_g2_contract_and_thresholds/scripts/detector.py — no forbidden input referenced

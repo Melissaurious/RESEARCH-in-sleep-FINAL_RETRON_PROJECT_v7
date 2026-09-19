@@ -1,0 +1,5 @@
+artifact	script	command	unit	denominator
+tables/g1_population.tsv	scripts/scan.py	bash run.sh	RT protein chain	62 registered chains
+tables/g1_tool_pins.tsv	scripts/scan.py	bash run.sh	tool	3 pinned tools
+tables/g1_declared_criteria.tsv	scripts/scan.py	bash run.sh	criterion	1 declared criterion
+tables/g1_population_digest.txt	scripts/scan.py	bash run.sh	digest	62 coordinate files

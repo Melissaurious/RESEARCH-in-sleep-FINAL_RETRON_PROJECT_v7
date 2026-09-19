@@ -1,0 +1,32 @@
+replicate_group	tier	relatedness_cluster_30pct	group_evidence_class	n_pdb_entries	n_chains	pdb_entries	family_class_METADATA_ONLY	per_chain_evidence_classes	n_with_catalytic_metal	n_with_nucleotide	n_apo	best_resolution_A	structure_truth	literature_truth	literature_status
+RG01	A_calibration	C30_01	HARD_PAIR	5	5	5HHJ,5HHK,5HHL,7UIM,7UIN	RVT-GII maturase	HARD_PAIR=3; NONE=2	2	0	3	1.2	5HHJ_A:151,239 | 5HHK_A:151,239 | 5HHL_A:139,227		PENDING (deposition evidence sufficient for tiering)
+RG02	A_calibration	C30_03	HARD_PAIR	5	5	8C8J,8SXT,8UW3,9HDO,9K6G	non-LTR (LINE-1 ORF2p)	HARD_PAIR=4; NONE=1	3	4	0	2.1	8C8J_A:600,702 | 8SXT_A:600,702 | 8UW3_A:600,702 | 9HDO_A:600,702		PENDING (deposition evidence sufficient for tiering)
+RG03	B_heldout	C30_02	HARD_SINGLE	6	6	7V9U,7V9X,7XJG,8QBK,8QBL,8QBM	RVT-Retrons (Ec86)	NONE=4; HARD_SINGLE=2	4	0	0	2.51	7XJG_A:198 | 8QBL_A:198		PENDING
+RG04	A_calibration	C30_01	NONE	3	3	6ME0,6MEC,8FLI	RVT-GII maturase	NONE=3	3	0	0	3.6			PENDING
+RG05	C_no_truth_yet	C30_04	NONE	4	4	9L7P,9NNB,9VHE,9VHL	RVT-Retrons (Ec78);RVT-Retrons (St85)	NONE=4	3	4	0	2.5			PENDING
+RG06	B_heldout	C30_08	FUNCTIONAL_PAIR	6	6	23OR,9LBQ,9LPA,9WN8,9X94,9X9B	RVT-Retrons (Eco8)	NONE=6	1	2	0	2.57		D107; Y198; D200; D201 (YADD motif Y198-D201)	VERIFIED from PMC full text 2026-09-18
+RG07	A_calibration	C30_10	HARD_PAIR	2	2	8UB7,8UBD	RVT-DGRs (bRT)	HARD_PAIR=1; NONE=1	1	1	0	3.05	8UB7_A:138,215		PENDING (deposition evidence sufficient for tiering)
+RG08	B_heldout	C30_11	HARD_SINGLE	2	2	9C0I,9LJE	RVT-UG2;RVT-UG2 (DRT2)	HARD_SINGLE=2	2	0	0	2.75	9C0I_A:140 | 9LJE_A:140		PENDING (deposition evidence sufficient for tiering)
+RG09	A_calibration	C30_05	HARD_PAIR	2	2	9D4S,9D5X	RVT-G2L4	HARD_PAIR=1; NONE=1	1	1	1	2.61	9D4S_A:145,239,240		PENDING (deposition evidence sufficient for tiering)
+RG10	A_calibration	C30_06	HARD_PAIR	2	2	9DOU,9NL3	non-LTR (R2Tg)	HARD_PAIR=1; HARD_SINGLE=1	2	2	0	3.2	9DOU_A:777,878 | 9NL3_A:657		PENDING (deposition evidence sufficient for tiering)
+RG11	A_calibration	C30_07	HARD_PAIR	1	1	1RTD	retroviral (HIV-1)	HARD_PAIR=1	1	1	0	3.2	1RTD_A:110,113,185,443,498,549		PENDING (deposition evidence sufficient for tiering)
+RG12	A_calibration	C30_12	HARD_PAIR	1	1	24NC	RVT-UG15 (DRT4)	HARD_PAIR=1	1	1	0	2.22	24NC_A:149,240,241		PENDING (deposition evidence sufficient for tiering)
+RG13	A_calibration	C30_09	HARD_PAIR	1	1	26CZ	RVT-UG8	HARD_PAIR=1	1	0	0	3.1	26CZ_A:182,278		PENDING (deposition evidence sufficient for tiering)
+RG14	A_calibration	C30_01	NONE	1	1	5G2X	RVT-GII (LtrA)	NONE=1	0	0	0	3.8			PENDING
+RG15	A_calibration	C30_07	NONE	1	1	5VBS	retroviral (MMLV)	NONE=1	0	0	0	1.75			PENDING
+RG16	A_calibration	C30_01	HARD_PAIR	1	1	6AR1	RVT-G2L (GsI-IIC)	HARD_PAIR=1	1	1	0	3.01	6AR1_A:138,223		PENDING (deposition evidence sufficient for tiering)
+RG17	A_calibration	C30_01	NONE	1	1	7KFT	RVT-CRISPR	NONE=1	0	0	1	3.4			PENDING
+RG18	C_no_truth_yet	C30_13	NONE	1	1	7R06	RVT-AbiK	NONE=1	0	0	0	2.27			PENDING
+RG19	C_no_truth_yet	C30_14	NONE	1	1	7R08	RVT-AbiP2	NONE=1	0	0	1	3.1			PENDING
+RG20	A_calibration	C30_05	HARD_PAIR	1	1	8BGJ	RVT-UG26	HARD_PAIR=1	1	0	0	1.63	8BGJ_A:73,154		PENDING (deposition evidence sufficient for tiering)
+RG21	A_calibration	C30_15	HARD_PAIR	1	1	8GH6	non-LTR (R2Bm)	HARD_PAIR=1	1	1	0	3.08	8GH6_A:529,628		PENDING (deposition evidence sufficient for tiering)
+RG22	C_no_truth_yet	C30_16	NONE	1	1	8OZ7	RVT-AbiA	NONE=1	1	0	0	2.75			PENDING
+RG23	C_no_truth_yet	C30_04	NONE	1	1	9E8Z	RVT-Retrons (Ec83)	NONE=1	0	1	0	3.47			PENDING
+RG24	B_heldout	C30_02	HARD_MULTISITE_UNRESOLVED	3	3	9I2F,9I2G,9S1F	RVT-Retrons (Ec67)	NONE=1; HARD_MULTISITE_UNRESOLVED=1; HARD_PAIR=1	2	0	0	2.8	9I2G_B:202,460 | 9S1F_B:460,462		PENDING
+RG25	C_no_truth_yet	C30_17	NONE	1	1	9IOA	RVT-UG28	NONE=1	0	0	0	2.59			PENDING
+RG26	C_no_truth_yet	C30_04	NONE	1	1	9N69	RVT-Retrons	NONE=1	0	1	0	3.13			PENDING
+RG27	A_calibration	C30_06	HARD_PAIR	1	1	9NL2	non-LTR (R2Pm)	HARD_PAIR=1	1	1	0	3.2	9NL2_A:506,606		PENDING (deposition evidence sufficient for tiering)
+RG28	C_no_truth_yet	C30_18	NONE	1	1	9WY8	RVT-UG12 (DRT6)	NONE=1	0	0	1	2.69			PENDING
+RG29	A_calibration	C30_19	HARD_PAIR	1	1	9YFD	RVT-UG1 (DRT1)	HARD_PAIR=1	1	1	0	2.6	9YFD_A:212,324,325		PENDING (deposition evidence sufficient for tiering)
+RG30	A_calibration	C30_20	HARD_PAIR	2	2	9Z6Y,9Z6Z	RVT-UG3 / RVT-UG8 (EcDRT3)	NONE=1; HARD_PAIR=1	2	0	0	2.6	9Z6Y_A:115,197	D197; D198 (YVDD motif Y195-D198)	VERIFIED from PMC13533446 full text 2026-09-18
+RG31	A_calibration	C30_09	HARD_PAIR	2	2	9Z6Y,9Z6Z	RVT-UG3 / RVT-UG8 (EcDRT3)	HARD_PAIR=2	2	0	0	2.6	9Z6Z_H:291,292 | 9Z6Y_H:192,291,292	D291; D292	VERIFIED from PMC13533446 full text 2026-09-18

@@ -1,0 +1,5 @@
+artifact	script	command	unit	denominator
+tables/G2_TIERA_EVALUATION.tsv	scripts/evaluate_tierA.py	bash run.sh	RT protein chain	19 truth-bearing Tier A chains
+tables/G2_SENSITIVITY_TIERA.tsv	scripts/sensitivity_tierA.py	bash run.sh	sensitivity analysis	26 analyses, Tier A only
+tables/g2_frozen_parameters.tsv	scripts/detector.py	bash run.sh	parameter	8 frozen parameters
+tables/g2_anticircularity_result.txt	scripts/anticircularity_check.py	bash run.sh	check	9 forbidden-input classes

@@ -1,0 +1,26 @@
+input	status	stage_at_which_allowed	rationale
+Asp (and Glu) side-chain carboxylate coordinates	ALLOWED as detector input	detection	the primary observable; no annotation content
+all-atom backbone and side-chain coordinates of the chain	ALLOWED as detector input	detection	
+pairwise carboxylate-carboxylate distances	ALLOWED as detector input	detection	intrinsic geometry of the candidate
+three-residue (and n-residue) relative geometry: distances, angles, centroid dispersion, coplanarity	ALLOWED as detector input	detection	intrinsic geometry of the candidate
+sequence separation BETWEEN candidate residues (|i-j|)	ALLOWED as detector input, but the admissible range must be calibrated on Tier A ONLY and frozen before Tier B	detection	an intrinsic property of the candidate, not an external prior; becomes circular only if refit on the validation set
+solvent accessibility / burial of the candidate residues	ALLOWED as detector input	detection	
+local secondary structure computed de novo from the candidate structure	ALLOWED as detector input	detection	computed, not inherited; must NOT be read from any prior DSSP table
+local structural context: neighbouring residue identities and packing within a declared radius	ALLOWED as detector input	detection	
+number of Asp/Glu in the chain; chain length	ALLOWED as detector input	detection	
+bound Mg/Mn positions	FORBIDDEN as detector input; ALLOWED as validation evidence	validation only	apo structures exist and must be detectable; using metal as input would make the detector undefined on apo
+bound dNTP / template / primer positions	FORBIDDEN as detector input; ALLOWED as validation evidence	validation only	same reason
+author _struct_site / SITE annotation	FORBIDDEN as detector input; ALLOWED as truth label	truth labelling only	a deposition claim, not a measurement
+YXDD / YADD / YIDD / YMDD motif coordinates	FORBIDDEN	post-freeze comparison only	the stage question is whether the site is identifiable WITHOUT the motif
+the regex [YFWH].DD or [LIV].DD or any successor	FORBIDDEN	post-freeze comparison only	it is this project's own invention, not a literature standard (prior claim A10, KILLED)
+RT5 / RT0-RT7 landmark or HMM state coordinates	FORBIDDEN	post-freeze comparison only	sequence-frame prior
+CAT_STATE 262 or any rtmap state	FORBIDDEN	post-freeze comparison only	sequence-frame prior
+palm / fingers / thumb boundaries, from any source	FORBIDDEN	never in this stage	Stage 3A object; also the prior boundary table is RED (see prior_asset_audit)
+family or class labels (RVT-*, retron, DRT, GII, non-LTR)	FORBIDDEN as detector input	metadata and stratified reporting only	labels would leak the answer through family-specific tuning
+previous Gate S verdicts or the Gate S criterion	FORBIDDEN	post-freeze comparison only	Gate S is a comparator after freezing, not truth
+expected normalised position of the site within the chain	FORBIDDEN	post-freeze comparison only	explicitly excluded by the stage contract
+prior reference_boundaries.tsv / reference_boundaries.json / boundary_extraction_report.txt	FORBIDDEN	never	graded RED in the prior asset audit
+s6b_gateS_LDD.py	FORBIDDEN	never	buggy first pass; three defects that inflate the null
+any Tier B structure or its truth label during calibration	FORBIDDEN	after the detector is frozen	held-out integrity
+any threshold refit after Tier B is scored	FORBIDDEN	never	thresholds are declared before Tier B is opened
+predicted (ESMFold) structures	FORBIDDEN as calibration or held-out truth	downstream application only, after experimental validation	stated in the stage contract

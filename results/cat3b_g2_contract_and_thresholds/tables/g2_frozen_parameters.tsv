@@ -1,0 +1,9 @@
+parameter	value	derivation	source
+SEP_MIN	75	floor to nearest 5 of the minimum Tier A truth-pair |i-j| (75)	Tier A only
+SEP_MAX	115	ceil to nearest 5 of the maximum Tier A truth-pair |i-j| (113)	Tier A only
+D_MAX	6.0 A	ceil to nearest 0.5 of the largest Tier A truth-pair carboxylate distance (5.65)	Tier A only
+DELTA_TIE	0.25 A	declared below the coordinate precision of a 3.5 A cryo-EM map; NOT derived from any outcome	declared a priori
+RES_MAX	3.5 A	g1 declared eligibility criterion	g1
+HIT definition	both predicted residues in the polymerase truth set	declared before evaluation	declared a priori
+PASS bar	NOT SET — requires Tier B to be enlarged first	Tier B is 4 unique sequences in 3 clusters; the launcher predeclares PARTIAL	launcher S1
+PARTIAL scope	single-catalytic-domain RT chains at <=3.5 A whose polymerase site is uniquely attributable	named BEFORE Tier B is opened, per launcher S1	declared a priori

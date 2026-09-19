@@ -1,0 +1,27 @@
+analysis	detail	hit	miss	abstain	hit_rate
+FROZEN	SEP[75,115] D_MAX=6.0	13	6	0	0.684
+leave-one-cluster-out	held out C30_01; window from the rest = SEP[75,115] D_MAX=6.0	1	0	0	1.0
+leave-one-cluster-out	held out C30_03; window from the rest = SEP[75,115] D_MAX=4.5	3	0	1	1.0
+leave-one-cluster-out	held out C30_05; window from the rest = SEP[75,115] D_MAX=6.0	2	0	0	1.0
+leave-one-cluster-out	held out C30_06; window from the rest = SEP[75,115] D_MAX=6.0	2	1	0	0.667
+leave-one-cluster-out	held out C30_07; window from the rest = SEP[75,115] D_MAX=6.0	0	1	0	0.0
+leave-one-cluster-out	held out C30_09; window from the rest = SEP[75,115] D_MAX=6.0	2	1	0	0.667
+leave-one-cluster-out	held out C30_10; window from the rest = SEP[75,115] D_MAX=6.0	0	1	0	0.0
+leave-one-cluster-out	held out C30_12; window from the rest = SEP[75,115] D_MAX=6.0	1	0	0	1.0
+leave-one-cluster-out	held out C30_15; window from the rest = SEP[75,115] D_MAX=6.0	1	0	0	1.0
+leave-one-cluster-out	held out C30_19; window from the rest = SEP[75,105] D_MAX=6.0	0	0	1	n/a
+leave-one-cluster-out	held out C30_20; window from the rest = SEP[75,115] D_MAX=6.0	0	1	0	0.0
+D_MAX perturbation	D_MAX=5.0	13	5	1	0.722
+D_MAX perturbation	D_MAX=5.5	13	5	1	0.722
+D_MAX perturbation	D_MAX=6.0	13	6	0	0.684
+D_MAX perturbation	D_MAX=6.5	13	6	0	0.684
+D_MAX perturbation	D_MAX=7.0	13	6	0	0.684
+SEP window perturbation	SEP[75,115]	13	6	0	0.684
+SEP window perturbation	SEP[70,120]	13	6	0	0.684
+SEP window perturbation	SEP[65,125]	13	6	0	0.684
+SEP window perturbation	SEP[55,135]	12	7	0	0.632
+resolution band	(0,2.5] A	4	0	0	1.0
+resolution band	(2.5,3.0] A	3	2	0	0.6
+resolution band	(3.0,3.5] A	6	4	0	0.6
+exclude transferred truth	truth_source == OWN_CHAIN only	13	6	0	0.684
+one chain per replicate group	17 chains	10	2	0	0.833

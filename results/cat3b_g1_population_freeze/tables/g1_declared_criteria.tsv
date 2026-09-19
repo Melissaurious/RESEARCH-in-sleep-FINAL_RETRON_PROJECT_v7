@@ -1,0 +1,2 @@
+criterion	value	declared_before	basis	effect
+resolution_eligibility	3.5 A	any detector existed; declared in g1, used in g2	5G2X at 3.80 A yields ZERO Asp carboxylate pairs <=6 A (side chains unplaced); 6ME0/6MEC (3.60 A) and 8FLI (3.80 A) are the same protein and disagree with one another on the tightest pair. Independently corroborated by the historical curation script find_rt_references.py, which used DSSP_RESOLUTION_CUTOFF = 3.5 A.	excludes 4 of 62 chains (5G2X_C, 8FLI_B, 6ME0_C, 6MEC_C); NONE of them carries HARD_PAIR truth, so the cut is truth-neutral
