@@ -1,7 +1,13 @@
 # FIGURE PLAN
 
-Seven figures are specified; **F1–F7 are generated and rendered now** from frozen bundles.
-F8–F10 are specified but **cannot be produced yet** — each names exactly what it is waiting for.
+Ten figures are specified, and **all ten are generated and rendered** from frozen bundles: F1–F7
+from the dataset/baseline/pilot work, F8–F10 from the landed X2 confirmation. Two further figures
+(F11, F12) are specified but not produced; each names what it is waiting for.
+
+**Numbering note (2026-09-19).** The slot previously reserved for the pending X2 figure is now
+F8, and the counterfactual and bounding figures took F9 and F10. The earlier placeholders
+"F9 within-type feasibility" and "F10 candidate-set decision plot" have moved to **F11** and
+**F12**.
 
 All figures render deterministically via
 
@@ -60,7 +66,7 @@ emitted for every panel.
 | data | `embed_x1/tables/x1_arms.tsv`, `x1_comparisons.tsv`, `x1_sensitivity.tsv`, `x1_strata.tsv` |
 | carries | the primary X1 result **and its smallness**, next to the type effect that is twice as large |
 | thesis | §6.4, §6.7 |
-| label | figure footer states PRELIMINARY: one pilot run, one seed per arm; X2 pending |
+| label | figure footer states PRELIMINARY: one pilot run, one seed per arm, single fold, and points to F8 for the cross-fitted confirmation |
 
 ## F4 · Component-level R−T effect distribution — **GENERATED**
 
@@ -74,7 +80,7 @@ emitted for every panel.
 | thesis | §6.5 |
 | note | this figure could not be drawn from the frozen bundle alone, which carries summaries only; no model output was recomputed to produce it |
 
-## F5 · Observed RT versus same-type counterfactual conditioning — **GENERATED**
+## F5 · Observed RT versus same-type counterfactual conditioning (pilot) — **GENERATED**
 
 `figures/F5_counterfactual_control.{png,pdf}`
 
@@ -84,7 +90,7 @@ emitted for every panel.
 | data | `embed_x1/tables/x1_counterfactual.json` |
 | carries | the strongest level-2-flavoured evidence in the frozen set, together with the statement that alternatives are controls and not biological negatives |
 | thesis | §6.6 |
-| limitation shown | per-pair values were not frozen, so only the component-level summary is plotted; stricter tiers C2–C4 are marked PENDING |
+| limitation shown | per-pair values were not frozen in X1, so only the component-level summary is plotted; the panel now points forward to F9, where the stricter X2 tiers show a ~10-fold decay |
 
 ## F6 · Shared-representation evidence (atlas panels that carry the narrative) — **GENERATED**
 
@@ -121,31 +127,60 @@ biological classes that were never tested.
 
 ---
 
+## F8 · X2 cross-fitted confirmation and decomposition — **GENERATED**
+
+`figures/F8_x2_crossfitted_confirmation.{png,pdf}`
+
+| | |
+|---|---|
+| panels | **a** out-of-fold decomposition: R−U, G−U, T−U, G−T, **R−T (primary)**, **R−G**, P−T, each with component-level CI · **b** replication against the X1 pilot plus the T4, T3 and near-duplicate-excluded strata · **c** all five cross-fit folds with their component counts |
+| data | `embed_x2/tables/COMPONENT_LEVEL_EFFECTS.tsv`, `FOLD_HETEROGENEITY.tsv` |
+| carries | the primary result **and** the fact that G−T is most of R−T; T4 resolving; the effect not being carried by one fold |
+| thesis | §7.3, §7.4 |
+| label | footer states INTERNAL cross-fitted confirmation, not external validation |
+
+## F9 · Counterfactual decay C1 → C4, and the weighting that forbids a per-pair reading — **GENERATED**
+
+`figures/F9_counterfactual_decay.{png,pdf}`
+
+| | |
+|---|---|
+| panels | **a** Δ log P per nt by tier with component-level CIs and component counts, annotated with the ~10× decay · **b** % of components and of **pairs** favouring the observed RT against the 50 % chance line, with C3 at 52.5 % · **c** component-level versus raw pair-weighted means, showing the **sign difference at C3** |
+| data | `embed_x2/tables/COUNTERFACTUAL_EFFECTS.tsv` + the reconciliation table in `X2_HANDOFF.md` |
+| carries | the single most important bound on the level-2 claim, and the evidence for why no per-pair biological inference is supported |
+| thesis | §7.5 |
+| terminology | captions say *conditioning controls*, never negative or incompatible pairs |
+
+## F10 · What bounds the result: lineage, seeds, relatedness — **GENERATED**
+
+`figures/F10_bounds_lineage_seeds_relatedness.{png,pdf}`
+
+| | |
+|---|---|
+| panels | **a** R−T decomposed into G−T (78 %) and R−G (22 %) · **b** R−T and R−G across three optimization seeds, showing R−G's factor-of-three spread against a stable sign · **c** R−T and R−G by nearest-training-RT cosine quartile, with Q1's interval spanning zero shaded |
+| data | `embed_x2/tables/COMPONENT_LEVEL_EFFECTS.tsv`, `SEED_STABILITY.tsv`, `SENSITIVITY_STRATA.tsv` |
+| carries | the three qualifications (Q1–Q3 of the closure record) in one figure |
+| thesis | §7.4, §7.6 |
+| note | panel c also shows R−G is flat across quartiles, which localises the gradient to the T arm |
+
+---
+
 ## Specified but NOT producible yet
 
-### F8 · Cross-fitted R−T and the counterfactual tier ladder (C1 → C4) — **PENDING X2**
-
-Planned panels: pooled out-of-fold R−T with between-fold heterogeneity; R−G and R−P beside it;
-Δ log P per counterfactual tier C1→C4 with eligible pairs, components and `UNDETERMINED` shading
-below 30 components. **Waiting on**: the X2 run to finish and land as a frozen bundle. Nothing
-about its direction or magnitude may be drawn or implied before then.
-
-### F9 · Within-type feasibility landscape — **producible, lower priority**
+### F11 · Within-type feasibility landscape — **producible, lower priority** *(formerly F9)*
 
 A per-type scatter of pairs versus n_eff with the four pre-declared criteria drawn as thresholds,
-making visible that `TypeIC1_IC2` has 6,277 pairs at n_eff 1.2 while `TypeIIIA3` passes with 1,082
-pairs. Data exist (`embed_g2c/tables/g2a_within_type_feasibility.tsv`). Recommended for §5.4 if
-that section needs a figure rather than a table.
+making visible that `TypeIC1_IC2` has 6,277 pairs at n_eff 1.2 while `TypeIIIA3` passes with 1,082.
+Data exist (`embed_g2c/tables/g2a_within_type_feasibility.tsv`). Recommended for §5.4 if that
+section needs a figure rather than a table.
 
-### F10 · Candidate-set decision plot with real scores — **BLOCKED**
+### F12 · Candidate-set decision plot with real scores — **BLOCKED** *(formerly F10)*
 
 The realised version of F7: real conditional scores for a named, experimentally tractable RT–ncRNA
 set, with margins, seed/fold consistency and in-distribution flags. **Blocked by** an authorised
-model and an authorised scoring run; neither exists, and the prerequisites in
-`CANDIDATE_SELECTION_DESIGN.md` §5 are unmet. It must not be produced from X1 or X2 outputs
-opportunistically.
-
----
+model and an authorised scoring run; neither exists, X2's stop condition forbids converting a
+likelihood difference into a pair score, and the prerequisites in `CANDIDATE_SELECTION_DESIGN.md`
+§5 are unmet. It must not be produced opportunistically from the X1 or X2 outputs.
 
 ## Reproduction and provenance
 
@@ -158,6 +193,11 @@ opportunistically.
 | F5 | `:f5` | embed_x1 counterfactual json | no |
 | F6 | `:f6` | embed_g2, embed_g2c tables/plotdata | no |
 | F7 | `:f7` | synthetic | no |
+| F8 | `:f8` | embed_x2 component-level and fold tables | no |
+| F9 | `:f9` | embed_x2 counterfactual table + handoff reconciliation | no |
+| F10 | `:f10` | embed_x2 effects, seed-stability and strata tables | no |
 
-`scripts/r01_x1_component_table.py` regenerates the derived table and **fails rather than writes**
-if any of its 46 checks disagrees with the frozen bundle.
+`scripts/r01_x1_component_table.py` regenerates the derived X1 component table and **fails rather
+than writes** if any of its 46 checks disagrees with the frozen bundle.
+`scripts/r02_multiplicity.py` re-derives the partner-multiplicity percentages from two independent
+frozen tables and fails if they disagree or if the population totals drift.

@@ -122,8 +122,8 @@ protein–RNA exchangeability, not from their code.
 
 | adaptable idea | retron form | prerequisite |
 |---|---|---|
-| condition on a **non-cognate protein** and require degradation | the MalE-style control: condition on a non-RT protein and on a shuffled RT; the model must get **worse** | none — this is a cheap, informative control and should be added whenever the model is next run |
-| condition on a **different effector of the same family** | our counterfactual tiers C1–C4, ending at the same 50 %-identity RT homolog cluster | already specified in X2; tiers below 30 components report `UNDETERMINED` |
+| condition on a **non-cognate protein** and require degradation | the MalE-style control: condition on a non-RT protein and on a shuffled RT; the model must get **worse** | still not done. X2's within-type permutation arm is the nearest thing, and it is **not flat** (P − T = −0.00590), which is exactly why a genuinely non-cognate control is worth adding |
+| condition on a **different effector of the same family** | our counterfactual tiers C1–C4, ending at the same 50 %-identity RT homolog cluster | **done in X2**: +0.01766 → +0.00168 nats/nt from C1 to C4, all tiers adjudicable |
 | **exchange** RNA between two proteins and compare outcomes | the RT × ncRNA score matrix and its native-minus-cross margin (`CANDIDATE_SELECTION_DESIGN.md`) | an authorised model and an experimentally tractable named set |
 | validate designs **functionally** | a retron activity assay for a nominated candidate pair | a laboratory collaboration; nothing computational substitutes for it |
 | the two-segment sentinel vocabulary as an interpretability handle (which segment changes when the protein changes?) | msr vs msd segments treated separately | msr/msd boundary annotations, currently absent |
@@ -164,7 +164,80 @@ only (3) bears on partner specificity:
 Seven prerequisites for training that architecture are recorded in the landed comparison
 (`OPENCRISPR_METHOD_COMPARISON.md` §7); the binding one is **a within-type split with sufficient
 component-level test support**, which today only two of 21 retron types approach, and both at
-test-fold n_eff below 5.
+test-fold n_eff below 5. X2 adds six further binding requirements for any pairing-specificity
+analysis (`X2_HANDOFF.md` R1–R6), of which R1 (C3/C4-strength counterfactuals) and R4 (report
+R − G, not only R − T) are the ones that most directly constrain a generative follow-up.
+
+## 8 · Thesis subsection — OpenCRISPR as precedent, in six points
+
+*Drop-in text for the thesis (chapter §1.4, cross-referenced from §6 and §7). It is written to be
+read without the rest of this file.*
+
+**(1) What OpenCRISPR did.** Profluent trained a small protein-conditioned model that generates the
+guide RNA for a given CRISPR effector: a frozen ESM2 protein language model supplies a precomputed
+embedding, a linear projection and one bidirectional self-attention layer form a trainable
+conditioning representation, and a three-layer autoregressive decoder generates the RNA while
+cross-attending to that representation — about 0.7 M trainable parameters, trained with plain
+next-token cross-entropy on the RNA and **no contrastive or mismatch term**. Their programme's
+decisive evidence is functional: a designed editor either cuts DNA in cells or it does not. The
+published methods could not be retrieved from this environment, so every statement here about the
+model is reconstructed from the released code and checkpoint, and anything not so reconstructable
+is recorded as *not determinable* rather than as *not done*.
+
+**(2) What we actually reused or adapted.** The vendored `transformer.py` from the released
+`grna-modeling` tree, imported **read-only at a pinned sha256** (`c1f2112b…`), supplying the
+`EncoderLayer` and `CrossDecoderLayer` classes; the architectural shape (projection → one
+bidirectional encoder layer → three cross-attention decoder layers → LM head); the capacity class
+(665 k–788 k trainable parameters per arm against their 705,930); the objective (conditional
+next-token cross-entropy with padding and sentinels masked); the optimiser settings (AdamW, lr
+2e-4, 4,000-step warmup, weight decay 0, accumulation 2); and the frozen-encoder,
+precompute-the-embeddings pattern.
+
+**(3) What we rejected or did not reuse.** `gRNAModel.py`, whose batch plumbing requires the
+unpublished `profluent.*` namespace; the released checkpoint weights, which carry a CRISPR prior
+that a retron model must not inherit; ESM2 8M, replaced by the ESM-C 300M cache already built and
+verified for this exact RT population; the two-segment sentinel vocabulary, deferred because it
+needs msr/msd boundary annotations this project has not independently established; their
+train/validation arrangement; and any OpenCRISPR sequence — none was added to the retron dataset.
+There was no evaluation harness in the release to reuse.
+
+**(4) The conceptual experiment we reproduced, in modified form.** Not their experiment: **the
+question of whether a protein-conditioned RNA decoder depends on *which* protein it is given.**
+Their release demonstrates the qualitative version — conditioned on SpCas9 the model emits the
+canonical direct repeat and terminator hairpin (16/16 well-formed), while conditioned on *E. coli*
+MalE it produces 0/64 well-formed outputs. We reproduced that idea as a **graded, statistical**
+experiment: X1 and X2 hold the decoder byte-identical across arms and vary only the conditioning
+input — nothing (U), the retron-type label (T), the 50 %-identity homolog-group representative (G),
+the observed RT (R), and a within-type permuted RT (P) — then measure held-out likelihood and
+counterfactual substitution at four tiers of stringency. This is a **methodological adaptation, not
+a replication**: no analysis here reproduces an OpenCRISPR experiment, and OpenCRISPR numbers are
+never used as a benchmark against ours.
+
+**(5) Why our evaluation is component-blocked and lineage-controlled.** Two measured facts in the
+retron data force it. First, one ncRNA is observed with **705 distinct RTs** and 17.72 % of ncRNAs
+have more than one RT partner, so a protein-only split cannot stop near-identical RNAs appearing on
+both sides; only the connected component of the bipartite RT-cluster ↔ ncRNA-cluster graph is
+closed under both relations, and 30,924 pairs collapse to 1,075 components with n_eff 12.5. Second,
+and this is what a naive design would have missed: conditioning on the RT's **homolog-group
+representative** already captures about 78 % of the advantage over the broad type label
+(G − T = −0.01919 of R − T = −0.02470). An experiment reporting only "RT beats type" would
+therefore have been measuring lineage, not pairing. The endpoint decides how much the split must
+carry — a wet-lab functional endpoint tolerates training-set homology, because if a designed editor
+works in cells leakage cannot explain the phenotype, whereas a likelihood or discrimination
+endpoint is inflated by it directly.
+
+**(6) Why we cannot reproduce their exchangeability validation.** Their validation is functional:
+build the designed system and assay it. **We have no RT–ncRNA swap data.** There is no set of
+retron RT–ncRNA combinations experimentally labelled compatible or incompatible, so we cannot
+compute a classification metric against biologically meaningful negatives, cannot calibrate a score
+into a probability of function, and cannot validate a generated ncRNA. Our counterfactual tiers are
+the closest available substitute, and they are *conditioning controls, not negatives*: a
+combination absent from the corpus is a **non-observed pairing**. The limits of that substitute are
+visible in the result — discrimination decays about ten-fold from same-type to within-homolog-
+cluster alternatives (+0.0177 → +0.0017 nats/nt), and at the nearest-embedding-neighbour tier only
+**52.5 % of pairs** favour the observed RT, with the raw pair-weighted mean nominally negative.
+Acquiring experimental exchangeability labels is therefore not a refinement of this work but the
+precondition for the question OpenCRISPR was able to answer.
 
 ## 8 · One-line summary for the thesis
 
@@ -173,4 +246,7 @@ test-fold n_eff below 5.
 > cross-attends to the protein — and deliberately does not borrow its evaluation, because a
 > statistical partner-specificity endpoint places far more weight on split construction and
 > control design than a functional editing endpoint does. This is a methodological adaptation, not
-> a replication.
+> a replication. What our version can measure, it measured: the conditioning is real and graded,
+> but most of it is carried by RT lineage rather than by the individual partner, and the
+> functional exchangeability question that OpenCRISPR's endpoint answers remains out of reach
+> without experimental RT–ncRNA swap data.

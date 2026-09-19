@@ -5,6 +5,14 @@
 > **predicted pairing / cross-reactivity score** — a hypothesis-generating device — and remains so
 > until experimental validation. It is never evidence of orthogonality, incompatibility, binding
 > or co-evolution.
+>
+> **X2 raises the bar for this framework rather than clearing it.** Its stop condition explicitly
+> forbids converting a log-likelihood difference into a compatibility label, an interaction
+> probability or a pair score, and its findings say why that prohibition is substantive: under the
+> strictest counterfactual control the model favours the observed RT for only **52.5 % of pairs**,
+> the raw pair-weighted mean at that tier is nominally negative, and about **78 %** of the
+> RT-associated gain is explained at the homolog-lineage level rather than by the individual RT.
+> Any future scoring work inherits the six binding requirements R1–R6 of `X2_HANDOFF.md`.
 
 ## 1 · The eventual objective
 
@@ -71,13 +79,14 @@ does not buy its way past an out-of-distribution flag.
 
 | factor | how it enters | gate |
 |---|---|---|
-| **model uncertainty** | refit under ≥ 3 seeds and evaluate each set under every out-of-fold model that legitimately covers it | the margin's sign must be stable across all of them |
+| **model uncertainty** | refit under ≥ 3 seeds and evaluate each set under every out-of-fold model that legitimately covers it (X2_HANDOFF R3) | the margin's sign must be stable across all of them, and the across-seed spread must be reported beside the estimate — X2 found the specific-RT increment's sd as large as its point estimate |
 | **replicate/seed consistency** | report the spread of `margin(C)` across seeds and folds, not the mean alone | spread must be smaller than the margin |
 | **sequence relatedness of the RTs** | pairwise identity and coverage between set members, under the frozen bidirectional rule | members must not be near-identical (a cross pair between two 95 %-identical RTs tests nothing) |
 | **retron type** | whether the set is within-type or across-type | report both; **within-type sets are the informative ones** for partner specificity, across-type sets mostly re-measure type grammar |
-| **phylogenetic / lineage distance** | distance between set members, and their distance to the training distribution | intermediate distance preferred — see §5 |
+| **phylogenetic / lineage distance** | distance between set members, and their distance to the training distribution (X2_HANDOFF R5) | intermediate distance preferred — see the distance trap below. X2 measured the cost directly: in the quartile least similar to training RTs the effect's interval spans zero |
 | **in-distribution status** | is each RT within the representation regime the model was trained on? flag `LEN_EXTRAPOLATED`, unusual length, rare type, low-coverage cluster | any member flagged out-of-distribution ⇒ the set is reported but **not** nominated |
-| **native-vs-counterfactual margin** | the same quantity measured against the frozen counterfactual tiers (C1–C4) for each member | each native pairing should also beat its stringent counterfactuals, not only the other set members |
+| **native-vs-counterfactual margin** | the same quantity measured against the frozen counterfactual tiers (C1–C4) for each member (X2_HANDOFF R1) | each native pairing should also beat its **C3/C4** counterfactuals, not only the other set members and not merely same-type ones, which are ~10× easier and would inflate any headline |
+| **lineage versus pairing** | the margin must be evaluated against `delta_R_minus_G` / `delta_logP_C4`, never `delta_R_minus_T` / `delta_logP_C1` (X2_HANDOFF R4) | a feature or a score correlated with RT lineage inherits the lineage signal, which X2 showed to be ~78 % of the effect |
 | **component support** | number of independent components spanned | a set drawn from a single relatedness component is not evidence |
 
 ### The distance trap, stated explicitly
@@ -92,11 +101,17 @@ scoring, not chosen after seeing the matrix.
 ## 5 · Prerequisites — none of which is satisfied today
 
 1. **An authorised model.** Nothing currently authorises a scoring run: `embed_g3` was not
-   escalated, X1 is a pilot, X2 is a confirmation of X1's contrast and its stop condition is
-   explicit ("no log-likelihood difference is converted into a compatible/incompatible label, an
-   interaction probability, or a pair score").
-2. **A level-2 result that survives the stricter test** — at minimum X2-A, and preferably with the
-   T4 / high-independence stratum resolved rather than under-powered.
+   escalated, X1 is a pilot, and X2 — although its frozen gate returned X2-A — closed with an
+   explicit stop condition ("no log-likelihood difference is converted into a compatible/
+   incompatible label, an interaction probability, or a pair score") and returned the work for
+   operator review.
+2. **A level-2 result that survives the stricter test — partially met, and instructive.** X2 did
+   replicate the contrast and *did* resolve the T4 high-independence stratum (−0.02594 [−0.03508,
+   −0.01731] over 247 components). What it did **not** deliver is a pair-specific effect of usable
+   size: the residue beyond the 50 %-identity homolog group is −0.00551 with a factor-of-three
+   spread across seeds, and the within-cluster counterfactual tier C4 is +0.00168 nats/nt. A
+   selection margin built on quantities that small, against alternatives that close, would be
+   dominated by model noise.
 3. **Within-type component support.** Only `TypeIIIA3` and `TypeIB1` pass the population criteria,
    at test-fold n_eff 3.7 and 4.6. A cross-reactivity claim is inherently within-type.
 4. **A named, experimentally tractable set** defined by the laboratory — expressible constructs,

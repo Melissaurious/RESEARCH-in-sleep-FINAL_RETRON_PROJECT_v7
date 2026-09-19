@@ -2,16 +2,17 @@
 
 **Scope.** Methods for the RT–ncRNA representation and conditional-modelling chapter: dataset
 construction, leakage-aware splitting, frozen representations, the shared-representation
-baseline, and the conditional RNA model (X1, and X2 as specified-but-pending). Every numbered
-subsection ends with a `provenance` line naming the frozen bundle and commit it is read from.
+baseline, and the conditional RNA model (the X1 pilot and the X2 cross-fitted confirmation). Every
+numbered subsection ends with a `provenance` line naming the frozen bundle and commit it is read
+from.
 
-These methods are **stable** — they describe analyses that are already frozen. They are written
-to be lifted into the thesis with minimal editing. Where a method exists only as a frozen
-*design* (X2), it is marked **specified, result pending**.
+These methods are **stable** — every analysis they describe is frozen, including X2, which has
+landed and closed. They are written to be lifted into the thesis with minimal editing.
 
-**Nothing in this file was recomputed.** The single derived artifact of this workbench
-(`derived/x1_component_level.tsv`) is a re-aggregation of frozen per-sequence outputs, verified
-against the frozen summary tables by 46 of 46 checks.
+**Nothing in this file was recomputed.** This workbench holds two derived artifacts, both checked:
+`derived/x1_component_level.tsv` (a re-aggregation of frozen per-sequence X1 outputs, verified
+against the frozen summary tables by 46 of 46 checks) and `derived/multiplicity_rederived.tsv`
+(partner counts re-derived from two independent frozen tables that agree exactly).
 
 ---
 
@@ -109,14 +110,17 @@ to `<unk>` and **no substitution was applied**.
 different RTs**. This asymmetry is why naive in-batch negatives are biologically wrong here, why
 false-candidate exclusion is mandatory, and why the split unit must be joint over both modalities.
 
-Provenance note: the maxima (176 ncRNA partners for one RT; 705 RT partners for one ncRNA) are
-read from `results/embed_g0_input_contract/tables/g0_multiplicity.tsv`; the accompanying
-percentages (96.85 %, 82.28 % and their complements 3.15 %, 17.72 %) are quoted from the landed
-track report `analysis/embedding_rt_ncrna/RT_NCRNA_EMBEDDING_REPORT.md` @ `4f56519`, which is a
-frozen derived document rather than a bundle table. Re-derive them from the pair table before
-they enter the thesis.
+Provenance: the maxima are read from
+`results/embed_g0_input_contract/tables/g0_multiplicity.tsv`, and **the percentages were
+re-derived for this chapter** by counting distinct partners in two independent frozen tables that
+both enumerate the full 30,924-pair universe — the hashed frozen split assignment
+(`embed_g2b` @ `15e00b8`) and the X2 pair-level export (`embed_x2` @ `fdf0872`). Both give
+96.85 % / 3.15 % (RT side) and 82.28 % / 17.72 % (ncRNA side) with maxima 176 and 705, and both
+match the declared population totals; `scripts/r02_multiplicity.py` fails rather than writes if
+they disagree. These figures no longer rest on a derived document.
 
-> `provenance` — `results/embed_g0_input_contract/` @ `fe6e1a3`; upstream
+> `provenance` — `results/embed_g0_input_contract/` @ `fe6e1a3`;
+> `derived/multiplicity_rederived.tsv` (this workbench); upstream
 > `results/dbchar_g3_pair_geometry/` @ `2b13a9e`; registry `docs/DATASET_REGISTRY.md` §3b.
 
 ## 3 · Frozen representations
@@ -395,44 +399,120 @@ been reported as a finding.
 
 > `provenance` — `results/embed_x1_conditional_pilot/` @ `8bf7207` (PREREG.md in-bundle).
 
-## 7 · Cross-fitted confirmation (X2) — **specified, result pending**
+## 7 · Cross-fitted confirmation (X2)
 
-X2 is **running**. Its design, counterfactual rules and cross-fit manifest were frozen before any
-X2 number existed, so the methods below are stable and writable now; **no X2 result is anticipated
-anywhere in this workbench.**
+X2 is **complete and closed** (`4f8550b`; closure `fdf0872`). Its design, counterfactual rules and
+cross-fit manifest were frozen before any effect estimate was inspected, and the outcome gate was
+applied as written rather than revised afterwards.
 
-- **Cross-fitting**: 5 folds over the same connected components used by `embed_g2`, whole
-  components assigned deterministically (largest component to the currently smallest fold, no RNG,
-  never optimised against R−T). For fold *k*: test = *k*, validation = (*k*+1) mod 5, train = the
-  remaining three. Verified by assertion that no component, RT cluster or ncRNA cluster crosses
-  train/val/test in any fold, and that each of the 1,075 components is evaluated out-of-fold
-  exactly once. Manifest sha256 `65228b34…`.
-- **Prospective power statement, made before the result**: cross-fitting raises T4 coverage from
-  83 to 247 components, but n_eff moves from **9.0 to 8.6** — it does not improve. n_eff is a
-  property of the component-size distribution, not of the number of folds. **Cross-fitting buys
-  coverage and robustness, not power**; if T4 remains unresolved that is predicted in advance and
-  is an X2-D outcome for that stratum, not evidence of absence.
-- **Arms**: U, T, R as in X1, plus **G** (conditioning on the ESM-C representation of the frozen
-  `rt_id0.50` cluster **representative** — coarse RT lineage) and **P** (conditioning on a
-  **permuted** RT during training only, with validation and test conditioning on the true RT — a
-  falsification control). G uses the representative's frozen embedding rather than a learned
-  cluster embedding because components never share RT clusters across folds, so a learned table
-  would be untrained for every evaluation cluster.
-- **Counterfactual tiers**, increasing in stringency, all evaluation-only and all requiring the
-  alternative RT to lie in the **same cross-fit fold** as the query (so novelty is not confounded
-  with specificity): **C1** same retron type; **C2** C1 + RT length within 10 %; **C3** C1 + the 8
-  nearest admissible RTs by cosine on the frozen pooled ESM-C representation; **C4** the same
-  frozen `rt_id0.50` homolog cluster. A tier spanning fewer than **30 independent components** is
-  reported `UNDETERMINED`.
-- **Architecture and hyperparameters are imported unchanged from X1.** No architecture tuning, no
-  added capacity, no contrastive term, no hyperparameter search.
-- **Outcome gate frozen in advance**: X2-A (RT-specific signal confirmed, requiring all five
-  conditions including that P materially weakens the effect and that G does not explain it);
-  X2-B (population/lineage signal only); X2-C (not replicated); X2-D (under-powered — absence of
-  significance is not converted into absence of signal).
+### 7.1 Cross-fitting
 
-> `provenance` — `ARIS_OUTPUT/embed_x2_confirmation/DESIGN.md` and `COUNTERFACTUAL_RULES.md`
-> (frozen pre-result; scratch and uncommitted at the time of writing, 2026-09-19).
+Five folds over the same connected components used by `embed_g2`, with whole components assigned
+deterministically (largest component to the currently smallest fold; no RNG, never optimised
+against R − T). For fold *k*: test = *k*, validation = (*k*+1) mod 5, train = the remaining three.
+Verified by assertion that no component, RT cluster or ncRNA cluster crosses train/validation/test
+in any fold, and that each of the 1,075 components is evaluated out-of-fold exactly once. The
+manifest (sha256 `65228b34…`) rehashes to the value recorded before training, which is what makes
+"the split was not tuned against the result" checkable rather than asserted.
+
+A prospective power statement was recorded before the run and is retained whatever the outcome:
+cross-fitting raises T4 coverage from 83 to 247 components while n_eff moves from **9.0 to 8.6**,
+because n_eff is a property of the component-size distribution rather than of the number of folds.
+**Cross-fitting buys coverage and robustness, not power.** The design therefore predicted that T4
+might remain unresolved; in the event it resolved, and the failed prediction is kept in the record.
+
+### 7.2 Arms
+
+U, T and R exactly as in X1, plus:
+
+- **G — coarse RT lineage.** Conditioning on the ESM-C representation of the frozen `rt_id0.50`
+  cluster **representative**. The representative's frozen embedding is used rather than a learned
+  per-cluster embedding because components never share RT clusters across folds, so a learned
+  cluster table would be untrained for every evaluation cluster and degenerate. This makes
+  **R − G** a clean test of information finer than the 50 %-identity homolog group. 2,455 clusters;
+  8.0 % of pairs are their own representative (G ≡ R there), so R − G is reported both on all pairs
+  and on the 28,450 where G genuinely differs.
+- **P — falsification.** Within each retron type, the RT assigned to each *training* pair is
+  deranged among that type's training pairs (20 of 18,554 unavoidably keep their own RT in
+  singleton types). **Validation and test condition on the true RT.** This asks whether the
+  advantage requires the observed RT↔ncRNA correspondence or merely an RT from the right
+  structural population.
+
+Architecture and hyperparameters were imported unchanged from X1: no architecture tuning, no added
+capacity, no contrastive term, no hyperparameter search. The conditioning-reachability check was
+re-applied in its corrected post-training-step form (§6.5).
+
+### 7.3 Counterfactual tiers
+
+All evaluation-only, all requiring the alternative RT to differ from the observed one, to be
+**not** observed with that ncRNA anywhere in the full table, and to lie in the **same cross-fit
+fold** as the query — so that novelty is never confounded with specificity.
+
+| tier | alternative drawn from |
+|---|---|
+| **C1** | same retron type (as in X1) |
+| **C2** | C1 + RT length within 10 % |
+| **C3** | C1 + the 8 nearest admissible RTs by cosine on the frozen pooled ESM-C representation |
+| **C4** | within the same frozen `rt_id0.50` homolog cluster |
+
+A tier spanning fewer than **30 independent components** is reported `UNDETERMINED` rather than as
+a null. All four tiers were adjudicable (C4, the smallest, has 451 components).
+
+### 7.4 Endpoint, stratification and seeds
+
+The primary endpoint is the **pooled out-of-fold component-level R − T**, aggregated per-sequence →
+per-component (token-weighted) → paired per-component difference → bootstrap over components
+(10,000 resamples), reported with mean, median, 95 % CI, the fraction of components favouring R,
+and between-fold heterogeneity. Thirty-six prespecified strata span retron type, RT homolog-group
+size, ncRNA cluster size, taxonomy breadth, deposition multiplicity, recurrence class and — as a
+**primary axis rather than a footnote** — the cosine similarity between the evaluated RT and the
+nearest RT the evaluating model saw in training.
+
+Three optimization seeds were run. Per the recorded amendment, the primary endpoint remains the
+seed-20260918 cross-fit; seed-averaged values are a **stability check only**, and replicate seeds
+bound optimization noise without adding independent biological observations or enlarging the
+bootstrap unit.
+
+### 7.5 Outcome gate and what followed
+
+The gate frozen in `DESIGN.md` §8 defines X2-A (RT-specific signal confirmed, five conditions),
+X2-B (population/lineage signal only), X2-C (not replicated) and X2-D (under-powered — absence of
+significance is not converted into absence of signal). It returned **X2-A** on all five literal
+criteria, two of them recorded as "yes, marginally" and "yes, directionally only". The gate was
+**not** retrospectively rewritten; what the closure narrows is the *scientific interpretation*,
+which is a separate act and is quoted verbatim in `THESIS_RESULT_STATUS.md`.
+
+The stop condition was honoured: no InfoNCE, contrastive loss, dual encoder, compatibility
+classifier, cross-pair ranking, larger generative architecture or encoder fine-tuning was started,
+and no likelihood difference was converted into a compatibility label, an interaction probability,
+a pair score or an AUROC against artificial mismatches.
+
+### 7.6 Downstream handoff
+
+Two exports are the canonical interface to this work:
+
+- `tables/X2_COMPONENT_LEVEL_EXPORT.tsv` — 1,075 rows, one per independent component: composition,
+  fold, strata, token-weighted per-arm NLL, the four contrasts and the four counterfactual tiers.
+  **This is the file for inference**, and it reproduces the pre-registered analysis through an
+  independent code path.
+- `tables/X2_PAIR_LEVEL_EFFECTS.tsv.gz` — 30,924 rows, for **joining only** (Region X/Y
+  annotations, RT phylogeny, ncRNA family, architecture), on `rt_seq_hash`, `nc_seq_hash` or
+  `component_id`. A naive pair-weighted mean does not reproduce the component-level result and
+  differs in sign at C3.
+
+Six requirements bind any later pairing-specificity analysis (`X2_HANDOFF.md`): **R1** use
+C3/C4-strength counterfactuals, not same-type mismatches, which are ~10× easier; **R2** evaluate at
+component level (n_eff 12.5 for the full population); **R3** carry seed uncertainty, with ≥ 3 seeds
+and the across-seed spread reported beside the point estimate; **R4** report **R − G** as well as
+R − T, since R − T alone measures lineage; **R5** preserve distance-to-training diagnostics as a
+primary axis; **R6** never treat a non-observed pairing as a biological negative. A feature
+correlated with RT lineage will inherit the lineage signal, so any claim that a joined feature
+explains *pairing* specificity must be tested against `delta_R_minus_G` or `delta_logP_C4`, never
+against `delta_R_minus_T` or `delta_logP_C1`.
+
+> `provenance` — `results/embed_x2_rt_specificity_confirmation/` @ `4f8550b` (result) and
+> `fdf0872` (closure): `DESIGN.md`, `COUNTERFACTUAL_RULES.md`, `RESULTS.md`, `DECISION.md`,
+> `X2_CLOSURE.md`, `X2_HANDOFF.md`, `EXECUTION_NOTES.md`.
 
 ## 8 · Statistical conventions
 
@@ -445,6 +525,12 @@ anywhere in this workbench.**
   the standard expected-rank convention; no conclusion depends on which is used.
 - **Under-support**: any stratum or rung without sufficient independent components is reported
   `UNDETERMINED`, never as a null.
+- **Weighting is stated, never implicit.** Component-level and pair-weighted aggregates can differ,
+  and at counterfactual tier C3 they differ in **sign** (+0.003974 vs −0.000205). The component-level
+  estimate is the pre-registered endpoint; the pair-level view is reported alongside it because it
+  is what forbids a per-pair reading.
+- **Seed uncertainty is carried.** Where a magnitude is quoted, the across-seed spread is quoted
+  with it; a magnitude from a single seed is not treated as a result.
 - **Negative and null results are retained and reported** at the same prominence as positive ones.
 
 ## 9 · Software, data and reproducibility

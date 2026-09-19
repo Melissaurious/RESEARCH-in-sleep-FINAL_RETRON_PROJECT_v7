@@ -28,6 +28,7 @@ HERE = Path(__file__).resolve().parents[1]
 DERIVED, FIG = HERE / "derived", HERE / "figures"
 SRC = Path("/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings")
 R = SRC / "results"
+X2 = R / "embed_x2_rt_specificity_confirmation"
 
 PAL = ["#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00", "#56B4E9", "#F0E442", "#000000"]
 GREY, LGREY = "#666666", "#DDDDDD"
@@ -180,11 +181,11 @@ def f2():
     ax = axes[1]; blank(ax)
     ax.set_title("b  Three levels of claim", loc="left")
     box(ax, 0.02, 0.70, 0.96, 0.22,
-        "LEVEL 1 · broad association\nRT and ncRNA properties track retron type/lineage\nevidence: embed_g2, X1 (T − U)",
+        "LEVEL 1 · broad association\nRT and ncRNA properties track retron type AND RT lineage\nevidence: embed_g2, X1/X2 (T − U, G − T)",
         fc="#EAF5EE", ec=PAL[2], fs=6.8)
     box(ax, 0.02, 0.42, 0.96, 0.22,
         "LEVEL 2 · RT-specific statistical association\nthe individual RT improves scoring of its observed ncRNA\n"
-        "beyond type — X1 preliminary; X2 pending",
+        "beyond type AND beyond its 50 %-identity homolog group\nX2 confirmed (X2-A) but lineage-dominated and small",
         fc="#F2F6FA", ec=PAL[0], fs=6.8)
     box(ax, 0.02, 0.10, 0.96, 0.26,
         "LEVEL 3 · functional compatibility / orthogonality\nwhether an RT works with one ncRNA and not another\n"
@@ -257,7 +258,8 @@ def f3():
     ax.set_title("c  R − T across populations", loc="left", fontsize=8)
 
     fig.text(0.5, -0.10, "results/embed_x1_conditional_pilot (commit 8bf7207). PRELIMINARY: one pilot run, one seed "
-                         "per arm; cross-fitted confirmation (X2) pending.", ha="center", fontsize=6, color="#555555")
+                         "per arm, single fold. Cross-fitted confirmation has since landed: see F8 (embed_x2 @ fdf0872).",
+             ha="center", fontsize=6, color="#555555")
     save(fig, "F3_x1_nll_comparison")
 
 
@@ -358,8 +360,8 @@ def f5():
                         f"{100*cf['frac_components_favouring_observed']:.1f} % of components\n"
                         f"favour the observed RT",
             transform=ax.transAxes, fontsize=6.2, va="top")
-    ax.text(0.02, 0.08, "X2 adds stricter tiers: C2 length-matched, C3 nearest\nESM-C neighbours, C4 same "
-                        "50 %-identity RT cluster — PENDING.",
+    ax.text(0.02, 0.08, "X2 added stricter tiers C2/C3/C4 and the effect DECAYS ~10x:\n"
+                        "C1 +0.0177 → C4 +0.0017, with 52.5 % of pairs at C3. See F9.",
             transform=ax.transAxes, fontsize=6.2, va="bottom", color=PAL[1])
 
     fig.text(0.5, -0.03, "results/embed_x1_conditional_pilot/tables/x1_counterfactual.json (commit 8bf7207). "
@@ -495,7 +497,211 @@ def f7():
     save(fig, "F7_candidate_selection_schematic")
 
 
-FIGS = {"F1": f1, "F2": f2, "F3": f3, "F4": f4, "F5": f5, "F6": f6, "F7": f7}
+# ------------------------------------------------- F8 cross-fitted confirmation and decomposition
+def f8():
+    eff = pd.read_csv(X2 / "tables/COMPONENT_LEVEL_EFFECTS.tsv", sep="\t")
+    folds = pd.read_csv(X2 / "tables/FOLD_HETEROGENEITY.tsv", sep="\t")
+    allp = eff[eff["population"] == "all"].set_index("contrast")
+    fig, axes = plt.subplots(1, 3, figsize=(7.4, 3.1),
+                             gridspec_kw=dict(wspace=0.62, width_ratios=[1.2, 1.0, 1.0]))
+
+    ax = axes[0]
+    rows = [("R - U", "R − U   RT vs none", PAL[4]), ("G - U", "G − U   lineage vs none", PAL[5]),
+            ("T - U", "T − U   type vs none", PAL[2]), ("G - T", "G − T   lineage beyond type", PAL[5]),
+            ("R - T", "R − T   RT beyond type  (PRIMARY)", PAL[0]),
+            ("R - G", "R − G   RT beyond its own homolog group", PAL[1]),
+            ("P - T", "P − T   permuted RT vs type", GREY)]
+    for i, (key, lab, c) in enumerate(rows):
+        r = allp.loc[key]
+        y = len(rows) - 1 - i
+        ax.errorbar(r["diff"], y, xerr=[[r["diff"] - r["ci_lo"]], [r["ci_hi"] - r["diff"]]],
+                    fmt="o", ms=4.5, color=c, capsize=2.5, lw=1.1)
+        ax.text(r["diff"], y + 0.22, f"{r['diff']:+.5f}", fontsize=5.6, ha="center", color=c)
+    ax.axvline(0, color="#999999", lw=0.8, ls="--")
+    ax.set_xlim(-0.056, 0.008)
+    ax.set_yticks(range(len(rows)))
+    ax.set_yticklabels([r[1] for r in rows][::-1], fontsize=5.6)
+    ax.set_ylim(-0.7, len(rows) - 0.3)
+    ax.set_xlabel("Δ NLL, paired per component\n(negative = first arm better)", fontsize=7)
+    ax.set_title("a  Out-of-fold decomposition", loc="left", fontsize=8)
+    ax.text(0.02, 0.02, "1,075 components · n_eff 12.5\n30,924 pairs, every component out-of-fold once",
+            transform=ax.transAxes, fontsize=5.8)
+
+    ax = axes[1]
+    ent = [("X1 pilot\nsingle fold, 357 comps", -0.01778, -0.02428, -0.01052, GREY, "s"),
+           ("X2 cross-fitted\n1,075 comps", float(allp.loc["R - T", "diff"]),
+            float(allp.loc["R - T", "ci_lo"]), float(allp.loc["R - T", "ci_hi"]), PAL[0], "o")]
+    for pop, lab in (("T4", "T4 recurrent\n247 comps"), ("T3", "T3 high-conf.\n584 comps"),
+                     ("near_dup_sensitivity", "near-duplicate excl.\n284 comps")):
+        r = eff[(eff["population"] == pop) & (eff["contrast"] == "R - T")].iloc[0]
+        ent.append((lab, r["diff"], r["ci_lo"], r["ci_hi"], PAL[2], "o"))
+    for i, (lab, v, lo, hi, c, mk) in enumerate(ent):
+        y = len(ent) - 1 - i
+        ax.errorbar(v, y, xerr=[[v - lo], [hi - v]], fmt=mk, ms=4.5, color=c, capsize=2.5, lw=1.1)
+        ax.text(v, y + 0.22, f"{v:+.5f}", fontsize=5.8, ha="center", color=c)
+    ax.axvline(0, color="#999999", lw=0.8, ls="--")
+    ax.set_yticks(range(len(ent))); ax.set_yticklabels([e[0] for e in ent][::-1], fontsize=5.6)
+    ax.set_ylim(-0.7, len(ent) - 0.3)
+    ax.set_xlabel("R − T Δ NLL", fontsize=7)
+    ax.set_title("b  Replication and strata", loc="left", fontsize=8)
+    ax.text(0.02, 0.02, "T4 RESOLVED — the design predicted\nit might stay under-powered", fontsize=5.8,
+            transform=ax.transAxes, color=PAL[2])
+
+    ax = axes[2]
+    f = folds.sort_values("fold")
+    ax.errorbar(f["diff"], f["fold"],
+                xerr=[f["diff"] - f["ci_lo"], f["ci_hi"] - f["diff"]],
+                fmt="o", ms=4.5, color=PAL[0], capsize=2.5, lw=1.1, ls="none")
+    ax.axvline(0, color="#999999", lw=0.8, ls="--")
+    ax.axvline(float(allp.loc["R - T", "diff"]), color=PAL[1], lw=1.0)
+    ax.text(float(allp.loc["R - T", "diff"]), 4.65, " pooled", fontsize=5.8, color=PAL[1], va="top")
+    ax.set_yticks(range(5))
+    ax.set_yticklabels([f"{int(r['fold'])}\n{int(r['n_components'])} comps" for _, r in f.iterrows()],
+                       fontsize=5.6)
+    ax.set_ylabel("cross-fit fold", fontsize=7)
+    ax.set_ylim(-0.6, 4.8)
+    ax.set_xlabel("R − T Δ NLL", fontsize=7)
+    ax.set_title("c  All five folds, same sign", loc="left", fontsize=8)
+    ax.text(0.02, 0.03, "mean −0.02446, sd 0.00921", transform=ax.transAxes, fontsize=5.8)
+
+    fig.text(0.5, -0.10, "results/embed_x2_rt_specificity_confirmation (commits 4f8550b, fdf0872). Component-blocked "
+                         "cross-fitting; INTERNAL confirmation, not external validation.",
+             ha="center", fontsize=6, color="#555555")
+    save(fig, "F8_x2_crossfitted_confirmation")
+
+
+# ---------------------------------------------- F9 counterfactual decay C1 -> C4 and the weighting
+def f9():
+    cf = pd.read_csv(X2 / "tables/COUNTERFACTUAL_EFFECTS.tsv", sep="\t").set_index("tier")
+    # pair-weighted means, from the canonical component export's own reconciliation table
+    pair_mean = {"C1": 0.009894, "C2": 0.007951, "C3": -0.000205, "C4": 0.002391}
+    tiers = ["C1", "C2", "C3", "C4"]
+    labs = ["C1\nsame\ntype", "C2\n+ length\nmatched", "C3\n+ nearest\nneighbours",
+            "C4\nsame RT\ncluster"]
+    fig, axes = plt.subplots(1, 3, figsize=(7.4, 3.1),
+                             gridspec_kw=dict(wspace=0.52, width_ratios=[1.15, 1.0, 1.0]))
+
+    ax = axes[0]
+    v = [cf.loc[t, "delta_logP_per_nt"] for t in tiers]
+    lo = [v[i] - cf.loc[t, "ci_lo"] for i, t in enumerate(tiers)]
+    hi = [cf.loc[t, "ci_hi"] - v[i] for i, t in enumerate(tiers)]
+    ax.errorbar(range(4), v, yerr=[lo, hi], fmt="o", ms=5, color=PAL[0], capsize=3, lw=1.2)
+    for i, t in enumerate(tiers):
+        ax.text(i + (0.22 if i == 0 else 0), v[i] + hi[i] + 0.0011, f"{v[i]:+.5f}",
+                fontsize=5.6, ha="left" if i == 0 else "center")
+        ax.text(i, -0.0031, f"{int(cf.loc[t, 'n_components'])}", fontsize=5.4, ha="center", color="#777777")
+    ax.axhline(0, color="#999999", lw=0.8, ls="--")
+    ax.set_xticks(range(4)); ax.set_xticklabels(labs, fontsize=5.6)
+    ax.set_xlim(-0.55, 3.55)
+    ax.set_ylim(-0.0042, 0.0235)
+    ax.set_ylabel("Δ log P per nt\n(positive favours the observed RT)", fontsize=7)
+    ax.text(-0.5, -0.0031, "comps:", fontsize=5.4, color="#777777", ha="left")
+    ax.set_title("a  ~10× decay as the control tightens", loc="left", fontsize=8)
+    ax.annotate("", xy=(3, 0.0017), xytext=(0, 0.0177),
+                arrowprops=dict(arrowstyle="->", color=PAL[1], lw=0.8, ls=(0, (3, 2))))
+
+    ax = axes[1]
+    frac = [100 * cf.loc[t, "frac_pairs_favouring_observed"] for t in tiers]
+    fcomp = [100 * cf.loc[t, "frac_components_favouring_observed"] for t in tiers]
+    ax.bar(np.arange(4) - 0.2, fcomp, 0.38, color=LGREY, ec=GREY, lw=0.6, label="components")
+    ax.bar(np.arange(4) + 0.2, frac, 0.38, color=PAL[0], label="pairs")
+    ax.axhline(50, color=PAL[1], lw=1.0, ls="--")
+    ax.text(-0.45, 52.5, "chance", fontsize=5.8, color=PAL[1], ha="left")
+    for i in range(4):
+        ax.text(i + 0.2, frac[i] + 1.2, f"{frac[i]:.1f}", fontsize=5.6, ha="center",
+                color=PAL[1] if frac[i] < 55 else "black")
+    ax.set_xticks(range(4)); ax.set_xticklabels(["C1", "C2", "C3", "C4"], fontsize=7)
+    ax.set_ylim(0, 92); ax.set_ylabel("% favouring the observed RT", fontsize=7)
+    ax.set_title("b  At C3 pairs are near chance", loc="left", fontsize=8)
+    ax.legend(frameon=False, fontsize=6, loc="upper right")
+
+    ax = axes[2]
+    x = np.arange(4)
+    ax.plot(x, [cf.loc[t, "delta_logP_per_nt"] for t in tiers], "o-", ms=4.5, lw=1.2,
+            color=PAL[0], label="component-level\n(the inference unit)")
+    ax.plot(x, [pair_mean[t] for t in tiers], "s--", ms=4.5, lw=1.2, color=PAL[1],
+            label="raw pair-weighted mean")
+    ax.axhline(0, color="#999999", lw=0.8, ls="--")
+    ax.annotate("sign differs at C3\n(−0.000205)", xy=(2, pair_mean["C3"]), xytext=(1.05, -0.0075),
+                fontsize=5.8, color=PAL[1], arrowprops=dict(arrowstyle="->", color=PAL[1], lw=0.7))
+    ax.set_xticks(x); ax.set_xticklabels(["C1", "C2", "C3", "C4"], fontsize=7)
+    ax.set_ylim(-0.010, 0.022)
+    ax.set_ylabel("Δ log P per nt", fontsize=7)
+    ax.set_title("c  Weighting changes the reading", loc="left", fontsize=8)
+    ax.legend(frameon=False, fontsize=5.6, loc="upper right")
+
+    fig.text(0.5, -0.11, "COUNTERFACTUAL_EFFECTS.tsv and the X2_HANDOFF reconciliation table "
+                         "(embed_x2 @ fdf0872). Counterfactual RTs are conditioning controls, never "
+                         "negative or incompatible pairs.", ha="center", fontsize=6, color="#555555")
+    save(fig, "F9_counterfactual_decay")
+
+
+# ------------------------------------------- F10 what bounds the result: lineage, seeds, relatedness
+def f10():
+    strata = pd.read_csv(X2 / "tables/SENSITIVITY_STRATA.tsv", sep="\t")
+    seeds = pd.read_csv(X2 / "tables/SEED_STABILITY.tsv", sep="\t")
+    eff = pd.read_csv(X2 / "tables/COMPONENT_LEVEL_EFFECTS.tsv", sep="\t")
+    allp = eff[eff["population"] == "all"].set_index("contrast")
+    fig, axes = plt.subplots(1, 3, figsize=(7.4, 3.1),
+                             gridspec_kw=dict(wspace=0.52, width_ratios=[1.0, 1.05, 1.1]))
+
+    ax = axes[0]
+    rt, gt, rg = (float(allp.loc[k, "diff"]) for k in ("R - T", "G - T", "R - G"))
+    ax.barh([0], [abs(gt)], color=PAL[5], ec=GREY, lw=0.5, label=f"G − T  lineage  {gt:+.5f}")
+    ax.barh([0], [abs(rg)], left=[abs(gt)], color=PAL[1], ec=GREY, lw=0.5,
+            label=f"R − G  specific RT  {rg:+.5f}")
+    ax.set_yticks([0]); ax.set_yticklabels(["R − T\n−0.02470"], fontsize=6.6)
+    ax.set_xlabel("|Δ NLL| decomposition", fontsize=7)
+    ax.set_xlim(0, abs(rt) * 1.12); ax.set_ylim(-0.9, 0.9)
+    ax.set_title("a  Most of the gain is lineage", loc="left", fontsize=8)
+    ax.text(abs(gt) / 2, 0.32, f"{100*abs(gt)/abs(rt):.0f} %", ha="center", fontsize=7, color="white")
+    ax.text(abs(gt) + abs(rg) / 2, 0.32, f"{100*abs(rg)/abs(rt):.0f} %", ha="center", fontsize=7)
+    ax.legend(frameon=False, fontsize=5.8, loc="lower center", bbox_to_anchor=(0.5, -0.02))
+
+    ax = axes[1]
+    for i, (c, col) in enumerate((("R - T", PAL[0]), ("R - G", PAL[1]))):
+        sub = seeds[(seeds["contrast"] == c) & (seeds["role"] != "stability_check")]
+        for j, (_, r) in enumerate(sub.iterrows()):
+            xx = i + (j - 1) * 0.22
+            ax.errorbar(xx, r["diff"], yerr=[[r["diff"] - r["ci_lo"]], [r["ci_hi"] - r["diff"]]],
+                        fmt="o", ms=4, color=col, capsize=2.5, lw=1.0,
+                        alpha=1.0 if r["role"] == "primary" else 0.55)
+            ax.text(xx, r["ci_lo"] - 0.0018, str(int(r["seed"]))[-2:], fontsize=5.2, ha="center", color="#777777")
+    ax.axhline(0, color="#999999", lw=0.8, ls="--")
+    ax.set_xticks([0, 1]); ax.set_xticklabels(["R − T\nsd 0.0083", "R − G\nsd 0.0051"], fontsize=6.4)
+    ax.set_xlim(-0.55, 1.55)
+    ax.set_ylabel("Δ NLL", fontsize=7)
+    ax.set_title("b  Seeds: sign stable, magnitude not", loc="left", fontsize=8)
+    ax.text(0.03, 0.90, "R − G spans a factor of 3 across seeds;\nits sd ≈ its primary point estimate",
+            transform=ax.transAxes, fontsize=5.8, color=PAL[1], va="top")
+
+    ax = axes[2]
+    q = strata[strata["axis"] == "C_train_similarity_quartile"]
+    labs = ["Q1\n<0.983", "Q2\n0.983–\n0.988", "Q3\n0.988–\n0.991", "Q4\n≥0.991"]
+    for c, col, off, mk in (("R - T", PAL[0], -0.13, "o"), ("R - G", PAL[1], 0.13, "s")):
+        sub = q[q["contrast"] == c].sort_values("level")
+        xs = np.arange(4) + off
+        ax.errorbar(xs, sub["diff"],
+                    yerr=[sub["diff"] - sub["ci_lo"], sub["ci_hi"] - sub["diff"]],
+                    fmt=mk, ms=4.2, color=col, capsize=2.5, lw=1.0, ls="none", label=c.replace(" - ", " − "))
+    ax.axhline(0, color="#999999", lw=0.8, ls="--")
+    ax.axvspan(-0.45, 0.45, color="#FDF0EA", zorder=0)
+    ax.text(0, 0.0035, "CI spans zero", fontsize=5.6, color=PAL[1], ha="center")
+    ax.set_xticks(range(4)); ax.set_xticklabels(labs, fontsize=5.6)
+    ax.set_xlim(-0.55, 3.55)
+    ax.set_xlabel("cosine to the nearest RT seen in training", fontsize=6.6)
+    ax.set_ylabel("Δ NLL", fontsize=7)
+    ax.set_title("c  Weakest where RTs are least like training", loc="left", fontsize=8)
+    ax.legend(frameon=False, fontsize=6, loc="lower left")
+
+    fig.text(0.5, -0.11, "embed_x2 @ fdf0872. Panel c: R − G is flat across the same quartiles, which localises "
+                         "the gradient to the T arm; the extrapolation limit still stands.",
+             ha="center", fontsize=6, color="#555555")
+    save(fig, "F10_bounds_lineage_seeds_relatedness")
+
+
+FIGS = {"F1": f1, "F2": f2, "F3": f3, "F4": f4, "F5": f5, "F6": f6, "F7": f7,
+        "F8": f8, "F9": f9, "F10": f10}
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
