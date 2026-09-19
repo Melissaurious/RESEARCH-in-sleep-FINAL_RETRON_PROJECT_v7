@@ -1,0 +1,89 @@
+artifact	script	command	unit	denominator
+CLAIM_EVIDENCE_MATRIX.tsv	scripts/NOT_COMPUTED.md	authored, not computed - authored claim-evidence matrix	statement	22 statements
+CONTRADICTIONS_AND_UNCERTAINTY.tsv	scripts/NOT_COMPUTED.md	authored, not computed - authored register of contradictions and uncertainty	recorded contradiction or uncertainty	22 entries
+INPUTS.tsv	scripts/s11_package.py	python3 scripts/s11_package.py	file	n/a - not a rate-bearing artefact
+INPUT_PROVENANCE.tsv	scripts/s00_inputs.py	python3 scripts/s00_inputs.py	input file	244 declared Stage-3C inputs
+LITERATURE_BOUNDARY_AUDIT.tsv	scripts/s09_boundary_audit.py	python3 scripts/s09_boundary_audit.py	boundary source statement or verification check	94 audit rows
+MANIFEST.tsv	scripts/s11_package.py	python3 scripts/s11_package.py	file	n/a - not a rate-bearing artefact
+PROVENANCE.md	scripts/NOT_COMPUTED.md	authored, not computed - authored provenance record	prose	n/a - prose carries no rate
+README.md	scripts/NOT_COMPUTED.md	authored, not computed - authored	prose	n/a - prose carries no rate
+STAGE3C_DECISION_REPORT.md	scripts/NOT_COMPUTED.md	authored, not computed - authored report	prose	n/a - prose carries no rate
+STRUCTURE_STAGE2_CROSSWALK.tsv	scripts/s04_states_join.py	python3 scripts/s04_states_join.py	chain x state block x arm	62 chains x 8 blocks x 2 arms
+STRUCTURE_STAGE3B_CROSSWALK.tsv	scripts/s02_catalytic_join.py	python3 scripts/s02_catalytic_join.py	chain x partition arm	62 chains x 2 arms; 19 in 3B Tier-A scope
+TERMINI_FUSION_SUMMARY.tsv	scripts/s06_termini.py	python3 scripts/s06_termini.py	chain	62 chains; extensions interpretable in 20
+XY_REGION_ANNOTATIONS.tsv	scripts/s07_xy_regions.py	python3 scripts/s07_xy_regions.py	chain	62 chains; 21 retron
+XY_REGION_EVIDENCE.tsv	scripts/NOT_COMPUTED.md	one-time audited retrieval, landed, never re-fetched by run.sh - one-time audited literature retrieval (Europe PMC / NCBI), quotes verbatim	literature statement	41 statements over 30 sources
+env.lock	scripts/NOT_COMPUTED.md	authored, not computed - conda env export -p /home/borg/miniconda3/envs/retron_tradicional (verbatim; BS-8)	file	n/a - not a rate-bearing artefact
+run.sh	scripts/NOT_COMPUTED.md	authored, not computed - authored entry point	file	n/a - not a rate-bearing artefact
+scripts/NOT_COMPUTED.md	scripts/NOT_COMPUTED.md	authored, not computed - producer record for non-computed artefacts	script	n/a - code, carries no rate
+scripts/s00_inputs.py	scripts/s00_inputs.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s01_sequences.py	scripts/s01_sequences.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s02_catalytic_join.py	scripts/s02_catalytic_join.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s03_catalytic_summary.py	scripts/s03_catalytic_summary.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s04_states_join.py	scripts/s04_states_join.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s05_states_summary.py	scripts/s05_states_summary.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s06_termini.py	scripts/s06_termini.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s07_xy_regions.py	scripts/s07_xy_regions.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s08_xy_summary.py	scripts/s08_xy_summary.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s09_boundary_audit.py	scripts/s09_boundary_audit.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s10_figures.py	scripts/s10_figures.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s11_package.py	scripts/s11_package.py	bash run.sh	script	n/a - code, carries no rate
+scripts/s3clib.py	scripts/s3clib.py	bash run.sh	script	n/a - code, carries no rate
+figures/F1_catalytic_site_vs_units.png	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F1_catalytic_site_vs_units.svg	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F2_state_blocks_vs_units.png	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F2_state_blocks_vs_units.svg	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F3_literature_overlap.png	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F3_literature_overlap.svg	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F4_region_y_rna.png	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F4_region_y_rna.svg	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F5_architecture_vs_calls.png	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+figures/F5_architecture_vs_calls.svg	scripts/s10_figures.py	python3 scripts/s10_figures.py	figure	n/a - a figure is a view over its data TSV of the same basename
+inputs/stage2_94a1a788/2026-09-19_stage2_closed.md	scripts/NOT_COMPUTED.md	git show 94a1a78868d6039297c78b3fdcc047d633d6645e:<path>, hash-verified in INPUT_PROVENANCE.tsv	frozen input copy	n/a - vendored Stage-2 tables, hashed in INPUT_PROVENANCE.tsv
+inputs/stage2_94a1a788/2026-09-19_stage2_g7a_review_errata.md	scripts/NOT_COMPUTED.md	git show 94a1a78868d6039297c78b3fdcc047d633d6645e:<path>, hash-verified in INPUT_PROVENANCE.tsv	frozen input copy	n/a - vendored Stage-2 tables, hashed in INPUT_PROVENANCE.tsv
+inputs/stage2_94a1a788/g7a_closure_decision.tsv	scripts/NOT_COMPUTED.md	git show 94a1a78868d6039297c78b3fdcc047d633d6645e:<path>, hash-verified in INPUT_PROVENANCE.tsv	frozen input copy	n/a - vendored Stage-2 tables, hashed in INPUT_PROVENANCE.tsv
+inputs/stage2_94a1a788/g7a_closure_decision_erratum_2026-09-19.tsv	scripts/NOT_COMPUTED.md	git show 94a1a78868d6039297c78b3fdcc047d633d6645e:<path>, hash-verified in INPUT_PROVENANCE.tsv	frozen input copy	n/a - vendored Stage-2 tables, hashed in INPUT_PROVENANCE.tsv
+inputs/stage2_94a1a788/g7a_crosswalk_resolved.tsv	scripts/NOT_COMPUTED.md	git show 94a1a78868d6039297c78b3fdcc047d633d6645e:<path>, hash-verified in INPUT_PROVENANCE.tsv	frozen input copy	n/a - vendored Stage-2 tables, hashed in INPUT_PROVENANCE.tsv
+inputs/stage2_94a1a788/g7a_panel_results.tsv	scripts/NOT_COMPUTED.md	git show 94a1a78868d6039297c78b3fdcc047d633d6645e:<path>, hash-verified in INPUT_PROVENANCE.tsv	frozen input copy	n/a - vendored Stage-2 tables, hashed in INPUT_PROVENANCE.tsv
+inputs/stage2_94a1a788/g7a_state_to_residue.tsv	scripts/NOT_COMPUTED.md	git show 94a1a78868d6039297c78b3fdcc047d633d6645e:<path>, hash-verified in INPUT_PROVENANCE.tsv	frozen input copy	n/a - vendored Stage-2 tables, hashed in INPUT_PROVENANCE.tsv
+tables/A_replicate_stability.tsv	scripts/s03_catalytic_summary.py	python3 scripts/s03_catalytic_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/A_replicate_summary.tsv	scripts/s03_catalytic_summary.py	python3 scripts/s03_catalytic_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/A_residue_join.tsv	scripts/s02_catalytic_join.py	python3 scripts/s02_catalytic_join.py	table row	stated in the table's own denominator column or in its README entry
+tables/A_summary.tsv	scripts/s03_catalytic_summary.py	python3 scripts/s03_catalytic_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_block_by_lineage.tsv	scripts/s05_states_summary.py	python3 scripts/s05_states_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_block_summary.tsv	scripts/s05_states_summary.py	python3 scripts/s05_states_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_cat262_vs_3B_truth.tsv	scripts/s05_states_summary.py	python3 scripts/s05_states_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_control_K5_ltra.tsv	scripts/s04_states_join.py	python3 scripts/s04_states_join.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_sensitivity.tsv	scripts/s05_states_summary.py	python3 scripts/s05_states_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_split_merge.tsv	scripts/s05_states_summary.py	python3 scripts/s05_states_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_state_residue_join.tsv	scripts/s04_states_join.py	python3 scripts/s04_states_join.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_unavailable_cases.tsv	scripts/s05_states_summary.py	python3 scripts/s05_states_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/B_unit_block_membership.tsv	scripts/s04_states_join.py	python3 scripts/s04_states_join.py	table row	stated in the table's own denominator column or in its README entry
+tables/C_audit_notes.md	scripts/NOT_COMPUTED.md	one-time audited retrieval, landed, never re-fetched by run.sh - one-time audited literature retrieval	prose	n/a - prose carries no rate
+tables/C_literature_boundaries_retrieved.tsv	scripts/NOT_COMPUTED.md	one-time audited retrieval, landed, never re-fetched by run.sh - one-time audited literature retrieval	table row	stated in the table's own denominator column or in its README entry
+tables/C_overlap.tsv	scripts/s09_boundary_audit.py	python3 scripts/s09_boundary_audit.py	table row	stated in the table's own denominator column or in its README entry
+tables/C_reference_disagreement.tsv	scripts/s09_boundary_audit.py	python3 scripts/s09_boundary_audit.py	table row	stated in the table's own denominator column or in its README entry
+tables/C_sources.tsv	scripts/NOT_COMPUTED.md	one-time audited retrieval, landed, never re-fetched by run.sh - one-time audited literature retrieval	table row	stated in the table's own denominator column or in its README entry
+tables/C_summary.tsv	scripts/s09_boundary_audit.py	python3 scripts/s09_boundary_audit.py	table row	stated in the table's own denominator column or in its README entry
+tables/D_audit_notes.md	scripts/NOT_COMPUTED.md	one-time audited retrieval, landed, never re-fetched by run.sh - one-time audited literature retrieval	prose	n/a - prose carries no rate
+tables/D_controls.tsv	scripts/s07_xy_regions.py	python3 scripts/s07_xy_regions.py	table row	stated in the table's own denominator column or in its README entry
+tables/D_na_contacts_by_region.tsv	scripts/s07_xy_regions.py	python3 scripts/s07_xy_regions.py	table row	stated in the table's own denominator column or in its README entry
+tables/D_region_y_length_vs_literature.tsv	scripts/s08_xy_summary.py	python3 scripts/s08_xy_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/D_region_y_rna_enrichment.tsv	scripts/s08_xy_summary.py	python3 scripts/s08_xy_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/D_source_cache_hashes.tsv	scripts/NOT_COMPUTED.md	one-time audited retrieval, landed, never re-fetched by run.sh - sha256 of each retrieved text, cached in disposable scratch	table row	stated in the table's own denominator column or in its README entry
+tables/D_sources.tsv	scripts/NOT_COMPUTED.md	one-time audited retrieval, landed, never re-fetched by run.sh - one-time audited literature retrieval	table row	stated in the table's own denominator column or in its README entry
+tables/D_summary.tsv	scripts/s08_xy_summary.py	python3 scripts/s08_xy_summary.py	table row	stated in the table's own denominator column or in its README entry
+tables/E_architecture_vs_calls.tsv	scripts/s06_termini.py	python3 scripts/s06_termini.py	table row	stated in the table's own denominator column or in its README entry
+tables/E_insertions.tsv	scripts/s06_termini.py	python3 scripts/s06_termini.py	table row	stated in the table's own denominator column or in its README entry
+tables/F1_catalytic_site_vs_units.tsv	scripts/s10_figures.py	python3 scripts/s10_figures.py	table row	stated in the table's own denominator column or in its README entry
+tables/F2_state_blocks_vs_units.tsv	scripts/s10_figures.py	python3 scripts/s10_figures.py	table row	stated in the table's own denominator column or in its README entry
+tables/F3_literature_overlap.tsv	scripts/s10_figures.py	python3 scripts/s10_figures.py	table row	stated in the table's own denominator column or in its README entry
+tables/F4_region_y_rna.tsv	scripts/s10_figures.py	python3 scripts/s10_figures.py	table row	stated in the table's own denominator column or in its README entry
+tables/F5_architecture_vs_calls.tsv	scripts/s10_figures.py	python3 scripts/s10_figures.py	table row	stated in the table's own denominator column or in its README entry
+tables/chain_index_map.tsv	scripts/s01_sequences.py	python3 scripts/s01_sequences.py	table row	stated in the table's own denominator column or in its README entry
+tables/chain_sequences.tsv	scripts/s01_sequences.py	python3 scripts/s01_sequences.py	table row	stated in the table's own denominator column or in its README entry
+tables/chains.faa	scripts/s01_sequences.py	python3 scripts/s01_sequences.py	sequence	62 modelled chain sequences
+tables/mapper/s3c.failures.tsv	scripts/s04_states_join.py	results/rt07_g4b_production_mapper/code/rtmap/run_mapper.py --in tables/chains.faa --shard s3c	frozen-instrument output row	60 sequences x 150 states; 2 INPUT_INVALID
+tables/mapper/s3c.provenance.tsv	scripts/s04_states_join.py	results/rt07_g4b_production_mapper/code/rtmap/run_mapper.py --in tables/chains.faa --shard s3c	frozen-instrument output row	60 sequences x 150 states; 2 INPUT_INVALID
+tables/mapper/s3c.sequences.tsv	scripts/s04_states_join.py	results/rt07_g4b_production_mapper/code/rtmap/run_mapper.py --in tables/chains.faa --shard s3c	frozen-instrument output row	60 sequences x 150 states; 2 INPUT_INVALID
+tables/mapper/s3c.states.tsv	scripts/s04_states_join.py	results/rt07_g4b_production_mapper/code/rtmap/run_mapper.py --in tables/chains.faa --shard s3c	frozen-instrument output row	60 sequences x 150 states; 2 INPUT_INVALID

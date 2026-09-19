@@ -1,0 +1,7 @@
+metric	stratum	arm	numerator	denominator	value	unit	denominator_recount	recount_agrees	note
+site_in_one_unit	all_in_scope	primary	19	19	1.0000	chain with all truth Asp in one PDP unit		YES	
+site_in_palm_like_unit_given_palm_CALL	all_in_scope	primary	5	9	0.5556	chain with palm-like CALL		YES	site unit != called palm-like unit in the others
+site_in_max_strand_unit_given_no_palm_CALL	all_in_scope	primary	9	10	0.9000	chain with C4 NO_CALL or AMBIGUOUS		YES	1 TIED target (not broken)
+site_unit_discontinuous	all_in_scope	primary	14	19	0.7368	chain whose site-containing unit has >1 segment		YES	
+detector_prediction_in_same_unit_as_truth	all_in_scope	primary	19	19	1.0000	chain		YES	includes all 6 3B MISSes: residue-level miss, unit-level co-location
+detector_HIT_as_frozen_by_3B	all_in_scope	primary	13	19	0.6842	chain	19	YES	control: must reproduce 3B's 13/19 on all_in_scope (recount HIT=13)

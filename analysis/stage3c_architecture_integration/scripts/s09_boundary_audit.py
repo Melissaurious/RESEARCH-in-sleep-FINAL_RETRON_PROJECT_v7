@@ -25,8 +25,10 @@ COINCIDE_J = 0.70   # DECLARED (the 3A C7 bar)
 HOLD_FRAC = 0.20    # DECLARED: a unit "holds" a region if it carries >= this fraction of it
 
 HIST = "/home/borg/RESEARCH-in-sleep-RETRON-DB_V3/MELISSA_DATA/crystal_structures"
-FPT = os.path.join(os.environ.get("TMPDIR", "/tmp"), "..", "scratchpad", "fpt_audit")
-FPT = os.environ.get("FPT_AUDIT_DIR", FPT)
+# The literature retrieval was a one-time audited acquisition over the network. Its product is
+# LANDED as tables/C_literature_boundaries_retrieved.tsv and read from there, so this gate reruns
+# on a clean checkout without re-fetching anything.
+LIT_TABLE_NAME = "C_literature_boundaries_retrieved.tsv"
 
 seq = {r["chain"]: r for r in L.read_tsv(os.path.join(L.TABLES, "chain_sequences.tsv"))}
 rev = collections.defaultdict(dict)
@@ -141,7 +143,7 @@ a(dict(stratum="HISTORICAL_RED", source_id="HIST-coverage", pdb_ids=";".join(cov
        retrieval_status="ON_DISK", locator="reference_boundaries.tsv", numbering_status="n/a", unit="PDB entry"))
 
 # =============================================================== 2. LITERATURE stratum
-lit = L.read_tsv(os.path.join(FPT, "LITERATURE_BOUNDARIES.tsv"))
+lit = L.read_tsv(os.path.join(L.TABLES, LIT_TABLE_NAME))
 MOTIF_CHECK = {  # source-stated motif positions used to verify that source's numbering on a chain
     "9X94_A": (198, 201, "YADD", "Xiong 2026 states YADD at 198-201"),
     "9X9B_A": (198, 201, "YADD", "Xiong 2026 states YADD at 198-201"),

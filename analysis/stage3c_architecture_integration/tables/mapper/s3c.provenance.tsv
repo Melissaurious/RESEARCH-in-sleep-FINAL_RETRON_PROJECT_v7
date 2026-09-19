@@ -27,8 +27,8 @@ domain_scoring_protocol	PER_SEQUENCE_DB_SIZE_1
 hmmer_version	HMMER 3.4 (Aug 2023); http://hmmer.org/
 python_version	3.12.12
 host	borg-AS-5014A-TT
-started_utc	2026-09-19T16:31:17Z
-finished_utc	2026-09-19T16:31:18Z
+started_utc	2026-09-19T19:05:10Z
+finished_utc	2026-09-19T19:05:10Z
 instrument.CAT_STATE	262
 instrument.D_MAX	0.48
 instrument.D_RANDOM	0.067
