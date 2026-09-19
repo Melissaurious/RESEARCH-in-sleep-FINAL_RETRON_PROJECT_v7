@@ -1,0 +1,390 @@
+
+=== s00 pin inputs + denominators
+supplement table copies compared: 3   distinct BODY sha256: 1
+  -> all copies WE HOLD share one body. They are ONE table with 3 header spellings.
+  -> so NOTHING IN OUR COLLECTION can cross-count against them.
+  -> ⚠ scope: this is our collection, not the journal's inventory, which was never checked.
+
+root A files: 24   root B files: 17   shared names: 13
+shared and byte-identical: 13   differing: 0
+
+  supp_table_rows                   1928  (2nd:    1928 / same-bytes / DERIVED )
+  tree_tips                         1928  (2nd:    1928 / indep      / MEASURED)
+  clade_labelled_rows               1927  (2nd:    1927 / same-bytes / DERIVED )
+  download_terminal_dirs            1928  (2nd:    1928 / indep      / MEASURED)
+  proteins_on_disk_post_rescue      1926  (2nd:    1815 / indep      / MEASURED)  <-- DIFFERS
+  genomes_on_disk_post_rescue       1925  (2nd:    1746 / indep      / MEASURED)  <-- DIFFERS
+  folds_on_disk                     1919  (2nd:    1919 / same-bytes / DERIVED )
+  folds_in_tm_matrix                1902  (2nd:    1902 / indep      / MEASURED)
+
+OK: both roots pinned; shared files byte-identical; every population second-counted
+[seed-bad] corrupted root B copy of 'Supp_material_T1_R1_systematic_prediction.csv' in memory
+supplement table copies compared: 3   distinct BODY sha256: 1
+  -> all copies WE HOLD share one body. They are ONE table with 3 header spellings.
+  -> so NOTHING IN OUR COLLECTION can cross-count against them.
+  -> ⚠ scope: this is our collection, not the journal's inventory, which was never checked.
+
+root A files: 24   root B files: 17   shared names: 13
+shared and byte-identical: 12   differing: 1
+  DIFFERING: Supp_material_T1_R1_systematic_prediction.csv
+
+  supp_table_rows                   1928  (2nd:    1928 / same-bytes / DERIVED )
+  tree_tips                         1928  (2nd:    1928 / indep      / MEASURED)
+  clade_labelled_rows               1927  (2nd:    1927 / same-bytes / DERIVED )
+  download_terminal_dirs            1928  (2nd:    1928 / indep      / MEASURED)
+  proteins_on_disk_post_rescue      1926  (2nd:    1815 / indep      / MEASURED)  <-- DIFFERS
+  genomes_on_disk_post_rescue       1925  (2nd:    1746 / indep      / MEASURED)  <-- DIFFERS
+  folds_on_disk                     1919  (2nd:    1919 / same-bytes / DERIVED )
+  folds_in_tm_matrix                1902  (2nd:    1902 / indep      / MEASURED)
+
+CONTROL OK: seeded corruption tripped the identity check as required
+
+=== s01 clade recovery + rule D sweep
+tips: 1928   table rows: 1928
+join  by accession: 1912   by retron short name: 16   unresolved: 0
+
+mestre:C1  monophyletic clades: 10 of 11   (denominator: the 11 clades the published table names)
+   clade  1  n= 362  mono=Y  dist=   0  smallest_subtree= 362  intruders=   0
+   clade  2  n= 123  mono=Y  dist=   0  smallest_subtree= 123  intruders=   0
+   clade  3  n= 296  mono=Y  dist=   0  smallest_subtree= 296  intruders=   0
+   clade  4  n=  25  mono=Y  dist=   0  smallest_subtree=  25  intruders=   0
+   clade  5  n=   5  mono=Y  dist=   0  smallest_subtree=   5  intruders=   0
+   clade  6  n=   6  mono=Y  dist=   0  smallest_subtree=   6  intruders=   0
+   clade  7  n=  38  mono=Y  dist=   0  smallest_subtree=  38  intruders=   0
+   clade  8  n= 427  mono=Y  dist=   0  smallest_subtree= 427  intruders=   0
+   clade  9  n= 324  mono=Y  dist=   0  smallest_subtree= 324  intruders=   0
+   clade 10  n= 198  mono=N  dist=  88  smallest_subtree= 321  intruders= 123
+   clade 11  n= 123  mono=Y  dist=   0  smallest_subtree= 123  intruders=   0
+
+mestre:C3  the sweep under BOTH rootings (the paper does not say which it means):
+   rooted    groups recovered across the sweep: 2-6   best cell S>=85 F>=0.005 -> 6 groups, 0.3423 tips identical
+             published clades recovered at Jaccard>=0.9, best cell of any: 1
+   unrooted  groups recovered across the sweep: 3-11   best cell S>=80 F>=0.005 -> 8 groups, 0.9300 tips identical
+             published clades recovered at Jaccard>=0.9, best cell of any: 7
+   the adversary's cell S=90 F=0.005, rooted   : 6 groups
+   the adversary's cell S=90 F=0.005, unrooted : 11 groups
+OK
+tips: 1928   table rows: 1928
+join  by accession: 1912   by retron short name: 0   unresolved: 16
+  unresolved tips: Ec107, Ec48, Ec67, Ec73, Ec78, Ec83, Ec86, Mx162, Mx65, Ne144, Sa163, Se72, St85, Vc81, Vc95, Vp96
+
+CONTROL OK: seeded join defect left 16 tips unresolved as required
+
+=== s02 fold-space silhouette + phylogenetic null sweep
+terminal<->Node mapping content-checked against the fasta headers: published accession=1814  SUBSTITUTED by our rescue pass=112  unparsable=0
+
+===== population: published_accession_only   n=1811 folds
+  rule: folds in the TM matrix, carrying one of the 11 published clade labels, whose protein on disk IS the accession the published table names
+  TM pairs present 3269283 of 3279721; missing 10438 (0.3183%)
+  absent pairs are FILLED, not dropped, in the default mode (max_distance); the primary null is reported under all of max_distance, mean_observed, pairwise_complete
+  clade sizes: 1:346, 2:111, 3:293, 4:23, 5:5, 6:6, 7:38, 8:406, 9:310, 10:164, 11:109
+  silhouette cross-check: fast=0.156962797 sklearn=0.156962797 (two routes, agree to <1e-6)
+  observed silhouette 0.156963   largest linkage component 1.0000 (1 comps)   largest clade 0.2242
+  1-TM is a DISSIMILARITY, not a metric: 33443 of 1985914 sampled triplets (1.6840%) violate the triangle inequality
+    B_within_block_label_permutati                    K=1 max_distance      n= 1000 ARI=-0.0000 tv=n/a -  sd=0.028059 z=9.8976
+    B_within_block_label_permutati                    K=2 max_distance      n= 1000 ARI= 0.0422 tv=n/a -  sd=0.027764 z=8.6745
+    B_within_block_label_permutati                    K=4 max_distance      n= 1000 ARI= 0.0888 tv=n/a -  sd=0.026953 z=8.0905
+    B_within_block_label_permutati                    K=8 max_distance      n= 1000 ARI= 0.3442 tv=n/a -  sd=0.021182 z=7.0570
+    B_within_block_label_permutati                   K=16 max_distance      n= 1000 ARI= 0.9996 tv=n/a -  sd=0.001161 z=1.6717
+    B_within_block_label_permutati                   K=32 max_distance      n= 1000 ARI= 0.9996 tv=n/a -  sd=0.001155 z=1.6574
+    B_within_block_label_permutati                   K=64 max_distance      n= 1000 ARI= 0.9996 tv=n/a -  sd=0.001218 z=1.6094
+    B_within_block_label_permutati                  K=128 max_distance      n= 1000 ARI= 0.9996 tv=n/a -  sd=0.001093 z=1.7673
+    A_random_monophyletic_partitio          unconstrained max_distance      n= 1000 ARI= 0.5471 tv=0.2873 sd=0.052051 z=2.8140
+    A_random_monophyletic_partitio largest_group_within_2x max_distance      n=  386 ARI= 0.6275 tv=0.2437 sd=0.026976 z=5.0749
+    A_random_monophyletic_partitio   size_dist_tv_le_0.05 max_distance      n=    0 ARI=     NA tv=    NA sd=0.000000 z=NA
+    A_random_monophyletic_partitio    size_dist_tv_le_0.1 max_distance      n=    0 ARI=     NA tv=    NA sd=0.000000 z=NA
+    A_random_monophyletic_partitio    size_dist_tv_le_0.2 max_distance      n=    0 ARI=     NA tv=    NA sd=0.000000 z=NA
+    A_random_monophyletic_partitio    size_dist_tv_le_0.3 max_distance      n=  845 ARI= 0.5987 tv=0.2545 sd=0.040326 z=3.3030
+    A_random_monophyletic_partitio          unconstrained mean_observed     n= 1000 ARI= 0.5471 tv=0.2873 sd=0.051846 z=2.7679
+    A_random_monophyletic_partitio          unconstrained pairwise_complete n= 1000 ARI= 0.5471 tv=0.2873 sd=0.051838 z=2.7486
+
+===== population: all_labelled_incl_substituted   n=1901 folds
+  rule: folds in the TM matrix carrying one of the 11 published clade labels, INCLUDING those whose protein was substituted by our rescue pass
+  TM pairs present 3601099 of 3613801; missing 12702 (0.3515%)
+  absent pairs are FILLED, not dropped, in the default mode (max_distance); the primary null is reported under all of max_distance, mean_observed, pairwise_complete
+  clade sizes: 1:359, 2:121, 3:294, 4:24, 5:5, 6:6, 7:38, 8:422, 9:319, 10:191, 11:122
+  silhouette cross-check: fast=0.125162333 sklearn=0.125162333 (two routes, agree to <1e-6)
+  observed silhouette 0.125162   largest linkage component 1.0000 (1 comps)   largest clade 0.2220
+  1-TM is a DISSIMILARITY, not a metric: 34116 of 1983879 sampled triplets (1.7197%) violate the triangle inequality
+    B_within_block_label_permutati                    K=1 max_distance      n= 1000 ARI= 0.0001 tv=n/a -  sd=0.031762 z=7.9938
+    B_within_block_label_permutati                    K=2 max_distance      n= 1000 ARI= 0.0464 tv=n/a -  sd=0.029944 z=7.1509
+    B_within_block_label_permutati                    K=4 max_distance      n= 1000 ARI= 0.0958 tv=n/a -  sd=0.027097 z=7.1664
+    B_within_block_label_permutati                    K=8 max_distance      n= 1000 ARI= 0.3567 tv=n/a -  sd=0.021421 z=5.7981
+    B_within_block_label_permutati                   K=16 max_distance      n= 1000 ARI= 0.9996 tv=n/a -  sd=0.001280 z=0.9876
+    B_within_block_label_permutati                   K=32 max_distance      n= 1000 ARI= 0.9996 tv=n/a -  sd=0.001214 z=0.9990
+    B_within_block_label_permutati                   K=64 max_distance      n= 1000 ARI= 0.9996 tv=n/a -  sd=0.001337 z=0.9944
+    B_within_block_label_permutati                  K=128 max_distance      n= 1000 ARI= 0.9996 tv=n/a -  sd=0.001247 z=1.0405
+    A_random_monophyletic_partitio          unconstrained max_distance      n= 1000 ARI= 0.5379 tv=0.2898 sd=0.056101 z=2.2654
+    A_random_monophyletic_partitio largest_group_within_2x max_distance      n=  350 ARI= 0.6267 tv=0.2405 sd=0.028166 z=4.1692
+    A_random_monophyletic_partitio   size_dist_tv_le_0.05 max_distance      n=    0 ARI=     NA tv=    NA sd=0.000000 z=NA
+    A_random_monophyletic_partitio    size_dist_tv_le_0.1 max_distance      n=    0 ARI=     NA tv=    NA sd=0.000000 z=NA
+    A_random_monophyletic_partitio    size_dist_tv_le_0.2 max_distance      n=    0 ARI=     NA tv=    NA sd=0.000000 z=NA
+    A_random_monophyletic_partitio    size_dist_tv_le_0.3 max_distance      n=  818 ARI= 0.5985 tv=0.2508 sd=0.045686 z=2.4798
+    A_random_monophyletic_partitio          unconstrained mean_observed     n= 1000 ARI= 0.5379 tv=0.2898 sd=0.055798 z=2.2834
+    A_random_monophyletic_partitio          unconstrained pairwise_complete n= 1000 ARI= 0.5379 tv=0.2898 sd=0.055785 z=2.2756
+
+K/population cells giving a null with non-zero variance: 26 of 32
+OK
+terminal<->Node mapping content-checked against the fasta headers: published accession=1814  SUBSTITUTED by our rescue pass=112  unparsable=0
+
+===== population: published_accession_only   n=1811 folds
+  rule: folds in the TM matrix, carrying one of the 11 published clade labels, whose protein on disk IS the accession the published table names
+  TM pairs present 3269283 of 3279721; missing 10438 (0.3183%)
+  absent pairs are FILLED, not dropped, in the default mode (max_distance); the primary null is reported under all of max_distance, mean_observed, pairwise_complete
+  clade sizes: 1:346, 2:111, 3:293, 4:23, 5:5, 6:6, 7:38, 8:406, 9:310, 10:164, 11:109
+  silhouette cross-check: fast=0.156962797 sklearn=0.156962797 (two routes, agree to <1e-6)
+  [seed-bad] blocks=clades -> null sd = 0.000000
+
+===== population: all_labelled_incl_substituted   n=1901 folds
+  rule: folds in the TM matrix carrying one of the 11 published clade labels, INCLUDING those whose protein was substituted by our rescue pass
+  TM pairs present 3601099 of 3613801; missing 12702 (0.3515%)
+  absent pairs are FILLED, not dropped, in the default mode (max_distance); the primary null is reported under all of max_distance, mean_observed, pairwise_complete
+  clade sizes: 1:359, 2:121, 3:294, 4:24, 5:5, 6:6, 7:38, 8:422, 9:319, 10:191, 11:122
+  silhouette cross-check: fast=0.125162333 sklearn=0.125162333 (two routes, agree to <1e-6)
+  [seed-bad] blocks=clades -> null sd = 0.000000
+
+CONTROL OK: blocks=clades collapsed the null to sd=0 and the zero-variance detector fired, as required
+
+=== s03 ncRNA / clade nesting
+rows: 1928
+  axis clade              values=  12 coverage=1.0000
+  axis retron_subsystem   values=  25 coverage=0.9051
+  axis ncrna_family       values=  21 coverage=0.5233
+  axis ncrna_family_base  values=  16 coverage=0.5233
+  axis cluster_domain     values=  30 coverage=0.9995
+
+ncRNA family -> clade nesting: Y  (21 of 21 families lie in exactly one clade)
+  violations: none
+BASE ncRNA family -> clade nesting: Y  (16 of 16 base families lie in exactly one clade)
+  clades carrying NO ncRNA label at all: 3 ['4', '5', '6']
+
+  nesting matrix (child -> parent):
+    clade              -> retron_subsystem   nested=N
+    clade              -> ncrna_family       nested=N
+    clade              -> ncrna_family_base  nested=N
+    clade              -> cluster_domain     nested=N
+    retron_subsystem   -> clade              nested=N
+    retron_subsystem   -> ncrna_family       nested=N
+    retron_subsystem   -> ncrna_family_base  nested=N
+    retron_subsystem   -> cluster_domain     nested=N
+    ncrna_family       -> clade              nested=Y
+    ncrna_family       -> retron_subsystem   nested=N
+    ncrna_family       -> ncrna_family_base  nested=Y
+    ncrna_family       -> cluster_domain     nested=N
+    ncrna_family_base  -> clade              nested=Y
+    ncrna_family_base  -> retron_subsystem   nested=N
+    ncrna_family_base  -> ncrna_family       nested=N
+    ncrna_family_base  -> cluster_domain     nested=N
+    cluster_domain     -> clade              nested=N
+    cluster_domain     -> retron_subsystem   nested=N
+    cluster_domain     -> ncrna_family       nested=N
+    cluster_domain     -> ncrna_family_base  nested=N
+
+⚠ CIRCULARITY HIGH (mestre:C7): every ncRNA family lies in exactly one clade.
+  The two axes are NOT independent - the family axis REFINES the clade axis.
+  Any agreement statistic between them is 1.0 BY CONSTRUCTION: arithmetic,
+  not co-variation.
+  Nested pairs among the 4 candidate axes: 1 (ncrna_family in clade)
+  So the 4 axes collapse to 3 independent axes. MEASURED, and it is not the '2 of 4' the claim is phrased around -
+  retron_subsystem and cluster_domain are NOT nested in clade.
+OK
+[seed-bad] moved 103 rows of family 'IC' into clade 1
+rows: 1928
+  axis clade              values=  12 coverage=1.0000
+  axis retron_subsystem   values=  25 coverage=0.9051
+  axis ncrna_family       values=  21 coverage=0.5233
+  axis ncrna_family_base  values=  16 coverage=0.5233
+  axis cluster_domain     values=  30 coverage=0.9995
+
+ncRNA family -> clade nesting: N  (20 of 21 families lie in exactly one clade)
+  violations: IC->1,8
+BASE ncRNA family -> clade nesting: N  (15 of 16 base families lie in exactly one clade)
+  clades carrying NO ncRNA label at all: 3 ['4', '5', '6']
+
+  nesting matrix (child -> parent):
+    clade              -> retron_subsystem   nested=N
+    clade              -> ncrna_family       nested=N
+    clade              -> ncrna_family_base  nested=N
+    clade              -> cluster_domain     nested=N
+    retron_subsystem   -> clade              nested=N
+    retron_subsystem   -> ncrna_family       nested=N
+    retron_subsystem   -> ncrna_family_base  nested=N
+    retron_subsystem   -> cluster_domain     nested=N
+    ncrna_family       -> clade              nested=N
+    ncrna_family       -> retron_subsystem   nested=N
+    ncrna_family       -> ncrna_family_base  nested=Y
+    ncrna_family       -> cluster_domain     nested=N
+    ncrna_family_base  -> clade              nested=N
+    ncrna_family_base  -> retron_subsystem   nested=N
+    ncrna_family_base  -> ncrna_family       nested=N
+    ncrna_family_base  -> cluster_domain     nested=N
+    cluster_domain     -> clade              nested=N
+    cluster_domain     -> retron_subsystem   nested=N
+    cluster_domain     -> ncrna_family       nested=N
+    cluster_domain     -> ncrna_family_base  nested=N
+
+CONTROL OK: the seeded family split broke the nesting, as required
+
+=== s04 paper reading
+CONTROLS
+  positive_control  pmc_fulltext  found=Y  Systematic prediction of genes functionally associated with 
+  positive_control  pdf_layout    found=Y  Systematic prediction of genes functionally associated with 
+  positive_control  pmc_fulltext  found=Y  MATERIALS AND METHODS
+  positive_control  pdf_layout    found=Y  MATERIALS AND METHODS
+  positive_control  pmc_fulltext  found=Y  retron
+  positive_control  pdf_layout    found=Y  retron
+  negative_control  pmc_fulltext  found=N  zzq-nonexistent-phrase-control-42
+  negative_control  pdf_layout    found=N  zzq-nonexistent-phrase-control-42
+  conjunction_control pmc_fulltext  found=Y  classification difficulty, written difficulty-FIRST
+  conjunction_control pdf_layout    found=Y  classification difficulty, written difficulty-FIRST
+  conjunction_control pmc_fulltext  found=Y  detection failure for consensus structures
+  conjunction_control pdf_layout    found=Y  detection failure for consensus structures
+  conjunction_control pmc_fulltext  found=Y  a hedged inability
+  conjunction_control pdf_layout    found=Y  a hedged inability
+  -> substring controls passed in both renderings AND the regex controls fired on known-present paraphrases;
+     the absence probes are therefore exercised, not merely the file loader
+
+  mestre:C2        reference set composition                        FOUND in both
+  mestre:C2        16 validated retrons added                       FOUND in pmc_fulltext only
+  mestre:C3        clade support property                           FOUND in both
+  mestre:C3        tree inference method                            FOUND in pmc_fulltext only
+  mestre:C6        ncRNA structures per clade                       FOUND in pmc_fulltext only
+  mestre:C6        clades with no ncRNA structure                   FOUND in pmc_fulltext only
+  mestre:C6        single vs multiple consensus structures per clade FOUND in pmc_fulltext only
+  mestre:C8        classification difficulty conceded               FOUND in pmc_fulltext only
+  mestre:C8        cannot rule out unusual ncRNA                    FOUND in pmc_fulltext only
+  post-hoc cutoff  significance cutoff for neighbourhood clusters   FOUND in both
+  post-hoc cutoff  retained-cluster threshold                       FOUND in pmc_fulltext only
+  mestre:C8-absence a tree/phylogeny word and a difficulty word in one sentence FOUND in both
+  mestre:C8-absence paraphyly or polyphyly said of their own clades  NOT FOUND in either
+  mestre:C8-absence an explicit denial of monophyly                  NOT FOUND in either
+  mestre:C8-absence deep/backbone nodes described as unresolved      NOT FOUND in either
+
+patterns located: 12 of 15   (denominator: declared search patterns)
+OK
+CONTROLS
+  positive_control  pmc_fulltext  found=N  Systematic prediction of genes functionally associated with 
+  positive_control  pdf_layout    found=N  Systematic prediction of genes functionally associated with 
+  positive_control  pmc_fulltext  found=N  MATERIALS AND METHODS-CORRUPTED-BY-SEED-BAD
+  positive_control  pdf_layout    found=N  MATERIALS AND METHODS-CORRUPTED-BY-SEED-BAD
+  positive_control  pmc_fulltext  found=N  retron-CORRUPTED-BY-SEED-BAD
+  positive_control  pdf_layout    found=N  retron-CORRUPTED-BY-SEED-BAD
+  negative_control  pmc_fulltext  found=N  zzq-nonexistent-phrase-control-42
+  negative_control  pdf_layout    found=N  zzq-nonexistent-phrase-control-42
+  conjunction_control pmc_fulltext  found=N  classification difficulty, written difficulty-FIRST
+  conjunction_control pdf_layout    found=N  classification difficulty, written difficulty-FIRST
+  conjunction_control pmc_fulltext  found=N  detection failure for consensus structures
+  conjunction_control pdf_layout    found=N  detection failure for consensus structures
+  conjunction_control pmc_fulltext  found=N  a hedged inability
+  conjunction_control pdf_layout    found=N  a hedged inability
+
+CONTROL OK: corrupted control phrases AND corrupted regex controls were not found, so the positive control correctly refuses to certify the search
+
+=== s05 Khan overlap
+Khan panel rows: 175   Mestre published rows: 1928
+  RT_sequence non-empty:  0/175  <- the trap column
+  rt_protein_aa non-empty: 175/175  <- the real one
+
+join positive control: known accession recovered = True
+join negative control: fabricated accession absent = True
+
+Mestre proteins available on disk for the sequence routes: 1926
+Khan panel: 175 rows -> 171 unique RT protein sequences
+route                   overlap    of  fraction   rule
+accession                   174   175    0.9943   Khan `accession` found in the published `Accesion` column
+terminal_id                 171   175    0.9771   Khan `terminal_id` found in the published `Node` column
+sequence_sha256             164   175    0.9371   sha256 of the normalised `rt_protein_aa` found among our dow
+sequence_raw_string         164   175    0.9371   raw normalised `rt_protein_aa` string found among our downlo
+sequence_unique_proteins      161   171    0.9415   deduplicated proteins, NOT rows
+
+mestre:C9  proteins in the Khan panel that lie OUTSIDE Mestre's reference set: 1 of 175
+OK
+Khan panel rows: 175   Mestre published rows: 1928
+  RT_sequence non-empty:  0/175  <- the trap column
+  rt_protein_aa non-empty: 175/175  <- the real one
+
+join positive control: known accession recovered = True
+join negative control: fabricated accession absent = True
+
+Mestre proteins available on disk for the sequence routes: 1926
+Khan panel: 175 rows -> 0 unique RT protein sequences
+route                   overlap    of  fraction   rule
+accession                   174   175    0.9943   Khan `accession` found in the published `Accesion` column
+terminal_id                 171   175    0.9771   Khan `terminal_id` found in the published `Node` column
+sequence_sha256               0   175    0.0000   sha256 of the normalised `RT_sequence` found among our downl
+sequence_raw_string           0   175    0.0000   raw normalised `RT_sequence` string found among our download
+sequence_unique_proteins        0     0 NA (no sequences)   deduplicated proteins, NOT rows
+
+CONTROL OK: reading the empty column collapsed sequence overlap to 0, and the script reports it as a collapse rather than as a finding
+
+=== s06 blind confirmation
+  [   Y   ] [RECONCILED            ] clades monophyletic on Mestre's published tree      
+            here=10 of 11                           grade=MEASURED               prior=10 of 11
+  [   Y   ] [RECONCILED            ] intruder tips inside clade 10's smallest containing 
+            here=123                                grade=MEASURED               prior=123
+  [  N/A  ] [N/A - NOT MEASURED HERE] clades recovered by independent tree RE-INFERENCE   
+            here=MISSING - no landed table carries  grade=n/a - not measured her prior=<=3 of 11
+  [   N   ] [BLIND                 ] fold-space silhouette of the published clades       
+            here=0.156963                           grade=MEASURED               prior=0.2565
+  [   N   ] [BLIND                 ] fold-space z of the published clades                
+            here=9.8976 (K=1 global shuffle)        grade=MEASURED (estimate, 10 prior=25.27
+  [   Y   ] [BLIND                 ] Mestre proteins folded                              
+            here=1919                               grade=DERIVED                prior=1919
+  [   Y   ] [RECONCILED            ] Mestre reference-set proteins                       
+            here=1926                               grade=MEASURED               prior=1926
+  [   Y   ] [RECONCILED            ] Khan panel overlap with Mestre reference set        
+            here=161 of 171 (0.9415)                grade=MEASURED               prior=161 of 171 (94.2%)
+
+disagreements: 2 of 8 - REPORTED, NOT RECONCILED
+OK
+  [   N   ] [RECONCILED            ] clades monophyletic on Mestre's published tree      
+            here=10 of 11                           grade=MEASURED               prior=2 of 11
+  [   Y   ] [RECONCILED            ] intruder tips inside clade 10's smallest containing 
+            here=123                                grade=MEASURED               prior=123
+  [  N/A  ] [N/A - NOT MEASURED HERE] clades recovered by independent tree RE-INFERENCE   
+            here=MISSING - no landed table carries  grade=n/a - not measured her prior=<=3 of 11
+  [   N   ] [BLIND                 ] fold-space silhouette of the published clades       
+            here=0.156963                           grade=MEASURED               prior=0.2565
+  [   N   ] [BLIND                 ] fold-space z of the published clades                
+            here=9.8976 (K=1 global shuffle)        grade=MEASURED (estimate, 10 prior=25.27
+  [   Y   ] [BLIND                 ] Mestre proteins folded                              
+            here=1919                               grade=DERIVED                prior=1919
+  [   Y   ] [RECONCILED            ] Mestre reference-set proteins                       
+            here=1926                               grade=MEASURED               prior=1926
+  [   Y   ] [RECONCILED            ] Khan panel overlap with Mestre reference set        
+            here=161 of 171 (0.9415)                grade=MEASURED               prior=161 of 171 (94.2%)
+
+disagreements: 3 of 8 - REPORTED, NOT RECONCILED
+CONTROL OK: the seeded prior value was reported as a disagreement
+
+=== s08 accession recovery (offline, from the cached responses)
+positive control fig|568766.15.peg.821                          found=True seq=True
+negative control fig|000000.0.peg.999999                        found=False
+  -> controls pass: a live accession resolves WITH a sequence and a fabricated one does not.
+     not-found results below are therefore meaningful.
+
+targets attempted: 115   (112 substituted + the named gaps, deduplicated)
+  published accession still present upstream : 0
+  NOT recoverable                            : 115
+  fraction recoverable                       : 0.0000   (denominator: the 115 terminals whose published protein we do not hold)
+
+  Every published accession queried is gone from its source database. No substitution
+  was made and none is proposed: an absent protein stays absent and is reported as such.
+OK
+positive control fig|568766.15.peg.821-CORRUPTED                found=False seq=False
+negative control fig|000000.0.peg.999999                        found=False
+
+CONTROL OK: the corrupted positive control did not resolve, so the script correctly refuses to certify any not-found result
+
+=== s07 figures
+figures written: 6
+   clade_ncrna_coverage.png
+   clade_ncrna_coverage.svg
+   clade_recovery.png
+   clade_recovery.svg
+   foldspace_null_designs.png
+   foldspace_null_designs.svg
+OK
+
+=== run.sh complete
+EXIT 0

@@ -1,0 +1,39 @@
+
+=== s00 pin inputs + denominators
+supplement table copies compared: 3   distinct BODY sha256: 1
+  -> all copies WE HOLD share one body. They are ONE table with 3 header spellings.
+  -> so NOTHING IN OUR COLLECTION can cross-count against them.
+  -> ⚠ scope: this is our collection, not the journal's inventory, which was never checked.
+
+root A files: 0   root B files: 17   shared names: 0
+shared and byte-identical: 0   differing: 0
+
+  supp_table_rows                   1928  (2nd:    1928 / same-bytes / DERIVED )
+  tree_tips                         1928  (2nd:    1928 / indep      / MEASURED)
+  clade_labelled_rows               1927  (2nd:    1927 / same-bytes / DERIVED )
+  download_terminal_dirs            1928  (2nd:    1928 / indep      / MEASURED)
+  proteins_on_disk_post_rescue      1926  (2nd:    1815 / indep      / MEASURED)  <-- DIFFERS
+  genomes_on_disk_post_rescue       1925  (2nd:    1746 / indep      / MEASURED)  <-- DIFFERS
+  folds_on_disk                     1919  (2nd:    1919 / same-bytes / DERIVED )
+  folds_in_tm_matrix                1902  (2nd:    1902 / indep      / MEASURED)
+
+OK: both roots pinned; shared files byte-identical; every population second-counted
+CONTROL FAILED: seeded corruption did NOT trip the identity check
+supplement table copies compared: 3   distinct BODY sha256: 1
+  -> all copies WE HOLD share one body. They are ONE table with 3 header spellings.
+  -> so NOTHING IN OUR COLLECTION can cross-count against them.
+  -> ⚠ scope: this is our collection, not the journal's inventory, which was never checked.
+
+root A files: 0   root B files: 17   shared names: 0
+shared and byte-identical: 0   differing: 0
+
+  supp_table_rows                   1928  (2nd:    1928 / same-bytes / DERIVED )
+  tree_tips                         1928  (2nd:    1928 / indep      / MEASURED)
+  clade_labelled_rows               1927  (2nd:    1927 / same-bytes / DERIVED )
+  download_terminal_dirs            1928  (2nd:    1928 / indep      / MEASURED)
+  proteins_on_disk_post_rescue      1926  (2nd:    1815 / indep      / MEASURED)  <-- DIFFERS
+  genomes_on_disk_post_rescue       1925  (2nd:    1746 / indep      / MEASURED)  <-- DIFFERS
+  folds_on_disk                     1919  (2nd:    1919 / same-bytes / DERIVED )
+  folds_in_tm_matrix                1902  (2nd:    1902 / indep      / MEASURED)
+
+EXIT 1

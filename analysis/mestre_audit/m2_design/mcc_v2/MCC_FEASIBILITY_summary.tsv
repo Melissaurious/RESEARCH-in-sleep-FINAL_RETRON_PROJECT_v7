@@ -1,0 +1,20 @@
+# model	hmmbuild --fragthresh 0: 230 match states; window cols 68-1305 = 230 states
+# anchors (Toro-2014 retrons, n=102)	N-anchor block 4 occ 0.951 cols (224, 228); C-anchor block 28 occ 1.000 cols (1242, 1247); required core 182 states
+# toro_retron_block_occupancy	1:0.47 2:0.00 3:0.94 4:0.95 5:0.95 6:0.97 7:0.97 8:1.00 9:1.00 10:1.00 11:1.00 12:1.00 13:1.00 14:1.00 15:0.31 16:0.99 17:1.00 18:0.99 19:1.00 20:1.00 21:1.00 22:1.00 23:1.00 24:1.00 25:0.99 26:0.99 27:0.99 28:1.00 29:0.86
+set	status	n
+CLEAN	C_TRUNCATED	54
+CLEAN	EXTRACTABLE	1728
+CLEAN	EXTRACTABLE_MULTI_CORE	1
+CLEAN	NONSTANDARD	1
+CLEAN	N_TRUNCATED	30
+OTHER_SUBSTITUTE	C_TRUNCATED	5
+OTHER_SUBSTITUTE	EXTRACTABLE	78
+OTHER_SUBSTITUTE	NO_HIT	3
+OTHER_SUBSTITUTE	N_TRUNCATED	11
+RNAP_SUBSTITUTE	NO_HIT	15
+set	n_extractable_compared	frac_start_within_5	frac_end_within_5	median_abs_dstart	median_abs_dend
+CLEAN	1729	0.9913	0.9954	1	0
+OTHER_SUBSTITUTE	78	1.0	1.0	1.0	0.0
+set	n	median_frac_core_blocks_agree	frac_seqs_with_ge_0.9_blocks_agree
+CLEAN	1729	0.917	0.5171
+OTHER_SUBSTITUTE	78	0.917	0.641

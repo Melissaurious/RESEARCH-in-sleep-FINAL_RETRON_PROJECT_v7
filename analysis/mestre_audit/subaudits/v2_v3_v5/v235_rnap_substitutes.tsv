@@ -1,0 +1,17 @@
+terminal	mestre_acc	substitute_acc	substitute_product	aa_len	mestre_clade	V3_rt_recovered	V3_myrt_hmm_hit_on_target	V3_df_retron_hit_on_target	V3_stock_n_retron_systems
+terminal_116	EDM6246721.1	fig|28901.2015.peg.1793	DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)	48	1	yes	no	no	0
+terminal_295	fig|376427.4.peg.3223	fig|1486246.22.peg.1474	DNA-directed RNA polymerase beta' subunit (EC 2.7.7.6)	82	1	yes	no	no	0
+terminal_565	fig|1196095.197.peg.151	fig|1196095.8.peg.2447	DNA-directed RNA polymerase beta' subunit (EC 2.7.7.6)	1406	3	yes	no	no	0
+terminal_731	fig|392734.5.peg.3006	fig|926566.3.peg.3639	DNA-directed RNA polymerase alpha subunit (EC 2.7.7.6)	364	3	yes	no	no	0
+terminal_1086	fig|37734.13.peg.137	fig|37734.154.peg.1450	DNA-directed RNA polymerase beta' subunit (EC 2.7.7.6)	1216	8	yes	no	no	0
+terminal_1186	fig|681398.3.peg.1596	fig|681398.15.peg.1926	DNA-directed RNA polymerase omega subunit (EC 2.7.7.6)	110	8	yes	no	no	0
+terminal_1282	fig|317.249.peg.4299	fig|317.176.peg.4177	DNA-directed RNA polymerase, beta subunit/140 kD subunit	178	8	yes	no	no	0
+terminal_1327	fig|665126.3.peg.2283	fig|81895.3.peg.4397	DNA-directed RNA polymerase omega subunit (EC 2.7.7.6)	136	9	yes	no	no	0
+terminal_1343	fig|47879.37.peg.693	fig|1316927.4.peg.1884	DNA-directed RNA polymerase, beta subunit/140 kD subunit	206	9	yes	no	no	0
+terminal_1350	fig|54067.3.peg.2925	fig|54067.4.peg.1621	DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)	1370	9	yes	no	no	0
+terminal_1367	fig|305.94.peg.4778	fig|1031711.3.peg.1327	DNA-directed RNA polymerase specialized sigma subunit, sigma24-like	188	9	yes	no	no	0
+terminal_1387	fig|670.887.peg.4391	fig|670.1119.peg.2273	DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)	580	9	yes	no	no	0
+terminal_1560	fig|44577.7.peg.209	fig|44577.12.peg.2792	DNA-directed RNA polymerase omega subunit (EC 2.7.7.6)	68	9	yes	no	no	0
+terminal_1804	fig|1400863.5.peg.627	fig|1951219.3.peg.374	DNA-directed RNA polymerase beta' subunit (EC 2.7.7.6)	1393	10	yes	no	no	0
+terminal_1915	fig|1210064.4.peg.2434	fig|45979.5.peg.2912	DNA-directed RNA polymerase beta' subunit (EC 2.7.7.6)	1317	11	yes	no	no	0
+# {'RT': 97, 'nonRT': 15, 'none': 41}

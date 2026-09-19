@@ -1,0 +1,9 @@
+stratum	exact_RTs	RT_anchored_records	g5a_eligible_exact_RTs	identical_to_clean_Mestre_protein	has_A_record_with_ncRNA_line	median_aa_len	exact_RTs_lt_250aa
+A	33670	483848	31952	1289	23556	390	1488
+B1	20451	96624	16130	227	0	333	3908
+B0	24166	82836	13313	87	0	305	8576
+M	7593	9012	2824	0	0	283	3391
+D	5	11	1	0	0	232	4
+X	415676	2378907	305161	0	0	396	91072
+TOTAL	501561	3051238	369381	1603			
+clean_Mestre_distinct_sequences	1813	1814					
