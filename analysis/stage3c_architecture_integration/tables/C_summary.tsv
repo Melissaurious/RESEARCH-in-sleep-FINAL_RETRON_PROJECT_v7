@@ -1,0 +1,9 @@
+stratum	region	n_region_chain_pairs	n_chains	n_coincides	frac_coincides	median_best_jaccard	min_best_jaccard	max_best_jaccard	n_split_over_units	best_unit_roles	n_region_discontinuous	unit	coincide_bar
+LITERATURE	fingers	11	6	0	0.0000	0.4295	0.0133	0.6711	2	fingers-like=4;palm-like=4;unclassified=3	6	literature-region x chain	0.7000
+LITERATURE	palm	7	6	2	0.2857	0.5959	0.4650	0.7500	2	palm-like=5;unclassified=2	7	literature-region x chain	0.7000
+LITERATURE	thumb	9	7	3	0.3333	0.5096	0.2646	0.9780	4	thumb-like=1;unclassified=8	0	literature-region x chain	0.7000
+LITERATURE	fingers_palm_combined	1	1	1	1.0000	0.7134	0.7134	0.7134	0	unclassified=1	0	literature-region x chain	0.7000
+HISTORICAL_RED	fingers	25	25	3	0.1200	0.5000	0.1667	0.7702	15	fingers-like=6;palm-like=3;thumb-like=1;unclassified=15	0	literature-region x chain	0.7000
+HISTORICAL_RED	palm	25	25	2	0.0800	0.4971	0.2191	0.7179	7	palm-like=11;unclassified=14	0	literature-region x chain	0.7000
+HISTORICAL_RED	thumb	25	25	14	0.5600	0.7426	0.0325	0.9894	5	fingers-like=1;palm-like=5;thumb-like=1;unclassified=18	0	literature-region x chain	0.7000
+BOTH	fingers_and_palm_same_unit	32	30	14	0.4375					-		source x chain where the same source numbers both fingers and palm	n/a - counts whether one PDP unit is the best match for BOTH regions
