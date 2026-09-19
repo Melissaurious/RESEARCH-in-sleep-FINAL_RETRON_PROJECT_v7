@@ -1,4 +1,6 @@
-# LAUNCHER — m2_historical_classification_expansion  (rev-4 — M2a–c ACTIVE; M2d NOT approved)
+# LAUNCHER — m2_historical_classification_expansion  (rev-4 — CLOSED 2026-09-19: M2a stopped/failed; M2c/M2d not run)
+
+> **CLOSED.** See docs/decisions/2026-09-19_m2_closure_handoff.md. A repaired M2a is to be reconsidered only after the project-synthesis review.
 
 > **Status: revision 4 (2026-09-19). ACTIVE for M2a–c** within ≤ 60 CPU-h. **M2d is NOT
 > approved.**
