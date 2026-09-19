@@ -1,0 +1,8 @@
+metric	numerator	denominator	value	unit	note
+replicate_pairs_tierA_scoreable	25	25	1.0000	chain pair	7 groups
+numbering_consistent_pairs	18	25	0.7200	chain pair	3A C7 rule: shared keys, >=0.95 same residue
+truth_set_identical	6	7	0.8571	pair with own-chain truth in both	
+detector_prediction_identical	7	18	0.3889	numbering-consistent pair	
+unit_count_equal	3	18	0.1667	numbering-consistent pair	same pairs as the two rows above
+site_unit_jaccard_ge_0.70	13	14	0.9286	pair with a single site unit in both	median=0.897
+truth_pair_distance_abs_diff_le_0.5A	2	6	0.3333	pair with two-residue truth in both	max abs diff=2.77 A

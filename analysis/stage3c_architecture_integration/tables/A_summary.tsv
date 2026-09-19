@@ -1,0 +1,71 @@
+metric	stratum	arm	numerator	denominator	value	unit	denominator_recount	recount_agrees	note
+in_scope_chains	all_in_scope	primary	19	19	1.0000	chain	19	YES	14 biological groups
+site_in_one_unit	all_in_scope	primary	19	19	1.0000	chain with all truth Asp in one PDP unit		YES	
+site_in_palm_like_unit_given_palm_CALL	all_in_scope	primary	5	9	0.5556	chain with palm-like CALL		YES	site unit != called palm-like unit in the others
+site_in_max_strand_unit_given_no_palm_CALL	all_in_scope	primary	9	10	0.9000	chain with C4 NO_CALL or AMBIGUOUS		YES	1 TIED target (not broken)
+single_unit_chains	all_in_scope	primary	1	19	0.0526	chain partitioned into one unit		YES	site-in-unit is trivially true here
+site_unit_discontinuous	all_in_scope	primary	14	19	0.7368	chain whose site-containing unit has >1 segment		YES	
+site_unit_role=unclassified	all_in_scope	primary	13	19	0.6842	chain		YES	
+site_unit_role=palm-like	all_in_scope	primary	5	19	0.2632	chain		YES	
+site_unit_role=fingers-like	all_in_scope	primary	1	19	0.0526	chain		YES	
+detector_HIT_as_frozen_by_3B	all_in_scope	primary	13	19	0.6842	chain	19	YES	control: must reproduce 3B's 13/19 on all_in_scope (recount HIT=13)
+detector_prediction_in_same_unit_as_truth	all_in_scope	primary	19	19	1.0000	chain		YES	includes all 6 3B MISSes: residue-level miss, unit-level co-location
+median_size_expected_fraction_of_target_unit	all_in_scope	primary	0.3091			fraction of modelled residues; n=18 chains with a defined target unit		YES	chance of a random residue landing in the target unit
+in_scope_chains	primary	primary	7	7	1.0000	chain		YES	7 biological groups
+site_in_one_unit	primary	primary	7	7	1.0000	chain with all truth Asp in one PDP unit		YES	
+site_in_palm_like_unit_given_palm_CALL	primary	primary	2	2	1.0000	chain with palm-like CALL		YES	site unit != called palm-like unit in the others
+site_in_max_strand_unit_given_no_palm_CALL	primary	primary	4	5	0.8000	chain with C4 NO_CALL or AMBIGUOUS		YES	1 TIED target (not broken)
+single_unit_chains	primary	primary	1	7	0.1429	chain partitioned into one unit		YES	site-in-unit is trivially true here
+site_unit_discontinuous	primary	primary	4	7	0.5714	chain whose site-containing unit has >1 segment		YES	
+site_unit_role=unclassified	primary	primary	5	7	0.7143	chain		YES	
+site_unit_role=palm-like	primary	primary	2	7	0.2857	chain		YES	
+detector_HIT_as_frozen_by_3B	primary	primary	4	7	0.5714	chain		YES	
+detector_prediction_in_same_unit_as_truth	primary	primary	7	7	1.0000	chain		YES	includes all 6 3B MISSes: residue-level miss, unit-level co-location
+median_size_expected_fraction_of_target_unit	primary	primary	0.4256			fraction of modelled residues; n=6 chains with a defined target unit		YES	chance of a random residue landing in the target unit
+in_scope_chains	flagged	primary	12	12	1.0000	chain		YES	7 biological groups
+site_in_one_unit	flagged	primary	12	12	1.0000	chain with all truth Asp in one PDP unit		YES	
+site_in_palm_like_unit_given_palm_CALL	flagged	primary	3	7	0.4286	chain with palm-like CALL		YES	site unit != called palm-like unit in the others
+site_in_max_strand_unit_given_no_palm_CALL	flagged	primary	5	5	1.0000	chain with C4 NO_CALL or AMBIGUOUS		YES	0 TIED target (not broken)
+single_unit_chains	flagged	primary	0	12	0.0000	chain partitioned into one unit		YES	site-in-unit is trivially true here
+site_unit_discontinuous	flagged	primary	10	12	0.8333	chain whose site-containing unit has >1 segment		YES	
+site_unit_role=unclassified	flagged	primary	8	12	0.6667	chain		YES	
+site_unit_role=palm-like	flagged	primary	3	12	0.2500	chain		YES	
+site_unit_role=fingers-like	flagged	primary	1	12	0.0833	chain		YES	
+detector_HIT_as_frozen_by_3B	flagged	primary	9	12	0.7500	chain		YES	
+detector_prediction_in_same_unit_as_truth	flagged	primary	12	12	1.0000	chain		YES	includes all 6 3B MISSes: residue-level miss, unit-level co-location
+median_size_expected_fraction_of_target_unit	flagged	primary	0.2642			fraction of modelled residues; n=12 chains with a defined target unit		YES	chance of a random residue landing in the target unit
+in_scope_chains	all_in_scope	p4	19	19	1.0000	chain		YES	14 biological groups
+site_in_one_unit	all_in_scope	p4	19	19	1.0000	chain with all truth Asp in one PDP unit		YES	
+site_in_palm_like_unit_given_palm_CALL	all_in_scope	p4	4	8	0.5000	chain with palm-like CALL		YES	site unit != called palm-like unit in the others
+site_in_max_strand_unit_given_no_palm_CALL	all_in_scope	p4	10	11	0.9091	chain with C4 NO_CALL or AMBIGUOUS		YES	1 TIED target (not broken)
+single_unit_chains	all_in_scope	p4	1	19	0.0526	chain partitioned into one unit		YES	site-in-unit is trivially true here
+site_unit_discontinuous	all_in_scope	p4	13	19	0.6842	chain whose site-containing unit has >1 segment		YES	
+site_unit_role=unclassified	all_in_scope	p4	14	19	0.7368	chain		YES	
+site_unit_role=palm-like	all_in_scope	p4	4	19	0.2105	chain		YES	
+site_unit_role=fingers-like	all_in_scope	p4	1	19	0.0526	chain		YES	
+detector_HIT_as_frozen_by_3B	all_in_scope	p4	13	19	0.6842	chain		YES	control: must reproduce 3B's 13/19 on all_in_scope (recount HIT=13)
+detector_prediction_in_same_unit_as_truth	all_in_scope	p4	19	19	1.0000	chain		YES	includes all 6 3B MISSes: residue-level miss, unit-level co-location
+median_size_expected_fraction_of_target_unit	all_in_scope	p4	0.3091			fraction of modelled residues; n=18 chains with a defined target unit		YES	chance of a random residue landing in the target unit
+in_scope_chains	primary	p4	7	7	1.0000	chain		YES	7 biological groups
+site_in_one_unit	primary	p4	7	7	1.0000	chain with all truth Asp in one PDP unit		YES	
+site_in_palm_like_unit_given_palm_CALL	primary	p4	2	2	1.0000	chain with palm-like CALL		YES	site unit != called palm-like unit in the others
+site_in_max_strand_unit_given_no_palm_CALL	primary	p4	4	5	0.8000	chain with C4 NO_CALL or AMBIGUOUS		YES	1 TIED target (not broken)
+single_unit_chains	primary	p4	1	7	0.1429	chain partitioned into one unit		YES	site-in-unit is trivially true here
+site_unit_discontinuous	primary	p4	4	7	0.5714	chain whose site-containing unit has >1 segment		YES	
+site_unit_role=unclassified	primary	p4	5	7	0.7143	chain		YES	
+site_unit_role=palm-like	primary	p4	2	7	0.2857	chain		YES	
+detector_HIT_as_frozen_by_3B	primary	p4	4	7	0.5714	chain		YES	
+detector_prediction_in_same_unit_as_truth	primary	p4	7	7	1.0000	chain		YES	includes all 6 3B MISSes: residue-level miss, unit-level co-location
+median_size_expected_fraction_of_target_unit	primary	p4	0.4256			fraction of modelled residues; n=6 chains with a defined target unit		YES	chance of a random residue landing in the target unit
+in_scope_chains	flagged	p4	12	12	1.0000	chain		YES	7 biological groups
+site_in_one_unit	flagged	p4	12	12	1.0000	chain with all truth Asp in one PDP unit		YES	
+site_in_palm_like_unit_given_palm_CALL	flagged	p4	2	6	0.3333	chain with palm-like CALL		YES	site unit != called palm-like unit in the others
+site_in_max_strand_unit_given_no_palm_CALL	flagged	p4	6	6	1.0000	chain with C4 NO_CALL or AMBIGUOUS		YES	0 TIED target (not broken)
+single_unit_chains	flagged	p4	0	12	0.0000	chain partitioned into one unit		YES	site-in-unit is trivially true here
+site_unit_discontinuous	flagged	p4	9	12	0.7500	chain whose site-containing unit has >1 segment		YES	
+site_unit_role=unclassified	flagged	p4	9	12	0.7500	chain		YES	
+site_unit_role=palm-like	flagged	p4	2	12	0.1667	chain		YES	
+site_unit_role=fingers-like	flagged	p4	1	12	0.0833	chain		YES	
+detector_HIT_as_frozen_by_3B	flagged	p4	9	12	0.7500	chain		YES	
+detector_prediction_in_same_unit_as_truth	flagged	p4	12	12	1.0000	chain		YES	includes all 6 3B MISSes: residue-level miss, unit-level co-location
+median_size_expected_fraction_of_target_unit	flagged	p4	0.2642			fraction of modelled residues; n=12 chains with a defined target unit		YES	chance of a random residue landing in the target unit
