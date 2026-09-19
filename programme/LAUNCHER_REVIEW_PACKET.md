@@ -57,7 +57,7 @@ evidence named in advance.
 | settled | on what |
 |---|---|
 | bacterial RT phylogeny **does not resolve** at this character economy | 312 trees, five preregistered routes, two independent reviews; 157 alignable characters for retrons, 1.39 taxa/character; signal real at ~660× chance and insufficient to carry a topology |
-| de novo comparative ncRNA **discovery** loses to a fixed positional interval | 901 against 343 at IoU ≥ 0.5; per-type priors 969 |
+| de novo comparative ncRNA **discovery** loses to a fixed positional interval — `CLOSED_CURRENT_DESIGN`, **REOPENABLE ONLY BY A NEW LAUNCHER** that predeclares: grouping independent of the old CM type labels, a materially different method or population, the fixed positional interval as a mandatory baseline, evaluation against published or experimental anchors rather than CM cuts, and explicit matched negative windows | 901 against 343 at IoU ≥ 0.5; per-type priors 969 |
 | **placement** into the historical 11-clade system has no validated discriminator | shuffled queries confidently placed at 7.9% against a ≤1% limit |
 | **re-inference** of the historical classification is not possible | the source alignment and extracts are not published and not on disk |
 | neighbourhood is **not a retron detector** | retrons 27th of 41 families, inside a predeclared dead band |
@@ -85,6 +85,7 @@ S00 CORRECTIONS · ASSET REGISTRATION · FREEZE          [open now]
       │        └── S08b ARCHITECTURE-DEFINED PAIR EXPANSION
       │                 │
       │                 └── [lineage-count gate] ─── S09 ancestry-aware correspondence
+                                    (gated; the word 'co-evolution' stays prohibited)
       │
       └── S10 EMBEDDINGS / PAIRING BOUNDS              [open now, repair tasks]
                │
@@ -120,7 +121,10 @@ Each is here because it has already happened or has been explicitly attempted.
 
 - No claim of biochemical **compatibility, orthogonality or interchangeability** without measured
   cross-pair labels. Unobserved pairings are **never** negatives.
-- No **co-evolution** language. There is no ancestry null and none is currently obtainable.
+- No current claim may use the word **co-evolution**. S09 may test *ancestry-aware RT-ncRNA
+  evolutionary correspondence* only if its predeclared lineage-count and independent-ncRNA-object
+  gates are met. The word stays prohibited until a design explicitly separates shared ancestry and
+  shared opportunity from correlated evolutionary change.
 - No **per-pair biological inference** from a likelihood difference. A counterfactual is a
   conditioning control, not a negative pair.
 - No **n × n compatibility matrix**, and no laboratory candidate nomination from a sequence score.
@@ -131,9 +135,15 @@ Each is here because it has already happened or has been explicitly attempted.
 
 ## 6 · Claim promotion
 
-`task → validation → stage synthesis → independent review → claim registry → promoted claim → thesis/paper`
+```
+task outputs -> stage synthesis -> independent review -> claim promotion -> THESIS_ARTIFACT_BUILD
+```
 
-No task promotes its own claim. Statuses are the single closed vocabulary in
+No task promotes its own claim, and **no task session writes interpretive thesis prose**. That would
+contradict the facts-only reporting contract. Thesis artifacts are built at **stage** level from
+promoted evidence only, and every figure and table carries `artifact_id`, `stage_id`, `claim_ids`,
+`source_table`, `source_bundle`, `input_hash`, `generation_script`, `git_commit` and
+`promotion_status`. Statuses are the single closed vocabulary in
 `review-stage/INDEPENDENT_SCIENTIFIC_REVIEW_2026-09-20.md` §17 and the proposal's §12.
 
 ⚠️ **Nothing is promotable today.** `human_input_audit: DONE` appears nowhere in the repository
@@ -212,7 +222,9 @@ Rules:
 Two tasks may run concurrently **only if all four hold**:
 
 1. **No shared writes.** Their declared `output_directory` paths are disjoint.
-2. **No unfinished-producer reads.** Neither reads an artifact whose producing task is not in `PASS`.
+2. **No unfinished-producer reads.** Neither reads an artifact that is not on a `TASK_STATE=PASS`
+   task's declared `CONSUMABLE_OUTPUTS` list. Note this gates on **task validity**, never on
+   scientific outcome: a refuted hypothesis still yields consumable outputs.
 3. **No population collision.** They do not both touch the same confirmatory population. Every task
    declares `populations_touched`; the coordinating session refuses the second one.
 4. **No criterion coupling.** Neither's threshold, bar or selection rule is chosen using the other's
@@ -247,12 +259,37 @@ seed and all input hashes regardless of where it ran.
 Every task session returns **exactly this**, and nothing else. Facts only. The task does not say what
 its numbers mean.
 
+> ⚠️ **Task validity and hypothesis truth are two different things and must never share a field.**
+> A task that executes perfectly and refutes its own hypothesis is a **successful task with a
+> negative result**. If that were reported as FAIL, the consumption gate in §3 would refuse to let
+> anything downstream read it, and an autonomous orchestrator would quietly discard a valid negative.
+> This project's negatives are among its best assets; losing one this way would be the worst failure
+> the system could have.
+
+**Two fields, always both:**
+
+```
+TASK_STATE:         PASS | STOP | INCONCLUSIVE | BLOCKED | VOID
+SCIENTIFIC_OUTCOME: SUPPORTS_H1 | SUPPORTS_H0 | FALSIFIED | BOUND | DESCRIPTIVE | NOT_APPLICABLE
+```
+
+`VOID` is reserved for a task whose **execution** is not trustworthy, and it is the only state that
+makes the result unusable. A task is VOID when a required positive control failed, preregistration
+post-dates job start, a forbidden input was read, or the declared rule changed during execution.
+
+A scientific negative is normally `TASK_STATE=PASS` with `SCIENTIFIC_OUTCOME=FALSIFIED` or `BOUND`.
+
 ```markdown
 # TASK REPORT — <task-id>
 
-STATE: PASS | FAIL | STOP | INCONCLUSIVE | BLOCKED
+TASK_STATE: PASS | STOP | INCONCLUSIVE | BLOCKED | VOID
+SCIENTIFIC_OUTCOME: SUPPORTS_H1 | SUPPORTS_H0 | FALSIFIED | BOUND | DESCRIPTIVE | NOT_APPLICABLE
 CRITERION: <the preregistered criterion, verbatim>
 MET: yes | no | not evaluable — <one line>
+
+## Consumable outputs
+<explicit list of outputs downstream tasks may read. Only populated when TASK_STATE=PASS.
+A VOID or BLOCKED task may still leave debugging artefacts; they are never consumable.>
 
 ## Numbers
 | quantity | value | unit | denominator | interval |
@@ -293,6 +330,29 @@ timestamp **preceding** its job submission timestamp, and every control in `PASS
 **Escalate to the operator, do not iterate, when:** the iteration budget is exhausted; a control
 fails; the declared PASS outcome is found unreachable; an input is missing or its hash does not
 match; or the task would need to change its own criterion.
+
+## 6a · What may serve as a blocking control
+
+⚠️ **A biological contrast may not be a blocking control unless it is independently established.**
+
+A control exists to show the **implementation** works. If a launcher says "effect X must remain
+significant" and X is one of the quantities under study, then a procedure that weakens X is
+indistinguishable from a broken instrument, and the task is pushed toward the expected biological
+answer. That is the exact failure this project has already paid for twice, once with a threshold
+fitted at the winner-flip point of its own sweep and once with a repaired gate whose rule class was
+motivated by the failed attempt.
+
+Admissible blocking controls, in order of preference:
+
+1. **Implementation reproduction** — the new code reproduces an existing landed number exactly.
+2. **Synthetic positive fixture** — a simulated dataset with a known effect under the declared
+   dependence structure; the instrument must recover it at a declared coverage.
+3. **Synthetic null fixture** — zero effect under the same structure; the instrument must contain
+   zero at the declared rate.
+4. **A named, independently established biological positive**, with the source cited in the launcher.
+   Naming it is what makes it admissible; "two families known to share the core" is not named.
+
+Everything else is a **diagnostic**, reported and never blocking.
 
 ## 7 · Standing prohibitions for every session
 
@@ -350,7 +410,7 @@ n of the estimator used. **Registry lookup:** no prior work on this; nothing in 
 - inferential unit: component (observation); retron type and RT homolog group (resampling blocks)
 - **dependence structure:** components nest inside 21 dominant retron types; token-weighted effective
   type count is 9.3. Largest component holds 18.5% of pairs; 581 of 1,075 are singletons.
-- effective n, expected: between 9 and 25 depending on blocking
+- effective n: **not a single scalar for this estimator**; see the reporting requirement below
 
 ## Inputs
 | input | path | role |
@@ -365,11 +425,30 @@ The pair-level export. Pair counts overstate sample size by three orders of magn
 registry says never to infer from it.
 
 ## Controls — run FIRST and BLOCK
+
+⚠️ **No biological contrast is a blocking control here.** An earlier draft required G−U to survive
+blocking and P−T to lose it. Both are quantities under study. If G−U loses its interval under
+correct cluster-aware inference, that may be the answer, and a control demanding otherwise would
+push the variance procedure toward a preferred result. Per WORKING_RULES §6a:
+
 | control | type | must show | if it fails |
 |---|---|---|---|
-| G−U under blocking | positive | survives; it is favourable in 86.0% of components | the blocking is too aggressive; report and stop |
-| P−T under blocking | negative | loses significance; it is a within-type permutation arm | blocking is not removing the dependence it should |
-| existing unclustered intervals | baseline | reproduced exactly before any blocking is applied | the reader is not reading the file correctly; stop |
+| implementation reproduction | **positive** | the unclustered estimates and intervals reproduce the landed values exactly before any blocking is applied | the file is being read wrongly; VOID |
+| synthetic hierarchical positive fixture | **positive** | a known non-zero effect simulated under the declared component-in-type structure is recovered at the declared coverage | the estimator cannot see an effect that is there; VOID |
+| synthetic null fixture | **negative** | zero effect under the same structure contains zero at the declared rate | the intervals are miscalibrated; VOID |
+
+**Diagnostics, reported and never blocking:** leave-one-type-out sensitivity for every type; the
+direction and magnitude of each contrast under each blocking scheme.
+
+## Effective sample size — report the structure, not one scalar
+
+Do **not** declare a single effective n. Report: the number of type blocks; the number of
+homolog-group blocks; component counts per block; the concentration of pairs and tokens across
+blocks; and leave-one-block influence. If an effective-n approximation is given, name its formula
+and say which estimator it approximates.
+
+With only 21 type blocks, report **at least two** cluster-aware approaches, for example a block
+bootstrap alongside a leave-one-type-out jackknife, rather than trusting one interval generator.
 
 ## Reachability
 The PASS outcome is a set of intervals, which is attainable for any input. There is no unreachable
@@ -546,9 +625,17 @@ from supplementary data, from text, or was read off a figure, and mark figure-re
 provisional.
 
 ## Endpoint and criterion
-- primary endpoint: count of distinct measured non-cognate combinations with a comparable endpoint
-- **falsification criterion / stage-12 gate:** declare the floor **before** curating. Below it, no
-  computational orthogonality model is attempted and a designed swap panel becomes the prerequisite.
+- primary endpoint: the curated matrix **plus its geometry**, because a raw cell count misleads. One
+  7x7 matrix yields 42 non-cognate cells from **7 RTs, 7 ncRNAs, one study, one assay context**,
+  with correlated measurements. That is not 42 independent labels. Report `n_distinct_RTs`,
+  `n_distinct_ncRNAs`, `n_retron_systems`, `n_independent_studies`, `n_assay_contexts`,
+  `n_experimental_blocks`, `n_positive_cross_reactions`, `n_negative_cross_reactions`,
+  `evolutionary_span`
+- **falsification criterion:** none. This task curates; it does not judge model eligibility.
+- **Stage 12 is NOT gated on a pair count.** Eligibility is a separate tier-B judgement (`T-A23b`)
+  made on dataset **geometry and independent blocks**, choosing between descriptive evidence only,
+  calibration and sanity checking, a low-capacity supervised endpoint, or no modelling. The rubric
+  is declared before A23b runs.
 - **death condition:** none; the matrix is valuable at any size
 
 ## Expected result patterns
@@ -605,7 +692,7 @@ of the 581 singleton components, so it is structurally the large-component subse
 ## Population and inferential unit
 - population: the components present in **all four** tiers (expected ≈ 423), with full-population
   figures retained alongside
-- inferential unit: component, with the pair-weighted view reported beside it
+- inferential unit: component, primary. The pair-weighted view is a **descriptive sensitivity**, reported beside it and never primary
 - dependence structure: as T-A0
 
 ## Inputs
@@ -619,7 +706,7 @@ The pair-level export as an inference file.
 |---|---|---|---|
 | full-population ladder | baseline | reproduces the published C1–C4 values exactly | the reader is wrong; stop |
 | tier membership counts | positive | reproduces 1,019 / 832 / 1,073 / 451 | stop |
-| singletons in C4 | negative | is zero, confirming the structural exclusion | the population claim is wrong; stop |
+| singletons in C4 | **structural sanity check** | is zero, confirming the tier is the large-component subset | the population claim is wrong; VOID |
 
 ## Reachability
 Attainable for any input.
@@ -630,15 +717,16 @@ common set; report both alongside the full-population values.
 
 ## Endpoint and criterion
 - primary endpoint: the four tier means on the common population
-- **falsification criterion:** if the common-population ladder is monotone, the current wording stands
-  and this task returns FAIL for its own hypothesis
+- **falsification criterion:** if the common-population ladder is monotone, the published wording
+  stands and this task reports `TASK_STATE=PASS` with `SCIENTIFIC_OUTCOME=FALSIFIED`.
+  A refuted hypothesis is a **successful task**, never a failed one
 - **death condition:** none
 
 ## Expected result patterns
 | pattern | reading |
 |---|---|
-| non-monotone, collapse at C3 | near-neighbour counterfactuals abolish the effect; C4 is a different population, not a tighter control |
-| monotone | the published description is correct and this objection is withdrawn |
+| non-monotone, collapse at C3 | PASS / SUPPORTS_H1. Near-neighbour counterfactuals abolish the effect; C4 is a different population, not a tighter control |
+| monotone | PASS / FALSIFIED. The published description is correct and this objection is withdrawn |
 
 ## Outputs
 `tables/A2_common_population_ladder.tsv`, `tables/A2_tier_membership.tsv`
@@ -648,225 +736,302 @@ Whether pair-level discrimination exists. It describes the shape of an existing 
 
 ---
 
-## LAUNCHER · T-A3-confirmatory-population
+## LAUNCHER · T-A3a-rule-and-e0-freeze
 
 ---
-task_id: T-A3-confirmatory-population
+task_id: T-A3a-rule-and-e0-freeze
 governance_base: b5443e1
 stage_id: S00
-title: Freeze the pairing confirmatory population
+title: Freeze the confirmatory rule and the exposure set E0
 state: AWAITING_ADOPTION
 autonomy_tier: A
 compute_class: CPU_SMALL
 worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A3-confirmatory-population
 branch: task/T-A3-confirmatory-population
-output_directory: analysis/t_a3_confirmatory_population/
+output_directory: analysis/t_a3a_rule_and_e0_freeze/
 hard_dependencies: []
-populations_touched: ["defines E0 and freezes the split; touches no endpoint"]
+populations_touched: ["defines E0; touches no endpoint and assigns no candidate population"]
 iteration_budget: 1
 claim_ids_touched: []
 ---
 
-# T-A3 · Freeze the pairing confirmatory population
+# T-A3a · Freeze the confirmatory rule and the exposure set E0
 
-## Why this is a task and not a decision — read this first
+**Supersedes the withdrawn `T-A3`, which asked to assign "any future pairing population" and was
+therefore not a bounded, reproducible task.** That launcher is split: this one freezes the rule and
+the exposure set, which can run today. A separate `T-A3b-<population-name>` instantiates the rule on
+one named, hash-pinned candidate population, and is written when such a population exists.
 
-The **rule** below is tier C: the operator declares it, and no task may choose it. **Executing** the
-rule is tier A: it is deterministic by construction, uses SHA256 with a fixed salt and no random
-number generator, and needs no human once the rule is adopted.
-
-**This launcher carries the rule in full.** Once the operator marks it adopted, the board state moves
-`AWAITING_ADOPTION → AUTHORIZED` and every later run of this task is fully autonomous and reproduces
-byte-identically. The human writes nothing again.
+## Why this is a task and not a decision
+The **rule** is tier C: the operator adopts it once. **Executing** it is tier A and fully
+deterministic. Once adopted, this task needs no human ever again and reproduces byte-identically.
 
 ## Question
-Which components of any future pairing population may serve as confirmation, and which are already
-exposed?
+What exactly is the exposure set E0, and what is the frozen, machine-checkable rule by which any
+future candidate pairing population will be split?
 
 ## THE RULE — frozen text, applied verbatim, never re-derived
 
-1. **E0, the exposure set.** Every sequence used by the retrieval gate, X1, or X2 during model
+1. **E0, the exposure set.** Every sequence used by the retrieval gate, X1 or X2 during model
    development is E0. **No member of E0 may ever be called untouched confirmation of those
    analyses.** X2 cross-fitted all five folds, so all of PAIR-ELIG is in E0.
 2. **Leakage components.** Candidate pairs are grouped by sequence-only edges:
-   - RT edge at **≥ 50% amino-acid identity over ≥ 80% coverage**;
-   - ncRNA edge at **≥ 80% nucleotide identity over ≥ 80% coverage**;
+   - RT edge at **>= 50% amino-acid identity over >= 80% coverage**;
+   - ncRNA edge at **>= 80% nucleotide identity over >= 80% coverage**;
    - exact duplicates and copies of the same biological pair are always connected.
-3. **Assignment.** Component-level and deterministic, `SHA256(component_id + salt)`, salt
-   `PAIR_CONFIRMATORY_V1_2026-09-20`, lowest ~20% of the hash space to `CONFIRMATORY`, remainder to
-   `DEVELOPMENT`.
+3. **Assignment, exactly specified.** Deterministic and component-level. Compute
+   `h = SHA256(component_id + "PAIR_CONFIRMATORY_V1_2026-09-20")`, take the first 8 bytes as a
+   big-endian unsigned integer `u`, and assign `CONFIRMATORY` if and only if
+   `u < floor(0.20 * 2**64)`, otherwise `DEVELOPMENT`. No rounding to "approximately 20%", no RNG,
+   no reseeding. `component_id` is the sorted, newline-joined list of member pair identifiers, hashed;
+   its construction is frozen by this task and emitted as code.
 4. **Ordering.** Assignment happens **before** any model score, endpoint or component composition is
    inspected. No rebalancing after inspection, ever.
-5. **Near and far.** Report `CONFIRMATORY_NEAR` and `CONFIRMATORY_FAR` separately. **FAR** means no
-   declared RT edge **and** no declared ncRNA edge to any member of E0.
+5. **Near and far, with distances.** Report `CONFIRMATORY_NEAR` and `CONFIRMATORY_FAR` separately.
+   **FAR** means no RT edge **and** no ncRNA edge to any member of E0 *under the declared thresholds*.
+   ⚠️ FAR is **not** biological independence. Remote homology below the thresholds remains. Always
+   report the **continuous nearest-neighbour identity and distance to E0** for every component, on
+   both modalities, alongside the categorical label.
 6. **Sealing.** Once frozen, confirmatory components may not influence feature selection,
    architecture, thresholds, stopping rules, hyperparameters or error analysis. They are opened
    **once**, after the relevant analysis is frozen.
 7. **Honesty clause.** If no adequate prospective population exists, the follow-up is reported as
    **lacking confirmatory evidence**. An untouched set is never manufactured retrospectively.
+8. **The FAR adequacy criterion.** The operator declares, **with the rule and before any candidate
+   composition is inspected**, the minimum `|CONFIRMATORY_FAR|` required, tied to the inferential
+   precision the follow-up intends to claim rather than to a round number. Below it, the follow-up is
+   reported as lacking distant confirmation.
 
-## THE FIRST OUTPUT, AND IT BLOCKS
-
-⚠️ **Report `|CONFIRMATORY_FAR|` before anything else, and stop there if it is below a floor the
-operator declares with the rule.**
-
-Rationale, measured: **100% of held-out pairs in the existing split were reachable from training by
-at least one modality**, and 82.46% of held-out RTs had a ≥ 0.50-identity training relative. A far
-set that comes back empty or tiny is therefore the expected outcome and **is itself the finding**: it
-means distant confirmation is not obtainable from this corpus at all, and every future pairing claim
-must say so in advance rather than discover it at review.
-
-## Population and inferential unit
-- population: any candidate pairing population presented for confirmation, plus E0 for the edge test
-- inferential unit: leakage component
+## Scope of this task
+Produce the E0 manifest, the frozen component-ID algorithm as executable code, the fixed thresholds,
+the exact hash interval, the salt, the declared FAR adequacy criterion, and the adoption record.
+**Assign nothing.** There is no candidate population yet.
 
 ## Inputs
 The frozen split manifest and cluster assignments from the existing embedding gates; the exact RT and
-ncRNA catalogues; any new candidate pairs offered for confirmation.
+ncRNA catalogues.
 
 ## Forbidden inputs
-Any model score, endpoint value, or per-component composition summary. Reading one before assignment
-voids the split irreversibly.
+Any model score, endpoint value or per-component composition summary. Reading one voids the rule
+irreversibly.
 
 ## Controls — run FIRST and BLOCK
 | control | type | must show | if it fails |
 |---|---|---|---|
-| determinism | positive | two independent runs give byte-identical assignments | the salt or the component id is not stable; stop |
-| E0 containment | positive | every PAIR-ELIG pair lands in E0 | the exposure set is wrong |
-| edge symmetry | negative | a pair with no edge to E0 is never labelled NEAR | the edge test is inverted |
-| ordering audit | baseline | no endpoint file was opened before the assignment timestamp | the split is void; escalate |
+| determinism | **positive** | two independent runs of the component-ID and hash code give byte-identical output | the algorithm is not stable; VOID |
+| hash interval calibration | **positive** | on 10^6 synthetic component ids the assignment rate matches 0.20 within Monte Carlo error | the interval arithmetic is wrong; VOID |
+| E0 containment | **positive** | every PAIR-ELIG pair lands in E0 | the exposure set is wrong; VOID |
+| edge-direction fixture | **negative** | a synthetic component with no edge to E0 is never labelled NEAR, and one with a planted edge is never labelled FAR | the edge test is inverted; VOID |
+| ordering audit | **positive** | no endpoint file was opened before the freeze timestamp | the rule is void; escalate |
 
 ## Reachability
-Both outcomes attainable. An empty FAR set is a valid and expected result, not a failure.
+Attainable. This task produces a specification and a manifest; there is no branch that cannot fire.
 
 ## Endpoint and criterion
-- primary endpoint: the frozen assignment table, plus `|CONFIRMATORY_NEAR|` and `|CONFIRMATORY_FAR|`
-- **falsification criterion:** none; this task freezes a population, it tests no hypothesis
-- **death condition:** if `|CONFIRMATORY_FAR|` is below the declared floor, pairing follow-ups are
-  reported as lacking distant confirmation, permanently, unless a new population is acquired
+- primary endpoint: the frozen rule artifacts and the E0 manifest
+- **falsification criterion:** none; this task tests no hypothesis
+- **death condition:** none
 
 ## Outputs
-`tables/A3_component_assignment.tsv`, `tables/A3_near_far_counts.tsv`, `tables/A3_E0_manifest.tsv`,
-`tables/A3_controls.tsv`, `A3_FROZEN.md` with the rule text and its adoption record
+`tables/A3a_E0_manifest.tsv`, `scripts/component_id.py`, `tables/A3a_hash_calibration.tsv`,
+`tables/A3a_controls.tsv`, `A3A_FROZEN.md` carrying the rule text, the thresholds, the salt, the
+hash interval, the FAR adequacy criterion and the adoption record.
 
 ## What this task may NOT conclude
-Anything scientific. It may not evaluate a model, and it may not adjust the split to make any later
-result come out better.
+Anything scientific. It may not assign a candidate population, and it may not choose the rule it
+executes.
 
 ---
 
-## LAUNCHER · T-A5b-msrmsd-coordinates
+## LAUNCHER · T-A5b1-rtdna-anchors
 
 ---
-task_id: T-A5b-msrmsd-coordinates
+task_id: T-A5b1-rtdna-anchors
 governance_base: b5443e1
 stage_id: S08
-title: msr/msd coordinates and RT-DNA extent, anchored on experimental RT-DNA
+title: Experimental RT-DNA coordinate anchors on cognate ncRNAs
 state: AUTHORIZED
 autonomy_tier: A
-compute_class: CPU_MEDIUM
-preferred_backend: workstation
-worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A5b-msrmsd-coordinates
-branch: task/T-A5b-msrmsd-coordinates
-output_directory: analysis/t_a5b_msrmsd_coordinates/
+compute_class: CPU_SMALL
+worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A5b1-rtdna-anchors
+branch: task/T-A5b1-rtdna-anchors
+output_directory: analysis/t_a5b1_rtdna_anchors/
 hard_dependencies: []
 soft_dependencies: ["T-REG-asset-registration"]
-populations_touched: ["exact ncRNA catalogue 16,458: inspected", "published panel 175: used as ANCHOR, not as a model test set"]
-iteration_budget: 2
-claim_ids_touched: ["C-34", "C-09"]
-thesis_artifacts: ["S08 figures, tables, methods, limitations"]
+populations_touched: ["experimental panel: RT-DNA sequences used as a coordinate anchor, not as a model test set"]
+iteration_budget: 1
+claim_ids_touched: []
 ---
 
-# T-A5b · msr/msd coordinates and RT-DNA extent, anchored on experimental RT-DNA
+# T-A5b1 · Experimental RT-DNA coordinate anchors on cognate ncRNAs
+
+**Supersedes the withdrawn `T-A5b`, which conflated two questions and contained an arithmetic error.**
 
 ## Question
-Can the msr/msd boundary and the RT-DNA extent be located as **coordinates** on retron ncRNAs, using
-the experimentally determined RT-DNA sequences as an anchor that is independent of the covariance
-models?
+Where does each experimentally determined RT-DNA sequence map onto its cognate ncRNA?
 
 ## Hypothesis
-Yes for the anchored subset, because msd is the template for the RT-DNA, so an experimentally
-determined RT-DNA sequence maps onto ncRNA coordinates and fixes one boundary directly. Alternative:
-the mapping is ambiguous or the anchor set is too small, in which case the task returns a bounded
-negative and the ncRNA boundary question closes.
+A substantial fraction map unambiguously, because the RT-DNA is reverse-transcribed from a defined
+template region of the ncRNA. Alternative: mappings are ambiguous or absent at a rate that makes the
+anchor set unusable, which is itself a reportable bound.
 
-## Why existing evidence does not answer it — registry lookup result
-**This is a revision of an earlier, wider proposal that the registry lookup partly closed.**
+## Scope, stated negatively and bindingly
+This task establishes **where the reverse-transcribed extent sits**. It does **not** establish:
 
-| component | prior state | consequence for this task |
-|---|---|---|
-| folding | **DONE**: 16,351 of 16,458 (99.35%) already folded with RNAfold + bpRNA, dot-bracket stored | **reuse, do not recompute**; build the join on the current sequence hash and fold only the ~107 missing |
-| a1/a2 inverted repeat | **DONE**: 15,772 of 16,458 (95.83%) already called, with a per-span shuffle null and a 210,862-sequence negative | **reuse**; gold 0.8129 against group II background 0.0959 |
-| msr/msd as features | **DONE but demoted**: presence flags from `cmalign` against the same 21 covariance models; the rule classified 47% of confirmed ssDNA producers as incomplete | **inherit as a warning, not as input.** Coordinates were never landed and must not be built this way |
-| branching guanosine | **REFUTED from sequence alone**: every set passes its bar and so does its own shuffle; the gold panel does not beat its shuffle | **out of scope.** The prior work states its precondition is the msr/msd boundary, which is what this task produces |
-| RT-DNA extent | **NEVER COMPUTED**; the 81 RT-DNA sequences were never used for it | **this is the gap** |
+- the full biological **msd** segment beyond the reverse-transcribed extent;
+- the **msr/msd boundary**;
+- **msr coordinates** by any route, including "the complement region bounded by the a1/a2 arms",
+  which an earlier draft wrongly proposed and which is hereby withdrawn;
+- transcript boundaries, branching-guanosine placement, pairing, or orthogonality.
 
-## Population and inferential unit
-- **anchor population:** the 81 elements with an empirically determined RT-DNA sequence
-- **application population:** 16,458 exact ncRNAs, output as a confidence-graded coordinate set
-- inferential unit: ncRNA instance for calls; **retron type for any rate**
-- dependence structure: anchor molecules are not independent of each other by type; report per-type
-- **effective n for any claim: 81, and the honest evaluation split is 56 CM-recoverable against 64 CM-gap**
+Those are inference steps and belong to `T-A5b2`.
+
+## Population and inferential unit — read the arithmetic carefully
+- **anchor population:** the **81** panel elements carrying an empirically determined RT-DNA
+  sequence. Of these, **62** come from elements with measured RT-DNA production above zero.
+- **a different population, do not conflate:** prior work reports **120** published molecules that
+  locate in the ncRNA pool, splitting **56** covariance-model-recoverable against **64** model-gap.
+  That is a property of the 120, **not of the 81**.
+  ⚠️ An earlier draft wrote "effective n 81, split 56/64". 56 + 64 = 120. That was wrong.
+- **first computational step, before anything else:** compute and report the **actual overlap**
+  between the 81 anchors and the 120 located molecules, and the recoverable/gap split *within the
+  81*. Do not assume it.
+- inferential unit: assayed retron element.
 
 ## Inputs
-| input | path | role |
-|---|---|---|
-| oriented ncRNAs, 16,458 | `data/derived/rt_ncrna_oriented_v1.fna` | application population |
-| prior folds, 16,359 | prior project `stage4_ncRNA_assessment/cache/p2_structures.parquet` | **ASSET** — reuse |
-| prior a1/a2 per span | prior project `ncrna_extractor_detector/tables/c1_a1a2_per_span.tsv.gz` | **ASSET** — reuse |
-| experimental panel, 81 RT-DNA sequences | `support.csv` in the prior project's supporting material | **the anchor. Not in v7; register it first** |
-| deposited complexes, 8 | registered structure cache | independent geometric check |
+| input | role |
+|---|---|
+| `support.csv`, 175 rows, 81 with `RTDNA_sequence` | **the anchor. Not in the v7 tree; register it via T-REG first** |
+| oriented exact ncRNAs, 16,458 | the coordinate frame |
+| deposited RT-RNA-DNA complexes, 8 | independent geometric cross-check, diagnostic only |
 
-Hash every input. Prior tables enter as **assets**; none of their conclusions may be cited.
+Hash every input before reading.
 
 ## Forbidden inputs
-`cmalign` msr/msd consensus coordinates against the 21 production covariance models, as a source of
-truth. They define the population and cannot adjudicate a boundary within it. They may be reported as
-a **comparator**, declared in advance.
+`cmalign` consensus coordinates against the 21 production covariance models, as truth. They may be
+reported as a **comparator**, declared in advance, and never as an adjudicator.
+
+## Controls — run FIRST and BLOCK
+These validate **sequence mapping, orientation and coordinate handling**. They do not validate a
+folding tool, which is irrelevant to this task. Per WORKING_RULES section 6a, no biological contrast
+is a blocking control here.
+
+| control | type | must show | if it fails |
+|---|---|---|---|
+| synthetic exact-substring fixture | **positive** | a known substring planted at a known offset, in both orientations, is recovered at exactly that offset with the correct orientation flag | coordinate or strand handling is wrong; VOID |
+| synthetic mutated fixture | **positive** | a substring carrying a declared number of mismatches is recovered with the expected identity and coverage | the tolerance model is wrong; VOID |
+| scrambled-pairing fixture | **negative** | RT-DNA sequences deliberately paired with non-cognate ncRNAs yield `NO_MAP` or `AMBIGUOUS` at a high rate | the mapper matches anything; VOID |
+| off-by-one round trip | **positive** | converting a called coordinate back to sequence returns the original substring | classic frame error; VOID |
+
+## Reachability
+Both outcomes are attainable. A high `NO_MAP` rate is a valid, reportable result, not a failure.
+
+## Method
+Map each RT-DNA sequence to its cognate ncRNA in both orientations. Record identity, coverage,
+uniqueness and every equivalent best hit. Classify. No folding, no inference, no extrapolation.
+
+## Output schema, one row per anchor element
+```
+element_id · rtdna_sequence · mapping_orientation · start · end · identity · coverage
+n_equivalent_best_mappings · mapping_class · distance_to_5prime_edge · distance_to_3prime_edge
+cm_recoverable_flag · source · evidence_provenance
+```
+`mapping_class` is one of `EXACT_UNIQUE`, `HIGH_CONFIDENCE_UNIQUE`, `AMBIGUOUS`, `NO_MAP`.
+
+**Report the distance to each sequence edge for every call.** The ncRNA extent is a covariance-model
+cut, so a mapping that abuts an edge may be truncated by the cut rather than by biology.
+
+## Endpoint and criterion
+- primary endpoint: the count of `EXACT_UNIQUE` plus `HIGH_CONFIDENCE_UNIQUE` anchors
+- **falsification criterion:** if unambiguous anchors fall below a floor declared before running,
+  the anchor set is insufficient and `T-A5b2` does not open
+- **death condition:** none. Either outcome is informative and publishable as a bound
+
+## Expected result patterns
+| pattern | TASK_STATE | SCIENTIFIC_OUTCOME |
+|---|---|---|
+| most anchors map unambiguously | PASS | SUPPORTS_H1; A5b2 opens |
+| anchors map only for model-recoverable elements | PASS | BOUND; A5b2 opens on the anchored subset only |
+| widespread ambiguity or no-map | PASS | FALSIFIED; the coordinate route closes, and that is the result |
+
+## What this task may NOT conclude
+Anything about msr, about the full msd, about ncRNAs outside the anchor set, or about pairing.
+
+---
+
+## LAUNCHER · T-A5b2-ncrna-architecture
+
+---
+task_id: T-A5b2-ncrna-architecture
+governance_base: b5443e1
+stage_id: S08
+title: Infer ncRNA coordinate architecture from the experimental anchors
+state: HELD
+autonomy_tier: A
+compute_class: CPU_MEDIUM
+worktree: TBC
+branch: TBC
+output_directory: analysis/t_a5b2_ncrna_architecture/
+hard_dependencies: ["T-A5b1-rtdna-anchors"]
+populations_touched: ["exact ncRNA catalogue: inspected"]
+iteration_budget: 2
+claim_ids_touched: []
+---
+
+# T-A5b2 · Infer ncRNA coordinate architecture from the experimental anchors
+
+**HELD.** Opens only if `T-A5b1` returns `TASK_STATE=PASS` with unambiguous anchors above its declared
+floor. Its scope is then set by what A5b1 actually anchored, not by what was hoped for.
+
+## Question
+Given the experimental anchor set, can ncRNA coordinate architecture be inferred for molecules that
+have no experimental RT-DNA, and with what confidence?
+
+## Why this is a separate task
+A5b1 is direct measurement: a sequence maps somewhere, or it does not. This is inference from a small
+anchor set to a large population. Different logic, different controls, different failure modes.
+Merging them would let a caller's performance borrow credibility from the mapping's directness.
+
+## Population and inferential unit
+- fitting and evaluation population: the anchors produced by A5b1
+- application population: whatever subset A5b1's result licenses, which may be far short of 16,458
+- inferential unit: ncRNA instance for calls; retron type for any rate
+- dependence structure: anchors are not independent across types; evaluation is lineage-blocked
+
+## Reusable assets, not to be recomputed
+Existing folds cover 99.35% of the catalogue and existing a1/a2 calls cover 95.83%, both with their
+failure modes already measured. Reuse them, join on the current sequence hash, and fold only what is
+genuinely missing. Their prior **conclusions** remain unverified and are not cited.
 
 ## Controls — run FIRST and BLOCK
 | control | type | must show | if it fails |
 |---|---|---|---|
-| RNAfold base-pair recovery on known msr-msd | **positive** | reproduces the prior 0.9137–0.9508 range on the same molecules | the folding instrument is not behaving as it did; stop before any boundary work |
-| deposited complexes | **positive** | called coordinates agree with the RNA chain geometry in the 8 structures | the coordinate frame is wrong |
-| group II intron and DGR upstream windows | **negative** | no msr/msd architecture recovered | the caller fires on anything |
-| dinucleotide-shuffled real ncRNAs | **negative** | recovery collapses to chance | the signal is composition |
-| fixed positional split at the median msr/msd ratio | **baseline** | the method must beat it | there is no method, only a prior |
+| held-out anchors | **positive** | anchors withheld from fitting are recovered at a declared tolerance | the caller does not generalise even inside the anchor set; VOID |
+| lineage-blocked splitting | **positive** | held-out sets are blocked by RT lineage, never drawn at random | near-duplicates inflate the result |
+| dinucleotide-shuffled ncRNAs | **negative** | recovery collapses to chance | the signal is composition |
+| group II intron and DGR upstream windows | **negative** | no architecture is recovered | the caller fires on anything |
+| fixed positional split at the median | **baseline** | the caller must beat it | there is no method, only a prior. This is the exact bar the previous ncRNA arm died to, 343 against 901 |
 
 ## Reachability
-Both outcomes attainable. The anchor is 81 real molecules with real RT-DNA sequences; a mapping
-either exists or does not, and both are measurable. **The PASS branch requires the positive control
-to reproduce first**, which is exactly the check the prior branching-G work shows to be decisive.
-
-## Method
-Map each experimental RT-DNA sequence onto its cognate ncRNA to fix the msd extent. Derive msr as the
-complement region bounded by the a1/a2 arms already called. Fold only what is not already folded.
-Report coordinates with a confidence grade and with the distance from every call to the sequence
-edge, because the extent is a covariance-model cut and a boundary near an edge may be its artefact.
+Attainable in both directions once A5b1 has reported.
 
 ## Endpoint and criterion
-- primary endpoint: agreement between the RT-DNA-anchored msd boundary and the called boundary, on
-  the anchor population, at a declared tolerance
-- **falsification criterion:** if the method does not beat the fixed positional split on the anchored
-  molecules and the deposited complexes at the declared tolerance, the decomposition is not
-  established and is not used downstream
-- **death condition:** failing the above closes coordinate-level ncRNA decomposition for this project
-  and the boundary chapter becomes a bounded negative
+- primary endpoint: boundary agreement on lineage-blocked held-out anchors, at a declared tolerance
+- **falsification criterion:** failing to beat the fixed positional baseline on lineage-blocked
+  held-out anchors closes coordinate-level ncRNA inference for this project
+- **death condition:** the above, permanently
 
 ## Expected result patterns
-| pattern | reading |
-|---|---|
-| anchored boundaries recovered, generalise to the 16,458 with grades | the project gains its first biological object on the RNA side; S08b pair expansion opens |
-| recovered only on the 56 CM-recoverable, chance on the 64 CM-gap | matches the prior work's own limit; report as a bound, do not claim corpus scale |
-| not recovered above the positional split | a clean, cheap, permanent closure; the chapter is a negative |
-
-## Outputs
-`tables/A5b_anchor_mapping.tsv`, `tables/A5b_coordinates_graded.tsv`, `tables/A5b_controls.tsv`,
-`tables/A5b_comparator_cmalign.tsv`, `figures/`, `ARTIFACT_MANIFEST.tsv`
+| pattern | TASK_STATE | SCIENTIFIC_OUTCOME |
+|---|---|---|
+| beats the positional baseline on blocked held-out anchors | PASS | SUPPORTS_H1; S08b pair expansion may be proposed |
+| beats it only within model-recoverable types | PASS | BOUND; report the limit, do not claim corpus scale |
+| does not beat it | PASS | FALSIFIED; a clean, cheap, permanent closure |
 
 ## What this task may NOT conclude
-That an ncRNA lacking a call lacks the architecture. That a coordinate set at 16,458 is validated;
-only the anchored subset is. Anything about the branching guanosine. Anything about RT–ncRNA pairing.
+That a coordinate set across 16,458 is validated. Only the anchored and held-out subsets are.
+Nothing about the branching guanosine, whose sequence-only route is already refuted and whose stated
+precondition is exactly the boundary this task would produce.
 
 ---
 
@@ -876,7 +1041,7 @@ only the anchored subset is. Anything about the branching guanosine. Anything ab
 task_id: T-LINT-prose-numbers
 governance_base: b5443e1
 stage_id: S00
-title: Numeric provenance linter over prose
+title: Numeric-provenance CANDIDATE linter (triage, not a gate)
 state: AUTHORIZED
 autonomy_tier: A
 compute_class: ZERO
@@ -890,7 +1055,16 @@ iteration_budget: 2
 claim_ids_touched: []
 ---
 
-# T-LINT · Numeric provenance linter over prose
+# T-LINT · Numeric-provenance CANDIDATE linter
+
+**Numeric equality is not provenance.** A prose value of 99.1 may coincide with an unrelated cell in
+an unrelated table and be wrongly marked resolved. This task therefore produces a **triage list of
+numbers needing adjudication**, not a provenance verdict.
+
+**A true standing gate needs a declared mapping**, not a global equality search. Emit the schema for
+`PROSE_NUMBER_PROVENANCE.tsv` with `document, claim_id, numeric_value, table_path, row_key, column,
+bundle, commit`, so a later gate verifies the *declared* source rather than hunting for an equal
+token. Specifying that schema is part of this task; populating it is not.
 
 ## Question
 Which numbers asserted in this project's markdown documents cannot be resolved to a cell in any
@@ -904,7 +1078,9 @@ No such check exists. Existing provenance discipline covers tables and figures; 
 propagating errors found by review lived in prose or in a script string literal.**
 
 ## Population and inferential unit
-- population: every tracked `.md` in the repository and in `PROJECT_REVIEW_PACKAGE/`
+- population: **mode A**, every tracked `.md`. **mode B, run separately and never silently merged**,
+  the reporting and figure-generating sources (`.py`, `.R`, `.sh`, `.tex`) scanned for hardcoded
+  literals, because the same-strand defect lived in a script string and not in prose
 - inferential unit: a distinct numeric token in prose
 
 ## Inputs
@@ -915,7 +1091,8 @@ All tracked `.md`; all `.tsv` under `results/` and the registered bundle paths, 
 |---|---|---|---|
 | three known defects | positive | the linter flags the same-strand figure, the matrix dimension, and the superseded silhouette | the linter cannot see what it exists to see; fix before trusting any output |
 | three known-good numbers | negative | numbers that provably come from landed tables are NOT flagged | the false-positive rate makes it unusable |
-| resolution rate per file | baseline | reported, so the operator can judge the signal | — |
+| resolution rate per file | baseline | reported, so the operator can judge the signal | - |
+| planted coincidence fixture | **negative** | a prose number equal to an unrelated table cell is reported as COINCIDENTAL_MATCH, never as resolved | the tool claims provenance it cannot establish; VOID |
 
 ## Reachability
 The PASS outcome is a defect list, which is attainable. Note the positive control is the design
@@ -959,7 +1136,7 @@ autonomy_tier: B
 compute_class: ZERO
 worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-REG-asset-registration
 branch: task/T-REG-asset-registration
-output_directory: docs/, data/
+output_directory: analysis/t_reg_asset_registration/
 hard_dependencies: []
 populations_touched: []
 iteration_budget: 1
@@ -989,7 +1166,7 @@ reversed on discovering this**, and a fifth is pending.
 | control | type | must show | if it fails |
 |---|---|---|---|
 | already-registered assets | positive | the sweep finds the 62-chain structure register and the CATH benchmark, which ARE registered | the sweep has a blind spot |
-| a deliberately renamed directory | negative | the manifest hash changes, so drift is detectable | the identity pin is useless |
+| a renamed directory **in a throwaway fixture** | negative | the manifest hash changes, so drift is detectable. Never mutate the real asset base to test a control | the identity pin is useless; VOID |
 | re-run determinism | baseline | two runs give identical hashes | — |
 
 ## Reachability
@@ -1002,12 +1179,19 @@ or `UNVERIFIED_CONCLUSION` (re-derive before any citation). Categorisation of a 
 analysis outputs is tier B and goes to review, not to the task.
 
 ## Endpoint and criterion
-- primary endpoint: registry rows covering every collection above a declared size floor
+- primary endpoint: **proposed** registry rows for every collection of at least **1 MiB or at least
+  10 files**, whichever is met first. Smaller collections go in an appendix table, never omitted
 - **falsification criterion:** none; this is bookkeeping
 - **death condition:** none; the sweep becomes a scheduled recurring check
 
 ## Outputs
-Registry rows in `data/README.md` and `docs/DATASET_REGISTRY.md`; `docs/ASSET_CATEGORIES.tsv`.
+**This task does not write to `docs/` or `data/`.** It emits *proposed* rows inside its own output
+directory: `tables/REG_proposed_registry_rows.tsv`, `tables/REG_asset_categories.tsv`,
+`tables/REG_controls.tsv`. A **tier-B review step** merges accepted rows into the canonical registries.
+This separates registration from promotion and avoids merge collisions with concurrent sessions.
+
+Category assignment is **tier B**: file existence is factual, scientific category is interpretive.
+Propose, do not decide.
 
 ## What this task may NOT conclude
 Anything scientific. It may not promote a prior number by registering the file that contains it.

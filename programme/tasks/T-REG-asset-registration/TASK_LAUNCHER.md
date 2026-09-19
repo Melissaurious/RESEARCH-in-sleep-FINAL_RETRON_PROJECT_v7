@@ -8,7 +8,7 @@ autonomy_tier: B
 compute_class: ZERO
 worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-REG-asset-registration
 branch: task/T-REG-asset-registration
-output_directory: docs/, data/
+output_directory: analysis/t_reg_asset_registration/
 hard_dependencies: []
 populations_touched: []
 iteration_budget: 1
@@ -38,7 +38,7 @@ reversed on discovering this**, and a fifth is pending.
 | control | type | must show | if it fails |
 |---|---|---|---|
 | already-registered assets | positive | the sweep finds the 62-chain structure register and the CATH benchmark, which ARE registered | the sweep has a blind spot |
-| a deliberately renamed directory | negative | the manifest hash changes, so drift is detectable | the identity pin is useless |
+| a renamed directory **in a throwaway fixture** | negative | the manifest hash changes, so drift is detectable. Never mutate the real asset base to test a control | the identity pin is useless; VOID |
 | re-run determinism | baseline | two runs give identical hashes | — |
 
 ## Reachability
@@ -51,12 +51,19 @@ or `UNVERIFIED_CONCLUSION` (re-derive before any citation). Categorisation of a 
 analysis outputs is tier B and goes to review, not to the task.
 
 ## Endpoint and criterion
-- primary endpoint: registry rows covering every collection above a declared size floor
+- primary endpoint: **proposed** registry rows for every collection of at least **1 MiB or at least
+  10 files**, whichever is met first. Smaller collections go in an appendix table, never omitted
 - **falsification criterion:** none; this is bookkeeping
 - **death condition:** none; the sweep becomes a scheduled recurring check
 
 ## Outputs
-Registry rows in `data/README.md` and `docs/DATASET_REGISTRY.md`; `docs/ASSET_CATEGORIES.tsv`.
+**This task does not write to `docs/` or `data/`.** It emits *proposed* rows inside its own output
+directory: `tables/REG_proposed_registry_rows.tsv`, `tables/REG_asset_categories.tsv`,
+`tables/REG_controls.tsv`. A **tier-B review step** merges accepted rows into the canonical registries.
+This separates registration from promotion and avoids merge collisions with concurrent sessions.
+
+Category assignment is **tier B**: file existence is factual, scientific category is interpretive.
+Propose, do not decide.
 
 ## What this task may NOT conclude
 Anything scientific. It may not promote a prior number by registering the file that contains it.

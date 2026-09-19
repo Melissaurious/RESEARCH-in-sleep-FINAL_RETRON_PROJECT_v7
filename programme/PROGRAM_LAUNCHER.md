@@ -26,7 +26,7 @@ evidence named in advance.
 | settled | on what |
 |---|---|
 | bacterial RT phylogeny **does not resolve** at this character economy | 312 trees, five preregistered routes, two independent reviews; 157 alignable characters for retrons, 1.39 taxa/character; signal real at ~660× chance and insufficient to carry a topology |
-| de novo comparative ncRNA **discovery** loses to a fixed positional interval | 901 against 343 at IoU ≥ 0.5; per-type priors 969 |
+| de novo comparative ncRNA **discovery** loses to a fixed positional interval — `CLOSED_CURRENT_DESIGN`, **REOPENABLE ONLY BY A NEW LAUNCHER** that predeclares: grouping independent of the old CM type labels, a materially different method or population, the fixed positional interval as a mandatory baseline, evaluation against published or experimental anchors rather than CM cuts, and explicit matched negative windows | 901 against 343 at IoU ≥ 0.5; per-type priors 969 |
 | **placement** into the historical 11-clade system has no validated discriminator | shuffled queries confidently placed at 7.9% against a ≤1% limit |
 | **re-inference** of the historical classification is not possible | the source alignment and extracts are not published and not on disk |
 | neighbourhood is **not a retron detector** | retrons 27th of 41 families, inside a predeclared dead band |
@@ -54,6 +54,7 @@ S00 CORRECTIONS · ASSET REGISTRATION · FREEZE          [open now]
       │        └── S08b ARCHITECTURE-DEFINED PAIR EXPANSION
       │                 │
       │                 └── [lineage-count gate] ─── S09 ancestry-aware correspondence
+                                    (gated; the word 'co-evolution' stays prohibited)
       │
       └── S10 EMBEDDINGS / PAIRING BOUNDS              [open now, repair tasks]
                │
@@ -89,7 +90,10 @@ Each is here because it has already happened or has been explicitly attempted.
 
 - No claim of biochemical **compatibility, orthogonality or interchangeability** without measured
   cross-pair labels. Unobserved pairings are **never** negatives.
-- No **co-evolution** language. There is no ancestry null and none is currently obtainable.
+- No current claim may use the word **co-evolution**. S09 may test *ancestry-aware RT-ncRNA
+  evolutionary correspondence* only if its predeclared lineage-count and independent-ncRNA-object
+  gates are met. The word stays prohibited until a design explicitly separates shared ancestry and
+  shared opportunity from correlated evolutionary change.
 - No **per-pair biological inference** from a likelihood difference. A counterfactual is a
   conditioning control, not a negative pair.
 - No **n × n compatibility matrix**, and no laboratory candidate nomination from a sequence score.
@@ -100,9 +104,15 @@ Each is here because it has already happened or has been explicitly attempted.
 
 ## 6 · Claim promotion
 
-`task → validation → stage synthesis → independent review → claim registry → promoted claim → thesis/paper`
+```
+task outputs -> stage synthesis -> independent review -> claim promotion -> THESIS_ARTIFACT_BUILD
+```
 
-No task promotes its own claim. Statuses are the single closed vocabulary in
+No task promotes its own claim, and **no task session writes interpretive thesis prose**. That would
+contradict the facts-only reporting contract. Thesis artifacts are built at **stage** level from
+promoted evidence only, and every figure and table carries `artifact_id`, `stage_id`, `claim_ids`,
+`source_table`, `source_bundle`, `input_hash`, `generation_script`, `git_commit` and
+`promotion_status`. Statuses are the single closed vocabulary in
 `review-stage/INDEPENDENT_SCIENTIFIC_REVIEW_2026-09-20.md` §17 and the proposal's §12.
 
 ⚠️ **Nothing is promotable today.** `human_input_audit: DONE` appears nowhere in the repository

@@ -54,9 +54,17 @@ from supplementary data, from text, or was read off a figure, and mark figure-re
 provisional.
 
 ## Endpoint and criterion
-- primary endpoint: count of distinct measured non-cognate combinations with a comparable endpoint
-- **falsification criterion / stage-12 gate:** declare the floor **before** curating. Below it, no
-  computational orthogonality model is attempted and a designed swap panel becomes the prerequisite.
+- primary endpoint: the curated matrix **plus its geometry**, because a raw cell count misleads. One
+  7x7 matrix yields 42 non-cognate cells from **7 RTs, 7 ncRNAs, one study, one assay context**,
+  with correlated measurements. That is not 42 independent labels. Report `n_distinct_RTs`,
+  `n_distinct_ncRNAs`, `n_retron_systems`, `n_independent_studies`, `n_assay_contexts`,
+  `n_experimental_blocks`, `n_positive_cross_reactions`, `n_negative_cross_reactions`,
+  `evolutionary_span`
+- **falsification criterion:** none. This task curates; it does not judge model eligibility.
+- **Stage 12 is NOT gated on a pair count.** Eligibility is a separate tier-B judgement (`T-A23b`)
+  made on dataset **geometry and independent blocks**, choosing between descriptive evidence only,
+  calibration and sanity checking, a low-capacity supervised endpoint, or no modelling. The rubric
+  is declared before A23b runs.
 - **death condition:** none; the matrix is valuable at any size
 
 ## Expected result patterns

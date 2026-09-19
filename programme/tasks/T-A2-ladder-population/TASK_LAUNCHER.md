@@ -34,7 +34,7 @@ of the 581 singleton components, so it is structurally the large-component subse
 ## Population and inferential unit
 - population: the components present in **all four** tiers (expected ≈ 423), with full-population
   figures retained alongside
-- inferential unit: component, with the pair-weighted view reported beside it
+- inferential unit: component, primary. The pair-weighted view is a **descriptive sensitivity**, reported beside it and never primary
 - dependence structure: as T-A0
 
 ## Inputs
@@ -48,7 +48,7 @@ The pair-level export as an inference file.
 |---|---|---|---|
 | full-population ladder | baseline | reproduces the published C1–C4 values exactly | the reader is wrong; stop |
 | tier membership counts | positive | reproduces 1,019 / 832 / 1,073 / 451 | stop |
-| singletons in C4 | negative | is zero, confirming the structural exclusion | the population claim is wrong; stop |
+| singletons in C4 | **structural sanity check** | is zero, confirming the tier is the large-component subset | the population claim is wrong; VOID |
 
 ## Reachability
 Attainable for any input.
@@ -59,15 +59,16 @@ common set; report both alongside the full-population values.
 
 ## Endpoint and criterion
 - primary endpoint: the four tier means on the common population
-- **falsification criterion:** if the common-population ladder is monotone, the current wording stands
-  and this task returns FAIL for its own hypothesis
+- **falsification criterion:** if the common-population ladder is monotone, the published wording
+  stands and this task reports `TASK_STATE=PASS` with `SCIENTIFIC_OUTCOME=FALSIFIED`.
+  A refuted hypothesis is a **successful task**, never a failed one
 - **death condition:** none
 
 ## Expected result patterns
 | pattern | reading |
 |---|---|
-| non-monotone, collapse at C3 | near-neighbour counterfactuals abolish the effect; C4 is a different population, not a tighter control |
-| monotone | the published description is correct and this objection is withdrawn |
+| non-monotone, collapse at C3 | PASS / SUPPORTS_H1. Near-neighbour counterfactuals abolish the effect; C4 is a different population, not a tighter control |
+| monotone | PASS / FALSIFIED. The published description is correct and this objection is withdrawn |
 
 ## Outputs
 `tables/A2_common_population_ladder.tsv`, `tables/A2_tier_membership.tsv`

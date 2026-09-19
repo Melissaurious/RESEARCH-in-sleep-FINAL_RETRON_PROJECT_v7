@@ -2,7 +2,7 @@
 task_id: T-LINT-prose-numbers
 governance_base: b5443e1
 stage_id: S00
-title: Numeric provenance linter over prose
+title: Numeric-provenance CANDIDATE linter (triage, not a gate)
 state: AUTHORIZED
 autonomy_tier: A
 compute_class: ZERO
@@ -16,7 +16,16 @@ iteration_budget: 2
 claim_ids_touched: []
 ---
 
-# T-LINT · Numeric provenance linter over prose
+# T-LINT · Numeric-provenance CANDIDATE linter
+
+**Numeric equality is not provenance.** A prose value of 99.1 may coincide with an unrelated cell in
+an unrelated table and be wrongly marked resolved. This task therefore produces a **triage list of
+numbers needing adjudication**, not a provenance verdict.
+
+**A true standing gate needs a declared mapping**, not a global equality search. Emit the schema for
+`PROSE_NUMBER_PROVENANCE.tsv` with `document, claim_id, numeric_value, table_path, row_key, column,
+bundle, commit`, so a later gate verifies the *declared* source rather than hunting for an equal
+token. Specifying that schema is part of this task; populating it is not.
 
 ## Question
 Which numbers asserted in this project's markdown documents cannot be resolved to a cell in any
@@ -30,7 +39,9 @@ No such check exists. Existing provenance discipline covers tables and figures; 
 propagating errors found by review lived in prose or in a script string literal.**
 
 ## Population and inferential unit
-- population: every tracked `.md` in the repository and in `PROJECT_REVIEW_PACKAGE/`
+- population: **mode A**, every tracked `.md`. **mode B, run separately and never silently merged**,
+  the reporting and figure-generating sources (`.py`, `.R`, `.sh`, `.tex`) scanned for hardcoded
+  literals, because the same-strand defect lived in a script string and not in prose
 - inferential unit: a distinct numeric token in prose
 
 ## Inputs
@@ -41,7 +52,8 @@ All tracked `.md`; all `.tsv` under `results/` and the registered bundle paths, 
 |---|---|---|---|
 | three known defects | positive | the linter flags the same-strand figure, the matrix dimension, and the superseded silhouette | the linter cannot see what it exists to see; fix before trusting any output |
 | three known-good numbers | negative | numbers that provably come from landed tables are NOT flagged | the false-positive rate makes it unusable |
-| resolution rate per file | baseline | reported, so the operator can judge the signal | — |
+| resolution rate per file | baseline | reported, so the operator can judge the signal | - |
+| planted coincidence fixture | **negative** | a prose number equal to an unrelated table cell is reported as COINCIDENTAL_MATCH, never as resolved | the tool claims provenance it cannot establish; VOID |
 
 ## Reachability
 The PASS outcome is a defect list, which is attainable. Note the positive control is the design

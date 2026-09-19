@@ -42,7 +42,9 @@ Rules:
 Two tasks may run concurrently **only if all four hold**:
 
 1. **No shared writes.** Their declared `output_directory` paths are disjoint.
-2. **No unfinished-producer reads.** Neither reads an artifact whose producing task is not in `PASS`.
+2. **No unfinished-producer reads.** Neither reads an artifact that is not on a `TASK_STATE=PASS`
+   task's declared `CONSUMABLE_OUTPUTS` list. Note this gates on **task validity**, never on
+   scientific outcome: a refuted hypothesis still yields consumable outputs.
 3. **No population collision.** They do not both touch the same confirmatory population. Every task
    declares `populations_touched`; the coordinating session refuses the second one.
 4. **No criterion coupling.** Neither's threshold, bar or selection rule is chosen using the other's
@@ -77,12 +79,37 @@ seed and all input hashes regardless of where it ran.
 Every task session returns **exactly this**, and nothing else. Facts only. The task does not say what
 its numbers mean.
 
+> ⚠️ **Task validity and hypothesis truth are two different things and must never share a field.**
+> A task that executes perfectly and refutes its own hypothesis is a **successful task with a
+> negative result**. If that were reported as FAIL, the consumption gate in §3 would refuse to let
+> anything downstream read it, and an autonomous orchestrator would quietly discard a valid negative.
+> This project's negatives are among its best assets; losing one this way would be the worst failure
+> the system could have.
+
+**Two fields, always both:**
+
+```
+TASK_STATE:         PASS | STOP | INCONCLUSIVE | BLOCKED | VOID
+SCIENTIFIC_OUTCOME: SUPPORTS_H1 | SUPPORTS_H0 | FALSIFIED | BOUND | DESCRIPTIVE | NOT_APPLICABLE
+```
+
+`VOID` is reserved for a task whose **execution** is not trustworthy, and it is the only state that
+makes the result unusable. A task is VOID when a required positive control failed, preregistration
+post-dates job start, a forbidden input was read, or the declared rule changed during execution.
+
+A scientific negative is normally `TASK_STATE=PASS` with `SCIENTIFIC_OUTCOME=FALSIFIED` or `BOUND`.
+
 ```markdown
 # TASK REPORT — <task-id>
 
-STATE: PASS | FAIL | STOP | INCONCLUSIVE | BLOCKED
+TASK_STATE: PASS | STOP | INCONCLUSIVE | BLOCKED | VOID
+SCIENTIFIC_OUTCOME: SUPPORTS_H1 | SUPPORTS_H0 | FALSIFIED | BOUND | DESCRIPTIVE | NOT_APPLICABLE
 CRITERION: <the preregistered criterion, verbatim>
 MET: yes | no | not evaluable — <one line>
+
+## Consumable outputs
+<explicit list of outputs downstream tasks may read. Only populated when TASK_STATE=PASS.
+A VOID or BLOCKED task may still leave debugging artefacts; they are never consumable.>
 
 ## Numbers
 | quantity | value | unit | denominator | interval |
@@ -123,6 +150,29 @@ timestamp **preceding** its job submission timestamp, and every control in `PASS
 **Escalate to the operator, do not iterate, when:** the iteration budget is exhausted; a control
 fails; the declared PASS outcome is found unreachable; an input is missing or its hash does not
 match; or the task would need to change its own criterion.
+
+## 6a · What may serve as a blocking control
+
+⚠️ **A biological contrast may not be a blocking control unless it is independently established.**
+
+A control exists to show the **implementation** works. If a launcher says "effect X must remain
+significant" and X is one of the quantities under study, then a procedure that weakens X is
+indistinguishable from a broken instrument, and the task is pushed toward the expected biological
+answer. That is the exact failure this project has already paid for twice, once with a threshold
+fitted at the winner-flip point of its own sweep and once with a repaired gate whose rule class was
+motivated by the failed attempt.
+
+Admissible blocking controls, in order of preference:
+
+1. **Implementation reproduction** — the new code reproduces an existing landed number exactly.
+2. **Synthetic positive fixture** — a simulated dataset with a known effect under the declared
+   dependence structure; the instrument must recover it at a declared coverage.
+3. **Synthetic null fixture** — zero effect under the same structure; the instrument must contain
+   zero at the declared rate.
+4. **A named, independently established biological positive**, with the source cited in the launcher.
+   Naming it is what makes it admissible; "two families known to share the core" is not named.
+
+Everything else is a **diagnostic**, reported and never blocking.
 
 ## 7 · Standing prohibitions for every session
 

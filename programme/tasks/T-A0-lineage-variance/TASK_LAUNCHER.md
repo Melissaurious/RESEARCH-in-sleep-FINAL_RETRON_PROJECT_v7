@@ -37,7 +37,7 @@ n of the estimator used. **Registry lookup:** no prior work on this; nothing in 
 - inferential unit: component (observation); retron type and RT homolog group (resampling blocks)
 - **dependence structure:** components nest inside 21 dominant retron types; token-weighted effective
   type count is 9.3. Largest component holds 18.5% of pairs; 581 of 1,075 are singletons.
-- effective n, expected: between 9 and 25 depending on blocking
+- effective n: **not a single scalar for this estimator**; see the reporting requirement below
 
 ## Inputs
 | input | path | role |
@@ -52,11 +52,30 @@ The pair-level export. Pair counts overstate sample size by three orders of magn
 registry says never to infer from it.
 
 ## Controls — run FIRST and BLOCK
+
+⚠️ **No biological contrast is a blocking control here.** An earlier draft required G−U to survive
+blocking and P−T to lose it. Both are quantities under study. If G−U loses its interval under
+correct cluster-aware inference, that may be the answer, and a control demanding otherwise would
+push the variance procedure toward a preferred result. Per WORKING_RULES §6a:
+
 | control | type | must show | if it fails |
 |---|---|---|---|
-| G−U under blocking | positive | survives; it is favourable in 86.0% of components | the blocking is too aggressive; report and stop |
-| P−T under blocking | negative | loses significance; it is a within-type permutation arm | blocking is not removing the dependence it should |
-| existing unclustered intervals | baseline | reproduced exactly before any blocking is applied | the reader is not reading the file correctly; stop |
+| implementation reproduction | **positive** | the unclustered estimates and intervals reproduce the landed values exactly before any blocking is applied | the file is being read wrongly; VOID |
+| synthetic hierarchical positive fixture | **positive** | a known non-zero effect simulated under the declared component-in-type structure is recovered at the declared coverage | the estimator cannot see an effect that is there; VOID |
+| synthetic null fixture | **negative** | zero effect under the same structure contains zero at the declared rate | the intervals are miscalibrated; VOID |
+
+**Diagnostics, reported and never blocking:** leave-one-type-out sensitivity for every type; the
+direction and magnitude of each contrast under each blocking scheme.
+
+## Effective sample size — report the structure, not one scalar
+
+Do **not** declare a single effective n. Report: the number of type blocks; the number of
+homolog-group blocks; component counts per block; the concentration of pairs and tokens across
+blocks; and leave-one-block influence. If an effective-n approximation is given, name its formula
+and say which estimator it approximates.
+
+With only 21 type blocks, report **at least two** cluster-aware approaches, for example a block
+bootstrap alongside a leave-one-type-out jackknife, rather than trusting one interval generator.
 
 ## Reachability
 The PASS outcome is a set of intervals, which is attainable for any input. There is no unreachable
