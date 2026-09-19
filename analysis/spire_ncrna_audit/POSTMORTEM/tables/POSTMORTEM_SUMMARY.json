@@ -1,0 +1,34 @@
+{
+  "specificity": {
+    "retron_real": "140/164",
+    "panel_real": "42/80",
+    "retron_rate": 0.8536585365853658,
+    "panel_rate": 0.525,
+    "odds_ratio": 5.277777777777778,
+    "fisher_p": 1.0059973939515518e-07
+  },
+  "positional": {
+    "members": 1051,
+    "method_iou50": 343,
+    "P0_iou50": 901,
+    "Ptype_iou50": 969,
+    "method_calls": 734,
+    "method_calls_mostly_inside_P0": 356,
+    "method_hits_iou50_inside_P0": 234,
+    "ref_start_sd": 56.779730656461595,
+    "ref_end_sd": 42.41426574672445,
+    "ref_start_iqr": 89.0,
+    "ref_end_iqr": 39.0,
+    "ref_within_P0_pm20": 0.4586108468125595
+  },
+  "iiia_instance_classes": {
+    "THE_REFERENCE_NCRNA": 385,
+    "UNRESOLVED_CONSERVED_ELEMENT": 4,
+    "LEADER_UTR_OR_RBS_REGION": 3
+  },
+  "iiia_group_classes": {
+    "THE_REFERENCE_NCRNA": 32,
+    "LEADER_UTR_OR_RBS_REGION": 1,
+    "UNRESOLVED_CONSERVED_ELEMENT": 1
+  }
+}

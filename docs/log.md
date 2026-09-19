@@ -92,3 +92,11 @@ Notes that are not gates (WA-G.1).
   on DEV. Held-out: real 73.8 % vs distal control 2.5 %, precision 96.7 %, stability 75.7 %, but enrichment 2.88× chance
   (gate 3×) and 343 vs 901 IoU ≥ 0.5 against the fixed positional prior −193…−24; non-retron RT controls 2/4.
   No unresolved pilot; 509-group scale-up and the Mestre-style stage remain inactive.
+
+- **2026-09-19 · SPIRE post-mortem → branch CLOSED (`analysis/spire_ncrna_audit/POSTMORTEM/`).** Label
+  `RETRON_ENRICHED_NCRNA_SUBMOTIF`: the CMfinder motif is a ~90-nt sub-element of the registered retron ncRNA (97.9 % overlap,
+  centre −116); rule passes 140/164 retron vs 42/80 non-retron groups (Fisher p = 1e-7) but non-retron passes mostly sit on the
+  RT start/RBS (a filter leak: first 50 nt of the RT ORF exempt) or intron-like structure (GII). III-A "failure" was boundary,
+  not element (385/392 instances inside the ncRNA). Positional: per-type DEV prior 969/1,051 IoU ≥ 0.5 vs method 343 — handed to
+  the boundary project. Erratum: NaN-ignoring overlap in Round-2 correctness; group-level numbers unchanged; decision unchanged.
+  977-set provenance and 7 R3 cases remain open.

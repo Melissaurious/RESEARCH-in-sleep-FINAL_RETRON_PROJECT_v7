@@ -5,7 +5,9 @@
 > The "annotation-independent Infernal rescan" recommendation and any "global search-space bug" reading are
 > **withdrawn**: see `RECONCILIATION_23.md` (12 R1 / 4 R2 / 7 R3; no global claim) and `Z6_DENOVO/`.
 > The negative result on the released SPIRE rule stands.
-> **Current results:** `Z6_DENOVO/RESULTS.md` (Z6 population, homolog groups, CMfinder / mLocARNA / Q-INS-i
+> **Closed (2026-09-19):** Round 2 `ROUND2_FAIL_STOP` (`ROUND2/RESULTS.md`); post-mortem label
+> `RETRON_ENRICHED_NCRNA_SUBMOTIF` (`POSTMORTEM/RESULTS.md`). SPIRE de novo discovery branch closed.
+> **Earlier results:** `Z6_DENOVO/RESULTS.md` (Z6 population, homolog groups, CMfinder / mLocARNA / Q-INS-i
 > benchmark with distal controls and CM seeding; no credible new RT–ncRNA association; second bounded round proposed).
 
 

@@ -1,0 +1,103 @@
+           rt_class  groups  real_pass  ctrl_pass  real_rate  ctrl_rate
+0          RVT-AbiK       8          4          0      0.500      0.000
+1         RVT-AbiP2       8          1          0      0.125      0.000
+2        RVT-CRISPR       8          1          0      0.125      0.000
+3   RVT-CRISPR-like       8          5          0      0.625      0.000
+4          RVT-DGRs       8          6          1      0.750      0.125
+5           RVT-GII       8          4          0      0.500      0.000
+6           RVT-UG2       8          5          0      0.625      0.000
+7           RVT-UG3       8          5          1      0.625      0.125
+8           RVT-UG5       8          8          2      1.000      0.250
+9           RVT-UG8       8          3          0      0.375      0.000
+10           Retron     164        140          2      0.854      0.012
+           rt_class  instances  groups  centre_median  centre_iqr  len_median  rt_orf_overlap  nonrt_cds_frac  rbs_region  registered_ncrna  own_ref  ss_bp_median  cov_supported  set_centre_sd_median  gc_real_median
+0          RVT-AbiK         31       4           9.50      29.250       114.0           0.806           0.029       0.613             0.000    0.000          18.0          0.000                 9.176           0.290
+1         RVT-AbiP2          6       1          35.75      51.500        98.5           1.000           0.000       0.500             0.000    0.000          11.0          0.000                32.019           0.414
+2        RVT-CRISPR          6       1          34.75       1.250        55.0           0.833           0.167       0.000             0.000    0.000          11.0          0.000                38.240           0.460
+3   RVT-CRISPR-like         38       5         -23.00     204.250        70.0           0.500           0.129       0.368             0.000    0.000          17.0          0.000                14.442           0.567
+4          RVT-DGRs         56       6        -220.75     142.250        66.0           0.018           0.142       0.018             0.000    0.000          15.0          0.179                30.987           0.454
+5           RVT-GII         61       4        -142.00     254.000        71.0           0.328           0.079       0.311             0.000    0.000          23.0          1.000                25.607           0.490
+6           RVT-UG2         64       5        -171.75     137.625        84.0           0.156           0.086       0.156             0.000    0.000          20.0          0.609                18.409           0.438
+7           RVT-UG3         48       5          37.00      41.500        56.5           0.833           0.000       0.104             0.000    0.000           7.0          0.000                 8.475           0.370
+8           RVT-UG5         71       8          31.00      17.500        67.0           1.000           0.002       0.704             0.000    0.000           7.0          0.000                 2.643           0.386
+9           RVT-UG8         35       3          16.50      18.000        70.0           1.000           0.204       0.514             0.000    0.000           4.0          0.000                 0.629           0.331
+10           Retron       1793     140        -116.00      76.500        88.0           0.108           0.033       0.228             0.979    0.979          25.0          0.400                18.074             NaN
+{
+  "specificity": {
+    "retron_real": "140/164",
+    "panel_real": "42/80",
+    "retron_rate": 0.8536585365853658,
+    "panel_rate": 0.525,
+    "odds_ratio": 5.277777777777778,
+    "fisher_p": 1.0059973939515518e-07
+  },
+  "positional": {
+    "members": 1051,
+    "method_iou50": 343,
+    "P0_iou50": 901,
+    "Ptype_iou50": 969,
+    "method_calls": 734,
+    "method_calls_mostly_inside_P0": 356,
+    "method_hits_iou50_inside_P0": 234,
+    "ref_start_sd": 56.779730656461595,
+    "ref_end_sd": 42.41426574672445,
+    "ref_start_iqr": 89.0,
+    "ref_end_iqr": 39.0,
+    "ref_within_P0_pm20": 0.4586108468125595
+  },
+  "iiia_instance_classes": {
+    "THE_REFERENCE_NCRNA": 385,
+    "UNRESOLVED_CONSERVED_ELEMENT": 4,
+    "LEADER_UTR_OR_RBS_REGION": 3
+  },
+  "iiia_group_classes": {
+    "THE_REFERENCE_NCRNA": 32,
+    "LEADER_UTR_OR_RBS_REGION": 1,
+    "UNRESOLVED_CONSERVED_ELEMENT": 1
+  }
+}
+                 gid  instances                   class_modal  centre_median              ref_topology  ref_from_median  ref_to_median  offset_median
+0   09ea76dd9b8fdd4d          3      LEADER_UTR_OR_RBS_REGION         -44.00           other_uncertain           1192.0         1466.0       -1373.50
+1   125ed024481686be         20           THE_REFERENCE_NCRNA         -76.50         overlaps_RT_start           -247.5           21.0          34.75
+2   1a20d44d94436c19         19           THE_REFERENCE_NCRNA        -199.00                  upstream           -228.0          -10.0         -74.50
+3   1c6f584d09f0a5e6         19           THE_REFERENCE_NCRNA         -62.00         overlaps_RT_start           -232.0           21.0          43.50
+4   252d3ea9cf1c984b         15           THE_REFERENCE_NCRNA        -127.50                  upstream           -238.0         -104.0          42.00
+5   2613b4c80ec96f07          7           THE_REFERENCE_NCRNA         -44.00         overlaps_RT_start           -248.0           21.0          71.00
+6   29c9146923c64dba         20           THE_REFERENCE_NCRNA        -114.50         overlaps_RT_start           -244.0           15.0          -0.50
+7   318981fcc560bcd4         19           THE_REFERENCE_NCRNA        -162.00                  upstream           -233.0          -17.0         -38.00
+8   35e8a719e7fd949b         10           THE_REFERENCE_NCRNA         -78.50         overlaps_RT_start           -291.0           20.0          56.75
+9   4deaafe66612f533          7           THE_REFERENCE_NCRNA        -195.50         overlaps_RT_start           -261.0           21.0         -76.50
+10  4f2157d3ded3ffae          9           THE_REFERENCE_NCRNA         -90.00         overlaps_RT_start           -244.0           15.0          23.50
+11  52c6d134f8abe7a0          8           THE_REFERENCE_NCRNA         -42.00         overlaps_RT_start           -236.5           20.0          65.00
+12  5b0aa8588cbc7388         19           THE_REFERENCE_NCRNA         -58.00  overlapping_adjacent_CDS           -178.0          -39.0          50.50
+13  5c694a9dbecbf1a5          6           THE_REFERENCE_NCRNA         -62.25  overlapping_adjacent_CDS           -184.0          -38.0          48.00
+14  6687b64b00cdcc94         16           THE_REFERENCE_NCRNA        -139.75                  upstream           -184.5           -7.0         -44.00
+15  69239d0154af3bfd          9           THE_REFERENCE_NCRNA         -41.00         overlaps_RT_start           -247.0           21.0          71.50
+16  6ce60f5761400513          7           THE_REFERENCE_NCRNA        -133.00         overlaps_RT_start           -238.0           21.0         -24.50
+17  7cbd1dbfc01a08c1         18           THE_REFERENCE_NCRNA         -68.50  overlapping_adjacent_CDS           -186.0          -44.5          52.50
+18  87c68f39addcee63          6           THE_REFERENCE_NCRNA        -126.00         overlaps_RT_start           -246.0           21.0         -13.50
+19  8ea0f62d7be41161          9           THE_REFERENCE_NCRNA         -46.00         overlaps_RT_start           -246.0           21.0          68.00
+20  9c62f124538e32ab          6           THE_REFERENCE_NCRNA         -59.75         overlaps_RT_start           -220.5           23.0          39.50
+21  b0ff681bfbf1325f         20           THE_REFERENCE_NCRNA        -208.00                  upstream           -238.0         -106.5         -35.50
+22  b630657b1d23f4f3          8           THE_REFERENCE_NCRNA         -58.50  overlapping_adjacent_CDS           -191.0          -15.0          45.00
+23  b8eeae5f28771610          7           THE_REFERENCE_NCRNA          15.00         overlaps_RT_start           -249.0           21.0         128.00
+24  bac6c7563fc9cf37          7           THE_REFERENCE_NCRNA        -135.00         overlaps_RT_start           -220.0           21.0         -37.50
+25  c26da08c55d02a6a          4  UNRESOLVED_CONSERVED_ELEMENT          21.25           other_uncertain           1102.0         1384.5       -1222.75
+26  d23118e6dedf1b94         13           THE_REFERENCE_NCRNA         -65.50  overlapping_adjacent_CDS           -195.0          -33.0          49.50
+27  d81884f7ac0bc0bd          6           THE_REFERENCE_NCRNA         -88.75         overlaps_RT_start           -213.5           58.5         -10.50
+28  e0471f3ef2ba301b         11           THE_REFERENCE_NCRNA        -127.00  overlapping_adjacent_CDS           -218.0          -80.0          20.50
+29  e923f79b3ab4fe4a         19           THE_REFERENCE_NCRNA         -75.00         overlaps_RT_start           -222.0           21.0          24.50
+30  edf2cb5ceb162a6e         18           THE_REFERENCE_NCRNA         -68.00         overlaps_RT_start           -257.0           24.0          48.50
+31  ee69c83053518f46          8           THE_REFERENCE_NCRNA        -191.25         overlaps_RT_start           -253.5           21.0         -74.25
+32  f912462ef8e39dad          8           THE_REFERENCE_NCRNA         -93.50                  upstream           -221.0           -5.0          19.50
+33  fcc32fc7cc5e7a2b         11           THE_REFERENCE_NCRNA         -64.50  overlapping_adjacent_CDS           -187.0          -40.0          48.00
+  type_modal  members  method     P0  Ptype  ref_start_sd  ref_end_sd
+0        I-A       68   0.765  0.956  0.971        21.880      18.507
+1        I-B       66   0.364  0.697  0.682        59.839      62.300
+2        I-C      331   0.154  0.924  0.937        23.848      22.846
+3       II-A       60   0.600  0.967  0.967        29.180      30.468
+4      III-A      254   0.004  0.878  0.929        35.337      49.624
+5         IV       20   0.950  0.900  0.900        27.767      28.112
+6         IX       20   1.000  1.000  1.000         3.651       0.000
+7          V       10   0.100  0.000  1.000        26.742      25.891
+8       XIII      222   0.626  0.743  0.928        43.672      38.064
