@@ -1,7 +1,8 @@
 # CURRENT PROJECT STATE
 
 **Read this first.** It is the single place that says where the project is. Updated
-2026-09-18, at the close of `g7a` — the historical RT0–RT7 bridge.
+2026-09-19, at the **close of Stage 2**. Closure record:
+`docs/decisions/2026-09-19_stage2_closed.md`.
 
 Every number below was read from a landed artifact, not from memory. The artifact is named
 beside it so you can re-check it in one command.
@@ -13,7 +14,7 @@ beside it so you can re-check it in one command.
 | stage | state |
 |---|---|
 | Stage 1 — database characterization | **CLOSED**. `results/dbchar_g1…g7b`. |
-| Stage 2 — RT0–RT7 definition / mapper | **validation CLOSED at Endpoint A**; production frozen; catalogue applied. |
+| **Stage 2 — RT0–RT7 definition / mapper** | **CLOSED 2026-09-19, with explicit residual limitations** (§1a). No further Stage-2 analysis. |
 | `g1` history and definition | landed |
 | `g2` reference reconstruction | landed |
 | `g3` prior-method replication | landed |
@@ -22,11 +23,20 @@ beside it so you can re-check it in one command.
 | **`g4b` production freeze** | **COMPLETE** |
 | **`g5a` eligibility census** | **COMPLETE** |
 | **`g5` catalogue application** | **COMPLETE** |
-| **`g6` family architecture** | **CLOSED as a reproducible DESCRIPTIVE analysis. BS-15 independent review OPEN — see §5.9.** |
-| **`g7a` historical RT0–RT7 bridge** | **COMPLETE — the historical track is TERMINAL. Independent review gate OPEN — see §5.7a.** |
-| `g7b` structural + published comparators | **NOT STARTED** |
+| **`g6` family architecture** | **CLOSED — descriptive concordance only. Independent review PASS_WITH_REQUIRED_REPAIRS 6/10, 0 blockers; errata applied — see §5.8–5.9.** |
+| **`g7a` historical RT0–RT7 bridge** | **CLOSED — TERMINAL as workflow closure (not complete historical recovery). Independent review PASS_WITH_REQUIRED_REPAIRS 7/10, 0 blockers; errata applied — see §5.7.** |
+| `g7b` structural + published comparators | **NOT STARTED** — not a condition of Stage-2 closure |
+| Stage 3A structural | **independent and untouched** by Stage 2 |
 
-Do not start `g6` without reading `results/rt07_g5_catalogue_application/docs/G6_READINESS.md`.
+### 1a · Stage 2 closure — exact wording and residual limitations
+
+> **Stage 2 is CLOSED.** It closes with explicit residual limitations that are part of the
+> closed record: **(1) RT0 UNRESOLVED; (2) RT1 UNRESOLVED; (3) RT2 PARTIAL; (4) RT6 separable
+> only jointly with RT5; (5) g6 limited to descriptive concordance / bounded-use evidence;
+> (6) Stage 3 independent and untouched.** Closure is workflow closure for the current
+> instrument and evidence set, not complete recovery of RT0–RT7.
+
+Record: `docs/decisions/2026-09-19_stage2_closed.md`. **Do not start new Stage-2 analysis.**
 
 `LAUNCHER_02`'s `g7` was split into `g7a` (the historical bridge, now closed) and `g7b` (the
 remaining comparator campaign), recorded in
@@ -108,12 +118,13 @@ RT0–RT7 architecture.
    sequences labelled F, state S was MAPPED in X % of inspectable sequences."*
 6. **`MULTI` is its own population** and is never folded into a single family.
 7. **Historical RT0–RT7 is CLOSED at `g7a`, and production still emits `state_id` only.**
-   The bridge was measured and the track is terminal — **4 `ESTABLISHED`, 2 `PARTIAL`,
-   2 `UNRESOLVED`**:
+   The bridge was measured and the track is `TERMINAL` — **meaning workflow closure for the
+   current instrument and evidence set, not complete historical recovery** — with
+   **4 `ESTABLISHED`, 2 `PARTIAL`, 2 `UNRESOLVED`**, all upheld on independent review:
 
    | | |
    |---|---|
-   | `ESTABLISHED OPERATIONAL CORRESPONDENCE` | **RT3, RT4, RT5, RT7** |
+   | `ESTABLISHED OPERATIONAL CORRESPONDENCE` | **RT3** (qualified), **RT4** (frame-unstable: `SPLIT_INTO_3` in the independent frame), **RT5** (named jointly RT5+RT6), **RT7** (narrowed wording) |
    | `PARTIAL / INTERPRETIVE CORRESPONDENCE` | **RT2**; **RT6** (only jointly with RT5) |
    | `UNRESOLVED / NOT IDENTIFIABLE` | **RT0, RT1** |
 
@@ -121,24 +132,24 @@ RT0–RT7 architecture.
    **97–363**, which is why RT0 (≤85) and RT1 (39–61) can have no operational boundary — a
    statement about the instrument, not the biology.
    The crosswalk of record is `results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv`;
-   **what downstream work may say per label** is `tables/g7a_closure_decision.tsv` and it is
-   binding. `results/rt07_g4b_production_mapper/control/CROSSWALK_RT0_RT7.tsv` is deliberately
+   **what downstream work may say per label** is now
+   **`docs/errata/g7a_closure_decision_erratum_2026-09-19.tsv`**, which supersedes the frozen
+   `tables/g7a_closure_decision.tsv` `downstream_may_say` column and is binding. `results/rt07_g4b_production_mapper/control/CROSSWALK_RT0_RT7.tsv` is deliberately
    **unchanged and still `UNRESOLVED`** — production carries no historical label.
    Decision: `docs/decisions/2026-09-18_stage2_g7a_rt0_rt7_closure.md`.
 
-   **7a · The g7a independent-review gate is OPEN. The eight statuses above are UNTESTED.**
-   `results/rt07_g7a_rt0_rt7_bridge/PROVENANCE.md` records that the bundle has had **no
-   adversarial pass**. An attempt on 2026-09-18 **produced no scientific review**: Codex
-   (preferred) hit an external usage limit with zero content, and the authorised Gemini
-   fallback returned transient **503**s and then **429 quota exhaustion**, yielding **0 of 7
-   sections**. The only emitted text is a 555-character fragment stopping mid-word in section
-   A/RT0, labelled `INCOMPLETE_REVIEW_FRAGMENT — NOT SCIENTIFIC REVIEW`; it confirms and refutes
-   nothing. **Failure is not tacit acceptance**, and **no status was changed** on its basis.
-   Durable record: `review-stage/INDEPENDENT_REVIEW_REQUEST_g7a.md` and
-   `review-stage/g7a_review_packet/`. Infrastructure causes, kept separate:
-   `docs/INFRASTRUCTURE_INCIDENTS.md` INF-1. Do **not** call Gemini during the exhausted quota
-   window; Codex remains preferred.
-8. **`g6` is CLOSED, and its headline is a BRACKET, not a number.** Split-half reproducibility
+   **7a · The g7a independent review is COMPLETE: `PASS_WITH_REQUIRED_REPAIRS`, 7/10, 0
+   blockers.** Codex `gpt-5.6-sol`, read-only, thread `01a0b9a1`, same packet as the failed
+   2026-09-18 attempt. **All eight statuses upheld; none changed. RT0 and RT1 remain
+   UNRESOLVED** for historical *and* instrumental reasons; no inferential resolution is
+   permitted — only primary historical evidence (e.g. Malik 1999, not held) could change them.
+   The 5 required repairs are errata: Route C is corroboration of placement, not independent
+   historical replication; Xiong X05/X06 are source-stated motif-set correspondences; RT4's
+   frame instability is carried; RT7's wording is narrowed; `LAUNCHER_03`'s withdrawn RT0
+   statement is removed. Records: `review-stage/INDEPENDENT_REVIEW_RESULT_g7a.md`,
+   `docs/decisions/2026-09-19_stage2_g7a_review_errata.md`.
+8. **`g6` is CLOSED as descriptive concordance.** Read every statement below through
+   `docs/decisions/2026-09-19_stage2_g6_review_errata.md`. Split-half reproducibility
    of the between-group state-profile structure, on halves that share no sequence cluster:
 
    | arm | ρ | vs sequence-level null | vs cluster-level null |
@@ -148,34 +159,35 @@ RT0–RT7 architecture.
    | within-Retron, PADLOC subtype | **0.9595** | 0.9782 ✗ | 0.6687 ✓ |
    | within-Retron, label-free | 0.8061 | — | `UNDERPOWERED` |
 
-   The declared sequence-level null was found **invalid** (99.92 % of clusters span one family,
-   so permuting at sequence level destroys a real nuisance structure) and replaced under the
-   one permitted repair cycle; it is **retained and reported**, and the replacement errs the
-   other way, so the two bracket the truth. **Every visibility-restricted and every
-   relatedness-collapsed analysis exceeds BOTH nulls** — so the structure is not an artefact of
-   the mapper's visibility gradient or of near-duplicate redundancy.
-   Bundle `results/rt07_g6_family_architecture/`; nothing there carries a historical label, and
-   g7a was **not** read.
-9. **`g6` has had NO independent review, and what it may be used for is bounded.**
-   The g6 bundle **and** its self-audit were both produced by `claude-opus-5[1m]`, so BS-15 is
-   **not** satisfied — the self-audit is a Layer-2 preflight, not the adversarial pass. The
-   first attempt (cross-vendor `codex`, read-only) **failed on an external usage limit and
-   produced zero review content**; that failure is **not** tacit acceptance and may not be
-   cited in either direction.
+   **What this supports — governing (E-g6-1):** the family grouping is essentially MyRT-derived
+   (369,370 of 369,381), so g6 supports **reproducibility / concordance of the mapper-derived
+   descriptor across MyRT-defined strata and related subtype groupings — not independent
+   discovery of biological RT family structure.** The two nulls are sensitivity analyses with
+   opposite biases, **not proven bounds**; "the truth is bracketed" and "the structure is real"
+   are **withdrawn**. The six visibility-restricted / relatedness-collapsed rows exceed every
+   sampled replicate of both nulls, but 60 permutations cannot calibrate a 1 % tail and there is
+   no multiplicity control across 13 analyses. The visibility control conditions on scalar MAPPED
+   fraction only. Leakage is carried in both units: **11.2 % of hits; 19.8 % of sampled
+   queries**. **26 of 50** retron subtype strata did not enter a distance matrix (not 20). The
+   rank statistic uses **non-standard tie handling**; standard Spearman would differ slightly;
+   the per-half vectors were not landed, so the result is **frozen as reported** and not re-run.
+   Bundle `results/rt07_g6_family_architecture/`; nothing there carries a historical label.
+9. **`g6` independent review is COMPLETE: `PASS_WITH_REQUIRED_REPAIRS`, 6/10, 0 blockers.**
+   Codex `gpt-5.6-sol`, read-only, thread `01a0b99f` — vendor-disjoint from the producer, so
+   **BS-15 is satisfied**. C1–C10: 4 confirmed, 6 partially confirmed, 0 refuted. The bounded-use
+   table is **upheld with no row moving**:
 
    | use | status |
    |---|---|
    | g6 as a reproducible **descriptive** analysis | **CLOSED** |
-   | descriptive figures, with the documented qualifications | **PERMITTED** |
+   | descriptive figures | **PERMITTED only with the erratum captions** (MyRT provenance, both leakage units, 26/50, null limits) |
    | Stage-3 structural mapping on the frozen `state_id` system, with visibility/occupancy caveats | **PERMITTED** |
-   | thesis-level biological claims | **BLOCKED** |
+   | thesis-level biological claims | **BLOCKED** — on the evidence, not merely pending review |
    | classification reassessment | **BLOCKED** |
    | any claim of independent validation | **BLOCKED** |
 
-   No further g6 science, and the bundle is **not** altered to anticipate the reviewer. Retry is
-   the same packet against the same reviewer after 2026-09-19 12:16.
-   Records: `docs/decisions/2026-09-18_stage2_g6_bs15_open_and_bounded_use.md`,
-   `docs/BLOCKED.md`, packet `review-stage/INDEPENDENT_REVIEW_REQUEST_g6.md`.
+   Records: `review-stage/INDEPENDENT_REVIEW_RESULT_g6.md`,
+   `docs/decisions/2026-09-19_stage2_g6_review_errata.md`.
 10. **Scope is `-M 50` only.**
 
 ## 6 · Canonical datasets
@@ -202,8 +214,10 @@ Full registry with sizes, row counts and sha256: **`docs/DATASET_REGISTRY.md`**.
 2. `docs/PROJECT_ANALYSIS_PRINCIPLES.md` — 40 methodological principles from Stage 2
 3. `docs/PROJECT_MAP.md` — what lives where
 4. `idea-stage/docs/research_contract.md` — the single claim authority
-5. `launchers/LAUNCHER_02_rt0_rt7_definition.md` — the active track
-6. `results/rt07_g5_catalogue_application/docs/G6_READINESS.md` — what g6 may ask
-7. `results/rt07_g7a_rt0_rt7_bridge/tables/g7a_closure_decision.tsv` — **what you may say about
-   each historical RT0–RT7 label.** Binding, and shorter than it looks
-8. `docs/decisions/` — settled decisions, newest last
+5. `docs/decisions/2026-09-19_stage2_closed.md` — **Stage 2 closure and its residual limitations**
+6. `launchers/LAUNCHER_02_rt0_rt7_definition.md` — the Stage-2 track (now closed)
+7. `docs/decisions/2026-09-19_stage2_g6_review_errata.md` — how every g6 statement must be read
+8. `docs/errata/g7a_closure_decision_erratum_2026-09-19.tsv` — **what you may say about each
+   historical RT0–RT7 label.** Binding; supersedes the frozen `g7a_closure_decision.tsv` wording
+9. `review-stage/INDEPENDENT_REVIEW_RESULT_g6.md`, `…_g7a.md` — the verbatim independent reviews
+10. `docs/decisions/` — settled decisions, newest last
