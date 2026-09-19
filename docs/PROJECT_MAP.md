@@ -16,7 +16,7 @@ project root.
 | `docs/DBCHAR_WORKBENCH.md` | the Stage-1 thesis-writing workbench, which is local only |
 | `CLAUDE.md` | operating context and project conventions |
 | `idea-stage/docs/research_contract.md` | the single claim authority |
-| `launchers/LAUNCHER_02_rt0_rt7_definition.md` | the active track: objective, gates, autonomy envelope |
+| `launchers/LAUNCHER_02_rt0_rt7_definition.md` | the Stage-2 track — **CLOSED 2026-09-19** (`docs/decisions/2026-09-19_stage2_closed.md`) |
 
 ## 2 · Governance
 
@@ -27,7 +27,8 @@ project root.
 | `docs/decisions/` | settled operator decisions, chronological. **Superseded by new records, never rewritten** |
 | `docs/BLOCKED.md` | open questions with recommended defaults |
 | `retros/` | one retro per gate |
-| `review-stage/` | independent-review requests, plus the **manifests and external pinned roots** that make bundle freezes verifiable |
+| `review-stage/` | independent-review requests and **results** (`INDEPENDENT_REVIEW_RESULT_*.md`, verbatim), plus the **manifests and external pinned roots** that make bundle freezes verifiable |
+| `docs/errata/` | machine-readable errata that supersede frozen interpretive columns without touching the sealed bundle |
 
 ## 3 · Results — one directory per landed gate
 
@@ -54,8 +55,8 @@ Every bundle carries `README.md`, `PROVENANCE.md`, `MANIFEST.tsv`, `INPUTS.tsv`,
 | **`rt07_g4b_production_mapper`** | **the frozen production instrument** |
 | **`rt07_g5a_eligibility_census`** | **the frozen denominator** |
 | **`rt07_g5_catalogue_application`** | **the canonical mapped dataset** |
-| **`rt07_g6_family_architecture`** | **reproducible organization in frozen `state_id` space — terminal** |
-| **`rt07_g7a_rt0_rt7_bridge`** | **the historical RT0–RT7 crosswalk of record — terminal** |
+| **`rt07_g6_family_architecture`** | **descriptive concordance of the mapper-derived descriptor across MyRT-defined strata — not independent discovery of family structure.** Read through `docs/decisions/2026-09-19_stage2_g6_review_errata.md` |
+| **`rt07_g7a_rt0_rt7_bridge`** | **the historical RT0–RT7 crosswalk of record — `TERMINAL` as workflow closure, not complete historical recovery; RT0/RT1 UNRESOLVED.** What may be said per label: `docs/errata/g7a_closure_decision_erratum_2026-09-19.tsv` |
 
 Superseded bundles are retained as audit history. They are **not** rebuilt to satisfy later
 packaging conventions; see `docs/decisions/2026-09-17_stage2_launcher_g4b_freeze_amendment.md` §2.
