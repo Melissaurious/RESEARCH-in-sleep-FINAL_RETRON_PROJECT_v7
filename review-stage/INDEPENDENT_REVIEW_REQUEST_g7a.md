@@ -1,5 +1,10 @@
 # INDEPENDENT REVIEW REQUEST — frozen g7a RT0–RT7 historical bridge — **GATE OPEN**
 
+> **SUPERSEDED 2026-09-19 — the review this packet requested has now been COMPLETED.**
+> Retry with this same packet, unchanged, against Codex (`gpt-5.6-sol`, read-only): **PASS_WITH_REQUIRED_REPAIRS, 7/10, 0 blockers**.
+> Result and verbatim review: `review-stage/INDEPENDENT_REVIEW_RESULT_g7a.md`. The text below is the historical record of the
+> failed 2026-09-18 attempt and is left exactly as it was.
+
 **Status: OPEN. NO INDEPENDENT SCIENTIFIC REVIEW WAS COMPLETED.**
 
 Object: `results/rt07_g7a_rt0_rt7_bridge/` — **frozen and unmodified throughout.**

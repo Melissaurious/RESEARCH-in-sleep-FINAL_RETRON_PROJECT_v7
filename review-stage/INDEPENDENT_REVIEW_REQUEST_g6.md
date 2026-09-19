@@ -1,5 +1,10 @@
 # INDEPENDENT REVIEW REQUEST — `rt07_g6_family_architecture` (BS-15) — **OPEN**
 
+> **SUPERSEDED 2026-09-19 — the review this packet requested has now been COMPLETED.**
+> Retry with this same packet, unchanged, against Codex (`gpt-5.6-sol`, read-only): **PASS_WITH_REQUIRED_REPAIRS, 6/10, 0 blockers**.
+> Result and verbatim review: `review-stage/INDEPENDENT_REVIEW_RESULT_g6.md`. The text below is the historical record of the
+> failed 2026-09-18 attempt and is left exactly as it was.
+
 **Status: OPEN. No independent scientific review has been produced.**
 
 This is the durable, git-tracked copy of the review packet. The working original the operator
