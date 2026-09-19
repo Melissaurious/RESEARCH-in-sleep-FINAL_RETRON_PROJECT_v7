@@ -1,5 +1,6 @@
 ---
 task_id: T-A23-crosspair-curation
+governance_base: b5443e1
 stage_id: S12
 title: Literature curation of measured cross-pair outcomes
 state: AUTHORIZED

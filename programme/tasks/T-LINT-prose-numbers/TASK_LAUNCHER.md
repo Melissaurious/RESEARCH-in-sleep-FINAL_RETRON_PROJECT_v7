@@ -1,5 +1,6 @@
 ---
 task_id: T-LINT-prose-numbers
+governance_base: b5443e1
 stage_id: S00
 title: Numeric provenance linter over prose
 state: AUTHORIZED

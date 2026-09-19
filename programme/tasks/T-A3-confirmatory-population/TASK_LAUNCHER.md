@@ -1,5 +1,6 @@
 ---
 task_id: T-A3-confirmatory-population
+governance_base: b5443e1
 stage_id: S00
 title: Freeze the pairing confirmatory population
 state: AWAITING_ADOPTION

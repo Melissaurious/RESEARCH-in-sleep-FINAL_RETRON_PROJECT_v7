@@ -1,5 +1,6 @@
 ---
 task_id: T-REG-asset-registration
+governance_base: b5443e1
 stage_id: S00
 title: Register the discovered asset base
 state: AUTHORIZED

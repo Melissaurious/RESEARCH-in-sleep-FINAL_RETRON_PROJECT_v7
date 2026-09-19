@@ -1,5 +1,6 @@
 ---
 task_id: T-A2-ladder-population
+governance_base: b5443e1
 stage_id: S10
 title: Counterfactual ladder on a fixed common population
 state: AUTHORIZED

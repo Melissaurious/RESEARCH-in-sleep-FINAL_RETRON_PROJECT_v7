@@ -1,0 +1,4 @@
+governance_base	b5443e1
+committed	2026-09-20
+branch	project-synthesis
+note	Task worktrees are based on branch main (94a1a78) and do NOT contain this layer. Sessions read it at its absolute path; the launch script supplies the path. Provenance is this commit id, recorded in every launcher.

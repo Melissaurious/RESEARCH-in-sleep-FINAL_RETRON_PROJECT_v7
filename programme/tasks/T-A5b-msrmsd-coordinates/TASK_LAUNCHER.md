@@ -1,5 +1,6 @@
 ---
 task_id: T-A5b-msrmsd-coordinates
+governance_base: b5443e1
 stage_id: S08
 title: msr/msd coordinates and RT-DNA extent, anchored on experimental RT-DNA
 state: AUTHORIZED

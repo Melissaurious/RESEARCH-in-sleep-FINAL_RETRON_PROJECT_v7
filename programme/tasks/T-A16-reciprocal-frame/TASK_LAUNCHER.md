@@ -1,5 +1,6 @@
 ---
 task_id: T-A16-reciprocal-frame
+governance_base: b5443e1
 stage_id: S02
 title: Reciprocal family-frame analysis of RT core content
 state: AUTHORIZED
