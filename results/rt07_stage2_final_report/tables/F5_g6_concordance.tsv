@@ -1,0 +1,14 @@
+arm	analysis_id	n_groups	rank_corr_ordinal_ties	null1_p99	null2_p99	exceeds_null1	exceeds_null2
+between_family	PRIMARY	36	0.9865	0.9906	0.9066	NO	YES
+between_family	CTRL-VIS[0.0,0.5)	20	0.9399	0.8855	0.6808	YES	YES
+between_family	CTRL-VIS[0.5,0.8)	25	0.9801	0.9671	0.6365	YES	YES
+between_family	CTRL-VIS[0.8,1.01)	11	0.9885	0.9752	0.8426	YES	YES
+between_family	CTRL-REL@0.90	33	0.9959	0.9824	0.9832	YES	YES
+between_family	CTRL-REL@0.50	27	0.9855	0.9668	0.9655	YES	YES
+between_family	CTRL-REL@0.30	24	0.9915	0.9708	0.9664	YES	YES
+between_family	CTRL-COMP[all_complete]	34	0.9819	0.9906	0.9113	NO	YES
+between_family	CTRL-COMP[all_partial]	19	0.9456	0.9839	0.9043	NO	YES
+between_family	CTRL-COMP[mixed_or_codon_evidence]	3	1.0000	1.0000	1.0000	NO	NO
+within_retron	DF_subtype	10	0.8917	0.9814	0.8158	NO	YES
+within_retron	PL_subtype	14	0.9595	0.9782	0.6687	NO	YES
+within_retron	LABEL_FREE	5	0.8061	0.9657	n/a	NO	NO

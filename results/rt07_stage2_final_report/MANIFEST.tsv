@@ -1,0 +1,32 @@
+artifact	script	command	unit	denominator
+DELIVERABLES_INDEX.md	scripts/build.py	see run.sh: build.py	document	n/a - assembled document; every number is resolved from a landed table
+figures/F1_review_trajectory.png	scripts/figures.py	see run.sh: figures.py	recorded independent review	reviews in tables/stage2_review_ledger.tsv
+figures/F1_review_trajectory.svg	scripts/figures.py	see run.sh: figures.py	recorded independent review	reviews in tables/stage2_review_ledger.tsv
+figures/F2_validation.png	scripts/figures.py	see run.sh: figures.py	sequence / control class	construction 219; UG25 28; controls 252 (carried)
+figures/F2_validation.svg	scripts/figures.py	see run.sh: figures.py	sequence / control class	construction 219; UG25 28; controls 252 (carried)
+figures/F3_match_state_sensitivity.png	scripts/figures.py	see run.sh: figures.py	(convention, family)	full consensus LENG per family (carried from g4a)
+figures/F3_match_state_sensitivity.svg	scripts/figures.py	see run.sh: figures.py	(convention, family)	full consensus LENG per family (carried from g4a)
+figures/F4_catalogue_application.png	scripts/figures.py	see run.sh: figures.py	exact RT / state call	catalogue, ELIGIBLE, and ELIGIBLE x 150 (carried from g5a/g5/g6)
+figures/F4_catalogue_application.svg	scripts/figures.py	see run.sh: figures.py	exact RT / state call	catalogue, ELIGIBLE, and ELIGIBLE x 150 (carried from g5a/g5/g6)
+figures/F5_g6_concordance.png	scripts/figures.py	see run.sh: figures.py	g6 analysis	13 analyses (carried from g6)
+figures/F5_g6_concordance.svg	scripts/figures.py	see run.sh: figures.py	g6 analysis	13 analyses (carried from g6)
+figures/F6_rt0_rt7_final.png	scripts/figures.py	see run.sh: figures.py	historical label on LtrA	8 historical labels; 150 anchor states (carried from g7a)
+figures/F6_rt0_rt7_final.svg	scripts/figures.py	see run.sh: figures.py	historical label on LtrA	8 historical labels; 150 anchor states (carried from g7a)
+report/STAGE2_TECHNICAL_REPORT.md	scripts/build.py	see run.sh: build.py	document	n/a - assembled document; every number is resolved from a landed table
+report/THESIS_DISCUSSION.md	scripts/build.py	see run.sh: build.py	document	n/a - assembled document; every number is resolved from a landed table
+report/THESIS_METHODS.md	scripts/build.py	see run.sh: build.py	document	n/a - assembled document; every number is resolved from a landed table
+report/THESIS_RESULTS.md	scripts/build.py	see run.sh: build.py	document	n/a - assembled document; every number is resolved from a landed table
+tables/F1_review_trajectory.tsv	scripts/figures.py	see run.sh: figures.py	recorded independent review	reviews in tables/stage2_review_ledger.tsv
+tables/F2_validation.tsv	scripts/figures.py	see run.sh: figures.py	sequence / control class	construction 219; UG25 28; controls 252 (carried)
+tables/F3_match_state_sensitivity.tsv	scripts/figures.py	see run.sh: figures.py	(convention, family)	full consensus LENG per family (carried from g4a)
+tables/F4_catalogue_application.tsv	scripts/figures.py	see run.sh: figures.py	exact RT / state call	catalogue, ELIGIBLE, and ELIGIBLE x 150 (carried from g5a/g5/g6)
+tables/F5_g6_concordance.tsv	scripts/figures.py	see run.sh: figures.py	g6 analysis	13 analyses (carried from g6)
+tables/F6_rt0_rt7_final.tsv	scripts/figures.py	see run.sh: figures.py	historical label on LtrA	8 historical labels; 150 anchor states (carried from g7a)
+tables/stage2_bundle_index.tsv	scripts/build.py	see run.sh: build.py	landed bundle	Stage-2 bundles this report relies on
+tables/stage2_claim_evidence_matrix.tsv	scripts/build.py	see run.sh: build.py	(claim, evidence value) link	n/a - one lookup per row; no rate
+tables/stage2_figure_plan.tsv	scripts/build.py	see run.sh: build.py	figure	n/a - one figure per row
+tables/stage2_frozen_parameters.tsv	scripts/build.py	see run.sh: build.py	frozen parameter	n/a - one parameter per row
+tables/stage2_negative_results.tsv	scripts/build.py	see run.sh: build.py	negative or null result	n/a - one result per row
+tables/stage2_resolved_values.tsv	scripts/build.py	see run.sh: build.py	resolved value	n/a - one lookup per row; no rate
+tables/stage2_review_ledger.tsv	scripts/build.py	see run.sh: build.py	recorded independent review	reviews recorded in docs/decisions and the g5 commit message
+tables/stage2_rt0_rt7_final.tsv	scripts/build.py	see run.sh: build.py	historical label	8 historical labels RT0-RT7

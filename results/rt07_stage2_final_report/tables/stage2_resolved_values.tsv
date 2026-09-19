@@ -1,0 +1,211 @@
+key	kind	source	selector	column	raw_value	rendered
+a2m_abia_all	TABLE	results/rt07_g4a_repaired/tables/g4a_hhmake_M_sensitivity.tsv	hhmake_M=a2m;family=AbiA	n_ALL_PARTNERS	0	0
+a2m_dgr_all	TABLE	results/rt07_g4a_repaired/tables/g4a_hhmake_M_sensitivity.tsv	hhmake_M=a2m;family=DGRs	n_ALL_PARTNERS	0	0
+a2m_gii_all	TABLE	results/rt07_g4a_repaired/tables/g4a_hhmake_M_sensitivity.tsv	hhmake_M=a2m;family=GII	n_ALL_PARTNERS	115	115
+cat_agree	TABLE	results/rt07_g4b_production_mapper/control/CATALYTIC_STATE_FROZEN.tsv	parameter=CONSTRUCTION_AGREEMENT	value	0.9857	0.9857
+cat_count	TABLE	results/rt07_g4b_production_mapper/control/CATALYTIC_STATE_FROZEN.tsv	parameter=CAT_STATE_COUNT	value	207	207
+cat_ltra	DOC	docs/decisions/2026-09-19_stage2_g7a_review_errata.md	literal present verbatim		`CAT_STATE` 262 maps to LtrA 306 (YADD)	LtrA 306 (YADD)
+cat_runner	TABLE	results/rt07_g4b_production_mapper/control/CATALYTIC_STATE_FROZEN.tsv	parameter=RUNNER_UP_STATE	value	136	136
+cat_state	TABLE	results/rt07_g4b_production_mapper/control/CATALYTIC_STATE_FROZEN.tsv	parameter=CAT_STATE	value	262	262
+closure_line	DOC	docs/decisions/2026-09-19_stage2_closed.md	literal present verbatim		**Closure is workflow closure, not complete recovery.**	Closure is workflow closure, not complete recovery.
+commit_closure	DOC	git:93a4e88	literal present verbatim		rt07: close Stage 2 with explicit residual limitations	93a4e88
+commit_errata	DOC	git:3a19e2e	literal present verbatim		rt07: apply the 13 required review repairs	3a19e2e
+commit_reviews	DOC	git:af7c405	literal present verbatim		rt07: record the completed independent reviews of g6 and g7a	af7c405
+cs_amb	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=call_state_AMBIGUOUS	value	2685768	2,685,768
+cs_del	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=call_state_DELETED_STATE	value	9944424	9,944,424
+cs_mapped	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=call_state_MAPPED	value	40217506	40,217,506
+cs_uns	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=call_state_UNSUPPORTED	value	2559452	2,559,452
+cv_cat_conf	TABLE	results/FINAL_PRE_UG25_VALIDATION_BUNDLE/tables/construction_validation_family.tsv	family=TOTAL	catalytic_confirmed	207	207
+cv_med_abia	TABLE	results/FINAL_PRE_UG25_VALIDATION_BUNDLE/tables/construction_validation_family.tsv	family=AbiA	median_mapped_fraction	0.4933	0.4933
+cv_med_gii	TABLE	results/FINAL_PRE_UG25_VALIDATION_BUNDLE/tables/construction_validation_family.tsv	family=GII	median_mapped_fraction	0.9500	0.9500
+cv_med_retron	TABLE	results/FINAL_PRE_UG25_VALIDATION_BUNDLE/tables/construction_validation_family.tsv	family=Retrons	median_mapped_fraction	0.4733	0.4733
+cv_n	TABLE	results/FINAL_PRE_UG25_VALIDATION_BUNDLE/tables/construction_validation_family.tsv	family=TOTAL	n	219	219
+cv_ok	TABLE	results/FINAL_PRE_UG25_VALIDATION_BUNDLE/tables/construction_validation_family.tsv	family=TOTAL	n_ok	217	217
+d_max	TABLE	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv	parameter=D_MAX	value	0.48	0.48
+d_random	TABLE	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv	parameter=D_RANDOM	value	0.067	0.067
+g1_aln_cols	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=aln_cols	raw_value	1441	1,441
+g1_aln_seqs	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=aln_seqs	raw_value	66	66
+g1_aln_subdomains	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=aln_subdomains	raw_value	0	0
+g1_aln_submitted	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=aln_submitted	raw_value	13-NOV-2000	13-NOV-2000
+g1_cells	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_cells	raw_value	192	192
+g1_cells_evidence	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_cells_evidence	raw_value	53	53
+g1_controls	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_controls	raw_value	9	9
+g1_derivable	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_derivable	raw_value	18	18
+g1_edges	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_edges	raw_value	12	12
+g1_edges_unheld	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_edges_unheld	raw_value	6	6
+g1_quotes	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_quotes	raw_value	36	36
+g1_quotes_bad	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_quotes_bad	raw_value	0	0
+g1_regions	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_regions	raw_value	32	32
+g1_rt0_verdict	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=rt0_verdict	raw_value	DERIVABLE_PROCEDURE	DERIVABLE_PROCEDURE
+g1_sources	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_sources	raw_value	6	6
+g1_stated_boundary	TABLE	results/rt07_g1_history_and_definition/tables/g1_resolved_values.tsv	key=n_stated_boundary	raw_value	1	1
+g2_b1_span	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv	frame1_block=1	frame1_ltra_span	39-61	39-61
+g2_b2_span	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv	frame1_block=2	frame1_ltra_span	79-123	79-123
+g2_b4_f1	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv	frame1_block=4	frame1_ltra_span	170-230	170-230
+g2_b4_f2	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv	frame1_block=4	frame2_ltra_span	173-197	173-197
+g2_b4_j	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv	frame1_block=4	jaccard_on_ltra_residues	0.410	0.410
+g2_b5_span	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv	frame1_block=5	frame1_ltra_span	304-347	304-347
+g2_b6_j	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv	frame1_block=6	jaccard_on_ltra_residues	1.000	1.000
+g2_b6_span	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv	frame1_block=6	frame1_ltra_span	356-361	356-361
+g2_blocks	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=n_blocks	raw_value	6	6
+g2_blocks_f2	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=n_blocks_f2	raw_value	7	7
+g2_cons	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=n_cons	raw_value	81	81
+g2_groups	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=n_groups	raw_value	4	4
+g2_kill_main	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=kill_main	raw_value	NOT TRIGGERED	NOT TRIGGERED
+g2_kill_verdict	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=kill_verdict	raw_value	NOT ESTABLISHED	NOT ESTABLISHED
+g2_median_j	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=median_j	raw_value	0.955	0.955
+g2_notrec	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=n_notrec	raw_value	2	2
+g2_one_to_one	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=one_to_one	raw_value	5	5
+g2_p_block	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=p_block	raw_value	0.6965	0.6965
+g2_p_cons	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=p_cons	raw_value	0.0050	0.0050
+g2_p_gap	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=p_gap	raw_value	0.0050	0.0050
+g2_part	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=n_part	raw_value	5	5
+g2_proteins	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=n_proteins	raw_value	66	66
+g2_rec	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=n_rec	raw_value	2	2
+g2_rt0_block	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=rt0_block	raw_value	NO	NO
+g2_seven_f1	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=seven_f1	raw_value	NO	NO
+g2_seven_f2	TABLE	results/rt07_g2_reference_reconstruction/tables/g2_resolved_values.tsv	key=seven_f2	raw_value	YES	YES
+g2l_score	DOC	docs/decisions/2026-09-17_stage2_g2l_transfer_review_FAILED.md	literal present verbatim		**Verdict: `FAIL/BLOCK`. Score: 4/10.**	FAIL/BLOCK, 4/10
+g3_anchor_seed_pct	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=anchor_seed_pct	raw_value	100.00	100.00
+g3_blocks_anchored	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=blocks_anchored	raw_value	4/29	4/29
+g3_circular	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=n_circular	raw_value	3	3
+g3_claims	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=n_claims	raw_value	13	13
+g3_collapsing	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=collapsing	raw_value	RT5 and RT6	RT5 and RT6
+g3_framemis	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=n_framemis	raw_value	1	1
+g3_gold_seed_pct	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=gold_seed_pct	raw_value	25.73	25.73
+g3_landmarks_inside	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=landmarks_inside	raw_value	27/28	27/28
+g3_nottest	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=n_nottest	raw_value	2	2
+g3_objmis	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=n_objmis	raw_value	2	2
+g3_partial	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=n_partial	raw_value	1	1
+g3_repro	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=n_repro	raw_value	2	2
+g3_rt0_alanine	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=rt0_alanine	raw_value	39	39
+g3_rt0_frame_extent	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=rt0_frame_extent	raw_value	53-361	53-361
+g3_rt0_verdict	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=rt0_verdict	raw_value	OBJECT_MISMATCH	OBJECT_MISMATCH
+g3_withdrawn	TABLE	results/rt07_g3_prior_method_replication/tables/g3_resolved_values.tsv	key=n_withdrawn	raw_value	2	2
+g4b_review	DOC	docs/decisions/2026-09-17_stage2_g4b_production_packaging.md	literal present verbatim		> **`PASS_WITH_REQUIRED_REPAIRS` · 9/10 · MAY g5 BEGIN: YES**	PASS_WITH_REQUIRED_REPAIRS, 9/10
+g5_abstained	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_headline.tsv	quantity=n_abstained	value	15279	15,279
+g5_ambig	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_status_counts.tsv	inspectability_status=AMBIGUOUS_MAPPING	n	6455	6,455
+g5_cat_conf	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_headline.tsv	quantity=n_cat_state_confirmed	value	343880	343,880
+g5_cat_mapped	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_headline.tsv	quantity=n_cat_state_mapped	value	356229	356,229
+g5_cat_ratio	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_headline.tsv	quantity=cat_confirmed_over_cat_mapped	value	0.9653	0.9653
+g5_failures	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_headline.tsv	quantity=n_tool_failures	value	0	0
+g5_inspectable	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_headline.tsv	quantity=n_inspectable	value	354102	354,102
+g5_mappable	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_status_counts.tsv	inspectability_status=MAPPABLE	n	341335	341,335
+g5_nosupp	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_status_counts.tsv	inspectability_status=NO_SUPPORTED_MAPPING	n	8824	8,824
+g5_partial	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_status_counts.tsv	inspectability_status=PARTIAL_MAPPING	n	12767	12,767
+g5_review	DOC	git:6f4a7fe	literal present verbatim		PASS_WITH_REQUIRED_REPAIRS, 8/10	PASS_WITH_REQUIRED_REPAIRS, 8/10
+g5_state_rows	TABLE	results/rt07_g5_catalogue_application/tables/g5_qc_headline.tsv	quantity=n_state_rows	value	55407150	55,407,150
+g5a_eligible	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=G5_ELIGIBLE_N	value	369381	369,381
+g5a_frac	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=eligible_fraction	value	0.736463	0.736463
+g5a_ineligible	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=n_ineligible	value	132180	132,180
+g5a_nonstd	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=n_non_standard_residue	value	23741	23,741
+g5a_short	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=n_below_min_length	value	108439	108,439
+g5a_total	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=n_total_exact_rt	value	501561	501,561
+g6_c2	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		(C2: 61 groups, ρ = 0.8689, NULL-2 p99 = 0.8779)	61 groups, ρ = 0.8689 against NULL-2 p99 = 0.8779
+g6_clusters	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=clusters_primary_id0.90	value	181696	181,696
+g6_ctrl_exceed_both	DERIVED	(see formula)	count(rows of g6_between_family_rho.tsv with analysis_id starting CTRL-VIS or CTRL-REL and exceeds_null1=YES and exceeds_null2=YES)		6	6
+g6_df_groups	TABLE	results/rt07_g6_family_architecture/tables/g6_within_retron_rho.tsv	analysis_id=DF_subtype	n_groups	10	10
+g6_df_rho	TABLE	results/rt07_g6_family_architecture/tables/g6_within_retron_rho.tsv	analysis_id=DF_subtype	rho	0.8917	0.8917
+g6_families	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=families_total	value	42	42
+g6_groups	TABLE	results/rt07_g6_family_architecture/tables/g6_between_family_rho.tsv	analysis_id=PRIMARY	n_groups	36	36
+g6_leak_hits	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		**11.2 %** (11.22 %, of 14,943 hits)	11.2% of 14,943 retrieved hits
+g6_leak_queries	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		**19.8 %** (595 / 3,000)	19.8% (595 of 3,000 sampled queries)
+g6_lf_rho	TABLE	results/rt07_g6_family_architecture/tables/g6_within_retron_rho.tsv	analysis_id=LABEL_FREE	rho	0.8061	0.8061
+g6_lf_verdict	TABLE	results/rt07_g6_family_architecture/tables/g6_terminal_decision.tsv	arm=within_retron;rho=0.8061	terminal_verdict	UNDERPOWERED	UNDERPOWERED
+g6_n_analyses	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		across the **13** analyses	13
+g6_nseq	TABLE	results/rt07_g6_family_architecture/tables/g6_between_family_rho.tsv	analysis_id=PRIMARY	n_sequences	353248	353,248
+g6_null1	TABLE	results/rt07_g6_family_architecture/tables/g6_between_family_rho.tsv	analysis_id=PRIMARY	null1_p99	0.9906	0.9906
+g6_null2	TABLE	results/rt07_g6_family_architecture/tables/g6_between_family_rho.tsv	analysis_id=PRIMARY	null2_p99	0.9066	0.9066
+g6_pcpos_bundle	DOC	results/rt07_g6_family_architecture/tables/g6_controls.tsv	literal present verbatim		Spearman rho = 0.9230	0.9230
+g6_pcpos_result	TABLE	results/rt07_g6_family_architecture/tables/g6_controls.tsv	control_id=PC-POS	result	PASS	PASS
+g6_pcpos_std	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		**0.9307** with   standard tie-aware Spearman	0.9307
+g6_perm_floor	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		1/61 ≈ **0.0164**	1/61 ≈ 0.0164
+g6_pl_groups	TABLE	results/rt07_g6_family_architecture/tables/g6_within_retron_rho.tsv	analysis_id=PL_subtype	n_groups	14	14
+g6_pl_rho	TABLE	results/rt07_g6_family_architecture/tables/g6_within_retron_rho.tsv	analysis_id=PL_subtype	rho	0.9595	0.9595
+g6_purity	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=cluster_family_purity	value	0.9992	0.9992
+g6_qualifying	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=families_qualifying	value	36	36
+g6_review	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		`PASS_WITH_REQUIRED_REPAIRS`, 6/10, **0 blockers**	PASS_WITH_REQUIRED_REPAIRS, 6/10, 0 blockers
+g6_rho	TABLE	results/rt07_g6_family_architecture/tables/g6_between_family_rho.tsv	analysis_id=PRIMARY	rho	0.9865	0.9865
+g6_strata_excluded	DERIVED	(see formula)	count(powered=UNDERPOWERED) + [count(DefenseFinder powered=YES) - DF_subtype n_groups] + [count(PADLOC powered=YES) - PL_subtype n_groups]  (E-g6-4)		26	26
+g6_strata_total	DERIVED	(see formula)	count(rows of g6_retron_subtype_strata.tsv)		50	50
+g6_strata_underpowered	DERIVED	(see formula)	count(rows of g6_retron_subtype_strata.tsv with powered=UNDERPOWERED)		20	20
+g6_thread	DOC	docs/decisions/2026-09-19_stage2_g6_g7a_independent_reviews.md	literal present verbatim		`01a0b99f-4837-7ce1-9ddd-9d0138441c55`	01a0b99f-4837-7ce1-9ddd-9d0138441c55
+g6_verdict	TABLE	results/rt07_g6_family_architecture/tables/g6_summary.tsv	quantity=terminal_verdict_between_family	value	REPRODUCIBLE_UNDER_CLUSTER_NULL_ONLY	REPRODUCIBLE_UNDER_CLUSTER_NULL_ONLY
+g6_vis_assoc	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		ρ = 0.5692 (C4)	0.5692
+g7_anchor_span	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=anchor_ltra_residue_span	value	97-363	97-363
+g7_anchors_ltra	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=anchors_mapped_on_ltra	value	143	143
+g7_ctrl_fail	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=controls_fail	value	0	0
+g7_ctrl_inc	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=controls_inconclusive	value	1	1
+g7_ctrl_pass	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=controls_pass	value	6	6
+g7_est	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=terminal_ESTABLISHED	value	4	4
+g7_missing	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=missing_primary_assets	value	1	1
+g7_numbering	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=ltra_numbering_checks_agree	value	12/12 residues, 3/4 Edman sequences	12/12 residues, 3/4 Edman sequences
+g7_part	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=terminal_PARTIAL	value	2	2
+g7_register	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=evidence_register_rows	value	35	35
+g7_register_stated	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=evidence_rows_source_stated	value	30	30
+g7_state_span	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=anchor_state_span	value	107-317	107-317
+g7_struct_indep	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=structural_comparators_independent	value	0	0
+g7_unres	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_summary.tsv	quantity=terminal_UNRESOLVED	value	2	2
+g7a_review	DOC	docs/decisions/2026-09-19_stage2_g7a_review_errata.md	literal present verbatim		`PASS_WITH_REQUIRED_REPAIRS`, 7/10, **0 blockers**	PASS_WITH_REQUIRED_REPAIRS, 7/10, 0 blockers
+g7a_route_c_note	DOC	docs/decisions/2026-09-19_stage2_g7a_review_errata.md	literal present verbatim		g3 established that the four prior frames are coordinate transfers over **one** anchor-derived landmark set, not replication	one anchor-derived landmark set
+g7a_thread	DOC	docs/decisions/2026-09-19_stage2_g6_g7a_independent_reviews.md	literal present verbatim		`01a0b9a1-1d76-7193-9d7b-89cb6a41e875`	01a0b9a1-1d76-7193-9d7b-89cb6a41e875
+hia_pending	DOC	docs/decisions/2026-09-19_stage2_closed.md	literal present verbatim		`human_input_audit: PENDING` on the landed bundles	PENDING
+instrument_sha	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=instrument_sha256	value	53a1e738a19b38967563b4f4d733047b26123f754a7d592fd0186e7bd9c331f5	53a1e738a19b38967563b4f4d733047b26123f754a7d592fd0186e7bd9c331f5
+k_min	TABLE	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv	parameter=K_MIN	value	30	30
+m50_gii_all	TABLE	results/rt07_g4a_repaired/tables/g4a_hhmake_M_sensitivity.tsv	hhmake_M=50;family=GII	n_ALL_PARTNERS	148	148
+m50_gii_pct	TABLE	results/rt07_g4a_repaired/tables/g4a_hhmake_M_sensitivity.tsv	hhmake_M=50;family=GII	pct_of_full_consensus	27.5	27.5
+m50_ug5_pct	TABLE	results/rt07_g4a_repaired/tables/g4a_hhmake_M_sensitivity.tsv	hhmake_M=50;family=UG5	pct_of_full_consensus	7.5	7.5
+malik_missing	DOC	docs/decisions/2026-09-19_stage2_closed.md	literal present verbatim		the defining source, Malik,   Burke & Eickbush 1999, is not held	Malik, Burke & Eickbush 1999
+mapper_version	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=mapper_version	value	rtmap-1.0.0/53a1e738a19b3896	rtmap-1.0.0/53a1e738a19b3896
+min_aa	TABLE	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv	quantity=MIN_AA	value	250	250
+myrt_direct	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		**363,447** carry a direct `by_myRT` call	363,447
+myrt_match	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		**369,370 of 369,381**	369,370 of 369,381
+myrt_without	DOC	docs/decisions/2026-09-19_stage2_g6_review_errata.md	literal present verbatim		**5,934** without one are all labelled `Retron`	5,934
+n_anchors	TABLE	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv	parameter=N_ANCHORS	value	150	150
+pp_hi	TABLE	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv	parameter=PP_HI	value	0.75	0.75
+pp_lo	TABLE	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv	parameter=PP_LO	value	0.5	0.5
+profile_leng	DOC	results/rt07_g4b_production_mapper/PRODUCTION_SPEC.md	literal present verbatim		LENG 471	471
+profile_m	DOC	results/rt07_g4b_production_mapper/PRODUCTION_SPEC.md	literal present verbatim		`hhmake -M 50`	hhmake -M 50
+rt0_ref	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT0	reference_interval_ltra	1-85	1-85
+rt1_c	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT1	route_c_point	49	49
+rt1_ref	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT1	reference_interval_ltra	39-61	39-61
+rt2_n	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT2	n_supporting_states	17	17
+rt2_obs	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT2	ltra_residue_span_supported	97-123	97-123
+rt2_ref	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT2	reference_interval_ltra	79-123	79-123
+rt3_n	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT3	n_supporting_states	22	22
+rt3_obs	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT3	ltra_residue_span_supported	126-166	126-166
+rt4_n	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT4	n_supporting_states	42	42
+rt4_obs	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT4	ltra_residue_span_supported	170-230	170-230
+rt4_qual	TABLE	docs/errata/g7a_closure_decision_erratum_2026-09-19.tsv	historical_label=RT4	correspondence_qualified	SUPPORTED_1_TO_1 (primary frame) / SPLIT_INTO_3 (independent frame, Jaccard 0.410)	SUPPORTED_1_TO_1 (primary frame) / SPLIT_INTO_3 (independent frame, Jaccard 0.410)
+rt5_n	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT5	n_supporting_states	34	34
+rt5_obs	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT5	ltra_residue_span_supported	311-347	311-347
+rt5_ref	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT5	reference_interval_ltra	304-347	304-347
+rt5_states	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT5	state_span	267-301	267-301
+rt7_c	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT7	route_c_point	357	357
+rt7_n	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT7	n_supporting_states	6	6
+rt7_obs	TABLE	results/rt07_g7a_rt0_rt7_bridge/tables/g7a_crosswalk_resolved.tsv	historical_label=RT7	ltra_residue_span_supported	356-361	356-361
+s_min	TABLE	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv	parameter=S_MIN	value	10	10
+t1	TABLE	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv	parameter=T1	value	0.32	0.32
+ug25_c1	TABLE	results/rt07_ug25_confirmatory/tables/ug25_criteria.tsv	criterion=C1	observed	comp0=0.5133; comp1=0.5933	comp0=0.5133; comp1=0.5933
+ug25_c3	TABLE	results/rt07_ug25_confirmatory/tables/ug25_criteria.tsv	criterion=C3	observed	26/27 = 0.9630	26/27 = 0.9630
+ug25_c4	TABLE	results/rt07_ug25_confirmatory/tables/ug25_criteria.tsv	criterion=C4	observed	0.0800	0.0800
+ug25_class	TABLE	results/rt07_ug25_confirmatory/tables/ug25_genealogy_audit.tsv	assessment=CLASSIFICATION	value	FRESH_LINEAGE	FRESH_LINEAGE
+ug25_ctrl_max	DERIVED	(see formula)	max(max_mapped) over the MONO, DI and REV rows of ug25_control_summary.tsv		17	17
+ug25_ctrl_n	TABLE	results/rt07_ug25_confirmatory/tables/ug25_control_summary.tsv	control_class=POOLED	n_attempted	252	252
+ug25_ctrl_valid	TABLE	results/rt07_ug25_confirmatory/tables/ug25_control_summary.tsv	control_class=POOLED	n_valid	252	252
+ug25_di_max	TABLE	results/rt07_ug25_confirmatory/tables/ug25_control_summary.tsv	control_class=DI	max_mapped	13	13
+ug25_fulllink	TABLE	results/rt07_ug25_confirmatory/tables/ug25_genealogy_audit.tsv	assessment=n_meeting_FULL_link_rule	value	0 of 28	0 of 28
+ug25_k0_med	TABLE	results/rt07_ug25_confirmatory/tables/ug25_component_summary.tsv	component=0	median_mapped_fraction	0.5133	0.5133
+ug25_k0_n	TABLE	results/rt07_ug25_confirmatory/tables/ug25_component_summary.tsv	component=0	n_sequences	19	19
+ug25_k1_med	TABLE	results/rt07_ug25_confirmatory/tables/ug25_component_summary.tsv	component=1	median_mapped_fraction	0.5933	0.5933
+ug25_k1_n	TABLE	results/rt07_ug25_confirmatory/tables/ug25_component_summary.tsv	component=1	n_sequences	5	5
+ug25_k2_n	TABLE	results/rt07_ug25_confirmatory/tables/ug25_component_summary.tsv	component=2	n_sequences	4	4
+ug25_min_real_mapped	DERIVED	(see formula)	min(n_mapped) over the 28 rows of ug25_sequence_results.tsv		54	54
+ug25_mono_max	TABLE	results/rt07_ug25_confirmatory/tables/ug25_control_summary.tsv	control_class=MONO	max_mapped	10	10
+ug25_n_seq	DERIVED	(see formula)	count(rows of ug25_sequence_results.tsv)		28	28
+ug25_overlap	TABLE	results/rt07_ug25_confirmatory/tables/ug25_genealogy_audit.tsv	assessment=exact_sequence_overlap_all_construction	value	0	0
+ug25_rev_max	TABLE	results/rt07_ug25_confirmatory/tables/ug25_control_summary.tsv	control_class=REV	max_mapped	17	17
+ug25_review	DOC	docs/decisions/2026-09-17_stage2_ug25_confirmatory_closed.md	literal present verbatim		**`PASS_WITH_REQUIRED_REPAIRS` · 7/10 · CONFIRMATORY TRANSFER: SUPPORTED	PASS_WITH_REQUIRED_REPAIRS, 7/10
+ug5_v2_monotone	DOC	docs/decisions/2026-09-16_stage2_ug5_v2_closed_failed.md	literal present verbatim		monotone for 31 of 67 sequences = 46.3%	31 of 67 sequences (46.3%)
+x05	DOC	docs/decisions/2026-09-19_stage2_g7a_review_errata.md	literal present verbatim		"In the case of Poch et al. (1989) the five motifs identified (regions a-e) correspond to our domains 3-7."	Poch regions a–e ↔ Xiong domains 3–7
+x06	DOC	docs/decisions/2026-09-19_stage2_g7a_review_errata.md	literal present verbatim		"In the case of Webster et al. (1989) the four blocks identified correspond to our domains 2-5."	Webster blocks ↔ Xiong domains 2–5

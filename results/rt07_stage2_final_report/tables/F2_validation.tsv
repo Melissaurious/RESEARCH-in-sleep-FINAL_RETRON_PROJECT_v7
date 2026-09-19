@@ -1,0 +1,14 @@
+panel	item	median	low	high	reference	role
+a	Retrons	0.4733	0.0	0.7	T1=0.32	construction
+a	GII	0.95	0.4533	1.0	T1=0.32	construction
+a	DGRs	0.8	0.3267	0.9267	T1=0.32	construction
+a	CRISPR	0.9133	0.52	0.9467	T1=0.32	construction
+a	UG3	0.55	0.36	0.7467	T1=0.32	construction
+a	AbiA	0.4933	0.26	0.6333	T1=0.32	construction
+b	comp 0 (n=19)	0.5133	0.36	0.7533	T1=0.32	QUALIFYING
+b	comp 1 (n=5)	0.5933	0.56	0.6667	T1=0.32	QUALIFYING
+b	comp 2 (n=4)	0.66	0.48	0.8	T1=0.32	descriptive_only
+c	MONO			10	K_MIN=30	n_attempted=84
+c	DI			13	K_MIN=30	n_attempted=84
+c	REV			17	K_MIN=30	n_attempted=84
+c	weakest real UG25 sequence			54	K_MIN=30	min n_mapped over ug25_sequence_results.tsv

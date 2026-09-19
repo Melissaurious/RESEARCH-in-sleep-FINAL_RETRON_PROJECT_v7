@@ -1,0 +1,20 @@
+seq	layer	object	verdict	score_of_10	record
+1	L2	g4 design (identifiability), round 1	not ready	3	docs/decisions/2026-09-16_stage2_g4_identifiability_redesign.md
+2	L2	g4 identifiability redesign, round 2	not ready	4	docs/decisions/2026-09-16_stage2_g4_review_round2_and_repairs.md
+3	L2	full-length-first design	FAIL/BLOCK	5	docs/decisions/2026-09-16_stage2_full_length_first_errata.md
+4	L2	g4a frame recovery	PASS_WITH_REQUIRED_REPAIRS	6	docs/decisions/2026-09-16_stage2_g4a_review_outcome_and_repairs.md
+5	L2	repaired g4a + UG5 gate	FAIL/BLOCK	5	docs/decisions/2026-09-16_stage2_g4a_repair_ug5_review_outcome.md
+6	L2	UG5 v3 placement rule	FAIL/BLOCK	5	docs/decisions/2026-09-16_stage2_ug5_v3_review_outcome.md
+7	L2	G2L residue-transfer gate	FAIL/BLOCK	4	docs/decisions/2026-09-17_stage2_g2l_transfer_review_FAILED.md
+8	L2	mapper validation repair	PASS_WITH_REQUIRED_REPAIRS	6	docs/decisions/2026-09-17_stage2_mapper_validation_review_outcome.md
+9	L2	mapper repair v2	PASS_WITH_REQUIRED_REPAIRS	6	docs/decisions/2026-09-17_stage2_mapper_repair_v2_review_outcome.md
+10	L2	FINAL_PRE_UG25_VALIDATION_BUNDLE, round 1	class B	7	docs/decisions/2026-09-17_stage2_final_pre_ug25_bundle.md
+11	L2	FINAL_PRE_UG25_VALIDATION_BUNDLE, round 2	FAIL_BLOCK (formal field)	8	docs/decisions/2026-09-17_stage2_ug25_confirmatory_closed.md
+12	L2	UG25 confirmatory transfer, post-run	PASS_WITH_REQUIRED_REPAIRS	7	docs/decisions/2026-09-17_stage2_ug25_confirmatory_closed.md
+13	L2	g4b production packaging, round 1	PASS_WITH_REQUIRED_REPAIRS	6	docs/decisions/2026-09-17_stage2_g4b_production_packaging.md
+14	L2	g4b production packaging, round 2	PASS_WITH_REQUIRED_REPAIRS	9	docs/decisions/2026-09-17_stage2_g4b_production_packaging.md
+15	L2	g5 catalogue application	PASS_WITH_REQUIRED_REPAIRS	8	git:6f4a7fe
+16	L3	g6, first attempt	NOT COMPLETED (external usage limit)	n/a - not completed	docs/decisions/2026-09-18_stage2_g6_bs15_open_and_bounded_use.md
+17	L4	g7a, first attempts	NOT COMPLETED (fallback reviewer failed)	n/a - not completed	docs/decisions/2026-09-18_stage2_g7a_review_attempt_failed.md
+18	L5	g6 family architecture	PASS_WITH_REQUIRED_REPAIRS	6	docs/decisions/2026-09-19_stage2_g6_review_errata.md
+19	L5	g7a historical bridge	PASS_WITH_REQUIRED_REPAIRS	7	docs/decisions/2026-09-19_stage2_g7a_review_errata.md
