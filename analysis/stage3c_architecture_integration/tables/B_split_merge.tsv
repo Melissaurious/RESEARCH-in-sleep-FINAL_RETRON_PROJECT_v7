@@ -1,0 +1,35 @@
+measure	arm	numerator	denominator	value	unit	detail
+units_holding_2_or_more_blocks	primary	50	219	0.2283	PDP unit	49 chains have at least one such unit
+blocks_in_same_unit:SB56+SB7	primary	35	36	0.9722	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB3+SB56	primary	28	28	1.0000	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB4+SB56	primary	20	24	0.8333	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB3+SB7	primary	18	19	0.9474	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB3+SB4	primary	15	19	0.7895	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB4+SB7	primary	14	19	0.7368	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB2p+SB4	primary	9	10	0.9000	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB2p+SB3	primary	7	11	0.6364	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB2p+SB56	primary	7	9	0.7778	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB2p+SB7	primary	6	9	0.6667	chain	denominator = chains where both blocks are CONTAINED somewhere
+block_split_across_units:SB2p	primary	12	24	0.5000	chain	units holding >=0.20: 1;1,2
+block_split_across_units:SB3	primary	2	33	0.0606	chain	units holding >=0.20: 3;3,4
+block_split_across_units:SB4	primary	11	37	0.2973	chain	units holding >=0.20: 1,2;2,5;3,4
+block_split_across_units:SB56	primary	1	54	0.0185	chain	units holding >=0.20: 3
+block_split_across_units:SB7	primary	0	37	0.0000	chain	-
+block_split_across_units:CAT262	primary	0	59	0.0000	chain	-
+units_holding_2_or_more_blocks	p4	50	225	0.2222	PDP unit	49 chains have at least one such unit
+blocks_in_same_unit:SB56+SB7	p4	35	36	0.9722	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB3+SB56	p4	28	28	1.0000	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB4+SB56	p4	20	24	0.8333	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB3+SB7	p4	18	19	0.9474	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB3+SB4	p4	15	19	0.7895	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB4+SB7	p4	14	19	0.7368	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB2p+SB4	p4	9	10	0.9000	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB2p+SB3	p4	7	11	0.6364	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB2p+SB56	p4	7	9	0.7778	chain	denominator = chains where both blocks are CONTAINED somewhere
+blocks_in_same_unit:SB2p+SB7	p4	6	9	0.6667	chain	denominator = chains where both blocks are CONTAINED somewhere
+block_split_across_units:SB2p	p4	12	24	0.5000	chain	units holding >=0.20: 1;1,2
+block_split_across_units:SB3	p4	2	33	0.0606	chain	units holding >=0.20: 3,4
+block_split_across_units:SB4	p4	11	37	0.2973	chain	units holding >=0.20: 1,2;2,5;3,4
+block_split_across_units:SB56	p4	1	54	0.0185	chain	units holding >=0.20: 3,4
+block_split_across_units:SB7	p4	0	37	0.0000	chain	-
+block_split_across_units:CAT262	p4	0	59	0.0000	chain	-

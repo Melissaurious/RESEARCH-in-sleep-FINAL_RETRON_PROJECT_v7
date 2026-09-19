@@ -1,0 +1,20 @@
+chain	biological_group	cat_call_state	cat_residue	cat_amino_acid	cat_unit	truth_residues	truth_site_unit	residue_offset_to_nearest_truth_Asp	same_unit_as_truth	unit	note
+1RTD_A	RG11	AMBIGUOUS				110,185	1		NO	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+24NC_A	RG12	MAPPED	238	Y	2	149,240,241	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+26CZ_A	RG13	MAPPED	276	Y	3	182,278	3	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+6AR1_A	RG16	MAPPED	221	Y	2	138,223	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+8BGJ_A	RG20	INPUT_INVALID				73,154	1		NO	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+8C8J_A	RG02	MAPPED	700	F	1	600,702	1	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+8GH6_A	RG21	MAPPED	626	Y	1	529,628	1	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+8SXT_A	RG02	MAPPED	700	F	2	600,702	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+8UB7_A	RG07	MAPPED	213	Y	1	138,215	1	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+8UW3_A	RG02	MAPPED	700	F	3	600,702	3	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9D4S_A	RG09	MAPPED	237	Y	2	145,239,240	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9DOU_A	RG10	MAPPED	876	F	2	777,878	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9HDO_A	RG02	MAPPED	700	F	4	600,702	4	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9NL2_A	RG27	MAPPED	604	F	2	506,606	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9NL3_A	RG10	MAPPED	655	F	2	657	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9YFD_A	RG29	MAPPED	322	Y	5	212,324,325	5	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9Z6Y_A	RG30	MAPPED	195	Y	2	115,197	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9Z6Y_H	RG31	MAPPED	289	Y	3	192,291,292	3	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth
+9Z6Z_H	RG31	MAPPED	289	Y	2	291,292	2	2	YES	chain	two independent instruments: a sequence-HMM state vs structure-based metal/substrate/author truth

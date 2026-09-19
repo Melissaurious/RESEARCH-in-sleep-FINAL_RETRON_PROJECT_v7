@@ -1,0 +1,49 @@
+arm	block	stratum	historical_label_LtrA_local	stage2_status	n_chains	n_groups	n_available	frac_available	n_groups_with_any_available	n_contained	frac_contained_of_available	n_split	n_no_residue_in_unit	modal_unit_role_counts	frac_contained_in_palm_like	n_discontinuous_modal_unit	median_units_holding	groups_uniform_containment	n_groups_counted	unit	denominator_meaning
+primary	RT0_none	all	RT0	UNRESOLVED / NOT IDENTIFIABLE	62	31	0	0.0000	0	0		0	0	-		0		31	31	chain	62 chains in stratum all
+primary	RT0_none	primary	RT0	UNRESOLVED / NOT IDENTIFIABLE	46	22	0	0.0000	0	0		0	0	-		0		22	22	chain	46 chains in stratum primary
+primary	RT0_none	flagged	RT0	UNRESOLVED / NOT IDENTIFIABLE	15	9	0	0.0000	0	0		0	0	-		0		9	9	chain	15 chains in stratum flagged
+primary	RT1_none	all	RT1	UNRESOLVED / NOT IDENTIFIABLE	62	31	0	0.0000	0	0		0	0	-		0		31	31	chain	62 chains in stratum all
+primary	RT1_none	primary	RT1	UNRESOLVED / NOT IDENTIFIABLE	46	22	0	0.0000	0	0		0	0	-		0		22	22	chain	46 chains in stratum primary
+primary	RT1_none	flagged	RT1	UNRESOLVED / NOT IDENTIFIABLE	15	9	0	0.0000	0	0		0	0	-		0		9	9	chain	15 chains in stratum flagged
+primary	SB2p	all	RT2	PARTIAL - only LtrA 97-123 of 79-123 observed	62	31	24	0.3871	12	12	0.5000	12	0	fingers-like=2;unclassified=10	0.0000	8	1.0000	28	31	chain	62 chains in stratum all
+primary	SB2p	primary	RT2	PARTIAL - only LtrA 97-123 of 79-123 observed	46	22	16	0.3478	9	5	0.3125	11	0	fingers-like=2;unclassified=3	0.0000	3	2.0000	19	22	chain	46 chains in stratum primary
+primary	SB2p	flagged	RT2	PARTIAL - only LtrA 97-123 of 79-123 observed	15	9	7	0.4667	3	7	1.0000	0	0	unclassified=7	0.0000	5	1	9	9	chain	15 chains in stratum flagged
+primary	SB3	all	RT3	ESTABLISHED with qualification (Route C not independent)	62	31	33	0.5323	15	31	0.9394	2	0	palm-like=15;unclassified=16	0.4839	20	1	30	31	chain	62 chains in stratum all
+primary	SB3	primary	RT3	ESTABLISHED with qualification (Route C not independent)	46	22	22	0.4783	10	21	0.9545	1	0	palm-like=12;unclassified=9	0.5714	13	1.0000	21	22	chain	46 chains in stratum primary
+primary	SB3	flagged	RT3	ESTABLISHED with qualification (Route C not independent)	15	9	10	0.6667	5	9	0.9000	1	0	palm-like=2;unclassified=7	0.2222	6	1.0000	9	9	chain	15 chains in stratum flagged
+primary	SB4	all	RT4	ESTABLISHED with frame-instability qualification (SPLIT_INTO_3, Jaccard 0.410)	62	31	37	0.5968	16	26	0.7027	11	0	fingers-like=4;palm-like=5;unclassified=17	0.1923	14	1	27	31	chain	62 chains in stratum all
+primary	SB4	primary	RT4	ESTABLISHED with frame-instability qualification (SPLIT_INTO_3, Jaccard 0.410)	46	22	25	0.5435	10	15	0.6000	10	0	fingers-like=2;palm-like=4;unclassified=9	0.2667	5	1	18	22	chain	46 chains in stratum primary
+primary	SB4	flagged	RT4	ESTABLISHED with frame-instability qualification (SPLIT_INTO_3, Jaccard 0.410)	15	9	11	0.7333	6	10	0.9091	1	0	fingers-like=1;palm-like=1;unclassified=8	0.1000	8	1	9	9	chain	15 chains in stratum flagged
+primary	SB56	all	RT5+RT6	RT5 ESTABLISHED / RT6 PARTIAL - joint region only	62	31	54	0.8710	25	53	0.9815	1	0	fingers-like=1;palm-like=25;unclassified=27	0.4717	32	1.0000	31	31	chain	62 chains in stratum all
+primary	SB56	primary	RT5+RT6	RT5 ESTABLISHED / RT6 PARTIAL - joint region only	46	22	38	0.8261	16	38	1.0000	0	0	palm-like=21;unclassified=17	0.5526	20	1.0000	22	22	chain	46 chains in stratum primary
+primary	SB56	flagged	RT5+RT6	RT5 ESTABLISHED / RT6 PARTIAL - joint region only	15	9	15	1.0000	9	14	0.9333	1	0	fingers-like=1;palm-like=3;unclassified=10	0.2143	11	1	9	9	chain	15 chains in stratum flagged
+primary	SB7	all	RT7	ESTABLISHED with narrowed wording	62	31	37	0.5968	13	37	1.0000	0	0	palm-like=16;unclassified=21	0.4324	19	1	31	31	chain	62 chains in stratum all
+primary	SB7	primary	RT7	ESTABLISHED with narrowed wording	46	22	30	0.6522	11	30	1.0000	0	0	palm-like=15;unclassified=15	0.5000	14	1.0000	22	22	chain	46 chains in stratum primary
+primary	SB7	flagged	RT7	ESTABLISHED with narrowed wording	15	9	6	0.4000	2	6	1.0000	0	0	unclassified=6	0.0000	4	1.0000	9	9	chain	15 chains in stratum flagged
+primary	CAT262	all	catalytic state (not an anchor)	CAT_STATE 262; separate measurement	62	31	59	0.9516	28	58	0.9831	0	1	fingers-like=1;palm-like=29;unclassified=28	0.5000	36	1	31	31	chain	62 chains in stratum all
+primary	CAT262	primary	catalytic state (not an anchor)	CAT_STATE 262; separate measurement	46	22	43	0.9348	19	43	1.0000	0	0	palm-like=25;unclassified=18	0.5814	24	1	22	22	chain	46 chains in stratum primary
+primary	CAT262	flagged	catalytic state (not an anchor)	CAT_STATE 262; separate measurement	15	9	15	1.0000	9	14	0.9333	0	1	fingers-like=1;palm-like=3;unclassified=10	0.2143	11	1	9	9	chain	15 chains in stratum flagged
+p4	RT0_none	all	RT0	UNRESOLVED / NOT IDENTIFIABLE	62	31	0	0.0000	0	0		0	0	-		0		31	31	chain	62 chains in stratum all
+p4	RT0_none	primary	RT0	UNRESOLVED / NOT IDENTIFIABLE	46	22	0	0.0000	0	0		0	0	-		0		22	22	chain	46 chains in stratum primary
+p4	RT0_none	flagged	RT0	UNRESOLVED / NOT IDENTIFIABLE	15	9	0	0.0000	0	0		0	0	-		0		9	9	chain	15 chains in stratum flagged
+p4	RT1_none	all	RT1	UNRESOLVED / NOT IDENTIFIABLE	62	31	0	0.0000	0	0		0	0	-		0		31	31	chain	62 chains in stratum all
+p4	RT1_none	primary	RT1	UNRESOLVED / NOT IDENTIFIABLE	46	22	0	0.0000	0	0		0	0	-		0		22	22	chain	46 chains in stratum primary
+p4	RT1_none	flagged	RT1	UNRESOLVED / NOT IDENTIFIABLE	15	9	0	0.0000	0	0		0	0	-		0		9	9	chain	15 chains in stratum flagged
+p4	SB2p	all	RT2	PARTIAL - only LtrA 97-123 of 79-123 observed	62	31	24	0.3871	12	12	0.5000	12	0	fingers-like=2;unclassified=10	0.0000	7	1.0000	28	31	chain	62 chains in stratum all
+p4	SB2p	primary	RT2	PARTIAL - only LtrA 97-123 of 79-123 observed	46	22	16	0.3478	9	5	0.3125	11	0	fingers-like=2;unclassified=3	0.0000	3	2.0000	19	22	chain	46 chains in stratum primary
+p4	SB2p	flagged	RT2	PARTIAL - only LtrA 97-123 of 79-123 observed	15	9	7	0.4667	3	7	1.0000	0	0	unclassified=7	0.0000	4	1	9	9	chain	15 chains in stratum flagged
+p4	SB3	all	RT3	ESTABLISHED with qualification (Route C not independent)	62	31	33	0.5323	15	31	0.9394	2	0	palm-like=14;unclassified=17	0.4516	19	1	30	31	chain	62 chains in stratum all
+p4	SB3	primary	RT3	ESTABLISHED with qualification (Route C not independent)	46	22	22	0.4783	10	21	0.9545	1	0	palm-like=12;unclassified=9	0.5714	13	1.0000	21	22	chain	46 chains in stratum primary
+p4	SB3	flagged	RT3	ESTABLISHED with qualification (Route C not independent)	15	9	10	0.6667	5	9	0.9000	1	0	palm-like=1;unclassified=8	0.1111	5	1.0000	9	9	chain	15 chains in stratum flagged
+p4	SB4	all	RT4	ESTABLISHED with frame-instability qualification (SPLIT_INTO_3, Jaccard 0.410)	62	31	37	0.5968	16	26	0.7027	11	0	fingers-like=4;palm-like=5;unclassified=17	0.1923	13	1	27	31	chain	62 chains in stratum all
+p4	SB4	primary	RT4	ESTABLISHED with frame-instability qualification (SPLIT_INTO_3, Jaccard 0.410)	46	22	25	0.5435	10	15	0.6000	10	0	fingers-like=2;palm-like=4;unclassified=9	0.2667	5	1	18	22	chain	46 chains in stratum primary
+p4	SB4	flagged	RT4	ESTABLISHED with frame-instability qualification (SPLIT_INTO_3, Jaccard 0.410)	15	9	11	0.7333	6	10	0.9091	1	0	fingers-like=1;palm-like=1;unclassified=8	0.1000	7	1	9	9	chain	15 chains in stratum flagged
+p4	SB56	all	RT5+RT6	RT5 ESTABLISHED / RT6 PARTIAL - joint region only	62	31	54	0.8710	25	53	0.9815	1	0	fingers-like=1;palm-like=24;unclassified=28	0.4528	31	1.0000	31	31	chain	62 chains in stratum all
+p4	SB56	primary	RT5+RT6	RT5 ESTABLISHED / RT6 PARTIAL - joint region only	46	22	38	0.8261	16	38	1.0000	0	0	palm-like=21;unclassified=17	0.5526	20	1.0000	22	22	chain	46 chains in stratum primary
+p4	SB56	flagged	RT5+RT6	RT5 ESTABLISHED / RT6 PARTIAL - joint region only	15	9	15	1.0000	9	14	0.9333	1	0	fingers-like=1;palm-like=2;unclassified=11	0.1429	10	1	9	9	chain	15 chains in stratum flagged
+p4	SB7	all	RT7	ESTABLISHED with narrowed wording	62	31	37	0.5968	13	37	1.0000	0	0	palm-like=16;unclassified=21	0.4324	18	1	31	31	chain	62 chains in stratum all
+p4	SB7	primary	RT7	ESTABLISHED with narrowed wording	46	22	30	0.6522	11	30	1.0000	0	0	palm-like=15;unclassified=15	0.5000	14	1.0000	22	22	chain	46 chains in stratum primary
+p4	SB7	flagged	RT7	ESTABLISHED with narrowed wording	15	9	6	0.4000	2	6	1.0000	0	0	unclassified=6	0.0000	3	1.0000	9	9	chain	15 chains in stratum flagged
+p4	CAT262	all	catalytic state (not an anchor)	CAT_STATE 262; separate measurement	62	31	59	0.9516	28	59	1.0000	0	0	fingers-like=1;palm-like=28;unclassified=30	0.4746	36	1	31	31	chain	62 chains in stratum all
+p4	CAT262	primary	catalytic state (not an anchor)	CAT_STATE 262; separate measurement	46	22	43	0.9348	19	43	1.0000	0	0	palm-like=25;unclassified=18	0.5814	24	1	22	22	chain	46 chains in stratum primary
+p4	CAT262	flagged	catalytic state (not an anchor)	CAT_STATE 262; separate measurement	15	9	15	1.0000	9	15	1.0000	0	0	fingers-like=1;palm-like=2;unclassified=12	0.1333	11	1	9	9	chain	15 chains in stratum flagged
