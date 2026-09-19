@@ -1,0 +1,22 @@
+{
+  "panel_rows": 175,
+  "exposure_class": {
+    "TRAIN_EXPOSED": 58,
+    "VAL_TEST_EXPOSED": 33,
+    "CATALOGUE_ONLY": 56,
+    "FULLY_EXTERNAL": 16,
+    "SEQUENCE_NEAR_CORPUS": 12
+  },
+  "rt_in_catalogue": 145,
+  "rt_in_PAIR_ELIG": 88,
+  "ncrna_exact_in_corpus": 12,
+  "ncrna_in_PAIR_ELIG": 12,
+  "exact_pair_in_PAIR_ELIG": 9,
+  "x1_test_fold": 15,
+  "x1_val_fold": 18,
+  "x1_train_fold": 58,
+  "not_in_split": 84,
+  "blastn_near_ge90_ge80": 80,
+  "in_mestre_reference_set": 175,
+  "rtdna_sequence_present": 81
+}
