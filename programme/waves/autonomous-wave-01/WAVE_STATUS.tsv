@@ -1,7 +1,7 @@
 task_id	state	detail	freeze_commit	worker_pid	analysis_pid	slurm_job_id	started_at	finished_at
 T-A23d-primary-verification	VOID	missing run record	edf381c809db526a389d427a9da98c4edd015458	1004900			2026-09-20T18:33:29Z	
 T-D1-annotation-disagreement	PASS	DESCRIPTIVE	69a06fca24fb11c4eba8e4431b92192a07830337	1015090			2026-09-20T18:51:12Z	2026-09-20T18:51:58Z
-T-D2-taxonomic-distribution	RUNNING	worker launched	2bb0075912d7e62ce3be58f4e0658987ec7e5eba	1031715			2026-09-20T19:20:10Z	
+T-D2-taxonomic-distribution	PASS	DESCRIPTIVE	2bb0075912d7e62ce3be58f4e0658987ec7e5eba	1031715			2026-09-20T19:20:10Z	2026-09-20T19:22:44Z
 T-M1b-embedding-cache-reverification	WAIT_RESOURCE	WAIT_RESOURCE:need=8:available=1						
 T-P1c-family-label-description	WAIT_DEP	WAIT_DEP:T-P1b-identity-partition:COMPLETE_AWAITING_REVIEW						
 T-R2a-tierA-internal-geometry	RUNNING	worker launched	19837473c3069b390a3139d018b64e8bd3d7bc5b	1043184			2026-09-20T19:40:13Z	
