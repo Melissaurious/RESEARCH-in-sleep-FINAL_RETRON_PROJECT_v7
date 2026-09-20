@@ -86,6 +86,19 @@ MAX_TRANSIENT_RETRIES=3
 #: Charging them the execution budget starved the pool and blocked Ibex-bound work too.
 AUTHORING_COST=1
 
+def stale_base(tid):
+    """True when the task worktree does NOT contain the current synthesis HEAD.
+
+    Such a worktree cannot see a repo-level governance fix, because worktree() rebases
+    only while preparing. T-A23d sat at ccb4832 while the fix lived at 623f2ce, so its
+    copy of docs/BLOCKED.md still tripped specs_exist.sh on every launch.
+    """
+    fm=parse_front_matter(P/'tasks'/tid/'TASK_LAUNCHER.md') if (P/'tasks'/tid/'TASK_LAUNCHER.md').exists() else {}
+    wt=Path(fm.get('worktree','')) if fm.get('worktree') else SYN.parent/f"{SYN.name.removesuffix('-synthesis')}-{tid}"
+    if not wt.is_dir(): return False
+    head=git('rev-parse','HEAD')
+    return run(['git','merge-base','--is-ancestor',head,'HEAD'],cwd=wt,check=False).returncode!=0
+
 def transient_reason(tid,w):
     """Return the transient signature that explains a launch failure, else ''."""
     log=w.parent/'runs'/f'{tid}.worker.log'
@@ -375,6 +388,17 @@ def start(w,authorised,poll):
                     # refused launch made the task permanently unschedulable across restarts.
                     set_board(tid,'AUTHORIZED',f'transient launch failure ({sig}); requeued')
                     set_status(w,st,tid,'FROZEN',f'transient launch failure ({sig}); retry {n+1}/{MAX_TRANSIENT_RETRIES}')
+                    del workers[tid]; continue
+                # A governance gate can fail because the task worktree predates a repo-level
+                # fix: worktree() only rebases during PREPARE, so an already-frozen task can
+                # never pick one up. Re-freezing on the current base is a mechanical repair
+                # that touches no scientific design, so do it once instead of dying here.
+                if sig and stale_base(tid):
+                    sp_stale=EXEC/tid/'TASK_EXECUTION.json'; sp_stale.unlink(missing_ok=True)
+                    retries[tid]=0
+                    set_board(tid,'AUTHORIZED','worktree predates a governance fix; re-freezing on the current base')
+                    set_status(w,st,tid,'PENDING',f'"{sig}" and the worktree base is stale; re-preparing on current HEAD')
+                    commit([BOARD,status_path(w)],f'wave: re-freeze {tid} on a corrected base')
                     del workers[tid]; continue
                 term='VOID' if rr.get('worker_state') in {'REFUSED','ARTIFACT_INVALID','PROCESS_FAILED'} else 'STOP'
                 detail=rr.get('error') or rr.get('stop_reason') or rr.get('worker_state','')

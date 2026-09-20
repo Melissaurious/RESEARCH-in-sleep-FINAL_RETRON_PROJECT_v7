@@ -608,5 +608,30 @@ class RestartReconciliationTests(unittest.TestCase):
         for stale in ("'RUNNING'", "'PREPARING'", "'REVIEWING'", "'REPAIRING'"):
             self.assertIn(stale, head)
 
+
+class StaleBaseSelfHealTests(unittest.TestCase):
+    """An already-frozen task must be able to pick up a repo-level governance fix.
+
+    worktree() rebases only during PREPARE. T-A23d was frozen at a commit that predated
+    the docs/BLOCKED.md fix, so its own copy kept failing specs_exist.sh on every launch
+    and no number of retries could ever succeed.
+    """
+
+    def test_stale_base_triggers_a_refreeze_not_a_void(self):
+        src = (HERE / "wave_runner.py").read_text()
+        branch = src.split("if sig and stale_base(tid):", 1)[1].split("continue", 1)[0]
+        self.assertIn("sp_stale.unlink(missing_ok=True)", branch)   # force a re-prepare
+        self.assertIn("set_board(tid,'AUTHORIZED'", branch)         # and make it schedulable
+        self.assertNotIn("VOID", branch)
+
+    def test_refreeze_only_applies_to_a_mechanical_signature(self):
+        src = (HERE / "wave_runner.py").read_text()
+        self.assertIn("if sig and stale_base(tid):", src)  # `sig` is a TRANSIENT signature
+
+    def test_stale_base_is_decided_by_ancestry_not_by_equality(self):
+        src = (HERE / "wave_runner.py").read_text()
+        fn = src.split("def stale_base(", 1)[1].split("\ndef ", 1)[0]
+        self.assertIn("merge-base','--is-ancestor'", fn)
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
