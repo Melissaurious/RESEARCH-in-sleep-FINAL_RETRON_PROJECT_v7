@@ -1,0 +1,12 @@
+population_id	analysis_family	endpoint	exposure_state	exposed_by	may_be_used_for	may_NOT_be_used_for
+RT-EXACT-501561	rt_profile_detection	PF00078 domain call over the catalogue	INSPECTED_FOR_THIS_ENDPOINT	T-C1 (REVIEW_FAILED) and T-C1b	exploratory; QC; asset construction; method development; unrelated preregistered endpoints with no plausible leakage	untouched confirmatory evidence for profile-detection or RT-core-definition endpoints
+RT-EXACT-501561	rt_motif_detection	YxDD catalytic-motif position	INSPECTED_FOR_THIS_ENDPOINT	T-F1	same	untouched confirmatory evidence for motif-presence or motif-position endpoints
+RT-EXACT-501561	rt_identity_clustering	cascaded identity partition	INSPECTED_FOR_THIS_ENDPOINT	T-P1 (VOID) and T-P1b	same	untouched confirmatory evidence for lineage-partition or clustering-threshold endpoints
+RT-EXACT-501561	*other*	any endpoint not listed above	NOT_YET_EXPOSED	-	a preregistered confirmatory endpoint MAY still be drawn here	anything informed by the rows above
+RT-RECORDS-ALL-FAMILIES	neighbourhood_geometry	CDS neighbourhood geometry and edge state	INSPECTED_FOR_THIS_ENDPOINT	T-N1 (REVIEW_FAILED) and T-N1b	same	untouched confirmatory evidence for neighbourhood-geometry endpoints
+RETRON-LOCI	*reserved*	retron-restricted analyses only	NOT_USED_BY_N1_OR_N1B	-	a retron-restricted population may still be defined here	being conflated with RT-RECORDS-ALL-FAMILIES, which is what T-N1 did
+PAIR-ELIG	pairing_decoder	every pairing/counterfactual endpoint	EXHAUSTED	embed_x2 cross-fitting, all five folds	exploratory and descriptive work only, forever	any confirmatory pairing claim; a prospective population must be declared
+LIT-CROSSPAIR	crosspair_evidence_geometry	source-level evidence geometry	EXTERNAL	T-A23, T-A23c	establishing what the evidence IS	inferring unmeasured negative pairs; opening Stage 12
+PANEL-RTDNA-81	rtdna_anchor_mapping	direct coordinate mapping	NOT_YET_EXPOSED	-	nothing yet — operator authorisation required per spend	anything until T-A5b1/T-R1 are merged or differentiated
+PANEL-PRODUCERS-67-36	functional_contrast	producer vs measured non-producer	NOT_YET_EXPOSED	-	nothing yet	being informed by T-A5b1 anchors: 62 of 81 anchors are measured producers
+STRUCT-62	structural_truth	Tier B/C chains	TIER_A_EXHAUSTED_TIER_B_UNOPENED	Stage 3B on 19 Tier-A truth pairs	Tier A is spent	T-A7 and T-S3 both claiming the same Tier B chains as independent evidence
