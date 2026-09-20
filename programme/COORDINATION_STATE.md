@@ -56,7 +56,13 @@ Machine-checkable status: `programme/PREFLIGHT_STATUS.tsv`. Gate tests: `PREFLIG
 
 All five gate-verified by the coordinating session independently of their own reports. The
 criterion-bearing interval was re-bootstrapped here and reproduced.
-Synthesis: `programme/BATCH_ONE_SYNTHESIS.md`, **NOT REVIEWED, NOTHING PROMOTED**.
+Synthesis: `programme/BATCH_ONE_SYNTHESIS.md`.
+
+⛔ **THE REVIEW IS DONE AND IT RETURNED FAIL.** A handoff from a terminating task session states the
+Batch One review is "still outstanding". **That is stale and must not be acted on.** It ran on
+2026-09-20 in fresh thread `01a0bc53`, read-only, and returned **FAIL**: three tasks FAIL, two
+ACCEPT_WITH_CHANGES. Verdict verbatim at `review-stage/BATCH_ONE_INDEPENDENT_REVIEW_VERDICT.md`.
+**Do not re-dispatch it.** Nothing was promoted at any point.
 
 ## 5 · Open decisions, operator only
 

@@ -68,7 +68,7 @@ available, load ~2.4 of 48. Verified directly, not assumed.
 | `ZERO` | this session | reads landed tables, writes new tables. No job. |
 | `CPU_SMALL` / `CPU_MEDIUM` | workstation | under ~4 h |
 | `CPU_HIGH` / `MEMORY_HIGH` | workstation, or **Ibex over SSH** | 48 cores and 232 GB free make most of this local |
-| `GPU_*` | **UNRESOLVED locally — do not schedule until confirmed** | see below |
+| `GPU_*` | **workstation, RESOLVED** | 2 x RTX 4090, 24,564 MiB each, driver 535.309.01, both idle |
 
 ### Correction, and how I got it wrong
 
@@ -120,11 +120,17 @@ through it** — those sessions were dispatched directly, bypassing the script, 
 governance layer. That is a dispatch error, not a script error, and it is mine. Every future dispatch
 goes through `launch_task.sh`, or performs the submodule init and the specs check explicitly.
 
-⚠️ **GPU state is unresolved, which is not the same as absent.** `nvidia-smi` fails to reach a
-driver. That is consistent with an unloaded driver **or** with a sandbox restriction, and the two
-are not distinguishable from here. **Confirm usable GPU count and per-device memory outside the
-sandbox before writing any GPU reservation.** Do not record GPUs as unavailable on this evidence;
-that is exactly the broken-instrument zero this project has paid for before.
+✅ **GPU state RESOLVED, and the earlier reading was a sandbox artefact.** Inside the sandbox
+`nvidia-smi` fails to reach a driver and no `/dev/nvidia*` nodes are visible. Outside it: **two
+NVIDIA RTX 4090s, 24,564 MiB each, driver 535.309.01**, all six device nodes present, four kernel
+modules loaded, both cards essentially free.
+
+**This is the third time in this programme that an absence turned out to be a context artefact**, and
+the pattern is now unmistakable. A deferred tool arrived as a bare name and was read as an
+unavailable reviewer. A submodule failed to initialise in a task worktree and its governance was
+read as missing. A sandbox hid device nodes and two idle GPUs were read as no GPUs. Each time the
+capability was present at the root and absent in the spawned context. **Before recording any
+capability as absent, establish which context you are measuring from.**
 
 ⚠️ **The binding constraint is I/O, not CPU or RAM.** `/home/borg` and `$TMPDIR` are the same NVMe
 device (2.8 TB free of 7 TB). Project data, scratch and checkpoints contend for one device, so with
