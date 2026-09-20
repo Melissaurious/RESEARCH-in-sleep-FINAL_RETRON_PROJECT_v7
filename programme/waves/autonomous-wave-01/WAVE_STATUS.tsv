@@ -1,9 +1,9 @@
 task_id	state	detail	freeze_commit	worker_pid	analysis_pid	slurm_job_id	started_at	finished_at
-T-A23d-primary-verification	RUNNING	worker launched	26bbd28778450e6cf706f8db1afdb42cd3397da4	1105141			2026-09-20T20:10:56Z	
+T-A23d-primary-verification	VOID	ARTIFACT_INVALID	26bbd28778450e6cf706f8db1afdb42cd3397da4	1105141			2026-09-20T20:10:56Z	
 T-D1-annotation-disagreement	PASS	DESCRIPTIVE	69a06fca24fb11c4eba8e4431b92192a07830337	1015090			2026-09-20T18:51:12Z	2026-09-20T18:51:58Z
 T-D2-taxonomic-distribution	PASS	DESCRIPTIVE	2bb0075912d7e62ce3be58f4e0658987ec7e5eba	1031715			2026-09-20T19:20:10Z	2026-09-20T19:22:44Z
-T-M1b-embedding-cache-reverification	WAIT_RESOURCE	WAIT_RESOURCE:need=8:available=7						
+T-M1b-embedding-cache-reverification	WAIT_RESOURCE	WAIT_RESOURCE:need=8:available=6						
 T-P1c-family-label-description	WAIT_DEP	WAIT_DEP:T-P1b-identity-partition:COMPLETE_AWAITING_REVIEW						
 T-R2a-tierA-internal-geometry	PASS	Type-A execution validity accepted deterministically; verdict det-4868d38e5903184a	19837473c3069b390a3139d018b64e8bd3d7bc5b	1099142			2026-09-20T20:08:10Z	2026-09-20T20:08:15Z
-T-R2b-buffington-engineered-delta	PENDING	retry after mechanical failure						
+T-R2b-buffington-engineered-delta	PREPARING	prepare agent pid=1105216						
 T-S1b-structure-inventory-correction	WAIT_DEP	WAIT_ORDER:T-M1b-embedding-cache-reverification:AUTHORIZED						
