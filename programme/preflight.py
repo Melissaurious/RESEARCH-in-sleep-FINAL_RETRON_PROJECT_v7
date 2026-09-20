@@ -206,7 +206,17 @@ def preflight(task_id: str, board: dict | None = None, base: str | None = None) 
 
 
 def execution_preflight(task_id: str) -> Preflight:
-    pf = preflight(task_id)
+    board = read_board()
+    row = board.get(task_id)
+    # The coordinator records RUNNING before spawn so a crash between state-write and spawn is reconstructable.
+    # Execution preflight therefore treats RUNNING as already authorised, but ordinary preflight still requires AUTHORIZED.
+    if row and row.get("state") == "RUNNING":
+        shadow = {k: dict(v) for k, v in board.items()}
+        shadow[task_id]["state"] = "AUTHORIZED"
+        pf = preflight(task_id, board=shadow)
+        pf.info["state"] = "RUNNING"
+    else:
+        pf = preflight(task_id, board=board)
     if not pf.launchable:
         return pf
     specpath = EXECUTIONS / task_id / "TASK_EXECUTION.json"
