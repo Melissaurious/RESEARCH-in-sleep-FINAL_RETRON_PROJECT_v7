@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
 """Preflight and consumption gates for the retron programme.
 
-Non-scientific. Resolves and checks a task without executing it, and implements the
-consumption gate that decides whether a downstream task may read an upstream artifact.
+Scientific design lives in TASK_LAUNCHER.md. This module checks readiness and integrity only.
+TASK_BOARD.tsv is the authorisation/readiness authority; a frozen task worktree launcher supersedes
+the mutable synthesis copy for execution checks.
 
 Usage:
-    python3 programme/preflight.py <task-id>        # report one task
-    python3 programme/preflight.py --all            # report every task on the board
-    python3 programme/preflight.py --selftest       # failure-injection suite
+    python3 programme/preflight.py <task-id>
+    python3 programme/preflight.py --execute <task-id>
+    python3 programme/preflight.py --all
+    python3 programme/preflight.py --selftest
 """
 from __future__ import annotations
 import csv, hashlib, json, os, subprocess, sys
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, field
 from pathlib import Path
 
-SYN = Path("/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis")
+SYN = Path(__file__).resolve().parents[1]
 PROGRAMME = SYN / "programme"
 BOARD = PROGRAMME / "TASK_BOARD.tsv"
 TASKS = PROGRAMME / "tasks"
+CANONICAL = PROGRAMME / "CANONICAL_DATASETS.tsv"
+EXECUTIONS = PROGRAMME / "executions"
 
-# The four files that constitute the governance layer. governance_base is the commit at
-# which ANY of these last changed. Stamping a launcher does not change them, so the base
-# stays stable across launcher edits.
 GOVERNANCE_FILES = [
     "programme/PROGRAM_LAUNCHER.md",
     "programme/WORKING_RULES.md",
@@ -35,6 +36,7 @@ TERMINAL_INVALID = {"VOID", "BLOCKED", "STOP", "INCONCLUSIVE"}
 SCIENTIFIC_OUTCOMES = {
     "SUPPORTS_H1", "SUPPORTS_H0", "FALSIFIED", "BOUND", "DESCRIPTIVE", "NOT_APPLICABLE",
 }
+CONSUMABLE_DATASET_STATES = {"CANONICAL", "CANONICAL_WITH_LIMITATION"}
 
 
 def git(*args: str, cwd: Path = SYN) -> str:
@@ -42,13 +44,10 @@ def git(*args: str, cwd: Path = SYN) -> str:
 
 
 def governance_base() -> str:
-    """Commit at which the governance layer last changed."""
-    out = git("log", "-1", "--format=%h", "--", *GOVERNANCE_FILES)
-    return out
+    return git("log", "-1", "--format=%h", "--", *GOVERNANCE_FILES)
 
 
 def governance_fingerprint() -> str:
-    """Content hash of the governance layer, independent of git."""
     h = hashlib.sha256()
     for rel in GOVERNANCE_FILES:
         p = SYN / rel
@@ -62,8 +61,7 @@ def read_board() -> dict[str, dict]:
         return {r["task_id"]: r for r in csv.DictReader(fh, delimiter="\t")}
 
 
-def read_front_matter(task_id: str) -> dict:
-    p = TASKS / task_id / "TASK_LAUNCHER.md"
+def _parse_front_matter_file(p: Path) -> dict:
     if not p.exists():
         return {}
     txt = p.read_text()
@@ -71,15 +69,54 @@ def read_front_matter(task_id: str) -> dict:
         return {}
     block = txt.split("---", 2)[1]
     fm: dict = {}
-    for line in block.splitlines():
-        if ":" not in line or line.strip().startswith("#"):
+    current = None
+    for raw in block.splitlines():
+        if not raw.strip() or raw.lstrip().startswith("#"):
             continue
-        k, _, v = line.partition(":")
-        fm[k.strip()] = v.strip()
+        if raw[:1].isspace() and current:
+            fm[current] = fm[current] + "\n" + raw.strip()
+            continue
+        if ":" not in raw:
+            continue
+        k, _, v = raw.partition(":")
+        current = k.strip()
+        fm[current] = v.strip()
     return fm
 
 
-# --------------------------------------------------------------------------- gates
+def default_worktree(task_id: str) -> Path:
+    name = SYN.name
+    base = name[:-len("-synthesis")] if name.endswith("-synthesis") else name
+    return SYN.parent / f"{base}-{task_id}"
+
+
+def launcher_path(task_id: str) -> Path:
+    """For frozen execution, prefer the launcher physically inside the task worktree."""
+    wt_candidate = default_worktree(task_id) / "programme" / "tasks" / task_id / "TASK_LAUNCHER.md"
+    wfm = _parse_front_matter_file(wt_candidate)
+    if wfm.get("frozen", "").lower() == "true":
+        return wt_candidate
+    central = TASKS / task_id / "TASK_LAUNCHER.md"
+    cfm = _parse_front_matter_file(central)
+    wt = Path(cfm.get("worktree", "")) if cfm.get("worktree") else None
+    if wt:
+        p = wt / "programme" / "tasks" / task_id / "TASK_LAUNCHER.md"
+        pfm = _parse_front_matter_file(p)
+        if pfm.get("frozen", "").lower() == "true":
+            return p
+    return central
+
+
+def read_front_matter(task_id: str) -> dict:
+    return _parse_front_matter_file(launcher_path(task_id))
+
+
+def canonical_statuses() -> dict[str, str]:
+    if not CANONICAL.exists():
+        return {}
+    with CANONICAL.open() as fh:
+        return {r["dataset_id"]: r["status"] for r in csv.DictReader(fh, delimiter="\t")}
+
 
 @dataclass
 class Check:
@@ -108,18 +145,17 @@ def preflight(task_id: str, board: dict | None = None, base: str | None = None) 
     pf.add("on_board", row is not None, "" if row else "task id not in TASK_BOARD.tsv")
     if not row:
         return pf
-
     state = row["state"]
     pf.info["state"] = state
     pf.add("state_authorized", state in LAUNCHABLE_STATES, f"state={state}")
 
-    fm = read_front_matter(task_id)
-    pf.add("launcher_present", bool(fm), str(TASKS / task_id / "TASK_LAUNCHER.md"))
+    lp = launcher_path(task_id)
+    fm = _parse_front_matter_file(lp)
+    pf.add("launcher_present", bool(fm), str(lp))
     if not fm:
         return pf
-
     pf.info.update({
-        "launcher": str(TASKS / task_id / "TASK_LAUNCHER.md"),
+        "launcher": str(lp),
         "worktree": fm.get("worktree", ""),
         "branch": fm.get("branch", ""),
         "output_directory": fm.get("output_directory", ""),
@@ -130,32 +166,22 @@ def preflight(task_id: str, board: dict | None = None, base: str | None = None) 
         "governance_fingerprint": governance_fingerprint(),
     })
 
-    # governance base must match
     rec = fm.get("governance_base", "")
     pf.add("governance_base_current", rec == base,
            f"launcher records {rec or '<none>'}, governance layer is at {base}")
 
-    # placeholders that must be resolved before execution
-    body = (TASKS / task_id / "TASK_LAUNCHER.md").read_text()
-    placeholders = [s for s in ("declared before running", "a floor declared", "TBC",
-                                "not named", "<declare") if s in body]
-    # a floor that is referenced but never given a value is a blocker
-    unresolved = "floor declared before running" in body or "declared before running" in body
+    body = lp.read_text()
+    unresolved = any(s in body for s in (
+        "floor declared before running", "declared before running", "<declare", "TBC"
+    ))
     pf.add("no_unresolved_criteria", not unresolved,
-           "launcher refers to a criterion that is not stated in the launcher" if unresolved else "")
+           "launcher contains unresolved criterion placeholder" if unresolved else "")
 
-    # worktree present and descends from the governance base
-    wt = Path(fm.get("worktree", ""))
+    wt = Path(fm.get("worktree", "")) if fm.get("worktree") else default_worktree(task_id)
     pf.add("worktree_exists", wt.is_dir(), str(wt))
     if wt.is_dir():
         head = git("rev-parse", "--short", "HEAD", cwd=wt)
         pf.info["worktree_head"] = head
-        # Task worktrees are analysis-tier and are based on `main`; the governance layer is
-        # index-tier and lives on project-synthesis. The two tiers are deliberately unmerged,
-        # so a task worktree cannot descend from the governance commit without collapsing the
-        # tier separation. Ancestry is therefore gated on the DECLARED base_commit, while
-        # staleness of governance is gated separately and strictly by governance_base_current
-        # plus the content fingerprint. A stale governance layer still cannot be used.
         declared = fm.get("base_commit", "")
         pf.info["base_commit_declared"] = declared
         anc = bool(declared) and subprocess.run(
@@ -165,11 +191,9 @@ def preflight(task_id: str, board: dict | None = None, base: str | None = None) 
                f"worktree HEAD {head} does not descend from declared base {declared or '<none>'}"
                if not anc else f"{head} descends from {declared}")
 
-    # output directory must be declared and inside the worktree
     outdir = fm.get("output_directory", "")
-    pf.add("output_directory_declared", bool(outdir) and not outdir.startswith("/"), outdir)
+    pf.add("output_directory_declared", bool(outdir) and not outdir.startswith("/") and ".." not in Path(outdir).parts, outdir)
 
-    # hard dependencies must themselves be PASS
     deps = fm.get("hard_dependencies", "[]").strip("[]").replace('"', "").split(",")
     deps = [d.strip() for d in deps if d.strip()]
     for d in deps:
@@ -181,12 +205,58 @@ def preflight(task_id: str, board: dict | None = None, base: str | None = None) 
     return pf
 
 
+def execution_preflight(task_id: str) -> Preflight:
+    pf = preflight(task_id)
+    if not pf.launchable:
+        return pf
+    specpath = EXECUTIONS / task_id / "TASK_EXECUTION.json"
+    pf.add("execution_spec_present", specpath.is_file(), str(specpath))
+    if not specpath.is_file():
+        pf.launchable = False
+        return pf
+    try:
+        spec = json.loads(specpath.read_text())
+    except Exception as exc:
+        pf.add("execution_spec_valid_json", False, str(exc))
+        pf.launchable = False
+        return pf
+    required = {"task_id", "worktree", "branch", "freeze_commit", "command", "inputs", "output_directory", "backend"}
+    missing = sorted(required - set(spec))
+    pf.add("execution_spec_required_fields", not missing, f"missing={missing}" if missing else "")
+    if missing:
+        pf.launchable = False
+        return pf
+    pf.add("execution_spec_task_id", spec["task_id"] == task_id, spec["task_id"])
+    wt = Path(spec["worktree"])
+    if wt.is_dir():
+        head = git("rev-parse", "HEAD", cwd=wt)
+        pf.add("freeze_commit_exact", head == spec["freeze_commit"], f"HEAD={head} freeze={spec['freeze_commit']}")
+        dirty = git("status", "--porcelain", cwd=wt)
+        pf.add("frozen_worktree_clean", not dirty, dirty[:200])
+    else:
+        pf.add("freeze_commit_exact", False, "worktree missing")
+        pf.add("frozen_worktree_clean", False, "worktree missing")
+
+    statuses = canonical_statuses()
+    for item in spec.get("inputs", []):
+        p = Path(item.get("path", ""))
+        expected = item.get("sha256", "")
+        ds = item.get("dataset_id", "")
+        ok = p.is_file()
+        detail = str(p)
+        if ok and expected:
+            got = hashlib.sha256(p.read_bytes()).hexdigest()
+            ok = got == expected
+            detail = f"expected={expected[:12]} got={got[:12]}"
+        pf.add(f"input_hash:{ds or p.name}", ok, detail)
+        if ds in statuses:
+            pf.add(f"canonical_status:{ds}", statuses[ds] in CONSUMABLE_DATASET_STATES, statuses[ds])
+    pf.launchable = all(c.ok for c in pf.checks)
+    return pf
+
+
 def consumption_gate(producer_state: str, scientific_outcome: str,
                      artifact: str, consumable_outputs: list[str]) -> tuple[bool, str]:
-    """May a downstream task read `artifact`?
-
-    Gates on TASK VALIDITY ONLY. A refuted hypothesis is a successful task.
-    """
     if producer_state not in TERMINAL_VALID:
         return False, f"producer TASK_STATE={producer_state} is not PASS"
     if scientific_outcome not in SCIENTIFIC_OUTCOMES:
@@ -197,7 +267,6 @@ def consumption_gate(producer_state: str, scientific_outcome: str,
 
 
 def write_guard(path: str, output_directory: str, worktree: str) -> tuple[bool, str]:
-    """May a task write to `path`?"""
     try:
         p = Path(path).resolve()
         allowed = (Path(worktree) / output_directory).resolve()
@@ -228,11 +297,8 @@ def population_guard(claimed: set[str], already_consumed: set[str]) -> tuple[boo
     return (not clash), f"confirmatory population already consumed: {sorted(clash)}" if clash else "no collision"
 
 
-# --------------------------------------------------------------------------- cli
-
 def render(pf: Preflight) -> str:
-    lines = [f"=== PREFLIGHT · {pf.task_id} ===",
-             f"  LAUNCHABLE: {'YES' if pf.launchable else 'NO'}"]
+    lines = [f"=== PREFLIGHT · {pf.task_id} ===", f"  LAUNCHABLE: {'YES' if pf.launchable else 'NO'}"]
     for k, v in pf.info.items():
         lines.append(f"  {k:<28} {v}")
     for c in pf.checks:
@@ -246,28 +312,36 @@ def main(argv: list[str]) -> int:
         print(__doc__)
         return 0
     if argv[0] == "--selftest":
-        from test_gates import run_suite  # noqa
+        from test_gates import run_suite
         return run_suite()
+    if argv[0] == "--execute":
+        if len(argv) != 2:
+            print("usage: preflight.py --execute <task-id>", file=sys.stderr)
+            return 2
+        p = execution_preflight(argv[1])
+        print(render(p))
+        return 0 if p.launchable else 1
     board = read_board()
     base = governance_base()
     if argv[0] == "--all":
         rows = []
-        for tid, row in board.items():
-            if not (TASKS / tid / "TASK_LAUNCHER.md").exists():
+        for tid in board:
+            if not launcher_path(tid).exists():
                 continue
-            pf = preflight(tid, board, base)
-            print(render(pf)); print()
-            rows.append({"task_id": tid, "state": row["state"],
-                         "launchable": pf.launchable,
-                         "failed_checks": ";".join(c.name for c in pf.checks if not c.ok)})
+            p = preflight(tid, board, base)
+            print(render(p)); print()
+            rows.append({"task_id": tid, "state": board[tid]["state"], "launchable": p.launchable,
+                         "failed_checks": ";".join(c.name for c in p.checks if not c.ok)})
         out = PROGRAMME / "PREFLIGHT_STATUS.tsv"
-        with out.open("w", newline="") as fh:
-            w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), delimiter="\t")
-            w.writeheader(); w.writerows(rows)
-        print(f"wrote {out}")
+        if rows:
+            with out.open("w", newline="") as fh:
+                w = csv.DictWriter(fh, fieldnames=list(rows[0]), delimiter="\t")
+                w.writeheader(); w.writerows(rows)
+            print(f"wrote {out}")
         return 0
-    print(render(preflight(argv[0], board, base)))
-    return 0
+    p = preflight(argv[0], board, base)
+    print(render(p))
+    return 0 if p.launchable else 1
 
 
 if __name__ == "__main__":
