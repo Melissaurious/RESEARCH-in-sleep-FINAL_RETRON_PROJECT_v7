@@ -1,5 +1,5 @@
 task_id	state	detail	freeze_commit	worker_pid	analysis_pid	slurm_job_id	started_at	finished_at
-T-A23d-primary-verification	PENDING	requeued after the specs_exist regression was fixed	ccb4832b609e62a002ba5964ed603be40887d96c					
+T-A23d-primary-verification	RUNNING	worker launched on local (declared local)	ccb4832b609e62a002ba5964ed603be40887d96c	1179992			2026-09-20T20:47:50Z	
 T-D1-annotation-disagreement	PASS	DESCRIPTIVE	69a06fca24fb11c4eba8e4431b92192a07830337	1015090			2026-09-20T18:51:12Z	2026-09-20T18:51:58Z
 T-D2-taxonomic-distribution	PASS	DESCRIPTIVE	2bb0075912d7e62ce3be58f4e0658987ec7e5eba	1031715			2026-09-20T19:20:10Z	2026-09-20T19:22:44Z
 T-M1b-embedding-cache-reverification	PENDING	requeued after coordinator restart						
