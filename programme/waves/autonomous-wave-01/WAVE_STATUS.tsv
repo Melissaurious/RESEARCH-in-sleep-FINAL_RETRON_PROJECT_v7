@@ -5,5 +5,5 @@ T-D2-taxonomic-distribution	PASS	DESCRIPTIVE	2bb0075912d7e62ce3be58f4e0658987ec7
 T-M1b-embedding-cache-reverification	WAIT_RESOURCE	WAIT_RESOURCE:need=8:available=7						
 T-P1c-family-label-description	WAIT_DEP	WAIT_DEP:T-P1b-identity-partition:COMPLETE_AWAITING_REVIEW						
 T-R2a-tierA-internal-geometry	PASS	Type-A execution validity accepted deterministically; verdict det-4868d38e5903184a	19837473c3069b390a3139d018b64e8bd3d7bc5b	1099142			2026-09-20T20:08:10Z	2026-09-20T20:08:15Z
-T-R2b-buffington-engineered-delta	PREPARING	prepare agent pid=1105216						
+T-R2b-buffington-engineered-delta	FROZEN	ready	89e841560bdc12ddf8acc70a8ad5744b9fb67a08					
 T-S1b-structure-inventory-correction	WAIT_DEP	WAIT_ORDER:T-M1b-embedding-cache-reverification:AUTHORIZED						
