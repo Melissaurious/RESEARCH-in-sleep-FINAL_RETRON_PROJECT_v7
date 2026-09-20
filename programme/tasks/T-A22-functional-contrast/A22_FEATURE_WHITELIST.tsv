@@ -1,0 +1,12 @@
+feature_id	admissible	source_asset	derived_from	definition	freeze_clause
+rt_len	YES	RT-EXACT-501561	RT protein sequence	length of the RT protein in residues	2b.1
+pf00078_hit	YES	C1B-ENVELOPES-501561	RT protein sequence	PF00078 envelope present at domE<=1e-5, boolean	2b.2
+pf00078_env_from	YES	C1B-ENVELOPES-501561	RT protein sequence	envelope start coordinate	2b.2
+pf00078_env_to	YES	C1B-ENVELOPES-501561	RT protein sequence	envelope end coordinate	2b.2
+pf00078_env_len	YES	C1B-ENVELOPES-501561	RT protein sequence	envelope length in residues	2b.2
+pf00078_score	YES	C1B-ENVELOPES-501561	RT protein sequence	bitscore of the best-scoring PF00078 domain	2b.2
+yxdd_present	YES	T-F1	RT protein sequence	YxDD catalytic motif present, boolean	2b.3
+yxdd_position	YES	T-F1	RT protein sequence	position of the YxDD motif in the RT protein	2b.3
+ncrna_len	YES	PANEL-175 ncRNA_sequence	ncRNA sequence	length of the ncRNA in nucleotides	2b.4
+rt_aa_composition	YES	RT-EXACT-501561	RT protein sequence	per-residue amino-acid composition of the RT protein	2b.5
+p1b_cluster_id	YES	T-P1b	RT protein sequence	cluster membership at a declared identity level; NUISANCE TERM ONLY, never a predictor of function	2b.6

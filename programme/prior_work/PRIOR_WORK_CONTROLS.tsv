@@ -1,0 +1,52 @@
+root	substrate	control_type	blocking	expectation	observed	state	note
+JUNE_RETRONS	content	positive	YES	/retron/i recoverable on this substrate of this root	3 hit(s) over 5 unit(s)	PASS	
+JUNE_RETRONS	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 0 unit(s)	NOT_EVALUABLE	substrate is empty on this root
+JUNE_RETRONS	dirname	positive	YES	/retron/i recoverable on this substrate of this root	1 hit(s) over 3 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7	content	positive	YES	/retron/i recoverable on this substrate of this root	2511 hit(s) over 6047 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 522 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7	dirname	positive	YES	/retron/i recoverable on this substrate of this root	5 hit(s) over 999 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit	content	positive	YES	/retron/i recoverable on this substrate of this root	703 hit(s) over 1483 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 3 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit	dirname	positive	YES	/retron/i recoverable on this substrate of this root	2 hit(s) over 204 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-dbchar-workbench	content	positive	YES	/retron/i recoverable on this substrate of this root	697 hit(s) over 1395 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-dbchar-workbench	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 1 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-dbchar-workbench	dirname	positive	YES	/retron/i recoverable on this substrate of this root	2 hit(s) over 196 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embedding-report	content	positive	YES	/retron/i recoverable on this substrate of this root	719 hit(s) over 1415 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embedding-report	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 1 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embedding-report	dirname	positive	YES	/retron/i recoverable on this substrate of this root	2 hit(s) over 192 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings	content	positive	YES	/retron/i recoverable on this substrate of this root	795 hit(s) over 1704 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings	header	positive	YES	/retron/i recoverable on this substrate of this root	2 hit(s) over 14 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings	dirname	positive	YES	/retron/i recoverable on this substrate of this root	2 hit(s) over 278 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit	content	positive	YES	/retron/i recoverable on this substrate of this root	856 hit(s) over 1756 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit	header	positive	YES	/retron/i recoverable on this substrate of this root	3 hit(s) over 9 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit	dirname	positive	YES	/retron/i recoverable on this substrate of this root	7 hit(s) over 342 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna	content	positive	YES	/retron/i recoverable on this substrate of this root	721 hit(s) over 3108 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 6 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna	dirname	positive	YES	/retron/i recoverable on this substrate of this root	16 hit(s) over 13767 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c	content	positive	YES	/retron/i recoverable on this substrate of this root	747 hit(s) over 1565 unit(s)	PASS	
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 3 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c	dirname	positive	YES	/retron/i recoverable on this substrate of this root	2 hit(s) over 198 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB	content	positive	YES	/retron/i recoverable on this substrate of this root	115 hit(s) over 1063 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 15 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-RETRON-DB	dirname	positive	YES	/retron/i recoverable on this substrate of this root	4 hit(s) over 353 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V2	content	positive	YES	/retron/i recoverable on this substrate of this root	374 hit(s) over 1681 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V2	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 77 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-RETRON-DB_V2	dirname	positive	YES	/retron/i recoverable on this substrate of this root	3 hit(s) over 490 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V3	content	positive	YES	/retron/i recoverable on this substrate of this root	1922 hit(s) over 5111 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V3	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 82 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-RETRON-DB_V3	dirname	positive	YES	/retron/i recoverable on this substrate of this root	11 hit(s) over 1474 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V4	content	positive	YES	/retron/i recoverable on this substrate of this root	5772 hit(s) over 7510 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V4	header	positive	YES	/retron/i recoverable on this substrate of this root	4 hit(s) over 54 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V4	dirname	positive	YES	/retron/i recoverable on this substrate of this root	6 hit(s) over 16370 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V5	content	positive	YES	/retron/i recoverable on this substrate of this root	496 hit(s) over 748 unit(s)	PASS	
+RESEARCH-in-sleep-RETRON-DB_V5	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 10 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-in-sleep-RETRON-DB_V5	dirname	positive	YES	/retron/i recoverable on this substrate of this root	2 hit(s) over 95 unit(s)	PASS	
+RESEARCH-retron-db	content	positive	YES	/retron/i recoverable on this substrate of this root	2909 hit(s) over 5680 unit(s)	PASS	
+RESEARCH-retron-db	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 30 unit(s)	FAIL	substrate searched but known-present term not recovered
+RESEARCH-retron-db	dirname	positive	YES	/retron/i recoverable on this substrate of this root	1 hit(s) over 895 unit(s)	PASS	
+RETRONS_january_2026	content	positive	YES	/retron/i recoverable on this substrate of this root	278982 hit(s) over 667603 unit(s)	PASS	
+RETRONS_january_2026	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 22 unit(s)	FAIL	substrate searched but known-present term not recovered
+RETRONS_january_2026	dirname	positive	YES	/retron/i recoverable on this substrate of this root	31 hit(s) over 561648 unit(s)	PASS	
+RETRON_STAGES	content	positive	YES	/retron/i recoverable on this substrate of this root	28 hit(s) over 28 unit(s)	PASS	
+RETRON_STAGES	header	positive	YES	/retron/i recoverable on this substrate of this root	0 hit(s) over 0 unit(s)	NOT_EVALUABLE	substrate is empty on this root
+RETRON_STAGES	dirname	positive	YES	/retron/i recoverable on this substrate of this root	1 hit(s) over 1 unit(s)	PASS	

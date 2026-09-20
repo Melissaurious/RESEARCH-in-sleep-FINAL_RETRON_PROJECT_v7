@@ -1,0 +1,4 @@
+fixture	n_sequences	sha256	purpose
+fixture_duplicates.faa	200	c457faa686378148420346a3f21f438643d4b5e6f8a3f8be2b15b0516d750acf	100 exact-duplicate pairs; must co-cluster at every level
+fixture_shuffled.faa	200	4fc651e5fcd2e0f500d75f7ef7f44c3d4ea311e6ef1ada50e0689d4705ecbca5	100 orig/composition-matched-shuffle pairs; must NOT co-cluster
+fixture_edgecases.faa	7	5d0c42d1985cd483bd69dc148fe20b1eed2acc3188b2230acee1974e94c10308	U, X, all-U, 20 aa, 12x-long and unrelated; must all be ASSIGNED, none dropped

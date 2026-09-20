@@ -1,0 +1,79 @@
+{
+  "run_id": "autonomous-wave-01",
+  "created": "2026-09-20T18:03:00Z",
+  "updated": "2026-09-20T20:48:10Z",
+  "phases": [
+    {
+      "phase": "T-P1b-identity-partition",
+      "status": "pending",
+      "artifact": null,
+      "verdict_id": null,
+      "reviewer": null,
+      "updated": "2026-09-20T18:03:00Z"
+    },
+    {
+      "phase": "T-A23d-primary-verification",
+      "status": "failed",
+      "artifact": null,
+      "verdict_id": null,
+      "reviewer": null,
+      "updated": "2026-09-20T20:48:10Z"
+    },
+    {
+      "phase": "T-R2a-tierA-internal-geometry",
+      "status": "accepted",
+      "artifact": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-R2a-tierA-internal-geometry/analysis/t_r2a_tierA_internal_geometry/TASK_REPORT.md",
+      "verdict_id": "det-4868d38e5903184a",
+      "reviewer": "deterministic-validator:autonomy_state.validate_type_a_execution",
+      "updated": "2026-09-20T20:10:42Z"
+    },
+    {
+      "phase": "T-R2b-buffington-engineered-delta",
+      "status": "accepted",
+      "artifact": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-R2b-buffington-engineered-delta/analysis/t_r2b_buffington_engineered_delta/TASK_REPORT.md",
+      "verdict_id": "det-f881e6942f4aaf1a",
+      "reviewer": "deterministic-validator:autonomy_state.validate_type_a_execution",
+      "updated": "2026-09-20T20:21:02Z"
+    },
+    {
+      "phase": "T-D1-annotation-disagreement",
+      "status": "accepted",
+      "artifact": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D1-annotation-disagreement/analysis/t_d1_annotation_disagreement/TASK_REPORT.md",
+      "verdict_id": "det-343ad0db7d4c1830",
+      "reviewer": "deterministic-validator:autonomy_state.validate_type_a_execution",
+      "updated": "2026-09-20T19:40:19Z"
+    },
+    {
+      "phase": "T-D2-taxonomic-distribution",
+      "status": "accepted",
+      "artifact": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D2-taxonomic-distribution/analysis/t_d2_taxonomic_distribution/TASK_REPORT.md",
+      "verdict_id": "det-8b71e287f9870ba9",
+      "reviewer": "deterministic-validator:autonomy_state.validate_type_a_execution",
+      "updated": "2026-09-20T19:40:21Z"
+    },
+    {
+      "phase": "T-P1c-family-label-description",
+      "status": "pending",
+      "artifact": null,
+      "verdict_id": null,
+      "reviewer": null,
+      "updated": "2026-09-20T18:03:00Z"
+    },
+    {
+      "phase": "T-M1b-embedding-cache-reverification",
+      "status": "pending",
+      "artifact": null,
+      "verdict_id": null,
+      "reviewer": null,
+      "updated": "2026-09-20T18:03:00Z"
+    },
+    {
+      "phase": "T-S1b-structure-inventory-correction",
+      "status": "pending",
+      "artifact": null,
+      "verdict_id": null,
+      "reviewer": null,
+      "updated": "2026-09-20T18:03:00Z"
+    }
+  ]
+}

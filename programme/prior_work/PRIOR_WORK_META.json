@@ -1,0 +1,110 @@
+{
+  "blocked_substrates": [
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit:header",
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-dbchar-workbench:header",
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embedding-report:header",
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna:header",
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c:header",
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7:header",
+    "RESEARCH-in-sleep-RETRON-DB:header",
+    "RESEARCH-in-sleep-RETRON-DB_V2:header",
+    "RESEARCH-in-sleep-RETRON-DB_V3:header",
+    "RESEARCH-in-sleep-RETRON-DB_V5:header",
+    "RESEARCH-retron-db:header",
+    "RETRONS_january_2026:header"
+  ],
+  "content_max_bytes": 2097152,
+  "elapsed_s": 1451.3,
+  "external_search_binary_used": null,
+  "finished_utc": "2026-09-20T02:46:03Z",
+  "n_topics": 24,
+  "roots": {
+    "JUNE_RETRONS": {
+      "n_content": 5,
+      "n_dirs": 3,
+      "n_header": 0
+    },
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7": {
+      "n_content": 6047,
+      "n_dirs": 999,
+      "n_header": 522
+    },
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit": {
+      "n_content": 1483,
+      "n_dirs": 204,
+      "n_header": 3
+    },
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-dbchar-workbench": {
+      "n_content": 1395,
+      "n_dirs": 196,
+      "n_header": 1
+    },
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embedding-report": {
+      "n_content": 1415,
+      "n_dirs": 192,
+      "n_header": 1
+    },
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings": {
+      "n_content": 1704,
+      "n_dirs": 278,
+      "n_header": 14
+    },
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit": {
+      "n_content": 1756,
+      "n_dirs": 342,
+      "n_header": 9
+    },
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna": {
+      "n_content": 3108,
+      "n_dirs": 13767,
+      "n_header": 6
+    },
+    "RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c": {
+      "n_content": 1565,
+      "n_dirs": 198,
+      "n_header": 3
+    },
+    "RESEARCH-in-sleep-RETRON-DB": {
+      "n_content": 1063,
+      "n_dirs": 353,
+      "n_header": 15
+    },
+    "RESEARCH-in-sleep-RETRON-DB_V2": {
+      "n_content": 1681,
+      "n_dirs": 490,
+      "n_header": 77
+    },
+    "RESEARCH-in-sleep-RETRON-DB_V3": {
+      "n_content": 5111,
+      "n_dirs": 1474,
+      "n_header": 82
+    },
+    "RESEARCH-in-sleep-RETRON-DB_V4": {
+      "n_content": 7510,
+      "n_dirs": 16370,
+      "n_header": 54
+    },
+    "RESEARCH-in-sleep-RETRON-DB_V5": {
+      "n_content": 748,
+      "n_dirs": 95,
+      "n_header": 10
+    },
+    "RESEARCH-retron-db": {
+      "n_content": 5680,
+      "n_dirs": 895,
+      "n_header": 30
+    },
+    "RETRONS_january_2026": {
+      "n_content": 667603,
+      "n_dirs": 561648,
+      "n_header": 22
+    },
+    "RETRON_STAGES": {
+      "n_content": 28,
+      "n_dirs": 1,
+      "n_header": 0
+    }
+  },
+  "script_version": "2.0.0",
+  "started_utc": "2026-09-20T02:21:52Z"
+}

@@ -1,0 +1,88 @@
+{
+  "backend": "local",
+  "branch": "task/T-D1-annotation-disagreement",
+  "command": [
+    "/home/borg/miniconda3/envs/retron_tradicional/bin/python",
+    "programme/tasks/T-D1-annotation-disagreement/d1_run.py",
+    "--tool-calls",
+    "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_tool_calls_v1.parquet",
+    "--records",
+    "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_records_v1.parquet",
+    "--landed-g6",
+    "results/dbchar_g6_tool_calls/tables",
+    "--task-dir",
+    "programme/tasks/T-D1-annotation-disagreement",
+    "--out",
+    "analysis/t_d1_annotation_disagreement"
+  ],
+  "freeze_commit": "69a06fca24fb11c4eba8e4431b92192a07830337",
+  "frozen_files": {
+    "programme/tasks/T-D1-annotation-disagreement/FIXTURE_MANIFEST.tsv": "0da66ca357e431b720e121107da84a242f20852b4a66cd3e6673cf350386b9e1",
+    "programme/tasks/T-D1-annotation-disagreement/PREPARE_RESULT.json": "f1977949a342e94657103c0d4f4e80ca854015be2474115a3c1e38048aaf157a",
+    "programme/tasks/T-D1-annotation-disagreement/TASK_LAUNCHER.md": "c155f1ef3fc0699f831ae4859d24caac78e451be7faf9773251d55e71bda86b9",
+    "programme/tasks/T-D1-annotation-disagreement/d1_classify.py": "0d6140be21c08d3acc44c3c9d77b90ecc53fcc4485826669a5f7aa08b243e614",
+    "programme/tasks/T-D1-annotation-disagreement/d1_controls.py": "e882c11f39fb05a6c241d70082816dff7848ed17d5d6722eaea1af59e5a0de2a",
+    "programme/tasks/T-D1-annotation-disagreement/d1_fixtures.py": "9667e0792a7d94bb7eb7ef3b7bc2b3233553a9c12830703488170689ae96b396",
+    "programme/tasks/T-D1-annotation-disagreement/d1_pipeline.py": "b7c3289da4d21b56bf09e2193e24e84a13a747c563cde0e8866a38daf55e134a",
+    "programme/tasks/T-D1-annotation-disagreement/d1_run.py": "3bdf750372a79a610a3538dd7a268048c95019b4c6503d2846ef929f0e34c907",
+    "programme/tasks/T-D1-annotation-disagreement/d1_selfcheck.py": "1a9fa87bd9d8da778126725140caf0f1933693b15e63aa61fd7616c4e8c350d0",
+    "programme/tasks/T-D1-annotation-disagreement/fixtures/d1_fixture_records.tsv": "f67c876ef880cc2d2e71e3b8fb48b5a8bddbb00be852b203ee54f23f4ffaed12"
+  },
+  "inputs": [
+    {
+      "canonical_status": "CANONICAL_WITH_LIMITATION",
+      "columns_read": 13,
+      "dataset_id": "RT-TOOL-CALLS-3051238",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_tool_calls_v1.parquet",
+      "role": "the \u00a73 population: 3,051,238 first-copy records with each tool's own call",
+      "sha256": "27c6b5c6fbf06f042fee8d5a46599124be51474966673a1079a3f2f786384009"
+    },
+    {
+      "canonical_status": "CANONICAL_WITH_LIMITATION",
+      "columns_read": 2,
+      "dataset_id": "RT-RECORDS-3059700",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_records_v1.parquet",
+      "role": "\u00a73 denominator reconciliation only; columns record_key and is_first_copy, nothing else. Taxonomy is not opened (launcher \u00a72)",
+      "sha256": "546605034a2e5f21794a842db17849dfa7018689aea3a1bf43ee63b0837dfb6f"
+    },
+    {
+      "canonical_status": "landed Stage-1 result, tracked in git at the freeze commit",
+      "columns_read": null,
+      "dataset_id": "G6-LANDED::g6_tool_presence_retron.tsv",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D1-annotation-disagreement/results/dbchar_g6_tool_calls/tables/g6_tool_presence_retron.tsv",
+      "role": "D1_POS_reproduce_landed target: five rows, n_records and n_loci",
+      "sha256": "db1ea8d9f3ba98bf30e96eaf0cdb4849c70d9c6e1b60889f51a06d041e9a76e0"
+    },
+    {
+      "canonical_status": "landed Stage-1 result, tracked in git at the freeze commit",
+      "columns_read": null,
+      "dataset_id": "G6-LANDED::g6_subtype_agreement.tsv",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D1-annotation-disagreement/results/dbchar_g6_tool_calls/tables/g6_subtype_agreement.tsv",
+      "role": "D1_POS_reproduce_landed target: three subtype measures",
+      "sha256": "0d5667a30cc558e5f61385a774dd03695f0d634eb1cbb4b94f69c4f7dbaa3998"
+    },
+    {
+      "canonical_status": "landed Stage-1 result, tracked in git at the freeze commit",
+      "columns_read": null,
+      "dataset_id": "G6-LANDED::g6_tool_matrix_by_family.tsv",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D1-annotation-disagreement/results/dbchar_g6_tool_calls/tables/g6_tool_matrix_by_family.tsv",
+      "role": "D1_POS_reproduce_landed target: all 52 family x detected_by cells",
+      "sha256": "ae0b1407c59545632f391c407b51aa6d9199a5368dc8a30a229dfe9f349443a4"
+    }
+  ],
+  "output_directory": "analysis/t_d1_annotation_disagreement/",
+  "resources": {
+    "cpu_threads": 4,
+    "io_tokens": 3,
+    "memory_gb": 24,
+    "note": "single-process pandas/pyarrow; the binding constraint is NVMe I/O, not cores: ~0.9 GB of parquet read and a ~0.6 GB per-record TSV written"
+  },
+  "runtime": {
+    "max_runtime_seconds": 5400,
+    "resume_allowed": false,
+    "stop_note": "A failed blocking control ends the task: the runner lands TASK_STATE=STOP with the controls table as evidence, writes no primary table, and escalates under a new id (WORKING_RULES \u00a76b rule 2). resume_allowed is false so a partial output directory cannot be silently continued or overwritten."
+  },
+  "schema_version": 1,
+  "task_id": "T-D1-annotation-disagreement",
+  "worktree": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D1-annotation-disagreement"
+}

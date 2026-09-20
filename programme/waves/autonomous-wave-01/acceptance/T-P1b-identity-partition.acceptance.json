@@ -1,0 +1,80 @@
+{
+  "acceptance_type": "TYPE_A_EXECUTION_VALIDITY",
+  "accepted": false,
+  "ceiling": "Execution validity only. Sequence-relatedness structure only; not a phylogeny, not lineage truth, not an RT classification. The two quarantined tables are INVALID and not consumable.",
+  "checks": [
+    {
+      "check": "freeze_commit",
+      "detail": "70a52c0059df946f7b369eebcb427b9086cfc209 vs 70a52c0059df946f7b369eebcb427b9086cfc209",
+      "result": "PASS"
+    },
+    {
+      "check": "freeze_branch",
+      "detail": "task/T-P1b-identity-partition vs task/T-P1b-identity-partition",
+      "result": "PASS"
+    },
+    {
+      "check": "no_tracked_file_modified_after_freeze",
+      "detail": "no tracked change",
+      "result": "PASS"
+    },
+    {
+      "check": "frozen_file_hashes",
+      "detail": "all match",
+      "result": "PASS"
+    },
+    {
+      "check": "launcher_is_frozen",
+      "detail": "TASK_LAUNCHER.md must be hash-pinned in frozen_files",
+      "result": "PASS"
+    },
+    {
+      "check": "input_hashes",
+      "detail": "all match",
+      "result": "PASS"
+    },
+    {
+      "check": "required_outputs_present",
+      "detail": "present",
+      "result": "PASS"
+    },
+    {
+      "check": "output_manifest_valid",
+      "detail": "verified",
+      "result": "PASS"
+    },
+    {
+      "check": "run_log_valid",
+      "detail": "parsed",
+      "result": "PASS"
+    },
+    {
+      "check": "task_report_schema",
+      "detail": "TASK_STATE + SCIENTIFIC_OUTCOME present and known",
+      "result": "PASS"
+    },
+    {
+      "check": "blocking_controls_pass",
+      "detail": "22 blocking control rows PASS across 1 table(s)",
+      "result": "PASS"
+    },
+    {
+      "check": "no_undeclared_inputs",
+      "detail": "run log declares no extra inputs",
+      "result": "PASS"
+    },
+    {
+      "check": "endpoint_unchanged",
+      "detail": "launcher output_directory=analysis/t_p1b_identity_partition/ frozen=true",
+      "result": "FAIL"
+    }
+  ],
+  "freeze_commit": "70a52c0059df946f7b369eebcb427b9086cfc209",
+  "quarantined_outputs": [
+    "tables/P1b_cluster_family_composition.tsv",
+    "tables/P1b_cross_family_clusters.tsv"
+  ],
+  "reviewer": "deterministic-validator:autonomy_state.validate_type_a_execution",
+  "task_id": "T-P1b-identity-partition",
+  "verdict_id": "det-f02aa76872cb749f"
+}

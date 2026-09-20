@@ -1,0 +1,48 @@
+{
+  "backend": "local",
+  "branch": "task/T-R2b-buffington-engineered-delta",
+  "command": [
+    "/home/borg/miniconda3/envs/retron_tradicional/bin/python",
+    "programme/tasks/T-R2b-buffington-engineered-delta/r2b_engineered_delta.py",
+    "--mode",
+    "primary",
+    "--out",
+    "analysis/t_r2b_buffington_engineered_delta",
+    "--backend",
+    "workstation"
+  ],
+  "freeze_commit": "89e841560bdc12ddf8acc70a8ad5744b9fb67a08",
+  "frozen_files": {
+    "programme/tasks/T-R2b-buffington-engineered-delta/PREPARE_RESULT.json": "d682f9d1b1b343d0d2ec6733520532a096d65ee834d20c484286421ad972a96f",
+    "programme/tasks/T-R2b-buffington-engineered-delta/R2b_REPORT_SCHEMA.json": "718bddf16c5ed469fbeee993b177428a99a71a124db4aeb94a03dbaefccad1a1",
+    "programme/tasks/T-R2b-buffington-engineered-delta/TASK_LAUNCHER.md": "64ad3c8d088624a7df472f2767901d038e128f56af640d10746149858cb1ef29",
+    "programme/tasks/T-R2b-buffington-engineered-delta/r2b_engineered_delta.py": "c18d22119451d667a0c296bbaaf6f82eb397442087e4f7e44e5236fb8e2a2b38",
+    "programme/tasks/T-R2b-buffington-engineered-delta/r2b_selfcheck.py": "1232b51671124b04cd2a2f36fc6e10d3e565f288d653ecad2c6fe2f9f354ef82"
+  },
+  "inputs": [
+    {
+      "canonical_status": "CANONICAL_WITH_LIMITATION \u2014 registered in programme/CANONICAL_DATASETS.tsv",
+      "dataset_id": "BUFFINGTON2025_RETRON_CATALOGUE",
+      "limitation": "PRESENCE IS NOT EXPERIMENTAL VALIDATION: the table carries no screening and no activity column, and identification is bioinformatic. Column 8 is an ENGINEERED RFP repair-template construct and is never pooled with column 7 \u2014 this task measures the difference BETWEEN them and labels it ENGINEERED_DELTA only.",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-R2b-buffington-engineered-delta/references/rt0_rt7/buffington_2025/Discovery_and_engineering_of_retrons_supp.csv",
+      "role": "the ONLY input: 105 published retron systems, read for the 'Putative native msr-msd' column and the '81nt RFP repair template' engineered column, joined on the unique 'I.D.' key",
+      "sha256": "d68366970378c05b5af9b00be886d76224a196a29b77171303f9353457cf4e62"
+    }
+  ],
+  "output_directory": "analysis/t_r2b_buffington_engineered_delta/",
+  "resources": {
+    "cpu_threads": 1,
+    "io_tokens": 1,
+    "memory_gb": 2,
+    "note": "One single-threaded Python process. Biopython's PairwiseAligner is not parallel and nothing here forks. The input is 87 KB and the outputs are 105 + at most 100-per-ambiguous-system + ~17 TSV rows, so I/O is negligible: io_tokens=1 lets this run beside a heavy-I/O task without contending for the single NVMe device WORKING_RULES \u00a74 names as the binding constraint."
+  },
+  "runtime": {
+    "max_runtime_seconds": 1800,
+    "resume_allowed": false,
+    "runtime_basis": "Measured at prepare: the cap-saturating synthetic fixture enumerates its full 10,000 optima in 0.17 s, so 105 systems each saturating the cap bound the alignment work at ~20 s. 1800 s is a wide margin, not an estimate.",
+    "stop_note": "A failed blocking control ends the task: the runner writes R2b_controls.tsv, writes NO primary table and exits 2. A post-primary gate failure, a report-schema violation or a non-closed output manifest also exits 2. WORKING_RULES \u00a76b rule 2 then applies \u2014 escalate and open a new task id, never a v2 under this identity. Reaching the 10,000-optimum enumeration cap is an AMBIGUOUS_DELTA/TOO_MANY_OPTIMA OUTCOME, not a failure and never a reason to retune the \u00a73 scoring. resume_allowed is false so a partial bundle cannot be silently continued."
+  },
+  "schema_version": 1,
+  "task_id": "T-R2b-buffington-engineered-delta",
+  "worktree": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-R2b-buffington-engineered-delta"
+}

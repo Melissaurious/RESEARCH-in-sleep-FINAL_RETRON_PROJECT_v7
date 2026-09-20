@@ -1,0 +1,91 @@
+{
+  "anchor_failures": [],
+  "dead_substrates": [
+    "rdb_data_derived:header"
+  ],
+  "elapsed_s": 152.3,
+  "n_tasks": 50,
+  "roots": {
+    "governed_analysis": {
+      "content": 121,
+      "header": 90,
+      "parquet": 0,
+      "path": 134
+    },
+    "governed_docs": {
+      "content": 69,
+      "header": 3,
+      "parquet": 0,
+      "path": 69
+    },
+    "governed_results": {
+      "content": 998,
+      "header": 657,
+      "parquet": 0,
+      "path": 1112
+    },
+    "idea_stage": {
+      "content": 30,
+      "header": 0,
+      "parquet": 0,
+      "path": 30
+    },
+    "rdb_data_derived": {
+      "content": 4,
+      "header": 4,
+      "parquet": 1,
+      "path": 22
+    },
+    "references": {
+      "content": 20,
+      "header": 6,
+      "parquet": 0,
+      "path": 32
+    },
+    "v7_analysis_workbench": {
+      "content": 106,
+      "header": 86,
+      "parquet": 0,
+      "path": 119
+    },
+    "v7_data_derived": {
+      "content": 2,
+      "header": 1,
+      "parquet": 22,
+      "path": 31
+    },
+    "wt_asset_audit": {
+      "content": 296,
+      "header": 208,
+      "parquet": 0,
+      "path": 338
+    },
+    "wt_embeddings": {
+      "content": 1099,
+      "header": 700,
+      "parquet": 0,
+      "path": 1224
+    },
+    "wt_mestre_audit": {
+      "content": 179,
+      "header": 124,
+      "parquet": 0,
+      "path": 208
+    },
+    "wt_spire_ncrna": {
+      "content": 252,
+      "header": 179,
+      "parquet": 0,
+      "path": 282
+    },
+    "wt_stage3c": {
+      "content": 373,
+      "header": 263,
+      "parquet": 0,
+      "path": 427
+    }
+  },
+  "script_version": "1.0.0",
+  "started_utc": "2026-09-20T10:29:56Z",
+  "unbounded": true
+}

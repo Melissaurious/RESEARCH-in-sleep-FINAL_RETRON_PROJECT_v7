@@ -1,0 +1,16 @@
+quantity	value	unit	denominator	note
+negative_sweep_n	400	unrelated random pairs	400	seed 4242, deliberately DIFFERENT from the task seed 20260920
+negative_sweep_geometry	RT-DNA 55-189 nt inside ncRNA 88-293 nt	nt	-	panel-realistic LENGTHS only; no panel SEQUENCE used
+state_UNMAPPED	400	pairs	400	every unrelated pair is refused
+state_NEAR_EXACT	0	pairs	400	none acquires a convincing local mapping
+coverage_min	0.0380	fraction	400	
+coverage_median	0.1034	fraction	400	
+coverage_p95	0.2300	fraction	400	
+coverage_max	0.3875	fraction	400	the worst case, still far below the floor
+identity_min	0.7619	fraction	400	
+identity_median	0.9231	fraction	400	
+identity_max	1.0000	fraction	400	noise reaches PERFECT identity on a short island
+declared_floor_coverage	0.90	fraction	-	predeclared
+declared_floor_identity	0.90	fraction	-	predeclared
+coverage_margin_to_floor	0.5125	fraction	-	0.90 minus the observed maximum 0.3875
+identity_alone_would_admit	>=200	pairs	400	median identity 0.9231 EXCEEDS the identity floor: identity alone is NOT a usable criterion

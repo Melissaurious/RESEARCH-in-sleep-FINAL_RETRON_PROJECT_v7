@@ -1,0 +1,162 @@
+{
+  "backend": "local",
+  "branch": "task/T-D2-taxonomic-distribution",
+  "command": [
+    "/home/borg/miniconda3/envs/retron_tradicional/bin/python",
+    "programme/tasks/T-D2-taxonomic-distribution/d2_run.py",
+    "--records",
+    "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_records_v1.parquet",
+    "--metadata-dir",
+    "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files",
+    "--landed-g5",
+    "results/dbchar_g5_metadata_sampling/tables",
+    "--task-dir",
+    "programme/tasks/T-D2-taxonomic-distribution",
+    "--out",
+    "analysis/t_d2_taxonomic_distribution"
+  ],
+  "freeze_commit": "2bb0075912d7e62ce3be58f4e0658987ec7e5eba",
+  "frozen_files": {
+    "programme/tasks/T-D2-taxonomic-distribution/FIXTURE_MANIFEST.tsv": "1b83510a529b637f887f353ad7686f7f0e5aeb03416e840769e884bfb62bf3a1",
+    "programme/tasks/T-D2-taxonomic-distribution/PREPARE_RESULT.json": "6d89227846049eb61449e966ea0ceddc0374be23d5c56a665fc2bed7efd7e547",
+    "programme/tasks/T-D2-taxonomic-distribution/TASK_LAUNCHER.md": "f2ef478191bd598d4a077f0390c110ff7e1f6f552077eac8593b705e87a3c873",
+    "programme/tasks/T-D2-taxonomic-distribution/d2_controls.py": "ae68cf4f0e77b9e07726d0fc1d9d1d27b57c12f87904048a978df4de0fc9b2ce",
+    "programme/tasks/T-D2-taxonomic-distribution/d2_fixtures.py": "583d65ab1be5603fbb3ffdbad728bc92819dfbd560e92489a605e0908e50b16f",
+    "programme/tasks/T-D2-taxonomic-distribution/d2_join.py": "98f2f62a0312ecf9379ffc314d874e895a86f2457fc31191562dde7f9a6d0a38",
+    "programme/tasks/T-D2-taxonomic-distribution/d2_run.py": "5493c9562145535f489971c734b2f5b86752fd24b23139fc4bf6ea6e2afbb066",
+    "programme/tasks/T-D2-taxonomic-distribution/d2_selfcheck.py": "af55eb66ef6f7aa6030a66c253b7013f0086b6cba7c8d6999b55a7542bfa23f1",
+    "programme/tasks/T-D2-taxonomic-distribution/d2_systems.py": "3508059c66a4dfd04001cf2521773a8a7f5dd12e3357706c03871e84040163a7",
+    "programme/tasks/T-D2-taxonomic-distribution/d2_tables.py": "932759bad1fbefb26ec026039cd773b4975d3037e8b1bb54f648c305f5955d3b",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/gem_metadata.tsv": "43de98a6b6f63095e0015d86a499f32705f790c2fc824078320be2046a4d1cf4",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/gtdb_archaea_metadata.tsv.gz": "b7d6185164047986a3b2c6e5c47fc0336586c92526cced8146f9bf35253639e3",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/gtdb_bacteria_metadata.tsv.gz": "b659bfb4a2b94651a828986ca3e964078e1b826ee0a6b44077f1a8f9930a09e1",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/mgnify_human_gut_metadata.tsv": "b420ce427b3a9985c76a47f71d810d4b154012e1d4d55c13a9b2d1c9c56e5bdd",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/mgnify_marine_metadata.tsv": "93600195e15ba4ec924b8e892a92b091a8ce3e51afa7a956c4fdd368ae68e246",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/mgnify_soil_metadata.tsv": "41267cc5960abfc1f6a213359c0043cc6abc74eec827acad38106748b65e8192",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/ncbi_archaea_assembly_summary.txt": "e74235735c443de31ab27c3e56972690b8b7e8299cdceebdcf86a0caedf8a990",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/ncbi_bacteria_assembly_summary.txt": "9743701aae3633250b2deb2d9eb8c3dfd25a7ab1eb7abe53b8e32cd86e92481f",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/catalogues/uhgg_v2.0.2_metadata.tsv": "dd996ea70bd91ae04efc6999f8643c10cebb805845e08a6ccddd2b8641e18b88",
+    "programme/tasks/T-D2-taxonomic-distribution/fixtures/d2_fixture_records.tsv": "31190b640de24b64f61fa7e5a7b36037cbbc2694c6cd0a84abf8288232ffca83"
+  },
+  "inputs": [
+    {
+      "canonical_status": "CANONICAL_WITH_LIMITATION",
+      "columns_read": 16,
+      "dataset_id": "RT-RECORDS-3059700",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_records_v1.parquet",
+      "role": "the launcher section 3 population, 3,059,700 rows; 16 of its 112 columns are read",
+      "sha256": "546605034a2e5f21794a842db17849dfa7018689aea3a1bf43ee63b0837dfb6f"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-GEM",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/gem_metadata.tsv",
+      "role": "GEM catalogue; key `genome_id`, GTDB lineage in the column HEADED `ecosystem`, provenance from `metagenome_id`",
+      "sha256": "fd0ad382e4ec9dbc07915333b6c2e4b53257f6d3a9f47aad7da1d2cad6e83e37"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-GTDB-ARCHAEA",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/gtdb_archaea_metadata.tsv.gz",
+      "role": "GTDB catalogue, second file of the same system",
+      "sha256": "f12310f223e6dd27dc942379de1cfbeec5ebd2b917786cf2ce28695555eab6e5"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-GTDB-BACTERIA",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/gtdb_bacteria_metadata.tsv.gz",
+      "role": "GTDB catalogue; key `accession` (RS_/GB_ prefixed), lineage `gtdb_taxonomy`, provenance `ncbi_genome_category`",
+      "sha256": "45f1614aff80c19752860880b47b3cdeb66def8ff66dc106909b28bb2bd9bcbf"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-MGNIFY-HUMAN-GUT",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/mgnify_human_gut_metadata.tsv",
+      "role": "MGnify catalogue; key `Genome`, lineage `Lineage`, provenance `Genome_type`",
+      "sha256": "9a16825eb11efbf1512a43ced9efbc70d77e42c7da0a4abd4b4b141a05dc25f0"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-MGNIFY-MARINE",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/mgnify_marine_metadata.tsv",
+      "role": "MGnify catalogue, second file of the same system",
+      "sha256": "084e482695b93b0cf9be1334ed2c9efba42de3120281bca4799eb8033725b251"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-MGNIFY-SOIL",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/mgnify_soil_metadata.tsv",
+      "role": "MGnify catalogue, third file of the same system",
+      "sha256": "4d605589a524546a4b7f064c5f53171bd168469da996dfecb69d4344d72396a7"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-NCBI-ARCHAEA",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/ncbi_archaea_assembly_summary.txt",
+      "role": "NCBI catalogue, second file of the same system",
+      "sha256": "d26b29b17c123ccbabfa92ec7b67ac949774d36e80a17c66808e3cbca4366537"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-NCBI-BACTERIA",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/ncbi_bacteria_assembly_summary.txt",
+      "role": "NCBI catalogue; key `#assembly_accession` behind a comment line, taxon `organism_name` only, provenance `excluded_from_refseq`",
+      "sha256": "7bcfc6099f53943d1c6006d33b12f6542f320b199ae34fbafda8ca29a274da83"
+    },
+    {
+      "canonical_status": "RAW registered reference (data/README.md); not in CANONICAL_DATASETS.tsv and carrying no exposure state",
+      "columns_read": 3,
+      "dataset_id": "META-UHGG",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/MELISSA_DATA/supplementary_material/databases_metadata_files/metadata_files/uhgg_v2.0.2_metadata.tsv",
+      "role": "UHGG catalogue. BYTE-IDENTICAL to META-MGNIFY-HUMAN-GUT; reported as its own system per launcher section 2, and NOT independent evidence (launcher section 10.6)",
+      "sha256": "9a16825eb11efbf1512a43ced9efbc70d77e42c7da0a4abd4b4b141a05dc25f0"
+    },
+    {
+      "canonical_status": "landed Stage-1 result, VERIFIED/REPRODUCIBLE bundle, tracked in git at the freeze commit",
+      "columns_read": null,
+      "dataset_id": "G5-LANDED::g5_catalogue_shape.tsv",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D2-taxonomic-distribution/results/dbchar_g5_metadata_sampling/tables/g5_catalogue_shape.tsv",
+      "role": "D2_POS_reproduce_landed_g5 target (WORKING_RULES section 6a class 1)",
+      "sha256": "a5f3c0030b06a087bbe514928852bd170e26e759489b92ff44507efcab3912a4"
+    },
+    {
+      "canonical_status": "landed Stage-1 result, VERIFIED/REPRODUCIBLE bundle, tracked in git at the freeze commit",
+      "columns_read": null,
+      "dataset_id": "G5-LANDED::g5_join_coverage.tsv",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D2-taxonomic-distribution/results/dbchar_g5_metadata_sampling/tables/g5_join_coverage.tsv",
+      "role": "D2_POS_reproduce_landed_g5 target (WORKING_RULES section 6a class 1)",
+      "sha256": "6d49ad8e556296f31568feb79a273e91d20ddf3388fcb0d06586a6df2092d171"
+    },
+    {
+      "canonical_status": "landed Stage-1 result, VERIFIED/REPRODUCIBLE bundle, tracked in git at the freeze commit",
+      "columns_read": null,
+      "dataset_id": "G5-LANDED::g5_rank_coverage_by_system.tsv",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D2-taxonomic-distribution/results/dbchar_g5_metadata_sampling/tables/g5_rank_coverage_by_system.tsv",
+      "role": "D2_POS_reproduce_landed_g5 target (WORKING_RULES section 6a class 1)",
+      "sha256": "ea1dae9caa5afd74b95d93ab9dbbf948ee769b11cb6b7de4ee211b4e278035a9"
+    }
+  ],
+  "output_directory": "analysis/t_d2_taxonomic_distribution/",
+  "resources": {
+    "cpu_threads": 4,
+    "io_tokens": 3,
+    "memory_gb": 48,
+    "note": "Single-process pandas/pyarrow. The binding constraint is NVMe I/O, not cores: ~0.7 GB of parquet and ~1.7 GB of catalogue text are read, the largest single file being the 1.3 GB ncbi_bacteria_assembly_summary.txt, which is streamed line by line rather than loaded. Memory is dominated by the five catalogue key indexes held together (~2 GB, NCBI about 1.3 GB of it) plus the 3.06M-row record frame and one per-system merge; 48 GB is a headroom figure, not a measurement. io_tokens=3 is IO_MEDIUM per programme/RESOURCE_LIMITS.tsv, so this waits while T-P1b holds the heavy I/O lane, as the launcher's operator_authorisation requires."
+  },
+  "runtime": {
+    "max_runtime_seconds": 10800,
+    "resume_allowed": false,
+    "stop_note": "A failed blocking control ends the task: the runner lands TASK_STATE=STOP with the controls table as its evidence, writes no primary table, and escalates under a NEW task id (WORKING_RULES section 6b rule 2) - never a v2 under this identity. resume_allowed is false so a partial output directory cannot be silently continued or overwritten; a rerun starts from phase 0a and re-verifies every input hash."
+  },
+  "schema_version": 1,
+  "task_id": "T-D2-taxonomic-distribution",
+  "worktree": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-D2-taxonomic-distribution"
+}

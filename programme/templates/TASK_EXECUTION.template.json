@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "task_id": "T-EXAMPLE",
+  "worktree": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-EXAMPLE",
+  "branch": "task/T-EXAMPLE",
+  "freeze_commit": "FULL_40_HEX_COMMIT_WRITTEN_AFTER_FREEZE",
+  "command": ["/absolute/python", "programme/tasks/T-EXAMPLE/run.py"],
+  "inputs": [
+    {
+      "dataset_id": "REGISTERED_DATASET_ID",
+      "path": "/absolute/immutable/input",
+      "sha256": "FULL_SHA256"
+    }
+  ],
+  "output_directory": "analysis/t_example/",
+  "backend": "local",
+  "resources": {
+    "cpu_threads": 1,
+    "memory_gb": 2,
+    "io_tokens": 1
+  },
+  "runtime": {
+    "max_runtime_seconds": 3600,
+    "resume_allowed": false,
+    "stop_note": "Runtime STOP metadata only; scientific STOP criteria remain in TASK_LAUNCHER.md"
+  },
+  "frozen_files": {
+    "programme/tasks/T-EXAMPLE/TASK_LAUNCHER.md": "FULL_SHA256",
+    "programme/tasks/T-EXAMPLE/run.py": "FULL_SHA256"
+  }
+}

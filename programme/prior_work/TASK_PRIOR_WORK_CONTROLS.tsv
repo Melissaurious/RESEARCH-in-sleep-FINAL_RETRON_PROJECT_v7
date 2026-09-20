@@ -1,0 +1,103 @@
+scope	substrate	control_type	blocking	expectation	observed	state
+governed_results	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	1112 read, 1112 non-empty	PASS
+governed_results	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	998 read, 997 non-empty	PASS
+governed_results	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	657 parsed, 634 with >=2 columns	PASS
+governed_results	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+governed_docs	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	69 read, 69 non-empty	PASS
+governed_docs	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	69 read, 69 non-empty	PASS
+governed_docs	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	3 parsed, 3 with >=2 columns	PASS
+governed_docs	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+governed_analysis	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	134 read, 134 non-empty	PASS
+governed_analysis	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	121 read, 121 non-empty	PASS
+governed_analysis	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	90 parsed, 90 with >=2 columns	PASS
+governed_analysis	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+idea_stage	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	30 read, 30 non-empty	PASS
+idea_stage	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	30 read, 30 non-empty	PASS
+idea_stage	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+idea_stage	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+references	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	32 read, 32 non-empty	PASS
+references	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	20 read, 20 non-empty	PASS
+references	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	6 parsed, 3 with >=2 columns	PASS
+references	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+v7_data_derived	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	31 read, 31 non-empty	PASS
+v7_data_derived	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	2 read, 2 non-empty	PASS
+v7_data_derived	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	1 parsed, 1 with >=2 columns	PASS
+v7_data_derived	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	22 parsed, 22 with >=2 columns	PASS
+v7_analysis_workbench	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	119 read, 119 non-empty	PASS
+v7_analysis_workbench	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	106 read, 106 non-empty	PASS
+v7_analysis_workbench	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	86 parsed, 86 with >=2 columns	PASS
+v7_analysis_workbench	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+rdb_data_derived	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	22 read, 22 non-empty	PASS
+rdb_data_derived	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	4 read, 4 non-empty	PASS
+rdb_data_derived	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	4 parsed, 0 with >=2 columns	FAIL
+rdb_data_derived	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	1 parsed, 1 with >=2 columns	PASS
+wt_embeddings	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	1224 read, 1224 non-empty	PASS
+wt_embeddings	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	1099 read, 1098 non-empty	PASS
+wt_embeddings	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	700 parsed, 677 with >=2 columns	PASS
+wt_embeddings	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+wt_spire_ncrna	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	282 read, 282 non-empty	PASS
+wt_spire_ncrna	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	252 read, 252 non-empty	PASS
+wt_spire_ncrna	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	179 parsed, 179 with >=2 columns	PASS
+wt_spire_ncrna	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+wt_mestre_audit	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	208 read, 208 non-empty	PASS
+wt_mestre_audit	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	179 read, 179 non-empty	PASS
+wt_mestre_audit	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	124 parsed, 123 with >=2 columns	PASS
+wt_mestre_audit	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+wt_stage3c	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	427 read, 427 non-empty	PASS
+wt_stage3c	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	373 read, 373 non-empty	PASS
+wt_stage3c	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	263 parsed, 263 with >=2 columns	PASS
+wt_stage3c	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+wt_asset_audit	path	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	338 read, 338 non-empty	PASS
+wt_asset_audit	content	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	296 read, 296 non-empty	PASS
+wt_asset_audit	header	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	208 parsed, 208 with >=2 columns	PASS
+wt_asset_audit	parquet	liveness	YES	the reader parsed >=1 usable unit of this substrate on this root	no unit of this kind on this root	NOT_EVALUABLE
+T-REG2-registry-coverage-validated	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-REG3-content-hash-pass	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-REG4-kind-extension-sweep	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-LINT5-prose-numbers-gated	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-D1-annotation-disagreement	governed_results:path	named_anchor	YES	/tool/i must hit on governed_results:path	43 hit(s)	PASS
+T-D2-taxonomic-distribution	governed_results:content	named_anchor	YES	/gtdb|taxonom/i must hit on governed_results:content	118 hit(s)	PASS
+T-AUDIT2-task-report-backfill	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-C1-rt-core-extraction	rdb_data_derived:path	named_anchor	YES	/frame_rvt/i must hit on rdb_data_derived:path	2 hit(s)	PASS
+T-A16-reciprocal-frame	governed_results:path	named_anchor	YES	/family_baseline/i must hit on governed_results:path	41 hit(s)	PASS
+T-RT07-definition-status	governed_results:content	named_anchor	YES	/RT7|rt0_rt7/i must hit on governed_results:content	121 hit(s)	PASS
+T-P1-relatedness-backbone	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-P2-character-economy-audit	governed_results:content	named_anchor	YES	/alignable|157/i must hit on governed_results:content	154 hit(s)	PASS
+T-P3-relatedness-representation	rdb_data_derived:path	named_anchor	YES	/reference_tree|reference_msa/i must hit on rdb_data_derived:path	2 hit(s)	PASS
+T-A0b-lineage-partition-intervals	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-F1-motif-scan	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-F2-domain-architecture	governed_results:path	named_anchor	YES	/architecture/i must hit on governed_results:path	40 hit(s)	PASS
+T-F3-retron-feature-contrast	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-F4-domain-partition-nonoperational	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-S1-structure-asset-inventory	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-S2-foldseek-calibration	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A7-stage3a-positive-control	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-S3-structural-core-interpretation	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-N1-neighbourhood-extraction-qa	v7_analysis_workbench:path	named_anchor	YES	/cds_between|operon|flank/i must hit on v7_analysis_workbench:path	3 hit(s)	PASS
+T-N2-neighbourhood-lineage-comparison	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A10-genomic-architecture	v7_analysis_workbench:path	named_anchor	YES	/same_strand|geometry/i must hit on v7_analysis_workbench:path	6 hit(s)	PASS
+T-A6-fixed-locus-carriage	v7_data_derived:path	named_anchor	YES	/rt_loci|physical_loci/i must hit on v7_data_derived:path	2 hit(s)	PASS
+T-E1-character-source-probe	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-E2-shallow-clade-restriction	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-E3-coevolution-vocabulary-lock	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-C2-cm-call-inventory	v7_analysis_workbench:path	named_anchor	YES	/ncrna.?call|model_composition/i must hit on v7_analysis_workbench:path	1 hit(s)	PASS
+T-A19-withheld-model-control	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-S07-reopen-design	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A5b1-rtdna-anchors	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-R1-rtdna-direct-mapping	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A5b2-ncrna-architecture	v7_data_derived:path	named_anchor	YES	/ncrna|oriented/i must hit on v7_data_derived:path	10 hit(s)	PASS
+T-A20-pair-expansion	v7_data_derived:path	named_anchor	YES	/exact_pair/i must hit on v7_data_derived:path	2 hit(s)	PASS
+T-M1-embedding-cache-verification	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-M2-landed-interval-coverage-sweep	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A1-absolute-baselines	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A2b-budget-matched-ladder	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-I1-integrative-decomposition	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A22-functional-contrast	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A23b-systematic-corpus	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A23c-source-data-retrieval	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A23d-primary-verification	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A23e-block-level-recount	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-GATE1-consumption-gate	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-AUDIT1-circular-control-sweep	governed_results:header	named_anchor	YES	/control/i must hit on governed_results:header	24 hit(s)	PASS
+T-HIA-human-input-audit	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR
+T-A3a-rule-and-e0-freeze	-:-	named_anchor	YES	no known-present case asserted for this task	absence rests on substrate liveness alone and is WEAKER	NO_ANCHOR

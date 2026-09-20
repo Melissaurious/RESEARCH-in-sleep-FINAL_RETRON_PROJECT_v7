@@ -1,0 +1,62 @@
+{
+  "backend": "local",
+  "branch": "task/T-R2a-tierA-internal-geometry",
+  "command": [
+    "/home/borg/miniconda3/envs/retron_tradicional/bin/python",
+    "programme/tasks/T-R2a-tierA-internal-geometry/r2a_run.py",
+    "--task-dir",
+    "programme/tasks/T-R2a-tierA-internal-geometry",
+    "--out",
+    "analysis/t_r2a_tierA_internal_geometry"
+  ],
+  "freeze_commit": "19837473c3069b390a3139d018b64e8bd3d7bc5b",
+  "frozen_files": {
+    "programme/tasks/T-R2a-tierA-internal-geometry/FIXTURE_MANIFEST.tsv": "47a640b7b54140548212e830da2bf22acd25687b09e32f0136ba5d595376ff22",
+    "programme/tasks/T-R2a-tierA-internal-geometry/PREPARE_RESULT.json": "1260ba0bd2ec16111afb01482dad16adfbbb0db148df78b81f4dac46e2883a88",
+    "programme/tasks/T-R2a-tierA-internal-geometry/R2a_PROVENANCE.md": "9560d8df4b4495e453d1f211e4f493ccfcfae1ed41c81034f8d1c04b1fafed0a",
+    "programme/tasks/T-R2a-tierA-internal-geometry/TASK_LAUNCHER.md": "e13dc6adfeff33240e9a586091b6517cdb0e66d8c481895bd78b288cdc24b40a",
+    "programme/tasks/T-R2a-tierA-internal-geometry/fixtures/R2a_POS_context_clip.json": "f6a50990e198f0de9e90935d5f36f29b2061394a4c9f04086d1dfa197121aa40",
+    "programme/tasks/T-R2a-tierA-internal-geometry/fixtures/R2a_POS_dotbracket_partner.json": "497de2a81bc34d4a536049d25220adb5593457f2fea4b0e86e1bead00581cd41",
+    "programme/tasks/T-R2a-tierA-internal-geometry/fixtures/R2a_POS_revcomp_boundary_fixture.json": "640cdf11f81e36f7fed0294cb3e4650b2a29f9c155fdb842139788a6b0491ac7",
+    "programme/tasks/T-R2a-tierA-internal-geometry/r2a_consistency.py": "1cc1cebbb9587a80b908d9f7ab274d49896d2e5eb42d9f5bc6d3db963ccaff72",
+    "programme/tasks/T-R2a-tierA-internal-geometry/r2a_controls.py": "84585d7acca7b4fb5ad5ca14dc85dbd59ef1602ea273d09a11fa5df43e4cdd33",
+    "programme/tasks/T-R2a-tierA-internal-geometry/r2a_fixtures.py": "594d8c12b7d11e5c97a510ade94e5ef2c4af7cf50c12ff794fd8e4f318f49997",
+    "programme/tasks/T-R2a-tierA-internal-geometry/r2a_lib.py": "5247ed5091bedde486f1b51d931f5be031ae4db6f7eb4022f923ebadcc8d3ca6",
+    "programme/tasks/T-R2a-tierA-internal-geometry/r2a_provenance_gate.py": "77b9345f1b9fa603c34dfbe48815d7130f752855cae592155ae8234f1c7dae2e",
+    "programme/tasks/T-R2a-tierA-internal-geometry/r2a_run.py": "8b67a8a84b630935e8e9cd2325cbacd23a554cb2f83165e1d2c4a613ca60357a",
+    "programme/tasks/T-R2a-tierA-internal-geometry/r2a_selfcheck.py": "59f45773e0226cc1e7d1e846fe6502c48ee188e0945727329a1aa665c5ef1106"
+  },
+  "inputs": [
+    {
+      "canonical_status": "CANONICAL \u2014 registered in programme/CANONICAL_DATASETS.tsv",
+      "dataset_id": "PANEL-175",
+      "limitation": "ncRNA boundaries are the source study's pre-RT-DNA bioinformatic annotation; no separate source-study supplementary file exists in this repository, so the panel is pinned as an ingested object only (R2a_PROVENANCE.md \u00a75)",
+      "path": "/home/borg/RESEARCH-retron-db/results/stage1_mestre_replication_and_insights/inputs/support.csv",
+      "role": "the ncRNA and RT-DNA sequence objects for the 81 Tier-A anchors and the pinned retron_sub stratification vocabulary; read by the \u00a74 gate, the \u00a74b gate and the measurement",
+      "sha256": "80b2f565515c96bb1b9b0082c261dd6184c67672e29bb96c813cf6abdd9d9577"
+    },
+    {
+      "canonical_status": "ACCEPTED (operator, 2026-09-20); producing task TASK_STATE=PASS",
+      "dataset_id": "R1B-ANCHORS-81",
+      "limitation": "R1b's own report carries the withdrawn cross-element 0.188/2.148 ratio summary; R2A consumes its coordinates and re-derives every ratio per element (R2_COORDINATE_FRAME_DIAGNOSIS.md)",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-R1b-rtdna-anchor-mapping/analysis/t_r1b_rtdna_anchor_mapping/tables/R1b_anchor_coordinates.tsv",
+      "role": "the accepted T-R1b coordinate table: ncrna_start, ncrna_end, mapping_state, orientation, lengths and the propagated retron_sub. Coordinates only, no sequences",
+      "sha256": "713237accf27e7275880b51b4fec268d82a05d6f9d69515d23af8d81df958dca"
+    }
+  ],
+  "output_directory": "analysis/t_r2a_tierA_internal_geometry/",
+  "resources": {
+    "cpu_threads": 2,
+    "io_tokens": 1,
+    "memory_gb": 2,
+    "note": "single Python process plus one RNAfold subprocess; the two inputs total under 0.5 MB and the outputs are 81 + 162 + ~170 TSV rows. I/O is negligible, so io_tokens=1: this task can run alongside a heavy-I/O task without contending for the NVMe device WORKING_RULES \u00a74 names as the binding constraint."
+  },
+  "runtime": {
+    "max_runtime_seconds": 900,
+    "resume_allowed": false,
+    "stop_note": "A failed blocking check ends the task: the runner writes R2a_controls.tsv, logs/run_log.json and a TASK_STATE=STOP TASK_REPORT.md, writes NO primary table, and exits non-zero (2 at the gate stage, 5 at the output stage). WORKING_RULES \u00a76b rule 2 then applies \u2014 escalate and open a new id, never a v2 under this identity. There is no anomaly exclusion rule: a mismatching element is a STOP, never a dropped row. resume_allowed is false and R2a_PRE_output_directory_clean fails closed, so a partial output directory cannot be silently continued or overwritten."
+  },
+  "schema_version": 1,
+  "task_id": "T-R2a-tierA-internal-geometry",
+  "worktree": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-R2a-tierA-internal-geometry"
+}
