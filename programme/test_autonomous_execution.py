@@ -557,5 +557,28 @@ class DurableStateTests(unittest.TestCase):
         self.assertIn("if not workers and not preparing and not reviewing and not repairing:", src)
 
 
+
+class AuthoringCostTests(unittest.TestCase):
+    """Writing a launcher must not reserve the task's execution I/O budget.
+
+    T-M1b, routed to Ibex and merely PREPARING, reserved all 8 LOCAL tokens and starved
+    T-A23d -- head-of-line blocking reintroduced through the resource account.
+    """
+
+    def test_authoring_costs_one_token(self):
+        import wave_runner as wr
+        self.assertEqual(wr.AUTHORING_COST, 1)
+
+    def test_prepare_reserves_authoring_cost_not_execution_budget(self):
+        src = (HERE / "wave_runner.py").read_text()
+        line = [l for l in src.splitlines() if "preparing[tid]=(proc,wt," in l][0]
+        self.assertIn("AUTHORING_COST", line)
+        self.assertNotIn("int(r['io_tokens'])", line)
+
+    def test_execution_still_reserves_the_real_cost(self):
+        src = (HERE / "wave_runner.py").read_text()
+        line = [l for l in src.splitlines() if "workers[tid]=(p,rec," in l][0]
+        self.assertIn("int(r['io_tokens'])", line)
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

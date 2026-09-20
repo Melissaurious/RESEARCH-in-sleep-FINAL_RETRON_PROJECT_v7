@@ -82,6 +82,9 @@ TRANSIENT_SIGNATURES=(
     'error: Unable to contact slurm controller',
 )
 MAX_TRANSIENT_RETRIES=3
+#: Preparing, reviewing and repairing write text; they do not perform the task's I/O.
+#: Charging them the execution budget starved the pool and blocked Ibex-bound work too.
+AUTHORING_COST=1
 
 def transient_reason(tid,w):
     """Return the transient signature that explains a launch failure, else ''."""
@@ -407,7 +410,11 @@ def start(w,authorised,poll):
                 # Running it inline blocked every other task behind one prepare agent, which
                 # left finished workers unreaped and eligible frozen science idle for minutes.
                 if tid not in preparing:
-                    try: wt=worktree(tid); proc,plog=prepare_start(tid,{**r,'_wave':w},wt); preparing[tid]=(proc,wt,git('rev-parse','HEAD'),plog,int(r['io_tokens'])); set_status(w,st,tid,'PREPARING',f'prepare agent pid={proc.pid}')
+                    # Authoring stages cost ONE token, not the task's execution budget.
+                    # Reserving all 8 while merely writing a launcher starved every other
+                    # task -- and did so even for a task routed to Ibex, which will consume
+                    # no local I/O at all. Execution reserves the real cost.
+                    try: wt=worktree(tid); proc,plog=prepare_start(tid,{**r,'_wave':w},wt); preparing[tid]=(proc,wt,git('rev-parse','HEAD'),plog,AUTHORING_COST); set_status(w,st,tid,'PREPARING',f'prepare agent pid={proc.pid}')
                     except Exception as e:set_status(w,st,tid,'BLOCKED_PREPARE',str(e)); escal=True
                 continue
             spec=load_execution_spec(sp); fm=parse_front_matter(Path(spec['worktree'])/'programme'/'tasks'/tid/'TASK_LAUNCHER.md'); protected=fm.get('confirmatory_spend','').lower().startswith('yes') or 'required' in fm.get('confirmatory_spend','').lower()
