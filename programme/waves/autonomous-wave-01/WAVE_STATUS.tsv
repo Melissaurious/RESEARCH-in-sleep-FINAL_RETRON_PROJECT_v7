@@ -1,6 +1,6 @@
 task_id	state	detail	freeze_commit	worker_pid	analysis_pid	slurm_job_id	started_at	finished_at
 T-A23d-primary-verification	RUNNING	worker launched	edf381c809db526a389d427a9da98c4edd015458	1004900			2026-09-20T18:33:29Z	
-T-D1-annotation-disagreement	PENDING							
+T-D1-annotation-disagreement	FROZEN	ready	69a06fca24fb11c4eba8e4431b92192a07830337					
 T-D2-taxonomic-distribution	PENDING							
 T-M1b-embedding-cache-reverification	WAIT_RESOURCE	WAIT_RESOURCE:need=8:available=1						
 T-P1c-family-label-description	WAIT_DEP	WAIT_DEP:T-P1b-identity-partition:COMPLETE_AWAITING_REVIEW						
