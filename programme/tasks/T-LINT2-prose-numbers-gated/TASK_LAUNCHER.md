@@ -1,7 +1,7 @@
 ---
 task_id: T-LINT2-prose-numbers-gated
 inherits_record_of: T-LINT-prose-numbers
-governance_base: b5443e1
+governance_base: 7e7ccd8
 base_commit: 94a1a78
 stage_id: S00
 title: Numeric-provenance triage linter, control-gated and mutation-tested
@@ -22,6 +22,13 @@ frozen: true
 ---
 
 # T-LINT2 · Numeric-provenance triage linter, control-gated and mutation-tested
+
+> ⛔ **SUPERSEDED IN PART — read `AMENDMENT_01_review_required.md` first.**
+> An independent review returned **REJECT** on the v2.0.0 run this launcher specified. The control
+> set below (5 fixture controls, 5 mutants) is the **v2** set and is retained **only** as the record
+> of what was preregistered. The **binding** control set is the amendment's: 32 blocking controls
+> and 9 mutants, each caught by a **preregistered** catcher. Every amended requirement is stricter
+> than the corresponding line below; none is looser.
 
 **This is a new task, not an edit.** Under `TASK_PROTOCOL.md` §4 a changed criterion is a new task
 that inherits the old one's record. T-LINT-prose-numbers stays `REVIEW_FAILED` on the board with

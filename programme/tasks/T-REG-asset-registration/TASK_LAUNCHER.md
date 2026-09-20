@@ -1,6 +1,6 @@
 ---
 task_id: T-REG-asset-registration
-governance_base: 9678a95
+governance_base: 7e7ccd8
 base_commit: 94a1a78
 stage_id: S00
 title: Register the discovered asset base

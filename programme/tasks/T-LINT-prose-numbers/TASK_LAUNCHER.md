@@ -1,6 +1,6 @@
 ---
 task_id: T-LINT-prose-numbers
-governance_base: 9678a95
+governance_base: 7e7ccd8
 base_commit: 94a1a78
 stage_id: S00
 title: Numeric-provenance CANDIDATE linter (triage, not a gate)

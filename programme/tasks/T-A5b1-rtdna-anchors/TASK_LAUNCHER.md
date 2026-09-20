@@ -1,6 +1,6 @@
 ---
 task_id: T-A5b1-rtdna-anchors
-governance_base: 9678a95
+governance_base: 7e7ccd8
 base_commit: 94a1a78
 stage_id: S08
 title: Experimental RT-DNA coordinate anchors on cognate ncRNAs
