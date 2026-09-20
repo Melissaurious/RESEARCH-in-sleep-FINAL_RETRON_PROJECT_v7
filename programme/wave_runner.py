@@ -163,7 +163,7 @@ def worktree(tid):
 def prepare_start(tid,row,wt):
     """Launch the preparation agent WITHOUT waiting for it. Returns (proc, log_paths)."""
     base=git('rev-parse','HEAD'); refs='\n'.join('  - '+x for x in split(row['design_refs']))
-    prompt=f'''Prepare exactly task {tid} in {wt}. DO NOT run primary science. Read its TASK_LAUNCHER.md, {P/'WORKING_RULES.md'}, {SYN/'review-stage/TASK_PROTOCOL.md'}, and:\n{refs}\nCurrent authoritative project-synthesis base is {base}. Preserve approved science. Ordinary implementation choices are autonomous. If a genuinely new biological endpoint/threshold/population decision is needed, write programme/tasks/{tid}/PREPARE_RESULT.json with status REVIEW_REQUIRED and stop. Otherwise implement code+fixtures, run only self-checks, update launcher to base_commit={base}, base_branch=project-synthesis, state=AUTHORIZED, frozen=true; do not create primary output and do not commit. The launcher front matter MUST declare autonomy_tier: A for a preregistered computation whose acceptance gate is fully machine-verifiable (frozen hashes, input hashes, blocking controls, manifest, run log, report schema), or autonomy_tier: B if accepting it needs a human/cross-model judgment of merit or interpretation; tier A is then accepted by deterministic validation alone, tier B waits for semantic review. The implementation MUST write, into its declared output_directory, ALL THREE of: TASK_REPORT.md (containing the lines TASK_STATE: <PASS|VOID|STOP|INCONCLUSIVE|BLOCKED> and SCIENTIFIC_OUTCOME: <SUPPORTS_H1|SUPPORTS_H0|FALSIFIED|BOUND|DESCRIPTIVE|NOT_APPLICABLE>), logs/run_log.json, and OUTPUT_MANIFEST.sha256 covering every file it writes. A run that omits any of these is rejected as ARTIFACT_INVALID no matter how well the science went, so include a self_check asserting all three exist. Write PREPARE_RESULT.json schema_version=1, status=READY_TO_FREEZE, task_id, command argv, inputs(dataset_id,path,sha256), backend, resources(cpu_threads,memory_gb,io_tokens={row['io_tokens']}), runtime(max_runtime_seconds,resume_allowed,stop_note), self_checks, unresolved_decision.'''
+    prompt=f'''Prepare exactly task {tid} in {wt}. DO NOT run primary science. Read its TASK_LAUNCHER.md, {P/'WORKING_RULES.md'}, {SYN/'review-stage/TASK_PROTOCOL.md'}, and:\n{refs}\nCurrent authoritative project-synthesis base is {base}. Preserve approved science. Ordinary implementation choices are autonomous. If no substantive TASK_LAUNCHER.md exists yet, you MAY write one, but ONLY by converting an approved design packet listed above into a launcher: cite the packet and its section, read the prior work it names FIRST, and carry its population, denominator, inference unit, endpoints, controls (positive AND negative), success/falsification criterion, exposure/spend rules and interpretation ceiling across verbatim in substance. Declare autonomy_tier yourself. You are the AUTHOR, never the approver: an independent cross-model reviewer judges this launcher before it can be frozen, and it will be rejected if a control, a denominator or the ceiling is missing. ⛔ Never invent a scientific endpoint, threshold or population that the packet does not already fix -- if one is genuinely missing, write PREPARE_RESULT.json with status REVIEW_REQUIRED naming exactly what is undecided. If a genuinely new biological endpoint/threshold/population decision is needed, write programme/tasks/{tid}/PREPARE_RESULT.json with status REVIEW_REQUIRED and stop. Otherwise implement code+fixtures, run only self-checks, update launcher to base_commit={base}, base_branch=project-synthesis, state=AUTHORIZED, frozen=true; do not create primary output and do not commit. The launcher front matter MUST declare autonomy_tier: A for a preregistered computation whose acceptance gate is fully machine-verifiable (frozen hashes, input hashes, blocking controls, manifest, run log, report schema), or autonomy_tier: B if accepting it needs a human/cross-model judgment of merit or interpretation; tier A is then accepted by deterministic validation alone, tier B waits for semantic review. The implementation MUST write, into its declared output_directory, ALL THREE of: TASK_REPORT.md (containing the lines TASK_STATE: <PASS|VOID|STOP|INCONCLUSIVE|BLOCKED> and SCIENTIFIC_OUTCOME: <SUPPORTS_H1|SUPPORTS_H0|FALSIFIED|BOUND|DESCRIPTIVE|NOT_APPLICABLE>), logs/run_log.json, and OUTPUT_MANIFEST.sha256 covering every file it writes. A run that omits any of these is rejected as ARTIFACT_INVALID no matter how well the science went, so include a self_check asserting all three exist. Write PREPARE_RESULT.json schema_version=1, status=READY_TO_FREEZE, task_id, command argv, inputs(dataset_id,path,sha256), backend, resources(cpu_threads,memory_gb,io_tokens={row['io_tokens']}), runtime(max_runtime_seconds,resume_allowed,stop_note), self_checks, unresolved_decision.'''
     cmd=shlex.split(os.environ.get('RETRON_PREPARE_COMMAND','claude --dangerously-skip-permissions -p'))+[prompt]
     log=row['_wave'].parent/'prepare_logs'; log.mkdir(exist_ok=True); out=log/f'{tid}.stdout.log'; err=log/f'{tid}.stderr.log'
     o=out.open('w'); e=err.open('w')
@@ -251,7 +251,23 @@ def dry(w):
         if r['action']=='monitor_only':
             ok=alive(int(r.get('monitor_pid') or 0)); used+=int(r['io_tokens']) if ok else 0; states[r['task_id']]='RUNNING' if ok else states.get(r['task_id'],'UNKNOWN'); print(f"{r['task_id']}\tMONITOR_ONLY\talive={ok}\tio={r['io_tokens']}")
         else:tasks.append(ScheduleTask(r['task_id'],b.get(r['task_id'],{}).get('state','MISSING'),int(r['io_tokens']),split(r['hard_dependencies']),split(r['schedule_after'])))
-    sel,dec=choose_launchable(tasks,states,used,tokens())
+    # Preview the REAL admission path: dependencies unbounded, then broker routing across
+    # both pools, exactly as start() does. Anything else is a misleading rehearsal.
+    broker=make_broker(); by={r['task_id']:r for r in wr}
+    snap=broker.snapshot(used)
+    print('local_pool\t'+json.dumps(snap['local'],sort_keys=True))
+    print('ibex_pool\t'+json.dumps(snap['ibex'],sort_keys=True))
+    eligible,dec=choose_launchable(tasks,states,0,1<<30)
+    sel=[]; drain=False
+    for tid in eligible:
+        pl=broker.plan(tid,io_tokens=int(by[tid]['io_tokens']),
+                       declared_backend=by[tid].get('backend','auto'),nvme_used=used)
+        if pl.backend=='defer':
+            drain=drain or pl.drain; dec[tid]=f'WAIT_RESOURCE:{pl.reason}'; continue
+        if drain and pl.backend=='local':
+            dec[tid]='WAIT_RESOURCE:draining local pool for an exclusive window'; continue
+        dec[tid]=f'SELECTED->{pl.backend} ({pl.reason})'; sel.append(tid)
+        if pl.backend=='local': used+=pl.nvme_cost
     for t in sorted(tasks,key=lambda x:x.task_id): print(f"{t.task_id}\t{dec.get(t.task_id,'NOT_ELIGIBLE')}\tboard={b.get(t.task_id,{}).get('state','MISSING')}\tio={t.io_tokens}")
     print('selected\t'+';'.join(sel)); return 0
 
@@ -356,7 +372,7 @@ def start(w,authorised,poll):
         # DEPENDENCIES first, with resources deliberately unbounded: choose_launchable decides
         # only what is scientifically eligible. ADMISSION is then the broker's, across BOTH
         # pools, so an Ibex-bound task is not gated by local I/O and vice versa.
-        eligible,dec=choose_launchable(candidates,states,1<<30,1<<30)
+        eligible,dec=choose_launchable(candidates,states,0,1<<30)
         sel=[]; drain=False
         for tid in eligible:
             r=by[tid]; fm={}

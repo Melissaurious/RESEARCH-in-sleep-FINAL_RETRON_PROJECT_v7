@@ -21,7 +21,7 @@ set -euo pipefail
 SYN=/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis
 PY=/home/borg/miniconda3/envs/retron_tradicional/bin/python   # never base
 WAVE=programme/waves/autonomous-wave-01/WAVE.tsv
-EXPECTED_WAVE_SHA=be06882012d54ee046df617a26cea5e36e358829aabd624f6df9017944de641f
+EXPECTED_WAVE_SHA=def1dff3f40f3e8e960743c82b3499d4291e64372789d04d4f4e7f59cf76a750
 STATE_DIR="$HOME/.local/state/retron-autonomy/autonomous-wave-01"
 
 cd "$SYN"
