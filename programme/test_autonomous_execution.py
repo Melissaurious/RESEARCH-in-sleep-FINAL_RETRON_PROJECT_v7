@@ -20,6 +20,7 @@ sys.path.insert(0, str(HERE))
 
 from autonomy_state import ScheduleTask, choose_launchable, sha256_file  # noqa: E402
 import task_worker  # noqa: E402
+import wave_runner  # noqa: E402
 
 
 class SchedulerTests(unittest.TestCase):
@@ -54,6 +55,32 @@ class SchedulerTests(unittest.TestCase):
         task = ScheduleTask("second", "AUTHORIZED", 8, schedule_after=("first",))
         selected, _ = choose_launchable([task], {"first": "VOID"}, 0, 8)
         self.assertEqual(selected, ["second"])
+
+
+class RunnerLaunchTests(unittest.TestCase):
+    def test_spawn_uses_programme_path_without_shadowing(self):
+        with tempfile.TemporaryDirectory() as td:
+            wave = Path(td) / "wave" / "WAVE.tsv"
+            wave.parent.mkdir(parents=True)
+            spec = Path(td) / "TASK_EXECUTION.json"
+            spec.write_text("{}\n")
+            seen = {}
+            class Dummy:
+                pid = 4242
+            old = wave_runner.subprocess.Popen
+            def fake(cmd, **kwargs):
+                seen["cmd"] = cmd
+                return Dummy()
+            wave_runner.subprocess.Popen = fake
+            try:
+                proc, rec = wave_runner.spawn("T-SYNTH", spec, wave)
+            finally:
+                wave_runner.subprocess.Popen = old
+            self.assertEqual(proc.pid, 4242)
+            self.assertEqual(seen["cmd"][0], "bash")
+            self.assertTrue(str(seen["cmd"][1]).endswith("programme/launch_task.sh"))
+            self.assertEqual(seen["cmd"][2:4], ["T-SYNTH", "--execute"])
+            self.assertTrue(str(rec).endswith("runs/T-SYNTH.json"))
 
 
 class WorkerIntegrityTests(unittest.TestCase):
