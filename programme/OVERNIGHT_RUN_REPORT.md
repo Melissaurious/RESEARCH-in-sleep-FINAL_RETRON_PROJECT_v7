@@ -1,6 +1,6 @@
 # OVERNIGHT RUN REPORT — 2026-09-20
 
-**Coordinating session**, `project-synthesis`, tmux. Branch tip at time of writing: `6356635`.
+**Coordinating session**, `project-synthesis`, tmux.
 **Nothing pushed.** **No `UNEXPOSED_CONFIRMATORY` population consumed.**
 
 ---
