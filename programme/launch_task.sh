@@ -87,8 +87,16 @@ if ! CONDA_BASE=$(conda info --base 2>/dev/null); then
 fi
 # shellcheck disable=SC1091
 source "${CONDA_BASE}/etc/profile.d/conda.sh"
+# `set -u` must be lifted across conda activation and no further. The env's own
+# activate.d hooks are not written for nounset -- retron_tradicional ships
+# openjdk_activate.sh, which reads JAVA_HOME before setting it and aborts the
+# whole launcher under -u. That made every task refuse at the last step, after
+# preflight and the governance check had both passed, which is the most expensive
+# place to fail. Restored immediately after, so the rest of the script keeps it.
+set +u
 conda activate retron_tradicional \
-  || { echo "REFUSED: could not activate retron_tradicional. Not launching."; exit 1; }
+  || { set -u; echo "REFUSED: could not activate retron_tradicional. Not launching."; exit 1; }
+set -u
 [[ "${CONDA_DEFAULT_ENV:-}" == "retron_tradicional" ]] \
   || { echo "REFUSED: active env is '${CONDA_DEFAULT_ENV:-none}', not retron_tradicional."; exit 1; }
 export CLAUDE_CODE_MAX_OUTPUT_TOKENS=100000
