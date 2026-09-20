@@ -60,12 +60,51 @@ later confirmatory claim. The coordinating session enforces this and cannot unwi
 
 ## 4 · Compute
 
+**Measured local capacity, 2026-09-20:** 48 logical CPUs (24 physical), 251 GB RAM with 232 GB
+available, load ~2.4 of 48. Verified directly, not assumed.
+
 | class | backend | notes |
 |---|---|---|
 | `ZERO` | this session | reads landed tables, writes new tables. No job. |
 | `CPU_SMALL` / `CPU_MEDIUM` | workstation | under ~4 h |
-| `CPU_HIGH` / `MEMORY_HIGH` | Ibex, fallback workstation | checkpointable and resume-safe required |
-| `GPU_*` | Ibex GPU, fallback workstation GPU | checkpointable required |
+| `CPU_HIGH` / `MEMORY_HIGH` | **workstation** | 48 cores and 232 GB free make most of this local. Ibex is **not submittable from this host**, see below |
+| `GPU_*` | **UNRESOLVED — do not schedule** | see below |
+
+⛔ **Ibex is not reachable from this host.** `sbatch`, `squeue`, `sinfo`, `sacct` and `srun` are all
+absent. An earlier version of this table routed heavy work to "Ibex, fallback workstation", which
+promised a backend no task can reach. **Any Ibex work requires an SSH round trip that has not been
+established**, and a launcher naming Ibex without one is declaring an unreachable branch, which the
+reachability precondition exists to catch.
+
+⚠️ **GPU state is unresolved, which is not the same as absent.** `nvidia-smi` fails to reach a
+driver. That is consistent with an unloaded driver **or** with a sandbox restriction, and the two
+are not distinguishable from here. **Confirm usable GPU count and per-device memory outside the
+sandbox before writing any GPU reservation.** Do not record GPUs as unavailable on this evidence;
+that is exactly the broken-instrument zero this project has paid for before.
+
+⚠️ **The binding constraint is I/O, not CPU or RAM.** `/home/borg` and `$TMPDIR` are the same NVMe
+device (2.8 TB free of 7 TB). Project data, scratch and checkpoints contend for one device, so with
+48 idle cores and 232 GB free, concurrency saturates disk first. Declare expected I/O, not just cores.
+
+### 4a · Scheduling and population depletion — the rule a scheduler must not automate
+
+Parallel safety in §3 prevents two tasks **colliding** on one population. It does not prevent the
+programme **spending** populations faster than it learns from them, and those are different failures.
+
+`TASK_PROTOCOL.md` §1 makes consuming a confirmatory population **tier C, operator only**, and §3
+above records that the coordinator cannot unwind it. A scheduler that auto-launches "the maximum
+safe set of independent tasks" would therefore automate a tier-C decision every time a task touches
+an unexhausted confirmatory population. Sequential execution preserves the option to learn from the
+first task and decline to spend a population on the fifth. A parallel wave forecloses that
+permanently, in exchange for wall-clock time that is not scarce at 5% load.
+
+**Therefore the launch gate splits by population exposure, not by independence alone:**
+
+| `populations_touched` | scheduling |
+|---|---|
+| empty | **auto-schedule freely.** Prior-work lookups, asset audits, `ZERO` tasks, pilots and implementation review. This is most of the available parallelism |
+| already exhausted | **auto-schedulable**, since nothing further is spent. State the exhaustion in the launcher |
+| **unexhausted confirmatory** | **`READY_WAITING_OPERATOR`. Never auto-launched. One explicit authorisation per launch** |
 
 **A cheap pilot is mandatory before any Ibex-scale run.** Declare the pilot's size and its expected
 result in the launcher. One acceptance criterion in this project had a ceiling of 84.8% against a
