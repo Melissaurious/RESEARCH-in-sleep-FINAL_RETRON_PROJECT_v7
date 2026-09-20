@@ -248,7 +248,7 @@ the covariance models. ⚠️ And `T-A5b2` re-closes it in a different way: its 
 
 ## 9 · Task count by edge position
 
-**`[REVIEW 01a0bcb2]` recounted after the review.** 54 tasks.
+**`[REVIEW 01a0bcb2]` recounted after the review.** 54 tasks. ⚠️ **Superseded by §10.6: the register now holds 59.** The table below is the post-review state of 2026-09-20 05:58 and is kept as that record.
 
 | readiness | n |
 |---|---|

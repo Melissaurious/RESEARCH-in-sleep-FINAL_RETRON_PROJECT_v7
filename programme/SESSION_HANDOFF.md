@@ -20,6 +20,7 @@ whole project from this file and the eight documents in §8.
 | **written** | 2026-09-20, ~13:40 +03:00 |
 | **working tree** | clean |
 | **bootstrap** | `specs_exist.sh` **OK** · `test_bootstrap.sh` **24/24** · env `retron_tradicional` (Python 3.12.12) present |
+| ⛔ **gate defect** | `specs_exist.sh` **fails spuriously ~5–10 % of runs** — a `SIGPIPE` + `pipefail` race in `resolve()`. Root cause demonstrated, one-line repair verified, **not applied** because `general/` is operator-only. See **D19** and `docs/BLOCKED.md` |
 | **remote** | `origin` → `git@github.com:Melissaurious/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7.git` — **public**. **Nothing pushed.** |
 
 ⚠️ **Two coordinating sessions wrote this worktree today.** The first finished; sole ownership was
@@ -262,6 +263,17 @@ operates on the endpoint model. The wording should follow.
 **D17 — Fix `general/tools/status.sh`** (`IBEX_HOST` default). A governed-pin change with a decision
 record, so not a session's to make.
 
+**D19 — ⛔ Repair `general/checks/specs_exist.sh`.** The **blocking** governance gate fails
+spuriously on **~5–10 % of runs**, naming a different file each time, **inside and outside the
+sandbox**. Cause: `set -uo pipefail` plus `printf '%s\n' "$TRACKED" | grep -qxF "$1"` in `resolve()`
+— `grep -q` exits on first match, `printf` dies of `SIGPIPE` (141), and `pipefail` makes the
+pipeline fail *even though grep matched*. `TRACKED` is 100,024 bytes, above the 64 KiB pipe buffer,
+which is why it is marginal. **Repair: use a herestring, `grep -qxF "$1" <<<"$TRACKED"`, in all
+three `resolve()` branches — verified 0 spurious misses in 300 runs.** A governed-pin change with a
+decision record, so not a session's to make. *Until it is fixed, a failing gate may be a real
+failure or may be this bug; re-running until green is exactly the habit that makes a real one
+invisible.*
+
 **D18 — Confirm the `0.217 %` registry-coverage withdrawal.** Withdrawn with no operator decision
 preserving it; `T-REG2` is specified to re-derive it under fixtures.
 
@@ -366,4 +378,8 @@ python3 general/tools/check_launcher.py launchers/LAUNCHER_02_rt0_rt7_definition
   re-derived.
 - **Fail closed.** If a reviewer is unavailable, record it and stop. Never substitute silently.
 - **"Ready to launch" is not true until the chain has been run.**
+- **A gate that passes on a re-run has not passed.** When a blocking check fails once and succeeds
+  on retry, that is a finding to chase, not noise to clear. `specs_exist.sh` was caught this way,
+  and the habit it would otherwise teach — re-run until green — is how a real governance failure
+  becomes invisible.
 - **One coordinating session per worktree.** Nothing enforces this; two ran today.

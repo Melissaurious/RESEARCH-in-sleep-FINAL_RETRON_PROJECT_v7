@@ -547,3 +547,45 @@ recommended default (WA-S.1).
     recompute under standard Spearman were not landed. Result frozen as reported; a re-run
     needs explicit future authorisation.
 - **Status:** RESOLVED.
+
+## 2026-09-20 · `specs_exist.sh` fails spuriously ~5–10% of runs (HIGH-STAKES, stopped)
+
+- **Needed:** the blocking governance gate that `programme/launch_task.sh` runs before every
+  provenance-bearing execution must be deterministic. It is not.
+- **What happens:** `bash general/checks/specs_exist.sh` exits 1 on roughly **1 run in 10–20**,
+  naming a **different** file each time as `(not a tracked file)` — observed on
+  `general/CLAUDE.md`, `docs/INFRASTRUCTURE_INCIDENTS.md`,
+  `results/dbchar_g2_canonical_units/VIEWS.md`, `agreements/WORKING_AGREEMENT.md`,
+  `general/checks/bundle_valid.sh`, `docs/decisions/2026-09-15_stage1_population_rules.md`,
+  `tools/check_launcher.py`. Measured **4/40 inside the Bash sandbox** and **2/40 outside it**,
+  so it is **not a sandbox artefact**.
+- **Root cause, demonstrated:** line 16 sets `set -uo pipefail`. `resolve()` tests membership with
+
+  ```sh
+  printf '%s\n' "$TRACKED" | grep -qxF "$1" && return 0
+  ```
+
+  `grep -q` exits **immediately on the first match** and closes the pipe; `printf` is then killed
+  by `SIGPIPE` (141). Under `pipefail` the pipeline's status becomes **141 even though grep
+  matched**, so `resolve` reports a tracked file as missing. `TRACKED` is **100,024 bytes** —
+  above the 64 KiB pipe buffer — which is why `printf` can still be writing when `grep` exits, and
+  why the failure is marginal and random rather than constant. Reproduced directly: the same
+  pipeline against an early-matching path gives **1 spurious miss in 200**; `specs_exist.sh` calls
+  `resolve` hundreds of times per run, which compounds to the observed per-run rate.
+- **Why it is HIGH-STAKES.** It is a **blocking** gate. It randomly refuses legitimate launches,
+  and — worse — it teaches an operator to re-run until green, which is exactly how a **real**
+  governance failure gets waved through. `programme/test_bootstrap.sh` asserts this gate blocks,
+  so that assertion flakes too: check H failed once in this session and passed on three immediate
+  re-runs.
+- **Options:**
+  (a) replace the pipeline with a herestring — `grep -qxF "$1" <<<"$TRACKED"` — in all three
+      `resolve()` branches. **Verified: 0 spurious misses in 300 runs**;
+  (b) drop `pipefail` for these lines only;
+  (c) build a lookup once instead of re-scanning a 100 KB string per reference;
+  (d) do nothing and re-run until green — **unacceptable**, for the reason above.
+- **Recommended default: (a).** One line in three places, no behaviour change, and it makes the
+  gate deterministic.
+- **Why it is stopped and not fixed:** `general/` is the governance layer. `CLAUDE.md` and
+  `WORKING_RULES` §2 state it is amended **only by the operator**, and a change means moving the
+  pinned revision with a decision record. **This session did not touch it.**
+- **Status:** OPEN. Reported by the reconciliation session, 2026-09-20.

@@ -1,5 +1,19 @@
 # COORDINATION STATE
 
+> ⛔ **STALE IN THREE PLACES — read `programme/SESSION_HANDOFF.md` instead.** Kept verbatim as the
+> record of the overnight run. Corrected by the reconciliation pass of 2026-09-20:
+> - §2 records `main` @ `94a1a78` as **failing `specs_exist.sh`**, and §5 item 6 asks the operator
+>   to repair `docs/BLOCKED.md` there. **Both are stale.** `main` is `ba3154a`, the repair landed,
+>   and `docs/BLOCKED.md` is byte-identical on both branches. **Open decision 6 is closed.**
+> - §3 and §5 item 4 record the inspection contradiction as unresolved. **The operator ruling of
+>   2026-09-20 §1 resolved it** — exposure is endpoint-scoped. See
+>   `docs/decisions/2026-09-20_operator_ruling_exposure_freeze_controls.md`.
+> - §3 cites a 54-task register. It now holds **59**.
+>
+> ⚠️ **§1 is NOT stale.** The exposed API key is still unrotated, and publishing this file to the
+> public remote would announce it. See `programme/GITHUB_READINESS.md` §5.
+
+
 **As of 2026-09-20, after the overnight run.** One page. Everything a coordinating session needs to
 take over, or to resume after a gap.
 

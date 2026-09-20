@@ -160,6 +160,58 @@ preventing it** — `.agent-lock` is advisory and was overwritten without compla
 `SCIENTIFIC_DAG.md` says 54 in two places and 53 in a third. Cosmetic, but it is the class of drift
 the numeric linter was built to catch — and that linter is `VOID`.
 
+### ⛔ F8 · `specs_exist.sh` — the blocking governance gate — fails spuriously ~5–10% of runs
+
+Found because check H of `test_bootstrap.sh` failed once immediately after this session's commit and
+passed on three consecutive re-runs. **That is the shape of a flaky gate, and it was worth chasing
+rather than re-running until green.**
+
+| measurement | result |
+|---|---|
+| `specs_exist.sh` direct, 15 runs **in sandbox** | **1 failure** |
+| `specs_exist.sh` direct, 40 runs **in sandbox** | **4 failures**, a *different* file named each time |
+| `specs_exist.sh` direct, 40 runs **outside sandbox** | **2 failures** → **not a sandbox artefact** |
+| `TRACKED` list contents, 40 runs | **stable at 1,626 lines** → not an input problem |
+
+Files spuriously reported `(not a tracked file)`: `general/CLAUDE.md` ·
+`docs/INFRASTRUCTURE_INCIDENTS.md` · `results/dbchar_g2_canonical_units/VIEWS.md` ·
+`agreements/WORKING_AGREEMENT.md` · `general/checks/bundle_valid.sh` ·
+`docs/decisions/2026-09-15_stage1_population_rules.md` · `tools/check_launcher.py`.
+
+**Root cause, demonstrated not inferred.** `specs_exist.sh` L16 sets `set -uo pipefail`, and
+`resolve()` tests membership with:
+
+```sh
+printf '%s\n' "$TRACKED" | grep -qxF "$1" && return 0
+```
+
+`grep -q` exits **on the first match** and closes the pipe; `printf` is then killed by `SIGPIPE`
+(141). **Under `pipefail` the pipeline's status is 141 even though grep matched**, so a tracked file
+is reported missing.
+
+`TRACKED` measures **100,024 bytes — above the 64 KiB pipe buffer**, which is precisely why
+`printf` can still be writing when `grep` exits, and why the failure is marginal rather than
+constant. Reproduced directly:
+
+| form | spurious misses |
+|---|---|
+| `printf … \| grep -qxF` on an early-matching real path | **1 / 200** |
+| same pipeline, 200,000-line list | **300 / 300** |
+| `grep -qxF "$1" <<<"$TRACKED"` (herestring) | **0 / 300** |
+
+`resolve()` is called hundreds of times per run, which compounds ~0.5 % per call into the observed
+~5–10 % per run.
+
+**Why it matters more than its rate.** This gate is **blocking**: `launch_task.sh` refuses to
+proceed when it fails, and `test_bootstrap.sh` asserts that it blocks. A gate that fails randomly
+does two bad things — it refuses legitimate launches, and it **trains an operator to re-run until
+green**, which is exactly how a real governance failure gets waved through.
+
+**Not fixed here.** `general/` is the governance layer, amended **only by the operator**, and a
+change means moving the pinned revision with a decision record. Recorded in `docs/BLOCKED.md`
+(2026-09-20) with the one-line repair and its verification. **This session did not touch
+`general/`.**
+
 ---
 
 ## 3 · Reconciled task table
