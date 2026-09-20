@@ -166,6 +166,10 @@ def freeze(tid,wt,d):
 
 def spawn(tid,sp,w):
     rd=w.parent/'runs'; rd.mkdir(exist_ok=True); rec=rd/f'{tid}.json'; log=rd/f'{tid}.worker.log'; env=os.environ.copy(); env['RETRON_RUNTIME_RECORD']=str(rec)
+    # Clear any record from a PREVIOUS attempt. If this launch refuses before the worker
+    # writes (e.g. launch_task.sh bails), a leftover record would be read as THIS attempt's
+    # outcome -- which is how a re-run of T-R2a was voided by a 20-minute-old result.
+    rec.unlink(missing_ok=True)
     with log.open('ab') as fh:
         proc=subprocess.Popen(['bash',str(P/'launch_task.sh'),tid,'--execute','--execution-spec',str(sp)],cwd=SYN,env=env,stdout=fh,stderr=subprocess.STDOUT,start_new_session=True)
     return proc,rec

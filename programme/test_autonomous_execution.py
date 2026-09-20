@@ -79,6 +79,16 @@ class ArisAcceptanceBoundaryTests(unittest.TestCase):
         src = (HERE / "wave_runner.py").read_text()
         self.assertIn("'--verdict-id',verdict_id,'--reviewer',reviewer", src)
 
+    def test_spawn_clears_a_previous_attempts_runtime_record(self):
+        """A stale record must never be read as the current attempt's outcome.
+
+        A re-run of T-R2a was voided by a 20-minute-old record because launch_task.sh
+        refused before the worker wrote a new one.
+        """
+        src = (HERE / "wave_runner.py").read_text()
+        spawn = src.split("def spawn(", 1)[1].split("\ndef ", 1)[0]
+        self.assertIn("rec.unlink(missing_ok=True)", spawn)
+
 
 class PrepareResultShapeTests(unittest.TestCase):
     """Regression for BLOCKED_PREPARE: 'str' object has no attribute 'get'.
