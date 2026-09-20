@@ -71,11 +71,12 @@ prediction against CM-derived calls adjudicates nothing. **Tier D is a target, n
 
 ### 3b · What R1b already shows, and what Stage 1 must therefore explain
 
-Computed from the landed R1b table and declared here so Stage 1 is not rediscovering it:
+Computed **per element** from the landed R1b table and declared here so Stage 1 is not
+rediscovering it:
 
 | | min | median | max |
 |---|---|---|---|
-| RT-DNA / ncRNA length ratio | 0.188 | **0.545** | **2.148** |
+| RT-DNA / ncRNA length ratio | **0.3925** | **0.5455** | **0.8602** |
 | nt 5′ of the RT-DNA | **0** | 55 | 126 |
 | nt 3′ of the RT-DNA | **3** | 17 | 110 |
 
@@ -83,10 +84,43 @@ Computed from the landed R1b table and declared here so Stage 1 is not rediscove
 - It sits **internally** in all but one element (one is flush to the 5′ end).
 - ⭐ **None is flush to the 3′ end; the minimum 3′ remainder is 3 nt.** A candidate landmark —
   **to be tested, not assumed.**
-- ⛔ **The ratio exceeding 1.0 (max 2.148) is an anomaly Stage 1 must resolve, not smooth over.**
-  An RT-DNA longer than the ncRNA field it exactly matches means the two panel columns may not
-  describe the same coordinate frame. **Until it is explained, those elements are reported
-  separately and excluded from any aggregate.**
+
+⚠️ **CORRECTED.** An earlier draft of this table reported a maximum ratio of **2.148** and made it
+an anomaly Stage 1 had to explain, with those elements excluded from aggregates. **That was wrong,
+and the error was mine, not the data's.** 2.148 is `max(rtdna_len) / min(ncrna_len)` computed
+**across different elements** — the longest RT-DNA over the shortest ncRNA, two retrons never
+compared to each other. The per-element maximum is **0.8602**, and **no element violates
+`len(RT-DNA) <= len(ncRNA)`**.
+
+⛔ **`R2_tierA_anomalies.tsv` is withdrawn and the exclusion rule with it.** There are no anomalous
+elements; excluding them would have discarded real data to accommodate a bad statistic. Full
+account: `R2_COORDINATE_FRAME_DIAGNOSIS.md`.
+
+### 3b-gate · ⛔ BLOCKING pre-analysis consistency gate
+
+**`r2_consistency_gate.py` runs before any Stage-1 measurement. Nothing runs if it fails.**
+Demonstrated: **9 checks, 9 PASS.**
+
+| check | result |
+|---|---|
+| R1b table sha256 `713237ac…58dca` | **PASS** |
+| panel sha256 `80b2f565…d9577` | **PASS** |
+| 81 anchors in both sources | **PASS** |
+| **`len(RT-DNA) <= len(ncRNA)`** for all 81 | **81/81** |
+| mapped span == `len(RT-DNA)` | **81/81** |
+| `1 <= start <= end <= len(ncRNA)` | **81/81** |
+| ⭐ **`revcomp(ncRNA[start:end]) == RT-DNA`** | **81/81** |
+| all `EXACT_UNIQUE` | **81/81** |
+| **per-element** max ratio ≤ 1.0 | **0.8602** |
+
+⛔ **The ncRNA object R2 measures is verified byte-identical to the one R1b matched**, and
+normalised coordinates are computed **only** from these verified objects.
+
+⭐ `R2_GATE_revcomp_roundtrip` **re-derives R1b's result independently** from the coordinates and
+the raw sequences, so Stage 1 cannot silently build on a mis-transcribed table.
+
+⚠️ The gate is kept **permanently**, even though it passes. A statistic that mixed elements reached
+a launcher; the invariant is now machine-checked rather than trusted.
 
 ### 3c · Stratification rule, declared in advance
 
@@ -140,7 +174,6 @@ review**, because that is where Tier D enters and where the circularity risk liv
 |---|---|---|
 | `R2_tierA_geometry.tsv` | **A** | 81 rows: lengths, exact and normalised coordinates, fractions, flanks |
 | `R2_tierA_boundary_context.tsv` | **A** | sequence and predicted structure at both measured boundaries |
-| `R2_tierA_anomalies.tsv` | **A** | the ratio > 1.0 elements, **excluded from aggregates until explained** |
 | `R2_tierA_strata.tsv` | **A** | subtype summaries, **n ≥ 5 only**, each with its n |
 | `R2_tierC_engineered_delta.tsv` | **C** | 105 rows: delta coordinates, insertions/deletions/replacements, **labelled `ENGINEERED_DELTA`** |
 | `R2_candidate_coordinates.tsv` | **A–D** | every candidate element with `evidence_tier`, `confidence`, `source`, and an explicit `UNRESOLVED` state |
@@ -152,9 +185,7 @@ review**, because that is where Tier D enters and where the circularity risk liv
 
 | control | type | must show |
 |---|---|---|
-| `R2_GATE_r1b_source` | blocking | R1b's table matches its recorded sha256 and has 81 rows, all `EXACT_UNIQUE` |
-| `R2_GATE_panel_sha256` | blocking | the panel is the one frozen against |
-| `R2_POS_coordinate_roundtrip` | blocking | re-extracting the ncRNA substring at each R1b coordinate returns the RT-DNA reverse complement, **81/81** |
+| **the full §3b-gate battery** | blocking | **9 checks, demonstrated 9 PASS** — see §3b-gate |
 | `R2_POS_synthetic_delta` | blocking | a constructed native/modified pair with a known 81 nt insertion at a known position is recovered exactly |
 | `R2_NEG_identical_pair` | blocking | a native/modified pair that is **identical** yields an **empty** delta, not a spurious one |
 | `R2_GATE_tier_required` | blocking | **no row in `R2_candidate_coordinates.tsv` may lack an `evidence_tier`** |
@@ -170,7 +201,7 @@ from the coordinates**, so Stage 1 cannot silently build on a mis-transcribed ta
 | R1b table hash or row count mismatch | **STOP** before any measurement |
 | any blocking control fails | **STOP**, `VOID`, escalate, **new task ID** |
 | a candidate coordinate would be written without a tier | **STOP** |
-| the ratio > 1.0 anomaly is unexplained | those elements are **excluded from aggregates and reported separately** — not a STOP, but a hard reporting rule |
+| the consistency gate fails on any of its 9 checks | **STOP before any Stage-1 measurement.** No table written |
 | Stage 3 propagation is attempted | **STOP** — it is not authorised by this launcher |
 
 ## 9 · Interpretation ceiling
