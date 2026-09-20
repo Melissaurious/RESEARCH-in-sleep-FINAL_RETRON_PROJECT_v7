@@ -159,3 +159,42 @@ orchestrator refuse a later confirmatory claim on a population already consumed.
 Roughly fifty exist in the published literature and none is on disk in machine-readable form. No
 amount of orchestration substitutes for extracting them, and no amount substitutes for the swap panel
 if they prove insufficient.
+
+---
+
+## Traceability contract — adopted by the operator, 2026-09-20
+
+**Prospective only.** Historical task reports are **not** rewritten for formatting.
+
+An executed task is **not complete or closeable** until all of the following exist:
+
+1. a **frozen `TASK_LAUNCHER.md`**;
+2. the **exact implementation commit** (the `WORKING_RULES` §6b freeze, which predates the run);
+3. a final **`TASK_REPORT.md`**;
+4. final **evidence tables/figures in the task's declared `output_directory`**;
+5. **`logs/run_log.json`** carrying input hashes, software versions, parameters, backend,
+   timestamps, and the freeze and run commits;
+6. an **output manifest / hash record** (`OUTPUT_MANIFEST.sha256`).
+
+⛔ **Draft controls may live in gitignored scratch. Final evidence may NOT exist only in
+`ARIS_OUTPUT/` or any other ephemeral location.**
+
+### Every `TASK_REPORT.md` carries two summaries
+
+**Methods-ready summary** — population and inference unit · software and version · parameters ·
+controls · analysis/statistical method.
+
+**Results-ready summary** — denominators · principal measurements · effect sizes and uncertainty
+where applicable · limitations · interpretation ceiling.
+
+Both sit above the existing §5 fields, which are unchanged. The first report written to this
+contract is `T-R1b`, at freeze `7e7f598`.
+
+### Index
+
+`programme/EXECUTION_LEDGER.tsv` is the index across tasks: one row each with `task_id`,
+`question_short`, `freeze_commit`, `execution_commit`, `state`, `population`, `endpoint`,
+`backend`, `primary_output`, `task_report`, `interpretation_ceiling`, `started_at`, `finished_at`.
+
+⛔ **It is an index, not an approval system**, and historical fields are populated **only from
+recorded evidence**. A field with no evidence reads `UNRECORDED` and is never guessed.
