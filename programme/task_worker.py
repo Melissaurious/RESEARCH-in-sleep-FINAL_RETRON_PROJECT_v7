@@ -91,7 +91,11 @@ def validate_frozen_binding(spec: dict) -> tuple[Path, Path]:
 def run_local(spec: dict, runtime_record: Path) -> int:
     wt, out = validate_frozen_binding(spec)
     out.mkdir(parents=True, exist_ok=True)
-    logdir = out / "runner_logs"
+    # The harness must NOT write into the task's declared output directory. A task that
+    # enforces a closed output manifest correctly rejects files it did not declare, and
+    # T-R2a failed exit 4 on exactly that ("undeclared output written: runner_logs/...")
+    # after its science had already succeeded. Harness logs live beside the runtime record.
+    logdir = runtime_record.parent / "runner_logs" / spec["task_id"]
     logdir.mkdir(parents=True, exist_ok=True)
     stdout_path = logdir / "stdout.log"
     stderr_path = logdir / "stderr.log"

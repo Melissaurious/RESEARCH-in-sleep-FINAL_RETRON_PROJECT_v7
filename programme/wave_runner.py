@@ -129,13 +129,20 @@ def worktree(tid):
         if p.returncode: run(['git','rebase','--abort'],cwd=wt,check=False); raise RuntimeError(f'rebase failed: {p.stderr.strip()}')
     return wt
 
-def prepare(tid,row,wt):
+def prepare_start(tid,row,wt):
+    """Launch the preparation agent WITHOUT waiting for it. Returns (proc, log_paths)."""
     base=git('rev-parse','HEAD'); refs='\n'.join('  - '+x for x in split(row['design_refs']))
     prompt=f'''Prepare exactly task {tid} in {wt}. DO NOT run primary science. Read its TASK_LAUNCHER.md, {P/'WORKING_RULES.md'}, {SYN/'review-stage/TASK_PROTOCOL.md'}, and:\n{refs}\nCurrent authoritative project-synthesis base is {base}. Preserve approved science. Ordinary implementation choices are autonomous. If a genuinely new biological endpoint/threshold/population decision is needed, write programme/tasks/{tid}/PREPARE_RESULT.json with status REVIEW_REQUIRED and stop. Otherwise implement code+fixtures, run only self-checks, update launcher to base_commit={base}, base_branch=project-synthesis, state=AUTHORIZED, frozen=true; do not create primary output and do not commit. The launcher front matter MUST declare autonomy_tier: A for a preregistered computation whose acceptance gate is fully machine-verifiable (frozen hashes, input hashes, blocking controls, manifest, run log, report schema), or autonomy_tier: B if accepting it needs a human/cross-model judgment of merit or interpretation; tier A is then accepted by deterministic validation alone, tier B waits for semantic review. Write PREPARE_RESULT.json schema_version=1, status=READY_TO_FREEZE, task_id, command argv, inputs(dataset_id,path,sha256), backend, resources(cpu_threads,memory_gb,io_tokens={row['io_tokens']}), runtime(max_runtime_seconds,resume_allowed,stop_note), self_checks, unresolved_decision.'''
     cmd=shlex.split(os.environ.get('RETRON_PREPARE_COMMAND','claude --dangerously-skip-permissions -p'))+[prompt]
     log=row['_wave'].parent/'prepare_logs'; log.mkdir(exist_ok=True); out=log/f'{tid}.stdout.log'; err=log/f'{tid}.stderr.log'
-    with out.open('w') as o,err.open('w') as e:p=subprocess.run(cmd,cwd=wt,stdout=o,stderr=e,text=True)
-    if p.returncode: raise RuntimeError(f'prepare rc={p.returncode}; see {out} {err}')
+    o=out.open('w'); e=err.open('w')
+    proc=subprocess.Popen(cmd,cwd=wt,stdout=o,stderr=e,text=True,start_new_session=True)
+    return proc,(out,err)
+
+def prepare_finish(tid,wt,base,plog,rc):
+    """Validate a finished preparation. Raises ReviewRequired / RuntimeError as before."""
+    out,err=plog
+    if rc: raise RuntimeError(f'prepare rc={rc}; see {out} {err}')
     rp=wt/'programme'/'tasks'/tid/'PREPARE_RESULT.json'; d=json.loads(rp.read_text())
     if d.get('status')=='REVIEW_REQUIRED': raise ReviewRequired(d.get('unresolved_decision','unspecified'))
     if d.get('status')!='READY_TO_FREEZE': raise RuntimeError(f"PREPARE_RESULT status={d.get('status')!r}, expected READY_TO_FREEZE")
@@ -177,7 +184,7 @@ def start(w,authorised,poll):
     if git('rev-parse','--abbrev-ref','HEAD')!='project-synthesis' or git('status','--porcelain'): raise RuntimeError('start requires clean project-synthesis')
     if sha256_file(w)!=authorised: raise RuntimeError('WAVE.tsv hash mismatch')
     wr=rows(w); st=load_status(w); [st.setdefault(r['task_id'],{**{k:'' for k in STATUS_FIELDS},'task_id':r['task_id'],'state':'PENDING'}) for r in wr]; save_status(w,st); commit([status_path(w)],'wave: start '+w.parent.name); aris_start(w,[r['task_id'] for r in wr])
-    workers={}; escal=False
+    workers={}; preparing={}; escal=False
     while True:
         b=board(); states={k:v['state'] for k,v in b.items()}; used=0
         for r in wr:
@@ -185,6 +192,18 @@ def start(w,authorised,poll):
                 pid=int(r.get('monitor_pid') or 0)
                 if alive(pid): used+=int(r['io_tokens']); states[r['task_id']]='RUNNING'; set_status(w,st,r['task_id'],'RUNNING_EXTERNAL',f'monitor-only pid={pid}; no signals')
                 elif st[r['task_id']]['state']!='ESCALATION_REQUIRED': set_status(w,st,r['task_id'],'ESCALATION_REQUIRED','external process exited; finalise under durable handoff'); escal=True
+        # Collect finished preparation agents. They run concurrently with each other and
+        # with executing workers; only the short freeze step is serialised here.
+        for tid,(pproc,wt,base,plog,cost) in list(preparing.items()):
+            if pproc.poll() is None: used+=cost; continue
+            del preparing[tid]
+            try:
+                d=prepare_finish(tid,wt,base,plog,pproc.returncode); fr,sp=freeze(tid,wt,d)
+                fm=parse_front_matter(wt/'programme'/'tasks'/tid/'TASK_LAUNCHER.md')
+                ledger(tid,question_short=fm.get('title',tid),freeze_commit=fr,state='FROZEN_NOT_EXECUTED',backend=d['backend'],primary_output=fm.get('output_directory',''),interpretation_ceiling='SEE_TASK_LAUNCHER')
+                set_status(w,st,tid,'FROZEN','ready',freeze_commit=fr); commit([sp,LEDGER,status_path(w)],f'wave: bind {tid}')
+            except ReviewRequired as e:set_board(tid,'BLOCKED',f'scientific review required: {e}'); set_status(w,st,tid,'BLOCKED',str(e)); commit([BOARD,status_path(w)],f'wave: scientific stop {tid}'); escal=True
+            except Exception as e:set_status(w,st,tid,'BLOCKED_PREPARE',str(e)); escal=True
         for tid,(proc,rec,cost) in list(workers.items()):
             if proc.poll() is None: used+=cost; continue
             rr=json.loads(rec.read_text()) if rec.exists() else {'worker_state':'REFUSED','error':'missing run record'}; spec=load_execution_spec(EXEC/tid/'TASK_EXECUTION.json')
@@ -200,7 +219,9 @@ def start(w,authorised,poll):
         b=board(); states={k:v['state'] for k,v in b.items()}; candidates=[]; by={r['task_id']:r for r in wr}
         for r in wr:
             tid=r['task_id']; cur=st[tid]['state']
-            if r['action']=='monitor_only' or tid in workers or cur in TERMINAL|{'RUNNING_EXTERNAL','ESCALATION_REQUIRED','BLOCKED_PREPARE'}: continue
+            # A preparing task already reserves its tokens in the collection loop above, so
+            # it must not also compete for them here; it re-enters as a candidate once FROZEN.
+            if r['action']=='monitor_only' or tid in workers or tid in preparing or cur in TERMINAL|{'RUNNING_EXTERNAL','ESCALATION_REQUIRED','BLOCKED_PREPARE'}: continue
             candidates.append(ScheduleTask(tid,b.get(tid,{}).get('state',cur),int(r['io_tokens']),split(r['hard_dependencies']),split(r['schedule_after'])))
         sel,dec=choose_launchable(candidates,states,used,tokens())
         for t in candidates:
@@ -208,13 +229,17 @@ def start(w,authorised,poll):
         for tid in sel:
             r=by[tid]; sp=EXEC/tid/'TASK_EXECUTION.json'
             if not sp.exists():
-                try: wt=worktree(tid); d=prepare(tid,{**r,'_wave':w},wt); fr,sp=freeze(tid,wt,d); ledger(tid,question_short=parse_front_matter(wt/'programme'/'tasks'/tid/'TASK_LAUNCHER.md').get('title',tid),freeze_commit=fr,state='FROZEN_NOT_EXECUTED',backend=d['backend'],primary_output=parse_front_matter(wt/'programme'/'tasks'/tid/'TASK_LAUNCHER.md').get('output_directory',''),interpretation_ceiling='SEE_TASK_LAUNCHER'); set_status(w,st,tid,'FROZEN','ready',freeze_commit=fr); commit([sp,LEDGER,status_path(w)],f'wave: bind {tid}')
-                except ReviewRequired as e:set_board(tid,'BLOCKED',f'scientific review required: {e}'); set_status(w,st,tid,'BLOCKED',str(e)); commit([BOARD,status_path(w)],f'wave: scientific stop {tid}'); escal=True; continue
-                except Exception as e:set_status(w,st,tid,'BLOCKED_PREPARE',str(e)); escal=True; continue
+                # Preparation is started ASYNCHRONOUSLY and collected in the poll loop above.
+                # Running it inline blocked every other task behind one prepare agent, which
+                # left finished workers unreaped and eligible frozen science idle for minutes.
+                if tid not in preparing:
+                    try: wt=worktree(tid); proc,plog=prepare_start(tid,{**r,'_wave':w},wt); preparing[tid]=(proc,wt,git('rev-parse','HEAD'),plog,int(r['io_tokens'])); set_status(w,st,tid,'PREPARING',f'prepare agent pid={proc.pid}')
+                    except Exception as e:set_status(w,st,tid,'BLOCKED_PREPARE',str(e)); escal=True
+                continue
             spec=load_execution_spec(sp); fm=parse_front_matter(Path(spec['worktree'])/'programme'/'tasks'/tid/'TASK_LAUNCHER.md'); protected=fm.get('confirmatory_spend','').lower().startswith('yes') or 'required' in fm.get('confirmatory_spend','').lower()
             if protected and r.get('protected_spend_authorised','').lower()!='true':set_status(w,st,tid,'BLOCKED','protected spend not authorised'); escal=True; continue
             set_board(tid,'RUNNING','autonomous wave'); p,rec=spawn(tid,sp,w); workers[tid]=(p,rec,int(r['io_tokens'])); ledger(tid,freeze_commit=spec['freeze_commit'],execution_commit=spec['freeze_commit'],state='RUNNING',backend=spec['backend'],primary_output=spec['output_directory'],task_report=str(Path(spec['output_directory'])/'TASK_REPORT.md'),interpretation_ceiling='SEE_TASK_LAUNCHER',started_at=utc()); set_status(w,st,tid,'RUNNING','worker launched',freeze_commit=spec['freeze_commit'],worker_pid=p.pid,started_at=utc()); aris_set(w,tid,'running'); commit([BOARD,LEDGER,status_path(w)],f'wave: launch {tid}')
-        if not workers:
+        if not workers and not preparing:
             non=[st[r['task_id']]['state'] for r in wr if r['action']!='monitor_only']
             if not any(x in {'PENDING','AUTHORIZED','FROZEN','PREPARING'} for x in non): commit([status_path(w)],'wave: checkpoint '+w.parent.name); return 4 if escal or any(x.startswith('WAIT_') or x.startswith('BLOCKED') for x in non) else 0
         time.sleep(poll)

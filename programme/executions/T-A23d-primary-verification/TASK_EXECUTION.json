@@ -7,11 +7,11 @@
     "--outdir",
     "analysis/t_a23d_primary_verification"
   ],
-  "freeze_commit": "edf381c809db526a389d427a9da98c4edd015458",
+  "freeze_commit": "26bbd28778450e6cf706f8db1afdb42cd3397da4",
   "frozen_files": {
     "programme/tasks/T-A23d-primary-verification/PREPARE_RESULT.json": "7fe6b9643253c304e0f5eb5b9c6053aa599b15e575a6b3b3885c0807f7e03b4c",
     "programme/tasks/T-A23d-primary-verification/TASK_LAUNCHER.md": "28f15029e27cfac56ea9b1b7bfdcec4aa0e972c3492e557f6037d229287165ad",
-    "programme/tasks/T-A23d-primary-verification/a23d_resolve.py": "61f5debe13819ef5a41055633dff64630be96a09b1e9506999668bb32c573d47",
+    "programme/tasks/T-A23d-primary-verification/a23d_resolve.py": "d9653ea0de84390bd6b5b44f7654a720055df0a6debe395c41d7ca96006caa9d",
     "programme/tasks/T-A23d-primary-verification/fixtures/buf_fixture_adjudicable.csv": "91329882100852bc028f6c9796db102c602db023ed2b968c45e47b443a3bc6d4",
     "programme/tasks/T-A23d-primary-verification/fixtures/buf_fixture_not_adjudicable.csv": "d8e8ef7d04687b29c737c6e7a5e7e00f5d73aa17b4782ff864af326f0dd38027",
     "programme/tasks/T-A23d-primary-verification/fixtures/identity_cases.json": "8b1aefb529be1492b0333b016ac42f4d5d1245840229cf517a156103b7e2b01a",
@@ -44,9 +44,11 @@
       "canonical_status": "EXTERNAL_OPEN_ACCESS_CC_BY",
       "dataset_id": "SIM2019_FULLTEXT_PMC6868368",
       "limitation_carried": "Not pinnable at freeze time because it is not on disk: T-A23c retrieved it but persisted no copy (its work/ directory is empty). The run records its sha256 and byte count, and A23d_GATE_sim2019_fulltext blocks unless the retrieved document declares SIM2019's own DOI 10.1093/nar/gkz865. It was deliberately NOT staged during preparation: parsing SIM2019's real reference list before the freeze would have allowed the frozen identity rule to be written with the answer in view, which is the criterion-fitting failure this programme has already paid for twice.",
-      "path": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6868368/fullTextXML",
+      "materialised_from": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6868368/fullTextXML",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/sim2019/PMC6868368_fullTextXML.xml",
+      "provenance": "references/rt0_rt7/sim2019/PROVENANCE.md",
       "role": "the bibliography from which references 32, 33, 35 and 36 are resolved",
-      "sha256": "RETRIEVED_AT_RUN_TIME_AND_RECORDED_IN_logs/run_log.json",
+      "sha256": "b16b26a6bb004a71088d49c683a58a7a95302851f9ecb265d8cd8d60be32e315",
       "verified_at_prepare_time": false
     }
   ],
