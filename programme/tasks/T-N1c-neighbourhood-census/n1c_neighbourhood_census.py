@@ -4,11 +4,22 @@ T-N1c · CDS-neighbourhood census over all RT-family records, with edge status.
 
 FROZEN BEFORE EXECUTION (WORKING_RULES §6b).
 
-KEY CORRECTION vs T-N1. Its blocking negative shifted each already-selected RT CDS
-against its own coordinates, which for ordinary gene lengths CANNOT overlap -- the
-control was structurally forced to zero and could never have failed. Here the
-negative PERMUTES ANCHORS ACROSS RECORDS and runs the SAME locator: record A's CDS
-set is scored against record B's anchor. It can return any value.
+THE NULL, AND WHY IT IS THE THIRD ONE.
+  T-N1  shifted each already-selected RT CDS against its OWN coordinates. For
+        ordinary gene lengths that cannot overlap, so the control was structurally
+        forced to zero and could never have failed.
+  T-N1b permuted anchors ACROSS records. That one could fail, and it did:
+        0.070506 against a declared 0.05. CDS coordinates here are contig-GLOBAL
+        and many records share contigs, so a permuted anchor lands in shared
+        coordinate space often enough to overlap. The control was right; the
+        construction was ill-posed.
+  T-N1c places a decoy of the SAME LENGTH as the record's own RT CDS uniformly
+        inside that record's OWN window. The overlap probability is then a
+        geometry question, ~2L/W ~= 0.125, and NULL_MAX is declared at 0.25
+        BEFORE execution -- twice the geometric expectation, deliberately loose,
+        so the control tests the construction and not a tuned number.
+  A second control requires the true anchor to beat the decoy by >= 0.50, which a
+  position-blind locator cannot do. The two fail in opposite directions.
 
 SECOND CORRECTION. Zero-neighbour records are split into TRUE_ZERO_NEIGHBOUR and
 EDGE_CLIPPED_ZERO, and the edge-clipping denominator is reported, so a consumer
