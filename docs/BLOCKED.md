@@ -601,3 +601,41 @@ recommended default (WA-S.1).
   `WORKING_RULES` §2 state it is amended **only by the operator**, and a change means moving the
   pinned revision with a decision record. **This session did not touch it.**
 - **Status:** OPEN. Reported by the reconciliation session, 2026-09-20.
+
+---
+
+## D20 · A machine-only `PASS` can release downstream science
+
+- **Status:** OPEN. Raised by the autonomous-execution session, 2026-09-20. ⛔ **Resolve before any
+  scientific task hard-depends on a Type-A-accepted upstream.** Not urgent today: nothing in
+  Wave 01 depends on `T-D1`, `T-D2` or `T-R2a`, so the exposure is **latent, not realised**.
+- **What happens.** `wave_runner` promotes a task `COMPLETE_AWAITING_REVIEW -> PASS` when an
+  independent deterministic validator confirms **execution validity** — frozen and input hashes,
+  blocking controls, manifest, run log, report schema, no undeclared inputs, preregistered endpoint.
+  That promotion is legitimate on its own terms: pinned ARIS `tools/run_state.py` explicitly allows
+  *"a CROSS-MODEL reviewer (codex/gemini) **OR a deterministic verifier**"* to write `accepted`, and
+  the verdict id and reviewer are recorded.
+- **Why it is still a problem.** `PASS` is **overloaded**. It is simultaneously (a) the state the
+  deterministic validator writes and (b) the **only** state that satisfies a hard dependency in
+  `choose_launchable`. Elsewhere in this project `PASS` has meant *operator-accepted* — `T-R1b`'s
+  ledger row reads `ACCEPTED (operator, 2026-09-20)` — while executed-but-unreviewed work sits at
+  `COMPLETE_AWAITING_REVIEW` (`T-C1b`, `T-X1b`, `T-X1c`). So a check that makes **no judgment of
+  merit** can now unblock downstream *science*.
+- **Relation to `WA-A.5`.** The validator does not weaken independent review in the sense WA-A.5
+  guards: it produces no score, no `{ready, almost}` verdict, and substitutes for no reviewer. The
+  risk is not a lowered threshold — it is a **dependency edge released without any scientific
+  review having occurred**. (Note `review_gate.py`, which WA-A.5 cites, does **not exist** at the
+  pinned ARIS commit `58d46de`; only the `auto-review-loop` skill does.)
+- **Options:**
+  (a) keep Type-A promotion for execution validity, but require a hard dependency to be satisfied by
+      operator/reviewer acceptance **or** by an explicit declaration in the dependent launcher that a
+      Type-A upstream suffices;
+  (b) split the vocabulary — e.g. `PASS_EXECUTION` vs `PASS` — so the dependency edge reads only the
+      reviewed state;
+  (c) require semantic review for any task that has dependents, and Type-A only for leaves;
+  (d) do nothing — **unacceptable**, because the first dependent task would silently inherit an
+      unreviewed result.
+- **Recommended default: (a).** It preserves the throughput the deterministic verifier was added for,
+  changes no scientific criterion, and puts the decision where the science is declared.
+- **Not changed by this session:** the operator directed that Type-A acceptance semantics not be
+  modified during the active wave.
