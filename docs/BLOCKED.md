@@ -555,10 +555,22 @@ recommended default (WA-S.1).
 - **What happens:** `bash general/checks/specs_exist.sh` exits 1 on roughly **1 run in 10–20**,
   naming a **different** file each time as `(not a tracked file)` — observed on
   `general/CLAUDE.md`, `docs/INFRASTRUCTURE_INCIDENTS.md`,
-  `results/dbchar_g2_canonical_units/VIEWS.md`, `agreements/WORKING_AGREEMENT.md`,
+  `results/dbchar_g2_canonical_units/VIEWS.md`, `general/agreements/WORKING_AGREEMENT.md`,
   `general/checks/bundle_valid.sh`, `docs/decisions/2026-09-15_stage1_population_rules.md`,
-  `tools/check_launcher.py`. Measured **4/40 inside the Bash sandbox** and **2/40 outside it**,
-  so it is **not a sandbox artefact**.
+  `general/tools/check_launcher.py`. Measured **4/40 inside the Bash sandbox** and **2/40 outside
+  it**, so it is **not a sandbox artefact**.
+
+  ⚠️ **Two of those were reached through the layer-relative branch of `resolve()`.** `IBEX.md`
+  names the working agreement, and `LAUNCHER_SPEC.md` names the launcher checker, each written
+  relative to the layer root — correct **inside** the layer, and resolved from a consuming project
+  by prefixing the submodule mount. That branch is a second `printf | grep -q` pipeline and is
+  subject to the same race.
+
+  ⚠️ **Both are written above with their full project-relative paths deliberately.** Writing them
+  layer-relative in this file — which is a project document, not a layer document, so `resolve()`
+  is given no submodule to prefix — made this very check fail **deterministically**, and correctly.
+  That is the same defect class as the stale pointer repaired in `6aa6dcc`, reintroduced while
+  documenting the checker, and caught by the checker.
 - **Root cause, demonstrated:** line 16 sets `set -uo pipefail`. `resolve()` tests membership with
 
   ```sh
