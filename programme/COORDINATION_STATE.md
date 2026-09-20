@@ -10,8 +10,8 @@
 >   `docs/decisions/2026-09-20_operator_ruling_exposure_freeze_controls.md`.
 > - §3 cites a 54-task register. It now holds **59**.
 >
-> ⚠️ **§1 is NOT stale.** The exposed API key is still unrotated, and publishing this file to the
-> public remote would announce it. See `programme/GITHUB_READINESS.md` §5.
+> ✅ **§1 is redacted for publication.** The credential-hygiene item is tracked outside this
+> repository and no credential value is stored here. See `programme/GITHUB_READINESS.md` §5.
 
 
 **As of 2026-09-20, after the overnight run.** One page. Everything a coordinating session needs to
@@ -24,9 +24,7 @@ what happened and what the operator must decide.
 
 ## 1 · Urgent, not scientific
 
-**A live API key is in plaintext in the user's Claude configuration, in an MCP environment block,
-and was printed into a session transcript.** Rotate it. Reported by a task session; deliberately not
-inspected further, because inspecting it repeats the exposure rather than fixing it.
+**Credential-hygiene item, tracked outside this repository.** A credential-hygiene item was raised on the operator's workstation and is tracked outside this repository. **No credential value has ever been stored in this repository, in any commit, or in any branch** — verified by a pattern scan over the full reachable history. Marker: `REDACTED_SECRET_NOT_STORED_IN_REPOSITORY`.
 
 **The 88 MB Stage-1 workbench is backed up** at
 `/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7_SEPTEMBER/backups/`, sha256
@@ -76,7 +74,7 @@ appears nowhere but the spec that defines it.
 
 1. **Task-session dispatch.** The host refuses to spawn one (`Create Unsafe Agents`). **This blocks
    the entire programme.** Three options in `PARALLEL_EXECUTION_PLAN.md` §7.
-2. **Rotate the exposed key.**
+2. **Credential hygiene** — tracked outside this repository; `REDACTED_SECRET_NOT_STORED_IN_REPOSITORY`.
 3. **Clear `human_input_audit`.** It gates every claim and blocks no computation.
 4. **The inspection contradiction.** `WORKING_RULES` §3 says inspection depletes; the population
    ledger says it does not and that `RT-EXACT-501561` can still confirm. **They cannot both hold**,

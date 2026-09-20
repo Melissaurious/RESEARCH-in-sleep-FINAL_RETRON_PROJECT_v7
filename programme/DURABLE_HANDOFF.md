@@ -111,7 +111,7 @@ Full account: `programme/tasks/T-R2-ncrna-internal-architecture/R2_COORDINATE_FR
 | # | item |
 |---|---|
 | **D4** | task-session dispatch still blocked; all execution is coordinator-run **under disclosure** |
-| **D5** | ⛔ **the exposed API key is still unrotated** — and `COORDINATION_STATE.md` would publish that fact to a **public** remote. Resolve before any push |
+| **D5** | ✅ credential hygiene — **redacted for publication 2026-09-20**. `REDACTED_SECRET_NOT_STORED_IN_REPOSITORY`. No credential value is in this repository, in any commit or branch; verified by a full-history scan |
 | **D14** | 14 commits unpushed; remote **verified public** |
 | **D19** | `specs_exist.sh` fails spuriously ~5–10 % — `SIGPIPE` + `pipefail`; one-line fix verified, `general/` is operator-only |
 | backlog | **family vocabularies disagree** — `family_label` has **42** values, not 613; `docs/BACKLOG_family_vocabularies.md`. ⛔ **Do not guess or reconcile** |

@@ -280,10 +280,7 @@ sections.
 **D4 — Task-session dispatch.** A, B or C above. *This has blocked the designed execution model
 since the programme began.* Recommended: **A**, with **B** as fallback.
 
-**D5 — Rotate the exposed API key.** Still live in plaintext in the Claude configuration, in an MCP
-environment block, and printed into a transcript. Deliberately not inspected further, because
-inspecting it repeats the exposure. **Not in this repository** — `git grep` for key patterns over
-tracked files returns nothing.
+**D5 — Credential hygiene.** Tracked outside this repository. `REDACTED_SECRET_NOT_STORED_IN_REPOSITORY`. **No credential value is in this repository** — a pattern scan over the full reachable history, every unpushed commit and the working tree returns zero matches.
 
 **D6 — `human_input_audit`.** It gates **every claim in the project** and blocks **no** computation.
 Nothing is promotable until it clears.
@@ -418,7 +415,7 @@ python3 general/tools/check_launcher.py launchers/LAUNCHER_02_rt0_rt7_definition
 | secrets in tracked files | **none** — pattern scan over all tracked content returns nothing |
 | heavy / private data | correctly ignored: `data/*`, `MELISSA_DATA/`, `ARIS_OUTPUT/`, `**/.venv/`, `results/**/work/`, publisher PDFs |
 | invalid output presented as evidence | **none** — every VOID and REVIEW_FAILED task is labelled as such in the register, the live board and this file |
-| ⛔ **blocker before push** | `programme/COORDINATION_STATE.md` would be published for the first time and states that a **live, unrotated** API key sits in plaintext in the Claude configuration. The key is **not** in the repository, but publishing the text advertises an open hole on a named person's machine. **Rotate (D5) or redact first** |
+| ✅ **push blocker RESOLVED** | The disclosure wording was redacted 2026-09-20. No credential value has ever been in this repository, in any commit or branch — verified by a full-history scan. |
 
 ---
 

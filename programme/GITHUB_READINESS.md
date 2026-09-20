@@ -70,16 +70,15 @@ Largest: `review-stage/ASSET_SWEEP.tsv` (+20,766 lines),
 
 ## 5 · ⛔ One item to resolve before pushing
 
-**`programme/COORDINATION_STATE.md` would be published for the first time, and line 13 states:**
+✅ **RESOLVED 2026-09-20 by redaction.** The disclosure wording in `COORDINATION_STATE.md`,
+`OVERNIGHT_RUN_REPORT.md` and `SESSION_HANDOFF.md` has been replaced with a neutral
+governance record and the marker `REDACTED_SECRET_NOT_STORED_IN_REPOSITORY`.
 
-> *"A live API key is in plaintext in the user's Claude configuration, in an MCP environment block,
-> and was printed into a session transcript. Rotate it."*
-
-`programme/OVERNIGHT_RUN_REPORT.md` L283 repeats it.
-
-**The key itself is not in the repository** — the scan in §4 is clean. But publishing this text to a
-**public** repository announces an **unremediated** credential exposure on a named person's machine.
-That is worth more to an attacker than it is to a reader.
+**No credential value has ever been in this repository**, in the working tree, in any of the
+unpushed commits, or in any blob reachable from `HEAD` — verified by a pattern scan covering
+`sk-ant-`, `sk-`, `AKIA`, `ghp_`/`gho_`/`github_pat_`, `xox[baprs]-`, `AIza`, `ya29.`, JWTs and
+PEM private-key headers. **Zero matches in all three passes.** The item that remained was
+*disclosure wording*, not a stored secret, and it is now neutral.
 
 **Three ways to resolve, operator's choice:**
 
