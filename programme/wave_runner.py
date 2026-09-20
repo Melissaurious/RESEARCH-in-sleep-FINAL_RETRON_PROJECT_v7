@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse, csv, fcntl, hashlib, json, os, shlex, subprocess, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
-from autonomy_state import TERMINAL, ScheduleTask, atomic_write, choose_launchable, executor_terminal_state, load_execution_spec, parse_front_matter, read_tsv, sha256_file, upsert_tsv, write_tsv
+from autonomy_state import TERMINAL, ScheduleTask, acceptance_verdict, atomic_write, choose_launchable, executor_terminal_state, load_execution_spec, parse_front_matter, read_tsv, sha256_file, upsert_tsv, validate_type_a_execution, write_tsv
 
 SYN=Path(__file__).resolve().parents[1]; P=SYN/'programme'; BOARD=P/'TASK_BOARD.tsv'; LEDGER=P/'EXECUTION_LEDGER.tsv'; EXEC=P/'executions'; WORKER=P/'task_worker.py'; LIMITS=P/'RESOURCE_LIMITS.tsv'
 LEDGER_FIELDS=['task_id','question_short','freeze_commit','execution_commit','state','population','endpoint','backend','primary_output','task_report','interpretation_ceiling','started_at','finished_at']
@@ -58,11 +58,50 @@ def aris(*a):
 def aris_start(w,task_ids):
     aris('start',str(SYN),aris_run_id(w),'--phases',','.join(task_ids))
 def aris_set(w,tid,status,artifact=''):
-    # NOTE: `accept` is never called from here. Only ARIS reviewer routing may acquit a
-    # task, and it records a verdict id and reviewer when it does.
+    # Executor statuses only. A worker self-report can never reach `accept` from here.
     a=['set',str(SYN),aris_run_id(w),tid,status]
     if artifact: a+=['--artifact',artifact]
     aris(*a)
+def aris_accept(w,tid,verdict_id,reviewer):
+    # Permitted by ARIS only for a CROSS-MODEL reviewer or A DETERMINISTIC VERIFIER, and
+    # only with a verdict id and a named reviewer. Reached solely from deterministic_accept().
+    aris('accept',str(SYN),aris_run_id(w),tid,'--verdict-id',verdict_id,'--reviewer',reviewer)
+
+DET_REVIEWER='deterministic-validator:autonomy_state.validate_type_a_execution'
+
+def deterministic_accept(tid,spec,w,st):
+    """Type-A execution-validity acceptance. Returns (state,note) on success, else None.
+
+    An ordinary preregistered computation must not need a semantic reviewer merely to
+    establish that it ran validly, so a task whose frozen launcher declares
+    `autonomy_tier: A` is promoted COMPLETE_AWAITING_REVIEW -> PASS when an INDEPENDENT
+    deterministic re-validation passes. The worker's own claim is never the evidence.
+
+    This certifies execution validity only. Whether the result supports a claim, and
+    whether anything enters thesis/paper language, stay Type-B and stay with ARIS
+    reviewer routing and the operator's human_input_audit.
+    """
+    try:
+        wt=Path(spec['worktree']); out=wt/spec['output_directory']
+        tier=parse_front_matter(wt/'programme'/'tasks'/tid/'TASK_LAUNCHER.md').get('autonomy_tier','').strip().upper()
+        if tier!='A': return None
+        ok,checks=validate_type_a_execution(spec,wt,out)
+        rec=w.parent/'acceptance'; rec.mkdir(exist_ok=True)
+        vid=acceptance_verdict(tid,spec['freeze_commit'],checks)
+        atomic_write(rec/f'{tid}.acceptance.json',json.dumps(
+            {'task_id':tid,'freeze_commit':spec['freeze_commit'],'verdict_id':vid,
+             'reviewer':DET_REVIEWER,'acceptance_type':'TYPE_A_EXECUTION_VALIDITY',
+             'accepted':ok,'checked_at':utc(),'checks':checks,
+             'ceiling':'Execution validity only. Not a judgment that the interpretation is '
+                       'justified or that any result may be promoted to a claim.'},
+            indent=2,sort_keys=True)+'\n')
+        if not ok:
+            failed=[c['check'] for c in checks if c['result']=='FAIL']
+            return ('COMPLETE_AWAITING_REVIEW',f'deterministic validation FAILED: {",".join(failed)}')
+        aris_accept(w,tid,vid,DET_REVIEWER)
+        return ('PASS',f'Type-A execution validity accepted deterministically; verdict {vid}')
+    except Exception as e:
+        return ('COMPLETE_AWAITING_REVIEW',f'deterministic validation error: {e}')
 def tokens():
     for r in rows(LIMITS):
         if r['resource']=='NVME_TOKENS': return int(r['capacity'])
@@ -84,7 +123,7 @@ def worktree(tid):
 
 def prepare(tid,row,wt):
     base=git('rev-parse','HEAD'); refs='\n'.join('  - '+x for x in split(row['design_refs']))
-    prompt=f'''Prepare exactly task {tid} in {wt}. DO NOT run primary science. Read its TASK_LAUNCHER.md, {P/'WORKING_RULES.md'}, {SYN/'review-stage/TASK_PROTOCOL.md'}, and:\n{refs}\nCurrent authoritative project-synthesis base is {base}. Preserve approved science. Ordinary implementation choices are autonomous. If a genuinely new biological endpoint/threshold/population decision is needed, write programme/tasks/{tid}/PREPARE_RESULT.json with status REVIEW_REQUIRED and stop. Otherwise implement code+fixtures, run only self-checks, update launcher to base_commit={base}, base_branch=project-synthesis, state=AUTHORIZED, frozen=true; do not create primary output and do not commit. Write PREPARE_RESULT.json schema_version=1, status=READY_TO_FREEZE, task_id, command argv, inputs(dataset_id,path,sha256), backend, resources(cpu_threads,memory_gb,io_tokens={row['io_tokens']}), runtime(max_runtime_seconds,resume_allowed,stop_note), self_checks, unresolved_decision.'''
+    prompt=f'''Prepare exactly task {tid} in {wt}. DO NOT run primary science. Read its TASK_LAUNCHER.md, {P/'WORKING_RULES.md'}, {SYN/'review-stage/TASK_PROTOCOL.md'}, and:\n{refs}\nCurrent authoritative project-synthesis base is {base}. Preserve approved science. Ordinary implementation choices are autonomous. If a genuinely new biological endpoint/threshold/population decision is needed, write programme/tasks/{tid}/PREPARE_RESULT.json with status REVIEW_REQUIRED and stop. Otherwise implement code+fixtures, run only self-checks, update launcher to base_commit={base}, base_branch=project-synthesis, state=AUTHORIZED, frozen=true; do not create primary output and do not commit. The launcher front matter MUST declare autonomy_tier: A for a preregistered computation whose acceptance gate is fully machine-verifiable (frozen hashes, input hashes, blocking controls, manifest, run log, report schema), or autonomy_tier: B if accepting it needs a human/cross-model judgment of merit or interpretation; tier A is then accepted by deterministic validation alone, tier B waits for semantic review. Write PREPARE_RESULT.json schema_version=1, status=READY_TO_FREEZE, task_id, command argv, inputs(dataset_id,path,sha256), backend, resources(cpu_threads,memory_gb,io_tokens={row['io_tokens']}), runtime(max_runtime_seconds,resume_allowed,stop_note), self_checks, unresolved_decision.'''
     cmd=shlex.split(os.environ.get('RETRON_PREPARE_COMMAND','claude --dangerously-skip-permissions -p'))+[prompt]
     log=row['_wave'].parent/'prepare_logs'; log.mkdir(exist_ok=True); out=log/f'{tid}.stdout.log'; err=log/f'{tid}.stderr.log'
     with out.open('w') as o,err.open('w') as e:p=subprocess.run(cmd,cwd=wt,stdout=o,stderr=e,text=True)
@@ -139,8 +178,11 @@ def start(w,authorised,poll):
             rr=json.loads(rec.read_text()) if rec.exists() else {'worker_state':'REFUSED','error':'missing run record'}; spec=load_execution_spec(EXEC/tid/'TASK_EXECUTION.json')
             if rr.get('worker_state')=='COMPLETE':
                 self_reported=rr['task_state']; term=executor_terminal_state(self_reported)
+                aris_set(w,tid,'done',rr.get('task_report',''))
                 note='autonomous wave; executor self-report, NOT an acceptance' if term!=self_reported else 'autonomous wave'
-                set_board(tid,term,note); set_status(w,st,tid,term,rr.get('scientific_outcome',''),finished_at=rr.get('finished_at',utc())); aris_set(w,tid,'done',rr.get('task_report',''))
+                if term=='COMPLETE_AWAITING_REVIEW':
+                    term,note=deterministic_accept(tid,spec,w,st) or (term,note)
+                set_board(tid,term,note); set_status(w,st,tid,term,rr.get('scientific_outcome',''),finished_at=rr.get('finished_at',utc()))
             else: term='VOID' if rr.get('worker_state') in {'REFUSED','ARTIFACT_INVALID','PROCESS_FAILED'} else 'STOP'; set_board(tid,term,rr.get('worker_state','worker failure')); set_status(w,st,tid,term,rr.get('error') or rr.get('stop_reason') or rr.get('worker_state','')); aris_set(w,tid,'failed'); escal=True
             ledger(tid,freeze_commit=spec['freeze_commit'],execution_commit=spec['freeze_commit'],state=term,backend=spec['backend'],primary_output=spec['output_directory'],task_report=str(Path(spec['output_directory'])/'TASK_REPORT.md'),interpretation_ceiling='SEE_TASK_REPORT',started_at=rr.get('started_at',''),finished_at=rr.get('finished_at',utc())); commit([BOARD,LEDGER,status_path(w)],f'wave: terminal {tid} {term}'); del workers[tid]
         b=board(); states={k:v['state'] for k,v in b.items()}; candidates=[]; by={r['task_id']:r for r in wr}

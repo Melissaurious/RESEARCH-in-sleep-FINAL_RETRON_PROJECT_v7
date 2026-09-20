@@ -11,6 +11,7 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import tempfile
 from dataclasses import dataclass
 from pathlib import Path
@@ -36,6 +37,154 @@ TERMINAL = TERMINAL_VALID | TERMINAL_EXECUTOR | TERMINAL_INVALID
 SCIENTIFIC_OUTCOMES = {
     "SUPPORTS_H1", "SUPPORTS_H0", "FALSIFIED", "BOUND", "DESCRIPTIVE", "NOT_APPLICABLE"
 }
+
+
+def _controls_tables(out: Path) -> list[Path]:
+    seen: dict[Path, None] = {}
+    for pat in ("*controls*.tsv", "*gate*.tsv", "tables/*controls*.tsv", "tables/*gate*.tsv"):
+        for p in out.glob(pat):
+            if p.is_file():
+                seen.setdefault(p.resolve(), None)
+    return sorted(seen)
+
+
+def validate_type_a_execution(spec: dict, wt: Path, out: Path) -> tuple[bool, list[dict]]:
+    """Independent deterministic re-validation of a finished Type-A task.
+
+    This is the separate verifier that ARIS run_state.py permits to write `accepted`
+    ("a CROSS-MODEL reviewer (codex/gemini) OR a deterministic verifier").  It exists so
+    an ordinary preregistered computation does NOT need a semantic reviewer merely to
+    establish that it executed validly.
+
+    It re-derives every check from disk.  It does NOT read, trust or consult the worker's
+    own run record for any verdict -- the worker's statement of PASS is not evidence here.
+
+    It establishes EXECUTION VALIDITY ONLY (Type A).  It makes no judgment about whether
+    an interpretation is justified, whether a result supports a claim, or whether anything
+    may enter thesis/paper language: those are Type-B and still require semantic review.
+    """
+    checks: list[dict] = []
+
+    def add(name, ok, detail=""):
+        checks.append({"check": name, "result": "PASS" if ok else "FAIL", "detail": str(detail)})
+        return ok
+
+    # 1 - frozen commit / launcher / implementation hashes, re-derived from the worktree.
+    try:
+        head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=wt, text=True,
+                              capture_output=True, check=True).stdout.strip()
+        branch = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=wt, text=True,
+                                capture_output=True, check=True).stdout.strip()
+        dirty = subprocess.run(["git", "status", "--porcelain"], cwd=wt, text=True,
+                               capture_output=True, check=True).stdout.strip()
+        add("freeze_commit", head == spec["freeze_commit"], f"{head} vs {spec['freeze_commit']}")
+        add("freeze_branch", branch == spec["branch"], f"{branch} vs {spec['branch']}")
+        add("worktree_clean_after_run", not dirty, dirty[:200])
+    except Exception as exc:  # noqa: BLE001
+        add("freeze_commit", False, exc)
+
+    bad = []
+    for rel, expected in sorted(spec.get("frozen_files", {}).items()):
+        p = wt / rel
+        if not p.is_file() or sha256_file(p) != expected:
+            bad.append(rel)
+    add("frozen_file_hashes", not bad and bool(spec.get("frozen_files")), bad or "all match")
+
+    # The frozen set must actually cover the launcher, or "criteria unchanged" is unprovable.
+    add("launcher_is_frozen",
+        any(Path(r).name == "TASK_LAUNCHER.md" for r in spec.get("frozen_files", {})),
+        "TASK_LAUNCHER.md must be hash-pinned in frozen_files")
+
+    # 2 - exact input hashes.
+    bad_in = []
+    for item in spec.get("inputs", []):
+        p = Path(item["path"])
+        if not p.is_file() or (item.get("sha256") and sha256_file(p) != item["sha256"]):
+            bad_in.append(item.get("dataset_id") or str(p))
+    add("input_hashes", not bad_in, bad_in or "all match")
+
+    # 3 / 4 / 5 - required artifacts, manifest, run log.
+    report, runlog = out / "TASK_REPORT.md", out / "logs" / "run_log.json"
+    manifest = out / "OUTPUT_MANIFEST.sha256"
+    missing = [str(p.relative_to(out)) for p in (report, runlog, manifest) if not p.is_file()]
+    add("required_outputs_present", not missing, missing or "present")
+
+    if manifest.is_file():
+        try:
+            errs = verify_output_manifest(out)
+            add("output_manifest_valid", not errs, errs[:5] or "verified")
+        except Exception as exc:  # noqa: BLE001
+            add("output_manifest_valid", False, exc)
+    else:
+        add("output_manifest_valid", False, "manifest missing")
+
+    log_inputs: list[str] = []
+    if runlog.is_file():
+        try:
+            data = json.loads(runlog.read_text())
+            ok = isinstance(data, (dict, list)) and bool(data)
+            if isinstance(data, dict):
+                log_inputs = [str(x) for x in (data.get("inputs") or [])]
+            add("run_log_valid", ok, "parsed")
+        except Exception as exc:  # noqa: BLE001
+            add("run_log_valid", False, exc)
+    else:
+        add("run_log_valid", False, "run log missing")
+
+    # 6 - TASK_REPORT schema.
+    if report.is_file():
+        try:
+            parse_task_report(report)
+            add("task_report_schema", True, "TASK_STATE + SCIENTIFIC_OUTCOME present and known")
+        except Exception as exc:  # noqa: BLE001
+            add("task_report_schema", False, exc)
+    else:
+        add("task_report_schema", False, "report missing")
+
+    # 7 - blocking controls all PASS, read from the landed control tables themselves.
+    tables = _controls_tables(out)
+    failed_ctrl: list[str] = []
+    n_ctrl = 0
+    for t in tables:
+        try:
+            _, rows_ = read_tsv(t)
+        except Exception:  # noqa: BLE001
+            failed_ctrl.append(f"{t.name}:UNREADABLE")
+            continue
+        for r in rows_:
+            res = (r.get("result") or r.get("state") or "").strip().upper()
+            if not res:
+                continue
+            blocking = (r.get("blocking") or "YES").strip().upper()
+            n_ctrl += 1
+            if blocking in {"YES", "TRUE", "1"} and res != "PASS":
+                failed_ctrl.append(f"{t.name}:{r.get('check') or r.get('name') or '?'}={res}")
+    add("blocking_controls_pass", bool(tables) and n_ctrl > 0 and not failed_ctrl,
+        failed_ctrl[:5] or f"{n_ctrl} blocking control rows PASS across {len(tables)} table(s)")
+
+    # 8 - no forbidden input/population use: nothing read beyond the frozen declaration.
+    declared = {str(Path(i["path"]).resolve()) for i in spec.get("inputs", [])}
+    undeclared = [p for p in log_inputs if str(Path(p).resolve()) not in declared]
+    add("no_undeclared_inputs", not undeclared, undeclared[:5] or "run log declares no extra inputs")
+
+    # 9 - preregistered endpoint: the frozen launcher still binds this output directory.
+    try:
+        fm = parse_front_matter(wt / "programme" / "tasks" / spec["task_id"] / "TASK_LAUNCHER.md")
+        add("endpoint_unchanged",
+            fm.get("output_directory", "").rstrip("/") == str(spec["output_directory"]).rstrip("/")
+            and fm.get("frozen", "").lower() == "true",
+            f"launcher output_directory={fm.get('output_directory')} frozen={fm.get('frozen')}")
+    except Exception as exc:  # noqa: BLE001
+        add("endpoint_unchanged", False, exc)
+
+    return all(c["result"] == "PASS" for c in checks), checks
+
+
+def acceptance_verdict(task_id: str, freeze_commit: str, checks: list[dict]) -> str:
+    """Stable verdict id for a deterministic acceptance, derived from what was checked."""
+    payload = json.dumps({"task_id": task_id, "freeze_commit": freeze_commit, "checks": checks},
+                         sort_keys=True)
+    return "det-" + sha256_text(payload)[:16]
 
 
 def executor_terminal_state(self_reported: str) -> str:

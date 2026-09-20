@@ -65,10 +65,90 @@ class ArisAcceptanceBoundaryTests(unittest.TestCase):
         self.assertNotIn("COMPLETE_AWAITING_REVIEW", TERMINAL_INVALID)
         self.assertTrue(TERMINAL_EXECUTOR <= TERMINAL)
 
-    def test_runner_never_calls_aris_accept(self):
+    def test_accept_is_reachable_only_from_the_deterministic_validator(self):
+        """ARIS allows a DETERMINISTIC VERIFIER to accept -- but never a self-report."""
         src = (HERE / "wave_runner.py").read_text()
-        self.assertNotIn("'accept'", src)
-        self.assertNotIn('"accept"', src)
+        self.assertEqual(src.count("aris('accept'"), 1)
+        self.assertIn("def aris_accept", src)
+        # the only caller is deterministic_accept(), after validate_type_a_execution()
+        after = src.split("def deterministic_accept", 1)[1]
+        self.assertIn("aris_accept(w,tid,vid,DET_REVIEWER)", after)
+        self.assertIn("validate_type_a_execution", after)
+
+    def test_deterministic_acceptance_requires_verdict_and_reviewer(self):
+        src = (HERE / "wave_runner.py").read_text()
+        self.assertIn("'--verdict-id',verdict_id,'--reviewer',reviewer", src)
+
+
+class TypeAAcceptanceTests(unittest.TestCase):
+    """A preregistered Type-A computation must self-clear on execution validity alone."""
+
+    def _finished_task(self, root: Path, *, controls_pass=True, tamper_input=False):
+        wt = root / "wt"
+        (wt / "programme" / "tasks" / "T-SYN").mkdir(parents=True)
+        (wt / "programme" / "tasks" / "T-SYN" / "TASK_LAUNCHER.md").write_text(
+            "---\ntask_id: T-SYN\nautonomy_tier: A\nfrozen: true\n"
+            "output_directory: analysis/t_syn/\n---\n# synthetic\n")
+        out = wt / "analysis" / "t_syn"
+        (out / "logs").mkdir(parents=True)
+        (out / "TASK_REPORT.md").write_text(
+            "TASK_STATE: PASS\nSCIENTIFIC_OUTCOME: DESCRIPTIVE\n")
+        (out / "logs" / "run_log.json").write_text(json.dumps({"inputs": []}))
+        (out / "result.tsv").write_text("value\n42\n")
+        (out / "SYN_controls.tsv").write_text(
+            "check\tblocking\tresult\nc1\tYES\t" + ("PASS" if controls_pass else "FAIL") + "\n")
+        lines = []
+        for rel in ("TASK_REPORT.md", "logs/run_log.json", "result.tsv", "SYN_controls.tsv"):
+            lines.append(f"{sha256_file(out / rel)}  {rel}")
+        (out / "OUTPUT_MANIFEST.sha256").write_text("\n".join(lines) + "\n")
+        inp = root / "input.csv"
+        inp.write_text("a,b\n1,2\n")
+        inp_sha = sha256_file(inp)
+        for cmd in (["init", "-q", "-b", "task/T-SYN"], ["add", "-A"]):
+            subprocess.run(["git", *cmd], cwd=wt, check=True, capture_output=True)
+        subprocess.run(["git", "-c", "user.email=t@t", "-c", "user.name=t",
+                        "commit", "-q", "-m", "freeze"], cwd=wt, check=True, capture_output=True)
+        head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=wt, text=True,
+                              capture_output=True, check=True).stdout.strip()
+        if tamper_input:
+            inp.write_text("a,b\n9,9\n")
+        spec = {
+            "task_id": "T-SYN", "worktree": str(wt), "branch": "task/T-SYN",
+            "freeze_commit": head, "output_directory": "analysis/t_syn",
+            "inputs": [{"dataset_id": "SYN", "path": str(inp), "sha256": inp_sha}],
+            "frozen_files": {"programme/tasks/T-SYN/TASK_LAUNCHER.md": sha256_file(
+                wt / "programme" / "tasks" / "T-SYN" / "TASK_LAUNCHER.md")},
+        }
+        return spec, wt, out
+
+    def test_valid_type_a_run_is_accepted_without_a_semantic_reviewer(self):
+        with tempfile.TemporaryDirectory() as td:
+            spec, wt, out = self._finished_task(Path(td))
+            ok, checks = wave_runner.validate_type_a_execution(spec, wt, out)
+            self.assertTrue(ok, [c for c in checks if c["result"] == "FAIL"])
+
+    def test_failed_blocking_control_is_not_accepted(self):
+        with tempfile.TemporaryDirectory() as td:
+            spec, wt, out = self._finished_task(Path(td), controls_pass=False)
+            ok, checks = wave_runner.validate_type_a_execution(spec, wt, out)
+            self.assertFalse(ok)
+            self.assertIn("blocking_controls_pass",
+                          [c["check"] for c in checks if c["result"] == "FAIL"])
+
+    def test_input_hash_drift_is_not_accepted(self):
+        with tempfile.TemporaryDirectory() as td:
+            spec, wt, out = self._finished_task(Path(td), tamper_input=True)
+            ok, checks = wave_runner.validate_type_a_execution(spec, wt, out)
+            self.assertFalse(ok)
+            self.assertIn("input_hashes",
+                          [c["check"] for c in checks if c["result"] == "FAIL"])
+
+    def test_non_type_a_task_still_waits_for_semantic_review(self):
+        with tempfile.TemporaryDirectory() as td:
+            spec, wt, out = self._finished_task(Path(td))
+            p = wt / "programme" / "tasks" / "T-SYN" / "TASK_LAUNCHER.md"
+            p.write_text(p.read_text().replace("autonomy_tier: A", "autonomy_tier: B"))
+            self.assertIsNone(wave_runner.deterministic_accept("T-SYN", spec, out, {}))
 
 
 class SchedulerTests(unittest.TestCase):
