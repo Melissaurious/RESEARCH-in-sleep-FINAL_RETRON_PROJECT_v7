@@ -7,7 +7,7 @@ gate: your review before any of this runs
 
 # Next tasks — operator review packet
 
-Nine proposals. Every dataset each one consumes is registered in
+Ten proposals. Every dataset each one consumes is registered in
 `programme/CANONICAL_DATASETS.tsv` with its identity, count, limitations and exposure state.
 
 **Read §1 and §2 first — they are the `NEW_SCIENCE` and load-bearing
@@ -24,6 +24,7 @@ Nine proposals. Every dataset each one consumes is registered in
 | 7 | `T-M1b-embedding-cache-reverification` | **CANONICAL_ASSET_CONSTRUCTION** | 10, 11 | **yes** |
 | 8 | `T-S1b-structure-inventory-correction` | **CANONICAL_ASSET_CONSTRUCTION** | 5 | **yes** |
 | 9 | `T-AUDIT2-task-report-backfill` | **REPRODUCTION_REQUIRED** | governance | **yes** |
+| 10 | `T-X1-buffington-reconciliation` | **CANONICAL_ASSET_CONSTRUCTION** | 1, 8, 9, 12 | **yes** |
 
 ---
 
@@ -101,6 +102,7 @@ Nine proposals. Every dataset each one consumes is registered in
 - **Population / inferential unit.** One published study. n = 4.
 - **Prior work available.** `TASK_PRIOR_WORK`: **zero hits on every substrate**. Genuinely `NOT_DONE`.
 - **What genuinely remains new.** The **identity** of four references, and whatever each actually reports.
+- ⭐ **New input candidate, 2026-09-20.** `BUFFINGTON2025_RETRON_CATALOGUE` is Supplementary Table 1 of the very `BUF2025` source whose paywall left `U1` and `U2` unresolvable — and those two carry **42 of the 56** curation rows. ⚠️ **It is a systems catalogue, not the article.** Whether it speaks to a 7×7 heatmap caption, or to whether six non-functional rows are six measurements or one statement repeated, is for this task to **establish, not assume**. ⛔ No cross-pair assay outcome may be inferred from it.
 - **Method.** Read the four entries from `SIM2019`'s own reference list; resolve each by author + year + journal + title; retrieve where the licence permits; record unavailability as a finding.
 - **Baseline / control.** ⛔ **The control `T-A23c` lacked.** *Positive `IDENTITY`:* a resolved record must match the bibliography on author **and** year **and** journal **and** title; a deliberately mis-specified reference must be **rejected**. *Negative:* a nonsense query returns zero.
 - **Main confounders.** A plausible-but-wrong top hit — the exact failure being corrected. **A title match is not an identification.**
@@ -201,6 +203,36 @@ Nine proposals. Every dataset each one consumes is registered in
 - **Compute.** Local CPU, `CPU_SMALL`, **`IO_HIGH` — serial against `T-M1b`**.
 - **Launcher path.** `programme/tasks/T-S1b-structure-inventory-correction/TASK_LAUNCHER.md`.
 
+### 2.5 · `T-X1-buffington-reconciliation` — **CANONICAL_ASSET_CONSTRUCTION** · new asset, 2026-09-20
+
+- **Biological question.** Of the 105 retron systems published by Buffington *et al.* 2025, which are **already inside** this project's populations, which are **genuinely external**, and which share an RT but carry a **different** ncRNA?
+- **Why it matters to 1–12.** Goal 1 is a claim about coverage. An independent published catalogue is the first chance to ask *what fraction of an external, expert-curated retron set does this resource already contain* — which is a real external check on the mining corpus, not a self-assessment. It also bears on goals 8 and 9, because each row carries a **putative native msr-msd**.
+- **Why now.** The asset arrived 2026-09-20, is hashed and registered, and **nothing has been computed from it.** Reconciliation is cheap, spends no population and is the precondition for any later use.
+- **Canonical datasets consumed.** `BUFFINGTON2025_RETRON_CATALOGUE` (105 rows, sha256 `d683669703…4e62`) · `RT-EXACT-501561` · `RETRON-EXACT-78287` · `PAIR-ELIG-30924` · `PANEL-175` · the Mestre/Khan supporting-material collections in `references/rt0_rt7/`.
+- **Population / inferential unit.** One published retron system, keyed on `I.D.` — **the only 1:1 column**. `Accession Number` is *not* unique (97 distinct of 105) and `Retron I.D.` has one duplicate.
+- **Prior work available.** None. `TASK_PRIOR_WORK` cannot have seen it; the file did not exist when the sweep ran.
+- **What genuinely remains new.** Everything — no overlap between this catalogue and any project population has ever been computed.
+- **Method.** Exact sequence-hash comparison, both directions, reported as a **five-way classification per row**:
+
+  | class | meaning |
+  |---|---|
+  | `RT_EXACT_PRESENT` | the published RT is an exact hash match to a project exact RT |
+  | `PAIR_EXACT_PRESENT` | the published **RT and its msr-msd** both match an existing canonical pair |
+  | `RT_PRESENT_NCRNA_DIFFERS` | the RT matches, the ncRNA does not — the interesting class |
+  | `EXTERNAL_NEW` | neither the RT nor the pair is present anywhere |
+  | `EXPERIMENTAL_STATUS_UNKNOWN` vs `INDEPENDENTLY_LINKED` | orthogonal axis: whether the row can be linked to `PANEL-175` / Mestre / Khan **experimental** material, or cannot |
+
+- **Baseline / control.** *Positive:* a sequence taken **from** `RT-EXACT-501561` must classify `RT_EXACT_PRESENT` — the hash path works. *Negative:* a shuffled sequence of identical length and composition must classify `EXTERNAL_NEW` — the matcher is not matching everything. *Reproduction:* the project population counts must come back 501,561 / 78,287 / 30,924 / 175 unchanged, proving nothing was mutated.
+- **Main confounders.** ⛔ **The trailing stop character.** 104 of 105 RT sequences end in `*`, and this project has already produced a wrong count (10 instead of 4) from exactly that. **Both the stop-stripped and the raw counts must be reported.** Second: 14 of the 105 RTs are under 250 aa and would fail the frozen Stage-1 eligibility rule, so an absence may be an **eligibility** artefact rather than a real absence — the eligibility flag is reported beside every miss.
+- **Success / falsification / bound.** *Success:* 105 rows each carrying a class on both axes. **Every outcome is informative** — high overlap says the resource has good coverage of a curated set; low overlap is a measured gap in goal 1 and equally publishable.
+- **Interpretation ceiling.** ⛔ **A hash overlap is not a validation, in either direction.** A published system absent from this catalogue is not thereby wrong, and one present here is **not thereby experimentally validated** — this table has no screening and no activity column. ⛔ **No cross-pair assay outcome may be inferred.** ⛔ **The task MERGES NOTHING** into any project population.
+- **Expected output.** `X1_row_classification.tsv` (105 rows, both axes) · `X1_summary.tsv` (counts, **stop-stripped and raw**) · `X1_rt_present_ncrna_differs.tsv` · `X1_controls.tsv`.
+- **Downstream enabled.** An evidence-based answer on whether to ever merge this catalogue; an external coverage check for goal 1; candidate material for goals 8 and 9.
+- **Confirmatory spend.** **None.** Read-only against every project population; the comparison asserts no biology and exposes no endpoint.
+- **Compute.** Local CPU, `CPU_SMALL`, `IO_LOW`. Minutes.
+- **Parallel with.** Everything — it writes nothing any other task reads.
+- **Launcher path.** `programme/tasks/T-X1-buffington-reconciliation/TASK_LAUNCHER.md` *(to be written on approval)*.
+
 ---
 
 ## 3 · REPRODUCTION_REQUIRED — skim
@@ -242,14 +274,14 @@ Maximum sensible concurrency. Nothing here consumes an unexposed confirmatory po
 
 | backend | tasks | concurrency |
 |---|---|---|
-| **local CPU** | `T-D1` · `T-D2` · `T-AUDIT2` · `T-A23d` | **4 concurrent** — all `IO_LOW`/`IO_MEDIUM` |
+| **local CPU** | `T-D1` · `T-D2` · `T-AUDIT2` · `T-A23d` · `T-X1` | **5 concurrent** — all `IO_LOW`/`IO_MEDIUM` |
 | **local CPU, `IO_HIGH` lane** | `T-M1b` **then** `T-S1b` | **1 at a time** — one NVMe, strictly serial |
 | **local GPU** | ⛔ **nothing** | 2 × RTX 4090 idle. **No proposed task needs a GPU** — say so rather than inventing work for them. Embedding *regeneration* would; `T-M1b` is verification |
 | **Ibex CPU** | `T-P1b` **pilot only** (10,000 sequences) | **1** — the full run is a separate authorisation |
 | **Ibex GPU** | ⛔ **nothing** | no proposed task needs it |
 | **Codex review** | `T-C1b` · `T-A23c` · `T-F1` · `T-REG3` | **4 concurrent** — read-only, model-disjoint threads |
 
-**Total: 10 concurrent streams, 4 of them review.**
+**Total: 11 concurrent streams, 4 of them review.**
 
 ⛔ **Not in the wave, and why:** `T-N1d` (blocked on **D2** — scheduling it would schedule a decision) · `T-R1b` (blocked on **D7**, and `T-A22`'s design must freeze first) · `T-P1b` full run (separate authorisation after the pilot) · everything touching `STRUCT-62` Tier B (**D8**).
 

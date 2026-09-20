@@ -153,6 +153,32 @@ Known useful resources include:
 Keep these small resources here rather than making another copy. Stage-specific launchers
 declare which are inputs.
 
+### External published source data — `references/rt0_rt7/`
+
+Published literature source data lives under `references/rt0_rt7/<source>_<year>/`, **registered
+with citation, DOI, sha256, bytes and untouched-source path** in
+`references/rt0_rt7/RESOURCE_REGISTER.tsv`. That register is the authority; do not add a second
+hierarchy for the same purpose.
+
+| source | directory | register `asset_id` |
+|---|---|---|
+| Mestre *et al.* 2020 | `references/rt0_rt7/mestre_2020/` | `mestre_supp_*`, `mestre_tree_nwk` |
+| Toro *et al.* 2014 | `references/rt0_rt7/historical/` | `hist_toro2014_*` |
+| Toro *et al.* 2026 | `references/rt0_rt7/toro_2026/` | — |
+| myRT reference package | `references/rt0_rt7/myrt/` | `myrt_*` |
+| **Buffington *et al.* 2025** | **`references/rt0_rt7/buffington_2025/`** | **`buffington2025_supp_T1_retron_catalogue`** |
+
+**`BUFFINGTON2025_RETRON_CATALOGUE`** — Supplementary Table 1 of
+*Discovery and engineering of retrons for precise genome editing*,
+`doi:10.1038/s41587-025-02879-3`. 105 rows, 8 columns, sha256
+`d68366970378c05b5af9b00be886d76224a196a29b77171303f9353457cf4e62`, acquired 2026-09-20.
+Untouched source: `/home/borg/Discovery_and_engineering_of_retrons_supp.csv`.
+Identity record: `references/rt0_rt7/buffington_2025/PROVENANCE.md`.
+
+⛔ **Presence in that table is a bioinformatic identification, not experimental validation** — it
+carries no screening and no activity column. **It is merged into no project population**; the
+proposed reconciliation is `T-X1-buffington-reconciliation`.
+
 ## Detector/model resources
 
 | resource | borg path | role / caution |

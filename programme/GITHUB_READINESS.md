@@ -89,7 +89,28 @@ That is worth more to an attacker than it is to a reader.
 | **B — redact the two lines to "a credential exposure was found and handled", then push** | keeps the governance record without advertising a live hole |
 | **C — push as-is** | acceptable **only** once the key is rotated |
 
-⚠️ This is the **only** finding in the push that is about disclosure rather than science.
+⚠️ This is the **only** finding in the push that is about **redistribution of your own machine's
+state**. One further redistribution question, added 2026-09-20, is about **someone else's
+copyright** — §5b.
+
+## 5b · ⚠️ A 2025 publisher supplementary table is now tracked
+
+`references/rt0_rt7/buffington_2025/Discovery_and_engineering_of_retrons_supp.csv` (87,392 B,
+Supplementary Table 1 of `doi:10.1038/s41587-025-02879-3`) was ingested 2026-09-20 and **committed,
+following the established convention** — the Mestre 2020 CSVs and the Toro 2014 XLSX are all
+tracked in `references/rt0_rt7/`.
+
+**Why it is nonetheless flagged.** `.gitignore` already excludes publisher PDFs on exactly this
+ground — *"the bytes are copyright-reserved and this repository has a remote, so pushing them would
+redistribute them"* — and a **2025** supplementary table is a closer call than a 2014 one.
+
+| option | effect |
+|---|---|
+| **A — push as-is** | consistent with the Mestre/Toro precedent already on the remote |
+| **B — add `references/rt0_rt7/buffington_2025/*.csv` to `.gitignore` and `git rm --cached` it** | the register, sha256, schema and `PROVENANCE.md` still carry full provenance; only the bytes stop being redistributed |
+
+**Either way the project loses nothing**, because identity and schema live in
+`RESOURCE_REGISTER.tsv` and `PROVENANCE.md`, not in the bytes. **Your call.**
 
 ## 6 · Already public, so not a new exposure
 
