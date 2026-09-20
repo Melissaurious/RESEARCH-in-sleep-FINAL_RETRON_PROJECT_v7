@@ -5,7 +5,7 @@ base_commit: 0a220e3
 base_branch: project-synthesis
 stage_id: S00
 title: Exact-sequence reconciliation of the Buffington 2025 retron catalogue against project populations
-state: DRAFT_AWAITING_SCIENTIFIC_REVIEW
+state: AUTHORIZED
 autonomy_tier: A
 compute_class: CPU_SMALL
 preferred_backend: workstation
@@ -17,15 +17,24 @@ populations_touched: ["BUFFINGTON2025_RETRON_CATALOGUE :: EXTERNAL", "RT-EXACT-5
 population_state: EXTERNAL_COMPARISON_ONLY — merges nothing, spends no endpoint
 confirmatory_spend: none
 iteration_budget: 1
-frozen: false
-freeze_rule: WORKING_RULES §6b — NOT YET FROZEN
-operator_authorisation: proposal approved 2026-09-20; drafting only; execution NOT authorised
+frozen: true
+freeze_rule: WORKING_RULES §6b — launcher, implementation and controls frozen in ONE commit BEFORE execution
+operator_authorisation: |
+  APPROVED 2026-09-20.
+  Freeze + execute authorised, max 2 CPU threads.
+  Binding: raw and stop-stripped RT comparison separate; native and engineered ncRNA separate; both orientations tested; experimental axis EMPTY unless traced to an experimental source; Vap1/Psp1/Vro1/Cko1/Efe1/Mva1 are operator nominations only until sourced; Eco1 external to this 105-row catalogue; NO compatibility or orthogonality inference.
 ---
 
 # T-X1 · Buffington 2025 reconciliation
 
-⛔ **DRAFT.** Not frozen, not dispatched, the primary reconciliation has **not** run. Only the
-**controls** have executed — they touch no primary endpoint, and are reported in §7.
+✅ **FROZEN.** Launcher, implementation and controls entered git together, in one commit,
+**before** any run — `WORKING_RULES` §6b. The run records that commit id.
+
+⛔ **Binding on this run:** raw and stop-stripped RT comparison stay separate · native and
+engineered ncRNA stay separate · both orientations tested · the experimental axis stays **empty**
+unless traced to an experimental source · Vap1/Psp1/Vro1/Cko1/Efe1/Mva1 are **operator nominations
+only until sourced** · Eco1 stays **external** to this 105-row catalogue · **no compatibility or
+orthogonality inference**.
 
 ## 1 · The question
 

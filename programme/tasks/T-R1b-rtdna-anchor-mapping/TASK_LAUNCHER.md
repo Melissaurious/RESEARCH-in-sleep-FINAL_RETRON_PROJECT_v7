@@ -6,7 +6,7 @@ base_commit: 0a220e3
 base_branch: project-synthesis
 stage_id: S09
 title: Direct coordinate mapping of measured RT-DNA onto its own retron ncRNA
-state: DRAFT_AWAITING_SCIENTIFIC_REVIEW
+state: AUTHORIZED
 autonomy_tier: A
 compute_class: CPU_SMALL
 preferred_backend: workstation
@@ -18,15 +18,23 @@ populations_touched: ["PANEL-RTDNA-81 :: analysis_family=rtdna_anchor_mapping ::
 population_state: NOT_YET_EXPOSED — this task spends it
 confirmatory_spend: YES — one explicit operator authorisation required
 iteration_budget: 1
-frozen: false
-freeze_rule: WORKING_RULES §6b — NOT YET FROZEN
-operator_authorisation: A22 parked 2026-09-20 and no longer blocks this task; launcher review still required before freeze
+frozen: true
+freeze_rule: WORKING_RULES §6b — launcher, implementation and controls frozen in ONE commit BEFORE execution
+operator_authorisation: |
+  APPROVED 2026-09-20.
+  Scientific design approved; freeze + execute authorised.
+  PANEL-RTDNA-81 spend AUTHORISED, one task, this one (D7 merge).
+  Binding: EXACT/NEAR_EXACT/UNMAPPED stay separate; 0.90/0.90 is a PREDECLARED CONSERVATIVE RESCUE CRITERION, not a claim that 0.90 is a biologically optimal boundary; all equally valid placements reported; orientation ambiguity explicit; NO tie-breaking on biological expectation; NO general msr/msd boundary inference; NO machine learning.
+  Max 2 CPU threads, no unrelated large I/O.
 ---
 
 # T-R1b · RT-DNA anchor mapping
 
-⛔ **DRAFT.** Not frozen, not executed. Only the **synthetic controls** have run — they use no
-panel sequence and are reported in §6.
+✅ **FROZEN.** Launcher, implementation and control specification entered git together, in one
+commit, **before** any run — `WORKING_RULES` §6b. The run records that commit id.
+
+⚠️ **0.90 / 0.90 is a predeclared CONSERVATIVE RESCUE criterion**, not a claim that 0.90 is a
+biologically optimal boundary threshold. It exists to refuse a forced coordinate, nothing more.
 
 ## 1 · The question
 
