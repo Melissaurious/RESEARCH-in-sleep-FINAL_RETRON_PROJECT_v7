@@ -12,7 +12,7 @@ whole project from this file and the eight documents in §8.
 |---|---|
 | **branch** | `project-synthesis` |
 | **worktree** | `/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis` |
-| **HEAD when written** | `be11fe79b69f32be4a0096bf16875c3145ae9a89` — this document lands as its child |
+| **HEAD when written** | `65146a5` (parent `be11fe7` + 3 reconciliation commits) |
 | **`main`** | `ba3154a` — **passes `specs_exist.sh`**; 1 commit ahead of `origin/main`, unpushed |
 | **governed `general/` pin** | `cff983144e2ad6fc01f648982fb61810dd77ddbe` (`cff9831`), VERSION 7.0.0 — recorded gitlink **and** checked-out SHA both verified |
 | **`governance_base`** | `7e7ccd8` (`programme/GOVERNANCE_BASE.tsv`) |
@@ -247,7 +247,7 @@ design at all, given that components hold multiple RT lineages? *Blocks the trun
 **D13 — `T-P3`.** Give it a non-duplicative scope or merge it into `T-P1b`. Both compute distances
 and groupings.
 
-**D14 — Push or do not.** 33 unpushed commits on `project-synthesis`, 1 on `main`. Remote is
+**D14 — Push or do not.** 35 unpushed commits on `project-synthesis`, 1 on `main`. Remote is
 **public — verified**, not assumed. ⛔ **One item to resolve first:** publishing
 `programme/COORDINATION_STATE.md` announces an *unremediated* API-key exposure. Rotate (D5) or
 redact before pushing. Full report: `programme/GITHUB_READINESS.md`.
@@ -348,7 +348,7 @@ python3 general/tools/check_launcher.py launchers/LAUNCHER_02_rt0_rt7_definition
 |---|---|
 | remote | `origin` → `git@github.com:Melissaurious/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7.git` |
 | **visibility** | ⚠️ **PUBLIC — verified**, not assumed: `api.github.com` returns HTTP 200 with `"private": false`, `"visibility": "public"` |
-| `project-synthesis` | **33 ahead, 0 behind** `origin/project-synthesis` (32 + this handoff commit) |
+| `project-synthesis` | **35 ahead, 0 behind** `origin/project-synthesis` |
 | `main` | **1 ahead, 0 behind** `origin/main` — the `docs/BLOCKED.md` repair |
 | secrets in tracked files | **none** — pattern scan over all tracked content returns nothing |
 | heavy / private data | correctly ignored: `data/*`, `MELISSA_DATA/`, `ARIS_OUTPUT/`, `**/.venv/`, `results/**/work/`, publisher PDFs |

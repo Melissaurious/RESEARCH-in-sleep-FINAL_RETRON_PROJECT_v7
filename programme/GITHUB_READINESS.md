@@ -29,14 +29,15 @@ gate: explicit operator approval required before any push or publication
 
 | branch | ahead | behind | contents |
 |---|---|---|---|
-| `project-synthesis` | **32** | 0 | the whole programme layer: governance, reviews, launchers, boards, this reconciliation |
+| `project-synthesis` | **35** | 0 | the whole programme layer: governance, reviews, launchers, boards, this reconciliation |
 | `main` | **1** | 0 | `ba3154a` — the `docs/BLOCKED.md` path repair that unblocks `specs_exist.sh` |
 
 No branch is behind. No merge or rebase is needed. No force-push is involved.
 
 ## 3 · What would become remote
 
-**77 files, +33,564 / −65 lines** on `project-synthesis`, plus this session's additions.
+**88 files** on `project-synthesis` against `origin/project-synthesis`, including this
+session's additions.
 
 | group | files | notes |
 |---|---|---|
@@ -134,7 +135,7 @@ independent review is landed **verbatim, including the ones that rejected this p
 ```bash
 cd /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis
 
-# 1 · the programme layer: 32 commits + this session's reconciliation
+# 1 · the programme layer: 35 commits, including this session's reconciliation
 git push origin project-synthesis
 
 # 2 · the BLOCKED.md repair on promoted state: 1 commit
