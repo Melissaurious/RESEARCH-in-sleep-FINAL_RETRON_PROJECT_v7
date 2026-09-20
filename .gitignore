@@ -84,4 +84,6 @@ results/rt07_g4a_repaired/work/*
 programme/waves/*/prepare_logs/
 programme/waves/*/runs/
 programme/waves/*/acceptance/
-programme/waves/*/WAVE_STATUS.tsv
+# NOTE: WAVE_STATUS.tsv is deliberately NOT ignored. wave_runner commits it as the
+# operator view, so ignoring it makes `git add` fail and the coordinator exit at startup.
+# To clear stale rows, delete the file; it regenerates from WAVE.tsv.
