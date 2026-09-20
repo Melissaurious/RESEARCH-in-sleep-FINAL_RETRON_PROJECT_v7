@@ -1,0 +1,67 @@
+{
+  "backend": "local",
+  "branch": "task/T-A23d-primary-verification",
+  "command": [
+    "/home/borg/miniconda3/envs/retron_tradicional/bin/python",
+    "programme/tasks/T-A23d-primary-verification/a23d_resolve.py",
+    "--outdir",
+    "analysis/t_a23d_primary_verification"
+  ],
+  "freeze_commit": "ccb4832b609e62a002ba5964ed603be40887d96c",
+  "frozen_files": {
+    "programme/tasks/T-A23d-primary-verification/PREPARE_RESULT.json": "dbcb761ac357b99f2b92650f030c19a8f3c289b869436a278b4073d3435ed3a4",
+    "programme/tasks/T-A23d-primary-verification/TASK_LAUNCHER.md": "7e3ae45d154d411b0228fb73e986c3e236f18306a5f10eba3c930e6194d24042",
+    "programme/tasks/T-A23d-primary-verification/a23d_resolve.py": "ff53a1e5cb753964d47fc791919fd06fb2972e1af18f5c4e2cc73e45c16afb09",
+    "programme/tasks/T-A23d-primary-verification/fixtures/buf_fixture_adjudicable.csv": "91329882100852bc028f6c9796db102c602db023ed2b968c45e47b443a3bc6d4",
+    "programme/tasks/T-A23d-primary-verification/fixtures/buf_fixture_not_adjudicable.csv": "d8e8ef7d04687b29c737c6e7a5e7e00f5d73aa17b4782ff864af326f0dd38027",
+    "programme/tasks/T-A23d-primary-verification/fixtures/identity_cases.json": "8b1aefb529be1492b0333b016ac42f4d5d1245840229cf517a156103b7e2b01a",
+    "programme/tasks/T-A23d-primary-verification/fixtures/jats_reflist_expected.json": "3ef7e9a94684df793b30c340251b77f51877ffdf9894d8037eae156156036298",
+    "programme/tasks/T-A23d-primary-verification/fixtures/jats_reflist_missing.xml": "31a2e465ed0ba4a3c47bac1d5ea44e45a6919b00c4d2f14b0acdef74a50623d6",
+    "programme/tasks/T-A23d-primary-verification/fixtures/jats_reflist_valid.xml": "1483bb0e6f7cf64f427f06f7a0fed64ef173bc16f98b53e7b6a0799d65f0d875",
+    "programme/tasks/T-A23d-primary-verification/fixtures/passage_fixture.txt": "093f367239de6dbf7a467b00ef54eb2a2845708653cb0deb651678ef18498850",
+    "programme/tasks/T-A23d-primary-verification/selfcheck_a23d.py": "5d6065898109541b12c2e5a4f9c5f2e7059c2fec2b545053899c98eb23e23eac"
+  },
+  "inputs": [
+    {
+      "canonical_status": "CANONICAL_WITH_LIMITATION",
+      "dataset_id": "A23C-SOURCES-8",
+      "limitation_carried": "CANONICAL_DATASETS.tsv inappropriate_for: 'The four SIM2019_ref* rows for ANY purpose'. A23d_GATE_forbidden_rows_refused asserts all four are refused and that the row actually read is source_id=SIM2019 carrying DOI 10.1093/nar/gkz865.",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A23c-source-retrieval/analysis/t_a23c_source_retrieval/tables/A23c_sources.tsv",
+      "role": "the SIM2019 row only - its DOI, PMID and PMCID",
+      "sha256": "03be7194d9ef86daeee46e7a2bb8246fffa159c5d31fc7aac25e897deda2bdd2",
+      "verified_at_prepare_time": true
+    },
+    {
+      "canonical_status": "CANONICAL_WITH_LIMITATION",
+      "dataset_id": "BUFFINGTON2025_RETRON_CATALOGUE",
+      "limitation_carried": "PRESENCE IS NOT EXPERIMENTAL VALIDATION. No cross-pair assay outcome may be inferred from this catalogue alone. Its rows are never read, joined, counted as measurements or merged into any project population; column 8 is an engineered RFP repair-template construct and is never pooled with the native msr-msd of column 7.",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A23d-primary-verification/references/rt0_rt7/buffington_2025/Discovery_and_engineering_of_retrons_supp.csv",
+      "role": "column-level adjudicability test for U1/U2; header and row count only",
+      "sha256": "d68366970378c05b5af9b00be886d76224a196a29b77171303f9353457cf4e62",
+      "verified_at_prepare_time": true
+    },
+    {
+      "canonical_status": "EXTERNAL_OPEN_ACCESS_CC_BY",
+      "dataset_id": "SIM2019_FULLTEXT_PMC6868368",
+      "limitation_carried": "Materialised local copy, 154,847 B, retrieved 2026-09-20 from https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6868368/fullTextXML (HTTP 200); two independent retrievals agreed on this sha256. Provenance: references/rt0_rt7/sim2019/PROVENANCE.md. Declaring it by URL made the deterministic binding gate refuse the task ([FAIL] input_hash:SIM2019_FULLTEXT_PMC6868368) because a URL is not a file; materialising it APPLIES the input-hash requirement to this source rather than exempting it. Identity is checked twice: by sha256 before the run and by the document's own declared DOI 10.1093/nar/gkz865 during it (A23d_GATE_sim2019_fulltext). PREREGISTRATION ORDERING: the identity rule was frozen at 7ef4552 and the file materialised afterwards at 6ded276, which changed only where epmc_fulltext reads PMC6868368 from. SIM2019's real bibliography has still never been parsed at preparation time, so the frozen rule was written with the answer out of view.",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/references/rt0_rt7/sim2019/PMC6868368_fullTextXML.xml",
+      "role": "the bibliography from which references 32, 33, 35 and 36 are resolved",
+      "sha256": "b16b26a6bb004a71088d49c683a58a7a95302851f9ecb265d8cd8d60be32e315",
+      "verified_at_prepare_time": true
+    }
+  ],
+  "output_directory": "analysis/t_a23d_primary_verification/",
+  "resources": {
+    "cpu_threads": 1,
+    "io_tokens": 1,
+    "memory_gb": 1
+  },
+  "runtime": {
+    "max_runtime_seconds": 900,
+    "resume_allowed": false,
+    "stop_note": "Single-shot and idempotent; compute_class ZERO, expected wall clock under 120 s, dominated by about a dozen Europe PMC calls spaced 0.6 s apart. The citing review is now read from a local pinned file, so the only network dependence is candidate resolution and any primary full text. Resume is disallowed because a partial run would leave an OUTPUT_MANIFEST.sha256 that does not describe a complete set of outputs: re-run from the start into a clean output directory instead. A failed blocking control ENDS the task - no primary table is written, but TASK_REPORT.md (TASK_STATE: VOID, SCIENTIFIC_OUTCOME: NOT_APPLICABLE), logs/run_log.json and OUTPUT_MANIFEST.sha256 are still written, no consumable output is declared, and the process exits 2. The successor is a NEW task id, never a v2 in place (WORKING_RULES section 6b rule 2). If www.ebi.ac.uk is unreachable, A23d_POS_known_record fails and the task stops before any primary retrieval. Iteration budget is 1: on exhausting it without meeting the criterion the task terminates INCONCLUSIVE and escalates rather than trying a second identity rule."
+  },
+  "schema_version": 1,
+  "task_id": "T-A23d-primary-verification",
+  "worktree": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A23d-primary-verification"
+}
