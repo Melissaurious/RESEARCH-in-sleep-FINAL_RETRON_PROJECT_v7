@@ -1,7 +1,10 @@
 # PARALLEL EXECUTION PLAN
 
 **As of 2026-09-20.** Derived from `programme/SCIENTIFIC_DAG.md`, which was written first on
-purpose. Task register: `programme/ALL_DOWNSTREAM_TASKS.tsv` (53 tasks).
+purpose. Task register: `programme/ALL_DOWNSTREAM_TASKS.tsv` (**59 tasks**).
+
+> ⚠️ **Read §10 first.** Batch 02 and the reconciliation pass changed the capacity table, the
+> routing and the auto-launch set. §§1–9 are the reviewed reasoning and are kept verbatim.
 
 > **This plan schedules compute. It does not decide science.** Every `READY_WAITING_OPERATOR` item
 > stays where it is, and no wave consumes an `UNEXPOSED_CONFIRMATORY` population.
@@ -267,3 +270,101 @@ on a population that heavily overlaps `T-A22`'s positive class).
 
 **One blocked task never stops an independent one.** That rule is why `T-LINT2`'s REJECT cost this
 run one task and not the night.
+
+
+---
+
+## 10 · DELTA — re-measured 2026-09-20 by the reconciliation session
+
+### 10.1 · Capacity, re-measured rather than inherited
+
+| resource | measured now | change |
+|---|---|---|
+| local CPU | 48 logical / 24 physical, load **1.79** of 48 | unchanged |
+| local RAM | 251 GB, **234 GB available** | unchanged |
+| local GPU | **2 × RTX 4090**, 24,564 MiB each, 246 MiB / 11 MiB used, **0 % util** | unchanged, both idle |
+| local disk | **2.8 TB free of 7.0 TB**, single NVMe | unchanged — I/O is still the binding constraint |
+| Ibex login | reachable, `login509-02-l`, key-based | unchanged |
+| Ibex queue | **`squeue --me` empty** | unchanged |
+| Ibex `batch` | 14-day limit, **7 idle / 220 mix / 124 alloc / 10 resv** | ⚠️ **far tighter than the 99 idle nodes recorded earlier** |
+| Ibex job history | `52124966 t_p1_relatedness` **COMPLETED**, exit `0:0`, 8 m 06 s | the only job this project has run today |
+
+⚠️ **The `batch` partition is much busier than §1 recorded.** Seven idle nodes, not 99. An Ibex-scale
+submission should expect to queue. This does not block anything; it changes what "send it to Ibex"
+costs in wall-clock, and it is why `T-P1b`'s mandatory pilot matters more, not less.
+
+### 10.2 · ⛔ A resource recorded absent that is present — foldseek
+
+`LIVE_EXECUTION.tsv` held `T-S2-foldseek-calibration` at `READY_WAITING_RESOURCE` because
+*"foldseek is NOT INSTALLED locally"*.
+
+| check | result |
+|---|---|
+| `/home/borg/miniconda3/envs/esmologs/bin/foldseek` | **present, v10.941cd33** |
+| `/home/borg/miniconda3/envs/retrons/bin/foldseek` | **present, v10.941cd33** |
+| `data/README.md` L182 | **already registers the first path by name** |
+| `data/README.md` L194 | already registers Ibex module `foldseek/10-941cd33` — same version |
+
+**Fifth instance of `CAPABILITY_STATE.md` §5.** The first four needed a different measuring context
+to explain; this one did not. `CLAUDE.md` names the exact register that answers it:
+*"do not conclude a dependency is absent until the registered environments and Ibex resources have
+been checked."*
+
+> **Rule, added to this plan:** before any task is marked `READY_WAITING_RESOURCE`, the resource is
+> looked up in `data/README.md` **and** on `PATH` across `/home/borg/miniconda3/envs/*/bin/`. A
+> `which` in one environment is not a search.
+
+Other tools confirmed present this way: `hmmsearch` (`diffab`), `mmseqs` (`colabfold`), `cmsearch`
+and `foldseek` (`retrons`), `muscle` and `fasttree` (`retron_tradicional`), `mafft` (`dep_maps`).
+**`iqtree2` is genuinely absent** from every local env — and that absence is bounded by `S09` being
+closed, so nothing currently needs it.
+
+### 10.3 · The auto-launch set is now ZERO
+
+§4a recorded **one** launchable task, `T-AUDIT1-circular-control-sweep`. It is still `AUTHORIZED`
+and still passes preflight. **But nothing should auto-launch at all**, because the operator has
+asked to review the proposed scientific launchers before the next wave begins.
+
+| lane | status |
+|---|---|
+| auto-launch | **suspended by operator instruction** |
+| `T-AUDIT1` | remains the one preflight-clean task; dispatch on the operator's word |
+
+### 10.4 · Maximum-safe parallel wave, when the operator releases it
+
+Four lanes that genuinely do not collide on writes, producers, populations or criteria. **None
+consumes an unexposed confirmatory population.**
+
+| lane | task | class | backend | I/O | why it is safe beside the others |
+|---|---|---|---|---|---|
+| **A · audit** | `T-AUDIT1-circular-control-sweep` | ZERO | local | LOW | reads launchers and control tables; `SOFT_INTERPRETIVE`, blocks nothing |
+| **A · audit** | `T-AUDIT2-task-report-backfill` | ZERO | local | LOW | reads landed artifacts, writes reports, promotes nothing. **Feeds `T-GATE1`** |
+| **B · corrections** | `T-M1b` embedding-cache re-verification | CPU_SMALL | local | **HIGH, serial** | applies 4 named changes; `NO_POPULATION_SPEND` |
+| **B · corrections** | `T-S1b` structure-inventory correction | CPU_SMALL | local | **HIGH, serial** | applies 3 named changes; `NO_POPULATION_SPEND` |
+| **C · literature** | `T-A23d-primary-verification` | ZERO | local | LOW | external population, no compute, no biological population |
+| **D · Ibex** | `T-P1b-identity-partition` **pilot only** | CPU_MEDIUM | **ibex** | MEDIUM | 10,000-sequence pilot with its expected result declared; the full run is a separate authorisation |
+
+⛔ **Lane B is strictly serial within itself** — both are `IO_HIGH` on the one NVMe. Lanes A, C and D
+run beside it. That is **4 concurrent streams**, not 22.
+
+⛔ **`T-N1d` is not in any lane.** It is blocked on the control-design ruling, and scheduling it
+would be scheduling a decision.
+
+⛔ **Every Ibex task still needs its declared pilot**, and `T-P1b` is the only Ibex candidate. Its
+staging cost is local I/O and belongs in a lane — the correction §2 item 3 made and no launcher has
+yet honoured.
+
+### 10.5 · Codex review capacity — the lane with the most idle throughput
+
+Eight review threads have been dispatched and all returned. **Four executed tasks have never been
+reviewed at all**, and reviewing them costs no compute, no population and no operator decision:
+
+| awaiting first review | why it matters |
+|---|---|
+| `T-F1-motif-scan` | executed without a freeze; not covered by `01a0bdfa` |
+| `T-REG3-content-hash` | same |
+| `T-C1b-pf00078-envelope-census` | the Batch-02 repair; **frozen properly** |
+| `T-A23c-source-retrieval` | frozen properly; **carries a known erratum** |
+
+**This is the single most underused resource in the programme.** It can run entirely in parallel
+with everything in §10.4 and needs nothing but dispatch.

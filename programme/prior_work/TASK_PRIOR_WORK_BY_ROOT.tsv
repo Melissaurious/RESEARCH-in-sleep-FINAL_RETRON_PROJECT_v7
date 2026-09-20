@@ -1,0 +1,478 @@
+task_id	root	n_path	n_content	n_header	n_parquet	matching_table_headers
+T-REG3-content-hash-pass	governed_results	0	9	0	0	
+T-REG3-content-hash-pass	governed_docs	0	1	0	0	
+T-REG3-content-hash-pass	wt_embeddings	0	9	0	0	
+T-REG4-kind-extension-sweep	governed_results	4	263	4	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_residue_mapper_gate/tables/fresh_lineage_state_to_residue.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g2_reference_reconstruction/tables/g2_parameter_sweep.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g4a_frame_recovery/tables/g4a_within_family_anchor_candidates.tsv;RESEARCH-in-sleep-F
+T-REG4-kind-extension-sweep	governed_docs	0	40	0	0	
+T-REG4-kind-extension-sweep	governed_analysis	0	10	0	0	
+T-REG4-kind-extension-sweep	idea_stage	0	11	0	0	
+T-REG4-kind-extension-sweep	references	0	4	0	0	
+T-REG4-kind-extension-sweep	v7_data_derived	22	2	0	0	
+T-REG4-kind-extension-sweep	v7_analysis_workbench	0	3	0	0	
+T-REG4-kind-extension-sweep	rdb_data_derived	3	1	-1	0	
+T-REG4-kind-extension-sweep	wt_embeddings	4	282	4	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_residue_mapper_gate/tables/fresh_lineage_state_to_residue.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g2_reference_reconstruction/tables/g2_parameter_sweep.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g4a_frame_recovery/tables/g4a_within_family_anchor_candidates.tsv;RESEARCH-in-slee
+T-REG4-kind-extension-sweep	wt_spire_ncrna	0	38	0	0	
+T-REG4-kind-extension-sweep	wt_mestre_audit	2	31	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/subaudits/rt07/toro2014_termini_summary.tsv
+T-REG4-kind-extension-sweep	wt_stage3c	1	36	0	0	
+T-REG4-kind-extension-sweep	wt_asset_audit	1	27	0	0	
+T-D1-annotation-disagreement	governed_results	38	209	4	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g6_tool_calls/tables/g6_subtype_disagreement_pairs.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t43_independent_cds_recount.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t22_padloc_rules.tsv;RESEARCH-in-sleep-FINAL
+T-D1-annotation-disagreement	governed_docs	0	30	0	0	
+T-D1-annotation-disagreement	governed_analysis	2	26	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets_protein.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets.tsv
+T-D1-annotation-disagreement	idea_stage	1	22	0	0	
+T-D1-annotation-disagreement	references	0	3	0	0	
+T-D1-annotation-disagreement	v7_data_derived	1	0	0	3	
+T-D1-annotation-disagreement	v7_analysis_workbench	2	17	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets_protein.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets.tsv
+T-D1-annotation-disagreement	rdb_data_derived	0	1	-1	1	
+T-D1-annotation-disagreement	wt_embeddings	38	192	4	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g6_tool_calls/tables/g6_subtype_disagreement_pairs.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t43_independent_cds_recount.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t22_padloc_rules.tsv;RESEARCH-in-sleep-FI
+T-D1-annotation-disagreement	wt_spire_ncrna	2	39	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/tables/GROUPS_MIXED.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/tables/GROUPS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/tables/GROUPS_DENOVO_FEASIBLE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncr
+T-D1-annotation-disagreement	wt_mestre_audit	2	32	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets_protein.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets.tsv
+T-D1-annotation-disagreement	wt_stage3c	7	50	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets_protein.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/tables/chain_sequences.tsv
+T-D1-annotation-disagreement	wt_asset_audit	6	36	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets_protein.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/N1_tool_sets.tsv
+T-D2-taxonomic-distribution	governed_results	42	130	14	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t36_ncbi_genus_representation.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t34_gtdb_prevalence_by_rank.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig29_rank_prevalence.tsv;RESEA
+T-D2-taxonomic-distribution	governed_docs	0	18	0	0	
+T-D2-taxonomic-distribution	governed_analysis	0	18	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv
+T-D2-taxonomic-distribution	idea_stage	1	19	0	0	
+T-D2-taxonomic-distribution	references	0	4	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/supp_material_systematic_prediction_paper.csv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/Supp_material_T1_R1_systematic_prediction.csv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/Mestre_supplementary_material.csv
+T-D2-taxonomic-distribution	v7_data_derived	0	0	0	4	
+T-D2-taxonomic-distribution	v7_analysis_workbench	0	17	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv
+T-D2-taxonomic-distribution	rdb_data_derived	0	2	-1	1	
+T-D2-taxonomic-distribution	wt_embeddings	42	140	14	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t36_ncbi_genus_representation.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t34_gtdb_prevalence_by_rank.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/fig29_rank_prevalence.tsv;RE
+T-D2-taxonomic-distribution	wt_spire_ncrna	0	41	9	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/BENCHMARK_RESULTS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/CANDIDATE_EVIDENCE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/CM_MISSED_PILOT.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/ROUND2/tabl
+T-D2-taxonomic-distribution	wt_mestre_audit	0	24	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv
+T-D2-taxonomic-distribution	wt_stage3c	0	24	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv
+T-D2-taxonomic-distribution	wt_asset_audit	0	24	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv
+T-C1-rt-core-extraction	governed_results	151	259	12	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_pre_g4_full_length_design/tables/measured_values.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_pre_g4_full_length_design/tables/myrt_fragment_vs_full_length_mapping.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_pre_g4_full_length_design/tables/balanced_reference_panel_design.tsv;RESEARCH-
+T-C1-rt-core-extraction	governed_docs	6	42	0	0	
+T-C1-rt-core-extraction	governed_analysis	0	26	0	0	
+T-C1-rt-core-extraction	idea_stage	0	15	0	0	
+T-C1-rt-core-extraction	references	6	10	0	0	
+T-C1-rt-core-extraction	v7_data_derived	0	0	0	3	
+T-C1-rt-core-extraction	v7_analysis_workbench	0	19	0	0	
+T-C1-rt-core-extraction	rdb_data_derived	2	3	-1	0	
+T-C1-rt-core-extraction	wt_embeddings	151	239	12	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_pre_g4_full_length_design/tables/measured_values.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_pre_g4_full_length_design/tables/myrt_fragment_vs_full_length_mapping.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_pre_g4_full_length_design/tables/balanced_reference_panel_design.tsv;RESEAR
+T-C1-rt-core-extraction	wt_spire_ncrna	0	44	0	0	
+T-C1-rt-core-extraction	wt_mestre_audit	0	33	0	0	
+T-C1-rt-core-extraction	wt_stage3c	4	84	10	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/XY_REGION_ANNOTATIONS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/TERMINI_FUSION_SUMMARY.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/STRUCTURE_STAGE2_CROSSWALK.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v
+T-C1-rt-core-extraction	wt_asset_audit	0	39	0	0	
+T-A16-reciprocal-frame	governed_results	41	43	0	0	
+T-A16-reciprocal-frame	governed_docs	0	11	0	0	
+T-A16-reciprocal-frame	governed_analysis	0	8	0	0	
+T-A16-reciprocal-frame	v7_data_derived	2	0	0	0	
+T-A16-reciprocal-frame	v7_analysis_workbench	0	7	0	0	
+T-A16-reciprocal-frame	wt_embeddings	41	47	0	0	
+T-A16-reciprocal-frame	wt_spire_ncrna	0	9	0	0	
+T-A16-reciprocal-frame	wt_mestre_audit	0	7	0	0	
+T-A16-reciprocal-frame	wt_stage3c	0	10	0	0	
+T-A16-reciprocal-frame	wt_asset_audit	0	7	0	0	
+T-RT07-definition-status	governed_results	572	400	52	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig23_pair_topology_recurrence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t23_zero_call_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t29_recurrence_classes.tsv;RESEA
+T-RT07-definition-status	governed_docs	2	60	0	0	
+T-RT07-definition-status	governed_analysis	3	55	19	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synt
+T-RT07-definition-status	idea_stage	1	20	0	0	
+T-RT07-definition-status	references	32	11	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/RESOURCE_REGISTER.tsv
+T-RT07-definition-status	v7_data_derived	11	1	0	3	
+T-RT07-definition-status	v7_analysis_workbench	3	43	19	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench
+T-RT07-definition-status	rdb_data_derived	0	1	-1	0	
+T-RT07-definition-status	wt_embeddings	499	384	52	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/fig23_pair_topology_recurrence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t23_zero_call_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t29_recurrence_classes.tsv;RE
+T-RT07-definition-status	wt_spire_ncrna	3	68	23	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/ROUND2/tables/SPLIT_MANIFEST.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/ROUND2/tables/LCO_DEV_STABILITY.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/ROUND2/tables/MEMBERS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis
+T-RT07-definition-status	wt_mestre_audit	16	83	24	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJEC
+T-RT07-definition-status	wt_stage3c	3	107	19	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/an
+T-RT07-definition-status	wt_asset_audit	3	72	19	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v
+T-P1-relatedness-backbone	governed_results	5	73	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g6_family_architecture/tables/g6_clustering_resource.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g4a_frame_recovery/tables/g4a_family_selection.tsv
+T-P1-relatedness-backbone	governed_docs	0	22	0	0	
+T-P1-relatedness-backbone	governed_analysis	0	13	0	0	
+T-P1-relatedness-backbone	idea_stage	0	17	0	0	
+T-P1-relatedness-backbone	references	0	4	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/supp_material_systematic_prediction_paper.csv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/Supp_material_T1_R1_systematic_prediction.csv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/Mestre_supplementary_material.csv
+T-P1-relatedness-backbone	v7_analysis_workbench	0	6	0	0	
+T-P1-relatedness-backbone	rdb_data_derived	0	2	-1	0	
+T-P1-relatedness-backbone	wt_embeddings	3	107	10	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/CROSSFIT_CF_FEASIBILITY.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/CROSSFIT_MANIFEST.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/X2_COMPONENT_LEVEL_EXPORT.tsv;RESEA
+T-P1-relatedness-backbone	wt_spire_ncrna	1	37	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/tables/SCALE_homolog_sets.tsv
+T-P1-relatedness-backbone	wt_mestre_audit	0	22	0	0	
+T-P1-relatedness-backbone	wt_stage3c	2	35	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/BIOLOGICAL_GROUPS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/CALIBRATION_SPLIT.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/TRUTH_TABL
+T-P1-relatedness-backbone	wt_asset_audit	2	35	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/BIOLOGICAL_GROUPS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/CALIBRATION_SPLIT.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_d
+T-P2-character-economy-audit	governed_results	0	154	0	0	
+T-P2-character-economy-audit	governed_docs	0	3	0	0	
+T-P2-character-economy-audit	governed_analysis	0	15	0	0	
+T-P2-character-economy-audit	idea_stage	0	3	0	0	
+T-P2-character-economy-audit	references	0	5	0	0	
+T-P2-character-economy-audit	v7_analysis_workbench	0	13	0	0	
+T-P2-character-economy-audit	rdb_data_derived	0	4	-1	0	
+T-P2-character-economy-audit	wt_embeddings	0	167	0	0	
+T-P2-character-economy-audit	wt_spire_ncrna	0	56	0	0	
+T-P2-character-economy-audit	wt_mestre_audit	0	42	0	0	
+T-P2-character-economy-audit	wt_stage3c	0	114	0	0	
+T-P2-character-economy-audit	wt_asset_audit	0	96	0	0	
+T-P3-relatedness-representation	governed_results	0	4	0	0	
+T-P3-relatedness-representation	governed_docs	0	3	0	0	
+T-P3-relatedness-representation	governed_analysis	0	3	0	0	
+T-P3-relatedness-representation	idea_stage	0	10	0	0	
+T-P3-relatedness-representation	references	2	8	0	0	
+T-P3-relatedness-representation	rdb_data_derived	2	0	-1	0	
+T-P3-relatedness-representation	wt_embeddings	0	1	0	0	
+T-P3-relatedness-representation	wt_mestre_audit	0	22	0	0	
+T-P3-relatedness-representation	wt_stage3c	4	5	0	0	
+T-P3-relatedness-representation	wt_asset_audit	4	5	0	0	
+T-A0b-lineage-partition-intervals	idea_stage	0	1	0	0	
+T-A0b-lineage-partition-intervals	references	0	1	0	0	
+T-A0b-lineage-partition-intervals	rdb_data_derived	0	2	-1	0	
+T-A0b-lineage-partition-intervals	wt_embeddings	0	2	0	0	
+T-A0b-lineage-partition-intervals	wt_spire_ncrna	0	1	0	0	
+T-A0b-lineage-partition-intervals	wt_mestre_audit	0	1	0	0	
+T-A0b-lineage-partition-intervals	wt_stage3c	0	3	0	0	
+T-A0b-lineage-partition-intervals	wt_asset_audit	0	2	0	0	
+T-F1-motif-scan	governed_results	27	198	29	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_ug25_confirmatory/tables/ug25_sequence_results.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_residue_mapper_gate/tables/fresh_lineage_catalytic_state.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_residue_mapper_gate/tables/fresh_lineage_sequence_summary.tsv;RESEARCH-in-sleep-FINAL_RETRON_
+T-F1-motif-scan	governed_docs	0	24	0	0	
+T-F1-motif-scan	governed_analysis	0	12	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv
+T-F1-motif-scan	idea_stage	2	18	0	0	
+T-F1-motif-scan	references	0	11	0	0	
+T-F1-motif-scan	v7_data_derived	1	0	0	3	
+T-F1-motif-scan	rdb_data_derived	0	1	-1	1	
+T-F1-motif-scan	wt_embeddings	26	178	28	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_ug25_confirmatory/tables/ug25_sequence_results.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_residue_mapper_gate/tables/fresh_lineage_catalytic_state.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_residue_mapper_gate/tables/fresh_lineage_sequence_summary.tsv;RESEARCH-in-sleep-FINAL_RETR
+T-F1-motif-scan	wt_spire_ncrna	4	29	4	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/POSTMORTEM/tables/IIIA_INSTANCES.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/POSTMORTEM/tables/MOTIF_INSTANCES.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/figures/data/zfig2_set_outcomes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJE
+T-F1-motif-scan	wt_mestre_audit	0	11	0	0	
+T-F1-motif-scan	wt_stage3c	5	83	8	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/TRUTH_TABLE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/REPLICATE_GROUPS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/XY_REGION_ANNOTATIONS.tsv;
+T-F1-motif-scan	wt_asset_audit	0	42	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/TRUTH_TABLE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/REPLICATE_GROUPS.tsv
+T-F2-domain-architecture	governed_results	43	242	24	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_ug25_confirmatory/tables/ug25_sequence_results.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_pre_g4_full_length_design/tables/myrt_fragment_vs_full_length_mapping.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g4b_production_mapper/tables/smoke_sequences.tsv;RESEARCH-in-sleep-FINAL_RETRON_
+T-F2-domain-architecture	governed_docs	0	41	0	0	
+T-F2-domain-architecture	governed_analysis	4	30	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/Z2_redundancy_by_domain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/Z2_redundancy_by_domain_family.tsv
+T-F2-domain-architecture	idea_stage	1	27	0	0	
+T-F2-domain-architecture	references	0	15	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/supp_material_systematic_prediction_paper.csv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/Supp_material_T1_R1_systematic_prediction.csv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/Mestre_supplementary_material.csv
+T-F2-domain-architecture	v7_data_derived	0	0	0	4	
+T-F2-domain-architecture	v7_analysis_workbench	4	20	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/Z2_redundancy_by_domain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/Z2_redundancy_by_domain_family.tsv
+T-F2-domain-architecture	rdb_data_derived	0	1	-1	1	
+T-F2-domain-architecture	wt_embeddings	5	229	23	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_ug25_confirmatory/tables/ug25_sequence_results.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_pre_g4_full_length_design/tables/myrt_fragment_vs_full_length_mapping.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g4b_production_mapper/tables/smoke_sequences.tsv;RESEARCH-in-sleep-FINAL_RETR
+T-F2-domain-architecture	wt_spire_ncrna	4	30	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/Z2_redundancy_by_domain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/Z2_redundancy_by_domain_family.tsv
+T-F2-domain-architecture	wt_mestre_audit	4	45	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z2_redundancy_by_domain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z2_redundancy_by_domain_family.tsv
+T-F2-domain-architecture	wt_stage3c	115	125	24	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/results/rt_units_p4.units.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/results/rt_pdp_p4.residues.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/
+T-F2-domain-architecture	wt_asset_audit	26	87	19	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/results/rt_units_p4.units.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/results/rt_pdp_p4.residues.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset
+T-F3-retron-feature-contrast	governed_results	2	48	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g4a_frame_recovery/tables/g4a_transfer_to_challenge.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g3_pair_geometry/tables/g3_nonretron_cm_placements.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g4a_repaired/tables/g4a_repaired_transfer.tsv
+T-F3-retron-feature-contrast	governed_docs	0	13	0	0	
+T-F3-retron-feature-contrast	governed_analysis	3	20	0	0	
+T-F3-retron-feature-contrast	idea_stage	1	14	0	0	
+T-F3-retron-feature-contrast	v7_data_derived	1	0	0	0	
+T-F3-retron-feature-contrast	v7_analysis_workbench	3	11	0	0	
+T-F3-retron-feature-contrast	wt_embeddings	2	53	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g4a_frame_recovery/tables/g4a_transfer_to_challenge.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g3_pair_geometry/tables/g3_nonretron_cm_placements.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g4a_repaired/tables/g4a_repaired_transfer.tsv
+T-F3-retron-feature-contrast	wt_spire_ncrna	5	36	0	0	
+T-F3-retron-feature-contrast	wt_mestre_audit	3	18	0	0	
+T-F3-retron-feature-contrast	wt_stage3c	3	25	0	0	
+T-F3-retron-feature-contrast	wt_asset_audit	3	15	0	0	
+T-F4-domain-partition-nonoperational	governed_results	0	69	0	0	
+T-F4-domain-partition-nonoperational	governed_docs	0	8	0	0	
+T-F4-domain-partition-nonoperational	governed_analysis	0	7	0	0	
+T-F4-domain-partition-nonoperational	idea_stage	1	12	0	0	
+T-F4-domain-partition-nonoperational	references	0	9	0	0	
+T-F4-domain-partition-nonoperational	wt_embeddings	0	62	0	0	
+T-F4-domain-partition-nonoperational	wt_mestre_audit	0	3	0	0	
+T-F4-domain-partition-nonoperational	wt_stage3c	0	73	13	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/results/rt_units_p4.units.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/results/rt_units.calls.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/results/rt_units_p4.calls.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/an
+T-F4-domain-partition-nonoperational	wt_asset_audit	0	35	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/results/rt_units_p4.units.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/results/rt_units.calls.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/results/rt_units_p4.calls.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v
+T-S1-structure-asset-inventory	governed_results	10	189	6	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t11_structure_annotation_by_model.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig09_ncrna_length_by_model.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t09_ncrna_length_by_model.t
+T-S1-structure-asset-inventory	governed_docs	1	46	0	0	
+T-S1-structure-asset-inventory	governed_analysis	0	32	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/PANEL_LEAKAGE_MAP.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/C3_model_composition.tsv
+T-S1-structure-asset-inventory	idea_stage	0	27	0	0	
+T-S1-structure-asset-inventory	references	1	14	0	0	
+T-S1-structure-asset-inventory	v7_data_derived	0	0	0	4	
+T-S1-structure-asset-inventory	v7_analysis_workbench	0	17	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/C3_model_composition.tsv
+T-S1-structure-asset-inventory	rdb_data_derived	0	3	-1	1	
+T-S1-structure-asset-inventory	wt_embeddings	55	243	14	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/FOLD_HETEROGENEITY.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/CROSSFIT_FOLDS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/CROSSFIT_CF_FEASIBILITY.tsv;RESEARCH-in-sle
+T-S1-structure-asset-inventory	wt_spire_ncrna	2	57	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/CANDIDATE_EVIDENCE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/CM_MISSED_PILOT.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/C3_model_composition.tsv
+T-S1-structure-asset-inventory	wt_mestre_audit	0	41	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/C3_model_composition.tsv
+T-S1-structure-asset-inventory	wt_stage3c	9	144	23	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/DOMAIN_ASSIGNMENTS_CONTIGUOUS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/STRUCTURAL_ELEMENTS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_str
+T-S1-structure-asset-inventory	wt_asset_audit	7	106	19	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/DOMAIN_ASSIGNMENTS_CONTIGUOUS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/STRUCTURAL_ELEMENTS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/anal
+T-S2-foldseek-calibration	governed_results	0	2	0	0	
+T-S2-foldseek-calibration	governed_docs	0	2	0	0	
+T-S2-foldseek-calibration	governed_analysis	0	1	0	0	
+T-S2-foldseek-calibration	idea_stage	0	11	0	0	
+T-S2-foldseek-calibration	references	0	1	0	0	
+T-S2-foldseek-calibration	rdb_data_derived	0	1	-1	0	
+T-S2-foldseek-calibration	wt_embeddings	0	1	0	0	
+T-S2-foldseek-calibration	wt_spire_ncrna	0	2	0	0	
+T-S2-foldseek-calibration	wt_mestre_audit	0	8	0	0	
+T-S2-foldseek-calibration	wt_stage3c	23	47	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/results/cath_score_primary.per_chain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/results/cath_score_p4.per_chain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/tables/g2r_foldseek_ava.tsv;RESEARCH-in-sleep-FINAL_RETRON_PRO
+T-S2-foldseek-calibration	wt_asset_audit	23	46	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/results/cath_score_primary.per_chain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/results/cath_score_p4.per_chain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/tables/g2r_foldseek_ava.tsv;RESEARCH-in-sleep-FINA
+T-A7-stage3a-positive-control	governed_results	0	4	0	0	
+T-A7-stage3a-positive-control	governed_docs	0	2	0	0	
+T-A7-stage3a-positive-control	governed_analysis	0	8	0	0	
+T-A7-stage3a-positive-control	idea_stage	0	6	0	0	
+T-A7-stage3a-positive-control	v7_analysis_workbench	0	1	0	0	
+T-A7-stage3a-positive-control	rdb_data_derived	0	1	-1	0	
+T-A7-stage3a-positive-control	wt_embeddings	0	6	0	0	
+T-A7-stage3a-positive-control	wt_spire_ncrna	0	1	0	0	
+T-A7-stage3a-positive-control	wt_mestre_audit	0	9	0	0	
+T-A7-stage3a-positive-control	wt_stage3c	199	57	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/STRUCTURAL_SOURCE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/STRUCTURE_STAGE3B_CROSSWALK.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/tables/A_replicate_stability.tsv
+T-A7-stage3a-positive-control	wt_asset_audit	199	38	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/STRUCTURAL_SOURCE_REGISTER.tsv
+T-S3-structural-core-interpretation	governed_results	0	1	0	0	
+T-S3-structural-core-interpretation	governed_analysis	0	2	0	0	
+T-S3-structural-core-interpretation	idea_stage	0	1	0	0	
+T-S3-structural-core-interpretation	wt_embeddings	0	1	0	0	
+T-S3-structural-core-interpretation	wt_stage3c	194	19	0	0	
+T-S3-structural-core-interpretation	wt_asset_audit	194	14	0	0	
+T-N1-neighbourhood-extraction-qa	governed_results	16	129	18	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t24_carriage_by_upstream_context.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t15_cds_between_by_unit.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t16_geometry_by_model.tsv;RESEAR
+T-N1-neighbourhood-extraction-qa	governed_docs	0	31	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/docs/errata/g7a_closure_decision_erratum_2026-09-19.tsv
+T-N1-neighbourhood-extraction-qa	governed_analysis	4	40	6	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/D5_opposite_strand_profile.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJEC
+T-N1-neighbourhood-extraction-qa	idea_stage	1	17	0	0	
+T-N1-neighbourhood-extraction-qa	references	0	3	0	0	
+T-N1-neighbourhood-extraction-qa	v7_data_derived	0	0	0	4	
+T-N1-neighbourhood-extraction-qa	v7_analysis_workbench	4	30	6	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/D5_opposite_strand_profile.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_
+T-N1-neighbourhood-extraction-qa	rdb_data_derived	0	0	-1	1	
+T-N1-neighbourhood-extraction-qa	wt_embeddings	19	149	17	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t24_carriage_by_upstream_context.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t15_cds_between_by_unit.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t16_geometry_by_model.tsv;RES
+T-N1-neighbourhood-extraction-qa	wt_spire_ncrna	6	68	9	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/ROUND2/tables/MEMBERS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/tables/Z6_SET_MEMBERS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/tables/SCALE_upstream_cds_cover.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analy
+T-N1-neighbourhood-extraction-qa	wt_mestre_audit	4	42	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/D5_opposite_strand_profile.tsv;RESEARCH-in-sleep-FINAL_RETR
+T-N1-neighbourhood-extraction-qa	wt_stage3c	4	52	9	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/prior_asset_audit/ASSET_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_n
+T-N1-neighbourhood-extraction-qa	wt_asset_audit	4	40	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/prior_asset_audit/ASSET_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/anal
+T-N2-neighbourhood-lineage-comparison	idea_stage	0	4	0	0	
+T-N2-neighbourhood-lineage-comparison	wt_mestre_audit	0	1	0	0	
+T-A10-genomic-architecture	governed_results	117	186	28	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g6_tool_calls/tables/g6_extraction_asymmetry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g2b_rt_cds_recovery/tables/g2b_recovery_classes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g2b_rt_cds_recovery/tables/g2b_recovered_evidence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-sy
+T-A10-genomic-architecture	governed_docs	1	40	0	0	
+T-A10-genomic-architecture	governed_analysis	9	50	12	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/A0_recovery_vs_eligibility.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJEC
+T-A10-genomic-architecture	idea_stage	0	21	0	0	
+T-A10-genomic-architecture	references	0	3	0	0	
+T-A10-genomic-architecture	v7_data_derived	0	0	0	8	
+T-A10-genomic-architecture	v7_analysis_workbench	9	40	12	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/A0_recovery_vs_eligibility.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_
+T-A10-genomic-architecture	rdb_data_derived	0	1	-1	0	
+T-A10-genomic-architecture	wt_embeddings	79	218	28	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g6_tool_calls/tables/g6_extraction_asymmetry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g2b_rt_cds_recovery/tables/g2b_recovery_classes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g2b_rt_cds_recovery/tables/g2b_recovered_evidence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7
+T-A10-genomic-architecture	wt_spire_ncrna	9	57	13	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/tables/Z6_MEMBER_EVAL.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/A0_recovery_vs_eligibility.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJE
+T-A10-genomic-architecture	wt_mestre_audit	9	43	12	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/A0_recovery_vs_eligibility.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETR
+T-A10-genomic-architecture	wt_stage3c	98	84	12	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/A0_recovery_vs_eligibility.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-s
+T-A10-genomic-architecture	wt_asset_audit	9	63	12	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/A0_recovery_vs_eligibility.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z4_outgroup_vs_rest.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/D4_geometry_by_family.tsv;RESEARCH-in-sleep-FINAL_RETRON_
+T-A6-fixed-locus-carriage	governed_results	18	79	0	0	
+T-A6-fixed-locus-carriage	governed_docs	0	12	0	0	
+T-A6-fixed-locus-carriage	governed_analysis	2	25	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv
+T-A6-fixed-locus-carriage	idea_stage	0	4	0	0	
+T-A6-fixed-locus-carriage	v7_data_derived	1	0	0	6	
+T-A6-fixed-locus-carriage	v7_analysis_workbench	2	18	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv
+T-A6-fixed-locus-carriage	wt_embeddings	17	82	0	0	
+T-A6-fixed-locus-carriage	wt_spire_ncrna	2	49	11	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/BENCHMARK_RESULTS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/CANDIDATE_EVIDENCE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/CM_MISSED_PILOT.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/figures/dat
+T-A6-fixed-locus-carriage	wt_mestre_audit	2	20	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv
+T-A6-fixed-locus-carriage	wt_stage3c	2	18	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv
+T-A6-fixed-locus-carriage	wt_asset_audit	2	18	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv
+T-E1-character-source-probe	governed_results	0	77	0	0	
+T-E1-character-source-probe	governed_docs	1	22	0	0	
+T-E1-character-source-probe	governed_analysis	1	17	0	0	
+T-E1-character-source-probe	idea_stage	2	16	0	0	
+T-E1-character-source-probe	references	0	9	0	0	
+T-E1-character-source-probe	v7_analysis_workbench	1	9	0	0	
+T-E1-character-source-probe	rdb_data_derived	1	1	-1	0	
+T-E1-character-source-probe	wt_embeddings	0	80	0	0	
+T-E1-character-source-probe	wt_spire_ncrna	2	16	0	0	
+T-E1-character-source-probe	wt_mestre_audit	2	28	0	0	
+T-E1-character-source-probe	wt_stage3c	1	28	0	0	
+T-E1-character-source-probe	wt_asset_audit	1	21	0	0	
+T-E2-shallow-clade-restriction	governed_results	0	2	0	0	
+T-E2-shallow-clade-restriction	wt_embeddings	0	6	0	0	
+T-E2-shallow-clade-restriction	wt_mestre_audit	0	1	0	0	
+T-E3-coevolution-vocabulary-lock	governed_results	9	113	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g3_prior_method_replication/tables/g3_prior_frame_correspondence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv;RES
+T-E3-coevolution-vocabulary-lock	governed_docs	0	23	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/docs/errata/g7a_closure_decision_erratum_2026-09-19.tsv
+T-E3-coevolution-vocabulary-lock	governed_analysis	0	8	0	0	
+T-E3-coevolution-vocabulary-lock	idea_stage	1	10	0	0	
+T-E3-coevolution-vocabulary-lock	v7_analysis_workbench	0	3	0	0	
+T-E3-coevolution-vocabulary-lock	wt_embeddings	9	107	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g2_reference_reconstruction/tables/g2_frame_correspondence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g3_prior_method_replication/tables/g3_prior_frame_correspondence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g3_prior_method_replication/tables/g3_prior_region_correspondence.tsv
+T-E3-coevolution-vocabulary-lock	wt_spire_ncrna	0	3	0	0	
+T-E3-coevolution-vocabulary-lock	wt_mestre_audit	0	4	0	0	
+T-E3-coevolution-vocabulary-lock	wt_stage3c	0	13	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/inputs/stage2_94a1a788/g7a_crosswalk_resolved.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/inputs/stage2_94a1a788/g7a_closure_decision.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/inputs/stage2_94a1a788/g7a
+T-E3-coevolution-vocabulary-lock	wt_asset_audit	0	6	0	0	
+T-C2-cm-call-inventory	governed_results	5	59	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig09_ncrna_length_by_model.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t09_ncrna_length_by_model.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t33_multi_architecture.tsv
+T-C2-cm-call-inventory	governed_docs	0	12	0	0	
+T-C2-cm-call-inventory	governed_analysis	1	25	0	0	
+T-C2-cm-call-inventory	idea_stage	0	12	0	0	
+T-C2-cm-call-inventory	references	0	1	0	0	
+T-C2-cm-call-inventory	v7_data_derived	1	0	0	0	
+T-C2-cm-call-inventory	v7_analysis_workbench	1	15	0	0	
+T-C2-cm-call-inventory	wt_embeddings	5	65	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/fig09_ncrna_length_by_model.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t09_ncrna_length_by_model.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t33_multi_architecture.tsv
+T-C2-cm-call-inventory	wt_spire_ncrna	1	51	0	0	
+T-C2-cm-call-inventory	wt_mestre_audit	1	28	0	0	
+T-C2-cm-call-inventory	wt_stage3c	1	19	0	0	
+T-C2-cm-call-inventory	wt_asset_audit	1	16	0	0	
+T-A19-withheld-model-control	governed_results	0	11	0	0	
+T-A19-withheld-model-control	governed_docs	0	3	0	0	
+T-A19-withheld-model-control	references	0	4	0	0	
+T-A19-withheld-model-control	wt_embeddings	0	12	0	0	
+T-A19-withheld-model-control	wt_mestre_audit	0	3	0	0	
+T-S07-reopen-design	governed_results	0	99	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_residue_mapper_gate/tables/fresh_lineage_candidate_audit.tsv
+T-S07-reopen-design	governed_docs	0	31	0	0	
+T-S07-reopen-design	governed_analysis	0	15	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv
+T-S07-reopen-design	idea_stage	1	17	0	0	
+T-S07-reopen-design	references	5	12	0	0	
+T-S07-reopen-design	v7_analysis_workbench	0	3	0	0	
+T-S07-reopen-design	wt_embeddings	0	99	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_residue_mapper_gate/tables/fresh_lineage_candidate_audit.tsv
+T-S07-reopen-design	wt_spire_ncrna	282	92	18	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/BENCHMARK_RESULTS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/CM_MISSED_PILOT.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/figures/data/fig2_iou_boundary_error.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna
+T-S07-reopen-design	wt_mestre_audit	0	10	0	0	
+T-S07-reopen-design	wt_stage3c	0	24	0	0	
+T-S07-reopen-design	wt_asset_audit	0	18	0	0	
+T-A5b1-rtdna-anchors	governed_results	12	331	35	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g2b_rt_cds_recovery/tables/g2b_recovery_classes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g2b_rt_cds_recovery/tables/g2b_representation_classes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_pre_g4_full_length_design/tables/candidate_anchor_definitions.tsv;RESEARCH-in-sleep-FINAL_R
+T-A5b1-rtdna-anchors	governed_docs	0	39	0	0	
+T-A5b1-rtdna-anchors	governed_analysis	0	19	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/PANEL_LEAKAGE_MAP.tsv
+T-A5b1-rtdna-anchors	idea_stage	0	10	0	0	
+T-A5b1-rtdna-anchors	references	0	5	0	0	
+T-A5b1-rtdna-anchors	v7_data_derived	0	0	0	3	
+T-A5b1-rtdna-anchors	v7_analysis_workbench	0	7	0	0	
+T-A5b1-rtdna-anchors	rdb_data_derived	0	0	-1	1	
+T-A5b1-rtdna-anchors	wt_embeddings	12	305	33	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g2b_rt_cds_recovery/tables/g2b_recovery_classes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g2b_rt_cds_recovery/tables/g2b_representation_classes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_pre_g4_full_length_design/tables/candidate_anchor_definitions.tsv;RESEARCH-in-sleep-FINA
+T-A5b1-rtdna-anchors	wt_spire_ncrna	0	14	0	0	
+T-A5b1-rtdna-anchors	wt_mestre_audit	0	26	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/m2_design/M2B_QUERY_CENSUS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/m2_design/mcc_v1/MCC_FEASIBILITY_per_sequence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/m2_design/mcc_v2/MCC_FEASIBILITY_per_sequence.tsv
+T-A5b1-rtdna-anchors	wt_stage3c	0	46	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/TERMINI_FUSION_SUMMARY.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/inputs/stage2_94a1a788/g7a_crosswalk_resolved.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/inputs/stage2_94a1a788/g7a_state_to_residue.tsv
+T-A5b1-rtdna-anchors	wt_asset_audit	0	17	0	0	
+T-R1-rtdna-direct-mapping	governed_results	4	176	9	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_residue_mapper_gate/tables/construction_mapper_validation.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g4b_production_mapper/control/FROZEN_ANCHORS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g3_prior_method_replication/control/prior_regions.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v
+T-R1-rtdna-direct-mapping	governed_docs	0	37	0	0	
+T-R1-rtdna-direct-mapping	governed_analysis	0	20	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/PANEL_LEAKAGE_MAP.tsv
+T-R1-rtdna-direct-mapping	idea_stage	0	9	0	0	
+T-R1-rtdna-direct-mapping	references	0	3	0	0	
+T-R1-rtdna-direct-mapping	v7_analysis_workbench	0	8	0	0	
+T-R1-rtdna-direct-mapping	wt_embeddings	2	153	8	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_residue_mapper_gate/tables/construction_mapper_validation.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g4b_production_mapper/control/FROZEN_ANCHORS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g3_prior_method_replication/control/prior_regions.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJEC
+T-R1-rtdna-direct-mapping	wt_spire_ncrna	0	29	0	0	
+T-R1-rtdna-direct-mapping	wt_mestre_audit	0	16	0	0	
+T-R1-rtdna-direct-mapping	wt_stage3c	0	45	0	0	
+T-R1-rtdna-direct-mapping	wt_asset_audit	0	34	0	0	
+T-A5b2-ncrna-architecture	governed_results	12	273	22	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t36_ncbi_genus_representation.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig30_ncbi_genus_representation.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g1_corpus_identity/tables/s02_system_types_by_file.tsv;RESEAR
+T-A5b2-ncrna-architecture	governed_docs	0	37	0	0	
+T-A5b2-ncrna-architecture	governed_analysis	0	25	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/N5_overlap_profile.tsv
+T-A5b2-ncrna-architecture	idea_stage	0	23	0	0	
+T-A5b2-ncrna-architecture	references	2	14	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/supp_material_systematic_prediction_paper.csv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/Supp_material_T1_R1_systematic_prediction.csv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/mestre_2020/Mestre_supplementary_material.csv
+T-A5b2-ncrna-architecture	v7_data_derived	0	0	0	7	
+T-A5b2-ncrna-architecture	v7_analysis_workbench	0	14	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/N5_overlap_profile.tsv
+T-A5b2-ncrna-architecture	rdb_data_derived	0	1	-1	1	
+T-A5b2-ncrna-architecture	wt_embeddings	12	276	21	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t36_ncbi_genus_representation.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/fig30_ncbi_genus_representation.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g1_corpus_identity/tables/s02_system_types_by_file.tsv;RES
+T-A5b2-ncrna-architecture	wt_spire_ncrna	2	67	16	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/BENCHMARK_RESULTS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/METHOD_COMPARISON.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/figures/data/fig1_outcomes_by_arm.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_
+T-A5b2-ncrna-architecture	wt_mestre_audit	0	42	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/N5_overlap_profile.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/subaudits/v2_v3_v5/v235_rnap_substitutes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mes
+T-A5b2-ncrna-architecture	wt_stage3c	2	74	4	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/N5_overlap_profile.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/XY_REGION_EVIDENCE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/sta
+T-A5b2-ncrna-architecture	wt_asset_audit	0	46	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/N6_top_taxa.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/N5_overlap_profile.tsv
+T-A20-pair-expansion	governed_results	0	45	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig23_pair_topology_recurrence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t29_recurrence_classes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig12_configuration_schematic.tsv;R
+T-A20-pair-expansion	governed_docs	0	10	0	0	
+T-A20-pair-expansion	governed_analysis	0	24	9	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/PANEL_LEAKAGE_MAP.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_r
+T-A20-pair-expansion	v7_data_derived	2	1	0	0	
+T-A20-pair-expansion	v7_analysis_workbench	0	19	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/K2_criterion_sensitivity.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/L7_dataset_rule_cascade.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_wo
+T-A20-pair-expansion	wt_embeddings	0	63	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/fig23_pair_topology_recurrence.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t29_recurrence_classes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/fig12_configuration_schematic.ts
+T-A20-pair-expansion	wt_spire_ncrna	0	20	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/K2_criterion_sensitivity.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/L7_dataset_rule_cascade.tsv;RESEARCH-in-sleep-FINAL_RETRON_PR
+T-A20-pair-expansion	wt_mestre_audit	0	19	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/K2_criterion_sensitivity.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/L7_dataset_rule_cascade.tsv;RESEARCH-in-sleep-FINAL_RETRON
+T-A20-pair-expansion	wt_stage3c	0	19	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/K2_criterion_sensitivity.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/L7_dataset_rule_cascade.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-sta
+T-A20-pair-expansion	wt_asset_audit	0	19	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/D6_joint_geometry.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/K2_criterion_sensitivity.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/L7_dataset_rule_cascade.tsv;RESEARCH-in-sleep-FINAL_RETRON_PR
+T-M1-embedding-cache-verification	governed_results	0	67	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_g1_history_and_definition/tables/g1_acquisition_source_resolution.tsv
+T-M1-embedding-cache-verification	governed_docs	0	17	0	0	
+T-M1-embedding-cache-verification	governed_analysis	0	25	0	0	
+T-M1-embedding-cache-verification	idea_stage	0	19	0	0	
+T-M1-embedding-cache-verification	references	0	8	0	0	
+T-M1-embedding-cache-verification	v7_analysis_workbench	0	15	0	0	
+T-M1-embedding-cache-verification	rdb_data_derived	0	2	-1	0	
+T-M1-embedding-cache-verification	wt_embeddings	1224	130	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_g1_representations/tables/g1_throughput.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_g1_history_and_definition/tables/g1_acquisition_source_resolution.tsv
+T-M1-embedding-cache-verification	wt_spire_ncrna	0	22	0	0	
+T-M1-embedding-cache-verification	wt_mestre_audit	0	41	0	0	
+T-M1-embedding-cache-verification	wt_stage3c	1	68	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/XY_REGION_EVIDENCE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/tables/C_sources.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/tables/D_source_cache_hashes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage
+T-M1-embedding-cache-verification	wt_asset_audit	0	47	0	0	
+T-M2-landed-interval-coverage-sweep	governed_results	5	183	32	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t23_zero_call_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig17_tool_venn.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t26_tool_mix_by_database.tsv;RESEARCH-in-sleep-
+T-M2-landed-interval-coverage-sweep	governed_docs	0	26	0	0	
+T-M2-landed-interval-coverage-sweep	governed_analysis	0	19	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv
+T-M2-landed-interval-coverage-sweep	idea_stage	0	8	0	0	
+T-M2-landed-interval-coverage-sweep	references	0	1	0	0	
+T-M2-landed-interval-coverage-sweep	v7_data_derived	0	0	0	1	
+T-M2-landed-interval-coverage-sweep	v7_analysis_workbench	0	11	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv
+T-M2-landed-interval-coverage-sweep	rdb_data_derived	0	1	-1	0	
+T-M2-landed-interval-coverage-sweep	wt_embeddings	6	221	50	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/PERMUTATION_CONTROL.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/FOLD_HETEROGENEITY.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/LINEAGE_CONTROL.tsv;RESEARCH-in-sleep-
+T-M2-landed-interval-coverage-sweep	wt_spire_ncrna	1	37	6	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/BENCHMARK_RESULTS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/ROUND2/tables/DEV_GROUP_EVAL.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/figures/data/zfig2_set_outcomes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/an
+T-M2-landed-interval-coverage-sweep	wt_mestre_audit	0	36	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/subaudits/rt07/toro742_hmm_blocks_to_match_states.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/subaudits/rt07/rt07_assets.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJE
+T-M2-landed-interval-coverage-sweep	wt_stage3c	0	56	11	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3a_structural_core/g2r/results/rt_ss_concordance.per_chain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/TERMINI_FUSION_SUMMARY.tsv;RESEARCH-in-sleep-FINAL_RETRON_PRO
+T-M2-landed-interval-coverage-sweep	wt_asset_audit	0	25	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3a_structural_core/g2r/results/rt_ss_concordance.per_chain.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv
+T-A1-absolute-baselines	governed_results	41	126	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_mapper_validation_repair_v2/tables/negative_control_summary.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_mapper_validation_repair/tables/negative_control_summary.tsv
+T-A1-absolute-baselines	governed_docs	0	31	0	0	
+T-A1-absolute-baselines	governed_analysis	0	18	0	0	
+T-A1-absolute-baselines	idea_stage	0	12	0	0	
+T-A1-absolute-baselines	v7_data_derived	2	0	0	0	
+T-A1-absolute-baselines	v7_analysis_workbench	0	10	0	0	
+T-A1-absolute-baselines	wt_embeddings	59	137	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_mapper_validation_repair_v2/tables/negative_control_summary.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/rt07_mapper_validation_repair/tables/negative_control_summary.tsv
+T-A1-absolute-baselines	wt_spire_ncrna	1	30	0	0	
+T-A1-absolute-baselines	wt_mestre_audit	0	15	0	0	
+T-A1-absolute-baselines	wt_stage3c	0	21	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/prior_asset_audit/PATH_REGISTER.tsv
+T-A1-absolute-baselines	wt_asset_audit	0	16	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/prior_asset_audit/PATH_REGISTER.tsv
+T-A2b-budget-matched-ladder	governed_results	0	49	7	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/rt07_pre_g4_full_length_design/tables/broad_vs_family_specific_architecture_plan.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/fig31_data_quality.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t40_inspectability.tsv;RESEARC
+T-A2b-budget-matched-ladder	governed_docs	0	13	0	0	
+T-A2b-budget-matched-ladder	governed_analysis	2	19	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/Z1_association_resource_tiers.tsv
+T-A2b-budget-matched-ladder	idea_stage	0	9	0	0	
+T-A2b-budget-matched-ladder	references	0	7	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/references/rt0_rt7/RESOURCE_REGISTER.tsv
+T-A2b-budget-matched-ladder	v7_analysis_workbench	1	8	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/Z1_association_resource_tiers.tsv
+T-A2b-budget-matched-ladder	rdb_data_derived	0	1	-1	0	
+T-A2b-budget-matched-ladder	wt_embeddings	10	88	13	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/COUNTERFACTUAL_TIER_SIZING.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/COUNTERFACTUAL_TIER_SIZING_C1.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_x2_rt_specificity_confirmation/tables/COUNTERFACTUAL_TIER_
+T-A2b-budget-matched-ladder	wt_spire_ncrna	1	17	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/dbchar_rt_ncrna_workbench/tables/Z1_association_resource_tiers.tsv
+T-A2b-budget-matched-ladder	wt_mestre_audit	1	16	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z1_association_resource_tiers.tsv
+T-A2b-budget-matched-ladder	wt_stage3c	7	49	6	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/Z1_association_resource_tiers.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/TRUTH_TABLE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/TIER_ASSIGNME
+T-A2b-budget-matched-ladder	wt_asset_audit	7	29	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/Z1_association_resource_tiers.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/TRUTH_TABLE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_desi
+T-I1-integrative-decomposition	governed_results	0	7	0	0	
+T-I1-integrative-decomposition	governed_docs	0	1	0	0	
+T-I1-integrative-decomposition	governed_analysis	0	4	0	0	
+T-I1-integrative-decomposition	idea_stage	0	3	0	0	
+T-I1-integrative-decomposition	wt_embeddings	0	8	0	0	
+T-I1-integrative-decomposition	wt_spire_ncrna	0	3	0	0	
+T-I1-integrative-decomposition	wt_mestre_audit	0	8	0	0	
+T-I1-integrative-decomposition	wt_stage3c	89	8	0	0	
+T-I1-integrative-decomposition	wt_asset_audit	0	1	0	0	
+T-A22-functional-contrast	governed_results	0	5	0	0	
+T-A22-functional-contrast	governed_docs	0	3	0	0	
+T-A22-functional-contrast	governed_analysis	0	4	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/PANEL_LEAKAGE_MAP.tsv
+T-A22-functional-contrast	idea_stage	0	4	0	0	
+T-A22-functional-contrast	v7_data_derived	0	1	0	0	
+T-A22-functional-contrast	wt_embeddings	0	10	0	0	
+T-A22-functional-contrast	wt_spire_ncrna	0	3	0	0	
+T-A22-functional-contrast	wt_mestre_audit	0	8	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/ASSET_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/mestre_audit/subaudits/rt07/rt07_assets.tsv
+T-A22-functional-contrast	wt_stage3c	0	8	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/prior_asset_audit/ASSET_REGISTER.tsv
+T-A22-functional-contrast	wt_asset_audit	0	5	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/prior_asset_audit/ASSET_REGISTER.tsv
+T-A23b-systematic-corpus	governed_results	1	46	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t22_cm_meta.tsv
+T-A23b-systematic-corpus	governed_docs	0	6	0	0	
+T-A23b-systematic-corpus	governed_analysis	0	9	0	0	
+T-A23b-systematic-corpus	idea_stage	0	9	0	0	
+T-A23b-systematic-corpus	references	0	8	0	0	
+T-A23b-systematic-corpus	v7_analysis_workbench	0	2	0	0	
+T-A23b-systematic-corpus	wt_embeddings	1	36	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t22_cm_meta.tsv
+T-A23b-systematic-corpus	wt_spire_ncrna	0	2	0	0	
+T-A23b-systematic-corpus	wt_mestre_audit	0	3	0	0	
+T-A23b-systematic-corpus	wt_stage3c	6	50	4	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/TRUTH_TABLE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/REPLICATE_GROUPS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/tables/D_region_y_length_v
+T-A23b-systematic-corpus	wt_asset_audit	0	21	3	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/TRUTH_TABLE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/STRUCTURE_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/REPLICATE_GROUPS.tsv
+T-A23c-source-data-retrieval	governed_results	6	131	40	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g6_tool_calls/tables/g6_tool_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g2b_rt_cds_recovery/tables/g2b_sequence_only_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g7b_stage1_extended_report/tables/t23_zero_call_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRO
+T-A23c-source-data-retrieval	governed_docs	0	12	0	0	
+T-A23c-source-data-retrieval	governed_analysis	0	15	6	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v
+T-A23c-source-data-retrieval	idea_stage	0	10	0	0	
+T-A23c-source-data-retrieval	references	2	8	0	0	
+T-A23c-source-data-retrieval	v7_data_derived	0	0	0	11	
+T-A23c-source-data-retrieval	v7_analysis_workbench	0	11	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt_ncrna_workbench/tables/A4_exact_rt_database_span.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/analysis/dbchar_rt
+T-A23c-source-data-retrieval	rdb_data_derived	0	0	-1	1	
+T-A23c-source-data-retrieval	wt_embeddings	6	133	40	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g6_tool_calls/tables/g6_tool_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g2b_rt_cds_recovery/tables/g2b_sequence_only_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g7b_stage1_extended_report/tables/t23_zero_call_by_database.tsv;RESEARCH-in-sleep-FINAL_RE
+T-A23c-source-data-retrieval	wt_spire_ncrna	0	27	9	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/ROUND2/tables/MEMBERS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/ROUND2/tables/RECON_23_PROVENANCE.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/tables/Z6_SET_MEMBERS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/ana
+T-A23c-source-data-retrieval	wt_mestre_audit	0	31	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-mestre-audit/analysis/dbchar_rt_ncrna_workbench/tables/A4_exact_rt_database_span.tsv;RESEARCH-in-sleep-FIN
+T-A23c-source-data-retrieval	wt_stage3c	0	19	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/dbchar_rt_ncrna_workbench/tables/A4_exact_rt_database_span.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJE
+T-A23c-source-data-retrieval	wt_asset_audit	0	12	5	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/A4_database_attribution.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/A2_redundancy_by_database.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/dbchar_rt_ncrna_workbench/tables/A4_exact_rt_database_span.tsv;RESEARCH-in-sleep-FINAL_
+T-A23e-block-level-recount	governed_results	0	11	0	0	
+T-A23e-block-level-recount	governed_docs	0	5	0	0	
+T-A23e-block-level-recount	governed_analysis	0	18	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/EXPERIMENTAL_RT_NCRNA_REGISTER.tsv
+T-A23e-block-level-recount	idea_stage	0	2	0	0	
+T-A23e-block-level-recount	v7_analysis_workbench	0	7	0	0	
+T-A23e-block-level-recount	wt_embeddings	0	36	0	0	
+T-A23e-block-level-recount	wt_spire_ncrna	0	7	0	0	
+T-A23e-block-level-recount	wt_mestre_audit	0	10	0	0	
+T-A23e-block-level-recount	wt_stage3c	0	14	0	0	
+T-A23e-block-level-recount	wt_asset_audit	0	8	0	0	
+T-GATE1-consumption-gate	governed_results	0	2	0	0	
+T-GATE1-consumption-gate	governed_docs	0	1	0	0	
+T-GATE1-consumption-gate	governed_analysis	0	4	0	0	
+T-GATE1-consumption-gate	idea_stage	0	2	0	0	
+T-GATE1-consumption-gate	wt_embeddings	0	2	0	0	
+T-GATE1-consumption-gate	wt_stage3c	0	2	0	0	
+T-AUDIT1-circular-control-sweep	governed_results	106	329	27	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g6_tool_calls/tables/c03_positive_controls.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g2b_rt_cds_recovery/tables/c03_positive_controls.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/results/dbchar_g2b_rt_cds_recovery/tables/g2b_independent_translation_check.tsv;RESEARCH-in-sleep-FINAL_RETRON_PRO
+T-AUDIT1-circular-control-sweep	governed_docs	1	41	0	0	
+T-AUDIT1-circular-control-sweep	governed_analysis	0	13	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/analysis/project_synthesis/OPEN_QUESTIONS.tsv
+T-AUDIT1-circular-control-sweep	idea_stage	2	22	0	0	
+T-AUDIT1-circular-control-sweep	v7_analysis_workbench	0	4	0	0	
+T-AUDIT1-circular-control-sweep	wt_embeddings	100	313	25	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g6_tool_calls/tables/c03_positive_controls.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g2b_rt_cds_recovery/tables/c03_positive_controls.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/dbchar_g2b_rt_cds_recovery/tables/g2b_independent_translation_check.tsv;RESEARCH-in-sleep-FINAL_RETRON_
+T-AUDIT1-circular-control-sweep	wt_spire_ncrna	4	33	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/figures/data/zfig2_set_outcomes.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-spire-ncrna/analysis/spire_ncrna_audit/Z6_DENOVO/tables/Z6_SET_OUTCOMES.tsv
+T-AUDIT1-circular-control-sweep	wt_mestre_audit	2	18	0	0	
+T-AUDIT1-circular-control-sweep	wt_stage3c	3	38	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3b_design/CONTROLS.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-stage3c/analysis/stage3c_architecture_integration/tables/D_controls.tsv
+T-AUDIT1-circular-control-sweep	wt_asset_audit	1	18	1	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-asset-audit/analysis/stage3b_design/CONTROLS.tsv
+T-HIA-human-input-audit	governed_results	0	21	0	0	
+T-HIA-human-input-audit	governed_docs	1	2	0	0	
+T-HIA-human-input-audit	governed_analysis	0	6	0	0	
+T-HIA-human-input-audit	wt_embeddings	0	21	0	0	
+T-HIA-human-input-audit	wt_stage3c	0	3	0	0	
+T-A3a-rule-and-e0-freeze	governed_results	10	65	0	0	
+T-A3a-rule-and-e0-freeze	governed_docs	1	18	0	0	
+T-A3a-rule-and-e0-freeze	governed_analysis	0	5	0	0	
+T-A3a-rule-and-e0-freeze	idea_stage	0	7	0	0	
+T-A3a-rule-and-e0-freeze	rdb_data_derived	0	2	-1	0	
+T-A3a-rule-and-e0-freeze	wt_embeddings	11	83	2	0	RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_g2a_split_selection/tables/g2_decision_table.tsv;RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/results/embed_g2a_split_selection/tables/g2_exact_leakage.tsv
+T-A3a-rule-and-e0-freeze	wt_spire_ncrna	5	33	0	0	
+T-A3a-rule-and-e0-freeze	wt_mestre_audit	1	18	0	0	
+T-A3a-rule-and-e0-freeze	wt_stage3c	1	45	0	0	
+T-A3a-rule-and-e0-freeze	wt_asset_audit	1	32	0	0	

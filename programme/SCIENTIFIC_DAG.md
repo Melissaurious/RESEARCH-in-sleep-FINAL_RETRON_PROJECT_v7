@@ -1,6 +1,7 @@
 # SCIENTIFIC DAG — the remaining programme, by dependency type
 
-**As of 2026-09-20.** Companion to `programme/ALL_DOWNSTREAM_TASKS.tsv` (**54 tasks**) and
+**As of 2026-09-20, revised after Execution Batch 02.** Companion to
+`programme/ALL_DOWNSTREAM_TASKS.tsv` (**59 tasks**) and
 `programme/PARALLEL_EXECUTION_PLAN.md` (what runs where, and when).
 
 > ⛔ **INDEPENDENTLY REVIEWED AND REJECTED, then corrected.** A fresh read-only Codex thread
@@ -14,6 +15,10 @@
 >   `T-A19` does exactly that. Corrected in §8.
 > - `T-AUDIT1`'s edge is **`SOFT_INTERPRETIVE`, not `CONTROL`.** It produces an inventory and
 >   nominates; it may not re-classify any task's outcome, so it blocks nothing.
+
+> ⚠️ **SUPERSEDED IN PART — read §10 first.** Execution Batch 02 and this session's reconciliation
+> changed four nodes and added five. The structure below still holds; the **node states do not**.
+> `programme/RECONCILIATION_2026-09-20.md` carries the evidence.
 
 > **This document is the dependency structure. It is deliberately written before the compute
 > schedule**, because a schedule built from stage numbers rather than from dependencies is how a
@@ -282,3 +287,133 @@ operator authorisation per launch** for those. Twenty-one tasks moved to
 Only **one** of the four original `HARD:T-P1` edges survives review as genuinely hard:
 **`T-A0b`**, and only if the partition is demonstrably not nested in components — which is the
 question `T-P1` exists to answer.
+
+
+---
+
+## 10 · DELTA — Execution Batch 02 and the reconciliation pass
+
+**Added 2026-09-20 by the reconciliation session.** §§0–9 above are the reviewed structure and are
+kept verbatim. This section records every node whose **state** changed, and the five nodes added.
+**No edge type in §§0–9 is revised.**
+
+### 10.1 · The trunk is still empty, and that is the single most consequential fact
+
+§1 names `T-P1-relatedness-backbone` as *the only real trunk*. **`T-P1` is `VOID`** — its controls
+never gated, two never ran, and the controls contaminated the primary input. Its Ibex job
+`52124966` COMPLETED with exit `0:0`; **the job ran and the task is void**, and those are different
+things.
+
+```
+   Stage 1 corpus ──▶ T-P1b-identity-partition   [READY_WAITING_OPERATOR, no launcher]
+                            │
+                            └── still the shared prerequisite for T-A0b, T-F3, T-N2
+```
+
+`ERRATUM_02` changed the *reason* `T-A0b` is blocked, and the change matters:
+
+- **The old reason was a tautology** — "the 50 % grouping nests inside the component unit".
+  `ERRATUM_01` asserted it and was **itself false**.
+- **The measured fact:** a full-catalogue 50 % clustering **does** cross components — 134 clusters,
+  largest spanning 12, 8,941 paired RTs — while the old frozen groups span **0 of 2,455**.
+- **The live blocker** is therefore *multi-membership*: components hold multiple RT lineages, so a
+  lineage-blocked interval needs a **multiway / incidence-graph design**, not a nested one.
+
+`T-A0b` is `HELD_SCIENTIFIC_DEPENDENCY` for a real reason now, not a false one.
+
+### 10.2 · Node state changes
+
+| node | was | is | why |
+|---|---|---|---|
+| `T-C1-rt-core-extraction` | `READY_WAITING_OPERATOR` | **`SUPERSEDED`** | REJECT `01a0bdfa`; replaced by `T-C1b` |
+| `T-C1b-pf00078-envelope-census` | — | **`DONE_AWAITING_REVIEW`** | frozen at `c77adb9`, 4/4 controls PASS |
+| `T-P1-relatedness-backbone` | `READY_WAITING_OPERATOR` | **`VOID_SUPERSEDED`** | controls never gated; `ERRATUM_01` false |
+| `T-P1b-identity-partition` | — | **`READY_WAITING_OPERATOR`** | the trunk, rebuilt; no launcher yet |
+| `T-N1-neighbourhood-extraction-qa` | `READY_WAITING_OPERATOR` | **`SUPERSEDED`** | REJECT; population misdeclared |
+| `T-N1b` / `T-N1c` | — | **`VOID`** / **`VOID_ESCALATED`** | each stopped by its own blocking control |
+| `T-N1d-neighbourhood-census` | — | **`BLOCKED_OPERATOR_CONTROL_DESIGN`** | see §10.3 |
+| `T-F1-motif-scan` | `LAUNCH_NOW` | **`DONE_AWAITING_REVIEW`** | executed without a freeze; unreviewed |
+| `T-M1`, `T-S1` | `LAUNCH_NOW` | **`DONE_CHANGES_PENDING`** | `ACCEPT_WITH_CHANGES`, changes unapplied |
+| `T-REG3-content-hash-pass` | `LAUNCH_NOW` | **`DONE_AWAITING_REVIEW`** | executed without a freeze; unreviewed |
+| `T-A23c-source-data-retrieval` | `READY_WAITING_OPERATOR` | **`DONE_ERRATUM_REQUIRED`** | executed; source identity unverified (`ERRATUM_01`) |
+| `T-A23d-primary-verification` | `READY_WAITING_OPERATOR` | **`READY_FOR_OPERATOR_REVIEW`** | scope redefined; absorbs the A23c erratum |
+| `T-S2-foldseek-calibration` | `READY_WAITING_OPERATOR` (resource) | **`READY_FOR_OPERATOR_REVIEW`** | **foldseek is installed and registered**; the block was false |
+
+### 10.3 · A new edge type is needed, and `T-N1d` is why
+
+`T-N1` has now had **three** null designs, each failing differently:
+
+| version | null | result | diagnosis |
+|---|---|---|---|
+| `T-N1` | shift the RT CDS against **its own** coordinates by 500 kb | `0.000000` "PASS" | ⛔ structurally forced to zero; **could never fail** |
+| `T-N1b` | permute anchors **across records** | **0.070506** vs 0.05 | sound control, **ill-posed construction** — coordinates are contig-global and records share contigs |
+| `T-N1c` | same-length decoy inside the record's **own** window | **0.284691** vs 0.25 | ceiling estimated from **medians**; the rate is driven by the short-window tail |
+
+⛔ **The repeated failure is evidence about the criterion, not about the locator.** Three blocking
+controls passed decisively in `T-N1c`: discrimination `1.000 − 0.285 = 0.715` against a floor of
+0.50, anchor uniqueness `3,028,196 / 3,028,196`, reproduction `31,504 / 31,504` against a landed
+column. **The locator works and position matters.**
+
+`T-N1d` therefore carries a `CONTROL_DEPENDENCY` on an **operator control-design ruling**, which is
+a dependency on a *decision*, not on an upstream task. Its launcher must separate:
+
+| implementation / blocking controls | scientific / descriptive outputs |
+|---|---|
+| exact known-coordinate fixtures | frequency of tight/short windows |
+| strand fixtures | edge clipping and its denominator |
+| off-by-one fixtures | neighbour-count distributions |
+| contig-edge fixtures | family-specific architecture |
+| deliberately incorrect-anchor fixtures | **the observed ~0.285 null/population rate, reported not gated** |
+| reproduction of landed examples | |
+
+⚠️ **Population-derived architecture must not be forced to satisfy an arbitrary ceiling in order to
+validate the locator**, and **no new pass threshold may be derived from the already-observed data
+and then treated as preregistered.** If a quantitative blocking threshold is still scientifically
+necessary, it must be calibrated **independently**, before the run.
+
+### 10.4 · §8's cycle warning gains a second instance, in a new substrate
+
+§8 records one place a cycle threatens — `CM-CALLS` scored against `CM-CALLS`. Batch 02 produced a
+structurally identical failure in **bibliography**: `T-A23c` resolved four references by keyword
+match and its controls could not tell a **wrong** match from **no** match.
+
+> **Generalised, and this is the rule to carry forward:** a control that establishes only that the
+> instrument *returned something* cannot establish that it returned *the right thing*. It holds for
+> a covariance model scored on its own calls, for a search that matches a title, and for the three
+> null constructions above.
+
+### 10.5 · §6 closed branches — unchanged, and none reopened
+
+`S09`, `S07`, the palm/fingers/thumb partition, the 11-clade placement and neighbourhood-as-detector
+all stand exactly as §6 records them, with their reopening conditions intact. **Nothing in Batch 02
+or this reconciliation touches any of them.** `T-N1d` is *description* of neighbourhood geometry and
+is explicitly **not** a reopening of neighbourhood-as-detector, which remains a settled negative
+(retrons 27th of 41 families, inside a predeclared dead band).
+
+### 10.6 · Recount
+
+| readiness | n |
+|---|---|
+| `READY_WAITING_OPERATOR` | 26 |
+| `BLOCKED_DEPENDENCY` | 13 |
+| `LAUNCH_NOW` | 4 |
+| `DONE_AWAITING_REVIEW` | 3 |
+| `SUPERSEDED` | 2 |
+| `READY_FOR_OPERATOR_REVIEW` | 2 |
+| `DONE_CHANGES_PENDING` | 2 |
+| `CLOSED` | 2 |
+| `VOID` / `VOID_SUPERSEDED` / `VOID_ESCALATED` / `VOID_REVIEW_FAILED` | 4 |
+| **total** | **59** |
+
+| population state | n |
+|---|---|
+| `UNEXPOSED_CONFIRMATORY` | 22 |
+| `NO_POPULATION_SPEND` | 19 |
+| **`INSPECTED_FOR_ENDPOINT`** | **9** |
+| `EXHAUSTED` | 5 |
+| `EXPLORATORY_POPULATION` | 4 |
+
+**`INSPECTED_FOR_ENDPOINT` is new**, and it is the operator ruling of 2026-09-20 §1 arriving in the
+register: nine task-rows now carry an exposure scoped to *one analysis family*, not to a whole
+dataset. Four moved out of `UNEXPOSED_CONFIRMATORY` because their endpoint was spent — including by
+runs that were rejected or void.
