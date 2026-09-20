@@ -1,0 +1,12 @@
+{
+  "blocking_failures": [],
+  "elapsed_s": 5.3,
+  "input_sha256": {
+    "buffington": "d68366970378c05b5af9b00be886d76224a196a29b77171303f9353457cf4e62",
+    "rt_exact_v1.faa": "bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655",
+    "rt_ncrna_exact_pairs_v1.parquet": "b89df6803dcd6346c93e39e62f1d590e22c96662d63c7c148952cc6641523dae"
+  },
+  "mode": "primary",
+  "script_version": "1.0.0",
+  "seed": 20260920
+}

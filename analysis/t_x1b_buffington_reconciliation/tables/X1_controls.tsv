@@ -1,0 +1,15 @@
+control_id	type	blocking	expectation	observed	state	detail
+X1_GATE_sha256_buffington	positive	YES	d68366970378c05b5af9b00be886d76224a196a29b77171303f9353457cf4e62	d68366970378c05b5af9b00be886d76224a196a29b77171303f9353457cf4e62	PASS	inputs are the ones this task was frozen against
+X1_GATE_sha256_rt_exact_v1.faa	positive	YES	bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655	bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655	PASS	inputs are the ones this task was frozen against
+X1_GATE_sha256_rt_ncrna_exact_pairs_v1.parquet	positive	YES	b89df6803dcd6346c93e39e62f1d590e22c96662d63c7c148952cc6641523dae	b89df6803dcd6346c93e39e62f1d590e22c96662d63c7c148952cc6641523dae	PASS	inputs are the ones this task was frozen against
+X1_GATE_buffington_rows	positive	YES	105 data rows	105	PASS	the published table is complete
+X1_GATE_catalogue_counts	positive	YES	501561 RT and 16458 ncRNA	501561 / 16458	PASS	populations are read-only; this is also the post-run unchanged check
+X1_POS_known_rt_found	positive	YES	an id taken from rt_exact_v1.faa resolves as present	found	PASS	the matcher can find a known-present sequence
+X1_NEG_shuffled_absent	negative	YES	a composition-matched shuffle of a catalogue sequence is NOT present	absent	PASS	the matcher is not matching everything
+X1_POS_stop_strip_separation	positive	YES	a catalogue sequence with an appended '*' MISSES on the raw hash and HITS on the stop-stripped hash	raw_hit=False stripped_hit=True	PASS	104 of 105 published RTs end in '*'; this proves the two hashes are reported separately for a reason and that neither silently substitutes for the other
+X1_POS_orientation_probe	positive	YES	a catalogue ncRNA matches forward; its reverse complement is reported on its own axis	forward=True revcomp_also_present=False	PASS	the project ncRNA catalogue is ORIENTED and the published msr-msd may be either strand, so both are tested and which one matched is landed
+X1b_GATE_family_join_retron_count	positive	YES	family_label == 'Retron' yields exactly 78287	78287	PASS	⛔ THE GATE WHOSE ABSENCE VOIDED T-X1. A wrong column now stops the task BEFORE the primary, instead of surfacing as 0 afterwards
+X1b_GATE_family_vocabulary_size	positive	YES	family_label holds exactly 42 distinct values	42	PASS	recorded, not reconciled: the registry name RT-FAMILY-LABELS-613 does NOT describe this vocabulary and the origin of 613 is unresolved
+X1_GATE_no_untraced_active_claim	positive	YES	the gate REFUSES a row marked EXPERIMENTAL_SOURCE_TRACED with an empty source; it accepts one with a source and one marked UNKNOWN	refused=1 of 3 fixture rows	PASS	machine-enforced: an active claim without an identifiable experimental table/figure/source cannot be written
+X1_POS_populations_unchanged	positive	YES	after the run the populations still count (501561, 16458, 30924, 78287)	(501561, 16458, 30924, 78287)	PASS	T-X1 MERGES NOTHING; every population is opened read-only
+X1_GATE_no_untraced_active_claim_primary	positive	YES	no landed row is EXPERIMENTAL_SOURCE_TRACED without a source	violations=0	PASS	Vap1/Psp1/Vro1/Cko1/Efe1/Mva1/Eco1 are recorded NOMINATED, never active

@@ -1,0 +1,10 @@
+quantity	value	unit	denominator
+EXTERNAL_NEW	49	published systems	105
+PAIR_EXACT_PRESENT	5	published systems	105
+RT_PRESENT_NCRNA_DIFFERS	51	published systems	105
+rt_present_by_stopstripped_hash	56	published systems	105
+rt_present_by_RAW_hash	0	published systems	105
+msr_present_forward	11	published systems	105
+msr_present_revcomp	0	published systems	105
+operator_nominated_untraced	6	published systems	105
+experimental_source_traced	0	published systems	105
