@@ -95,3 +95,78 @@ and it is **not** evidence that Eco1 is inactive or missing from our resource. I
    recording six nominations as untraced and Eco1 as external — or should Axis B be deferred
    entirely to a source-tracing task?
 4. Freeze and run?
+
+## 7 · Implementation summary
+
+`x1_reconcile.py`, ~380 lines, two modes (`--mode controls` / `--mode primary`).
+
+| step | what it does |
+|---|---|
+| gates | sha256 of the Buffington CSV, `rt_exact_v1.faa` and the pair parquet; 105 rows; 501,561 / 16,458 counts |
+| **Axis A** | per published row: `sha256(UPPER(RT as published))` **and** `sha256(UPPER(RT minus trailing '*'))`; `sha256(UPPER(native msr-msd))` **and** `sha256(UPPER(revcomp(native msr-msd)))`; membership tested against the catalogue id sets and the exact-pair set |
+| classification | `PAIR_EXACT_PRESENT` · `RT_AND_NCRNA_PRESENT_PAIR_ABSENT` · `RT_PRESENT_NCRNA_DIFFERS` · `EXTERNAL_NEW` |
+| **Axis B** | exact-name resolution of the seven nominations; everything else `EXPERIMENTAL_STATUS_UNKNOWN`; `experimental_source` is written **empty**, because this catalogue supplies none |
+| post-run | re-counts every population to prove nothing was written |
+
+**Hash convention** is the project's own, verified by recomputation: the FASTA ids in
+`rt_exact_v1.faa` and `rt_ncrna_oriented_v1.fna` **are** `sha256(UPPERCASE sequence)`.
+
+### 7a · Raw vs terminal-stop-stripped RT matching
+
+**104 of 105** published RTs end in `*`; the project catalogue has **zero**. Both hashes are
+computed, **both are landed as separate columns**, and **both appear as separate summary rows**
+(`rt_present_by_RAW_hash`, `rt_present_by_stopstripped_hash`). Neither silently substitutes for the
+other. `X1_POS_stop_strip_separation` proves the distinction is live: `seq+"*"` **misses** the raw
+hash and **hits** the stripped one.
+
+### 7b · Native msr-msd orientation matching
+
+The project ncRNA catalogue is stored **uppercase and oriented**; the published msr-msd is
+**lowercase and may be on either strand**. Both `sha256(UPPER(seq))` and
+`sha256(UPPER(revcomp(seq)))` are tested, and **which one matched is landed** in `msr_orientation`
+∈ `FORWARD` · `REVCOMP` · `NO_MATCH`.
+
+### 7c · ⛔ The engineered construct is handled separately
+
+| published column | treatment |
+|---|---|
+| `Putative native msr-msd` | **the only sequence ever matched** |
+| `msr-msd with a 81nt RFP repair template (…)` | ⛔ **never matched, never pooled, never counted toward coverage** |
+
+The difference between the two is an **`ENGINEERED_DELTA`** and is out of scope for X1 entirely —
+it belongs to `T-R2`, and only after the construct design is verified.
+
+## 8 · Expected outputs
+
+| file | rows | contents |
+|---|---|---|
+| `X1_row_classification.tsv` | **105** | both axes: overlap class, `rt_raw_hash_hit`, `rt_stopstripped_hash_hit`, `rt_is_retron_family`, `msr_forward_hit`, `msr_revcomp_hit`, `msr_orientation`, `pair_exact_present`, `experimental_status`, `experimental_source`, `operator_nominated_as` |
+| `X1_hashes.tsv` | **105** | `rt_raw_sha256`, `rt_stopstripped_sha256`, `msr_forward_sha256`, `msr_revcomp_sha256`, lengths |
+| `X1_operator_nominations.tsv` | **7** | how each of Vap1/Psp1/Vro1/Cko1/Efe1/Mva1/**Eco1** resolved, **including the one that resolves to nothing** |
+| `X1_summary.tsv` | ~12 | class counts; RT present by raw **vs** stop-stripped **separately**; msr forward vs revcomp; nominated vs traced |
+| `X1_controls.tsv` | 12 | 10 pre-run + 2 post-run |
+
+## 9 · STOP conditions
+
+| condition | action |
+|---|---|
+| any input sha256 mismatch | **STOP** before matching |
+| not exactly 105 Buffington rows | **STOP** |
+| catalogue counts ≠ 501,561 / 16,458 | **STOP** |
+| any blocking control fails | **STOP**, `TASK_STATE: VOID`, no primary table, escalate, **new task ID** |
+| a population count changes after the run | **STOP** — something was written that should not have been |
+| a row would be `EXPERIMENTAL_SOURCE_TRACED` with an empty source | **STOP** — the gate refuses it |
+
+## 10 · ⛔ Explicit confirmation: experimental activity is NOT inferred
+
+**Supplementary Table 1 has 8 columns and none is a screening or activity column** — verified on
+ingestion, listed in `PROVENANCE.md`. Membership is a **bioinformatic identification**.
+
+- `experimental_source` is written **empty for all 105 rows**, because the catalogue supplies none.
+- `X1_GATE_no_untraced_active_claim` **refuses** any row marked `EXPERIMENTAL_SOURCE_TRACED` with an
+  empty source — blocking, fixture-tested, refusing 1 of 3 fixture rows.
+- **Vap1 · Psp1 · Vro1 · Cko1 · Efe1 · Mva1** → `OPERATOR_NOMINATED_UNTRACED`. Resolved by **exact**
+  name match to NRT-36, 39, 42, 45, 49, 83. **None is labelled active.**
+- **Eco1** → ⛔ **`NOT_IN_THIS_CATALOGUE`**, landed as its own row. It stays **external to the 105**
+  rather than being forced in. A substring match would have wrongly attached it to Eco17 — it
+  matched **ten** rows, none of them Eco1.
