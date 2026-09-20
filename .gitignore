@@ -79,3 +79,8 @@ results/rt07_g4a_repaired/work/*
 
 # Virtualenvs (the dbchar workbench carries a 72 MB .venv).
 **/.venv/
+
+# Autonomous wave runtime state (regenerated; not scientific source)
+programme/waves/*/prepare_logs/
+programme/waves/*/runs/
+programme/waves/*/acceptance/

@@ -80,6 +80,67 @@ class ArisAcceptanceBoundaryTests(unittest.TestCase):
         self.assertIn("'--verdict-id',verdict_id,'--reviewer',reviewer", src)
 
 
+class PrepareResultShapeTests(unittest.TestCase):
+    """Regression for BLOCKED_PREPARE: 'str' object has no attribute 'get'.
+
+    T-A23d wrote self_checks as a DICT. Iterating a dict yields its KEYS, so the old
+    `x.get('state')` ran against a string and the prepared task was wrongly refused.
+    """
+
+    #: the exact shape T-A23d-primary-verification emitted
+    A23D = {
+        "schema_version": 1,
+        "status": "READY_TO_FREEZE",
+        "task_id": "T-A23d-primary-verification",
+        "command": {"cwd": "/w", "argv": ["python", "a23d_resolve.py", "--outdir", "out"],
+                    "network_egress_required": ["www.ebi.ac.uk"]},
+        "inputs": [],
+        "backend": "workstation",
+        "resources": {"cpu_threads": 1, "memory_gb": 2, "io_tokens": 1},
+        "runtime": {"max_runtime_seconds": 3600, "resume_allowed": False, "stop_note": ""},
+        "self_checks": {
+            "harness": "selfcheck_a23d.py", "passed": 24, "failed": 0, "exit_code": 0,
+            "checks": [{"id": "SC01", "state": "PASS", "detail": "7 cases"},
+                       {"id": "SC02", "state": "PASS", "detail": "regression"}],
+        },
+    }
+
+    def test_dict_self_checks_no_longer_raises_str_has_no_get(self):
+        d = wave_runner.normalise_prepare_result(json.loads(json.dumps(self.A23D)))
+        self.assertTrue(wave_runner.self_checks_all_pass(d["self_checks"]))
+
+    def test_nested_argv_and_backend_alias_are_normalised(self):
+        d = wave_runner.normalise_prepare_result(json.loads(json.dumps(self.A23D)))
+        self.assertEqual(d["command"][0], "python")
+        self.assertEqual(d["backend"], "local")
+        # and the result must satisfy the execution-spec contract downstream
+        self.assertIsInstance(d["command"], list)
+
+    def test_a_failing_self_check_is_still_refused(self):
+        raw = json.loads(json.dumps(self.A23D))
+        raw["self_checks"]["checks"][1]["state"] = "FAIL"
+        d = wave_runner.normalise_prepare_result(raw)
+        self.assertFalse(wave_runner.self_checks_all_pass(d["self_checks"]))
+
+    def test_declared_failure_count_overrides_passing_rows(self):
+        raw = json.loads(json.dumps(self.A23D))
+        raw["self_checks"]["failed"] = 2
+        d = wave_runner.normalise_prepare_result(raw)
+        self.assertFalse(wave_runner.self_checks_all_pass(d["self_checks"]))
+
+    def test_bare_string_checks_are_not_treated_as_passes(self):
+        raw = json.loads(json.dumps(self.A23D))
+        raw["self_checks"] = ["ran the fixtures", "looked fine"]
+        d = wave_runner.normalise_prepare_result(raw)
+        self.assertFalse(wave_runner.self_checks_all_pass(d["self_checks"]))
+
+    def test_unknown_backend_is_refused(self):
+        raw = json.loads(json.dumps(self.A23D))
+        raw["backend"] = "someone_elses_gpu"
+        with self.assertRaises(ValueError):
+            wave_runner.normalise_prepare_result(raw)
+
+
 class TypeAAcceptanceTests(unittest.TestCase):
     """A preregistered Type-A computation must self-clear on execution validity alone."""
 

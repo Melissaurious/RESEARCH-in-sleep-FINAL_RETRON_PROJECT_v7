@@ -1,5 +1,5 @@
 task_id	state	detail	freeze_commit	worker_pid	analysis_pid	slurm_job_id	started_at	finished_at
-T-A23d-primary-verification	PENDING							
+T-A23d-primary-verification	BLOCKED_PREPARE	'str' object has no attribute 'get'						
 T-D1-annotation-disagreement	PENDING							
 T-D2-taxonomic-distribution	PENDING							
 T-M1b-embedding-cache-reverification	WAIT_RESOURCE	WAIT_RESOURCE:need=8:available=1						

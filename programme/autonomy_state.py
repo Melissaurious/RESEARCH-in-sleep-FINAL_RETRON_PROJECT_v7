@@ -11,6 +11,7 @@ import hashlib
 import json
 import os
 import re
+import shlex
 import subprocess
 import tempfile
 from dataclasses import dataclass
@@ -37,6 +38,81 @@ TERMINAL = TERMINAL_VALID | TERMINAL_EXECUTOR | TERMINAL_INVALID
 SCIENTIFIC_OUTCOMES = {
     "SUPPORTS_H1", "SUPPORTS_H0", "FALSIFIED", "BOUND", "DESCRIPTIVE", "NOT_APPLICABLE"
 }
+
+
+_BACKEND_ALIASES = {
+    "workstation": "local", "local": "local", "borg": "local", "laptop": "local",
+    "ibex": "ibex", "slurm": "ibex", "cluster": "ibex",
+}
+
+
+def normalise_prepare_result(d: dict) -> dict:
+    """Accept the PREPARE_RESULT shapes a preparing agent actually writes.
+
+    The contract asks for `command` as an argv list, `self_checks` as a list of
+    {state: PASS}, and `backend` in {local, ibex}.  A preparing agent legitimately
+    writes richer, equally unambiguous shapes -- `command` as {cwd, argv, ...},
+    `self_checks` as {checks: [...], passed, failed, exit_code}, and `backend` as
+    "workstation".  Rejecting those is a PARSER defect, not a scientific finding:
+    iterating a dict yields its KEYS, so `x.get('state')` raised
+    "'str' object has no attribute 'get'" and the task was wrongly BLOCKED_PREPARE.
+
+    This normalises shape only.  It never invents a passing self-check, and it never
+    relaxes what counts as a pass.
+    """
+    out = dict(d)
+
+    cmd = out.get("command")
+    if isinstance(cmd, dict):
+        cmd = cmd.get("argv")
+    if isinstance(cmd, str):
+        cmd = shlex.split(cmd)
+    if not isinstance(cmd, list) or not cmd or not all(isinstance(x, str) for x in cmd):
+        raise ValueError("PREPARE_RESULT.command must be an argv list, or a dict carrying one")
+    out["command"] = cmd
+
+    backend = str(out.get("backend", "")).strip().lower()
+    if backend not in _BACKEND_ALIASES:
+        raise ValueError(f"PREPARE_RESULT.backend={backend!r} is not a known backend")
+    out["backend"] = _BACKEND_ALIASES[backend]
+
+    out["self_checks"] = _normalise_self_checks(out.get("self_checks"))
+    return out
+
+
+def _normalise_self_checks(sc) -> list[dict]:
+    """Flatten a self-check block to [{id, state}], failing closed on anything opaque."""
+    if sc is None:
+        return []
+    if isinstance(sc, dict):
+        items = sc.get("checks")
+        if not isinstance(items, list):
+            items = []
+        rows = _normalise_self_checks(items)
+        # Honour explicit counters when the block carries them: they must agree.
+        failed, code = sc.get("failed"), sc.get("exit_code")
+        if isinstance(failed, int) and failed > 0:
+            rows.append({"id": "declared_failed_count", "state": f"FAIL({failed})"})
+        if isinstance(code, int) and code != 0:
+            rows.append({"id": "declared_exit_code", "state": f"FAIL({code})"})
+        if not rows and not isinstance(failed, int):
+            raise ValueError("PREPARE_RESULT.self_checks carries no checks and no failed count")
+        return rows
+    if not isinstance(sc, list):
+        raise ValueError(f"PREPARE_RESULT.self_checks has unusable type {type(sc).__name__}")
+    rows: list[dict] = []
+    for x in sc:
+        if isinstance(x, dict):
+            state = x.get("state") or x.get("status") or x.get("result") or ""
+            rows.append({"id": str(x.get("id") or x.get("name") or "?"), "state": str(state).upper()})
+        else:
+            # A bare string names a check but asserts no outcome -- never treat it as a pass.
+            rows.append({"id": str(x), "state": "UNKNOWN"})
+    return rows
+
+
+def self_checks_all_pass(checks: list[dict]) -> bool:
+    return bool(checks) and all(c.get("state") == "PASS" for c in checks)
 
 
 def _controls_tables(out: Path) -> list[Path]:

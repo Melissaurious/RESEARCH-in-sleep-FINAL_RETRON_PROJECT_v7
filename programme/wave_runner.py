@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse, csv, fcntl, hashlib, json, os, shlex, subprocess, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
-from autonomy_state import TERMINAL, ScheduleTask, acceptance_verdict, atomic_write, choose_launchable, executor_terminal_state, load_execution_spec, parse_front_matter, read_tsv, sha256_file, upsert_tsv, validate_type_a_execution, write_tsv
+from autonomy_state import TERMINAL, ScheduleTask, acceptance_verdict, atomic_write, choose_launchable, executor_terminal_state, load_execution_spec, normalise_prepare_result, parse_front_matter, read_tsv, self_checks_all_pass, sha256_file, upsert_tsv, validate_type_a_execution, write_tsv
 
 SYN=Path(__file__).resolve().parents[1]; P=SYN/'programme'; BOARD=P/'TASK_BOARD.tsv'; LEDGER=P/'EXECUTION_LEDGER.tsv'; EXEC=P/'executions'; WORKER=P/'task_worker.py'; LIMITS=P/'RESOURCE_LIMITS.tsv'
 LEDGER_FIELDS=['task_id','question_short','freeze_commit','execution_commit','state','population','endpoint','backend','primary_output','task_report','interpretation_ceiling','started_at','finished_at']
@@ -130,7 +130,11 @@ def prepare(tid,row,wt):
     if p.returncode: raise RuntimeError(f'prepare rc={p.returncode}; see {out} {err}')
     rp=wt/'programme'/'tasks'/tid/'PREPARE_RESULT.json'; d=json.loads(rp.read_text())
     if d.get('status')=='REVIEW_REQUIRED': raise ReviewRequired(d.get('unresolved_decision','unspecified'))
-    if d.get('status')!='READY_TO_FREEZE' or any(x.get('state')!='PASS' for x in d.get('self_checks',[])): raise RuntimeError('PREPARE_RESULT not ready')
+    if d.get('status')!='READY_TO_FREEZE': raise RuntimeError(f"PREPARE_RESULT status={d.get('status')!r}, expected READY_TO_FREEZE")
+    d=normalise_prepare_result(d)
+    if not self_checks_all_pass(d['self_checks']):
+        bad=[c for c in d['self_checks'] if c.get('state')!='PASS']
+        raise RuntimeError(f"PREPARE_RESULT self-checks not all PASS: {bad[:5]}")
     fm=parse_front_matter(wt/'programme'/'tasks'/tid/'TASK_LAUNCHER.md')
     if fm.get('base_commit')!=base or fm.get('frozen','').lower()!='true' or fm.get('state')!='AUTHORIZED': raise RuntimeError('prepared launcher not correctly bound/frozen')
     od=wt/fm['output_directory']
