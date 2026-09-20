@@ -1,6 +1,7 @@
 ---
 task_id: T-A5b2-ncrna-architecture
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S08
 title: Infer ncRNA coordinate architecture from the experimental anchors
 state: HELD

@@ -1,9 +1,10 @@
 ---
 task_id: T-A5b1-rtdna-anchors
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S08
 title: Experimental RT-DNA coordinate anchors on cognate ncRNAs
-state: AUTHORIZED
+state: AWAITING_SPECIFICATION
 autonomy_tier: A
 compute_class: CPU_SMALL
 worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A5b1-rtdna-anchors
@@ -19,6 +20,8 @@ claim_ids_touched: []
 # T-A5b1 · Experimental RT-DNA coordinate anchors on cognate ncRNAs
 
 **Supersedes the withdrawn `T-A5b`, which conflated two questions and contained an arithmetic error.**
+
+> ⚠️ **AWAITING_SPECIFICATION: the minimum unambiguous-anchor floor is referenced but not stated. Declare it before execution**
 
 ## Question
 Where does each experimentally determined RT-DNA sequence map onto its cognate ncRNA?

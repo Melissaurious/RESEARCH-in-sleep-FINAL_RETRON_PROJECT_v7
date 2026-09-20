@@ -1,6 +1,6 @@
 # LAUNCHER REVIEW PACKET
 
-**For an independent adversarial reviewer.** Everything needed to stress-test the eight task
+**For an independent adversarial reviewer.** Everything needed to stress-test the nine task
 launchers is in this one file. Nothing here has been executed.
 
 ## Your task
@@ -23,7 +23,7 @@ Return a verdict per launcher: ACCEPT / ACCEPT_WITH_CHANGES / REJECT, with the s
 ## Context you need
 
 The review these launchers derive from is at
-`review-stage/INDEPENDENT_SCIENTIFIC_REVIEW_2026-09-20.md` (18 sections). Five of its conclusions
+`review-stage/INDEPENDENT_SCIENTIFIC_REVIEW_2026-09-20.md` (19 sections). Five of its conclusions
 were reversed during the review by discovering prior work outside the declared project, so treat any
 "this has never been done" claim in a launcher with suspicion and say so if you see one.
 
@@ -373,7 +373,8 @@ Everything else is a **diagnostic**, reported and never blocking.
 
 ---
 task_id: T-A0-lineage-variance
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S10
 title: Lineage-clustered variance for the X2 decomposition
 state: AUTHORIZED
@@ -484,10 +485,11 @@ stage synthesis, and the operator has been asked to pre-commit to that verdict.
 
 ---
 task_id: T-A16-reciprocal-frame
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S02
 title: Reciprocal family-frame analysis of RT core content
-state: AUTHORIZED
+state: AWAITING_SPECIFICATION
 autonomy_tier: A
 compute_class: CPU_SMALL
 worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A16-reciprocal-frame
@@ -500,6 +502,8 @@ claim_ids_touched: ["C-04", "C-09"]
 ---
 
 # T-A16 · Reciprocal family-frame analysis of RT core content
+
+> ⚠️ **AWAITING_SPECIFICATION: name the two positive-control families and their evidence source; name the negative profile and build it by the same procedure; freeze a numerical asymmetry statistic and threshold before execution**
 
 ## Question
 Is the low retron mapping fraction a property of retron domain content, or of the group-II-seeded
@@ -571,7 +575,8 @@ Where a retron-discriminative signal is. That is T-A18, and it depends on this r
 
 ---
 task_id: T-A23-crosspair-curation
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S12
 title: Literature curation of measured cross-pair outcomes
 state: AUTHORIZED
@@ -658,7 +663,8 @@ treat a cognate failure as an orthogonality result.
 
 ---
 task_id: T-A2-ladder-population
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S10
 title: Counterfactual ladder on a fixed common population
 state: AUTHORIZED
@@ -740,7 +746,8 @@ Whether pair-level discrimination exists. It describes the shape of an existing 
 
 ---
 task_id: T-A3a-rule-and-e0-freeze
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S00
 title: Freeze the confirmatory rule and the exposure set E0
 state: AWAITING_ADOPTION
@@ -847,10 +854,11 @@ executes.
 
 ---
 task_id: T-A5b1-rtdna-anchors
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S08
 title: Experimental RT-DNA coordinate anchors on cognate ncRNAs
-state: AUTHORIZED
+state: AWAITING_SPECIFICATION
 autonomy_tier: A
 compute_class: CPU_SMALL
 worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A5b1-rtdna-anchors
@@ -866,6 +874,8 @@ claim_ids_touched: []
 # T-A5b1 · Experimental RT-DNA coordinate anchors on cognate ncRNAs
 
 **Supersedes the withdrawn `T-A5b`, which conflated two questions and contained an arithmetic error.**
+
+> ⚠️ **AWAITING_SPECIFICATION: the minimum unambiguous-anchor floor is referenced but not stated. Declare it before execution**
 
 ## Question
 Where does each experimentally determined RT-DNA sequence map onto its cognate ncRNA?
@@ -963,7 +973,8 @@ Anything about msr, about the full msd, about ncRNAs outside the anchor set, or 
 
 ---
 task_id: T-A5b2-ncrna-architecture
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S08
 title: Infer ncRNA coordinate architecture from the experimental anchors
 state: HELD
@@ -1039,7 +1050,8 @@ precondition is exactly the boundary this task would produce.
 
 ---
 task_id: T-LINT-prose-numbers
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S00
 title: Numeric-provenance CANDIDATE linter (triage, not a gate)
 state: AUTHORIZED
@@ -1128,7 +1140,8 @@ That a flagged number is wrong. Unresolved means unresolved. Adjudication is a s
 
 ---
 task_id: T-REG-asset-registration
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S00
 title: Register the discovered asset base
 state: AUTHORIZED

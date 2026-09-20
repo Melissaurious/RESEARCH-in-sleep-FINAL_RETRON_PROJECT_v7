@@ -1,0 +1,11 @@
+test_id	rule	fault_injected	expected_behaviour	result	detail
+FI-01	only AUTHORIZED tasks may launch	task state=HELD	refuse	PASS	launchable=False
+FI-02	worktree and launcher must match the governance base	governance base advanced to 0000000	refuse	PASS	failed checks: ['governance_base_current', 'worktree_descends_from_base']
+FI-03	inputs must match their preregistered hash	input hash altered	refuse	PASS	expected 000000000000 got 6ec84fc3052b
+FI-04	a task writes only under its declared output_directory	write to results/ and to an unrelated absolute path	refuse both	PASS	/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A0-lineage-variance/results/frozen_bundle/x.tsv is outside /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A0-lineage-variance/analysis/t_a0_lineage_variance/
+FI-05	a criterion may not change after preregistration	criterion rewritten post hoc	refuse	PASS	criterion changed after preregistration
+FI-06	a confirmatory population is consumed once	two tasks claim the same population	refuse the second	PASS	confirmatory population already consumed: ['PAIR-ELIG']
+FI-07	no downstream consumption from an invalid task	producer TASK_STATE=VOID	refuse	PASS	producer TASK_STATE=VOID is not PASS
+FI-08	a valid negative result is consumable	producer PASS + FALSIFIED	ALLOW	PASS	allowed: TASK_STATE=PASS, SCIENTIFIC_OUTCOME=FALSIFIED
+FI-08b	only declared CONSUMABLE_OUTPUTS may be read	artifact absent from the consumable list	refuse	PASS	tables/debug.tsv is not on the producer's CONSUMABLE_OUTPUTS list
+FI-09	preregistration must precede job submission	prereg timestamp set after the job started	refuse	PASS	preregistration POST-DATES job submission

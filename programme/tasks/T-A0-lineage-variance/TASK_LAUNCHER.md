@@ -1,6 +1,7 @@
 ---
 task_id: T-A0-lineage-variance
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S10
 title: Lineage-clustered variance for the X2 decomposition
 state: AUTHORIZED

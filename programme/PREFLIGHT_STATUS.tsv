@@ -1,0 +1,10 @@
+task_id	state	launchable	failed_checks
+T-REG-asset-registration	AUTHORIZED	True	
+T-LINT-prose-numbers	AUTHORIZED	True	
+T-A0-lineage-variance	AUTHORIZED	True	
+T-A2-ladder-population	AUTHORIZED	True	
+T-A23-crosspair-curation	AUTHORIZED	True	
+T-A16-reciprocal-frame	AWAITING_SPECIFICATION	False	state_authorized
+T-A5b1-rtdna-anchors	AWAITING_SPECIFICATION	False	state_authorized;no_unresolved_criteria;worktree_exists
+T-A5b2-ncrna-architecture	HELD	False	state_authorized;worktree_exists;dep_satisfied:T-A5b1-rtdna-anchors
+T-A3a-rule-and-e0-freeze	AWAITING_ADOPTION	False	state_authorized

@@ -1,9 +1,10 @@
 ---
 task_id: T-A16-reciprocal-frame
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S02
 title: Reciprocal family-frame analysis of RT core content
-state: AUTHORIZED
+state: AWAITING_SPECIFICATION
 autonomy_tier: A
 compute_class: CPU_SMALL
 worktree: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-A16-reciprocal-frame
@@ -16,6 +17,8 @@ claim_ids_touched: ["C-04", "C-09"]
 ---
 
 # T-A16 · Reciprocal family-frame analysis of RT core content
+
+> ⚠️ **AWAITING_SPECIFICATION: name the two positive-control families and their evidence source; name the negative profile and build it by the same procedure; freeze a numerical asymmetry statistic and threshold before execution**
 
 ## Question
 Is the low retron mapping fraction a property of retron domain content, or of the group-II-seeded

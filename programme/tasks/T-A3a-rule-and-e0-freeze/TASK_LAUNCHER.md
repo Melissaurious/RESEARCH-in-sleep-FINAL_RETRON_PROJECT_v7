@@ -1,6 +1,7 @@
 ---
 task_id: T-A3a-rule-and-e0-freeze
-governance_base: b5443e1
+governance_base: 9678a95
+base_commit: 94a1a78
 stage_id: S00
 title: Freeze the confirmatory rule and the exposure set E0
 state: AWAITING_ADOPTION

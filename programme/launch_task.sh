@@ -17,12 +17,25 @@ LAUNCHER="${PROGRAMME}/tasks/${TASK}/TASK_LAUNCHER.md"
 [[ -d "$WT" ]]       || { echo "no worktree: $WT"; exit 1; }
 [[ -f "$LAUNCHER" ]] || { echo "no launcher: $LAUNCHER"; exit 1; }
 
-# The board is the authority on what may run.
-STATE=$(awk -F'\t' -v t="$TASK" 'NR>1 && $1==t {print $4}' "${PROGRAMME}/TASK_BOARD.tsv")
-if [[ "$STATE" != "AUTHORIZED" ]]; then
-  echo "REFUSED: ${TASK} is '${STATE:-not on the board}', not AUTHORIZED."
+# ---- PREFLIGHT GATE ----
+# The full gate lives in programme/preflight.py: board state, governance base currency,
+# worktree existence and ancestry from the declared base, output directory, unresolved
+# criteria, and hard-dependency satisfaction. It refuses on any failure.
+echo "[preflight] ${TASK}"
+python3 "${PROGRAMME}/preflight.py" "$TASK" || { echo "REFUSED: preflight could not run"; exit 1; }
+if ! python3 - "$TASK" <<'PYGATE'
+import sys, pathlib
+sys.path.insert(0, "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis/programme")
+import preflight
+sys.exit(0 if preflight.preflight(sys.argv[1]).launchable else 1)
+PYGATE
+then
+  echo
+  echo "REFUSED: ${TASK} did not pass preflight. Nothing was launched."
   exit 1
 fi
+echo "[preflight] LAUNCHABLE"
+echo
 
 cd "$WT" || exit 1
 
