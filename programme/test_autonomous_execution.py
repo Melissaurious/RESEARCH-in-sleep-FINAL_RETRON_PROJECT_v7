@@ -387,5 +387,175 @@ class WorkerIntegrityTests(unittest.TestCase):
             input_path.unlink(missing_ok=True)
 
 
+class BrokerPoolTests(unittest.TestCase):
+    """BORG and Ibex are two pools, accounted separately, usable at the same time."""
+
+    def _b(self, **kw):
+        from resource_broker import Broker
+        b = Broker(probe=False, **kw)
+        return b
+
+    def test_local_and_ibex_budgets_are_separate(self):
+        from resource_broker import Broker, IbexPool
+        b = Broker(nvme_capacity=8, ibex_capacity=4, probe=False)
+        b._ibex = IbexPool(reachable=True, capacity=4, submitted=0, idle_nodes=10, env_present=True)
+        b._ibex_at = 1e18
+        # local saturated, ibex free -> the task still runs, on ibex
+        p = b.plan("t", io_tokens=3, declared_backend="auto", nvme_used=8)
+        self.assertEqual(p.backend, "ibex")
+        self.assertEqual((p.nvme_cost, p.ibex_cost), (1, 1))
+
+    def test_ibex_budget_is_enforced(self):
+        from resource_broker import Broker, IbexPool
+        b = Broker(nvme_capacity=8, ibex_capacity=4, probe=False)
+        b._ibex = IbexPool(reachable=True, capacity=4, submitted=4, idle_nodes=10, env_present=True)
+        b._ibex_at = 1e18
+        p = b.plan("t", io_tokens=3, declared_backend="auto", nvme_used=8)
+        self.assertEqual(p.backend, "defer")  # local full AND ibex budget exhausted
+
+    def test_unreachable_ibex_is_a_normal_answer(self):
+        from resource_broker import Broker, IbexPool
+        b = Broker(probe=False)
+        b._ibex = IbexPool(reachable=False); b._ibex_at = 1e18
+        self.assertEqual(b.plan("t", io_tokens=1, nvme_used=0).backend, "local")
+
+    def test_whole_pool_task_prefers_ibex_over_draining_borg(self):
+        from resource_broker import Broker, IbexPool
+        b = Broker(nvme_capacity=8, ibex_capacity=4, probe=False)
+        b._ibex = IbexPool(reachable=True, capacity=4, submitted=0, idle_nodes=10, env_present=True)
+        b._ibex_at = 1e18
+        self.assertEqual(b.plan("m1b", io_tokens=8, nvme_used=2).backend, "ibex")
+
+    def test_starvation_opens_an_exclusive_local_window(self):
+        from resource_broker import Broker, IbexPool, EXCLUSIVE_AGE_CYCLES
+        b = Broker(nvme_capacity=8, ibex_capacity=4, probe=False)
+        b._ibex = IbexPool(reachable=False); b._ibex_at = 1e18   # no Ibex escape hatch
+        p = None
+        for _ in range(EXCLUSIVE_AGE_CYCLES):
+            p = b.plan("m1b", io_tokens=8, nvme_used=7)
+        self.assertEqual(p.backend, "defer")
+        self.assertTrue(p.drain, "an aged whole-pool task must trigger a drain window")
+
+    def test_terminal_tasks_release_their_resources(self):
+        from resource_broker import Broker
+        b = Broker(nvme_capacity=8, probe=False)
+        self.assertEqual(b.plan("t", io_tokens=8, nvme_used=8).backend, "defer")
+        self.assertEqual(b.plan("t", io_tokens=8, nvme_used=0).backend, "local")
+
+
+class ReviewGateTests(unittest.TestCase):
+    """ARIS's gate, unmodified: score >= 6 AND verdict in {ready, almost}."""
+
+    def test_gate_requires_both_score_and_verdict(self):
+        import launcher_review as lr
+        self.assertTrue(lr.accepted({"score": 6, "verdict": "almost", "reviewer_ran": True}))
+        self.assertTrue(lr.accepted({"score": 9, "verdict": "ready", "reviewer_ran": True}))
+        self.assertFalse(lr.accepted({"score": 9, "verdict": "not ready", "reviewer_ran": True}))
+        self.assertFalse(lr.accepted({"score": 5, "verdict": "ready", "reviewer_ran": True}))
+
+    def test_a_reviewer_that_never_ran_is_never_a_pass(self):
+        import launcher_review as lr
+        self.assertFalse(lr.accepted({"score": 10, "verdict": "ready", "reviewer_ran": False}))
+
+    def test_launcher_cannot_self_approve(self):
+        """Only a reviewer verdict may freeze; the drafting agent has no such path."""
+        src = (HERE / "wave_runner.py").read_text()
+        body = src.split("for tid,(rproc,wt,d,rnd,jf,cost) in list(reviewing.items()):", 1)[1]
+        self.assertIn("_lr.accepted(v)", body)
+        freeze_calls = [ln for ln in src.splitlines() if "fr,sp=freeze(" in ln]
+        self.assertTrue(freeze_calls, "freeze must exist")
+        for ln in freeze_calls:  # every freeze site lives in the review-collection branch
+            self.assertNotIn("prepare_finish", ln)
+
+    def test_gate_constants_match_pinned_aris(self):
+        import launcher_review as lr
+        self.assertEqual((lr.MIN_SCORE, lr.MAX_ROUNDS), (6, 4))
+        self.assertEqual(lr.POSITIVE_VERDICTS, {"ready", "almost"})
+
+
+class ArtefactContractTests(unittest.TestCase):
+    def _task(self, root: Path, body: str) -> Path:
+        d = root / "T-XX-demo"; d.mkdir(parents=True)
+        (d / "TASK_LAUNCHER.md").write_text("---\noutput_directory: out/\n---\nemits XX_primary.tsv and XX_controls.tsv\n")
+        (d / "run.py").write_text(body)
+        return d
+
+    def test_missing_task_report_is_caught_before_freeze(self):
+        import artefact_contract as ac
+        with tempfile.TemporaryDirectory() as td:
+            d = self._task(Path(td), "open('out/XX_primary.tsv','w');open('out/XX_controls.tsv','w')\n"
+                                     "open('out/OUTPUT_MANIFEST.sha256','w');open('out/run_log.json','w')\n")
+            ok, checks = ac.check(d, d / "TASK_LAUNCHER.md")
+            self.assertFalse(ok)
+            self.assertIn("emits:TASK_REPORT.md", [c["check"] for c in checks if c["result"] == "FAIL"])
+
+    def test_complete_implementation_passes(self):
+        import artefact_contract as ac
+        with tempfile.TemporaryDirectory() as td:
+            d = self._task(Path(td), "open('out/XX_primary.tsv','w');open('out/XX_controls.tsv','w')\n"
+                                     "open('out/OUTPUT_MANIFEST.sha256','w');open('out/run_log.json','w')\n"
+                                     "open('out/TASK_REPORT.md','w').write('TASK_STATE: PASS\\nSCIENTIFIC_OUTCOME: DESCRIPTIVE\\n')\n")
+            ok, checks = ac.check(d, d / "TASK_LAUNCHER.md")
+            self.assertTrue(ok, [c for c in checks if c["result"] == "FAIL"])
+
+    def test_report_without_machine_fields_is_caught(self):
+        import artefact_contract as ac
+        with tempfile.TemporaryDirectory() as td:
+            d = self._task(Path(td), "open('out/XX_primary.tsv','w');open('out/XX_controls.tsv','w')\n"
+                                     "open('out/OUTPUT_MANIFEST.sha256','w');open('out/run_log.json','w')\n"
+                                     "open('out/TASK_REPORT.md','w').write('# report')\n")
+            ok, checks = ac.check(d, d / "TASK_LAUNCHER.md")
+            self.assertFalse(ok)
+            self.assertIn("report_field:TASK_STATE", [c["check"] for c in checks if c["result"] == "FAIL"])
+
+    def test_an_input_file_is_not_demanded_as_an_output(self):
+        """T-D1 failed this check on GOVERNANCE_BASE.tsv, which it only reads."""
+        import artefact_contract as ac
+        with tempfile.TemporaryDirectory() as td:
+            d = self._task(Path(td), "open('out/XX_primary.tsv','w');open('out/XX_controls.tsv','w')\n"
+                                     "open('out/OUTPUT_MANIFEST.sha256','w');open('out/run_log.json','w')\n"
+                                     "open('out/TASK_REPORT.md','w').write('TASK_STATE: PASS\\nSCIENTIFIC_OUTCOME: BOUND\\n')\n")
+            (d / "TASK_LAUNCHER.md").write_text(
+                "---\noutput_directory: out/\n---\nreads GOVERNANCE_BASE.tsv and support.csv;"
+                " emits XX_primary.tsv and XX_controls.tsv\n")
+            ok, checks = ac.check(d, d / "TASK_LAUNCHER.md")
+            self.assertTrue(ok, [c for c in checks if c["result"] == "FAIL"])
+
+
+class TransientRetryTests(unittest.TestCase):
+    """Mechanical failures retry; scientific failures never do."""
+
+    def test_known_transient_signatures_are_recognised(self):
+        import wave_runner as wr
+        self.assertIn("specs_exist.sh did not pass", wr.TRANSIENT_SIGNATURES)
+        self.assertTrue(any("slurm" in s.lower() or "sbatch" in s.lower() for s in wr.TRANSIENT_SIGNATURES))
+
+    def test_a_failed_scientific_control_is_not_transient(self):
+        import wave_runner as wr
+        for bad in ("blocking controls did not all PASS", "control failure", "criterion not met"):
+            self.assertFalse(any(sig in bad for sig in wr.TRANSIENT_SIGNATURES))
+
+    def test_retry_only_when_no_run_record_exists(self):
+        src = (HERE / "wave_runner.py").read_text()
+        self.assertIn("sig=transient_reason(tid,w) if not rec.exists() else ''", src)
+        self.assertIn("MAX_TRANSIENT_RETRIES", src)
+
+
+class DurableStateTests(unittest.TestCase):
+    """Restart recovery must come from disk, never from conversation or memory."""
+
+    def test_status_is_reloaded_from_disk_at_start(self):
+        src = (HERE / "wave_runner.py").read_text()
+        self.assertIn("st=load_status(w)", src)
+
+    def test_in_flight_sets_start_empty_so_restart_reconciles(self):
+        src = (HERE / "wave_runner.py").read_text()
+        self.assertIn("workers={}; preparing={}; reviewing={}; repairing={}", src)
+
+    def test_loop_exit_waits_for_every_in_flight_stage(self):
+        src = (HERE / "wave_runner.py").read_text()
+        self.assertIn("if not workers and not preparing and not reviewing and not repairing:", src)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

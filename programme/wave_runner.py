@@ -5,6 +5,7 @@ import argparse, csv, fcntl, hashlib, json, os, shlex, subprocess, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
 from autonomy_state import TERMINAL, ScheduleTask, acceptance_verdict, atomic_write, choose_launchable, executor_terminal_state, load_execution_spec, normalise_prepare_result, parse_front_matter, read_tsv, self_checks_all_pass, sha256_file, upsert_tsv, validate_type_a_execution, write_tsv
+from resource_broker import Broker
 
 SYN=Path(__file__).resolve().parents[1]; P=SYN/'programme'; BOARD=P/'TASK_BOARD.tsv'; LEDGER=P/'EXECUTION_LEDGER.tsv'; EXEC=P/'executions'; WORKER=P/'task_worker.py'; LIMITS=P/'RESOURCE_LIMITS.tsv'
 LEDGER_FIELDS=['task_id','question_short','freeze_commit','execution_commit','state','population','endpoint','backend','primary_output','task_report','interpretation_ceiling','started_at','finished_at']
@@ -69,6 +70,27 @@ def aris_accept(w,tid,verdict_id,reviewer):
 
 DET_REVIEWER='deterministic-validator:autonomy_state.validate_type_a_execution'
 
+#: Mechanical failures that say nothing about the science and are safe to retry verbatim.
+#: ⛔ A failed scientific CONTROL is never in this list: a control failure is a result.
+TRANSIENT_SIGNATURES=(
+    'specs_exist.sh did not pass',        # D19: SIGPIPE + pipefail, ~5-10% of runs
+    'Connection closed by remote host',
+    'Connection timed out',
+    'Temporary failure in name resolution',
+    'sbatch: error: Batch job submission failed',
+    'Socket timed out',
+    'error: Unable to contact slurm controller',
+)
+MAX_TRANSIENT_RETRIES=3
+
+def transient_reason(tid,w):
+    """Return the transient signature that explains a launch failure, else ''."""
+    log=w.parent/'runs'/f'{tid}.worker.log'
+    if not log.exists(): return ''
+    try: tail=log.read_text(errors='replace')[-4000:]
+    except OSError: return ''
+    return next((s for s in TRANSIENT_SIGNATURES if s in tail),'')
+
 def deterministic_accept(tid,spec,w,st):
     """Type-A execution-validity acceptance. Returns (state,note) on success, else None.
 
@@ -102,10 +124,19 @@ def deterministic_accept(tid,spec,w,st):
         return ('PASS',f'Type-A execution validity accepted deterministically; verdict {vid}')
     except Exception as e:
         return ('COMPLETE_AWAITING_REVIEW',f'deterministic validation error: {e}')
-def tokens():
+def limit(name,default=None):
     for r in rows(LIMITS):
-        if r['resource']=='NVME_TOKENS': return int(r['capacity'])
-    raise RuntimeError('NVME_TOKENS missing')
+        if r['resource']==name: return int(r['capacity'])
+    if default is None: raise RuntimeError(f'{name} missing from RESOURCE_LIMITS.tsv')
+    return default
+def tokens(): return limit('NVME_TOKENS')
+
+def make_broker():
+    """One broker per coordinator. Enforces BOTH local NVMe/CPU/GPU and IBEX_SUBMISSIONS."""
+    return Broker(nvme_capacity=limit('NVME_TOKENS'),
+                  ibex_capacity=limit('IBEX_SUBMISSIONS',4),
+                  cpu_capacity=limit('LOCAL_CPU_THREADS',44),
+                  probe=os.environ.get('RETRON_BROKER_PROBE','1')!='0')
 def lock():
     p=Path(git('rev-parse','--git-common-dir')).resolve()/'retron-autonomous-wave.lock'; f=p.open('w'); fcntl.flock(f.fileno(),fcntl.LOCK_EX|fcntl.LOCK_NB); f.write(f'pid={os.getpid()} {utc()}\n'); f.flush(); return f
 
@@ -138,6 +169,46 @@ def prepare_start(tid,row,wt):
     o=out.open('w'); e=err.open('w')
     proc=subprocess.Popen(cmd,cwd=wt,stdout=o,stderr=e,text=True,start_new_session=True)
     return proc,(out,err)
+
+def review_start(tid,wt,rnd):
+    """Launch the INDEPENDENT adversarial reviewer (codex) without waiting.
+
+    ⛔ The drafting agent never approves its own launcher. Only a reviewer verdict meeting
+    ARIS's gate (score>=6 AND verdict in {ready,almost}) permits a freeze.
+    """
+    lp=wt/'programme'/'tasks'/tid/'TASK_LAUNCHER.md'
+    outdir=SYN/'programme'/'waves'/'autonomous-wave-01'/'review'; outdir.mkdir(parents=True,exist_ok=True)
+    jf=outdir/f'{tid}.round{rnd}.json'; log=outdir/f'{tid}.round{rnd}.log'
+    cmd=[sys.executable,str(P/'launcher_review.py'),str(lp),'--task-id',tid,'--repo',str(SYN),
+         '--round',str(rnd),'--json-out',str(jf)]
+    fh=log.open('w')
+    return subprocess.Popen(cmd,cwd=SYN,stdout=fh,stderr=subprocess.STDOUT,text=True,start_new_session=True),jf
+
+def repair_start(tid,wt,verdict,rnd):
+    """Hand the reviewer's REQUIRED changes back to a drafting agent. It may edit the
+    launcher and implementation; it may not declare them acceptable."""
+    import launcher_review as _lr
+    prompt=(f"Task {tid} in {wt}. An INDEPENDENT adversarial reviewer scored its TASK_LAUNCHER.md "
+            f"{verdict.get('score')}/10 with verdict '{verdict.get('verdict')}' and required these changes:\n\n"
+            f"{_lr.findings_brief(verdict)}\n\n"
+            "Apply every REQUIRED change to programme/tasks/{tid}/TASK_LAUNCHER.md and, where a finding "
+            "concerns what the code does, to the implementation too. Do NOT run primary science, do not "
+            "create primary output, and do not commit. Do not weaken or delete a control to satisfy a "
+            "finding. Preserve the declared population, denominator and interpretation ceiling unless the "
+            "reviewer explicitly required a change to them. If a finding would require genuinely new "
+            "scientific scope that the tracked design packet does not cover, write "
+            f"programme/tasks/{tid}/PREPARE_RESULT.json with status REVIEW_REQUIRED and stop. Otherwise "
+            "keep PREPARE_RESULT.json status READY_TO_FREEZE and re-run its self-checks.").replace('{tid}',tid)
+    cmd=shlex.split(os.environ.get('RETRON_PREPARE_COMMAND','claude --dangerously-skip-permissions -p'))+[prompt]
+    log=SYN/'programme'/'waves'/'autonomous-wave-01'/'review'/f'{tid}.repair{rnd}.log'
+    log.parent.mkdir(parents=True,exist_ok=True); fh=log.open('w')
+    return subprocess.Popen(cmd,cwd=wt,stdout=fh,stderr=subprocess.STDOUT,text=True,start_new_session=True)
+
+def contract_ok(tid,wt):
+    """Machine-check the implementation can emit its required artefacts, BEFORE freeze."""
+    import artefact_contract as _ac
+    td=wt/'programme'/'tasks'/tid
+    return _ac.check(td,td/'TASK_LAUNCHER.md')
 
 def prepare_finish(tid,wt,base,plog,rc):
     """Validate a finished preparation. Raises ReviewRequired / RuntimeError as before."""
@@ -188,7 +259,8 @@ def start(w,authorised,poll):
     if git('rev-parse','--abbrev-ref','HEAD')!='project-synthesis' or git('status','--porcelain'): raise RuntimeError('start requires clean project-synthesis')
     if sha256_file(w)!=authorised: raise RuntimeError('WAVE.tsv hash mismatch')
     wr=rows(w); st=load_status(w); [st.setdefault(r['task_id'],{**{k:'' for k in STATUS_FIELDS},'task_id':r['task_id'],'state':'PENDING'}) for r in wr]; save_status(w,st); commit([status_path(w)],'wave: start '+w.parent.name); aris_start(w,[r['task_id'] for r in wr])
-    workers={}; preparing={}; escal=False
+    workers={}; preparing={}; reviewing={}; repairing={}; plans={}; retries={}; escal=False
+    broker=make_broker()
     while True:
         b=board(); states={k:v['state'] for k,v in b.items()}; used=0
         for r in wr:
@@ -202,12 +274,53 @@ def start(w,authorised,poll):
             if pproc.poll() is None: used+=cost; continue
             del preparing[tid]
             try:
-                d=prepare_finish(tid,wt,base,plog,pproc.returncode); fr,sp=freeze(tid,wt,d)
-                fm=parse_front_matter(wt/'programme'/'tasks'/tid/'TASK_LAUNCHER.md')
-                ledger(tid,question_short=fm.get('title',tid),freeze_commit=fr,state='FROZEN_NOT_EXECUTED',backend=d['backend'],primary_output=fm.get('output_directory',''),interpretation_ceiling='SEE_TASK_LAUNCHER')
-                set_status(w,st,tid,'FROZEN','ready',freeze_commit=fr); commit([sp,LEDGER,status_path(w)],f'wave: bind {tid}')
+                d=prepare_finish(tid,wt,base,plog,pproc.returncode)
+                ok,cchecks=contract_ok(tid,wt)
+                if not ok:
+                    bad=[c['check'] for c in cchecks if c['result']=='FAIL']
+                    raise RuntimeError(f'artefact contract would fail at runtime: {bad}')
+                # Author != approver: nothing freezes until an independent reviewer says so.
+                rp,jf=review_start(tid,wt,1); reviewing[tid]=(rp,wt,d,1,jf,cost)
+                set_status(w,st,tid,'REVIEWING','independent adversarial review round 1')
             except ReviewRequired as e:set_board(tid,'BLOCKED',f'scientific review required: {e}'); set_status(w,st,tid,'BLOCKED',str(e)); commit([BOARD,status_path(w)],f'wave: scientific stop {tid}'); escal=True
             except Exception as e:set_status(w,st,tid,'BLOCKED_PREPARE',str(e)); escal=True
+        # Collect finished adversarial reviews.
+        for tid,(rproc,wt,d,rnd,jf,cost) in list(reviewing.items()):
+            if rproc.poll() is None: used+=cost; continue
+            del reviewing[tid]
+            import launcher_review as _lr
+            try: v=json.loads(jf.read_text())
+            except Exception as e: v={'score':0,'verdict':'not ready','findings':[],'reviewer_ran':False,'error':str(e)}
+            if _lr.accepted(v):
+                try:
+                    fr,sp=freeze(tid,wt,d)
+                    fm=parse_front_matter(wt/'programme'/'tasks'/tid/'TASK_LAUNCHER.md')
+                    ledger(tid,question_short=fm.get('title',tid),freeze_commit=fr,state='FROZEN_NOT_EXECUTED',backend=d['backend'],primary_output=fm.get('output_directory',''),interpretation_ceiling='SEE_TASK_LAUNCHER')
+                    set_status(w,st,tid,'FROZEN',f"review {v['score']}/10 {v['verdict']} round {rnd}",freeze_commit=fr)
+                    commit([sp,LEDGER,status_path(w)],f'wave: bind {tid} after independent review')
+                except Exception as e:set_status(w,st,tid,'BLOCKED_PREPARE',str(e)); escal=True
+            elif rnd>=_lr.MAX_ROUNDS:
+                # ⛔ Never freeze past the gate. Park this task; everything else continues.
+                set_board(tid,'PARKED_REVIEW_GATE',f"adversarial review did not reach score>=6 AND ready|almost in {rnd} rounds")
+                set_status(w,st,tid,'PARKED_REVIEW_GATE',f"last: {v.get('score')}/10 {v.get('verdict')} — {v.get('summary','')[:120]}")
+                commit([BOARD,status_path(w)],f'wave: park {tid} at the review gate'); escal=True
+            else:
+                repairing[tid]=(repair_start(tid,wt,v,rnd),wt,d,rnd+1,cost)
+                set_status(w,st,tid,'REPAIRING',f"round {rnd}: {v.get('score')}/10 {v.get('verdict')}; repairing findings")
+        # Collect finished repairs and send them back for re-review.
+        for tid,(qproc,wt,d,rnd,cost) in list(repairing.items()):
+            if qproc.poll() is None: used+=cost; continue
+            del repairing[tid]
+            rpath=wt/'programme'/'tasks'/tid/'PREPARE_RESULT.json'
+            try:
+                nd=json.loads(rpath.read_text())
+                if nd.get('status')=='REVIEW_REQUIRED':
+                    set_board(tid,'BLOCKED',f"new scientific scope: {nd.get('unresolved_decision','')}")
+                    set_status(w,st,tid,'BLOCKED',str(nd.get('unresolved_decision',''))[:200]); escal=True; continue
+                d=normalise_prepare_result(nd)
+            except Exception: pass
+            rp,jf=review_start(tid,wt,rnd); reviewing[tid]=(rp,wt,d,rnd,jf,cost)
+            set_status(w,st,tid,'REVIEWING',f'independent adversarial review round {rnd}')
         for tid,(proc,rec,cost) in list(workers.items()):
             if proc.poll() is None: used+=cost; continue
             rr=json.loads(rec.read_text()) if rec.exists() else {'worker_state':'REFUSED','error':'missing run record'}; spec=load_execution_spec(EXEC/tid/'TASK_EXECUTION.json')
@@ -218,16 +331,57 @@ def start(w,authorised,poll):
                 if term=='COMPLETE_AWAITING_REVIEW':
                     term,note=deterministic_accept(tid,spec,w,st) or (term,note)
                 set_board(tid,term,note); set_status(w,st,tid,term,rr.get('scientific_outcome',''),finished_at=rr.get('finished_at',utc()))
-            else: term='VOID' if rr.get('worker_state') in {'REFUSED','ARTIFACT_INVALID','PROCESS_FAILED'} else 'STOP'; set_board(tid,term,rr.get('worker_state','worker failure')); set_status(w,st,tid,term,rr.get('error') or rr.get('stop_reason') or rr.get('worker_state','')); aris_set(w,tid,'failed'); escal=True
+            else:
+                # A launch that never produced a run record may have been refused by a
+                # transient mechanical gate rather than by anything scientific. Retry those;
+                # never retry a failed control or a real criterion failure.
+                sig=transient_reason(tid,w) if not rec.exists() else ''
+                n=retries.get(tid,0)
+                if sig and n<MAX_TRANSIENT_RETRIES:
+                    retries[tid]=n+1
+                    set_status(w,st,tid,'FROZEN',f'transient launch failure ({sig}); retry {n+1}/{MAX_TRANSIENT_RETRIES}')
+                    del workers[tid]; continue
+                term='VOID' if rr.get('worker_state') in {'REFUSED','ARTIFACT_INVALID','PROCESS_FAILED'} else 'STOP'
+                detail=rr.get('error') or rr.get('stop_reason') or rr.get('worker_state','')
+                if sig: detail=f'{detail}; transient signature "{sig}" persisted after {n} retries'
+                set_board(tid,term,rr.get('worker_state','worker failure')); set_status(w,st,tid,term,detail); aris_set(w,tid,'failed'); escal=True
             ledger(tid,freeze_commit=spec['freeze_commit'],execution_commit=spec['freeze_commit'],state=term,backend=spec['backend'],primary_output=spec['output_directory'],task_report=str(Path(spec['output_directory'])/'TASK_REPORT.md'),interpretation_ceiling='SEE_TASK_REPORT',started_at=rr.get('started_at',''),finished_at=rr.get('finished_at',utc())); commit([BOARD,LEDGER,status_path(w)],f'wave: terminal {tid} {term}'); del workers[tid]
         b=board(); states={k:v['state'] for k,v in b.items()}; candidates=[]; by={r['task_id']:r for r in wr}
         for r in wr:
             tid=r['task_id']; cur=st[tid]['state']
             # A preparing task already reserves its tokens in the collection loop above, so
             # it must not also compete for them here; it re-enters as a candidate once FROZEN.
-            if r['action']=='monitor_only' or tid in workers or tid in preparing or cur in TERMINAL|{'RUNNING_EXTERNAL','ESCALATION_REQUIRED','BLOCKED_PREPARE'}: continue
+            if r['action']=='monitor_only' or tid in workers or tid in preparing or tid in reviewing or tid in repairing or cur in TERMINAL|{'RUNNING_EXTERNAL','ESCALATION_REQUIRED','BLOCKED_PREPARE','PARKED_REVIEW_GATE','PARKED_LAUNCHER_REVIEW'}: continue
             candidates.append(ScheduleTask(tid,b.get(tid,{}).get('state',cur),int(r['io_tokens']),split(r['hard_dependencies']),split(r['schedule_after'])))
-        sel,dec=choose_launchable(candidates,states,used,tokens())
+        # DEPENDENCIES first, with resources deliberately unbounded: choose_launchable decides
+        # only what is scientifically eligible. ADMISSION is then the broker's, across BOTH
+        # pools, so an Ibex-bound task is not gated by local I/O and vice versa.
+        eligible,dec=choose_launchable(candidates,states,1<<30,1<<30)
+        sel=[]; drain=False
+        for tid in eligible:
+            r=by[tid]; fm={}
+            spf=EXEC/tid/'TASK_EXECUTION.json'
+            if spf.exists():
+                try: fm=load_execution_spec(spf)
+                except Exception: fm={}
+            res=(fm.get('resources') or {}); want=(fm.get('backend') or by[tid].get('backend') or 'auto')
+            pl=broker.plan(tid,io_tokens=int(r['io_tokens']),declared_backend=want,
+                           cpu_threads=int(res.get('cpu_threads',1) or 1),
+                           memory_gb=int(res.get('memory_gb',4) or 4),
+                           gpu=bool(res.get('gpu_slots',0)),
+                           nvme_used=used,local_running=len(workers))
+            plans[tid]=pl
+            if pl.backend=='defer':
+                drain=drain or pl.drain
+                dec[tid]=f'WAIT_RESOURCE:{pl.reason}'
+                continue
+            if drain and pl.backend=='local':
+                # A drain window is open for a task that needs the whole local pool; stop
+                # admitting new LOCAL work so it can actually start. Ibex work still flows.
+                dec[tid]=f'WAIT_RESOURCE:draining local pool for an exclusive window'
+                continue
+            sel.append(tid)
+            if pl.backend=='local': used+=pl.nvme_cost
         for t in candidates:
             if t.task_id not in sel:set_status(w,st,t.task_id,'BLOCKED' if dec.get(t.task_id,'').startswith('BLOCKED_DEPENDENCY') else ('WAIT_RESOURCE' if dec.get(t.task_id,'').startswith('WAIT_RESOURCE') else 'WAIT_DEP'),dec.get(t.task_id,''))
         for tid in sel:
@@ -242,10 +396,15 @@ def start(w,authorised,poll):
                 continue
             spec=load_execution_spec(sp); fm=parse_front_matter(Path(spec['worktree'])/'programme'/'tasks'/tid/'TASK_LAUNCHER.md'); protected=fm.get('confirmatory_spend','').lower().startswith('yes') or 'required' in fm.get('confirmatory_spend','').lower()
             if protected and r.get('protected_spend_authorised','').lower()!='true':set_status(w,st,tid,'BLOCKED','protected spend not authorised'); escal=True; continue
-            set_board(tid,'RUNNING','autonomous wave'); p,rec=spawn(tid,sp,w); workers[tid]=(p,rec,int(r['io_tokens'])); ledger(tid,freeze_commit=spec['freeze_commit'],execution_commit=spec['freeze_commit'],state='RUNNING',backend=spec['backend'],primary_output=spec['output_directory'],task_report=str(Path(spec['output_directory'])/'TASK_REPORT.md'),interpretation_ceiling='SEE_TASK_LAUNCHER',started_at=utc()); set_status(w,st,tid,'RUNNING','worker launched',freeze_commit=spec['freeze_commit'],worker_pid=p.pid,started_at=utc()); aris_set(w,tid,'running'); commit([BOARD,LEDGER,status_path(w)],f'wave: launch {tid}')
-        if not workers and not preparing:
+            # The broker's routing decision is authoritative and is written into the frozen
+            # spec before launch, so the ledger records the backend the task ACTUALLY ran on.
+            pl=plans.get(tid)
+            if pl and pl.backend in ('local','ibex') and spec.get('backend')!=pl.backend:
+                spec['backend']=pl.backend; atomic_write(sp,json.dumps(spec,indent=2,sort_keys=True)+'\n')
+            set_board(tid,'RUNNING','autonomous wave'); p,rec=spawn(tid,sp,w); workers[tid]=(p,rec,int(r['io_tokens'])); ledger(tid,freeze_commit=spec['freeze_commit'],execution_commit=spec['freeze_commit'],state='RUNNING',backend=spec['backend'],primary_output=spec['output_directory'],task_report=str(Path(spec['output_directory'])/'TASK_REPORT.md'),interpretation_ceiling='SEE_TASK_LAUNCHER',started_at=utc()); set_status(w,st,tid,'RUNNING',f"worker launched on {spec['backend']} ({pl.reason if pl else 'declared'})",freeze_commit=spec['freeze_commit'],worker_pid=p.pid,started_at=utc()); aris_set(w,tid,'running'); commit([BOARD,LEDGER,status_path(w)],f'wave: launch {tid} on {spec["backend"]}')
+        if not workers and not preparing and not reviewing and not repairing:
             non=[st[r['task_id']]['state'] for r in wr if r['action']!='monitor_only']
-            if not any(x in {'PENDING','AUTHORIZED','FROZEN','PREPARING'} for x in non): commit([status_path(w)],'wave: checkpoint '+w.parent.name); return 4 if escal or any(x.startswith('WAIT_') or x.startswith('BLOCKED') for x in non) else 0
+            if not any(x in {'PENDING','AUTHORIZED','FROZEN','PREPARING','REVIEWING','REPAIRING'} for x in non): commit([status_path(w)],'wave: checkpoint '+w.parent.name); return 4 if escal or any(x.startswith('WAIT_') or x.startswith('BLOCKED') for x in non) else 0
         time.sleep(poll)
 
 def main():
