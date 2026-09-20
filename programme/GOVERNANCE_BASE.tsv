@@ -1,4 +1,8 @@
-governance_base	7e7ccd8
+governance_base	9a793c9
 committed	2026-09-20
 branch	project-synthesis
-note	Restamped from b5443e1. Commit 7e7ccd8 edited programme/WORKING_RULES.md, which advances the computed base, and the stamp was not moved with it. Every launcher therefore failed governance_base_current and nothing was launchable -- the gate failing closed on a real drift, which is what it is for. The general/ submodule pin is UNCHANGED at cff9831. Task worktrees are based on main (94a1a78) and do not contain this layer; sessions read it at its absolute path.
+previous	7e7ccd8
+cause	Commit 9a793c9 added WORKING_RULES section 8, the operator's audit stop condition. WORKING_RULES.md is one of the four GOVERNANCE_FILES, so the computed base advanced and every launcher stamped 7e7ccd8 began failing governance_base_current. The gate failing closed on a real governance change is what it is for. The general/ submodule pin is UNCHANGED at cff9831.
+restamped	ONLY the six launchers that have NEVER executed: T-A16, T-A3a, T-A5b1, T-A5b2, T-AUDIT1, T-GATE1.
+not_restamped	The eleven launchers whose tasks HAVE executed keep 7e7ccd8 deliberately: T-A0, T-A2, T-A23, T-A23c, T-C1b, T-LINT, T-LINT2, T-N1b, T-N1c, T-P1, T-REG. A launcher's governance_base records WHICH RULES THE RUN WAS GOVERNED BY. Restamping an executed launcher would claim it ran under a rule that did not exist when it ran, which is falsifying preregistration to satisfy a liveness check. They will read as stale in preflight, and that is CORRECT, not drift.
+note	A previous restamp (7e7ccd8, from b5443e1) moved every launcher because none had executed yet. That is no longer true, and the two cases must be treated differently from here on.

@@ -1,6 +1,6 @@
 ---
 task_id: T-AUDIT1-circular-control-sweep
-governance_base: 7e7ccd8
+governance_base: 9a793c9
 base_commit: 94a1a78
 stage_id: S00
 title: Sweep every blocking control in the programme for circularity and non-discrimination

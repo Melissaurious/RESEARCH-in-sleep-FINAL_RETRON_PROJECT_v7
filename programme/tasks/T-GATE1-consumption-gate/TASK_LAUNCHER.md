@@ -1,6 +1,6 @@
 ---
 task_id: T-GATE1-consumption-gate
-governance_base: 7e7ccd8
+governance_base: 9a793c9
 base_commit: 94a1a78
 stage_id: S00
 title: Implement the consumption gate end-to-end against landed reports, hashes and declared outputs

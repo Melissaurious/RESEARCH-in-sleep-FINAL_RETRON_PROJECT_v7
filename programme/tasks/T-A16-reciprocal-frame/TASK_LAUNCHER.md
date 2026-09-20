@@ -1,6 +1,6 @@
 ---
 task_id: T-A16-reciprocal-frame
-governance_base: 7e7ccd8
+governance_base: 9a793c9
 base_commit: 94a1a78
 stage_id: S02
 title: Reciprocal family-frame analysis of RT core content
