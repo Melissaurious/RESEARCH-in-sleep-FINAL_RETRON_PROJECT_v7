@@ -1,7 +1,19 @@
 # SCIENTIFIC DAG — the remaining programme, by dependency type
 
-**As of 2026-09-20.** Companion to `programme/ALL_DOWNSTREAM_TASKS.tsv` (53 tasks) and
+**As of 2026-09-20.** Companion to `programme/ALL_DOWNSTREAM_TASKS.tsv` (**54 tasks**) and
 `programme/PARALLEL_EXECUTION_PLAN.md` (what runs where, and when).
+
+> ⛔ **INDEPENDENTLY REVIEWED AND REJECTED, then corrected.** A fresh read-only Codex thread
+> (`01a0bcb2`) reviewed this DAG with the task register and the execution plan and returned
+> **REJECT**. Every coordinator-fixable finding is applied; the corrections are marked
+> **`[REVIEW 01a0bcb2]`** where they land. Findings needing a scientific decision are recorded in
+> `OVERNIGHT_RUN_REPORT.md` §10 and are **not** resolved here.
+>
+> The two corrections that change what this document *claims*:
+> - §8's assertion that **no edge scores a CM-derived call against a CM-derived call is FALSE.**
+>   `T-A19` does exactly that. Corrected in §8.
+> - `T-AUDIT1`'s edge is **`SOFT_INTERPRETIVE`, not `CONTROL`.** It produces an inventory and
+>   nominates; it may not re-classify any task's outcome, so it blocks nothing.
 
 > **This document is the dependency structure. It is deliberately written before the compute
 > schedule**, because a schedule built from stage numbers rather than from dependencies is how a
@@ -92,19 +104,30 @@ science and **was** being enforced by habit.
 ```
 T-S2-foldseek-calibration ──CONTROL──▶ T-A7-stage3a-positive-control ──PROMOTION──▶ T-S3
 T-C2-cm-call-inventory    ──DATA─────▶ T-A19-withheld-model-control  ──CONTROL───▶ T-S07-reopen
-T-AUDIT1-circular-control-sweep ──CONTROL──▶ every task carrying a blocking control
+T-AUDIT2-task-report-backfill ──DATA──▶ T-GATE1-consumption-gate          [REVIEW 01a0bcb2]
+T-AUDIT1-circular-control-sweep ──SOFT_INTERPRETIVE──▶ every task carrying a blocking control
 ```
 
-⚠️ **`T-AUDIT1` is a control edge onto the whole programme, and it is `LAUNCH_NOW`.** Its question
-is the one the reviewer generalised from T-A23: *a positive control whose pass condition is the
-headline result is not a control.* Every blocking control in the project is asked the same thing —
-**what broken instrument does this catch?** — and `T-LINT2`'s mutation battery is the executed
-template for answering it.
+**`[REVIEW 01a0bcb2]` `T-AUDIT1`'s edge is corrected from `CONTROL` to `SOFT_INTERPRETIVE`.** An
+earlier draft here called it a control edge onto the whole programme, which would mean it must run
+before everything. Its own launcher says the opposite and is right: *"It may not re-classify any
+task's outcome, withdraw any result, or change any board state."* **It produces an inventory and
+nominates. It blocks nothing.** Its question is still the one the Batch One reviewer generalised —
+*what broken instrument does this catch?* — and it is the one task this session would dispatch
+first, but it is not a gate.
 
-⚠️ **`T-A7` is a `CONTROL_DEPENDENCY` that is also `UNEXPOSED_CONFIRMATORY`.** All 19 truth-bearing
-chains in `STRUCT-62` are **non-retron**; all 21 retron chains sit in Tier B or C and were never
-scored. Tier B is partly design-inspected and therefore not blind. It is operator-only, and it
-cannot be auto-launched to unblock `T-S3`.
+**`[REVIEW 01a0bcb2]` `T-GATE1` gains `DATA_DEPENDENCY:T-AUDIT2`.** A gate that reads task reports
+needs task reports to exist, and none satisfying the contract is landed.
+
+⚠️ **`T-A7` is a `CONTROL_DEPENDENCY` that is also confirmatory — and it is circular as specified.**
+All 19 truth-bearing chains in `STRUCT-62` are **non-retron**; all 21 retron chains sit in Tier B or
+C and were never scored, and Tier B is partly design-inspected so not blind.
+
+⛔ **`[REVIEW 01a0bcb2]` worse than that: `T-A7` and `T-S3` would spend the same Tier B chains** —
+one as the control, the other as the headline. **A control and an inference cannot both claim the
+same chains as independent evidence.** The independent specification names HIV-1 p66 and externally
+partitioned RTs as the biological positive; the task should return to those named external
+positives. **Operator decision; not fixed here.**
 
 ---
 
@@ -192,20 +215,70 @@ There is exactly one place a cycle threatens, and it is the circularity the orig
 
 `CM-CALLS` — the 21 Mestre-authored covariance models — **defines the population it would be scored
 on**. Any boundary or type claim evaluated against those calls is same-paradigm and adjudicates
-nothing. The DAG breaks the cycle by permitting only three things: inventory (`T-C2`), evaluation
-against **published or experimental** anchors (`T-A5b1`, `T-R1`), and leave-one-subtype-out recovery
-(`T-A19`). **No edge in this DAG scores a CM-derived call against a CM-derived call.**
+nothing.
+
+⛔ **`[REVIEW 01a0bcb2]` An earlier draft of this section claimed "No edge in this DAG scores a
+CM-derived call against a CM-derived call." THAT WAS FALSE. `T-A19` does exactly that.**
+
+`T-A19-withheld-model-control` withholds a subtype, rebuilds a covariance model, and scores recovery
+**against the withheld model's own calls** — a CM-derived caller judged by CM-derived calls. It
+closes the very cycle this section says it breaks.
+
+**Consequence, recorded not repaired:**
+
+| `T-A19` may be | `T-A19` may NOT be |
+|---|---|
+| a **same-paradigm implementation diagnostic**: does the machinery recover a subtype it was not shown? | an independently established biological positive control |
+| reported with that limitation stated | sufficient on its own to reopen `S07` |
+
+`S07` reopening requires **five** declared conditions, not one, and `T-A19` is one of them.
+Redesigning it so it is not circular is an **operator decision**.
+
+What genuinely does break the cycle, and all that does: **inventory** (`T-C2`), and evaluation
+against **published or experimental** anchors (`T-A5b1`, `T-R1`) — anchors that do not descend from
+the covariance models. ⚠️ And `T-A5b2` re-closes it in a different way: its positive control
+("held-out anchors are recovered") **is** its headline endpoint. Also an operator decision.
 
 ---
 
 ## 9 · Task count by edge position
 
-| position | n | readiness |
-|---|---|---|
-| no upstream | 11 | mostly `LAUNCH_NOW` |
-| preparation, upstream = landed Stage 1 only | 11 | `LAUNCH_NOW` |
-| downstream of `T-P1` by `HARD` | 4 | `BLOCKED_DEPENDENCY` until the partition exists |
-| downstream by `CONTROL` | 3 | blocked by design |
-| downstream by `PROMOTION` only | 3 | **runnable now**; only the claim waits |
-| operator-gated by population or by an undeclared number | 20 | `READY_WAITING_OPERATOR` |
-| closed | 2 | recorded, not scheduled |
+**`[REVIEW 01a0bcb2]` recounted after the review.** 54 tasks.
+
+| readiness | n |
+|---|---|
+| `READY_WAITING_OPERATOR` | **31** |
+| `BLOCKED_DEPENDENCY` | 13 |
+| `LAUNCH_NOW` | 7 — of which **one** has a frozen launcher and passes preflight |
+| `CLOSED` | 2 |
+| `VOID_REVIEW_FAILED` | 1 |
+
+| population state | n |
+|---|---|
+| `UNEXPOSED_CONFIRMATORY` | **26** |
+| `NO_POPULATION_SPEND` | 19 |
+| `EXHAUSTED` | 5 |
+| `EXPLORATORY_POPULATION` | 4 |
+
+⛔ **The jump from 5 `UNEXPOSED_CONFIRMATORY` to 26 is the review's central correction.** An earlier
+draft read `RT-EXACT-501561`, `RETRON-LOCI` and `NCRNA-16458` as spent because they are marked
+`INSPECTED`. **The ledger says the opposite** — each `can_serve_as_confirmation`, so each is an
+*unexhausted confirmatory-capable* population, and `WORKING_RULES` §4a requires **one explicit
+operator authorisation per launch** for those. Twenty-one tasks moved to
+`READY_WAITING_OPERATOR` as a result.
+
+### The corrected edge types
+
+| edge | was | is | why |
+|---|---|---|---|
+| `T-P1 → T-N2` | `HARD` | **`SOFT_INTERPRETIVE`** | `PROGRAM_LAUNCHER` §4: S06 functional identity *benefits from* S03a |
+| `T-P1 → T-P3` | `HARD` | **removed** | `T-P3` overlaps `T-P1`'s own groupings; it needs a non-duplicative deliverable or should merge into it |
+| `T-C1 → T-A16` | `DATA` | **removed** | `T-A16`'s launcher declares no such input; its real blocker is an unspecified control and statistic |
+| `T-REG4 → T-S1` | `DATA` | **removed** | structures were already one of the five swept kinds |
+| `T-S1 → T-S2` | `DATA` | **removed** | CATH and the deposited complexes are already registered |
+| `T-AUDIT2 → T-GATE1` | absent | **`DATA`** | added |
+| `T-REG3, T-REG4 → T-REG2` | absent | **`DATA`** | added |
+
+Only **one** of the four original `HARD:T-P1` edges survives review as genuinely hard:
+**`T-A0b`**, and only if the partition is demonstrably not nested in components — which is the
+question `T-P1` exists to answer.

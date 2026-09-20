@@ -48,11 +48,35 @@ saturates the disk first, so the schedule is written in **I/O lanes**, not core 
 |---|---|---|
 | `IO_HIGH` | **1 at a time, local** | `T-REG3` content hashing, `T-REG4` kind sweep, `T-N1` neighbourhood extraction, `T-M1` embedding cache verification, `T-S1` structure inventory |
 | `IO_MEDIUM` | up to 4 local | most `CPU_SMALL`/`CPU_MEDIUM` work |
-| `IO_LOW` | unlimited | `ZERO` tasks, which read landed tables and write new ones |
-| Ibex | independent of all lanes | `T-C1`, `T-P1`, `T-F2`, `T-P2`, `T-P3` |
+| `IO_LOW` | ~~unlimited~~ **counted, see below** | `ZERO` tasks, which read landed tables and write new ones |
+| Ibex | **not independent — see below** | `T-C1`, `T-P1`, `T-F2` |
 
-**A queued Ibex job blocks no local lane**, and a saturated local `IO_HIGH` lane blocks no Ibex
-submission. That is the point of using both.
+### `[REVIEW 01a0bcb2]` Three corrections to this model
+
+⛔ **1. `IO_HIGH = 1` is not sufficient, and `IO_LOW = unlimited` is wrong.** One high-I/O task is
+permitted beside four `IO_MEDIUM` and *unbounded* `IO_LOW`. But `T-LINT4`, `T-M2` and any
+repository-wide audit are not meaningfully low-I/O — they walk whole worktrees.
+**Required: a global NVMe token budget**, not high-versus-high serialisation. Every task declares a
+token cost; the sum is capped; `IO_LOW` costs tokens too.
+
+⛔ **2. A global scan cannot run while the roots it scans are being written.** `T-REG3`, `T-REG4`
+and `T-LINT4` inventory collections and worktrees that other tasks emit into. Concurrent output
+makes the inventory **non-deterministic** and can hash a partially written file.
+**Required: run global scans against a snapshot, or in a declared quiescent window.**
+
+⛔ **3. "Ibex is independent of all lanes" is unsupported.** Six jobs reading 501,561 local
+sequences need staging or transfer first, and **no launcher declares it**. Ibex is independent only
+*after* its inputs are staged; the staging itself is local I/O and belongs in a lane.
+**Required: every Ibex task declares its staging step and that step's I/O cost.**
+
+**Also corrected:** `T-P2` and `T-E1` are `CPU_MEDIUM`, which this plan's own routing rule sends to
+the workstation, and the schedule sent them to Ibex anyway. **Both routed local** unless a pilot
+measures otherwise. `T-P3` leaves the Ibex list — it overlaps `T-P1` and needs a non-duplicative
+scope before it is scheduled at all.
+
+⚠️ **No Ibex assignment here has a mandatory pilot, core/RAM request, expected I/O or runtime in its
+launcher.** `T-P1` is the only one with a launcher, and it does declare a pilot. The rest are
+**unproven routings, not wrong ones** — and they may not be queued until they are proven.
 
 ## 3 · Routing rule
 
@@ -101,10 +125,47 @@ decisions; launcher frozen before execution; no artifact, population or resource
 | 21 | `T-P3-relatedness-representation` | CPU_HIGH | **ibex** | — | representation, explicitly not a topology claim |
 | 22 | `T-E1-character-source-probe` | CPU_MEDIUM | **ibex** | — | probe only; a positive result is a proposal |
 
-**22 tasks. 6 Ibex, 16 local, of which 5 share one serialised `IO_HIGH` lane.**
+### ⛔ THE TABLE ABOVE IS WITHDRAWN. `[REVIEW 01a0bcb2]`
 
-⛔ **Wave 1 did not launch tonight.** See §7. The plan is what *would* launch; the capability to
-dispatch it is missing, and that gap is the single largest blocker in this report.
+An independent read-only review of this plan returned **REJECT**, and its central finding is that
+**"22 tasks are safe to auto-launch" is indefensible.** It is retained above as the record of what
+was claimed. **The corrected auto-launch set is in §4a.**
+
+Four reasons, each sufficient on its own:
+
+1. ⛔ **Ten of the 22 touch unexhausted confirmatory-capable populations.** Seven on
+   `RT-EXACT-501561`, three on `RETRON-LOCI`. I read `INSPECTED` as "already spent, so free". **The
+   ledger says each `can_serve_as_confirmation`**, which makes them *unexhausted* under
+   `WORKING_RULES` §4a — **one explicit operator authorisation per launch, never auto-scheduled.**
+   §8's population-collision row was wrong for the same reason: seven tasks sharing one unexhausted
+   population **is** a collision.
+2. ⛔ **Wave 1 contains producer→consumer chains**, contradicting this plan's own claim that no
+   Wave-1 task reads another's output: `T-C1 → T-P1/T-F1/T-F2/T-P2`, `T-P1 → T-P3`,
+   `T-F2 → T-E1`, `T-REG4 → T-S1 → T-S2`, `T-LINT2 → T-LINT4`. That is a **queue with barriers**,
+   not a concurrently launchable set.
+3. ⛔ **21 of the 22 had no frozen launcher and no board row**, so `preflight.py` would have refused
+   every one of them. "Ready" described a plan, not a state.
+4. ⛔ **`T-LINT2` is `VOID`**, and was listed as done.
+
+### 4a · The corrected auto-launch set
+
+| launchable **now**, verified by `preflight.py` | |
+|---|---|
+| `T-AUDIT1-circular-control-sweep` | `NO_POPULATION_SPEND`, no upstream, launcher frozen, worktree created, **full `--dry-run` passes** |
+
+**One.** Not twenty-two.
+
+Six more are `LAUNCH_NOW` by readiness class and **have no launcher yet**, so they are eligible in
+principle and not yet specified: `T-AUDIT2`, `T-REG3`, `T-REG4`, `T-S1`, `T-C2`, `T-M1`. Writing
+each launcher is coordinator work and is the fastest route to a real second wave.
+
+`T-GATE1` is frozen and dry-run-verified but now **`BLOCKED_DEPENDENCY`**: a gate that reads task
+reports needs `T-AUDIT2` first. `T-P1` is frozen and dry-run-verified but now
+**`READY_WAITING_OPERATOR`** on population grounds — it is the trunk, and it needs one sentence of
+authorisation.
+
+⛔ **Nothing launched tonight regardless.** See §7: the host refuses to spawn a task session. Even
+with the corrected set of one, the capability to dispatch it is missing.
 
 ## 5 · Wave 2 — opens automatically when Wave 1 lands and is reviewed
 
@@ -173,17 +234,25 @@ no population and no inference, and even then every report must say so, as `T-LI
 
 Two tasks may run concurrently only if **all four** hold (`WORKING_RULES` §3):
 
-| check | how Wave 1 satisfies it |
+| check | verdict `[REVIEW 01a0bcb2]` |
 |---|---|
-| **no shared writes** | one `output_directory` per task, one worktree per task, disjoint by construction |
-| **no unfinished-producer reads** | Wave 1 reads only landed Stage 1 artifacts and the T-REG inventory; no Wave-1 task reads another Wave-1 task's output |
-| **no population collision** | 18 tasks are `NO_POPULATION_SPEND`; the rest touch `RETRON-LOCI` or `RT-EXACT`, both already inspected, where concurrent inspection depletes nothing further |
-| **no criterion coupling** | no Wave-1 task's threshold or selection rule is chosen from another's output. `T-P1`'s identity levels are declared in advance, **not** tuned to what `T-A0b` needs |
+| **no shared writes** | ✅ **holds** — one `output_directory` and one worktree per task, disjoint by construction |
+| **no unfinished-producer reads** | ⛔ **FAILED.** The claim "no Wave-1 task reads another Wave-1 task's output" was false: `T-C1 → T-P1/T-F1/T-F2/T-P2`, `T-P1 → T-P3`, `T-F2 → T-E1`, `T-REG4 → T-S1 → T-S2`, `T-LINT2 → T-LINT4`. A queue with barriers, not a parallel set |
+| **no population collision** | ⛔ **FAILED.** Seven tasks share unexhausted `RT-EXACT-501561`; three share unexhausted `RETRON-LOCI`. Calling them "already inspected, so depletes nothing further" was the same misreading as §4 |
+| **no criterion coupling** | ⚠️ **partly.** `T-P1`'s identity ladder is declared in advance, so `T-P1`/`T-A0b` are genuinely uncoupled. But **`T-P2` and `T-E1` share the 157-character reopening bar**, `T-REG2`'s denominator depends on `T-REG4`, and `T-A22`'s feature set can be informed by `T-A5b1`'s producer-enriched anchors |
 
-⚠️ **The fourth check is the one that bites.** A selection cutoff in this project landed exactly at
-the winner-flip point of its own sweep, and a repaired gate passed on a rule class motivated by the
-failed attempt. If `T-P1`'s clustering identity were chosen after seeing `T-A0b`'s intervals, they
-would be sequential by definition. It is declared beforehand, so they are not.
+⚠️ **The fourth check is still the one that bites**, and the coupling above is exactly its shape. A
+selection cutoff in this project landed at the winner-flip point of its own sweep; a repaired gate
+passed on a rule class motivated by the failed attempt; and tonight a mutant's catcher was repointed
+after the mutant escaped it. **If one task's bar is set using another's output, they are sequential
+by definition** — `T-P2` and `T-E1` are therefore sequential, not parallel, until the 157-character
+bar is predeclared by the operator.
+
+⛔ **Future collisions to hold, not schedule:** `T-A5b1` with `T-R1` (**they are the same task** —
+both map the 81 empirical RT-DNA sequences; running both spends the panel twice for one table);
+`T-A7` with `T-S3` (control and headline on the same Tier B chains); and `T-A5b1` with `T-A22`
+(**62 of the 81 RT-DNA anchors are measured producers**, so anchor-derived feature selection leans
+on a population that heavily overlaps `T-A22`'s positive class).
 
 ## 9 · Failure handling — fail closed, per task, never per programme
 

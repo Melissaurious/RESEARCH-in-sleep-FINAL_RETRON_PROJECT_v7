@@ -20,6 +20,6 @@ S09-coevolution	CLOSED_CURRENT_EVIDENCE	False	state_authorized;launcher_present
 S07-spire-rerun	CLOSED_CURRENT_DESIGN	False	state_authorized;launcher_present
 T-LINT2-prose-numbers-gated	VOID_REVIEW_FAILED	False	state_authorized
 T-LINT5-prose-numbers-gated	READY_WAITING_OPERATOR	False	state_authorized;launcher_present
-T-GATE1-consumption-gate	AUTHORIZED	True	
+T-GATE1-consumption-gate	BLOCKED_DEPENDENCY	False	state_authorized
 T-AUDIT1-circular-control-sweep	AUTHORIZED	True	
-T-P1-relatedness-backbone	AUTHORIZED	True	
+T-P1-relatedness-backbone	READY_WAITING_OPERATOR	False	state_authorized
