@@ -144,6 +144,27 @@ not flatly "too narrow": under-coverage can also arise from bias or tail-shape e
 the consequence for this task is the same and is the part most easily lost in summary — **"excludes
 zero" deserves less confidence than its 95 % label suggests, not more.**
 
+## 2.5 · Three landed cells that bear on C-28 and were not cited — added by review 02
+
+A second independent scientific review (Codex `01a0bde9`) found three cells in the **upstream
+bundle** that bear directly on the R − G result and that neither the task nor this correction had
+cited. All three were verified here before being recorded. **Two weaken it. One strengthens it.**
+
+| cell | value | reading |
+|---|---|---|
+| `LINEAGE_CONTROL.tsv`, `R - G / near_dup_sensitivity` | interval **[−0.006009444221056286, +0.0019628428863705427]** over 284 components | ⚠️ **spans zero.** Restricted to the near-duplicate-sensitivity population the contrast is not distinguishable from zero |
+| `SEED_VARIANCE_SUMMARY.tsv`, `R - G` | `across_seed_sd` = **0.005064**, `primary_seed_diff` = **−0.005507**, range [−0.015595, −0.005507], `all_same_sign` = True | ⚠️ **training-seed variation is the size of the estimate.** The reported interval conditions on one seed and does not carry this |
+| `A0_leave_one_type_out.tsv` | **no sign flip in any of the 21 rows**; maximum shift 0.00168846 | ✅ **strengthens it.** No single retron type creates the negative mean — the simplest artefact is ruled out |
+
+> **Net effect: the type-blocked bound is weaker than §2.1 alone implies.** An interval that excludes
+> zero on one seed, from a generator with a 0.100 false-exclusion rate, whose effect is the size of
+> its own across-seed spread, and which spans zero on a near-duplicate-restricted population, is
+> evidence of an **operational model residual**. It is not evidence of a biological exact-RT residual.
+
+**Also corrected, in the other direction.** The earlier draft said C-28 is "unchanged" by this task.
+That over-withdrew. Batch One **does** add information: the R − G mean is robust to dominant-type
+resampling and to deletion of any one type. That is not claim support, and it is not nothing.
+
 ## 3 · What this task is good for, unchanged
 
 - It shows the unclustered interval generator **fails under the fitted Gaussian random-intercept

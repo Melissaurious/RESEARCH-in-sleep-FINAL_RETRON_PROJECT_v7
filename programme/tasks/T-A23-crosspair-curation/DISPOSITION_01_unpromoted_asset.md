@@ -49,15 +49,23 @@ experiment.
 
 | quantity | value | source cell |
 |---|---|---|
-| experimental blocks | **7** | `A23_geometry.tsv`, `n_experimental_blocks` |
+| block **records** (up to) | **7** | `A23_geometry.tsv`, `n_experimental_blocks` |
 | non-cognate rows, all provisional | 56 | `n_noncognate_rows` |
 | rows carrying a numeric value | **0** | `n_rows_with_numeric_value` |
 | author lineages | 3 | `n_independent_research_groups` |
 | source documents on disk yielding rows | **3** of 79 screened | `n_source_documents_on_disk` |
 
-If a combination count is demanded, the strict primary-paper prose-named floor is **8**, of which
-**6** are unconfounded on the RT–ncRNA axis. The six Efe1 direction labels come from one sentence
-and are already inside the 42-cell panel; they are not six independently evidenced measurements.
+⚠️ **Corrections required by scientific review 02 (Codex `01a0bde9`), applied here.**
+
+**"7 experimental blocks" is corrected to "up to 7 reported block records".** Four of them
+(`SIM2019|C1|ref33`, `C2|ref32`, `C3|ref32_ref36`, `C4|ref35`) are represented **only through a
+secondary review** and are not verified from primary artifacts.
+
+⛔ **The "8 combinations, 6 unconfounded" floor in the earlier draft was wrong at the unit level.**
+Those are eight **assay rows**, not eight combinations. Excluding the disputed six Efe1 expansions,
+the direct primary-paper rows contain **four distinct RT × ncRNA combinations**: two from BUF2025,
+and the same two Sen2/Eco9 combinations repeated across assay contexts B1, B2a and B2b. **Repeating
+a combination in three assays does not make three combinations.**
 
 ## 3 · REFUSED — the positive control, because it is circular
 
@@ -99,6 +107,21 @@ well-formed. Declaring that floor is an operator decision and is listed as such.
 ## 7 · Board consequence
 
 `T-A23-crosspair-curation` stays `REVIEW_FAILED`. Its artifacts are preserved as unpromoted assets
-under §1. **No orthogonality, compatibility or interchangeability claim exists or is proposed.**
+under §1.
+
+### ⚠️ One over-withdrawal, corrected by scientific review 02
+
+The earlier draft said **"no compatibility claim exists or is proposed"**. That is too absolute and
+it discards a real finding. The defensible position is **existential, not general**:
+
+| may be said | may NOT be said |
+|---|---|
+| **Some tested non-cognate RT × ncRNA combinations function.** Direct primary rows report it: `BUF2025-A1-001` and `BOB2022-B1-001` both carry `outcome_direction = functional` | any orthogonality **rate**, percentage or landscape |
+| **Therefore "retrons are universally orthogonal" is contradicted** by the published record | that non-cognate function is general, or predictable |
+| mechanistic hypotheses from specific experiments, labelled as resting on very few systems | that absence from the curated matrix means incompatibility |
+
+**That is the whole of it**: an existence statement and a refutation of a universal. Not a claim
+about how often, how much, or in which direction — none of which is estimable from 0 numeric values
+across 3 author lineages with 75 % of rows from one panel.
 `S12-orthogonality` stays closed. `T-A23b/c/d/e` are registered; whether any of them launches is
 governed by the readiness class recorded for each in `ALL_DOWNSTREAM_TASKS.tsv`.
