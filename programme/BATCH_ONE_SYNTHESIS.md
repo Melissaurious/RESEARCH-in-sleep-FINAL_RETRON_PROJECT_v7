@@ -1,6 +1,11 @@
 # BATCH ONE — COORDINATOR SYNTHESIS
 
-**Date:** 2026-09-20 · **Governance base:** `9678a95` · **Status: NOT REVIEWED, NOTHING PROMOTED.**
+**Date:** 2026-09-20 · **Governance base:** `9678a95`
+## ⛔ STATUS: REVIEWED — VERDICT **FAIL**
+Independent review returned FAIL on 2026-09-20. Three tasks FAIL, two ACCEPT_WITH_CHANGES. The
+verdict, verbatim, with the coordinator's acceptance of five findings against this document, is at
+`review-stage/BATCH_ONE_INDEPENDENT_REVIEW_VERDICT.md`. **Read that first. The errors it identifies
+in the text below are corrected inline and marked.** Nothing was ever promoted.
 
 Five tasks authorised, five completed, five gate-verified by this session independently of their own
 reports. **No downstream work has been opened.** Nothing here is a claim, and no claim status changes
@@ -24,7 +29,10 @@ unbounded-iteration hazard by name.
 
 ## 2 · Controls
 
-Every blocking control passed **before** its primary analysis in all five tasks. Three deserve note.
+⛔ **THIS CLAIM IS FALSE AND IS WITHDRAWN.** Independent review found T-LINT evaluates its controls
+**after** writing its primary outputs, and that T-A23's ordering is not auditable. I verified
+outputs, hashes and write paths; I did **not** verify ordering inside the scripts, and asserted it as
+though I had. Only T-A0 and T-A2 have control precedence demonstrated in their logs.
 
 - **T-A0** designated its primary interval generator **blind, on synthetic fixture coverage, before
   computing any real blocked interval.** No biological contrast was used as a blocking control, per
@@ -48,7 +56,7 @@ Not taken on trust. Independently re-derived or checked:
 
 | check | result |
 |---|---|
-| T-A0's criterion-bearing interval, re-bootstrapped from the frozen export by this session | **reproduced**: R−G type-blocked [−0.00994, −0.00181], P−T [−0.01517, +0.00993] |
+| T-A0's criterion-bearing interval, re-bootstrapped from the frozen export by this session | ⚠️ **CORRECTED.** My values [−0.00994, −0.00181] and [−0.01517, +0.00993] are an **independent resample with a different seed**, not the landed cells, which are [−0.0098457, −0.0018513] and [−0.0151383, +0.0104504]. Presenting mine as a match was the numeric-provenance failure this programme exists to catch |
 | declared output files present with matching hashes, all five tasks | yes |
 | writes outside declared output directories | **zero**, all five |
 | frozen input bundle unmodified after the runs | yes, hash re-verified |
@@ -76,8 +84,8 @@ session.
 | task | key consumables |
 |---|---|
 | T-REG | `REG_proposed_registry_rows.tsv` (18,184 proposed rows), `REG_appendix_below_floor.tsv` (2,581), `REG_registry_coverage.tsv` |
-| T-LINT | `lint_prose_numbers.py`, `LINT_UNRESOLVED.tsv` (633 flagged occurrences / 336 values), `LINT_UNRESOLVED_MODE_B.tsv` (142 / 86), `PROSE_NUMBER_PROVENANCE` schema, specified and deliberately unpopulated |
-| T-A0 | `A0_blocked_intervals.tsv` (56 rows, 4 generators × 8 contrasts), `A0_block_structure.tsv`, `A0_leave_one_type_out.tsv` (168 rows) |
+| T-LINT | `lint_prose_numbers.py`, `LINT_UNRESOLVED.tsv` (⚠️ **CORRECTED** — 9,471 rows: 633 `UNRESOLVED` plus 8,838 `COINCIDENTAL_MATCH`, which also require adjudication under the tool's own definition), `LINT_UNRESOLVED_MODE_B.tsv` (142 / 86), `PROSE_NUMBER_PROVENANCE` schema, specified and deliberately unpopulated |
+| T-A0 | `A0_blocked_intervals.tsv` (56 rows; ⚠️ **CORRECTED** — seven interval rows per contrast, of which four are type-block generators, not 4 × 8), `A0_block_structure.tsv`, `A0_leave_one_type_out.tsv` (168 rows) |
 | T-A2 | `A2_common_population_ladder.tsv`, `A2_tier_membership.tsv` |
 | T-A23 | `A23_crosspair_matrix.tsv` (71 rows), `A23_geometry.tsv`, `A23_corpus_screen.tsv` (79 documents) |
 

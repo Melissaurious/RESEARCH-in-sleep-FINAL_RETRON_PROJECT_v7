@@ -67,14 +67,58 @@ available, load ~2.4 of 48. Verified directly, not assumed.
 |---|---|---|
 | `ZERO` | this session | reads landed tables, writes new tables. No job. |
 | `CPU_SMALL` / `CPU_MEDIUM` | workstation | under ~4 h |
-| `CPU_HIGH` / `MEMORY_HIGH` | **workstation** | 48 cores and 232 GB free make most of this local. Ibex is **not submittable from this host**, see below |
-| `GPU_*` | **UNRESOLVED — do not schedule** | see below |
+| `CPU_HIGH` / `MEMORY_HIGH` | workstation, or **Ibex over SSH** | 48 cores and 232 GB free make most of this local |
+| `GPU_*` | **UNRESOLVED locally — do not schedule until confirmed** | see below |
 
-⛔ **Ibex is not reachable from this host.** `sbatch`, `squeue`, `sinfo`, `sacct` and `srun` are all
-absent. An earlier version of this table routed heavy work to "Ibex, fallback workstation", which
-promised a backend no task can reach. **Any Ibex work requires an SSH round trip that has not been
-established**, and a launcher naming Ibex without one is declaring an unreachable branch, which the
-reachability precondition exists to catch.
+### Correction, and how I got it wrong
+
+An earlier revision of this table declared **"Ibex is not reachable from this host"** on the evidence
+that `sbatch`, `squeue`, `sinfo`, `sacct` and `srun` are all absent. **That was wrong, and the
+correction matters more than the error.**
+
+`general/site/IBEX.md` states, and verifies, that this workstation **has no SLURM client by design**:
+*"`borg` has no SLURM client at all ... every scheduler command therefore runs on Ibex, over SSH."*
+Submission is by `ssh rioszemm@ilogin.ibex.kaust.edu.sa`, key-based, last exercised 2026-09-06 with
+four named job IDs. **A wrapper already exists** at `general/tools/status.sh`, which polls
+`squeue --me` over SSH. Anything needing Ibex job state should call that, not reimplement it.
+
+So the absent client is the documented, expected state, not a defect. I read a *correctly absent*
+tool as a finding, and wrote a rule that would have stopped legitimate work.
+
+**Why I got it wrong is the part to keep.** The document that answers this was in my own worktree the
+whole time, at `general/site/IBEX.md`. I checked the machine and did not check the governance layer.
+That is the same failure this programme was built around, at smaller scale: five conclusions in the
+underlying review were reversed by looking outside a declared scope, and here the scope was one
+directory away. **Check `general/` before recording any capability as absent.**
+
+⚠️ **Latent break, unfixed:** `status.sh` defaults `IBEX_HOST` to the alias `ibex`, which `IBEX.md`
+marks *optional and not re-verified*. If the alias is missing the wrapper prints UNREACHABLE and the
+next reader concludes Ibex is down when it is merely unaliased. Set the full hostname or verify the
+alias. Do **not** use the `vscode.` host for scripted access; it is a load-balanced pool with a
+documented node that hangs at SSH userauth. The SSH marks are two weeks old; re-verify before Batch
+Two treats Ibex as available.
+
+### ⛔ The real defect: `general/` is empty in every task worktree
+
+| worktree | `general/` entries |
+|---|---|
+| synthesis | **15** |
+| every `task/*` worktree | **0** |
+
+The governance layer, which carries the Ibex profile, the compute policy, the evidence standards and
+the wrapper, **does not materialise in a task worktree**. `CLAUDE.md` requires
+`git submodule update --init --recursive && bash general/checks/specs_exist.sh` before
+provenance-bearing execution, and in a task worktree as created that check **cannot run**.
+
+This is the same failure class as a deferred tool arriving as a bare name: **the capability exists at
+the root and is absent in the spawned context, so the spawned context concludes it does not exist.**
+A Batch-Two task needing Ibex would find no client, find no profile explaining why, and report the
+backend unavailable, reproducing exactly the error corrected above.
+
+`programme/launch_task.sh` already initialises the submodule on first use. **Batch One did not go
+through it** — those sessions were dispatched directly, bypassing the script, so they ran without the
+governance layer. That is a dispatch error, not a script error, and it is mine. Every future dispatch
+goes through `launch_task.sh`, or performs the submodule init and the specs check explicitly.
 
 ⚠️ **GPU state is unresolved, which is not the same as absent.** `nvidia-smi` fails to reach a
 driver. That is consistent with an unloaded driver **or** with a sandbox restriction, and the two
