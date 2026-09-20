@@ -263,6 +263,34 @@ Admissible blocking controls, in order of preference:
 
 Everything else is a **diagnostic**, reported and never blocking.
 
+## 6b · FREEZE BEFORE EXECUTE — adopted 2026-09-20 after Execution Batch 01
+
+⛔ **The launcher AND the implementation are committed, together, in one commit, BEFORE the run.**
+The run records that commit id. Code that enters git alongside its own outputs is not preregistered,
+whatever its comments say.
+
+**Why, and it cost a whole batch.** Four of the five tasks in Execution Batch 01 were rejected, and
+the systemic cause was the same: launcher and code first entered git **with the outputs**. The
+consequences were not theoretical —
+
+- `T-P1`'s launcher declared four blocking controls; the landed script **implemented none of them as
+  gates**, and two never ran at all. Nobody could see that before the run, because the script did
+  not exist in git before the run.
+- Two tasks hit a failed blocking control and were **rewritten as a v2 under the same task
+  identity**. §6 requires escalation and a new ID. Under a freeze that substitution is impossible.
+- `T-P1`'s controls were **appended to the primary input**, so they changed the clustering they were
+  meant to check. A frozen launcher review would have caught it in one reading.
+
+**Three rules follow, and none of them is optional:**
+
+1. **Freeze first.** Launcher + implementation + fixtures, one commit, before execution.
+2. **A failed blocking control ends the task.** Escalate and open a new ID. Never a v2 in place.
+3. **A control may not touch the primary input.** Controls run on fixtures or in a separate pilot.
+   If a control changes the thing it measures, it is not a control.
+
+> The speed in Batch 01 came from skipping the freeze, and the freeze is the only thing that makes a
+> control mean anything. It is not overhead; it is the whole mechanism.
+
 ## 7 · Standing prohibitions for every session
 
 - No scientific analysis begins without an authorised launcher on the board.
