@@ -9,7 +9,20 @@ authority: review-stage/BATCH_ONE_INDEPENDENT_REVIEW_VERDICT.md (ACCEPT_WITH_CHA
 criterion_changed: false
 outputs_changed: false
 reruns: none
+review_01: Codex, fresh thread 01a0bc97, read-only, 2026-09-20 — ACCEPT_WITH_CHANGES
+review_01_changes_applied: all 7
 ---
+
+> **Independent re-review applied.** A fresh read-only Codex thread (`01a0bc97`) reviewed this
+> correction and returned **ACCEPT_WITH_CHANGES** with seven required changes, all applied.
+>
+> **One of them was a factual error in the first draft of this document, and it mattered.** The
+> draft said the common-population alternative budget "is not available from any landed table".
+> **That is false.** `X2_PAIR_LEVEL_EFFECTS.tsv.gz` is a landed, hash-manifested table in the same
+> bundle and carries `n_alternatives_C1…C4` per pair. The budget on the common 423 components is
+> therefore derivable, the reviewer derived it, and the coordinating session **re-derived it
+> independently** before accepting it (§2.2). The correction is stronger for it: the second axis is
+> now **measured** on the common set rather than argued from the full-tier aggregates.
 
 # T-A2 · CORRECTION 01 — the ladder is descriptive, and the budget is a second uncontrolled axis
 
@@ -59,8 +72,7 @@ for the reason in §2.2.
 
 ### 2.2 · The alternative budget is a second axis and it was never held constant
 
-The tiers differ in how many counterfactual alternatives each pair receives, and they differ on
-the full tier populations by a landed, cited amount:
+On the **full tier populations** the budget is a landed cell:
 
 | tier | `alternatives_per_pair` | source |
 |---|---|---|
@@ -69,55 +81,99 @@ the full tier populations by a landed, cited amount:
 | C3 | 7.983054136213699 | same |
 | C4 | 7.44473377646817 | same |
 
-**Fixing the population does not fix the budget.** T-A2 intersected the four tiers to 423 common
-components; it did not equalise, match or even measure the per-pair alternative budget *inside*
-that common set. The upstream bundle publishes the budget only as a **tier-level aggregate** —
-`COUNTERFACTUAL_TIER_SIZING.tsv` and its four per-tier files each carry a single row — so the
-common-population budget is **not available from any landed table**, and computing it requires the
-pair-level export.
+**On the common 423 components it is also derivable, and it is still unequal.** The bundle's
+`X2_PAIR_LEVEL_EFFECTS.tsv.gz` — landed and listed in the bundle's `HASHES.sha256` — carries
+`n_alternatives_C1…C4` per pair. Joining it to the 423 components where
+`A2_tier_membership.tsv / in_common_population = 1` gives:
 
-> **Therefore: at least two things change across the tiers of this ladder — which components are
-> in it, and how many alternatives each pair is scored against. T-A2 controls the first and leaves
-> the second free. No causal attribution to either is available from this task.**
+| tier | eligible common-set pairs | alternatives total | common-set alternatives/pair |
+|---|---|---|---|
+| C1 | 30,096 | 240,768 | **8.0** |
+| C2 | 29,016 | 232,128 | **8.0** |
+| C3 | 30,147 | 240,975 | **7.9933326699174** |
+| C4 | 29,092 | 217,034 | **7.46026399010037** |
 
-The budget is recorded here as an **explicit second axis, declared uncontrolled**, not as a
-controlled one. Making it genuinely controlled means a budget-matched ladder, which is a separate
-producing task, registered as **T-A2b-budget-matched-ladder** in
-`programme/ALL_DOWNSTREAM_TASKS.tsv`.
+The four pair counts independently equal `A2_common_population_ladder.tsv / n_pairs_in_tier`,
+which is what confirms the join. **Derived twice**: by the independent reviewer, and re-derived
+from scratch by the coordinating session before acceptance.
+
+**T-A2 did not read that file, and that was correct for T-A2** — it is a pair-level export, and
+pair counts overstate sample size by three orders of magnitude. "Not an admissible inference input
+for this task" is, however, a different statement from "not available from any landed table", and
+the first draft of this document confused the two.
+
+### 2.2a · Three things change across the tiers, not two
+
+| axis | full-tier ladder | **common-population ladder** |
+|---|---|---|
+| component membership | varies (1019 / 832 / 1073 / 451) | **fixed at 423** |
+| eligible-pair membership and count | varies | **still varies**: 30,096 / 29,016 / 30,147 / 29,092 |
+| alternative budget per pair | varies | **still varies**: 8.0 / 8.0 / 7.9933 / 7.4603 |
+
+> **T-A2 fixes the component population. It does not fix the eligible-pair set, and it does not fix
+> the alternative budget. Two of the three axes remain free, so no causal attribution to any of
+> them is available from this task.**
+
+Both remaining axes are recorded here as **explicit, declared-uncontrolled** axes. Making them
+controlled is a separate producing task, **T-A2b-budget-matched-ladder**, registered in
+`programme/ALL_DOWNSTREAM_TASKS.tsv`. ⚠️ **Matching the mean budget would not by itself isolate
+the mechanism**: alternative *identity* and the eligible-pair set would still need explicit
+treatment, and that is part of T-A2b's design problem rather than a detail of it.
 
 ### 2.3 · What may and may not be said
 
 | may be said | may not be said |
 |---|---|
-| the published ladder's monotone shape does not survive holding the population fixed | population composition explains the published ladder |
+| the published ladder's monotone shape does not survive holding the **component** population fixed | population composition explains the published ladder |
 | the pair-weighted ladder is non-monotone on the **full** populations too, before any intersection | the pair-weighted result corrects the component-level one |
 | the C3 common-population component-level mean, 0.0007958345153664303, has a bootstrap interval spanning zero, [−0.0004492768912529554, 0.001977148581560283] | C3 has no effect |
-| monotonicity recurs in 0.1673 of component-level replicates | monotonicity is refuted |
+| the **observed** common-population ladder is non-monotone: C4 (0.0015582978723404255) exceeds C3 (0.0007958345153664303) | monotonicity has been **inferentially refuted** with calibrated uncertainty |
+| monotonicity recurs in 0.1673 of component-level bootstrap replicates | that fraction is a calibrated probability |
+
+⚠️ **"Pair-weighted" means a pair-count-weighted mean of the component-level estimates.** It is
+**not** a raw mean over the landed pair-level effects; the two differ because the component values
+are themselves token-weighted. It is a sensitivity row, not a superseding estimator.
 
 ### 2.4 · `SCIENTIFIC_OUTCOME` is corrected from `SUPPORTS_H1` to `DESCRIPTIVE`
 
-The synthesis recorded `SUPPORTS_H1`. The hypothesis as stated was about the ladder's shape on a
-fixed population; the measurement is a description of that shape's instability under two
-simultaneous changes, only one of which was controlled. **`DESCRIPTIVE` is the honest field
-value.** `TASK_STATE` is unchanged at `PASS`: the task executed correctly, and this correction
-concerns what its numbers mean, not whether they are trustworthy.
+The synthesis recorded `SUPPORTS_H1`. **The launcher's hypothesis was explicitly mechanistic — "the
+shape is partly a population artefact"** — not merely a statement about shape. T-A2 does not
+isolate that mechanism, because two of the three axes in §2.2a remain free. **`DESCRIPTIVE` is the
+honest field value.**
+
+`TASK_STATE` is unchanged at `PASS`: the task executed its frozen procedure, its controls passed
+and its tables are internally consistent. **An interpretation failure is not an execution
+failure**, and this correction concerns only the former.
 
 ## 3 · Controls, unchanged and still sound
 
-All three blocking controls ran before the primary and are recorded in order in `RUN_LOG.txt`,
-which prints `all blocking controls PASS — running primary` before any primary line. Each could
-have failed: the reproduction control compares against landed cells row-for-row, and the tier
-membership control against landed counts. The review confirmed this independently. **T-A2 is the
-task whose control ordering is demonstrated rather than asserted**, and it is the model for the
-T-LINT repair.
+All three blocking controls ran before the primary. **The ordering is verified in the script, not
+only in the log**: `a2_ladder_population.py` evaluates the controls at lines 88–142, writes a
+failure log and exits at 144–148 if any of `ok_a`, `ok_b`, `ok_c` is false, prints
+`all blocking controls PASS — running primary` only after that branch at line 150, and begins the
+common-set primary at line 152. The pass line therefore **cannot** be printed independently of the
+three control booleans. Confirmed by the independent reviewer against the source.
+
+One qualification, so the word "exact" is not overclaimed: the reproduction control compares means
+rounded to six decimals and fractions to four; only the pair totals are compared exactly.
+"Row-for-row" is accurate; "exact reproduction" would not be.
+
+**T-A2 is the task whose control ordering is demonstrated rather than asserted**, and it is the
+model the T-LINT2 repair was built from.
 
 ## 4 · What this task does not show
 
 - Nothing about biology.
-- Nothing about which of the two axes drives the published shape.
-- Nothing about whether any tier's effect is different from zero after correct cluster-aware
-  inference; T-A2 uses the equal-weight component bootstrap, which T-A0 measured at 0.650 coverage
-  against a nominal 0.95.
+- Nothing about which of the three axes in §2.2a drives the published shape.
+- **Nothing about whether any tier's effect differs from zero.** T-A2 uses the same unclustered,
+  equal-weight component resampling algorithm that T-A0 measured at **0.65** coverage on its
+  positive fixture and **0.659** on its null fixture, against a nominal 0.95.
+  ⚠️ **Those two numbers are not T-A2's coverage.** They come from a synthetic R − G fixture with
+  1,075 components, R − G variance parameters and the dominant-retron-type partition. T-A2 uses 423
+  components, four different outcomes, a paired four-tier bootstrap and a different weighted
+  estimator on its sensitivity rows; **its own coverage was never measured.** What follows is only
+  that T-A2 performed no calibrated cluster-aware inference, so it establishes no tier's difference
+  from zero — **not** that a correct analysis would find zero inside every interval.
 
 ## 5 · Board consequence
 

@@ -9,7 +9,15 @@ authority: review-stage/BATCH_ONE_INDEPENDENT_REVIEW_VERDICT.md (ACCEPT_WITH_CHA
 criterion_changed: false
 outputs_changed: false
 reruns: none
+review_01: Codex, fresh thread 01a0bc96, read-only, 2026-09-20 — ACCEPT_WITH_CHANGES
+review_01_changes_applied: all 7
 ---
+
+> **Independent re-review applied.** A fresh read-only Codex thread (`01a0bc96`) reviewed this
+> correction and returned **ACCEPT_WITH_CHANGES** with seven required changes. All seven are
+> applied below and each is marked. The reviewer verified every substantive number against the
+> landed cells and found no value wrong; the changes concern one mis-attributed source, one
+> undisclosed diagnostic row, and five wordings that overstated in one direction or the other.
 
 # T-A0 · CORRECTION 01 — the result is a type-blocked bound, not a lineage test
 
@@ -38,6 +46,14 @@ overstated it.
 All four type-block generators exclude zero for R − G. The only contrast whose type-blocked
 interval includes zero is **P − T**, at [−0.015138288891128724, +0.010450378618329932]
 (`A0_blocked_intervals.tsv`, `P - T / type_block / pairs_cluster_bootstrap`).
+
+⚠️ **"All four" is agreement, not corroboration, and one of the four is itself uncalibrated.** The
+four are alternative analyses of the same 1,075 components, not four independent confirmations, so
+their agreement carries much less weight than four independent measurements would. And
+`cr1_sandwich_t` **failed its own null-fixture control** — coverage 0.898 against the declared band
+[0.90, 0.99] (`A0_control_checks.tsv`, `C3_null_fixture[cr1_sandwich_t]`, `state = FAIL`,
+non-blocking and reported). It is retained as a diagnostic and should not be counted as
+independent support.
 
 ## 2 · The correction
 
@@ -75,39 +91,67 @@ Two separate facts, both from landed cells, and they are not the same fact:
    `n_blocks` = 1075 and reproduces the unclustered interval
    [−0.007968794488372087, −0.00312316537209302] exactly.
 
-2. **Homolog-group identity is not in the component export at all.** The export carries homolog-group
-   *counts*; identity had to be taken from `CROSSFIT_MANIFEST.tsv`, an input T-A0 declared in its
-   preregistration before execution and which the coordinator accepted.
+2. **Homolog-group identity is not in the component export at all.** Read directly from the export's
+   own header, `X2_COMPONENT_LEVEL_EXPORT.tsv` column 7 is `n_rt_homolog_groups` — a **count** — and
+   no column carries a group identifier. Identity had to be taken from `CROSSFIT_MANIFEST.tsv`, an
+   input T-A0 declared in its preregistration before execution and which the coordinator accepted.
 
 **Therefore a lineage-level interval requires a lineage partition that is neither nested inside the
 component unit nor derivable from the component export.** That partition does not exist in this
 project today. Producing it is a separate producing step, registered as **T-A0b-lineage-partition**
 in `programme/ALL_DOWNSTREAM_TASKS.tsv`.
 
+### 2.3a · The one homolog-level row that does exist, and why it is not the missing test
+
+`A0_blocked_intervals.tsv` carries a row `R - G / homolog_unit / iid_bootstrap_homolog_groups`,
+`n_units` = 2455, interval [−0.004514147668024432, −0.0021076656211812543]. **It is disclosed here
+so that nobody later finds it and reads it as the lineage result.** Its own `note` field says what
+it is: *"DIFFERENT ESTIMAND: homolog-group-weighted component mean; diagnostic only, never used for
+the criterion."*
+
+Resampling homolog groups as **units** re-weights the estimand toward components that contain many
+groups. That is a different quantity from the component-weighted contrast C-28 concerns. **It is
+not a lineage-blocked interval for the C-28 estimand**, and the precise absence claim is therefore:
+*no lineage-blocked interval exists for the component-weighted estimand relevant to C-28.*
+
 ⛔ **No lineage analysis is manufactured here.** The correct statement about the lineage level is
 that it is *absent*, not that it is *negative* and not that it is *favourable*.
 
 ### 2.4 · "Blind" is overstated, and the direction of the miscalibration matters
 
-The synthesis called the primary-generator designation **blind**. Corrected: the generator was
-designated **before any real blocked interval was computed**, which is true and is the property that
-matters for selection, but its fixtures were **not independent of the real data** — their variance
-parameters were fitted to the real R − G series (`A0_block_structure.tsv`,
-`summary/all/icc_type_RminusG` = 0.028089327361041822, `deff_RminusG` = 2.324180538052522). Call it
-**pre-designated**, not blind.
+The synthesis called the primary-generator designation **blind**. Corrected wording of record:
 
-**And the selected generator under-covers.** `A0_fixture_coverage.tsv` gives
-`pairs_cluster_bootstrap` coverage **0.915** on the positive fixture and **0.900** on the null
-fixture, against a nominal 0.95. Under-coverage means the intervals are, if anything, **too
-narrow** — so "excludes zero" is a **weaker** finding than its nominal 95 % label suggests, not a
-stronger one. This direction was stated in the synthesis and is restated here because it is the
-part most easily lost in summary.
+> The generator was **selected by a predeclared rule, applied before any real blocked interval was
+> computed, on synthetic fixtures calibrated to the real R − G data. It is therefore temporally
+> preselected, but neither blind nor independently validated.**
+
+Temporal order is what rules out selecting on the final interval. It is **not** the only property
+that matters, and the fixtures were data-adaptive in **both** moments, not only in variance: the
+variance components come from the real R − G series (`A0_block_structure.tsv`,
+`summary/all/icc_type_RminusG` = 0.028089327361041822, `deff_RminusG` = 2.324180538052522), and the
+positive fixture's `mu_true` = −0.005507 (`A0_fixture_coverage.tsv`) **is the landed R − G point
+estimate**. A fixture calibrated to the answer cannot certify the instrument against that answer.
+
+**And the selected generator is miscalibrated in the anti-conservative direction.**
+`A0_fixture_coverage.tsv` gives `pairs_cluster_bootstrap` coverage **0.915** on the positive
+fixture and **0.9** on the null fixture, against the nominal 0.95 named in `A0_control_checks.tsv`
+(`declared_band` = "[0.90, 0.99] vs nominal 0.95" — the nominal figure is **not** a field of the
+coverage table and is cited from the control table). On the null fixture `frac_excluding_zero` =
+**0.1**, twice the 0.05 a nominal 95 % interval permits.
+
+The honest reading is **"anti-conservative or otherwise miscalibrated on these fitted fixtures"**,
+not flatly "too narrow": under-coverage can also arise from bias or tail-shape error. Either way
+the consequence for this task is the same and is the part most easily lost in summary — **"excludes
+zero" deserves less confidence than its 95 % label suggests, not more.**
 
 ## 3 · What this task is good for, unchanged
 
-- It **refutes the unclustered interval generator**: `iid_bootstrap_unclustered` covers 0.650
-  (positive) and 0.659 (null) against nominal 0.95 (`A0_fixture_coverage.tsv`). That bears on every
-  interval produced by the scripts behind the landed pairing results, none of which was examined.
+- It shows the unclustered interval generator **fails under the fitted Gaussian random-intercept
+  fixture model**: `iid_bootstrap_unclustered` covers 0.65 (positive) and 0.659 (null) against the
+  nominal 0.95 (`A0_fixture_coverage.tsv`; nominal per `A0_control_checks.tsv`). ⚠️ **This is a
+  simulation result under an assumed dependence model, not a measurement of real-world coverage.**
+  It is a **warning about a shared method** — the same generator stands behind the landed pairing
+  intervals — and **not** an adjudication of those intervals, none of which was examined here.
 - It **settles the effective-sample-size confusion with a number that names its own estimator**:
   n_eff ≈ **462.528612730216** by design effect (`A0_block_structure.tsv`,
   `summary/all/n_eff_deff_RminusG`), against the bundle's `n²/n = n` value of 1075.0 and the index
@@ -117,8 +161,11 @@ part most easily lost in summary.
 
 ## 4 · What this task does not show
 
-- Nothing about biology.
-- Nothing at the 50 %-identity lineage level.
+- **No lineage-general, mechanistic, causal or biological interpretation.** The earlier draft said
+  "nothing about biology", which is too absolute: the task does report a sample-level R − G contrast
+  measured on biological data, and its robustness to dominant-retron-type blocking. What it does
+  not supply is any reading of what that contrast means.
+- Nothing at the 50 %-identity lineage level, for the component-weighted estimand C-28 concerns.
 - Nothing about the other intervals in the pairing bundle, which were not examined.
 - No absolute baseline. The ladder of absolute baselines is a separate task (`T-A1`).
 
