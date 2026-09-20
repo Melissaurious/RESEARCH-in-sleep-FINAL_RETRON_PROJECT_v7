@@ -1,0 +1,5 @@
+resource	capacity	note
+NVME_TOKENS	8	Global local-I/O budget. External P1b reserves 6; two IO_LOW=1 tasks may still run. IO_MEDIUM=3 waits; IO_HIGH=8 is exclusive.
+LOCAL_CPU_THREADS	44	Leave workstation headroom for OS/coordinator; individual task caps remain authoritative.
+LOCAL_GPU_SLOTS	2	Two RTX 4090 devices; only tasks explicitly declaring GPU use consume these.
+IBEX_SUBMISSIONS	4	Maximum concurrent submitted Ibex task workers; staging still consumes NVME_TOKENS.
