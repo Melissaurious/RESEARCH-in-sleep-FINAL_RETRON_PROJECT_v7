@@ -1,5 +1,5 @@
 task_id	state	detail	freeze_commit	worker_pid	analysis_pid	slurm_job_id	started_at	finished_at
-T-A23d-primary-verification	PENDING	retry: previous failures were mechanical (harness log collision; D19 specs_exist flake; Europe PMC 503)	26bbd28778450e6cf706f8db1afdb42cd3397da4					
+T-A23d-primary-verification	RUNNING	worker launched	26bbd28778450e6cf706f8db1afdb42cd3397da4	1099117			2026-09-20T20:08:10Z	
 T-D1-annotation-disagreement	PASS	DESCRIPTIVE	69a06fca24fb11c4eba8e4431b92192a07830337	1015090			2026-09-20T18:51:12Z	2026-09-20T18:51:58Z
 T-D2-taxonomic-distribution	PASS	DESCRIPTIVE	2bb0075912d7e62ce3be58f4e0658987ec7e5eba	1031715			2026-09-20T19:20:10Z	2026-09-20T19:22:44Z
 T-M1b-embedding-cache-reverification	WAIT_RESOURCE	WAIT_RESOURCE:need=8:available=7						
