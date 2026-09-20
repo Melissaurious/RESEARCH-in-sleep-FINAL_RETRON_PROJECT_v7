@@ -1,5 +1,70 @@
 # SESSION HANDOFF
 
+## START HERE — NEW CHATGPT SESSION
+
+**Eight files, in this order. They are sufficient. Nothing else is required to continue.**
+
+| # | file | what it gives you |
+|---|---|---|
+| 1 | `CLAUDE.md` | what the project is scientifically trying to answer, its unit discipline, its environments |
+| 2 | `programme/SESSION_HANDOFF.md` | **this file** — authoritative state, valid findings, VOID work, open decisions |
+| 3 | `programme/CANONICAL_DATASETS.tsv` | **every dataset that may be consumed**, with identity, counts, limitations, exposure, and a status of `CANONICAL` / `CANONICAL_WITH_LIMITATION` / `NEEDS_REDERIVATION` / `EXPLORATORY_ONLY` / `VOID_DO_NOT_CONSUME` |
+| 4 | `programme/NEXT_TASKS_OPERATOR_REVIEW.md` | the nine proposed tasks, the goals 1–12 status table, and the proposed first parallel wave |
+| 5 | `programme/RECONCILIATION_2026-09-20.md` | what is valid, what failed, what must not be consumed — the task × review table |
+| 6 | `programme/WORKING_RULES.md` | the rules a session may not relax, incl. §6b freeze-before-execute |
+| 7 | `docs/decisions/2026-09-20_operator_ruling_exposure_freeze_controls.md` | the exposure / freeze / control rules the programme runs on (**`PROVISIONAL` — decision D3**) |
+| 8 | `programme/SCIENTIFIC_DAG.md` | dependency structure. **§10 first**, then §§0–9 |
+
+**The four things a new session most often gets wrong, stated up front:**
+
+1. **Nothing in this project is promoted, and nothing is promotable.** No task carries a
+   `WORKING_RULES` §5 `TASK_REPORT.md`, and `human_input_audit` has never run.
+2. **`T-P1`, `T-LINT2`, `T-N1b` and `T-N1c` are VOID. Do not consume them and do not rehabilitate
+   them.** Their measurements may be correct; their execution is not trustworthy.
+3. **`PAIR-ELIG-30924` is exhausted permanently.** No confirmatory pairing claim is possible without
+   a newly declared population.
+4. **Exposure is per endpoint, not per dataset** — `population_id + analysis_family/endpoint +
+   exposure_state`. A rejected or VOID run still spends its endpoint.
+
+### Paste this into the new conversation
+
+```
+You are picking up a large bacterial reverse-transcriptase / retron mining project
+mid-programme. Do not start any analysis yet.
+
+Repository: /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis
+Branch: project-synthesis
+
+Read these eight files, in this order, before saying anything:
+  1. CLAUDE.md
+  2. programme/SESSION_HANDOFF.md            (start with "START HERE")
+  3. programme/CANONICAL_DATASETS.tsv
+  4. programme/NEXT_TASKS_OPERATOR_REVIEW.md
+  5. programme/RECONCILIATION_2026-09-20.md
+  6. programme/WORKING_RULES.md
+  7. docs/decisions/2026-09-20_operator_ruling_exposure_freeze_controls.md
+  8. programme/SCIENTIFIC_DAG.md             (section 10 first, then 0-9)
+
+Four rules that override any inference you might draw from the repository:
+  - Nothing here is promoted or promotable. No task has a section-5 TASK_REPORT.md.
+  - T-P1, T-LINT2, T-N1b and T-N1c are VOID. Never consume them, never rehabilitate
+    them because their numbers look fine.
+  - Exposure is tracked per population AND endpoint. A rejected or VOID run still
+    spends its endpoint. PAIR-ELIG is exhausted permanently.
+  - Only consume a dataset whose status in CANONICAL_DATASETS.tsv is CANONICAL or
+    CANONICAL_WITH_LIMITATION, and repeat its stated limitation wherever you use it.
+
+Then tell me, in under 400 words:
+  (a) which of my twelve biological goals currently have defensible evidence;
+  (b) which proposed task you would run first and why;
+  (c) which decisions of mine are blocking the most work.
+
+Do not audit historical work beyond what the stop condition in SESSION_HANDOFF
+section 11 permits. Do not launch anything.
+```
+
+---
+
 **The purpose of this file is that no important project state exists only in a conversation.**
 A completely fresh coordinating session, or a fresh ChatGPT thread, should be able to recover the
 whole project from this file and the eight documents in §8.
@@ -383,3 +448,64 @@ python3 general/tools/check_launcher.py launchers/LAUNCHER_02_rt0_rt7_definition
   and the habit it would otherwise teach — re-run until green — is how a real governance failure
   becomes invisible.
 - **One coordinating session per worktree.** Nothing enforces this; two ran today.
+
+---
+
+## 11 · AUDIT STOP CONDITION — adopted by the operator, 2026-09-20
+
+> **Historical audit is sufficient when every asset consumed by the next proposed scientific wave
+> has verified identity/provenance and known limitations, and no unresolved historical issue can
+> materially change that task's population, endpoint, control or interpretation.**
+>
+> **Anything outside that scope becomes backlog and does not block execution.**
+
+### What this permits, and what it forbids
+
+| inspect historical work when it is | do NOT inspect when it is |
+|---|---|
+| consumed by a proposed downstream task | merely old, merely large, or merely suspicious |
+| required to define a canonical population | a defect in an analysis nothing will consume |
+| required for a thesis or paper claim still in scope | interesting but not load-bearing |
+| capable of changing an important denominator, endpoint, control or interpretation | already recorded as VOID or bounded |
+
+⛔ **Do not rehabilitate a VOID or obsolete analysis simply because it exists.** `T-P1`,
+`T-LINT2`, `T-N1b` and `T-N1c` stay VOID. Their numbers may be correct; their execution is not
+trustworthy, and re-reading them does not change that.
+
+### Status against the stop condition for the proposed wave
+
+Assets consumed by the §7 wave, and whether each clears:
+
+| asset | identity verified | limitations known | clears? |
+|---|---|---|---|
+| `RT-EXACT-501561` | ✅ sha256 `bcde6e9a…2655`, cross-checked against `T-C1b`'s recorded input hash | ✅ | **yes** |
+| `FRAME-RVT-PF00078` | ✅ sha256 `682ce4a1…06fd` computed directly; PF00078.32, LENG 205, GA 29.6 | ✅ | **yes** |
+| `RT-RECORDS-3059700` | ✅ sha256 `5466050…fb6f` | ✅ rows are not independent loci | **yes** |
+| `RT-FAMILY-LABELS-613` | ⚠️ hash truncated in the registry | ✅ | **yes, with the hash to complete** |
+| `RT-TOOL-CALLS-3051238` | ⚠️ hash truncated in the registry | ✅ never pool across tools | **yes, with the hash to complete** |
+| `PANEL-175` / `PANEL-RTDNA-81` / `PANEL-PRODUCERS-67-36` | ✅ sha256 `80b2f565…9577` computed; **175 / 81 / 103 (67 vs 36) counted directly** | ✅ incl. the 62-of-81 overlap | **yes** |
+| `A23C-SOURCES-8`, `SIM2019` row only | ✅ DOI `10.1093/nar/gkz865`, 2019 | ✅ four sibling rows misidentified, `ERRATUM_01` | **yes for that row** |
+| `EMBED-CACHES-26016` | ❌ **no file hashed** | ✅ misidentification known | **it is `T-M1b`'s job to make it clear** |
+| `PRED-STRUCT-44608` | ⚠️ name+size only, and that is not content identity | ✅ | **it is `T-S1b`'s job to make it clear** |
+| `RT-WINDOW-CDS` | ❌ **no sha256 recorded** | ✅ | ⛔ **must be hashed before `T-N1d`** |
+
+**One blocking gap:** `RT-WINDOW-CDS` has no recorded hash and `T-N1d` consumes it. Hashing it is
+part of that task's input-identity control. **Everything else in the proposed wave clears.**
+
+### Open backlog — recorded, NOT blocking
+
+These are real and none of them can change the wave's population, endpoint, control or
+interpretation:
+
+| item | why it is backlog |
+|---|---|
+| `STRUCT-62` register file does not resolve on disk | consumed only by `T-A7`/`T-S3`, neither in the wave |
+| `DEPOSITED-COMPLEXES-8` pointer is stale | calibration asset, not in the wave |
+| `RETRON-LOCI` has two denominators differing by 1,947 | no task consumes it; `T-N1d` correctly uses `RT-RECORDS` |
+| truncated hashes for family baseline and tool calls | completing them is a line of work, not a finding |
+| the `~40 %` zero-ncRNA class is unexplained | goal 8 is closed; nothing in the wave depends on it |
+| `specs_exist.sh` flakiness (**D19**) | a gate defect, already diagnosed and recorded; it does not change any result |
+| `T-M2` landed-interval coverage | goal 10 is exhausted; no confirmatory pairing claim is possible anyway |
+
+**Audit is closed for this wave.** Further historical inspection happens only when a *specific
+proposed task* consumes a *specific asset* that has not cleared the table above.

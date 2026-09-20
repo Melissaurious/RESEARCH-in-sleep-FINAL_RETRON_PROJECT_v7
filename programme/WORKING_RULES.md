@@ -300,3 +300,28 @@ consequences were not theoretical —
 - No criterion is edited. A changed criterion is a new task inheriting the old record.
 - Prior work supplies **assets and bounded negatives**. Its numbers are `[UNVERIFIED]` and are
   re-derived before any citation.
+
+## 8 · Audit stop condition — adopted by the operator, 2026-09-20
+
+> **Historical audit is sufficient when every asset consumed by the next proposed scientific wave
+> has verified identity/provenance and known limitations, and no unresolved historical issue can
+> materially change that task's population, endpoint, control or interpretation.**
+>
+> **Anything outside that scope becomes backlog and does not block execution.**
+
+**Inspect historical work only when it is** consumed by a proposed downstream task; required to
+define a canonical population; required for a thesis or paper claim still in scope; or capable of
+changing an important denominator, endpoint, control or interpretation.
+
+⛔ **Do not rehabilitate a VOID or obsolete analysis simply because it exists.** A VOID task's
+numbers may be correct; its *execution* is not trustworthy, and re-reading it does not change that.
+
+**Why this rule exists.** Three execution batches produced four VOIDs and five review failures, and
+the honest response — audit everything — has a failure mode of its own: a programme that studies
+itself instead of retrons. Five of the nine currently proposed tasks are asset construction or
+reproduction. That is the right *next* step. **If the wave after it is not dominated by new science,
+the programme has become its own subject.**
+
+**Before consuming any dataset**, check its row in `programme/CANONICAL_DATASETS.tsv`. Consume only
+`CANONICAL` or `CANONICAL_WITH_LIMITATION`, and carry the stated limitation into every use.
+`NEEDS_REDERIVATION` means a named task must fix it first. `VOID_DO_NOT_CONSUME` means what it says.
