@@ -1,7 +1,7 @@
 {
   "run_id": "autonomous-wave-01",
   "created": "2026-09-20T18:03:00Z",
-  "updated": "2026-09-20T20:39:10Z",
+  "updated": "2026-09-20T20:45:48Z",
   "phases": [
     {
       "phase": "T-P1b-identity-partition",
@@ -13,11 +13,11 @@
     },
     {
       "phase": "T-A23d-primary-verification",
-      "status": "running",
+      "status": "failed",
       "artifact": null,
       "verdict_id": null,
       "reviewer": null,
-      "updated": "2026-09-20T20:39:10Z"
+      "updated": "2026-09-20T20:45:48Z"
     },
     {
       "phase": "T-R2a-tierA-internal-geometry",

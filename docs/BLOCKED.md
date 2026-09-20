@@ -612,7 +612,8 @@ recommended default (WA-S.1).
 - **What happens.** `wave_runner` promotes a task `COMPLETE_AWAITING_REVIEW -> PASS` when an
   independent deterministic validator confirms **execution validity** — frozen and input hashes,
   blocking controls, manifest, run log, report schema, no undeclared inputs, preregistered endpoint.
-  That promotion is legitimate on its own terms: pinned ARIS `tools/run_state.py` explicitly allows
+  That promotion is legitimate on its own terms: the pinned ARIS resumable-run-state helper
+  (`$ARIS_REPO` → `run_state.py`) explicitly allows
   *"a CROSS-MODEL reviewer (codex/gemini) **OR a deterministic verifier**"* to write `accepted`, and
   the verdict id and reviewer are recorded.
 - **Why it is still a problem.** `PASS` is **overloaded**. It is simultaneously (a) the state the
