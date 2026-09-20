@@ -39,19 +39,44 @@ echo
 
 cd "$WT" || exit 1
 
-# ---- per WORKTREE, once ----
+# ---- per WORKTREE, once: the governance layer. FAILS CLOSED. ----
+# Batch One ran with general/ empty in every task worktree, because this block warned and
+# continued. A governance layer that is optional is not a governance layer. It now blocks.
 if [[ -z "$(ls -A general 2>/dev/null)" ]]; then
-  echo "[setup] general/ empty in this worktree; initialising submodule (needs network)"
-  git submodule update --init --recursive || echo "[warn] submodule init failed; governance layer unavailable"
+  echo "[setup] general/ is empty; initialising the governance submodule"
+  # Prefer objects already in the repository. The submodule is a GitHub HTTPS remote, and a
+  # sandboxed session behind a filtering proxy can fail the fetch; that is the most likely
+  # way this worktree ended up empty. Only reach the network if the local path fails.
+  git submodule update --init --recursive --no-fetch 2>/dev/null \
+    || git submodule update --init --recursive \
+    || { echo "REFUSED: governance submodule could not be initialised. Not launching."; exit 1; }
 fi
 
-# ---- per SESSION ----
-if CONDA_BASE=$(conda info --base 2>/dev/null); then
-  # shellcheck disable=SC1091
-  source "${CONDA_BASE}/etc/profile.d/conda.sh" && conda activate retron_tradicional
-else
-  echo "[warn] conda not found; retron_tradicional NOT activated"
+# Assert the governance assets are actually present at the governed pin, not merely a
+# non-empty directory. Pin of record: docs/decisions/2026-09-15_general_pin_cff9831.md
+for asset in general/site/IBEX.md general/tools/status.sh general/checks/specs_exist.sh; do
+  [[ -s "$asset" ]] || { echo "REFUSED: missing governance asset ${asset}. Not launching."; exit 1; }
+done
+
+# CLAUDE.md requires this before provenance-bearing execution. It was written into the rules
+# and never executed. It is executed here, and it blocks.
+if ! bash general/checks/specs_exist.sh >/dev/null 2>&1; then
+  echo "REFUSED: general/checks/specs_exist.sh did not pass. Not launching."
+  exit 1
 fi
+
+# ---- per SESSION. ALSO FAILS CLOSED. ----
+# CLAUDE.md: "Do not use base." Warning and proceeding would run the task in the wrong
+# environment, which is the same fail-open shape as the block above.
+if ! CONDA_BASE=$(conda info --base 2>/dev/null); then
+  echo "REFUSED: conda not found; cannot activate retron_tradicional. Not launching."; exit 1
+fi
+# shellcheck disable=SC1091
+source "${CONDA_BASE}/etc/profile.d/conda.sh"
+conda activate retron_tradicional \
+  || { echo "REFUSED: could not activate retron_tradicional. Not launching."; exit 1; }
+[[ "${CONDA_DEFAULT_ENV:-}" == "retron_tradicional" ]] \
+  || { echo "REFUSED: active env is '${CONDA_DEFAULT_ENV:-none}', not retron_tradicional."; exit 1; }
 export CLAUDE_CODE_MAX_OUTPUT_TOKENS=100000
 export RETRON_PROGRAMME="$PROGRAMME"
 export RETRON_TASK="$TASK"
