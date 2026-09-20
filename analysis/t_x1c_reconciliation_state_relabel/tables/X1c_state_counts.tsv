@@ -1,0 +1,7 @@
+reconciliation_state	n	unit	denominator
+PAIR_EXACT_PRESENT	5	published systems	105
+RT_ONLY_EXACT_PRESENT	51	published systems	105
+NCRNA_ONLY_EXACT_PRESENT	6	published systems	105
+NEITHER_EXACT_PRESENT	43	published systems	105
+exact_rt_present	56	published systems	105
+exact_native_msrmsd_present	11	published systems	105

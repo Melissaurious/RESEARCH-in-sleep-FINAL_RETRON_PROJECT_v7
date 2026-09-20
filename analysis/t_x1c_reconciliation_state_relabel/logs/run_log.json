@@ -1,0 +1,17 @@
+{
+  "blocking_failures": [],
+  "counts": {
+    "NCRNA_ONLY_EXACT_PRESENT": 6,
+    "NEITHER_EXACT_PRESENT": 43,
+    "PAIR_EXACT_PRESENT": 5,
+    "RT_ONLY_EXACT_PRESENT": 51
+  },
+  "elapsed_s": 0.0,
+  "exact_native_msrmsd_present": 11,
+  "exact_rt_present": 56,
+  "n_rows": 105,
+  "reran_sequence_matching": false,
+  "script_version": "1.0.0",
+  "source": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-X1b-buffington-reconciliation/analysis/t_x1b_buffington_reconciliation/tables/X1_row_classification.tsv",
+  "source_sha256": "3a0b7fa73f789690b1bc383c1717c33c3354d82b5e8bb3715fc0ddd0977cc0ce"
+}

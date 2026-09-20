@@ -1,0 +1,9 @@
+control_id	type	blocking	expectation	observed	state	detail
+X1c_GATE_source_sha256	positive	YES	3a0b7fa73f789690b1bc383c1717c33c3354d82b5e8bb3715fc0ddd0977cc0ce	3a0b7fa73f789690b1bc383c1717c33c3354d82b5e8bb3715fc0ddd0977cc0ce	PASS	⛔ ASSERTS the hash. An earlier draft of this gate passed unconditionally, which is the defect class this project keeps finding -- a gate that cannot fail is not a gate
+X1c_GATE_source_rows	positive	YES	105 rows	105	PASS	the relabel covers every published system
+X1c_POS_states_exhaustive	positive	YES	the four states sum to 105	105	PASS	every row gets exactly one state; state_of() is a total function on two Booleans
+X1c_POS_count_PAIR_EXACT_PRESENT	positive	YES	PAIR_EXACT_PRESENT == 5	5	PASS	PREDECLARED from the exposed X1b measurements before this run
+X1c_POS_count_RT_ONLY_EXACT_PRESENT	positive	YES	RT_ONLY_EXACT_PRESENT == 51	51	PASS	PREDECLARED from the exposed X1b measurements before this run
+X1c_POS_count_NCRNA_ONLY_EXACT_PRESENT	positive	YES	NCRNA_ONLY_EXACT_PRESENT == 6	6	PASS	PREDECLARED from the exposed X1b measurements before this run
+X1c_POS_count_NEITHER_EXACT_PRESENT	positive	YES	NEITHER_EXACT_PRESENT == 43	43	PASS	PREDECLARED from the exposed X1b measurements before this run
+X1c_POS_axis_totals	positive	YES	exact RT present 56/105 and exact native msr-msd present 11/105	RT=56 ncRNA=11	PASS	the two axes are carried through unchanged from X1b
