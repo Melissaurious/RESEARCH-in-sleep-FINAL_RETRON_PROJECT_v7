@@ -112,7 +112,15 @@ def lock():
 def worktree(tid):
     fm=parse_front_matter(P/'tasks'/tid/'TASK_LAUNCHER.md'); wt=Path(fm.get('worktree','')) if fm.get('worktree') else SYN.parent/f"{SYN.name.removesuffix('-synthesis')}-{tid}"; br=f'task/{tid}'; base=git('rev-parse','HEAD')
     if wt.exists():
-        if git('rev-parse','--abbrev-ref','HEAD',cwd=wt)!=br or git('status','--porcelain',cwd=wt): raise RuntimeError(f'unsafe existing worktree {wt}')
+        if git('rev-parse','--abbrev-ref','HEAD',cwd=wt)!=br: raise RuntimeError(f'unsafe existing worktree {wt}: wrong branch')
+        # A MODIFIED TRACKED file means the frozen/base state was altered -> refuse.
+        # Untracked files under this task's own programme/tasks/<tid>/ are its prepare
+        # output, which prepare rewrites and freeze commits; a previous abandoned prepare
+        # must not make the worktree permanently unrestartable. Anything else untracked
+        # is unexpected and still refused.
+        if git('status','--porcelain','--untracked-files=no',cwd=wt): raise RuntimeError(f'unsafe existing worktree {wt}: tracked files modified')
+        stray=[l[3:] for l in git('status','--porcelain',cwd=wt).splitlines() if l.startswith('??') and not l[3:].startswith(f'programme/tasks/{tid}/')]
+        if stray: raise RuntimeError(f'unsafe existing worktree {wt}: unexpected untracked {stray[:3]}')
     else:
         exists=run(['git','show-ref','--verify','--quiet',f'refs/heads/{br}'],check=False).returncode==0
         run(['git','worktree','add',str(wt),br] if exists else ['git','worktree','add','-b',br,str(wt),base])
