@@ -122,6 +122,36 @@ the raw sequences, so Stage 1 cannot silently build on a mis-transcribed table.
 ⚠️ The gate is kept **permanently**, even though it passes. A statistic that mixed elements reached
 a launcher; the invariant is now machine-checked rather than trusted.
 
+### 3b-provenance · ⛔ BLOCKING INTERPRETIVE GATE — added after the adversarial pre-check
+
+An adversarial pre-check (`R2_ADVERSARIAL_PRECHECK.md`) found that the RT-DNA fraction is **real**
+— sd 0.1166 against a shuffled-pairing median of 0.2203, tighter than **100 %** of 2,000 random
+re-pairings — and **subtype-structured**, with XIII, II-A1 and XI each holding it to within ±4 %.
+
+⛔ **It also found the result may be circular, and the draft did not say so.**
+
+**If the panel annotated its `ncRNA_sequence` boundaries by reference to the msDNA it observed,
+then "the RT-DNA occupies ~58 % of its ncRNA" is true by construction and carries no biological
+information.** The shuffled null does **not** detect this: shuffling breaks the pairing, so it tests
+whether *this* RT-DNA matches *this* ncRNA — not whether the ncRNA bound was drawn using it.
+
+This is the same error class this launcher already guards against for Buffington's
+`ENGINEERED_DELTA`. **It applies to Tier A with equal force.**
+
+| provenance of `ncRNA_sequence` | what Stage 1 may say |
+|---|---|
+| annotated **independently** of the RT-DNA | the fraction and normalised coordinates are interpretable as **architecture** |
+| **derived from** the observed RT-DNA extent | ⛔ the fraction is **definitional**; only *residual* structure retains meaning (e.g. why XIII is tight and I-C1 is not) |
+| **cannot be established** | report **with the ambiguity stated**, never as architecture |
+
+⛔ **Stage 1 may COMPUTE the fraction regardless. It may not INTERPRET it as architecture until this
+is resolved.** Resolving it is a **Tier-B** question requiring the panel's own publication, traced —
+and **Tier B is currently empty**.
+
+⚠️ **Effective n is ~23, not 81.** The 81 elements span 23 `retron_sub` values; 8 strata reach
+n ≥ 5, covering 57 of 81; 8 are singletons. The §3c rule is necessary but does not by itself fix
+the independence problem.
+
 ### 3c · Stratification rule, declared in advance
 
 Subtype/family summaries are reported **only** for strata with **n ≥ 5**, and every stratum's n is
