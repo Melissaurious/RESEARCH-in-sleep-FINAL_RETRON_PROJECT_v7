@@ -60,6 +60,19 @@ Not taken on trust. Independently re-derived or checked:
 
 All are on `TASK_STATE=PASS` tasks and are therefore consumable under the gate. None is a claim.
 
+**All five artifact sets are now committed on their task branches and are hash-stable.** Three were
+untracked when this synthesis was first written, which an executing session flagged: an untracked
+directory is not stable between a verdict request and the verdict. Corrected by the coordinating
+session.
+
+| task | branch | artifact commit |
+|---|---|---|
+| T-REG-asset-registration | `task/T-REG-asset-registration` | `9052ccb` |
+| T-LINT-prose-numbers | `task/T-LINT-prose-numbers` | `82059df` |
+| T-A0-lineage-variance | `task/T-A0-lineage-variance` | `c724df7` |
+| T-A2-ladder-population | `task/T-A2-ladder-population` | `a1b76d1` |
+| T-A23-crosspair-curation | `task/T-A23-crosspair-curation` | `98f3125` |
+
 | task | key consumables |
 |---|---|
 | T-REG | `REG_proposed_registry_rows.tsv` (18,184 proposed rows), `REG_appendix_below_floor.tsv` (2,581), `REG_registry_coverage.tsv` |
@@ -103,6 +116,15 @@ and recorded here.**
   the story: **56 non-cognate rows, of which 42 (75%) are one 7×7 panel from one study under one
   assay; 7 experimental blocks; 6 primary studies; 3 author lineages; and zero numeric values on
   disk.** 34 of 56 rows record only that a combination was assayed, with no direction reported.
+
+- ⚠️ **The 56 is softer than it looks, and the executing session said so against its own result.**
+  **42 of the 56 rest on a single interpretive decision**: that a heat-map caption partitioning cells
+  into cognate and non-cognate, with a per-cell replicate count, licenses expanding the figure cell by
+  cell. *If a reviewer rejects that expansion, the count falls to roughly the 8 combinations named
+  explicitly in prose.* A further **6 rows take their direction from one RT-level sentence**, not from
+  six per-cell statements, and may reasonably be read as one statement counted six times. So the
+  defensible floor is single digits and the ceiling is 56, with the difference resting on two reading
+  decisions rather than on any measurement. **This is the number the reviewer must adjudicate first.**
 - **The single highest-yield action in the programme is a retrieval, not an experiment.** One source
   states that source data are provided with the paper. Obtaining it would convert 34 rows from
   design-only to numeric.
@@ -136,7 +158,7 @@ Newly *proposable*, and requiring launchers that do not yet exist:
 | **landed-interval coverage sweep** | P1 is the widest-reaching finding in the batch and is currently unbounded |
 | **numeric errata task** | T-LINT produced 336 distinct unresolved prose values and a provenance schema; adjudication is a separate step by design |
 | **sweep extension** | E2: alignments, parquet and checkpoints are unswept |
-| **supplementary-data retrieval** | the highest-yield action for stage 12 |
+| **supplementary-data retrieval** | the highest-yield action for stage 12, and the only route that converts the softest 42 rows from an expansion decision into measured values |
 | **content-hash pass** | P9 |
 
 **T-A3a remains AWAITING_ADOPTION.** Nothing in this batch supplies the far-confirmation minimum, and
