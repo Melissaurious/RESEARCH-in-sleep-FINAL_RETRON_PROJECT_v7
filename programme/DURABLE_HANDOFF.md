@@ -7,6 +7,11 @@ Written 2026-09-20. Read this, then `programme/SESSION_HANDOFF.md` §"START HERE
 
 ## 1 · ⛔ Is it safe to close the interactive session? **YES**
 
+> **Re-verified 2026-09-20 19:16** — pid `810502`, `PPID 1`, `SID 810461`, no tty, start `16:40:25`,
+> same argv and worktree: still the known P1b full run, **not PID reuse**. ⚠️ `ps` inside the agent
+> sandbox runs in a separate PID namespace and wrongly reports it **gone** — always check P1b from
+> outside the sandbox before concluding anything about it.
+
 **`T-P1b` is safely detached. Closing this Claude Code conversation, its shell, or the terminal will
 NOT terminate it.**
 
@@ -40,6 +45,60 @@ tail /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-P1b-identity-partiti
 | governed pin | `cff9831` |
 | `governance_base` | `9a793c9` |
 
+## 2b · ⛔ WAVE 01 IS VALIDATED BUT NOT STARTED — one operator command
+
+**Every gate passed. The start itself is blocked, and it is the known D4 capability, not a defect.**
+
+The coordinating Claude session's permission classifier refuses to spawn the detached coordinator
+(`Blocked by classifier`), exactly as `CAPABILITY_STATE.md` §3 records for task-session dispatch. It
+also refused `claude --dangerously-skip-permissions -p` with `Create Unsafe Agents`.
+
+**To start Wave 01:**
+
+```bash
+bash programme/START_WAVE_01.sh
+```
+
+That script is the reviewed `nohup setsid` route with nothing added. It refuses to run on a wrong
+branch, a dirty tree, or a changed `WAVE.tsv`, and it prints the coordinator PID, wave sha and log
+path. After it starts, scheduling belongs to the detached runner, not to a chat session.
+
+| validation gate | result |
+|---|---|
+| merge of `origin/autonomy/d4-wave-runner@10f9297` | **clean, zero conflicts** |
+| fresher local `e2c4f78` preserved | ✅ it touched no file the autonomy branch modified |
+| `py_compile` · `bash -n` | ✅ |
+| autonomy test suite | ✅ **14/14** (8 original + 6 new acceptance-boundary) |
+| live dry-run vs real workstation state | ✅ **exactly** the expected state; P1b alive at `io=6` |
+| headless preparation transport | ✅ `claude -p` rc=0 |
+| headless preparation **contract** | ✅ schema-valid `PREPARE_RESULT.json`, `READY_TO_FREEZE`, self-checks PASS, **no primary output written** |
+| `claude --dangerously-skip-permissions -p` | ⚠️ **untested** — denied to the agent session. The detached runner is not under that classifier, and a prepare failure lands as `BLOCKED_PREPARE` + escalation, which corrupts nothing |
+| ARIS-conformance audit | ✅ one violation found and **fixed** — `programme/ARIS_CONFORMANCE_AUDIT.md` |
+| R2a provenance gate | ✅ **11/11, 81/81** — `tasks/T-R2a-…/R2a_PROVENANCE.md` |
+
+**Wave sha256:** `ef94fc0c5d83ffe4bd96267f54fd497043e5eebc49edc46d3a81c58e48b3c7e4`
+
+### The two substantive findings
+
+**1 · The wave runner was acquitting its own tasks.** `worker_state==COMPLETE` wrote the worker's
+self-reported `task_state` straight into `TASK_BOARD.tsv`/`EXECUTION_LEDGER.tsv` as `PASS`, and
+`PASS` satisfies a hard dependency — so a self-report would have unblocked downstream science.
+Pinned ARIS `run_state.py` exists to forbid exactly that. Fixed: a self-reported success now lands as
+`COMPLETE_AWAITING_REVIEW` (this project's own existing vocabulary), `PASS` means **independently
+accepted**, and the runner mirrors phases into `.aris/runs/` with `set` only — **never** `accept`.
+Wave 01 scheduling is byte-identical before and after the fix.
+
+**2 · R2a's ncRNA objects are the panel's own, unmodified.** Panel sha256 matches its pin; six copies
+across five project trees are byte-identical; the permitted `strip()+upper()` is a **no-op on all
+81**; R1b's landed `ncrna_len` equals `len(panel ncRNA_sequence)` for all 81; and
+`revcomp(panel ncRNA[start:end]) == panel RTDNA` for all 81. Nothing was reconstructed after
+ingestion, so this is **not** `REVIEW_REQUIRED`.
+
+⛔ **Bound interpretation:** every RT-DNA/ncRNA fraction and normalised coordinate is a **fraction of
+the published annotated ncRNA sequence**, never of an experimentally verified full-length transcript.
+Recorded limitation: the repository holds no separate direct source-study supplementary file from
+which `support.csv` was built.
+
 ## 3 · ACTIVE — one process, nothing else
 
 | | |
@@ -49,7 +108,7 @@ tail /home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-P1b-identity-partiti
 | freeze | **`1a6909f`** (launcher + implementation + fixtures, **before** the run) |
 | worktree | `…_v7-T-P1b-identity-partition`, branch `task/T-P1b-identity-partition` @ `70a52c0` |
 | output | `analysis/t_p1b_identity_partition_full/` |
-| progress | **4 of 7 levels landed** at ~53 min |
+| progress | **6 of 7 levels landed** (`id40`–`id90`) at ~2 h 36 min, 2026-09-20 19:16. Only `id95` remains |
 | controls | **20/20 PASS** before the primary began |
 | backend | local, 40 threads (**execution-routing deviation from the launcher's `ibex`, recorded**) |
 
