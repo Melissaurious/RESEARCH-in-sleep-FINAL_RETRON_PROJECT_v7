@@ -580,5 +580,33 @@ class AuthoringCostTests(unittest.TestCase):
         line = [l for l in src.splitlines() if "workers[tid]=(p,rec," in l][0]
         self.assertIn("int(r['io_tokens'])", line)
 
+
+class RestartReconciliationTests(unittest.TestCase):
+    """A coordinator restart must not strand a task in a non-schedulable state.
+
+    T-A23d's launch was refused by the D19 specs_exist flake AFTER set_board(RUNNING).
+    The retry path left the board at RUNNING, which choose_launchable skips without even
+    writing a decision -- so the task showed a bare WAIT_DEP forever, across restarts.
+    """
+
+    def test_running_board_state_is_not_schedulable(self):
+        tasks = [ScheduleTask("t", "RUNNING", 1)]
+        sel, dec = choose_launchable(tasks, {}, 0, 8)
+        self.assertEqual(sel, [])
+        self.assertNotIn("t", dec)  # skipped silently -- exactly why it stranded
+
+    def test_transient_retry_returns_the_board_to_schedulable(self):
+        src = (HERE / "wave_runner.py").read_text()
+        branch = src.split("if sig and n<MAX_TRANSIENT_RETRIES:", 1)[1].split("continue", 1)[0]
+        self.assertIn("set_board(tid,'AUTHORIZED'", branch)
+
+    def test_start_reconciles_stale_in_flight_rows_from_disk(self):
+        src = (HERE / "wave_runner.py").read_text()
+        head = src.split("def start(", 1)[1].split("while True:", 1)[0]
+        self.assertIn("RESTART RECONCILIATION", head)
+        self.assertIn("requeued: coordinator restarted while it was RUNNING", head)
+        for stale in ("'RUNNING'", "'PREPARING'", "'REVIEWING'", "'REPAIRING'"):
+            self.assertIn(stale, head)
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

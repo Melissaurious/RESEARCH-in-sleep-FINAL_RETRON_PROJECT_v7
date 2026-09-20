@@ -280,6 +280,19 @@ def start(w,authorised,poll):
     wr=rows(w); st=load_status(w); [st.setdefault(r['task_id'],{**{k:'' for k in STATUS_FIELDS},'task_id':r['task_id'],'state':'PENDING'}) for r in wr]; save_status(w,st); commit([status_path(w)],'wave: start '+w.parent.name); aris_start(w,[r['task_id'] for r in wr])
     workers={}; preparing={}; reviewing={}; repairing={}; plans={}; retries={}; escal=False
     broker=make_broker()
+    # RESTART RECONCILIATION, from disk alone. A coordinator that died mid-flight leaves
+    # board=RUNNING and status=RUNNING/PREPARING/REVIEWING/REPAIRING behind. No worker of
+    # ours survives a restart, so any such row is stale by definition: requeue it rather
+    # than leaving the task permanently unschedulable.
+    _b0=board()
+    for r in wr:
+        tid=r['task_id']
+        if r['action']=='monitor_only': continue
+        if _b0.get(tid,{}).get('state')=='RUNNING':
+            set_board(tid,'AUTHORIZED','requeued: coordinator restarted while it was RUNNING')
+        if st.get(tid,{}).get('state') in {'RUNNING','PREPARING','REVIEWING','REPAIRING'}:
+            set_status(w,st,tid,'PENDING','requeued after coordinator restart',worker_pid='',analysis_pid='')
+    commit([BOARD,status_path(w)],'wave: reconcile stale in-flight state on restart')
     while True:
         b=board(); states={k:v['state'] for k,v in b.items()}; used=0
         for r in wr:
@@ -358,6 +371,9 @@ def start(w,authorised,poll):
                 n=retries.get(tid,0)
                 if sig and n<MAX_TRANSIENT_RETRIES:
                     retries[tid]=n+1
+                    # The board is the scheduling authority; leaving it at RUNNING after a
+                    # refused launch made the task permanently unschedulable across restarts.
+                    set_board(tid,'AUTHORIZED',f'transient launch failure ({sig}); requeued')
                     set_status(w,st,tid,'FROZEN',f'transient launch failure ({sig}); retry {n+1}/{MAX_TRANSIENT_RETRIES}')
                     del workers[tid]; continue
                 term='VOID' if rr.get('worker_state') in {'REFUSED','ARTIFACT_INVALID','PROCESS_FAILED'} else 'STOP'

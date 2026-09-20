@@ -1,9 +1,9 @@
 task_id	state	detail	freeze_commit	worker_pid	analysis_pid	slurm_job_id	started_at	finished_at
-T-A23d-primary-verification	PENDING	requeued after coordinator restart	ccb4832b609e62a002ba5964ed603be40887d96c				2026-09-20T20:39:10Z	
+T-A23d-primary-verification	WAIT_DEP		ccb4832b609e62a002ba5964ed603be40887d96c				2026-09-20T20:39:10Z	
 T-D1-annotation-disagreement	PASS	DESCRIPTIVE	69a06fca24fb11c4eba8e4431b92192a07830337	1015090			2026-09-20T18:51:12Z	2026-09-20T18:51:58Z
 T-D2-taxonomic-distribution	PASS	DESCRIPTIVE	2bb0075912d7e62ce3be58f4e0658987ec7e5eba	1031715			2026-09-20T19:20:10Z	2026-09-20T19:22:44Z
-T-M1b-embedding-cache-reverification	PENDING	requeued after coordinator restart						
+T-M1b-embedding-cache-reverification	PREPARING	prepare agent pid=1148846						
 T-P1c-family-label-description	WAIT_DEP	WAIT_DEP:T-P1b-identity-partition:COMPLETE_AWAITING_REVIEW						
 T-R2a-tierA-internal-geometry	PASS	Type-A execution validity accepted deterministically; verdict det-4868d38e5903184a	19837473c3069b390a3139d018b64e8bd3d7bc5b	1099142			2026-09-20T20:08:10Z	2026-09-20T20:08:15Z
 T-R2b-buffington-engineered-delta	PASS	DESCRIPTIVE	89e841560bdc12ddf8acc70a8ad5744b9fb67a08	1119436			2026-09-20T20:20:52Z	2026-09-20T20:20:58Z
-T-S1b-structure-inventory-correction	PENDING	requeued after coordinator restart						
+T-S1b-structure-inventory-correction	WAIT_DEP	WAIT_ORDER:T-M1b-embedding-cache-reverification:AUTHORIZED						
