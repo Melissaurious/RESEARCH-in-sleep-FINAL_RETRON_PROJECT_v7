@@ -1,0 +1,16 @@
+{
+  "blocking_failures": [],
+  "elapsed_s": 0.1,
+  "mode": "primary",
+  "panel_sha256": "80b2f565515c96bb1b9b0082c261dd6184c67672e29bb96c813cf6abdd9d9577",
+  "params": {
+    "gap_extend": -2,
+    "gap_open": -5,
+    "match": 2,
+    "mismatch": -3,
+    "near_cov_min": 0.9,
+    "near_id_min": 0.9
+  },
+  "script_version": "1.0.0",
+  "seed": 20260920
+}

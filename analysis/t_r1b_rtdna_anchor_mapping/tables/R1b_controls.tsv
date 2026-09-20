@@ -1,0 +1,11 @@
+control_id	type	blocking	expectation	observed	state	detail
+R1b_GATE_panel_sha256	positive	YES	80b2f565515c96bb1b9b0082c261dd6184c67672e29bb96c813cf6abdd9d9577	80b2f565515c96bb1b9b0082c261dd6184c67672e29bb96c813cf6abdd9d9577	PASS	the panel is the one this task was frozen against
+R1b_GATE_panel_rows	positive	YES	175 rows / 81 anchors	175 / 81	PASS	PANEL-RTDNA-81 is exactly the rows with a measured RTDNA_sequence
+R1b_GATE_anchors_have_ncrna	positive	YES	all 81 anchors carry an ncRNA_sequence to map onto	81	PASS	an anchor without its own ncRNA cannot be mapped and would be INPUT_MISSING
+R1b_POS_planted_exact	positive	YES	a fragment planted at 41..130 is found EXACT_UNIQUE, FORWARD, at 41..130	EXACT_UNIQUE FORWARD 41..130 n=1	PASS	coordinates are 1-based inclusive on the ncRNA
+R1b_POS_planted_revcomp	positive	YES	its reverse complement is found REVCOMP at the same 41..130	EXACT_UNIQUE REVCOMP 41..130	PASS	both orientations are always tested and which one matched is landed
+R1b_POS_multiple_placements_reported	positive	YES	a fragment planted TWICE reports n_placements=2 and BOTH coordinate sets	EXACT_MULTIPLE n=2 starts=41;171	PASS	⛔ there is NO tie-break; the number of equally valid placements IS a result
+R1b_NEG_unrelated_unmapped	negative	YES	an unrelated random sequence of the same length is UNMAPPED, not forced	UNMAPPED cov=0.0778 id=1.0	PASS	the mapper does not invent a coordinate for something that is not there
+R1b_POS_near_exact_detected	positive	YES	a fragment with 3 planted substitutions is NEAR_EXACT with the mismatches counted	NEAR_EXACT mism=3 id=0.9667 cov=1.0	PASS	exact and near-exact are reported SEPARATELY, never merged into 'mapped'
+R1b_NEG_partial_not_forced	negative	YES	a chimera of 20 nt real + 90 nt random falls below the declared floor and is UNMAPPED	UNMAPPED cov=0.2364	PASS	floor declared in advance: coverage>=0.9 AND identity>=0.9
+R1b_POS_every_anchor_reported	positive	YES	all 81 anchors appear in the output with an explicit state	81	PASS	⛔ an anchor is never dropped; UNMAPPED and AMBIGUOUS are states, not omissions

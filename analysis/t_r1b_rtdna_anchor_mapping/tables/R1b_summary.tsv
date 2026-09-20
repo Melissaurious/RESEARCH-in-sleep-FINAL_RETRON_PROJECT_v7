@@ -1,0 +1,6 @@
+quantity	value	unit	denominator
+EXACT_UNIQUE	81	assayed elements	81
+orientation_FORWARD	0	assayed elements	81
+orientation_REVCOMP	81	assayed elements	81
+orientation_BOTH_AMBIGUOUS	0	assayed elements	81
+multiple_placements	0	assayed elements	81
