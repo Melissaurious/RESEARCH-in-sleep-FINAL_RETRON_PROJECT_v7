@@ -197,12 +197,21 @@ def validate_type_a_execution(spec: dict, wt: Path, out: Path) -> tuple[bool, li
         add("output_manifest_valid", False, "manifest missing")
 
     log_inputs: list[str] = []
+    unverifiable: list[str] = []
     if runlog.is_file():
         try:
             data = json.loads(runlog.read_text())
             ok = isinstance(data, (dict, list)) and bool(data)
             if isinstance(data, dict):
-                log_inputs = [str(x) for x in (data.get("inputs") or [])]
+                # A run log may record inputs as a list, or as {label: {...}} -- iterating a
+                # dict yields its KEYS, which are labels, not paths. Compare only entries
+                # that are actually paths; a label asserts nothing either way.
+                raw = data.get("inputs") or []
+                items = list(raw.values()) if isinstance(raw, dict) else raw
+                for x in items:
+                    p = x.get("path") if isinstance(x, dict) else x
+                    p = str(p) if p is not None else ""
+                    (log_inputs if ("/" in p or p.startswith("/")) else unverifiable).append(p)
             add("run_log_valid", ok, "parsed")
         except Exception as exc:  # noqa: BLE001
             add("run_log_valid", False, exc)
@@ -243,7 +252,9 @@ def validate_type_a_execution(spec: dict, wt: Path, out: Path) -> tuple[bool, li
     # 8 - no forbidden input/population use: nothing read beyond the frozen declaration.
     declared = {str(Path(i["path"]).resolve()) for i in spec.get("inputs", [])}
     undeclared = [p for p in log_inputs if str(Path(p).resolve()) not in declared]
-    add("no_undeclared_inputs", not undeclared, undeclared[:5] or "run log declares no extra inputs")
+    detail = undeclared[:5] or (f"{len(log_inputs)} logged path(s) all declared"
+                                + (f"; {len(unverifiable)} non-path label(s) not checkable" if unverifiable else ""))
+    add("no_undeclared_inputs", not undeclared, detail)
 
     # 9 - preregistered endpoint: the frozen launcher still binds this output directory.
     try:
