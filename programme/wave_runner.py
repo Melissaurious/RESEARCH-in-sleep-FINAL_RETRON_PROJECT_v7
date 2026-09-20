@@ -87,8 +87,9 @@ def freeze(tid,wt,d):
 
 def spawn(tid,sp,w):
     rd=w.parent/'runs'; rd.mkdir(exist_ok=True); rec=rd/f'{tid}.json'; log=rd/f'{tid}.worker.log'; env=os.environ.copy(); env['RETRON_RUNTIME_RECORD']=str(rec)
-    with log.open('ab') as f:P=subprocess.Popen(['bash',str(P/'launch_task.sh'),tid,'--execute','--execution-spec',str(sp)],cwd=SYN,env=env,stdout=f,stderr=subprocess.STDOUT,start_new_session=True)
-    return p,rec
+    with log.open('ab') as fh:
+        proc=subprocess.Popen(['bash',str(P/'launch_task.sh'),tid,'--execute','--execution-spec',str(sp)],cwd=SYN,env=env,stdout=fh,stderr=subprocess.STDOUT,start_new_session=True)
+    return proc,rec
 
 def dry(w):
     wr=rows(w); b=board(); states={k:v['state'] for k,v in b.items()}; used=0; tasks=[]; print('wave_sha256\t'+sha256_file(w)); print('nvme_tokens\t'+str(tokens()))
