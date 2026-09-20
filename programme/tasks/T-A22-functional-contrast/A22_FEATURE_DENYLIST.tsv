@@ -1,0 +1,14 @@
+pattern	reason	freeze_clause
+(?i)rt[_\-\s]?dna	derived from a measured RT-DNA sequence	2b.inadmissible
+(?i)\brtdna\b	derived from a measured RT-DNA sequence	2b.inadmissible
+(?i)msdna	msDNA IS the RT-DNA; multicopy single-stranded DNA is the same molecule under its other name	2b.inadmissible
+(?i)ms[_\-]?dna	same molecule, punctuated alias	2b.inadmissible
+(?i)anchor	anchor presence, availability or coordinates; 62 of 81 anchors are the positive class	2b.inadmissible
+(?i)\br1b\b	any T-R1b output	2b.inadmissible
+(?i)t[_\-]?r1b	any T-R1b output	2b.inadmissible
+(?i)a5b1	T-A5b1 is the same task as T-R1b	2b.inadmissible
+(?i)boundary	anchor-derived boundary feature	2b.inadmissible
+(?i)rtdna[_\-]?(len|length|start|end|pos|position|coord)	RT-DNA length, coordinates or position	2b.inadmissible
+(?i)(has|is)[_\-]?(rtdna|anchor|measured[_\-]?rtdna)	anchor availability dressed as a boolean	2b.inadmissible
+(?i)production	the OUTCOME, not a feature; including it is target leakage	2c.outcome
+(?i)xeco1	the outcome column name from the register	2c.outcome
