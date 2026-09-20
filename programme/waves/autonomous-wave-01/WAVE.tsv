@@ -1,5 +1,4 @@
 task_id	action	backend	io_tokens	hard_dependencies	schedule_after	protected_spend_authorised	design_refs	monitor_pid	monitor_freeze
-T-P1b-identity-partition	monitor_only	local	6	-	-	false	programme/DURABLE_HANDOFF.md;programme/EXECUTION_LEDGER.tsv	810502	1a6909f
 T-A23d-primary-verification	prepare_execute	local	1	-	-	false	programme/ALL_DOWNSTREAM_TASKS.tsv;programme/CANONICAL_DATASETS.tsv;programme/EXECUTION_LEDGER.tsv;analysis/t_a23c_source_retrieval/TASK_REPORT.md		
 T-R2a-tierA-internal-geometry	prepare_execute	local	1	T-R1b-rtdna-anchor-mapping	-	false	programme/tasks/T-R2a-tierA-internal-geometry/TASK_LAUNCHER.md;programme/tasks/T-R2-ncrna-internal-architecture/R2_COORDINATE_FRAME_DIAGNOSIS.md;programme/EXECUTION_LEDGER.tsv		
 T-R2b-buffington-engineered-delta	prepare_execute	local	1	-	-	false	programme/tasks/T-R2b-buffington-engineered-delta/TASK_LAUNCHER.md;programme/CANONICAL_DATASETS.tsv		

@@ -75,11 +75,13 @@ def validate_type_a_execution(spec: dict, wt: Path, out: Path) -> tuple[bool, li
                               capture_output=True, check=True).stdout.strip()
         branch = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=wt, text=True,
                                 capture_output=True, check=True).stdout.strip()
-        dirty = subprocess.run(["git", "status", "--porcelain"], cwd=wt, text=True,
-                               capture_output=True, check=True).stdout.strip()
+        # Untracked files are EXPECTED: the run writes its outputs into the worktree.
+        # What must not have moved is any TRACKED file, i.e. anything that was frozen.
+        dirty = subprocess.run(["git", "status", "--porcelain", "--untracked-files=no"],
+                               cwd=wt, text=True, capture_output=True, check=True).stdout.strip()
         add("freeze_commit", head == spec["freeze_commit"], f"{head} vs {spec['freeze_commit']}")
         add("freeze_branch", branch == spec["branch"], f"{branch} vs {spec['branch']}")
-        add("worktree_clean_after_run", not dirty, dirty[:200])
+        add("no_tracked_file_modified_after_freeze", not dirty, dirty[:200] or "no tracked change")
     except Exception as exc:  # noqa: BLE001
         add("freeze_commit", False, exc)
 

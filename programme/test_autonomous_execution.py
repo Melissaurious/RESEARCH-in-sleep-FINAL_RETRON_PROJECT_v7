@@ -104,8 +104,11 @@ class TypeAAcceptanceTests(unittest.TestCase):
         inp = root / "input.csv"
         inp.write_text("a,b\n1,2\n")
         inp_sha = sha256_file(inp)
-        for cmd in (["init", "-q", "-b", "task/T-SYN"], ["add", "-A"]):
-            subprocess.run(["git", *cmd], cwd=wt, check=True, capture_output=True)
+        # Freeze ONLY the launcher, then leave the outputs untracked -- exactly how a real
+        # run leaves its worktree. Acceptance must not mistake untracked output for tampering.
+        subprocess.run(["git", "init", "-q", "-b", "task/T-SYN"], cwd=wt, check=True,
+                       capture_output=True)
+        subprocess.run(["git", "add", "programme"], cwd=wt, check=True, capture_output=True)
         subprocess.run(["git", "-c", "user.email=t@t", "-c", "user.name=t",
                         "commit", "-q", "-m", "freeze"], cwd=wt, check=True, capture_output=True)
         head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=wt, text=True,

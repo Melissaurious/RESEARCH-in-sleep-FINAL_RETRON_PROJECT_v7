@@ -1,0 +1,51 @@
+{
+  "backend": "local",
+  "branch": "task/T-P1b-identity-partition",
+  "command": [
+    "python",
+    "programme/tasks/T-P1b-identity-partition/p1b_identity_partition.py",
+    "--mode",
+    "full",
+    "--out",
+    "analysis/t_p1b_identity_partition_full",
+    "--fixtures",
+    "analysis/t_p1b_identity_partition_full/fixtures",
+    "--threads",
+    "40"
+  ],
+  "freeze_commit": "70a52c0059df946f7b369eebcb427b9086cfc209",
+  "freeze_note": "frozen task dir is byte-identical between 1a6909f and 70a52c0; 70a52c0 added only pilot outputs",
+  "frozen_files": {
+    "programme/tasks/T-P1b-identity-partition/FIXTURE_MANIFEST.tsv": "9f613e477d234ed5fd70b8f375677b25c0cae5791ca9553b1c0c9d2999ffa42e",
+    "programme/tasks/T-P1b-identity-partition/TASK_LAUNCHER.md": "5d37e7a9381ca5121ae7b6e392b5d1815fdf6c8b08e4ad36be3632834e7db123",
+    "programme/tasks/T-P1b-identity-partition/p1b_fixtures.py": "45b7a94dd58c09d4f3a6413da68039c179613b8ffff585d52faf2a341b07c78a",
+    "programme/tasks/T-P1b-identity-partition/p1b_identity_partition.py": "5163391b19a407e289ea90f235801791f7e80b844e793ceb692a6f2b11dcd8ec"
+  },
+  "inputs": [
+    {
+      "dataset_id": "RT-EXACT-501561",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/data/derived/rt_exact_v1.faa",
+      "sha256": "bcde6e9a64de90e6e791256f79c87799a00a95f0d1730f3460301220379e2655"
+    },
+    {
+      "dataset_id": "EXACT-BIPARTITE-COMPONENTS-14918",
+      "path": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7/results/dbchar_g3_pair_geometry/tables/g3_topology_components.tsv",
+      "sha256": "aaf0fe7f9100886b40d59eb026360fbdd640760e75263732a50576112d3a8674"
+    }
+  ],
+  "output_directory": "analysis/t_p1b_identity_partition_full",
+  "pre_run_freeze_commit": "1a6909f",
+  "resources": {
+    "cpu_threads": 40,
+    "io_tokens": 6,
+    "memory_gb": 251
+  },
+  "runtime": {
+    "max_runtime_seconds": 0,
+    "resume_allowed": false,
+    "stop_note": "detached nohup run, pid 810502; completed 13029.5 s"
+  },
+  "schema_version": 1,
+  "task_id": "T-P1b-identity-partition",
+  "worktree": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-T-P1b-identity-partition"
+}

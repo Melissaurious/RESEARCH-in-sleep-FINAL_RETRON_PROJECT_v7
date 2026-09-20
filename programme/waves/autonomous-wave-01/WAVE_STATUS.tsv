@@ -2,9 +2,9 @@ task_id	state	detail	freeze_commit	worker_pid	analysis_pid	slurm_job_id	started_
 T-A23d-primary-verification	PENDING							
 T-D1-annotation-disagreement	PENDING							
 T-D2-taxonomic-distribution	PENDING							
-T-M1b-embedding-cache-reverification	PENDING							
-T-P1b-identity-partition	PENDING							
-T-P1c-family-label-description	PENDING							
+T-M1b-embedding-cache-reverification	WAIT_RESOURCE	WAIT_RESOURCE:need=8:available=1						
+T-P1b-identity-partition	ESCALATION_REQUIRED	external process exited; finalise under durable handoff						
+T-P1c-family-label-description	WAIT_DEP	WAIT_DEP:T-P1b-identity-partition:RUNNING						
 T-R2a-tierA-internal-geometry	PENDING							
-T-R2b-buffington-engineered-delta	PENDING							
-T-S1b-structure-inventory-correction	PENDING							
+T-R2b-buffington-engineered-delta	WAIT_RESOURCE	WAIT_RESOURCE:need=1:available=0						
+T-S1b-structure-inventory-correction	WAIT_DEP	WAIT_ORDER:T-M1b-embedding-cache-reverification:AUTHORIZED						

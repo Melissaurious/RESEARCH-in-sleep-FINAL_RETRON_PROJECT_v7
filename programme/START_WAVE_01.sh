@@ -21,7 +21,7 @@ set -euo pipefail
 SYN=/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-synthesis
 PY=/home/borg/miniconda3/envs/retron_tradicional/bin/python   # never base
 WAVE=programme/waves/autonomous-wave-01/WAVE.tsv
-EXPECTED_WAVE_SHA=ef94fc0c5d83ffe4bd96267f54fd497043e5eebc49edc46d3a81c58e48b3c7e4
+EXPECTED_WAVE_SHA=be06882012d54ee046df617a26cea5e36e358829aabd624f6df9017944de641f
 STATE_DIR="$HOME/.local/state/retron-autonomy/autonomous-wave-01"
 
 cd "$SYN"
@@ -38,14 +38,14 @@ WAVE_SHA="$(sha256sum "$WAVE" | awk '{print $1}')"
   exit 1
 }
 
-# P1b is MONITOR_ONLY. Confirm it is still the known run; never signal it.
+# P1b finished 2026-09-20T20:17 and was reconciled into TASK_BOARD/EXECUTION_LEDGER, so its
+# monitor row was removed from the wave and the full 8 I/O tokens are free. P1c stays blocked
+# because P1b is COMPLETE_AWAITING_REVIEW, not PASS -- the board, not this script, enforces that.
 if ps -p 810502 -o args= 2>/dev/null | grep -q p1b_identity_partition; then
-  echo "P1b: alive (pid 810502), monitor-only, reserves 6/8 I/O tokens"
-else
-  echo "NOTE: pid 810502 is not the known P1b run. The runner will mark P1b"
-  echo "      ESCALATION_REQUIRED rather than assume completion. Reconcile it"
-  echo "      per programme/DURABLE_HANDOFF.md before relying on P1c."
+  echo "ABORT: pid 810502 is running P1b again; the wave expects the heavy lane free."
+  exit 1
 fi
+echo "P1b: complete and reconciled; heavy I/O lane free (8/8 tokens)"
 
 mkdir -p "$STATE_DIR"
 
