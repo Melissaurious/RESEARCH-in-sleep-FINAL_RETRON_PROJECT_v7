@@ -76,8 +76,9 @@ recommended default (WA-S.1).
      retron-facing downstream branches stop and re-plan rather than being interpreted
      biologically. Recommended default: **adopt.** Stopped: it changes downstream stage scope.
   4. **`C9`:** accept that the RT-subdomain leg is `UNESTABLISHED`. The separability argument in
-     `proposed/research_contract_C3_C9_amendment.md` is withdrawn as a rescue — missing truth is
-     not positive evidence. The `C3` narrowing stands and remains unapplied.
+     `results/rt07_pre_g4_identifiability_redesign/proposed/research_contract_C3_C9_amendment.md`
+     is withdrawn as a rescue — missing truth is not positive evidence. The `C3` narrowing stands
+     and remains unapplied.
 - **Status:** OPEN. `rt07_g4` is blocked on items 1–3. `g4` NOT EXECUTED; `g5` NOT STARTED.
 
 ## 2026-09-16 · Stage-2 scope-separation redesign returned FAIL/BLOCK; three forks for the operator (HIGH-STAKES, stopped)

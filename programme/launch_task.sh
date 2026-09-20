@@ -52,8 +52,22 @@ if [[ -z "$(ls -A general 2>/dev/null)" ]]; then
     || { echo "REFUSED: governance submodule could not be initialised. Not launching."; exit 1; }
 fi
 
-# Assert the governance assets are actually present at the governed pin, not merely a
-# non-empty directory. Pin of record: docs/decisions/2026-09-15_general_pin_cff9831.md
+# Assert the governed PIN, not merely a populated directory. Until this existed the comment
+# here claimed a pin check the code did not perform: it only tested that files were non-empty,
+# so any revision of general/ would have satisfied it.
+# Pin of record: docs/decisions/2026-09-15_general_pin_cff9831.md
+GENERAL_PIN="cff983144e2ad6fc01f648982fb61810dd77ddbe"
+recorded="$(git ls-tree HEAD general 2>/dev/null | awk '{print $3}')"
+checked_out="$(git -C general rev-parse HEAD 2>/dev/null)"
+[[ "$recorded" == "$GENERAL_PIN" ]] || {
+  echo "REFUSED: general/ is RECORDED at ${recorded:-<none>}, governed pin is ${GENERAL_PIN}."
+  echo "         Moving the pin is a deliberate commit with a decision record, never drift."
+  exit 1; }
+[[ "$checked_out" == "$GENERAL_PIN" ]] || {
+  echo "REFUSED: general/ is CHECKED OUT at ${checked_out:-<none>}, governed pin is ${GENERAL_PIN}."
+  exit 1; }
+
+# Then assert the specific assets the programme depends on are present and non-empty.
 for asset in general/site/IBEX.md general/tools/status.sh general/checks/specs_exist.sh; do
   [[ -s "$asset" ]] || { echo "REFUSED: missing governance asset ${asset}. Not launching."; exit 1; }
 done
