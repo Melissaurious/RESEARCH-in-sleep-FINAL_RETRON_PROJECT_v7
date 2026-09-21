@@ -1,0 +1,13 @@
+label	reference_interval_ltra	supported_ltra	n_supporting_states	final_status	drawn_as
+RT0	1-85	none	0	UNRESOLVED / NOT IDENTIFIABLE	outline only: unresolved
+RT1	39-61	none	0	UNRESOLVED / NOT IDENTIFIABLE	outline only: unresolved
+RT2	79-123	97-123	17	PARTIAL / INTERPRETIVE CORRESPONDENCE	filled
+RT3	126-166	126-166	22	ESTABLISHED OPERATIONAL CORRESPONDENCE	filled
+RT4	170-230	170-230	42	ESTABLISHED OPERATIONAL CORRESPONDENCE	hatched: frame-unstable
+RT5+RT6	304-347	311-347	34	RT5 ESTABLISHED + RT6 PARTIAL (joint only)	joint box
+RT7	356-361	356-361	6	ESTABLISHED OPERATIONAL CORRESPONDENCE	filled
+RT4 independent frame	170-230	173-197		SPLIT_INTO_3	bar under RT4
+landmark	306			CAT_STATE 262 -> LtrA 306 (YADD)	marker
+landmark	39			A39 (RT0 interior, Blocker)	marker
+landmark	85			R85 (inside RT1; RT0 upper bound)	marker
+landmark	364.5			R364/R365 proteolytic landmark	marker

@@ -1,0 +1,16 @@
+parameter	value	source
+mapper_version	rtmap-1.0.0/53a1e738a19b3896	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv
+instrument_sha256	53a1e738a19b38967563b4f4d733047b26123f754a7d592fd0186e7bd9c331f5	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv
+profile LENG (GII.deriv.hmm)	471	results/rt07_g4b_production_mapper/PRODUCTION_SPEC.md
+match_state_convention	hhmake -M 50	results/rt07_g4b_production_mapper/PRODUCTION_SPEC.md
+N_ANCHORS	150	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv
+PP_HI	0.75	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv
+PP_LO	0.5	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv
+S_MIN	10	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv
+K_MIN	30	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv
+T1	0.32	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv
+D_MAX	0.48	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv
+D_RANDOM	0.067	results/rt07_g4b_production_mapper/control/SUPPORT_RULE_FROZEN.tsv
+CAT_STATE	262	results/rt07_g4b_production_mapper/control/CATALYTIC_STATE_FROZEN.tsv
+CAT_STATE construction agreement	0.9857	results/rt07_g4b_production_mapper/control/CATALYTIC_STATE_FROZEN.tsv
+MIN_AA	250	results/rt07_g5a_eligibility_census/tables/g5a_census_summary.tsv

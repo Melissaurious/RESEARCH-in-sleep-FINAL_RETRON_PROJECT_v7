@@ -1,0 +1,14 @@
+bundle	layer	role	landing_commit	last_commit_at_pin	readme_status
+results/rt07_g1_history_and_definition	L1	historical definition: sources, genealogy, evidence matrix	558ee896cae86a5dde8f05d0e93db5ae95fe6c47	558ee896cae86a5dde8f05d0e93db5ae95fe6c47	STATUS: VERIFIED
+results/rt07_g2_reference_reconstruction	L1	independent reconstruction of the landmarks on ALIGN_000044	7fa61b4251c00ee85b3be681dd18f9f0aa797a34	7fa61b4251c00ee85b3be681dd18f9f0aa797a34	STATUS: VERIFIED
+results/rt07_g3_prior_method_replication	L1	audit of prior RT0-RT7 methods and frames	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	STATUS: VERIFIED
+results/rt07_g4a_frame_recovery	L2	mapper frame recovery (reviewed 6/10, repaired)	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	STATUS: (none stated)
+results/rt07_g4a_repaired	L2	repaired mapper development; hhmake -M sensitivity; profile	4961588508014a42e9b80bf6fe48bb4e319f5668	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	(no README.md; see the bundle's PROVENANCE or governing decision record)
+results/rt07_ug5_holdout_gate	L2	UG5 holdout gate v2/v3 - falsified designs, retained	cd5dcac131291d3728947d24ebf48a9a2554667b	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	(no README.md; see the bundle's PROVENANCE or governing decision record)
+results/FINAL_PRE_UG25_VALIDATION_BUNDLE	L2	frozen pre-holdout calibration and construction validation	4961588508014a42e9b80bf6fe48bb4e319f5668	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	(no README.md; see the bundle's PROVENANCE or governing decision record)
+results/rt07_ug25_confirmatory	L2	single confirmatory transfer to a fresh lineage (Endpoint A)	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	7a7352059e4c505a53a19d78aaeb55cb0c4141f6	(no README.md; see the bundle's PROVENANCE or governing decision record)
+results/rt07_g4b_production_mapper	L2	the frozen production instrument	dd9cdae3f1475d1545808ed8800e2850e5624d1a	dd9cdae3f1475d1545808ed8800e2850e5624d1a	STATUS: VERIFIED
+results/rt07_g5a_eligibility_census	L2	the frozen eligibility denominator	cf96dd11d6acfedabcb203777da17abf2ba7853f	6f4a7fed9466f72cb256d12e8746a6989eeb0377	STATUS: VERIFIED
+results/rt07_g5_catalogue_application	L2	the canonical mapped catalogue	cf96dd11d6acfedabcb203777da17abf2ba7853f	6f4a7fed9466f72cb256d12e8746a6989eeb0377	STATUS: VERIFIED
+results/rt07_g6_family_architecture	L3	descriptive concordance across MyRT-defined strata	049d7ab9ece1e021e4fc6e9efa164e1bb3244d6c	049d7ab9ece1e021e4fc6e9efa164e1bb3244d6c	STATUS: VERIFIED
+results/rt07_g7a_rt0_rt7_bridge	L4	historical RT0-RT7 bridge on LtrA	34db87fc1a690df3064d10978ac1c70bda7f4b9b	34db87fc1a690df3064d10978ac1c70bda7f4b9b	STATUS: VERIFIED

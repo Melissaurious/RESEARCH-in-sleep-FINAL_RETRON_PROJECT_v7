@@ -1,0 +1,14 @@
+panel	category	n	denominator
+a	exact RT catalogue	501561	exact RT sequences
+a	eligible (g5a)	369381	exact RT sequences
+a	inspectable (g5)	354102	exact RT sequences
+a	ineligible: below MIN_AA	108439	exact RT sequences
+a	ineligible: non-standard residue	23741	exact RT sequences
+b	MAPPABLE	341335	369381 (inspectability (of eligible))
+b	PARTIAL_MAPPING	12767	369381 (inspectability (of eligible))
+b	AMBIGUOUS_MAPPING	6455	369381 (inspectability (of eligible))
+b	NO_SUPPORTED_MAPPING	8824	369381 (inspectability (of eligible))
+c	MAPPED	40217506	55407150 (state calls (eligible x 150))
+c	AMBIGUOUS	2685768	55407150 (state calls (eligible x 150))
+c	UNSUPPORTED	2559452	55407150 (state calls (eligible x 150))
+c	DELETED_STATE	9944424	55407150 (state calls (eligible x 150))
