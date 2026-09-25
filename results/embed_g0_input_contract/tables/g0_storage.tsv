@@ -1,0 +1,5 @@
+model	level	rows	dim	gb_fp16
+ESM-C 300M	pooled	29192	960	0.056
+ESM-C 300M	per-residue	11236474	960	21.574
+RiNALMo giga-v1	pooled	16458	1280	0.0421
+RiNALMo giga-v1	per-nucleotide	2719581	1280	6.9621

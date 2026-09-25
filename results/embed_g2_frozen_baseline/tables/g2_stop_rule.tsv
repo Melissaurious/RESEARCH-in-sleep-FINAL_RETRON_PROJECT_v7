@@ -1,0 +1,7 @@
+rung	best_trivial	diff	ci_lo	ci_hi	half_width	passes_stop_rule
+rung1_random	B-kmer	0.2142	0.1737	0.2537	0.04	True
+rung2_len_gc	B-kmer	0.0844	0.0503	0.1187	0.0342	True
+rung3_model	B-kmer	0.0298	-0.0048	0.0633	0.034	False
+rung4_nc_cluster	B-kmer	0.0161	0.0161	0.0161	0.0	True
+rung5_rt_cluster	B-kmer	-0.0058	-0.0222	0.0111	0.0166	False
+rung6_species	B-kmer	0.1872	0.0864	0.3051	0.1094	True

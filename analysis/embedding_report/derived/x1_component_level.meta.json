@@ -1,0 +1,18 @@
+{
+  "source_run": "results/embed_x1_conditional_pilot (commit 8bf7207)",
+  "per_sequence_arrays": "/home/borg/RESEARCH-in-sleep-FINAL_RETRON_PROJECT_v7-embeddings/ARIS_OUTPUT/embed_x1_conditional/work",
+  "aggregation": "per-sequence NLL sum -> per-component token-weighted mean (x06_eval.comp_mean)",
+  "bootstrap": {
+    "seed": 20260918,
+    "resamples": 10000,
+    "unit": "component"
+  },
+  "n_test_pairs": 4638,
+  "n_components": 357,
+  "n_eff_test": 14.13,
+  "frozen_checks": {
+    "total": 46,
+    "passed": 46
+  },
+  "recomputed_model_outputs": false
+}

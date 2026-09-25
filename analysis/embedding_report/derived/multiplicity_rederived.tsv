@@ -1,0 +1,3 @@
+source	n_pairs	n_rt	n_ncrna	pct_rt_exactly_one_ncrna_partner	pct_rt_more_than_one_ncrna_partner	max_ncrna_partners_per_rt	pct_ncrna_exactly_one_rt_partner	pct_ncrna_more_than_one_rt_partner	max_rt_partners_per_ncrna
+embed_g2b_frozen_split (15e00b8)	30924	29192	16458	96.85	3.15	176	82.28	17.72	705
+embed_x2 pair export (fdf0872)	30924	29192	16458	96.85	3.15	176	82.28	17.72	705

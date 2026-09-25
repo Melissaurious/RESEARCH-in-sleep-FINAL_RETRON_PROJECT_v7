@@ -1,0 +1,3 @@
+modality	probe	fit_on	reported_on	n_classes	test_accuracy	majority_class_rate	accuracy_above_majority
+ESM-C RT	multinomial logistic on frozen pooled embedding	train components	test components	21	0.4978	0.2693	0.2286
+RiNALMo ncRNA	multinomial logistic on frozen pooled embedding	train components	test components	21	0.6557	0.2693	0.3864

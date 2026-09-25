@@ -1,0 +1,3 @@
+path	sha256	bytes	records	role
+inputs/rt_pair_universe.faa	db87de172ceff9df29bb635df13803500f73b9463c31e4926d7281d7f1b6cd2a	13192338	29192	exact RT proteins, PAIR-ELIG universe
+inputs/rt_ncrna_oriented_v1.fna	d04297a823e249061a320897233afac581bbfb0bf26b33942f5c0f6630258e35	3953406	16458	exact oriented ncRNA, PAIR-ELIG universe

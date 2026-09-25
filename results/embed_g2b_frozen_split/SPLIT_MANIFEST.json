@@ -1,0 +1,198 @@
+{
+  "gate": "embed_g2b_frozen_split",
+  "status": "FROZEN",
+  "frozen_on": "2026-09-18",
+  "operator_decision": "Option A approved: no secondary fragment bridge.",
+  "frozen_before": "any downstream embedding compatibility result was examined",
+  "thresholds_and_coverage_semantics": {
+    "rt_identity": 0.5,
+    "rt_coverage": "-c 0.8 --cov-mode 0 = BIDIRECTIONAL; both sequences >=80% covered",
+    "ncrna_identity": 0.8,
+    "ncrna_coverage": "-aS 0.8 = SHORTER-sequence coverage; shorter member >=80% aligned",
+    "why_asymmetric": "a protein pair aligning over 80% of both is homologous along its length; ncRNAs at 34-395 nt are short enough that anchoring on the shorter member avoids discarding a real relative over a length difference",
+    "split_unit": "connected component of the bipartite RT-cluster <-> ncRNA-cluster graph; components are INDIVISIBLE",
+    "fragment_bridge": "NONE"
+  },
+  "allocation": {
+    "method": "deterministic greedy, largest component first to largest pair deficit",
+    "random_seed": null,
+    "rng_used": false,
+    "targets": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    },
+    "tie_break": "exact deficit ties break train > val > test",
+    "component_order": "sorted by (n_pairs DESC, str(component_key) ASC)",
+    "component_key_caveat": "component_key is the union-find root from the pinned DSU in s06_freeze_split.py over the row order of rt_ncrna_exact_pairs_v1.parquet. Reproducible with that code and that input; NOT a canonical name. The assignment table is the authority on membership."
+  },
+  "populations": {
+    "primary_confirmatory": {
+      "definition": "the full frozen test fold",
+      "pairs": 4638,
+      "components": 357,
+      "n_eff": 14.1,
+      "T4_pct": 13.26
+    },
+    "near_duplicate_sensitivity": {
+      "role": "PREDECLARED SENSITIVITY ANALYSIS. Not a replacement primary test, and not an alternative split selected on model performance.",
+      "rule": "local identity >= 0.90 AND aligned coverage >= 0.30",
+      "coverage_symmetrization": "aligned_coverage = max(query_coverage, target_coverage)",
+      "coverage_fields": {
+        "rt": "mmseqs qcov and tcov on the local alignment",
+        "ncrna": "alignment_length/query_length and alignment_length/subject_length"
+      },
+      "why_max": "a fragment must count whichever way round it is; min() would miss both a short held-out sequence inside a long training one and the reverse",
+      "measured_pre_freeze": {
+        "rt_crossing": "3 / 4,469 held-out RT (0.07%)",
+        "ncrna_crossing": "263 / 2,756 held-out ncRNA (9.54%)",
+        "excluded_population_pairs": 1525,
+        "excluded_population_n_eff": 24.5,
+        "excluded_population_T4_pct": 3.2,
+        "affected_test_components": "73 of 357",
+        "frozen_sequence_list": "tables/near_duplicate_stratum.tsv",
+        "n_rt_sequences": 3,
+        "n_ncrna_sequences": 263,
+        "exclusion_unit": "whole test COMPONENTS containing any near-duplicate-touched pair",
+        "pair_level_alternative_not_frozen": "4,114 pairs at n_eff 12.6",
+        "sensitivity_pairs_recomputed": 1525,
+        "sensitivity_n_eff_recomputed": 24.5
+      }
+    }
+  },
+  "n_eff_definition": {
+    "formula": "n_eff = (sum_i s_i)^2 / sum_i (s_i^2), s_i = pairs in component i",
+    "name": "inverse Simpson / effective number of components",
+    "why": "equals the component count when components are equal-sized and collapses toward 1 when one dominates; the raw component COUNT does not bound component-level inference, this does"
+  },
+  "folds": {
+    "train": {
+      "pairs": 21647,
+      "pct": 70.0,
+      "components": 361,
+      "n_eff": 6.4,
+      "unique_rt": 20334,
+      "unique_ncrna": 10786,
+      "largest_component_pairs": 5711,
+      "T1": 21251,
+      "T2": 17816,
+      "T3": 16754,
+      "T4": 5408,
+      "T1_pct": 70.17,
+      "T2_pct": 69.4,
+      "T3_pct": 70.75,
+      "T4_pct": 72.34
+    },
+    "val": {
+      "pairs": 4639,
+      "pct": 15.0,
+      "components": 357,
+      "n_eff": 14.2,
+      "unique_rt": 4389,
+      "unique_ncrna": 2916,
+      "largest_component_pairs": 823,
+      "T1": 4462,
+      "T2": 3935,
+      "T3": 3496,
+      "T4": 1077,
+      "T1_pct": 14.73,
+      "T2_pct": 15.33,
+      "T3_pct": 14.76,
+      "T4_pct": 14.41
+    },
+    "test": {
+      "pairs": 4638,
+      "pct": 15.0,
+      "components": 357,
+      "n_eff": 14.1,
+      "unique_rt": 4469,
+      "unique_ncrna": 2756,
+      "largest_component_pairs": 809,
+      "T1": 4574,
+      "T2": 3922,
+      "T3": 3430,
+      "T4": 991,
+      "T1_pct": 15.1,
+      "T2_pct": 15.28,
+      "T3_pct": 14.48,
+      "T4_pct": 13.26
+    }
+  },
+  "tier_totals": {
+    "T1": 30287,
+    "T2": 25673,
+    "T3": 23680,
+    "T4": 7476
+  },
+  "measured_leakage_at_freeze": {
+    "instrument": "INDEPENDENT of the clustering and more sensitive than it: held-out searched against a TRAINING-ONLY database, so censoring is impossible. mmseqs -s 7.5 --min-seq-id 0 (RT), blastn -word_size 7 (ncRNA).",
+    "held_out_definition": "test; training means train + validation, because validation is inspected during development",
+    "rt": {
+      "id>=0.50 & cov>=0.50": "3685/4469 = 82.46%",
+      "id>=0.70 & cov>=0.50": "57/4469 = 1.28%",
+      "id>=0.90 & cov>=0.30": "3/4469 = 0.07%",
+      "id>=0.50 & bidirectional cov>=0.80": "55.2%",
+      "id>=0.50 & query cov>=0.50": "77.0%"
+    },
+    "ncrna": {
+      "id>=0.50 & cov>=0.50": "1175/2756 = 42.63%",
+      "id>=0.70 & cov>=0.50": "1122/2756 = 40.71%",
+      "id>=0.90 & cov>=0.30": "263/2756 = 9.54%"
+    },
+    "reachability": "held-out pairs reachable from training via either modality: 4638/4638 = 100.00%",
+    "isolation": "held-out components with NO detectable relationship to training: 0/357 = 0.00%",
+    "isolation_note": "all 29,192 sequences are reverse transcriptases - one protein family - so DETECTABILITY is saturated and uninformative. The identity-and-coverage tiers are the instrument that carries information.",
+    "ncrna_artefact": "every held-out ncRNA has a 100%-identity training match at <30% coverage - short conserved msr/msd motifs, not homology. UNFILTERED maximum ncRNA identity is saturated at 1.0 and must never be quoted; only coverage-filtered numbers are interpretable."
+  },
+  "fragment_bridge_rejection_rationale": {
+    "decision": "REJECTED - Option A frozen",
+    "motivating_concern": "the 80% coverage requirement lets a near-identical FRAGMENT of a training sequence form its own cluster and cross into the held-out fold",
+    "finding_1": "the concern does not hold on the protein side: only 3 of 4,469 held-out RTs (0.07%) cross at id>=0.90/cov>=0.30 under Option A",
+    "finding_2": "the best bridge variant (id>=0.90, cov>=0.30) was VERIFIED, not assumed: it closes the RT channel completely (3 -> 0) but only reduces ncRNA 263 -> 54 (1.96%), because bridges are built from a probe capped at 300 hits per query",
+    "finding_3": "it costs 82% of validation independence, val n_eff 14.2 -> 2.6; looser variants are worse - id>=0.70/cov>=0.50 gives val n_eff 1.0, id>=0.50/cov>=0.50 collapses the graph to a 94.3% giant component",
+    "finding_4": "a surgical quarantine of the 73 affected test components was also priced and rejected: test falls to 1,525 pairs (4.93%) and T4 retention to 3.20%",
+    "accepted_residual": "the ncRNA near-duplicate channel is ACCEPTED AND REPORTED, not eliminated. It is handled by the predeclared sensitivity stratum, not by a structural change."
+  },
+  "frozen_interpretation": "The primary experiment tests RT-ncRNA compatibility generalization across the declared sequence-relatedness component split. It does not establish generalization to evolutionarily unrelated RT or ncRNA sequences.",
+  "frozen_inference_unit": "Inference for confirmatory results MUST operate at the COMPONENT level. The 4,638 test pairs are NOT independent observations; the effective number of independent units is n_eff = 14.1. Any test treating pairs as exchangeable overstates significance.",
+  "immutability": "Thresholds, split membership, sensitivity definition and inference unit must NOT be changed in response to downstream model performance. Any change requires a new operator decision record and supersedes this manifest rather than editing it.",
+  "software_versions": {
+    "mmseqs": "18.8cc5c",
+    "cd-hit-est": "CD-HIT 4.8.1 (built Apr 24 2025)",
+    "blastn": "2.16.0+",
+    "python": "3.12.12",
+    "numpy": "1.26.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.0"
+  },
+  "commands": {
+    "rt_clustering": "/home/borg/miniconda3/envs/colabfold/bin/mmseqs easy-cluster rt_pair_universe.faa rt_id0.50 <tmp> --min-seq-id 0.50 -c 0.8 --cov-mode 0 --threads 16 -v 1",
+    "ncrna_clustering": "/home/borg/miniconda3/envs/retron_tradicional/bin/cd-hit-est -i rt_ncrna_oriented_v1.fna -o nc_id0.80 -c 0.80 -n 8 -aS 0.8 -M 8000 -T 1 -d 0",
+    "rt_leakage_probe": "mmseqs search <heldout> <training-only> -s 7.5 --min-seq-id 0.0 -e 1000 --max-seqs 300 -c 0.0 --threads 16",
+    "ncrna_leakage_probe": "blastn -task blastn -word_size 7 -query <heldout> -db <training-only> -evalue 1000 -max_target_seqs 300"
+  },
+  "inputs": {
+    "rt_ncrna_exact_pairs_v1.parquet": "b89df6803dcd6346c93e39e62f1d590e22c96662d63c7c148952cc6641523dae",
+    "rt_pair_universe.faa": "db87de172ceff9df29bb635df13803500f73b9463c31e4926d7281d7f1b6cd2a",
+    "rt_ncrna_oriented_v1.fna": "d04297a823e249061a320897233afac581bbfb0bf26b33942f5c0f6630258e35",
+    "rt_id0.50_cluster.tsv": "099273e373964f83b6a892e6483bc50b0a353cbbce166f61e859a39bbeab0c73",
+    "nc_id0.80.clstr": "0a4e72c72218f8d8a85368d7d953e0632b9327859c76932ad2e41df4a7bc17bb"
+  },
+  "outputs": {
+    "split_assignment.tsv.gz": {
+      "sha256_uncompressed": "78a9556378d4a7871a566fe914d3b7b7d52924b20149104339f8c1f62c77d376",
+      "rows": 30924
+    },
+    "split_components.tsv": {
+      "sha256": "e21782b2ece100cf627460a3db06f9548cdc073119ab279e6f33a181047697e4",
+      "rows": 1075
+    },
+    "near_duplicate_stratum.tsv": {
+      "sha256": "ebfa25e2421928859c14c20ff9662d284877f19b3a58340ca2399c6919e31d00",
+      "rows": 266
+    }
+  },
+  "producer": "embed_g2/s06_freeze_split.py",
+  "producer_sha256": "9ad4322b33cd155a8a243aaf0fd0f5ed0abe2d8c543b45717a43a95f58f5433e",
+  "git_rev": "fd5efc9893c335cebb88ec59e835f36b10f65e45"
+}

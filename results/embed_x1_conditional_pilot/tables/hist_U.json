@@ -1,0 +1,62 @@
+{
+  "arm": "U",
+  "params": {
+    "total": 665483,
+    "conditioning_path": 128,
+    "shared_decoder": 665355
+  },
+  "best_val_nll": 1.412676453590393,
+  "best_epoch": 0,
+  "seed": 20260918,
+  "lr": 0.0002,
+  "warmup": 4000,
+  "batch": 32,
+  "accum": 2,
+  "max_epochs": 40,
+  "patience": 5,
+  "smoke": 0,
+  "history": [
+    {
+      "epoch": 0,
+      "train_nll": 1.46882,
+      "val_nll": 1.41268,
+      "val_ppl": 4.1069,
+      "sec": 27.7
+    },
+    {
+      "epoch": 1,
+      "train_nll": 1.37794,
+      "val_nll": 1.42474,
+      "val_ppl": 4.1568,
+      "sec": 27.1
+    },
+    {
+      "epoch": 2,
+      "train_nll": 1.31714,
+      "val_nll": 1.44204,
+      "val_ppl": 4.2293,
+      "sec": 27.2
+    },
+    {
+      "epoch": 3,
+      "train_nll": 1.27418,
+      "val_nll": 1.44511,
+      "val_ppl": 4.2423,
+      "sec": 28.0
+    },
+    {
+      "epoch": 4,
+      "train_nll": 1.23689,
+      "val_nll": 1.42349,
+      "val_ppl": 4.1516,
+      "sec": 27.2
+    },
+    {
+      "epoch": 5,
+      "train_nll": 1.21173,
+      "val_nll": 1.43203,
+      "val_ppl": 4.1872,
+      "sec": 26.9
+    }
+  ]
+}

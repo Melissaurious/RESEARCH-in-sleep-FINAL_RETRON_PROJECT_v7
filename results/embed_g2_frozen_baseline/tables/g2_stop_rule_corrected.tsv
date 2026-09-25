@@ -1,0 +1,7 @@
+rung	best_trivial	diff	ci_lo	ci_hi	half_width	passes_stop_rule	n_components	component_inference_valid	verdict
+rung1_random	B-kmer	0.2142	0.1737	0.2537	0.04	True	357	True	PASS
+rung2_len_gc	B-kmer	0.0844	0.0503	0.1187	0.0342	True	316	True	PASS
+rung3_model	B-kmer	0.0298	-0.0048	0.0633	0.034	False	299	True	FAIL
+rung4_nc_cluster	B-kmer	0.0161	0.0161	0.0161	0.0	True	1	False	UNDETERMINED (too few components)
+rung5_rt_cluster	B-kmer	-0.0058	-0.0222	0.0111	0.0166	False	10	False	UNDETERMINED (too few components)
+rung6_species	B-kmer	0.1872	0.0864	0.3051	0.1094	True	22	False	UNDETERMINED (too few components)

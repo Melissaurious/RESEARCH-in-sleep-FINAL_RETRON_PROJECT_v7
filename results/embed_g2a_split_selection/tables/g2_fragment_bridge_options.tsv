@@ -1,0 +1,5 @@
+criterion	min_identity	min_coverage	bridge_edges_rt	bridge_edges_nc	testcomps_connected_before	testcomps_total_before	frac_connected_before	components	largest	largest_pct	train	val	test	test_pct	test_comps	test_neff	val_neff	T3_test	T4_test	T3_test_pct	T4_test_pct
+OPTION A - no bridges			0	0	0	357	0.0	1075	5711	18.47	21647	4639	4638	15.0	357	14.1	14.2	3430	991	14.48	13.26
+id>=0.50 & cov>=0.50	0.5	0.5	2971887	1234447	301	357	0.8431	137	29163	94.31	29163	881	880	2.85	71	1.6	1.2	495	163	2.09	2.18
+id>=0.70 & cov>=0.50	0.7	0.5	1133147	1136177	226	357	0.6331	480	10549	34.11	21457	5018	4449	14.39	239	7.1	1.0	3129	1005	13.21	13.44
+id>=0.90 & cov>=0.30	0.9	0.3	863049	101740	73	357	0.2045	882	6736	21.78	21647	4639	4638	15.0	295	13.3	2.6	3006	939	12.69	12.56

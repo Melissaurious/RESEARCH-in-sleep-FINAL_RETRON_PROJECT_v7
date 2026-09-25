@@ -1,0 +1,21 @@
+{
+  "min_components_for_inference": 30,
+  "valid_rungs": [
+    "rung1_random",
+    "rung2_len_gc",
+    "rung3_model"
+  ],
+  "pass": [
+    "rung1_random",
+    "rung2_len_gc"
+  ],
+  "fail": [
+    "rung3_model"
+  ],
+  "undetermined": [
+    "rung4_nc_cluster",
+    "rung5_rt_cluster",
+    "rung6_species"
+  ],
+  "g3_escalation_authorised": false
+}

@@ -1,0 +1,7 @@
+modality	criterion	n_heldout	n_crossing	frac_crossing	n_edges
+RT	id>=0.50 & cov>=0.50	4469	3685	0.8246	130120
+RT	id>=0.70 & cov>=0.50	4469	57	0.0128	815
+RT	id>=0.90 & cov>=0.30	4469	3	0.0007	17
+ncRNA	id>=0.50 & cov>=0.50	2756	1175	0.4263	18125
+ncRNA	id>=0.70 & cov>=0.50	2756	1122	0.4071	14972
+ncRNA	id>=0.90 & cov>=0.30	2756	263	0.0954	1333
