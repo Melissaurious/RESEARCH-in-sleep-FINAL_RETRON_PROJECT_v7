@@ -1,0 +1,743 @@
+header	coarse_group	tableS1_RT_phylogeny	tableS1_RT_class	first_col	last_col	n_res	rt0_blocks123_occ	block1_occ
+gi|322417944|ref|YP_004197167.1|_extraction	GroupII	Group II Intron	g4	68	1305	264	1.0	1.0
+Pe.ca.I3/CP000142.2/2649551..2651540/Pelobacter_extraction	GroupII		g4	68	1305	264	1.0	1.0
+gi|350554847|ref|ZP_08923874.1|_extraction	GroupII	Group II Intron	g4	68	1305	263	1.0	1.0
+gi|345870111|ref|ZP_08822065.1|_extraction	GroupII	Group II Intron	g4	68	1305	262	1.0	1.0
+cKu.st.I1/CT573074.1/62738..64755/Candidatus_extraction	GroupII		UNMATCHED	68	1305	257	1.0	1.0
+gi|354960451|dbj|BAL13130.1|_extraction	GroupII	Group II Intron	g3	68	1305	261	1.0	1.0
+Ni.ha.I1/CP000320/75444..77354/Nitrobacter_extraction	GroupII		g3	68	1305	261	1.0	1.0
+Afid|115293161|locus|VBIRhiTro150571_4165|_extraction	GroupII	Group II Intron	g3	68	1306	262	1.0	1.0
+gi|296163794|ref|ZP_06846488.1|_extraction	GroupII	Group II Intron	g3	68	1305	263	1.0	1.0
+D.a.I1/CP000089/759875..761862/Dechloromonas_extraction	GroupII		g3	68	1305	263	1.0	1.0
+gi|344200432|ref|YP_004784758.1|_extraction	GroupII	Group II Intron	g3	68	1305	262	1.0	1.0
+So.us.I2/CP000473/3231872..3233814/Solibacter_extraction	GroupII		g5	68	1305	265	1.0	1.0
+Ge.ur.I1/CP000698/1525569..1527641/Geobacter_extraction	GroupII		g5	68	1305	260	1.0	1.0
+Pe.th.I2/AP009389/2519125..2521096/Pelotomaculum_extraction	GroupII		g5	68	1305	259	1.0	1.0
+S.ag.I2/AE014217/10188..12210/Streptococcus_extraction	GroupII		Unclassified	68	1305	253	1.0	1.0
+clostridiafid|61054282|locus|VBICloCla155345_1776|_extraction	GroupII	Group II Intron	Unclassified	68	1305	255	1.0	1.0
+clostridiafid|115613588|locus|VBIDehSp228777_0963|_extraction	GroupII	Group II Intron	Unclassified	68	1305	254	1.0	1.0
+UA.I4/AY714820/20258..22206/uncultured_archaeon_extraction	GroupII		Unclassified	68	1305	247	1.0	1.0
+clostridiafid|42840809|locus|VBICloCf158569_1553|_extraction	GroupII	Group II Intron	Unclassified	68	1305	250	1.0	1.0
+My.va.I1/CP000511/2360134..2362120/Mycobacterium_extraction	GroupII		Unclassified	68	1305	252	1.0	1.0
+Rh.sp.I1/CP000432/23005..25058/Rhodococcus_extraction	GroupII		Unclassified	68	1305	253	1.0	1.0
+Actinobacteriafid|115244729|locus|VBIMycCan270121_2577|_extraction	GroupII	Group II Intron	Unclassified	390	1306	158	0.0	0.0
+Pe.th.I1/AP009389/2583061..2585155/Pelotomaculum_extraction	GroupII		g6	68	1305	249	1.0	1.0
+clostridiafid|38271879|locus|VBITheSp141296_0259|_extraction	GroupII	Group II Intron	g6	72	1305	245	0.84	0.667
+clostridiafid|22670018|locus|VBINatThe92436_0719|_extraction	GroupII	Group II Intron	g6	68	1305	249	1.0	1.0
+Al.or.I2/CP000853/2108190..2110275/Alkaliphilus_extraction	GroupII		UNMATCHED	68	1305	249	1.0	1.0
+D.p.I1/CR522871/6124..8213/Desulfotalea_extraction	GroupII		g6	68	1305	249	1.0	1.0
+Gfid|20854494|locus|VBIAliSal95923_2257|_extraction	GroupII	Group II Intron	g6	68	1305	242	1.0	1.0
+Gfid|20872676|locus|VBIAltMac49397_0697|_extraction	GroupII	Group II Intron	g6	180	1305	134	0.12	0.0
+gi|91201518|emb|CAJ74578.1_extraction	CRISPR-RT	CRISPR-RT	CRISPR-RT7 (G2L1)	68	1305	245	1.0	1.0
+DEfid|54439799|locus|VBIDesAce170587_1406|_extraction	CRISPR-RT	CRISPR-RT	CRISPR-RT7 (G2L1)	68	1305	247	1.0	1.0
+clostridiafid|43053635|locus|VBIHalPra106773_0208|_extraction	GroupII	Group II Intron	GII Unclassified	68	1305	248	1.0	1.0
+clostridiafid|115343859|locus|VBIHalHal149681_1092|_extraction	GroupII	Group II Intron	GII Unclassified	68	1305	248	1.0	1.0
+clostridiafid|61456050|locus|VBISulAci142080_3112|_extraction	GroupII	Group II Intron	GII Unclassified	68	1305	250	1.0	1.0
+cianobacteriafid|115432920|locus|VBICriEpi239080_0668|_extraction	GroupII	CRISPR-RT	CRIPSR-RT2	68	1305	247	1.0	1.0
+cianobacteriafid|115605079|locus|VBIRivSp77222_5259|_extraction	GroupII	CRISPR-RT	CRIPSR-RT2	68	1305	247	1.0	1.0
+cianobacteriafid|21560796|locus|VBICyaSp136448_5986|_extraction	GroupII	CRISPR-RT	CRIPSR-RT2	68	1305	247	1.0	1.0
+gi|68548733|ref|ZP_00588202.1_extraction	CRISPR-RT	CRISPR-RT	CRISPR-RT6 (G2L1)	68	1305	248	1.0	1.0
+gi|119357846|ref|YP_912490.1_extraction	CRISPR-RT	CRISPR-RT	CRISPR-RT6 (G2L1)	68	1305	248	1.0	1.0
+gi|37677204|ref|NP_937600.1_extraction	CRISPR-RT	CRISPR-RT	CRISP- RT5 (G2L1)	68	1305	245	1.0	1.0
+cianobacteriafid|115659900|locus|VBIChaMin231992_1871|_extraction	GroupII	Group II Intron	GII Unclassified	68	1305	271	1.0	1.0
+Co.ca.I1/FP929038.1/3172164..3174036/Coprococcus_extraction	GroupII		E	68	1305	272	1.0	1.0
+Fa.pr.I2/FP929046.1/829768..831634/Faecalibacterium_extraction	GroupII		E	68	1305	271	1.0	1.0
+clostridiafid|58517021|locus|VBICloBot180836_2089|_extraction	GroupII	Group II Intron	E	68	1305	271	1.0	1.0
+Sy.wo.I1/NZ_AAJG01000003/20007..22007/Syntrophomonas_extraction	GroupII		E	68	1305	272	1.0	1.0
+Mo.th.I1/CP000232.1/2324936..2328581/Moorella_extraction	GroupII		E	68	1305	272	1.0	1.0
+clostridiafid|21720033|locus|VBIDesAce42372_1641|_extraction	GroupII	Group II Intron	E	860	1305	103	0.0	0.0
+Cl.be.I2_extraction	GroupII		E	68	1305	276	1.0	1.0
+clostridiafid|115615774|locus|VBIDehSp228777_1721|_extraction	GroupII	Group II Intron	E	68	1305	272	1.0	1.0
+Cl.be.I3/CP000721/3718265..3720149/Clostridium_extraction	GroupII		E	68	1305	271	1.0	1.0
+UA.I7/FP565147.1/1619711..1621718/uncultured_archaeon_extraction	GroupII		E	68	1305	270	1.0	1.0
+UA.I6/FP565147.1/2174432..2176370/uncultured_archaeon_extraction	GroupII		E	68	1305	270	1.0	1.0
+Gfid|115349385|locus|VBIThiMob160332_0442|_extraction	GroupII	Group II Intron	E	68	1305	271	1.0	1.0
+Ta.sp.I2/CP000923.1/1286631..1288551/Thermoanaerobacter_extraction	GroupII		E	68	1305	269	1.0	1.0
+W.e.I2_extraction	UNASSIGNED		UNMATCHED	68	1305	271	1.0	1.0
+Afid|24026234|locus|VBIWolEnd95846_0368|_extraction	GroupII	Group II Intron	E	68	1266	253	1.0	1.0
+Ch.ph.I2/CP000492/3012641..3014550/Chlorobium_extraction	GroupII		E	68	1305	271	1.0	1.0
+S.ma.I1/BX664015/172056..173964/Serratia_extraction	GroupII		E	68	1305	271	1.0	1.0
+Bfid|19071807|locus|VBIBurCen118154_0098|_extraction	GroupII	Group II Intron	E	68	1305	271	1.0	1.0
+Fr.sp.I4/CP000820/1651830..1653736/Frankia_extraction	GroupII		E	68	1305	271	1.0	1.0
+DEfid|42682369|locus|VBIStiAur43712203747_1515|_extraction	GroupII	Group II Intron	E	68	1305	271	1.0	1.0
+A.v.I5/CP001157/2471407..2473316/Azotobacter_extraction	GroupII		E	68	1305	271	1.0	1.0
+B.j.I2/BA000040/2069342..2071253/Bradyrhizobium_extraction	GroupII		UNMATCHED	68	1305	271	1.0	1.0
+UB.I1/AY691909/2430..4342/uncultured_bacterium_extraction	GroupII		E	68	1305	271	1.0	1.0
+DEfid|21698146|locus|VBIDesRet71890_0666|_extraction	GroupII	Group II Intron	E	68	1305	270	1.0	1.0
+Bfid|45180964|locus|VBIBurRhi170666_0331|_extraction	GroupII	Group II Intron	E	68	1305	271	1.0	1.0
+Sr.me.I4_extraction	GroupII		E	68	1305	271	1.0	1.0
+Chlorobifid|21392973|locus|VBIChlPha122104_2646|_extraction	GroupII	Group II Intron	E	68	1277	259	1.0	1.0
+DEfid|23677855|locus|VBISorCel80414_10115|_extraction	GroupII	Group II Intron	E	76	1305	262	0.68	0.333
+Gfid|32294365|locus|VBIPseHal105694_0399|_extraction	GroupII	Group II Intron	E	435	1305	169	0.0	0.0
+Ps.tu.I1/AAOH01000003/353461..355380/Pseudoalteromonas_extraction	GroupII		E	68	1305	264	1.0	1.0
+Gfid|115643628|locus|VBIThiNit264030_1141|_extraction	GroupII	Group II Intron	E	99	1305	243	0.4	0.0
+Afid|190138491|locus|VBIRhiEtl298076_5694|_extraction	GroupII	Group II Intron	E	68	1271	252	1.0	1.0
+DEfid|42685679|locus|VBIStiAur43712203747_3158|_extraction	GroupII	Group II Intron	E	68	1305	270	1.0	1.0
+Bacteroidetesfid|61290805|locus|VBINiaKor154066_6177|_extraction	GroupII	Group II Intron	E	68	1305	266	1.0	1.0
+Gfid|22095829|locus|VBIHalHal112047_0768|_extraction	GroupII	Group II Intron	E	859	1305	102	0.0	0.0
+DEfid|23659127|locus|VBISorCel80414_0791|_extraction	GroupII	Group II Intron	E	68	1305	267	1.0	1.0
+Gfid|42464802|locus|VBIXenNem38452_2364|_extraction	GroupII	Group II Intron	E	68	1305	270	1.0	1.0
+Gfid|35290299|locus|VBILegLon159544_1142|_extraction	GroupII	Group II Intron	E	68	1305	270	1.0	1.0
+Afid|22828908|locus|VBIOriTsu129072_1468|_extraction	GroupII	Group II Intron	E	68	1265	252	1.0	1.0
+clostridiafid|115615051|locus|VBIDehSp228777_0955|_extraction	GroupII	Group II Intron	E	68	1305	264	1.0	1.0
+Ac.ma.I1/CP000840.1/228971..230873/Acaryochloris_extraction	GroupII		E	68	1305	270	1.0	1.0
+gi|296169325|ref|ZP_06850953.1|_extraction	GroupII	Group II Intron	g1	68	1305	271	1.0	1.0
+gi|260905481|ref|ZP_05913803.1|_extraction	GroupII	Group II Intron	g1	68	1305	271	1.0	1.0
+gi|336177663|ref|YP_004583038.1|_extraction	GroupII	Group II Intron	g1	68	1305	273	1.0	1.0
+Ca.ac.I1/CP001700/4538431_extraction	GroupII		UNMATCHED	68	1305	270	1.0	1.0
+Rh.js.I1/CP000433/185762_extraction	GroupII		UNMATCHED	68	1305	275	1.0	1.0
+gi|317124020|ref|YP_004098132.1|_extraction	GroupII	Group II Intron	g1	68	1305	273	1.0	1.0
+Actinobacteriafid|115168014|locus|VBIMycSme175119_3779|_extraction	GroupII	Group II Intron	g1	68	1306	272	1.0	1.0
+Sr.me.I2/AE006469/1065613..1067822/Sinorhizobium_extraction	GroupII		g1	68	1305	296	1.0	1.0
+Bacteroidetesfid|32443874|locus|VBISpiLin97822_6935|_extraction	GroupII	Group II Intron	g1	68	1305	298	1.0	1.0
+DEfid|42684501|locus|VBIStiAur43712203747_2581|_extraction	GroupII	Group II Intron	g1	68	1305	310	1.0	1.0
+S.f.I1/CP001383.1/1091555..1093825/Shigella_extraction	GroupII		A	68	1305	286	1.0	1.0
+E.c.I4/AB024946/48555..50824/Escherichia_extraction	GroupII		A	68	1305	286	1.0	1.0
+Afid|20797198|locus|VBIAgrRad129173_0726|_extraction	GroupII	Group II Intron	A	68	1306	288	1.0	1.0
+Gfid|61475875|locus|VBIVibSp220376_1845|_extraction	GroupII	Group II Intron	A	72	1305	282	0.84	0.667
+clostridiafid|61451050|locus|VBISulAci142080_0650|_extraction	GroupII	Group II Intron	A	978	1305	97	0.0	0.0
+clostridiafid|61451056|locus|VBISulAci142080_0653|_extraction	GroupII	Group II Intron	A	68	1101	184	1.0	1.0
+gi|258515071|ref|YP_003191293.1|_extraction	GroupII	Group II Intron	g2	68	1305	255	1.0	1.0
+Ma.sp.I2/CP000471/2464047..2465973/Magnetococcus_extraction	GroupII		g2	68	1305	255	1.0	1.0
+gi|302392022|ref|YP_003827842.1|_extraction	GroupII	Group II Intron	g2	68	1305	256	1.0	1.0
+W.e.I5/AM999887.1/284826..286812/Wolbachia_extraction	GroupII		g2	68	1305	255	1.0	1.0
+Bfid|19201997|locus|VBIBurPhy25146_7879|_extraction	GroupII	UNC	Unclassified	1069	1305	77	0.0	0.0
+B.th.I3/DQ363750/30070..32039/Bacillus_extraction	GroupII		g2	68	1305	255	1.0	1.0
+Bfid|58553039|locus|VBICupNec201015_1883|_extraction	GroupII	Group II Intron	g2	68	1305	255	1.0	1.0
+Sg.ce.I1/AM746676.1/9205316..9207294/Sorangium_extraction	GroupII		g2	68	1305	248	1.0	1.0
+Mx.xa.I1/CP000113/2433780..2435766/Myxococcus_extraction_1	GroupII		g2	68	1305	248	1.0	1.0
+clostridiafid|54666312|locus|VBIDesCar168000_0691|_extraction	GroupII	Group II Intron	GII Unclassified	179	1305	215	0.16	0.0
+N.a.I2/AF079317/53812..56360/Novosphingobium_extraction	GroupII		ML	68	1305	317	1.0	1.0
+N.a.I1/AF079317/43084..45661/Novosphingobium_extraction	GroupII		ML	68	1305	317	1.0	1.0
+Gfid|87114490|locus|VBIEscBla78014_3566|_extraction	GroupII	Group II Intron	ML	68	1305	323	1.0	1.0
+Afid|58846094|locus|VBIPelHal211702_2804|_extraction	GroupII	Group II Intron	ML	68	1306	318	1.0	1.0
+B.t.I2/AE015928/3241156..3243662/Bacteroides_extraction	GroupII		ML	68	1305	312	1.0	1.0
+Bacteroidetesfid|87116544|locus|VBIAliFin145170_0639|_extraction	GroupII	Group II Intron	ML	68	1305	312	1.0	1.0
+Bacteroidetesfid|87116554|locus|VBIAliFin145170_0644|_extraction	GroupII	Group II Intron	ML	68	1305	312	1.0	1.0
+Bacteroidetesfid|42711385|locus|VBIAliSha154597_1257|_extraction	GroupII	Group II Intron	ML	267	1305	250	0.0	0.0
+Ba.fr.I1/AY515263/38446..40893/Bacteroides_extraction	GroupII		UNMATCHED	68	1305	312	1.0	1.0
+Bacteroidetesfid|46993147|locus|VBIOdoSpl147623_0215|_extraction	GroupII	Group II Intron	ML	68	1305	312	1.0	1.0
+Bacillifid|19673908|locus|VBIStrPne132160_1355|_extraction	GroupII	Group II Intron	ML	68	1305	312	1.0	1.0
+Bacillifid|19729760|locus|VBIStrPyo25933_1754|_extraction	GroupII	Group II Intron	ML	68	1305	312	1.0	1.0
+clostridiafid|42835086|locus|VBICloCf158569_1256|_extraction	GroupII	Group II Intron	ML	68	1305	315	1.0	1.0
+Bacillifid|18911848|locus|VBIBacCer120424_2093|_extraction	GroupII	Group II Intron	ML	68	1305	315	1.0	1.0
+Bacillifid|54164737|locus|VBIBacThu155232_5952|_extraction	GroupII	Group II Intron	ML	68	1305	316	1.0	1.0
+Bacillifid|18918679|locus|VBIBacCer120424_5472|_extraction	GroupII	Group II Intron	ML	68	1305	318	1.0	1.0
+clostridiafid|47030643|locus|VBISynGly105927_0075|_extraction	GroupII	Group II Intron	ML	68	1305	302	1.0	1.0
+Bacillifid|190354377|locus|VBIStrAng166616_0608|_extraction	GroupII	Group II Intron	ML	68	1305	302	1.0	1.0
+L.l.I1/U50902/2854..5345/Lactococcus_extraction	GroupII		ML	68	1305	309	1.0	1.0
+D.h.I4/AP008230.1/5193183..5195085/Desulfitobacterium_extraction	GroupII		C	68	1305	247	1.0	1.0
+clostridiafid|43183350|locus|VBIRumTor148568_2143|_extraction	GroupII	Group II Intron	C	68	1305	248	1.0	1.0
+clostridiafid|42783608|locus|VBIButBac39087_0859|_extraction	GroupII	Group II Intron	C	72	1305	244	0.84	0.667
+clostridiafid|22668882|locus|VBINatThe92436_0159|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+B.t.I3/AE015928/3254698..3258524/Bacteroides_extraction	GroupII		C	68	1305	247	1.0	1.0
+Fl.jo.I1/CP000685/4416242..4418139/Flavobacterium_extraction	GroupII		C	68	1305	247	1.0	1.0
+Bacteroidetesfid|47240589|locus|VBISphSp165585_3447|_extraction	GroupII	Group II Intron	C	78	1305	223	0.6	0.167
+S.ag.I1/AJ292930/182..2038/Streptococcus_extraction	GroupII		C	68	1305	247	1.0	1.0
+Bacillifid|61433042|locus|VBIStrMac222691_1557|_extraction	GroupII	Group II Intron	C	883	1242	62	0.0	0.0
+Bacteroidetesfid|54587919|locus|VBIPorAsa172508_0403|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+clostridiafid|42987381|locus|VBIEubRec155814_2884|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bacillifid|102075684|locus|VBIAmpXyl149409_1227|_extraction	GroupII	Group II Intron	C	68	1304	248	1.0	1.0
+Bacillifid|201988153|locus|VBIBacThu93926_0157|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+B.h.I1/AP001507/130149..132031/Bacillus_extraction	GroupII		C	68	1305	247	1.0	1.0
+O.i.I1/BA000028/2785523..2787411/Oceanobacillus_extraction	GroupII		C	68	1305	247	1.0	1.0
+Bacillifid|21969758|locus|VBIGeoSp101709_0522|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+Bacillifid|20956876|locus|VBIAnoFla45531_2524|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+Bacillifid|102073184|locus|VBIAmpXyl149409_0044|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+S.th.I1/AP006840/1010793..1012672/Symbiobacterium_extraction	GroupII		C	68	1305	247	1.0	1.0
+Bacillifid|124876795|locus|VBIGeoSp266368_3508|_extraction	GroupII	Group II Intron	C	530	1304	80	0.0	0.0
+Bacillifid|45221880|locus|VBIGeoSp94955_0342|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+clostridiafid|22104403|locus|VBIHelMod36755_0020|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+clostridiafid|20880100|locus|VBIAmmDeg104956_0293|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+clostridiafid|32495095|locus|VBITheIta22270_0082|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+C.a.I1/AE001437/3710916..3712835/Clostridium_extraction	GroupII		C	68	1305	247	1.0	1.0
+clostridiafid|42639654|locus|VBIHalSp157090_0576|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+clostridiafid|124770602|locus|VBICloSac181665_0553|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Sy.fu.I1/CP000478/3922427..3924309/Syntrophobacter_extraction	GroupII		C	68	1305	248	1.0	1.0
+DEfid|21697130|locus|VBIDesRet71890_0165|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Pe.ca.I2/CP000142/1559685..1561618/Pelobacter_extraction	GroupII		C	68	1305	247	1.0	1.0
+Ge.ur.I2/CP000698/242469..244398/Geobacter_extraction	GroupII		C	68	1305	247	1.0	1.0
+Afid|20468517|locus|VBIOchAnt73124_1762|_extraction	GroupII	Group II Intron	C	68	1306	248	1.0	1.0
+DEfid|102051933|locus|VBIDesTol47847_2395|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+DEfid|102053344|locus|VBIDesTol47847_3092|_extraction	GroupII	Group II Intron	C	444	1305	138	0.0	0.0
+Ha.ch.I2/NC_007645/98723..100647/Hahella_extraction	GroupII		C	68	1305	247	1.0	1.0
+Bacillifid|54384448|locus|VBIPaeMuc192881_5730|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+So.us.I3/CP000473/9594438..9596378/Solibacter_extraction	GroupII		C	68	1305	247	1.0	1.0
+Bu.vi.I2/CP000617/381828..383697/Burkholderia_extraction	GroupII		C	68	1305	248	1.0	1.0
+Br.sp.I1/CP000494/6816299..6818172/Bradyrhizobium_extraction	GroupII		C	68	1305	247	1.0	1.0
+Gfid|21803083|locus|VBIDicZea111179_3566|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Gfid|180719125|locus|VBIEscCol277189_4107|_extraction	GroupII	Group II Intron	C	180	1305	203	0.12	0.0
+Gfid|190303244|locus|VBISerSp8482_4195|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bfid|21262583|locus|VBICanAcc132554_3525|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Gfid|190304141|locus|VBISerSp8482_4636|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bfid|21533277|locus|VBICupTai42494_3259|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bfid|45186915|locus|VBIBurRhi170666_3219|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+P.a.I1/U77945/1..1919/Pseudomonas_extraction	GroupII		C	68	1305	247	1.0	1.0
+P.s.I1/AE016853/2381076..2382906/Pseudomonas_extraction	GroupII		C	68	1305	246	1.0	1.0
+B.f.I1/NZ_AAAC01000271/24723..26575/Burkholderia_extraction	GroupII		UNMATCHED	68	1305	246	1.0	1.0
+Gfid|31925696|locus|VBIAllVin64954_2919|_extraction	GroupII	Group II Intron	C	68	1305	246	1.0	1.0
+Afid|54141352|locus|VBISinMel152503_5994|_extraction	GroupII	Group II Intron	C	68	1306	247	1.0	1.0
+Afid|54129720|locus|VBISinMel152503_0312|_extraction	GroupII	Group II Intron	C	68	1304	219	1.0	1.0
+Gfid|161737930|locus|VBIAzoVin292307_2623|_extraction	GroupII	Group II Intron	C	68	1305	246	1.0	1.0
+Gfid|23651005|locus|VBISodGlo61428_2803|_extraction	GroupII	Group II Intron	C	68	1135	209	1.0	1.0
+Bu.cp.I1/NZ_AAEH01000016/115992..117833/Burkholderia_extraction	GroupII		C	68	1305	246	1.0	1.0
+Bfid|22964000|locus|VBIPolSp102244_5444|_extraction	GroupII	Group II Intron	C	68	1305	246	1.0	1.0
+Bfid|190413778|locus|VBIVarPar264937_3261|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+B.sp.I1/NZ_AAOX01000004/96386..98244/Bacillus_extraction	GroupII		C	68	1305	247	1.0	1.0
+clostridiafid|61457273|locus|VBISulAci142080_3712|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+clostridiafid|61455293|locus|VBISulAci142080_2739|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+P.ae.I1/AY029772/3515..5441/Pseudomonas_extraction	GroupII		C	68	1305	248	1.0	1.0
+Gfid|22934106|locus|VBIPhoPro109272_1767|_extraction	GroupII	Group II Intron	C	79	1305	205	0.04	0.083
+Sh.ba.I2/CP000563/2137684..2139633/Shewanella_extraction	GroupII		C	68	1305	248	1.0	1.0
+G.s.I1/AE017180/1028657..1030564/Geobacter_extraction	GroupII		UNMATCHED	68	1305	247	1.0	1.0
+DEfid|38166048|locus|VBIDesAlk70802_2461|_extraction	GroupII	Group II Intron	C	69	1305	246	0.96	0.917
+DEfid|124817422|locus|VBIDesSul232581_2428|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Gfid|31921407|locus|VBIAllVin64954_0826|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Gfid|115641687|locus|VBIThiNit264030_2345|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bfid|21259697|locus|VBICanAcc132554_2105|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+N.e.I1/AL954747/2285095..2287101/Nitrosomonas_extraction	GroupII		UNMATCHED	68	1305	247	1.0	1.0
+Gfid|20127583|locus|VBIVibHar24526_0381|_extraction	GroupII	Group II Intron	C	68	1305	249	1.0	1.0
+La.re.I1/AY911856/603..2512/Lactobacillus_extraction	GroupII		C	68	1305	247	1.0	1.0
+Bacillifid|43088904|locus|VBILacSal150030_1121|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+Bacillifid|87094488|locus|VBILacPen232155_1085|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+clostridiafid|115615696|locus|VBIDehSp228777_0406|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bacillifid|45159896|locus|VBIBacCel7049_2030|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+Bacillifid|38119357|locus|VBIBacSel78655_0161|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+Gfid|42345729|locus|VBIGamPro61291_1517|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bacteroidetesfid|42649895|locus|VBILeaBys116579_0020|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Actinobacteriafid|42167991|locus|VBIArtAri166201_0751|_extraction	GroupII	Group II Intron	C	68	1306	248	1.0	1.0
+Bacteroidetesfid|61290801|locus|VBINiaKor154066_6175|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+M.sp.I1/AF339846/29388..31287/Microscilla_extraction	GroupII		C	68	1305	247	1.0	1.0
+Bacteroidetesfid|115236219|locus|VBIEchVie187570_1054|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bacillifid|54204419|locus|VBILacJoh171132_1733|_extraction	GroupII	Group II Intron	C	68	1304	246	1.0	1.0
+E.c.I7/AY785243/414..2383/Escherichia_extraction	GroupII		C	68	1305	249	1.0	1.0
+Afid|54139251|locus|VBISinMel152503_4967|_extraction	GroupII	Group II Intron	C	68	1306	249	1.0	1.0
+Bacteroidetesfid|46912205|locus|VBICelAlg158510_3341|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bacteroidetesfid|87132848|locus|VBIBelBal168934_2118|_extraction	GroupII	Group II Intron	C	490	1305	121	0.0	0.0
+Bacteroidetesfid|54567245|locus|VBIKroSp190710_0128|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bacteroidetesfid|46881331|locus|VBIBacSal140776_2677|_extraction	GroupII	Group II Intron	C	68	1305	247	1.0	1.0
+Bacillifid|86663631|locus|VBIStaAur229418_1173|_extraction	GroupII	Group II Intron	C	68	1304	247	1.0	1.0
+Bacillifid|45364599|locus|VBIStaPse177932_0703|_extraction	GroupII	Group II Intron	C	68	1304	247	1.0	1.0
+Gfid|186998609|locus|VBIPseSyr250795_4170|_extraction	GroupII	Group II Intron	C	265	1305	184	0.0	0.0
+En.fm.I3/FN424376.1/17411..20180/Enterococcus_extraction	GroupII		UNMATCHED	68	1305	286	1.0	1.0
+Bacillifid|18859935|locus|VBIBacCer118379_5432|_extraction	GroupII	Group II Intron	B	68	1305	286	1.0	1.0
+Bacillifid|202064373|locus|VBICarSp264223_1846|_extraction	GroupII	Group II Intron	B	68	1305	287	1.0	1.0
+B.a.I2/AE011190/30945..33835/Bacillus_extraction	GroupII		B	68	1305	285	1.0	1.0
+E.f.I3/AE016830/2249712..2252481/Enterococcus_extraction	GroupII		B	68	1305	286	1.0	1.0
+Bacillifid|190355818|locus|VBIStrAng166616_1315|_extraction	GroupII	Group II Intron	B	68	1305	286	1.0	1.0
+clostridiafid|19436501|locus|VBICloCel57783_2839|_extraction	GroupII	Group II Intron	B	68	1305	286	1.0	1.0
+Bacillifid|202104716|locus|VBIEntMun281267_0501|_extraction	GroupII	Group II Intron	B	68	1305	286	1.0	1.0
+B.me.I1/AB022308/3853..6569/Bacillus_extraction	GroupII		B	68	1305	273	1.0	1.0
+Bacillifid|101939315|locus|VBIBacThu242010_6066|_extraction	GroupII	Group II Intron	B	68	1305	275	1.0	1.0
+clostridiafid|54454697|locus|VBICloBot178872_0058|_extraction	GroupII	Group II Intron	B	68	1305	285	1.0	1.0
+Bacillifid|18825078|locus|VBIBacCer120511_0128|_extraction	GroupII	Group II Intron	B	68	1305	275	1.0	1.0
+Bacillifid|201989473|locus|VBIBacThu93926_0768|_extraction	GroupII	Group II Intron	B	68	1305	275	1.0	1.0
+Bacillifid|67659680|locus|VBIEntFae233823_1913|_extraction	GroupII	Group II Intron	B	68	1305	273	1.0	1.0
+C.d.I1/X98606/13..2658/Clostridium_extraction	GroupII		B	68	1305	273	1.0	1.0
+clostridiafid|19462591|locus|VBICloKlu111549_0642|_extraction	GroupII	Group II Intron	B	68	1305	273	1.0	1.0
+clostridiafid|115343359|locus|VBIHalHal149681_0148|_extraction	GroupII	Group II Intron	B	68	1305	273	1.0	1.0
+clostridiafid|115343005|locus|VBIHalHal149681_0330|_extraction	GroupII	Group II Intron	B	68	1305	274	1.0	1.0
+clostridiafid|19408375|locus|VBICloBot19908_0265|_extraction	GroupII	Group II Intron	B	68	1305	288	1.0	1.0
+Bacillifid|38137486|locus|VBIBacThu148000_5492|_extraction	GroupII	Group II Intron	B	68	1305	283	1.0	1.0
+clostridiafid|115616442|locus|VBIDehSp228777_1269|_extraction	GroupII	Group II Intron	B	68	1305	274	1.0	1.0
+En.fm.I1/NZ_AAAK03000007/10877..13634/Enterococcus_extraction	GroupII		UNMATCHED	68	1305	290	1.0	1.0
+clostridiafid|42996817|locus|VBIEubSir135646_1742|_extraction	GroupII	Group II Intron	B	68	1305	290	1.0	1.0
+Bacillifid|18820991|locus|VBIBacCer84800_3811|_extraction	GroupII	Group II Intron	B	68	1305	273	1.0	1.0
+Bacillifid|18848241|locus|VBIBacCer122868_5594|_extraction	GroupII	Group II Intron	B	68	1305	275	1.0	1.0
+Bacillifid|31950635|locus|VBIBacPse80461_3982|_extraction	GroupII	Group II Intron	B	68	1305	275	1.0	1.0
+Bacillifid|101938694|locus|VBIBacThu242010_5758|_extraction	GroupII	Group II Intron	B	68	1305	273	1.0	1.0
+Bacillifid|47119490|locus|VBIEntFae176554_2204|_extraction	GroupII	Group II Intron	B	68	1305	273	1.0	1.0
+Bacillifid|87137209|locus|VBIHalHal165146_0228|_extraction	GroupII	Group II Intron	B	68	1305	273	1.0	1.0
+Bacillifid|190447919|locus|VBIEntSp299569_0686|_extraction	GroupII	Group II Intron	B	68	1305	272	1.0	1.0
+Bacillifid|202109853|locus|VBIEntMun281267_2992|_extraction	GroupII	Group II Intron	B	68	1305	272	1.0	1.0
+Bacillifid|22412306|locus|VBILysSph89750_0101|_extraction	GroupII	Group II Intron	B	68	1305	274	1.0	1.0
+Bacillifid|58992730|locus|VBIStrEqu204605_0781|_extraction	GroupII	Group II Intron	B	68	1305	293	1.0	1.0
+B.c.I5/AE017195/84166..86938/Bacillus_extraction	GroupII		B	68	1305	274	1.0	1.0
+Bacillifid|202001215|locus|VBIBacThu93926_6557|_extraction	GroupII	Group II Intron	B	68	1305	276	1.0	1.0
+G.k.I1/BA000043/1312755..1315536/Geobacillus_extraction	GroupII		B	68	1305	277	1.0	1.0
+Bacillifid|31950695|locus|VBIBacPse80461_4012|_extraction	GroupII	Group II Intron	B	68	1305	276	1.0	1.0
+clostridiafid|61450525|locus|VBISulAci142080_0388|_extraction	GroupII	Group II Intron	B	68	1305	276	1.0	1.0
+Bacillifid|96574781|locus|VBIBacCer255427_4629|_extraction	GroupII	Group II Intron	B	68	1305	286	1.0	1.0
+Bacillifid|18919101|locus|VBIBacCer120424_5683|_extraction	GroupII	Group II Intron	B	68	1305	276	1.0	1.0
+Bacillifid|31950623|locus|VBIBacPse80461_3976|_extraction	GroupII	Group II Intron	B	68	1307	279	1.0	1.0
+Bacillifid|45223831|locus|VBIGeoSp94955_1285|_extraction	GroupII	Group II Intron	B	68	1305	290	1.0	1.0
+Pe_ph_I1/CP001110/398581_extraction	GroupII		D	68	1305	260	1.0	1.0
+D115_extraction	GroupII		D	68	1305	260	1.0	1.0
+Pr_ae_I3/CP001108/2285675__2287507/Prosthecochloris_extraction	GroupII		D	68	1305	260	1.0	1.0
+UA_I10/FP565147_1/504827__502990/uncultured_archaeon_extraction	GroupII		D	68	1305	260	1.0	1.0
+D411_extraction	UNASSIGNED		UNMATCHED	68	1305	260	1.0	1.0
+clostridiafid|21725011|locus|VBIDesAce42372_4086|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+M_a_I53/AE011185/2451_extraction	GroupII		UNMATCHED	68	1305	260	1.0	1.0
+clostridiafid|61457293|locus|VBISulAci142080_3722|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+clostridiafid|161812455|locus|VBICloPas18034_4908|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+D152_extraction	GroupII		D	68	1305	259	1.0	1.0
+Le_pn_I3/CP000675_2/2801059__2799175/Legionella_extraction	GroupII		D	68	1305	260	1.0	1.0
+Dh_re_I1/CP001734_1/751437__753288/Desulfohalobium_extraction	GroupII		D	68	1305	260	1.0	1.0
+E_c_I2/X77508/518_extraction	GroupII		D	68	1305	260	1.0	1.0
+Gfid|87202399|locus|VBIMetAlc68050_2225|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+Gfid|108024353|locus|VBILegPne122099_3574|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+Gfid|23549090|locus|VBIShePut135485_0278|_extraction	GroupII	Group II Intron	D	263	1305	199	0.0	0.0
+Ag_ra_I1/CP000629_1/1749091__1750949/Agrobacterium_extraction	GroupII		D	68	1305	260	1.0	1.0
+D177_extraction	GroupII		D	68	1305	260	1.0	1.0
+Chlorobifid|23040926|locus|VBIProAes37017_0657|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+D172_extraction	GroupII		D	68	1305	260	1.0	1.0
+Gfid|186035780|locus|VBIPhoTem255998_1848|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+Gfid|190234795|locus|VBISalEnt166060_0668|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+cianobacteriafid|115665938|locus|VBIChaMin231992_1582|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+Pa_de_I1/CP000491/19065_extraction	GroupII		D	68	1305	260	1.0	1.0
+E_c_I9/CP000946_1/2411599__2413485/Escherichia_extraction	GroupII		D	68	1305	260	1.0	1.0
+D171_extraction	GroupII		D	68	1305	259	1.0	1.0
+RmInt1_extraction	UNASSIGNED		UNMATCHED	68	1305	259	1.0	1.0
+D216_extraction	GroupII		D	68	1305	260	1.0	1.0
+Afid|115293251|locus|VBIRhiTro150571_4429|_extraction	GroupII	Group II Intron	D	68	1306	258	1.0	1.0
+B_j_I1/BA000040/2212569_extraction	GroupII		D	68	1305	260	1.0	1.0
+R_e_I1/AF261712/2356_extraction	GroupII		D	68	1305	261	1.0	1.0
+Gfid|86705594|locus|VBIPsePut3905_0289|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+Gfid|186786189|locus|VBIPseSyr242867_5567|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+Vi_vu_I1/GQ292873_1/3620__5549/Vibrio_extraction	GroupII		D	68	1305	272	1.0	1.0
+D131_extraction	GroupII		D	68	1305	260	1.0	1.0
+D153_extraction	GroupII		D	68	1305	260	1.0	1.0
+D155_extraction	GroupII		D	68	1305	260	1.0	1.0
+clostridiafid|61052576|locus|VBICloCla155345_0943|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+clostridiafid|161812148|locus|VBICloPas18034_4761|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+Al_me_I4/CP000724/658338_extraction	GroupII		D	68	1305	260	1.0	1.0
+D143_extraction	GroupII		D	68	1305	260	1.0	1.0
+Ma_sp_I3/CP000471/785727_extraction	GroupII		D	68	1305	260	1.0	1.0
+W_e_I4/AM999887_1/177114__178961/Wolbachia_extraction	GroupII		D	68	1305	260	1.0	1.0
+clostridiafid|42837854|locus|VBICloCf158569_3569|_extraction	GroupII	Group II Intron	D	263	1305	199	0.0	0.0
+B_t_I4/AE015928/3254752_extraction	GroupII		D	68	1305	260	1.0	1.0
+D218_extraction	GroupII		D	68	1305	261	1.0	1.0
+Actinobacteriafid|58753801|locus|VBIMycCan203588_3899|_extraction	GroupII	Group II Intron	D	68	1306	262	1.0	1.0
+Actinobacteriafid|162142109|locus|VBIStrFul287543_7023|_extraction	GroupII	Group II Intron	D	264	1306	199	0.0	0.0
+D154_extraction	GroupII		D	68	1305	261	1.0	1.0
+Fr_sp_I5/CP000820_1/4042207__4044207/Frankia_extraction	GroupII		D	68	1305	262	1.0	1.0
+Zu_pr_I2/CP001650_1/3589332__3591217/Zunongwangia_extraction	GroupII		D	68	1305	261	1.0	1.0
+Bacteroidetesfid|46905862|locus|VBICelAlg158510_0236|_extraction	GroupII	Group II Intron	D	68	1305	261	1.0	1.0
+Zu_pr_I1/CP001650_1/4279634__4281497/Zunongwangia_extraction	GroupII		D	68	1305	259	1.0	1.0
+D182_extraction	GroupII		D	68	1305	260	1.0	1.0
+D149_extraction	GroupII		D	68	1305	260	1.0	1.0
+Ce_ja_I1/CP000934_1/3788874__3790736/Cellvibrio_extraction	GroupII		D	68	1305	259	1.0	1.0
+UMB_I1/AY075117/120__2136/uncultured_marine_bacterium_extraction	GroupII		D	68	1305	263	1.0	1.0
+Sh_dy_I1/CP000035/29397__31222/Shigella	GroupII		D	76	1305	251	0.68	0.333
+Gfid|47225904|locus|VBIMarMed159599_0649|_extraction	GroupII	Group II Intron	D	68	1305	260	1.0	1.0
+Gfid|18678173|locus|VBIShiBoy33460_0060|_extraction	GroupII	Group II Intron	D	70	1305	224	0.64	0.833
+Afid|42670984|locus|VBIRhoVan113057_1971|_extraction	GroupII	CRISPR-RT	CRIPSR-RT4	68	1306	241	1.0	1.0
+gi|148657122|ref|YP_001277327.1_extraction	CRISPR-RT	CRISPR-RT	CRISP-RT1 (G2L2)	68	1305	362	1.0	1.0
+gi|118065097|ref|ZP_01533407.1_extraction	CRISPR-RT	CRISPR-RT	CRISP-RT1 (G2L2)	68	1305	360	1.0	1.0
+gi|76258629|ref|ZP_00766283.1_extraction	CRISPR-RT	CRISPR-RT	CRISP-RT1 (G2L2)	68	1305	352	1.0	1.0
+gi|113939199|ref|ZP_01425057.1_extraction	CRISPR-RT	CRISPR-RT	CRISP-RT1 (G2L2)	68	1305	361	1.0	1.0
+Gfid|115349142|locus|VBIThiMob160332_0325|_extraction	GroupII	CRISPR-RT	CRIPSR-RT3	68	1305	246	1.0	1.0
+B.me.I2/AF142677/34045..36400/Bacillus_extraction	GroupII		CL1B	68	1305	259	1.0	1.0
+Bacillifid|18824950|locus|VBIBacCer120511_0064|_extraction	GroupII	Group II Intron	CL1B	68	1305	260	1.0	1.0
+B.a.I1/AE011190/6579..9109/Bacillus_extraction	GroupII		CL1B	68	1305	257	1.0	1.0
+clostridiafid|19384870|locus|VBICloBot822_0094|_extraction	GroupII	Group II Intron	CL1B	68	1305	257	1.0	1.0
+Bacillifid|18918903|locus|VBIBacCer120424_5584|_extraction	GroupII	Group II Intron	CL1B	68	1305	257	1.0	1.0
+clostridiafid|161807916|locus|VBICloPas18034_2678|_extraction	GroupII	Group II Intron	CL1B	68	1305	260	1.0	1.0
+cianobacteriafid|115659708|locus|VBIChaMin231992_1870|_extraction	GroupII	Group II Intron	CL1B	277	1305	96	0.0	0.0
+clostridiafid|115613496|locus|VBIDehSp228777_1264|_extraction	GroupII	Group II Intron	CL1B	976	1305	80	0.0	0.0
+Gfid|31973883|locus|VBICanHam112931_1217|_extraction	GroupII	Group II Intron	CL1B	68	1305	252	1.0	1.0
+cianobacteriafid|115603860|locus|VBIRivSp77222_4388|_extraction	GroupII	Group II Intron	CL1B	68	1305	250	1.0	1.0
+cianobacteriafid|115422190|locus|VBICylSta108647_6985|_extraction	GroupII	Group II Intron	CL1B	68	1305	250	1.0	1.0
+cianobacteriafid|115419880|locus|VBICylSta108647_6126|_extraction	GroupII	Group II Intron	CL1B	68	1305	250	1.0	1.0
+cianobacteriafid|115390656|locus|VBIDacSal132842_3607|_extraction	GroupII	Group II Intron	CL1B	68	1305	265	1.0	1.0
+cianobacteriafid|115675501|locus|VBIOscNig7962_2874|_extraction	GroupII	Group II Intron	CL1B	68	1305	254	1.0	1.0
+cianobacteriafid|23995189|locus|VBITriEry99848_5996|_extraction	GroupII	Group II Intron	CL1B	68	1305	264	1.0	1.0
+cianobacteriafid|115391721|locus|VBIDacSal132842_4122|_extraction	GroupII	Group II Intron	CL1B	68	1305	242	0.92	1.0
+cianobacteriafid|115690797|locus|VBICyaApo239906_2949|_extraction	GroupII	Group II Intron	CL1B	68	1305	245	0.92	1.0
+Actinobacteriafid|23713660|locus|VBIStrAve112782_0248|_extraction	GroupII	Group II Intron	CL1B	68	1305	250	1.0	1.0
+G.v.I1/BA000045/168850..171364/Gloeobacter_extraction	GroupII		CL2A	68	1305	247	1.0	1.0
+cianobacteriafid|115660493|locus|VBIChaMin231992_2004|_extraction	GroupII	Group II Intron	CL2A	68	1305	267	1.0	1.0
+cianobacteriafid|21539290|locus|VBICyaSp130209_0491|_extraction	GroupII	Group II Intron	CL2A	68	1305	268	1.0	1.0
+cianobacteriafid|21575043|locus|VBICyaSp125535_1555|_extraction	GroupII	Group II Intron	CL2A	68	1305	267	1.0	1.0
+cianobacteriafid|21539742|locus|VBICyaSp130209_0717|_extraction	GroupII	Group II Intron	CL2A	68	1305	267	1.0	1.0
+cianobacteriafid|115428478|locus|VBICriEpi239080_4618|_extraction	GroupII	Group II Intron	CL2A	68	1305	263	1.0	1.0
+cianobacteriafid|115579300|locus|VBIMicSp236384_3645|_extraction	GroupII	Group II Intron	CL2A	68	1305	268	1.0	1.0
+cianobacteriafid|115580159|locus|VBIMicSp236384_0858|_extraction	GroupII	Group II Intron	CL2A	68	1305	247	1.0	1.0
+cianobacteriafid|115390726|locus|VBIDacSal132842_0370|_extraction	GroupII	Group II Intron	CL2A	68	1305	266	1.0	1.0
+cianobacteriafid|21557688|locus|VBICyaSp136448_4440|_extraction	GroupII	Group II Intron	CL2A	68	1305	265	1.0	1.0
+cianobacteriafid|115683636|locus|VBIOscNig7962_7871|_extraction	GroupII	Group II Intron	CL2A	68	1305	258	1.0	1.0
+N.sp.I4/AP003604/45422..47908/Nostoc_extraction	GroupII		CL2A	68	1305	261	1.0	1.0
+cianobacteriafid|21588186|locus|VBICyaSp112625_3397|_extraction	GroupII	Group II Intron	CL2A	68	1305	257	1.0	1.0
+cianobacteriafid|115388988|locus|VBIDacSal132842_1986|_extraction	GroupII	Group II Intron	CL2A	68	1305	268	1.0	1.0
+cianobacteriafid|115392614|locus|VBIDacSal132842_1186|_extraction	GroupII	Group II Intron	CL2A	68	1305	259	1.0	1.0
+cianobacteriafid|115388851|locus|VBIDacSal132842_2432|_extraction	GroupII	Group II Intron	CL2A	68	1305	268	1.0	1.0
+cianobacteriafid|115547536|locus|VBIAnaSp49473_3044|_extraction	GroupII	Group II Intron	CL2A	68	1305	263	1.0	1.0
+cianobacteriafid|115439943|locus|VBIStaCya5387_0048|_extraction	GroupII	Group II Intron	CL2A	68	1305	288	1.0	1.0
+cianobacteriafid|115428732|locus|VBICriEpi239080_3135|_extraction	GroupII	Group II Intron	CL2A	68	1305	269	1.0	1.0
+cianobacteriafid|21544066|locus|VBICyaSp130209_2854|_extraction	GroupII	Group II Intron	CL2A	68	1305	267	1.0	1.0
+C.sp.I1/X71404/446..2898/Calothrix_extraction	GroupII		UNMATCHED	68	1305	262	1.0	1.0
+Tr.e.I2/CP000393/5587083..5589603/Trichodesmium_extraction	GroupII		UNMATCHED	68	1305	259	1.0	1.0
+cianobacteriafid|23984237|locus|VBITriEry99848_0561|_extraction	GroupII	Group II Intron	CL2A	68	1305	259	1.0	1.0
+cianobacteriafid|115404203|locus|VBIOscAcu116170_2852|_extraction	GroupII	Group II Intron	CL2A	68	1305	265	1.0	1.0
+C.w.I1/NZ_AADV01000039/6112..8597/Crocosphaera_extraction	GroupII		CL2A	68	1305	267	1.0	1.0
+cianobacteriafid|21547658|locus|VBICyaSp130209_4633|_extraction	GroupII	Group II Intron	CL2A	68	1305	265	1.0	1.0
+cianobacteriafid|22636780|locus|VBIMicAer59304_5685|_extraction	GroupII	Group II Intron	CL2A	68	1305	259	1.0	1.0
+cianobacteriafid|42723187|locus|VBIArtPla153080_2809|_extraction	GroupII	Group II Intron	CL2A	68	1305	259	1.0	1.0
+cianobacteriafid|42724297|locus|VBIArtPla153080_3363|_extraction	GroupII	Group II Intron	CL2A	227	1305	215	0.0	0.0
+cianobacteriafid|115401811|locus|VBIOscAcu116170_3674|_extraction	GroupII	Group II Intron	CL2A	68	1305	258	1.0	1.0
+cianobacteriafid|42725237|locus|VBIArtPla153080_3831|_extraction	GroupII	Group II Intron	CL2A	462	1305	146	0.0	0.0
+cianobacteriafid|42723055|locus|VBIArtPla153080_2743|_extraction	GroupII	Group II Intron	CL2A	462	1305	146	0.0	0.0
+cianobacteriafid|42724541|locus|VBIArtPla153080_3485|_extraction	GroupII	Group II Intron	CL2A	969	1305	87	0.0	0.0
+cianobacteriafid|42720039|locus|VBIArtPla153080_1249|_extraction	GroupII	Group II Intron	CL2A	969	1305	87	0.0	0.0
+cianobacteriafid|42716490|locus|VBIArtPla153080_5826|_extraction	GroupII	Group II Intron	CL2A	463	1305	111	0.0	0.0
+cianobacteriafid|42717648|locus|VBIArtPla153080_6402|_extraction	GroupII	Group II Intron	CL2A	462	1305	145	0.0	0.0
+cianobacteriafid|115405098|locus|VBIOscAcu116170_7132|_extraction	GroupII	Group II Intron	CL2A	68	1305	259	1.0	1.0
+cianobacteriafid|42716762|locus|VBIArtPla153080_5960|_extraction	GroupII	Group II Intron	CL2A	68	1305	257	1.0	1.0
+cianobacteriafid|42721577|locus|VBIArtPla153080_2008|_extraction	GroupII	Group II Intron	CL2A	68	1305	255	1.0	1.0
+E.c.I5/AF074613/58241..60646/Escherichia_extraction	GroupII		CL1A	68	1305	252	1.0	1.0
+Gfid|86738873|locus|VBIPseAer240047_2455|_extraction	GroupII	Group II Intron	CL1A	68	1305	253	1.0	1.0
+A.v.I1/AY057439/1648..4444/Azotobacter_extraction	GroupII		CL1A	68	1305	251	1.0	1.0
+Gfid|32030132|locus|VBICitRod33214_3055|_extraction	GroupII	Group II Intron	CL1A	68	1305	251	1.0	1.0
+Gfid|20838927|locus|VBIAlcBor124741_0664|_extraction	GroupII	Group II Intron	CL1A	68	1305	251	1.0	1.0
+Bfid|21163595|locus|VBIBorPet31633_1067|_extraction	GroupII	Group II Intron	CL1A	68	1305	252	1.0	1.0
+Gfid|48579126|locus|VBIEscCol159162_5518|_extraction	GroupII	Group II Intron	CL1A	68	1305	248	1.0	1.0
+Gfid|61234146|locus|VBILegPne178567_1092|_extraction	GroupII	Group II Intron	CL1A	68	1305	255	1.0	1.0
+Chlorobifid|21384938|locus|VBIChlPha121022_1466|_extraction	GroupII	Group II Intron	CL1A	68	1305	248	1.0	1.0
+B.t.I1/AE015928/2871095..2873499/Bacteroides_extraction	GroupII		CL1A	68	1305	253	1.0	1.0
+Bacteroidetesfid|87116550|locus|VBIAliFin145170_0642|_extraction	GroupII	Group II Intron	CL1A	68	1305	252	1.0	1.0
+Bacteroidetesfid|21069184|locus|VBIBacVul85104_2201|_extraction	GroupII	Group II Intron	CL1A	68	1305	252	1.0	1.0
+Th.e.I1/BA000039/27344..30566/Thermosynechococcus_extraction	GroupII		CL1A	68	1305	242	1.0	1.0
+cianobacteriafid|23927302|locus|VBITheElo119873_1051|_extraction	GroupII	Group II Intron	CL1A	882	1305	81	0.0	0.0
+Bfid|42338528|locus|VBIGalCap53152_0971|_extraction	GroupII	Group II Intron	CL1A	68	1305	250	1.0	1.0
+Gfid|42346603|locus|VBIGamPro61291_1949|_extraction	GroupII	Group II Intron	CL1A	68	1305	252	1.0	1.0
+P.p.I2/Y18999/752..2957/Pseudomonas_extraction	GroupII		CL1A	68	1305	250	1.0	1.0
+Gfid|19961745|locus|VBIPseStu31643_0668|_extraction	GroupII	Group II Intron	CL1A	68	1305	250	1.0	1.0
+Bfid|45180960|locus|VBIBurRhi170666_0329|_extraction	GroupII	Group II Intron	CL1A	68	1305	250	1.0	1.0
+Gfid|22088426|locus|VBIHahChe29232_3586|_extraction	GroupII	Group II Intron	CL1A	68	1305	251	1.0	1.0
+Gfid|19847262|locus|VBIPseAer79785_0614|_extraction	GroupII	Group II Intron	CL1A	261	1305	194	0.0	0.0
+Bfid|42537310|locus|VBIRalSol167236_2271|_extraction	GroupII	Group II Intron	CL1A	255	1305	203	0.0	0.0
+Bfid|21165521|locus|VBIBorPet31633_2025|_extraction	GroupII	Group II Intron	CL1A	68	1305	252	1.0	1.0
+Bacillifid|54795537|locus|VBIStrPas183593_1131|_extraction	GroupII	Group II Intron	CL1A	68	1305	252	1.0	1.0
+Bacillifid|42436540|locus|VBIStrPne98725_0947|_extraction	GroupII	Group II Intron	CL1A	68	1305	252	1.0	1.0
+Gfid|48578553|locus|VBIEscCol159162_5238|_extraction	GroupII	Group II Intron	CL1A	68	1305	226	1.0	1.0
+Afid|115293380|locus|VBIRhiTro150571_4588|_extraction	GroupII	Group II Intron	CL1A	60	1306	258	1.0	1.0
+Gfid|54574176|locus|VBIGlaSp182133_0425|_extraction	GroupII	Group II Intron	CL1A	68	1305	244	1.0	1.0
+Gfid|184905921|locus|VBILegPne304526_2043|_extraction	GroupII	Group II Intron	CL1A	68	1305	244	1.0	1.0
+Sh.sp.I1/CP000446/2526748..2528903/Shewanella_extraction	GroupII		CL1A	68	1305	245	1.0	1.0
+Gfid|58933841|locus|VBISheBal147952_0958|_extraction	GroupII	Group II Intron	CL1A	68	1305	245	1.0	1.0
+Gfid|54183625|locus|VBISheBal163160_2541|_extraction	GroupII	Group II Intron	CL1A	68	1305	245	1.0	1.0
+Gfid|35297935|locus|VBIXenBov95754_1334|_extraction	GroupII	Group II Intron	CL1A	255	1305	196	0.0	0.0
+Bacteroidetesfid|115626437|locus|VBIFibAes90597_0767|_extraction	GroupII	Group II Intron	CL1A	68	1305	253	1.0	1.0
+Afid|24029979|locus|VBIWolEnd21207_0693|_extraction	GroupII	Group II Intron	CL1A	60	1306	262	1.0	1.0
+Gfid|189809342|locus|VBIAltMac287461_0611|_extraction	GroupII	Group II Intron	CL1A	68	1305	255	1.0	1.0
+Gfid|115641574|locus|VBIThiNit264030_3543|_extraction	GroupII	Group II Intron	CL1A	388	1305	157	0.0	0.0
+Ms.b.I1/NZ_AAAR02000002/377828..379992/Methanosarcina_extraction	GroupII		UNMATCHED	68	1305	248	1.0	1.0
+clostridiafid|161805880|locus|VBICloPas18034_1667|_extraction	GroupII	Group II Intron	CL1A	68	1305	256	1.0	1.0
+Bacillifid|19653441|locus|VBIStrEqu35012_1915|_extraction	GroupII	Group II Intron	CL1A	68	1305	256	1.0	1.0
+clostridiafid|161806116|locus|VBICloPas18034_1785|_extraction	GroupII	Group II Intron	CL1A	68	1305	256	1.0	1.0
+N.sp.I2/BA000020/259212..261419/Nostoc_extraction	GroupII		CL2B	68	1305	256	1.0	1.0
+cianobacteriafid|115683516|locus|VBIOscNig7962_8018|_extraction	GroupII	Group II Intron	CL2B	68	1305	236	1.0	1.0
+cianobacteriafid|115430450|locus|VBICriEpi239080_1694|_extraction	GroupII	Group II Intron	CL2B	68	1305	236	1.0	1.0
+cianobacteriafid|115337801|locus|VBIAnaCyl106394_6267|_extraction	GroupII	Group II Intron	CL2B	68	1305	256	1.0	1.0
+cianobacteriafid|115514952|locus|VBICalSp227687_3172|_extraction	GroupII	Group II Intron	CL2B	68	1305	256	1.0	1.0
+C.w.I6/NZ_AADV02000041/1584..4153/Crocosphaera_extraction	GroupII		CL2B	68	1305	235	0.96	1.0
+cianobacteriafid|115603115|locus|VBIRivSp77222_2588|_extraction	GroupII	Group II Intron	CL2B	68	1305	258	1.0	1.0
+cianobacteriafid|115549836|locus|VBIAnaSp49473_5321|_extraction	GroupII	Group II Intron	CL2B	68	1305	236	1.0	1.0
+cianobacteriafid|22782216|locus|VBINosSp37423_6520|_extraction	GroupII	Group II Intron	CL2B	68	1305	224	0.6	0.833
+cianobacteriafid|22782374|locus|VBINosSp37423_6599|_extraction	GroupII	Group II Intron	CL2B	228	1305	118	0.0	0.0
+N.sp.I1/BA000019/6209592..6207287/Nostoc_extraction	GroupII		CL2B	68	1305	256	1.0	1.0
+gi|354961371|dbj|BAL14050.1|_extraction	GroupII	Group II Intron	g3	68	1305	261	1.0	1.0
+gi|149195205|ref|ZP_01872295.1_extraction	UG/G2L	UG11	UG11(G2L-Other)	57	1305	246	0.84	0.667
+Gfid|115351524|locus|VBIThiMob160332_3694|_extraction	GroupII	UNC	Unclassified	68	1305	262	1.0	1.0
+gi|17232506|ref|NP_489054.1_extraction	DGRs	DGRs	DGRs	228	1305	210	0.0	0.0
+gi|119509703|ref|ZP_01628848.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	259	1.0	1.0
+gi|126660098|ref|ZP_01731218.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	259	1.0	1.0
+gi|119511289|ref|ZP_01630404.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	259	1.0	1.0
+cianobacteriafid|115549820|locus|VBIAnaSp49473_5313|_extraction	DGRs	DGRs	DGRs	90	1305	240	0.52	0.0
+cianobacteriafid|115507212|locus|VBICalSp15318_6404|_extraction	DGRs	DGRs	DGRs	267	1305	136	0.0	0.0
+gi|126659397|ref|ZP_01730532.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	259	1.0	1.0
+cianobacteriafid|115462114|locus|VBILepSp112363_4293|_extraction	DGRs	DGRs	DGRs	90	1305	240	0.52	0.0
+gi|113474819|ref|YP_720880.1_extraction	UNASSIGNED		UNMATCHED	185	1305	218	0.0	0.0
+gi|68551127|ref|ZP_00590553.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	259	1.0	1.0
+gi|119356297|ref|YP_910941.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	259	1.0	1.0
+Afid|42673013|locus|VBIRhoVan113057_2968|_extraction	DGRs	DGRs	DGRs	71	1306	254	0.88	0.75
+Bfid|21260775|locus|VBICanAcc132554_2632|_extraction	DGRs	DGRs	DGRs	68	1305	259	1.0	1.0
+gi|146277368|ref|YP_001167527.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	254	1.0	1.0
+gi|134299090|ref|YP_001112586.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	251	1.0	1.0
+gi|27311204|ref|NP_758929.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	249	1.0	1.0
+gi|120599269|ref|YP_963843.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	253	1.0	1.0
+gi|150390313|ref|YP_001320362.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	266	1.0	1.0
+gi|149736339|gb|EDM52225.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	266	1.0	1.0
+clostridiafid|21725483|locus|VBIDesAce42372_4322|_extraction	DGRs	DGRs	DGRs	67	1305	262	1.0	1.0
+gi|149833092|gb|EDM88174.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	266	1.0	1.0
+DEfid|178964775|locus|VBIDesAlk310819_0341|_extraction	DGRs	DGRs	DGRs	70	1305	242	0.92	0.833
+Afid|23317494|locus|VBIRhoCen1465_1100|_extraction	DGRs	DGRs	DGRs	71	1306	244	0.88	0.75
+gi|151580925|gb|EDN44663.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	258	1.0	1.0
+gi|68553139|ref|ZP_00592520.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	245	1.0	1.0
+gi|78189651|ref|YP_379989.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	241	1.0	1.0
+gi|68551181|ref|ZP_00590605.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	241	1.0	1.0
+gi|42527768|ref|NP_972866.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	241	1.0	1.0
+clostridiafid|42983704|locus|VBIEubRec131464_1270|_extraction	DGRs	DGRs	DGRs	67	1305	249	1.0	1.0
+clostridiafid|42986635|locus|VBIEubRec131464_2830|_extraction	DGRs	DGRs	DGRs	67	1305	296	1.0	1.0
+Bacteroidetesfid|42706064|locus|VBIAliSha154597_2655|_extraction	DGRs	DGRs	DGRs	70	1305	238	0.92	0.833
+Bacteroidetesfid|87116280|locus|VBIAliFin145170_0509|_extraction	DGRs	DGRs	DGRs	75	1305	239	0.72	0.417
+gi|41179367|ref|NP_958675.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	239	1.0	1.0
+gi|83310593|ref|YP_420857.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	273	1.0	1.0
+gi|83309559|ref|YP_419823.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	272	1.0	1.0
+gi|121528340|ref|ZP_01660954.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	274	1.0	1.0
+Bfid|19110484|locus|VBIBurGlu130723_4311|_extraction	DGRs	DGRs	DGRs	261	1305	215	0.0	0.0
+Bfid|162042828|locus|VBIRalSol168141_2001|_extraction	DGRs	DGRs	DGRs	70	1305	270	0.92	0.833
+Gfid|186514316|locus|VBIPseSp174409_5710|_extraction	DGRs	DGRs	DGRs	71	1305	268	0.88	0.75
+Bfid|58533098|locus|VBIColFun187779_3500|_extraction	DGRs	DGRs	DGRs	70	1305	270	0.92	0.833
+Bfid|58850249|locus|VBIPseSp173302_0942|_extraction	DGRs	DGRs	DGRs	70	1305	270	0.92	0.833
+Bfid|35398478|locus|VBISidLit69165_0197|_extraction	DGRs	DGRs	DGRs	70	1305	269	0.92	0.833
+Bfid|45146078|locus|VBIAliDen149934_3700|_extraction	DGRs	DGRs	DGRs	70	1305	270	0.92	0.833
+gi|148359926|ref|YP_001251133.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	281	1.0	1.0
+Bacteroidetesfid|87117093|locus|VBIAliFin145170_0906|_extraction	DGRs	DGRs	DGRs	70	1305	289	0.92	0.833
+Bacteroidetesfid|87072650|locus|VBIOrnRhi164984_0536|_extraction	DGRs	DGRs	DGRs	70	1305	279	0.92	0.833
+gi|118747050|ref|ZP_01594931.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	278	1.0	1.0
+gi|90580666|ref|ZP_01236470.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	279	0.92	1.0
+gi|126090247|ref|YP_001041702.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	275	0.92	1.0
+Bfid|35402002|locus|VBISidLit69165_1918|_extraction	DGRs	DGRs	DGRs	70	1305	256	0.92	0.833
+gi|71065017|ref|YP_263744.1_extraction_extraction	DGRs	DGRs	DGRs	66	1305	242	1.0	1.0
+Bfid|22394887|locus|VBILepCho83238_2278|_extraction	DGRs	DGRs	DGRs	70	1305	237	0.92	0.833
+Gfid|23962770|locus|VBIThiSp19295_1623|_extraction	DGRs	DGRs	DGRs	279	1305	174	0.0	0.0
+gi|91778076|ref|YP_553284.1_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	248	1.0	1.0
+gi|118697871|ref|ZP_01555949.1_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	248	1.0	1.0
+gi|153215166|ref|ZP_01949864.1_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	247	1.0	1.0
+Gfid|18338818|locus|VBIEscCol51957_5061|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	249	1.0	1.0
+Gfid|186391424|locus|VBIPseAer311403_5632|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	248	1.0	1.0
+Gfid|187071036|locus|VBIPseSyr250467_3903|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	882	1305	81	0.0	0.0
+Afid|23100091|locus|VBIRhiEtl120572_3276|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1306	242	1.0	1.0
+gi|71737296|ref|YP_277064.1_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	252	1.0	1.0
+gi|126356707|ref|ZP_01713711.1_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	252	1.0	1.0
+cianobacteriafid|115520115|locus|VBICalSp227687_6109|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	253	1.0	1.0
+Bfid|22613911|locus|VBIMetMob89187_1849|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	255	1.0	1.0
+DEfid|21773733|locus|VBIDesVul86729_1889|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	245	1.0	1.0
+DEfid|21758211|locus|VBIDesSal121003_1367|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	246	1.0	1.0
+Bacillifid|21876762|locus|VBIExiSp39724_0818|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	243	1.0	1.0
+Bacteroidetesfid|32431149|locus|VBISpiLin97822_0631|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	68	1305	243	1.0	1.0
+Afid|23360423|locus|VBIRosDen86677_1106|_extraction	UG/G2L	UG10 (G2L3)	UG10 (G2L3)	849	1306	92	0.0	0.0
+Gfid|189292173|locus|VBITerTur232417_0522|_extraction	DGRs	DGRs	DGRs	68	1305	239	1.0	1.0
+Bfid|21262415|locus|VBICanAcc132554_3443|_extraction	DGRs	DGRs	DGRs	70	1305	237	0.92	0.833
+clostridiafid|43173932|locus|VBIRumSp156992_1069|_extraction	DGRs	DGRs	DGRs	67	1305	265	1.0	1.0
+gi|118066942|ref|ZP_01535200.1_extraction	UG/G2L	UG4	UG4	67	1305	208	0.48	1.0
+gi|151571856|gb|EDN37510.1_extraction_extraction	UG/G2L	UG4	UG4	75	1305	207	0.4	0.417
+gi|119476243|ref|ZP_01616594.1_extraction_extraction	UG/G2L	UG4	UG4	76	1305	205	0.36	0.333
+gi|123441511|ref|YP_001005497.1_extraction_extraction	UG/G2L	UG3	UG3	54	1305	241	0.88	0.917
+Gfid|189841748|locus|VBIAltMac287510_4038|_extraction	UG/G2L	UG3	UG3	61	1305	237	0.92	1.0
+gi|53718225|ref|YP_107211.1_extraction_extraction	UG/G2L	UG3	UG3	54	1305	244	0.92	0.917
+Gfid|87348281|locus|VBIMetSp147316_1516|_extraction	UG/G2L	UG3	UG3	13	1305	286	0.96	1.0
+Bacteroidetesfid|87263720|locus|VBIFleLit174749_0250|_extraction	UG/G2L	UG3	UG3	54	1305	266	0.96	1.0
+Gfid|45429733|locus|VBIVibFur169925_2671|_extraction	UG/G2L	UG3	UG3	13	1305	287	1.0	1.0
+Gfid|42313451|locus|VBIDicDad25310_0565|_extraction	UG/G2L	UG3	UG3	13	1305	285	1.0	1.0
+gi|151560523|gb|ABS14021.1_extraction_extraction	UG/G2L	UG3	UG3	63	1305	233	1.0	1.0
+gi|50119996|ref|YP_049163.1_extraction_extraction	UG/G2L	UG3	UG3	63	1305	246	1.0	1.0
+Gfid|32374434|locus|VBISalEnt87589_2944|_extraction	UG/G2L	UG3	UG3	62	1305	242	1.0	1.0
+Gfid|87389803|locus|VBIPseFlu200955_4838|_extraction	UG/G2L	UG3	UG3	61	1305	240	0.88	1.0
+Afid|23621411|locus|VBISinMed134228_4356|_extraction	GroupII	Group II Intron	D	886	1306	77	0.0	0.0
+Gfid|58366981|locus|VBIAciCal182605_3025|_extraction	GroupII	Group II Intron	E	882	1305	98	0.0	0.0
+gi|89895550|ref|YP_519037.1_extraction_extraction	UG/G2L	Abi*	UG7	81	1214	235	0.52	0.0
+gi|21240921|ref|NP_640503.1_extraction_extraction	UG/G2L	Abi*	UG7	81	1214	230	0.48	0.0
+Gfid|31925946|locus|VBIAllVin64954_3044|_extraction	UG/G2L	Abi*	UG7	77	1277	273	0.64	0.25
+clostridiafid|43055415|locus|VBIHalPra106773_1068|_extraction	GroupII	Abi*	Unclassified	75	1308	318	0.72	0.417
+DEfid|42441956|locus|VBISulAut92361_1181|_extraction	GroupII	Abi*	Unclassified	71	1305	257	0.88	0.75
+Bfid|58526013|locus|VBIColFun187779_0008|_extraction	GroupII	Abi*	Unclassified	72	1305	253	0.84	0.667
+gi|52548386|gb|AAU82235.1_extraction_extraction	UG/G2L	Abi*	UN1	73	1228	236	0.8	0.583
+gi|148254613|ref|YP_001239198.1_extraction_extraction	UG/G2L	Abi*	UN1	73	1215	223	0.8	0.583
+Gfid|176420657|locus|VBIAciBau289782_2220|_extraction	GroupII	UNC	Unclassified	65	1305	266	0.92	1.0
+Afid|189765406|locus|VBIAcePas307039_2786|_extraction	GroupII	UNC	Unclassified	68	1306	259	0.96	0.917
+gi|82702063|ref|YP_411629.1_extraction	UG/G2L	G2L4	G2L(G2L4)	94	1262	265	0.52	0.0
+gi|71735515|ref|YP_277063.1_extraction	UG/G2L	G2L4	G2L(G2L4)	94	1262	267	0.52	0.0
+Afid|22599913|locus|VBIMetSil55537_2322|_extraction	UG/G2L	G2L4	G2L(G2L4)	96	1263	269	0.52	0.0
+gi|89098464|ref|ZP_01171347.1_extraction_extraction	UG/G2L	Abi	UN3	90	1259	257	0.48	0.0
+Bacteroidetesfid|87123886|locus|VBIAeqSub156184_1010|_extraction	UG/G2L	Abi	UN3	94	1263	260	0.48	0.0
+gi|89094970|ref|ZP_01167900.1_extraction_extraction	UG/G2L	Abi	UN3	90	1259	263	0.44	0.0
+gi|39995659|ref|NP_951610.1_extraction_extraction	UG/G2L	Abi	UN3	90	1259	259	0.48	0.0
+gi|115525547|ref|YP_782458.1_extraction_extraction	UG/G2L	Abi	UN3	90	1259	267	0.52	0.0
+gi|149114909|ref|ZP_01841658.1_extraction_extraction	UG/G2L	Abi	UN4	95	1259	255	0.52	0.0
+gi|127512398|ref|YP_001093595.1_extraction_extraction	UG/G2L	Abi	UN4	95	1259	256	0.52	0.0
+gi|91202364|emb|CAJ75424.1_extraction_extraction	UG/G2L	Abi	UN4	95	1259	251	0.52	0.0
+gi|145632406|ref|ZP_01788141.1_extraction_extraction	Abi	Abi	Abi-P2	85	1238	265	0.52	0.0
+Gfid|20432649|locus|VBIErwTas9546_3451|_extraction	Abi	Abi	Abi-P2	185	1264	246	0.0	0.0
+cianobacteriafid|115478982|locus|VBISynSp231034_3139|_extraction	Abi	Abi	Abi-P2	188	1245	226	0.0	0.0
+Bacteroidetesfid|32316913|locus|VBIRhoMar93821_1425|_extraction	Abi	Abi	Abi-P2	114	1261	266	0.2	0.0
+gi|118587264|ref|ZP_01544691.1_extraction_extraction	Abi	Abi	Abi-P2	85	1238	262	0.48	0.0
+gi|150378854|ref|ZP_01918051.1_extraction_extraction	Abi	Abi	Abi-P2	85	1238	258	0.52	0.0
+gi|110642862|ref|YP_670592.1_extraction_extraction	Abi	Abi	Abi-P2	123	1238	236	0.2	0.0
+Gfid|20121338|locus|VBIVibFis37164_1384|_extraction	Abi	Abi	Abi-P2	185	1267	253	0.0	0.0
+Bacillifid|67871822|locus|VBIStaAur224518_0062|_extraction	Abi	Abi	Abi-P2	118	1263	260	0.2	0.0
+gi|84619238|emb|CAJ43157.1_extraction_extraction	Abi	Abi	Abi-P2	85	1238	255	0.28	0.0
+gi|84619229|emb|CAJ43154.1_extraction_extraction	Abi	Abi	Abi-P2	85	1238	255	0.28	0.0
+gi|133728112|gb|EBA29810.1_extraction_extraction	Abi	Abi	Abi-P2	85	1238	267	0.52	0.0
+gi|16329609|ref|NP_440337.1_extraction_extraction	UG/G2L	Abi	UN5	94	1259	267	0.52	0.0
+gi|124120168|gb|EAY38911.1_extraction_extraction	UG/G2L	Abi	UN5	94	1259	273	0.48	0.0
+gi|16331604|ref|NP_442332.1_extraction_extraction	UG/G2L	UG3	UG3	90	1215	232	0.52	0.0
+cianobacteriafid|115471181|locus|VBISynSp54615_0753|_extraction	UG/G2L	UG3	UG3	106	1258	236	0.2	0.0
+gi|110679730|ref|YP_682737.1_extraction_extraction	UG/G2L	UG3	UG3	106	1305	220	0.0	0.0
+DEfid|21683491|locus|VBIDesAut25181_2015|_extraction	Retrons	Retrons	Retrons	74	1305	226	0.44	0.5
+gi|115376572|ref|ZP_01463804.1_extraction_extraction	Retrons	Retrons	Retrons	42	1305	267	0.4	0.417
+gi|108758657|ref|YP_628423.1_extraction_extraction	Retrons	Retrons	Retrons	42	1305	264	0.4	0.417
+DEfid|32192806|locus|VBIHalOch22000_1548|_extraction	Retrons	Retrons	Retrons	52	1305	251	0.4	0.417
+gi|17530191|gb|AAL40743.1_extraction_extraction	Retrons	Retrons	Retrons	42	1305	262	0.4	0.417
+Gfid|22088430|locus|VBIHahChe29232_3588|_extraction	Retrons	Retrons	Retrons	67	1305	236	0.4	0.417
+Afid|22548316|locus|VBIMetNod76414_3882|_extraction	Retrons	Retrons	Retrons	7	1322	310	0.4	0.417
+cianobacteriafid|23988607|locus|VBITriEry99848_2732|_extraction	Retrons	Retrons	Retrons	45	1250	249	0.4	0.417
+cianobacteriafid|115666271|locus|VBIChaMin231992_6191|_extraction	Retrons	Retrons	Retrons	45	1249	249	0.4	0.417
+Bacteroidetesfid|87270320|locus|VBIFleLit174749_3500|_extraction	Retrons	Retrons	Retrons	42	1305	274	0.4	0.417
+cianobacteriafid|22752516|locus|VBINosPun48114_0472|_extraction	Retrons	Retrons	Retrons	45	1249	243	0.4	0.417
+clostridiafid|19396752|locus|VBICloBot123574_1885|_extraction	Retrons	Retrons	Retrons	51	1305	254	0.4	0.417
+clostridiafid|19511877|locus|VBICloTet101274_1986|_extraction	Retrons	Retrons	Retrons	51	1305	254	0.4	0.417
+gi|33240062|ref|NP_875004.1_extraction_extraction	Retrons	Retrons	Retrons	42	1305	259	0.4	0.417
+cianobacteriafid|23006148|locus|VBIProMar70153_1246|_extraction	Retrons	Retrons	Retrons	45	1249	256	0.4	0.417
+gi|20090946|ref|NP_617021.1_extraction_extraction	Retrons	Retrons	Retrons	58	1305	219	0.4	0.417
+Gfid|23503472|locus|VBISheHal24697_0538|_extraction	Retrons	Retrons	Retrons	60	1305	210	0.4	0.417
+DEfid|124818457|locus|VBIDesSul232581_2941|_extraction	Retrons	Retrons	Retrons	55	1305	228	0.6	0.833
+Bacteroidetesfid|42744943|locus|VBIBacFra167533_1043|_extraction	Retrons	Retrons	Retrons	49	1305	229	0.52	0.75
+Gfid|22093614|locus|VBIHahChe29232_6135|_extraction	Retrons	Retrons	Retrons	67	1305	246	0.4	0.417
+DEfid|22653979|locus|VBIMyxXan43560_5634|_extraction	Retrons	Retrons	Retrons	51	1305	270	0.4	0.417
+Bfid|45389180|locus|VBIVarPar156291_1643|_extraction	Retrons	Retrons	Retrons	43	1305	276	0.48	0.583
+Bfid|19209845|locus|VBIBurPhy117947_3716|_extraction	Retrons	Retrons	Retrons	43	1305	273	0.4	0.417
+Bfid|19085378|locus|VBIBurCen118154_6802|_extraction	Retrons	Retrons	Retrons	43	1305	273	0.4	0.417
+Actinobacteriafid|23418760|locus|VBISacEry28377_5670|_extraction	Retrons	Retrons	Retrons	46	1247	261	0.4	0.417
+Actinobacteriafid|161717503|locus|VBIAmyOri230246_0836|_extraction	Retrons	Retrons	Retrons	46	1247	258	0.4	0.417
+Actinobacteriafid|54397388|locus|VBIPseDio141225_2974|_extraction	Retrons	Retrons	Retrons	46	1247	251	0.4	0.417
+Gfid|23978013|locus|VBITolAue42623_0706|_extraction	Retrons	Retrons	Retrons	69	1305	210	0.36	0.333
+gi|134078|sp|P23070_extraction_extraction	Retrons	Retrons	Retrons	43	1305	238	0.48	0.583
+Gfid|32132182|locus|VBIEscFer122920_3781|_extraction	Retrons	Retrons	Retrons	120	1305	202	0.2	0.0
+clostridiafid|42840291|locus|VBICloCf158569_1292|_extraction	Retrons	Retrons	Retrons	50	1305	231	0.4	0.417
+Actinobacteriafid|191810597|locus|VBIGorPol218398_4913|_extraction	Retrons	Retrons	Retrons	46	1247	249	0.4	0.417
+Actinobacteriafid|96825515|locus|VBIGorSp50678_2729|_extraction	Retrons	Retrons	Retrons	46	1247	249	0.4	0.417
+Bacillifid|58974322|locus|VBIStaAur171735_1995|_extraction	Retrons	Retrons	Retrons	71	1303	213	0.48	0.583
+Gfid|61385079|locus|VBIRahAqu175761_1636|_extraction	Retrons	Retrons	Retrons	67	1305	260	0.4	0.417
+Gfid|23598545|locus|VBISheSp103602_2506|_extraction	Retrons	Retrons	Retrons	67	1305	238	0.4	0.417
+Gfid|61324279|locus|VBIPanAna213218_2623|_extraction	Retrons	Retrons	Retrons	67	1305	236	0.4	0.417
+Afid|58718285|locus|VBIMicAer161757_1975|_extraction	Retrons	Retrons	Retrons	325	1466	334	0.0	0.0
+Gfid|108026150|locus|VBILegPne122099_4451|_extraction	Retrons	Retrons	Retrons	68	1305	227	0.4	0.417
+clostridiafid|42796352|locus|VBIButBac135163_1575|_extraction	Retrons	Retrons	Retrons	55	1305	237	0.4	0.417
+cianobacteriafid|23820590|locus|VBISynSp37135_3215|_extraction	Retrons	Retrons	Retrons	46	1249	242	0.4	0.417
+cianobacteriafid|115416315|locus|VBICylSta108647_1281|_extraction	Retrons	Retrons	Retrons	46	1249	242	0.4	0.417
+cianobacteriafid|35427561|locus|VBIAnaVar43351_4315|_extraction	Retrons	Retrons	Retrons	46	1249	241	0.4	0.417
+Bfid|190416239|locus|VBIVarPar264937_4482|_extraction	Retrons	Retrons	Retrons	48	1305	248	0.4	0.417
+Bacteroidetesfid|42429773|locus|VBIPreMel47739_0018|_extraction	Retrons	Retrons	Retrons	51	1305	239	0.4	0.417
+Bacteroidetesfid|54406438|locus|VBIPreDen163057_0487|_extraction	Retrons	Retrons	Retrons	51	1305	239	0.4	0.417
+clostridiafid|61051028|locus|VBICloCla155345_0188|_extraction	Retrons	Retrons	Retrons	43	1305	232	0.32	0.25
+clostridiafid|42882548|locus|VBICopCat158046_0287|_extraction	Retrons	Retrons	Retrons	45	1305	216	0.2	0.0
+Bacteroidetesfid|42755620|locus|VBIBacXyl109951_0368|_extraction	Retrons	Retrons	Retrons	40	1305	243	0.32	0.25
+DEfid|179034165|locus|VBIDesSp185686_1262|_extraction	Retrons	Retrons	Retrons	54	1305	242	0.68	1.0
+Gfid|186794270|locus|VBIPseSyr250047_3804|_extraction	Retrons	Retrons	Retrons	87	1305	249	0.2	0.0
+Gfid|187047349|locus|VBIPseSyr301829_4700|_extraction	Retrons	Retrons	Retrons	87	1305	249	0.2	0.0
+Gfid|186596167|locus|VBIPseSyr309376_2646|_extraction	Retrons	Retrons	Retrons	87	1305	248	0.2	0.0
+Gfid|19898038|locus|VBIPseFlu98510_2127|_extraction	Retrons	Retrons	Retrons	87	1305	248	0.2	0.0
+Gfid|182722260|locus|VBIEscCol236749_3924|_extraction	Retrons	Retrons	Retrons	87	1305	247	0.2	0.0
+Gfid|32538707|locus|VBIVibSp203755_2696|_extraction	Retrons	Retrons	Retrons	85	1305	225	0.2	0.0
+Gfid|20658100|locus|VBIAciFer6930_0276|_extraction	Retrons	Retrons	Retrons	85	1305	227	0.2	0.0
+Gfid|20075292|locus|VBIVibCho20143_1988|_extraction	Retrons	Retrons	Retrons	85	1305	229	0.2	0.0
+Gfid|45328477|locus|VBIPseSp136886_1162|_extraction	Retrons	Retrons	Retrons	89	1305	224	0.2	0.0
+Gfid|36739607|locus|VBISalEnt101322_4228|_extraction	Retrons	Retrons	Retrons	89	1305	224	0.2	0.0
+Gfid|22468281|locus|VBIMarSp124341_2509|_extraction	Retrons	Retrons	Retrons	89	1305	223	0.2	0.0
+Gfid|54694388|locus|VBIAltSp152916_1743|_extraction	Retrons	Retrons	Retrons	89	1305	224	0.2	0.0
+Gfid|189991747|locus|VBIHaeInf313847_0653|_extraction	Retrons	Retrons	Retrons	89	1305	226	0.2	0.0
+DEfid|42737677|locus|VBIBacMar168520_0745|_extraction	Retrons	Retrons	Retrons	82	1305	236	0.2	0.0
+Gfid|21794453|locus|VBIDicDad95084_3620|_extraction	Retrons	Retrons	Retrons	89	1305	217	0.2	0.0
+clostridiafid|22912385|locus|VBIPelThe8413_2780|_extraction	Retrons	Retrons	Retrons	179	1305	196	0.16	0.0
+Gfid|23585887|locus|VBISheSp85603_0521|_extraction	Retrons	Retrons	Retrons	89	1305	231	0.2	0.0
+Gfid|189627687|locus|VBIVibPar262249_1037|_extraction	Retrons	Retrons	Retrons	88	1305	227	0.2	0.0
+Gfid|20112680|locus|VBIVibFis127983_1043|_extraction	Retrons	Retrons	Retrons	88	1305	228	0.2	0.0
+Gfid|180089752|locus|VBIEscCol233378_0214|_extraction	Retrons	Retrons	Retrons	88	1305	227	0.2	0.0
+Gfid|181671864|locus|VBIEscCol269450_2693|_extraction	Retrons	Retrons	Retrons	88	1305	222	0.2	0.0
+Gfid|20514590|locus|VBIPhoLum48522_5509|_extraction	Retrons	Retrons	Retrons	88	1305	222	0.2	0.0
+Gfid|191105765|locus|VBIErwAmy195016_0061|_extraction	Retrons	Retrons	Retrons	256	1305	186	0.0	0.0
+Bfid|58531404|locus|VBIColFun187779_2668|_extraction	Retrons	Retrons	Retrons	76	1305	236	0.36	0.333
+Gfid|19999333|locus|VBIPseSyr93040_4030|_extraction	Retrons	Retrons	Retrons	89	1305	223	0.2	0.0
+Gfid|86956996|locus|VBIPseStu243261_4122|_extraction	Retrons	Retrons	Retrons	89	1305	222	0.2	0.0
+Gfid|177021178|locus|VBIAerSal291263_3734|_extraction	Retrons	Retrons	Retrons	89	1305	222	0.2	0.0
+Gfid|54540754|locus|VBIAerVer186715_3956|_extraction	Retrons	Retrons	Retrons	89	1305	222	0.2	0.0
+Gfid|19957061|locus|VBIPsePut93764_3618|_extraction	Retrons	Retrons	Retrons	89	1305	235	0.2	0.0
+Gfid|32277000|locus|VBIPecWas23660_1333|_extraction	Retrons	Retrons	Retrons	89	1305	217	0.2	0.0
+Bfid|20287556|locus|VBIRalMet4734_1880|_extraction	Retrons	Retrons	Retrons	286	1305	166	0.0	0.0
+Gfid|125119977|locus|VBIThaOle281250_0332|_extraction	Retrons	Retrons	Retrons	89	1305	216	0.2	0.0
+Gfid|54728660|locus|VBIMetMet172210_3286|_extraction	Retrons	Retrons	Retrons	88	1305	217	0.2	0.0
+Afid|124741923|locus|VBIBraOli259415_1160|_extraction	Retrons	Retrons	Retrons	325	1408	274	0.0	0.0
+Gfid|42938822|locus|VBIErwSp41759_1124|_extraction	Retrons	Retrons	Retrons	120	1305	223	0.2	0.0
+Gfid|20519408|locus|VBIProMir120933_2305|_extraction	Retrons	Retrons	Retrons	120	1305	221	0.2	0.0
+Gfid|21792235|locus|VBIDicDad95084_2538|_extraction	Retrons	Retrons	Retrons	120	1305	220	0.2	0.0
+Gfid|23554142|locus|VBIShePut135485_2726|_extraction	Retrons	Retrons	Retrons	184	1305	235	0.0	0.0
+Gfid|20170334|locus|VBIVibVul40472_1752|_extraction	Retrons	Retrons	Retrons	121	1305	231	0.2	0.0
+Gfid|18443875|locus|VBIEscCol32010_2494|_extraction	Retrons	Retrons	Retrons	121	1305	222	0.2	0.0
+clostridiafid|87317163|locus|VBICloSp224589_0973|_extraction	Retrons	Retrons	Retrons	89	1305	217	0.2	0.0
+clostridiafid|42840763|locus|VBICloCf158569_1526|_extraction	Retrons	Retrons	Retrons	89	1305	225	0.2	0.0
+clostridiafid|61057433|locus|VBICloCla155345_3324|_extraction	GroupII	UNC	Unclassified	67	1305	251	0.68	1.0
+Gfid|32326467|locus|VBISalEnt136302_3200|_extraction	Retrons	Retrons	Retrons	118	1305	204	0.2	0.0
+Gfid|182730028|locus|VBIEscCol247449_2916|_extraction	Retrons	Retrons	Retrons	126	1305	209	0.16	0.0
+Gfid|20708600|locus|VBIAciBau103538_0032|_extraction	Retrons	Retrons	Retrons	90	1305	214	0.2	0.0
+clostridiafid|43009263|locus|VBIFaePra154692_0451|_extraction	Retrons	Retrons	Retrons	178	1305	244	0.2	0.0
+Gfid|17969030|locus|VBIFraTul58433_0831|_extraction	Retrons	Retrons	Retrons	90	1251	182	0.2	0.0
+Actinobacteriafid|43032562|locus|VBIGorPam38406_0536|_extraction	Retrons	Retrons	Retrons	265	1247	160	0.0	0.0
+Bacteroidetesfid|42745249|locus|VBIBacFra167533_1197|_extraction	Retrons	Retrons	Retrons	118	1305	219	0.2	0.0
+Bacteroidetesfid|21040698|locus|VBIBacFra29119_2092|_extraction	Retrons	Retrons	Retrons	118	1305	219	0.2	0.0
+Gfid|67759973|locus|VBIPanAna225404_2867|_extraction	Retrons	Retrons	Retrons	124	1304	206	0.2	0.0
+Gfid|180865020|locus|VBIEscCol264023_2783|_extraction	Retrons	Retrons	Retrons	124	1304	206	0.2	0.0
+Actinobacteriafid|43034598|locus|VBIGorPam38406_1610|_extraction	UG/G2L	UG2	UG2	89	1306	335	0.52	0.0
+gi|89893427|ref|YP_516914.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	316	0.2	0.0
+gi|120400339|gb|ABM21395.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	316	0.2	0.0
+clostridiafid|42796364|locus|VBIButBac135163_1581|_extraction	UG/G2L	UG2	UG2	117	1305	305	0.2	0.0
+Bacillifid|42185853|locus|VBIBacCer111781_5866|_extraction	UG/G2L	UG2	UG2	182	1305	288	0.04	0.0
+gi|46908547|ref|YP_014936.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	319	0.2	0.0
+gi|149116005|ref|ZP_01842739.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	306	0.12	0.0
+gi|148871195|gb|EDL70073.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	307	0.12	0.0
+gi|109898056|ref|YP_661311.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	308	0.12	0.0
+gi|146281094|ref|YP_001171247.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	307	0.12	0.0
+DEfid|38163126|locus|VBIDesAlk70802_1028|_extraction	UG/G2L	UG2	UG2	123	1305	291	0.12	0.0
+Gfid|161894677|locus|VBIManHae297097_0336|_extraction	UG/G2L	UG2	UG2	126	1305	302	0.12	0.0
+gi|120586953|ref|YP_961298.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	305	0.12	0.0
+cianobacteriafid|115663330|locus|VBIChaMin231992_2030|_extraction	UG/G2L	UG2	UG2	109	1305	306	0.2	0.0
+gi|91216797|ref|ZP_01253761.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	362	0.2	0.0
+gi|146300088|ref|YP_001194679.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	359	0.2	0.0
+Bacteroidetesfid|54172681|locus|VBIRunSli161982_3444|_extraction	UG/G2L	UG2	UG2	111	1305	359	0.2	0.0
+gi|110679506|ref|YP_682513.1_extraction_extraction	UG/G2L	UG2	UG2	108	1305	314	0.2	0.0
+Afid|35505344|locus|VBIRhoCap134200_2618|_extraction	UG/G2L	UG2	UG2	102	1301	330	0.28	0.0
+gi|84687336|ref|ZP_01015215.1_extraction	UG/G2L	UG2	UG2	117	1305	296	0.2	0.0
+gi|146342070|ref|YP_001207118.1_extraction_extraction	UG/G2L	UG2	UG2	109	1305	293	0.2	0.0
+Bacteroidetesfid|54419991|locus|VBIFluTaf147081_2830|_extraction	UG/G2L	UG2	UG2	111	1305	357	0.2	0.0
+gi|71734230|ref|YP_276337.1_extraction_extraction	UG/G2L	Abi*	UG9	89	1257	267	0.52	0.0
+gi|121606813|ref|YP_984142.1_extraction_extraction	UG/G2L	Abi*	UG9	89	1257	267	0.52	0.0
+gi|85708303|ref|ZP_01039369.1_extraction_extraction	UG/G2L	Abi*	UG9	89	1257	267	0.52	0.0
+gi|118739127|ref|ZP_01587199.1_extraction_extraction	UG/G2L	Abi*	UG9	89	1257	267	0.52	0.0
+gi|89890656|ref|ZP_01202165.1_extraction_extraction	UG/G2L	Abi*	UN2	87	1262	270	0.52	0.0
+gi|114567587|ref|YP_754741.1_extraction_extraction	UG/G2L	Abi*	UN2	87	1262	271	0.52	0.0
+clostridiafid|42787653|locus|VBIButBac106850_0529|_extraction	GroupII	Abi*	Unclassified	86	1257	286	0.52	0.0
+gi|78063598|ref|YP_373506.1_extraction_extraction	UG/G2L	Abi*	UG1	190	1256	297	0.0	0.0
+gi|113866906|ref|YP_725395.1_extraction_extraction	UG/G2L	Abi*	UG1	190	1256	299	0.0	0.0
+gi|90580000|ref|ZP_01235808.1_extraction_extraction	UG/G2L	Abi*	UG1	190	1256	292	0.0	0.0
+Gfid|115183372|locus|VBISerMar265383_1286|_extraction	UG/G2L	Abi*	UG1	80	1423	503	0.52	0.0
+gi|163748973|ref|ZP_02156224.1_extraction_extraction	UG/G2L	Abi*	UG1	190	1256	284	0.0	0.0
+gi|53718205|ref|YP_107191.1_extraction_extraction	UG/G2L	Abi*	UG1	110	1256	305	0.0	0.0
+Gfid|87181716|locus|VBIPseSyn11986_0007|_extraction	UG/G2L	Abi*	UG1	80	1433	572	0.52	0.0
+gi|37913078|gb|AAR05370.1_extraction_extraction	UG/G2L	Abi*	UG1	226	1256	280	0.0	0.0
+gi|32473346|ref|NP_866340.1_extraction_extraction	UG/G2L	Abi*	UG1	219	1257	289	0.0	0.0
+clostridiafid|87213279|locus|VBITheSac207413_0611|_extraction	GroupII	UNC	Unclassified	1	1273	448	1.0	1.0
+clostridiafid|47031718|locus|VBISynGly105927_0590|_extraction	DGRs	DGRs	DGRs	68	1305	247	0.72	1.0
+Bacteroidetesfid|42754073|locus|VBIBacXyl109951_4388|_extraction	DGRs	DGRs	DGRs	72	1305	280	0.52	0.667
+gi|124485751|ref|YP_001030367.1_extraction_extraction	UG/G2L	UG5	UG5	77	1307	268	0.24	0.25
+DEfid|184283092|locus|VBIHelPyl300427_0117|_extraction	GroupII	Abi	Unclassified	124	1271	257	0.0	0.0
+gi|32455447|ref|NP_862563.1_extraction_extraction	Abi	Abi	Abi K	72	1261	248	0.32	0.667
+gi|24636606|dbj|BAC22947.1_extraction_extraction	Abi	Abi	Abi K	72	1261	251	0.36	0.667
+gi|17227201|ref|NP_478367.1_extraction_extraction	Abi	Abi	Abi K	72	1261	250	0.32	0.667
+gi|110679729|ref|YP_682736.1_extraction_extraction	UG/G2L	Abi	UG8	62	1259	309	0.48	1.0
+gi|123441512|ref|YP_001005498.1_extraction_extraction	UG/G2L	Abi	UG8	62	1259	296	0.2	0.417
+gi|50119997|ref|YP_049164.1_extraction_extraction	UG/G2L	Abi	UG8	62	1259	321	0.8	1.0
+gi|151560524|gb|ABS14022.1_extraction_extraction	UG/G2L	Abi	UG8	62	1307	307	0.52	1.0
+gi|53718224|ref|YP_107210.1_extraction_extraction	UG/G2L	Abi	UG8	72	1259	306	0.56	0.667
+Gfid|87348283|locus|VBIMetSp147316_1517|_extraction	UG/G2L	Abi	UG8	67	1338	391	0.72	1.0
+Bacteroidetesfid|87263722|locus|VBIFleLit174749_0251|_extraction	UG/G2L	Abi	UG8	224	1326	299	0.0	0.0
+Gfid|35291935|locus|VBILegLon159544_1945|_extraction	GroupII	UNC	Unclassified	92	1305	236	0.48	0.0
+Bacteroidetesfid|22844934|locus|VBIParDis29947_0874|_extraction	DGRs	DGRs	DGRs	83	1305	289	0.48	0.0
+gi|149369910|ref|ZP_01889761.1_extraction_extraction	UG/G2L	UG5	UG5	176	1259	285	0.2	0.0
+gi|60682764|ref|YP_212908.1_extraction_extraction	UG/G2L	UG5	UG5	176	1259	305	0.2	0.0
+gi|160944232|ref|ZP_02091461.1_extraction_extraction	UG/G2L	UG5	UG5	176	1259	309	0.2	0.0
+gi|163723024|ref|ZP_02130561.1_extraction_extraction	UG/G2L	UG5	UG5	176	1259	293	0.2	0.0
+gi|54293035|ref|YP_125450.1_extraction_extraction	UG/G2L	UG5	UG5	176	1259	305	0.2	0.0
+gi|114045853|ref|YP_736403.1_extraction_extraction	UG/G2L	UG5	UG5	176	1259	300	0.2	0.0
+gi|160876603|ref|YP_001555919.1_extraction_extraction	UG/G2L	UG5	UG5	176	1259	310	0.2	0.0
+Bfid|42358657|locus|VBIHerSer153339_0006|_extraction	UG/G2L	UG5	UG5	139	1259	357	0.2	0.0
+cianobacteriafid|115583420|locus|VBIMicSp236384_0688|_extraction	GroupII	UNC	Unclassified	79	1256	302	0.36	0.083
+cianobacteriafid|115662334|locus|VBIChaMin231992_0824|_extraction	GroupII	UNC	Unclassified	80	1256	301	0.32	0.0
+clostridiafid|19469398|locus|VBICloKlu111549_3999|_extraction	DGRs	DGRs	DGRs	84	1305	249	0.16	0.0
+clostridiafid|42885534|locus|VBICopCat158046_1802|_extraction	DGRs	DGRs	DGRs	74	1305	270	0.76	0.5
+clostridiafid|43016558|locus|VBIFaePra148460_2585|_extraction	DGRs	DGRs	DGRs	74	1305	270	0.76	0.5
+gi|33595199|ref|NP_882842.1_extraction_extraction	UG/G2L	UG6	UG6	66	1256	356	0.96	0.917
+gi|119357506|ref|YP_912150.1_extraction_extraction	UG/G2L	UG6	UG6	66	1255	358	0.96	0.917
+gi|69935276|ref|ZP_00630256.1_extraction_extraction	UG/G2L	UG6	UG6	66	1256	353	0.96	0.917
+Afid|115125822|locus|VBISinMel272116_2443|_extraction	UG/G2L	UG6	UG6	59	1248	314	0.92	0.833
+Bacillifid|18848629|locus|VBIBacCer122868_5788|	GroupII	Abi*	Unclassified	69	1311	170	0.44	0.917

@@ -1,0 +1,4 @@
+set	n	block1_occ	block2_occ	block3_occ	block29_RT7_occ	upstream_of_col68_q1_med_q3	frac_gt20_upstream	upstream_residues_in_flank_match_states_1_67_med	frac_upstream_residues_in_flank_match_states	downstream_of_col1305_q1_med_q3
+all_1926	1926	0.1664	0.2081	0.8961	0.8887	(26, 39.0, 65)	0.8712	0.0	0.1023	(72, 81.0, 144)
+clean_1814	1814	0.1553	0.2005	0.906	0.8991	(26, 38.0, 64)	0.8738	0.0	0.1014	(73, 81.0, 146)
+rescued_112	112	0.346	0.3304	0.7357	0.7212	(26, 62.5, 144)	0.8304	0.0	0.1106	(68, 79.0, 125)

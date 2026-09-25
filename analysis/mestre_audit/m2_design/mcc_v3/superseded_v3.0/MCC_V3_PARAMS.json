@@ -1,0 +1,29 @@
+{
+  "name": "MCC-v3",
+  "frozen_utc": "2026-09-19T12:58:22.846271+00:00",
+  "script_sha256": "7081ed7543654fa081ecec87694b982cb9a6ba8fc014eec8e2e7d11bc2f6b322",
+  "toro_fasta_sha256": "6e43c4ccd3660f4cc1b8c3903ee53cb530552475c2b1d0eef9a55530d08e95b1",
+  "n_templates": 102,
+  "LEAVE_NEAR_SELF": 0.9,
+  "MIN_TCOV": 0.8,
+  "TIE_BITS_FRAC": 0.005,
+  "CONCORD_BITS_FRAC": 0.9,
+  "MIN_IDENT": 0.3503,
+  "MIN_IDENT_basis": "5th percentile of nearest-neighbour identity within the Toro retron reference set",
+  "MAX_BOUNDARY_UNC": 10,
+  "MAX_BOUNDARY_UNC_basis": "95th percentile of leave-one-out boundary deviation within the Toro retron reference set",
+  "calib_nn_ident": {
+    "n": 99,
+    "p05": 0.3503,
+    "median": 0.517,
+    "min": 0.267
+  },
+  "calib_boundary_dev": {
+    "n": 198,
+    "p50": 0.0,
+    "p95": 10.0,
+    "max": 51.0
+  },
+  "core_qc": "MCC-v2 hmmalign route: >= 70 % of required-core states (blocks 4-28) inside the interval",
+  "mestre_labels_used": "none"
+}

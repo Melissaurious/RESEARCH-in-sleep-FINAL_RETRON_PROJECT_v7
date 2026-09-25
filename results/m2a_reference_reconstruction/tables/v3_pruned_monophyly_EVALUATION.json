@@ -1,0 +1,46 @@
+{
+ "1": {
+  "n": 333,
+  "unrooted_monophyletic": true
+ },
+ "2": {
+  "n": 86,
+  "unrooted_monophyletic": true
+ },
+ "3": {
+  "n": 275,
+  "unrooted_monophyletic": true
+ },
+ "4": {
+  "n": 15,
+  "unrooted_monophyletic": true
+ },
+ "5": {
+  "n": 3,
+  "unrooted_monophyletic": true
+ },
+ "6": {
+  "n": 5,
+  "unrooted_monophyletic": true
+ },
+ "7": {
+  "n": 34,
+  "unrooted_monophyletic": true
+ },
+ "8": {
+  "n": 293,
+  "unrooted_monophyletic": true
+ },
+ "9": {
+  "n": 270,
+  "unrooted_monophyletic": true
+ },
+ "10": {
+  "n": 72,
+  "unrooted_monophyletic": false
+ },
+ "11": {
+  "n": 99,
+  "unrooted_monophyletic": true
+ }
+}

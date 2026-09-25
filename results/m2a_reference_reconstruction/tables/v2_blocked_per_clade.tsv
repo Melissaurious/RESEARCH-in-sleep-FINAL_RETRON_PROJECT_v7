@@ -1,0 +1,13 @@
+clade	reference_sequences	independent_85pct_groups	withheld_placements	confident_correct	confident_wrong	ambiguous	outside	unable	confident_correct_rate	underpowered
+1	332	330	158	140	0	11	7	0	0.8861	False
+2	111	109	50	42	0	6	2	0	0.84	False
+3	246	241	142	122	0	9	11	0	0.8592	False
+4	20	20	6	5	0	0	1	0	0.8333	False
+5	5	5	4	2	0	2	0	0	0.5	False
+6	6	6	5	4	0	0	1	0	0.8	False
+7	34	34	19	15	0	4	0	0	0.7895	False
+8	397	393	208	199	0	7	2	0	0.9567	False
+9	300	298	135	124	0	3	8	0	0.9185	False
+10	164	157	81	74	0	7	0	0	0.9136	False
+11	107	104	51	47	0	2	2	0	0.9216	False
+Orphan	1	1	1	0	0	1	0	0	0.0	True

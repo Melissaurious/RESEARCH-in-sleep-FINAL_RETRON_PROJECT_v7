@@ -1,0 +1,46 @@
+[
+ {
+  "extractor": "v3",
+  "source_tips": 1928,
+  "IN_REFERENCE": 1486,
+  "NO_EXTRACTABLE_CORE": 324,
+  "NO_PUBLISHED_PROTEIN": 114,
+  "DUPLICATE_COLLAPSED": 4,
+  "reference_taxa": 1486,
+  "monophyletic_of_published_10": {
+   "1": true,
+   "2": true,
+   "3": true,
+   "4": true,
+   "5": true,
+   "6": true,
+   "7": true,
+   "8": true,
+   "9": true,
+   "10": false,
+   "11": true
+  }
+ },
+ {
+  "extractor": "v2",
+  "source_tips": 1928,
+  "IN_REFERENCE": 1723,
+  "NO_PUBLISHED_PROTEIN": 114,
+  "NO_EXTRACTABLE_CORE": 86,
+  "DUPLICATE_COLLAPSED": 5,
+  "reference_taxa": 1723,
+  "monophyletic_of_published_10": {
+   "1": true,
+   "2": true,
+   "3": true,
+   "4": true,
+   "5": true,
+   "6": true,
+   "7": true,
+   "8": true,
+   "9": true,
+   "10": false,
+   "11": true
+  }
+ }
+]

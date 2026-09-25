@@ -1,0 +1,13 @@
+tree	n_tips	clade	n	unrooted_min_side	purity	support	rec_at95	rec_at85
+published	1928	1	355	362	0.981	97.0	True	True
+published	1928	2	122	123	0.992	100.0	True	True
+published	1928	3	294	296	0.993	98.0	True	True
+published	1928	4	25	25	1.000	96.0	True	True
+published	1928	5	5	5	1.000	100.0	True	True
+published	1928	6	6	6	1.000	98.0	True	True
+published	1928	7	38	38	1.000	98.0	True	True
+published	1928	8	426	427	0.998	99.0	True	True
+published	1928	9	323	324	0.997	85.0	False	True
+published	1928	10	194	321	0.604	100.0	False	False
+published	1928	11	123	123	1.000	0.0	False	False
+published	1928	TOTAL					8/11	9/11

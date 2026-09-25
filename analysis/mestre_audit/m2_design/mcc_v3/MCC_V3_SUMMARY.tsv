@@ -1,0 +1,24 @@
+MIN_IDENT (R4, Toro-calibrated)	0.3503
+MAX_BOUNDARY_UNC aa (R5, Toro-calibrated)	16
+templates	102
+CLEAN: extracted / n	1490 / 1814
+  CLEAN: DISCORDANT_TEMPLATES	296
+  CLEAN: LOW_IDENTITY	27
+  CLEAN: CORE_QC_FAILED	1
+OTHER_SUBSTITUTE: extracted / n	48 / 97
+  OTHER_SUBSTITUTE: LOW_IDENTITY	15
+  OTHER_SUBSTITUTE: DISCORDANT_TEMPLATES	15
+  OTHER_SUBSTITUTE: NO_HIT	11
+  OTHER_SUBSTITUTE: LOW_TEMPLATE_COVERAGE	8
+RNAP_SUBSTITUTE: extracted / n	0 / 15
+  RNAP_SUBSTITUTE: NO_HIT	15
+CLEAN extracted: core length median / IQR	229.0 / 222.0-249.0
+CLEAN extracted: template identity median	0.474
+CLEAN extracted: boundary uncertainty (start/end) median	0.0 / 0.0
+CLEAN extracted: MCC-v2 core inside interval, median	1.0
+CLEAN: MCC-v2 extractable but MCC-v3 not	314
+CLEAN: MCC-v3 extracted but MCC-v2 not	75
+VALIDATION (76, leave-near-identical-out): extracted	62 / 76
+  start within 5 aa / end within 5 aa	0.710 / 0.855
+  median |d start| / |d end|	0.0 / 0.0
+  start within MAX_BOUNDARY_UNC / end within it	0.855 / 0.935
