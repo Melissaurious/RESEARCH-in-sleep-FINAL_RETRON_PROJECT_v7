@@ -1,0 +1,28 @@
+field	value
+tier_definitions	"{""T1"": ""canonical, non-redundant, Retron file label"", ""T2"": ""T1 + same strand + not downstream + no intervening CDS + |gap| <= 200 bp"", ""T3"": ""T2 + covariance-model hit E <= 1e-5"", ""T4"": ""T3 + recurrence_class in {multiple_species, one_species_multiple_genomes}""}"
+test_pairs	991
+independent_components	83
+n_eff	9.02
+unique_rt	966
+unique_ncrna	607
+rt_clusters	125
+ncrna_clusters	253
+retron_types	19
+largest_component_pairs	229
+largest_component_share	0.2311
+median_component_pairs	2
+singleton_components	35
+median_placements_per_pair	4.0
+mean_placements_per_pair	15.08
+max_placements_per_pair	1149
+median_physical_loci	3.0
+median_genomes	4.0
+pairs_with_1_physical_locus	0
+pairs_multiple_species	621
+pairs_one_species_multi_genome	370
+components_with_repeated_exact_RT	7
+components_with_repeated_exact_ncRNA	28
+components_with_either	28
+pairs_spanning_multiple_physical_loci	991
+denominator_confirmed_83	True
+note	T4 is a STRATUM of the frozen test fold, not a separate split; its components are a subset of the 357 test components.

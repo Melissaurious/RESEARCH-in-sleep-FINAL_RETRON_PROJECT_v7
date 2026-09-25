@@ -1,0 +1,27 @@
+{
+  "vocab": {
+    "<pad>": 0,
+    "<bos>": 1,
+    "<eos>": 2,
+    "A": 3,
+    "C": 4,
+    "G": 5,
+    "T": 6,
+    "K": 7,
+    "N": 8,
+    "R": 9,
+    "Y": 10
+  },
+  "pad_len": 397,
+  "n_pairs": 30924,
+  "n_ncrna": 16458,
+  "n_types": 21,
+  "folds": {
+    "train": 21647,
+    "val": 4639,
+    "test": 4638
+  },
+  "sensitivity_pairs": 1525,
+  "split_source": "results/embed_g2b_frozen_split (commit 15e00b8)",
+  "sha256": "caa2f7fedd38c9b769e3538f579fa05dde74c3d300da564e5a4ee6b8ee2774f8"
+}

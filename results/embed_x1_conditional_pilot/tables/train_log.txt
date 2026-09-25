@@ -1,0 +1,60 @@
+=========== ARM U ===========
+arm U  params 665,483 (decoder 665,355, conditioning 128)  device cuda
+train 21,647 pairs / 361 comps   val 4,639 / 357 comps
+  ep 00  train 1.4688  val 1.4127 (ppl 4.107)  27.7s *
+  ep 01  train 1.3779  val 1.4247 (ppl 4.157)  27.1s 
+  ep 02  train 1.3171  val 1.4420 (ppl 4.229)  27.2s 
+  ep 03  train 1.2742  val 1.4451 (ppl 4.242)  28.0s 
+  ep 04  train 1.2369  val 1.4235 (ppl 4.152)  27.2s 
+  ep 05  train 1.2117  val 1.4320 (ppl 4.187)  26.9s 
+  early stop: no improvement for 5 epochs
+BEST val NLL 1.41268 at epoch 0 -> model_U.pt
+=========== ARM T ===========
+arm T  params 668,043 (decoder 665,355, conditioning 2,688)  device cuda
+train 21,647 pairs / 361 comps   val 4,639 / 357 comps
+  ep 00  train 1.4746  val 1.4202 (ppl 4.138)  28.2s *
+  ep 01  train 1.3476  val 1.4244 (ppl 4.155)  26.5s 
+  ep 02  train 1.2335  val 1.4195 (ppl 4.135)  27.1s *
+  ep 03  train 1.1775  val 1.4186 (ppl 4.131)  27.2s *
+  ep 04  train 1.1616  val 1.4136 (ppl 4.111)  27.0s *
+  ep 05  train 1.1688  val 1.4178 (ppl 4.128)  27.0s 
+  ep 06  train 1.1789  val 1.4092 (ppl 4.093)  26.9s *
+  ep 07  train 1.1858  val 1.4125 (ppl 4.106)  24.0s 
+  ep 08  train 1.1902  val 1.4251 (ppl 4.158)  25.8s 
+  ep 09  train 1.1888  val 1.3992 (ppl 4.052)  27.9s *
+  ep 10  train 1.1955  val 1.4154 (ppl 4.118)  28.6s 
+  ep 11  train 1.2220  val 1.3987 (ppl 4.050)  28.0s *
+  ep 12  train 1.2336  val 1.4073 (ppl 4.085)  27.6s 
+  ep 13  train 1.2332  val 1.4012 (ppl 4.060)  26.7s 
+  ep 14  train 1.2395  val 1.4002 (ppl 4.056)  26.5s 
+  ep 15  train 1.2485  val 1.3922 (ppl 4.024)  24.4s *
+  ep 16  train 1.2508  val 1.4040 (ppl 4.072)  26.2s 
+  ep 17  train 1.2509  val 1.3941 (ppl 4.032)  27.7s 
+  ep 18  train 1.2511  val 1.4014 (ppl 4.061)  26.9s 
+  ep 19  train 1.2489  val 1.4058 (ppl 4.079)  25.9s 
+  ep 20  train 1.2443  val 1.4006 (ppl 4.058)  27.3s 
+  early stop: no improvement for 5 epochs
+BEST val NLL 1.39220 at epoch 15 -> model_T.pt
+=========== ARM R ===========
+arm R  params 788,363 (decoder 665,355, conditioning 123,008)  device cuda
+train 21,647 pairs / 361 comps   val 4,639 / 357 comps
+  ep 00  train 1.4816  val 1.4201 (ppl 4.138)  39.0s *
+  ep 01  train 1.3702  val 1.4092 (ppl 4.093)  38.0s *
+  ep 02  train 1.2533  val 1.4044 (ppl 4.073)  38.2s *
+  ep 03  train 1.1778  val 1.4164 (ppl 4.122)  37.3s 
+  ep 04  train 1.1302  val 1.4173 (ppl 4.126)  37.2s 
+  ep 05  train 1.0999  val 1.4086 (ppl 4.090)  37.2s 
+  ep 06  train 1.0893  val 1.3997 (ppl 4.054)  37.1s *
+  ep 07  train 1.0723  val 1.3983 (ppl 4.048)  38.0s *
+  ep 08  train 1.0626  val 1.4034 (ppl 4.069)  37.8s 
+  ep 09  train 1.0504  val 1.3912 (ppl 4.020)  36.6s *
+  ep 10  train 1.0489  val 1.3958 (ppl 4.038)  35.8s 
+  ep 11  train 1.0624  val 1.4012 (ppl 4.060)  35.2s 
+  ep 12  train 1.0761  val 1.3888 (ppl 4.010)  35.8s *
+  ep 13  train 1.0778  val 1.3954 (ppl 4.036)  35.6s 
+  ep 14  train 1.0809  val 1.3973 (ppl 4.044)  38.2s 
+  ep 15  train 1.0825  val 1.3907 (ppl 4.018)  36.5s 
+  ep 16  train 1.0770  val 1.4011 (ppl 4.060)  35.3s 
+  ep 17  train 1.0780  val 1.3959 (ppl 4.039)  36.3s 
+  early stop: no improvement for 5 epochs
+BEST val NLL 1.38878 at epoch 12 -> model_R.pt

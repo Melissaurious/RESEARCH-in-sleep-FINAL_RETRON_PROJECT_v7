@@ -1,0 +1,9 @@
+grouping_key	distinct
+source_database	8
+taxonomy_system	3
+tax_species (NOT poolable across systems)	10474
+genome_id_norm	324124
+locus_key	333957
+physical_locus_key	298617
+rt_seq_hash (leakiest - see handover 5)	29192
+nc_seq_hash	16458

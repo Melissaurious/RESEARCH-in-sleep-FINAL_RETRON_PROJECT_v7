@@ -1,0 +1,18 @@
+{
+  "n_queries": 4638,
+  "pool_size": 2756,
+  "observed_partner_is_nearest": 0.0056,
+  "observed_partner_in_top5": 0.0263,
+  "observed_partner_in_top10": 0.0451,
+  "median_rank_of_observed_partner": 238,
+  "nearest_neighbour_shares_retron_type": 0.5192,
+  "top10_fraction_sharing_retron_type": 0.5003,
+  "type_prevalence_in_pool": 0.094,
+  "neighbourhood_is_type_specific_not_pair_specific": true,
+  "top1_fraction_sharing_retron_type": 0.5192,
+  "observed_partner_in_top1": 0.0056,
+  "top5_fraction_sharing_retron_type": 0.5116,
+  "top20_fraction_sharing_retron_type": 0.5002,
+  "observed_partner_in_top20": 0.0791,
+  "type_sharing_enrichment_vs_prevalence": 5.32
+}

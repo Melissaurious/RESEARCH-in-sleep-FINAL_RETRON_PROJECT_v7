@@ -1,0 +1,5 @@
+stratum	numerator	denominator
+RT < 250 aa (excluded by the g5a Stage-2 eligibility rule)	3568	29192
+RT > 1024 aa	16	29192
+RT > 2048 aa	3	29192
+ncRNA > 512 nt	0	16458

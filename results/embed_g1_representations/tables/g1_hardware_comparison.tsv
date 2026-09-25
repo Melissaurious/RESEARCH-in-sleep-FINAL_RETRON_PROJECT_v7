@@ -1,0 +1,7 @@
+model	hardware	gpu_arch	bf16	units_per_s	peak_vram_gb	note
+ESM-C 300M	borg RTX 4090	sm_89	yes	69900	1.20	embed_g0 local pilot, 200-seq smoke
+ESM-C 300M	ibex GTX 1080 Ti	sm_61	no	4412	2.40	first ibex smoke; completed and validated, 16x slower
+ESM-C 300M	ibex A100-SXM4-80GB	sm_80	yes	48667	1.21	production, best shard
+RiNALMo giga-v1	borg RTX 4090	sm_89	yes	25634	3.84	embed_g0 local pilot, 200-seq smoke
+RiNALMo giga-v1	ibex GTX 1080 Ti	sm_61	no	NA	NA	FAILED: device does not support bfloat16
+RiNALMo giga-v1	ibex A100-SXM4-80GB	sm_80	yes	19775	3.81	production, best shard

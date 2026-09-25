@@ -1,0 +1,5 @@
+tier	eligible_pairs	n_components	alternatives_per_pair	delta_logP_per_nt	ci_lo	ci_hi	frac_pairs_favouring_observed	frac_components_favouring_observed	status
+C1	30796	1019	8.0	0.017664	0.015328	0.019942	0.7257	0.8106	OK
+C2	29459	832	8.0	0.015434	0.012909	0.017859	0.7057	0.8041	OK
+C3	30922	1073	7.983054136213699	0.003974	0.002019	0.005855	0.5249	0.6076	OK
+C4	29186	451	7.44473377646817	0.001683	0.001006	0.002507	0.6068	0.663	OK

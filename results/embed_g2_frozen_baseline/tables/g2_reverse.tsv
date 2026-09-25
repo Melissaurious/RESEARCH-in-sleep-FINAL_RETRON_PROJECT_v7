@@ -1,0 +1,2 @@
+model	rung	n_queries	n_components	mrr	ci_lo	ci_hi	mrr_expected_ties	top1	top5	status
+M-CCA	reverse_rung1	4638	357	0.4738	0.438	0.5104	0.4738	0.1828	0.5019	OK

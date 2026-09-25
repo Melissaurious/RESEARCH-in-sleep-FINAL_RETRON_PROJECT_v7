@@ -1,0 +1,27 @@
+{
+  "cache": "esmc300m_v1",
+  "dim": 960,
+  "frozen_contract": {
+    "alphabet_rule": "as stored",
+    "batching_rule": "sorted by (len, hash); BATCH=8; solo if len>1024; shard boundaries at multiples of 8",
+    "dim": 960,
+    "dtype": "float16",
+    "gpu_arch": "sm_80",
+    "input_fasta_sha256": "db87de172ceff9df29bb635df13803500f73b9463c31e4926d7281d7f1b6cd2a",
+    "layer": "final encoder output (the model's returned representation)",
+    "model": "ESM-C 300M",
+    "model_id": "esmc_300m",
+    "orientation_rule": "n/a - protein",
+    "package_version": "esm 3.2.0",
+    "pooling": "unweighted mean over real residue/nucleotide tokens, fp32 accumulate",
+    "special_tokens": "BOS/EOS stripped, rows 1..L",
+    "torch": "2.5.1+cu121",
+    "truncation": "none",
+    "weights_identity": "HF EvolutionaryScale/esmc-300m-2024-12"
+  },
+  "pooled_layout": "per-shard pooled.npy; use manifests/esmc300m_v1_pooled_index.tsv -> (shard, row)",
+  "sequences": 29192,
+  "shards": 8,
+  "token_layout": "per-shard tokens.npy, ragged; use manifests/esmc300m_v1_tokens_index.tsv -> (shard, offset, length)",
+  "units": 11236474
+}

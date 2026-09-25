@@ -1,0 +1,22 @@
+retron_type	pairs	unique_rt	unique_ncrna	components	n_eff	largest_comp_frac	test_pairs	test_components	test_n_eff	T3	T4	T3_test	within_type_pool	max_observed_partners_per_rt	usable_pool_worst_case	rt_clusters	nc_clusters	species	species_coverage	C1_pool>=50	C2_components>=30	C3_neff>=10	C4_T3>=100	FEASIBLE	blocking
+TypeIC1_IC2	6277	6139	2034	144	1.2	0.91	242	42	9.2	5319	2012	135	2034	30	2004	436	671	1129	0.905	True	True	False	True	False	C3
+Ec107_like	4555	4170	2023	55	1.6	0.758	905	21	1.2	4173	1281	831	2023	19	2004	281	535	286	0.7	True	True	False	True	False	C3
+OutgroupA	4359	4302	3319	230	1.6	0.789	280	82	20.1	3597	964	198	3319	4	3315	421	1250	858	0.942	True	True	False	True	False	C3
+TypeIA_IIAI	3922	3368	2109	157	1.8	0.743	367	48	4.9	1590	657	5	2109	176	1933	314	537	918	0.957	True	True	False	True	False	C3
+TypeXIIIB_Ne144	2096	2046	1534	41	1.7	0.755	41	13	6.8	1778	346	23	1534	2	1532	95	490	631	0.898	True	True	False	True	False	C3
+TypeIB2	1462	1332	320	46	3.8	0.476	131	16	2.9	1372	508	125	320	48	272	103	78	151	0.988	True	True	False	True	False	C3
+TypeIIIA3	1082	1036	736	87	10.9	0.189	371	31	3.7	945	255	304	736	4	732	185	279	487	0.947	True	True	True	True	True	-
+TypeIB1	815	760	574	41	11.1	0.152	382	13	4.6	540	211	248	574	12	562	84	189	338	0.951	True	True	True	True	True	-
+TypeXIIIA_firmi	796	689	496	22	1.9	0.666	12	6	4.5	66	12	2	496	12	484	46	152	163	0.943	True	False	False	False	False	C2, C3, C4
+TypeIV	779	769	285	11	1.1	0.944	746	4	1.0	676	236	670	285	2	283	44	91	252	0.972	True	False	False	True	False	C2, C3
+TypeV	690	628	218	10	2.0	0.657	11	2	1.4	457	154	10	218	10	208	31	79	136	0.972	True	False	False	True	False	C2, C3
+TypeIIIA2	635	610	408	53	3.2	0.539	76	19	4.0	479	152	47	408	3	405	91	193	277	0.858	True	True	False	True	False	C3
+OutgroupB	602	591	338	17	1.1	0.967	4	4	4.0	559	165	2	338	3	335	41	63	132	0.963	True	False	False	True	False	C2, C3
+TypeIIIA1	586	571	439	46	3.3	0.447	478	17	2.2	322	67	306	439	2	437	76	184	267	0.834	True	True	False	True	False	C3
+TypeXIIIC_Mx162	568	540	425	20	1.1	0.945	4	4	4.0	472	84	0	425	3	422	32	107	131	0.945	True	False	False	True	False	C2, C3
+TypeIIA3_firmi	460	438	260	20	2.4	0.561	143	3	1.0	442	138	141	260	3	257	53	80	140	0.693	True	False	False	True	False	C2, C3
+TypeXIII_Mx65	455	452	388	28	2.1	0.666	25	12	5.5	280	49	6	388	2	386	53	181	172	0.905	True	False	False	True	False	C2, C3
+TypeIIA3_proteo	354	342	195	26	1.6	0.791	289	7	1.1	302	95	275	195	4	191	35	94	162	0.963	True	False	False	True	False	C2, C3
+TypeIX	279	274	233	38	2.6	0.584	71	13	2.0	252	74	62	233	3	230	57	110	184	0.914	True	True	False	True	False	C3
+TypeIB2_firmi	83	78	59	18	4.1	0.458	47	5	1.5	47	14	34	59	4	55	23	36	36	0.687	True	False	False	False	False	C2, C3, C4
+TypeIIA2	69	64	65	22	3.0	0.565	13	8	3.9	12	2	6	65	4	61	26	27	26	0.913	True	False	False	False	False	C2, C3, C4
